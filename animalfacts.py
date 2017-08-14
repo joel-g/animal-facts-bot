@@ -43,6 +43,8 @@ def botengine(animal, regex, reddit, facts):
                 print('Already commented on this!\n')
 
 def animalfactsbot(reddit):
+    botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS)
+    botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS)
     botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS)
     botengine('owl', '\sowls?\s', reddit, OWL_FACTS)
     botengine('horse', '\shorses?\s', reddit, HORSE_FACTS)
@@ -61,6 +63,42 @@ def animalfactsbot(reddit):
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS)
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS)
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS)
+
+HIPPO_FACTS = [
+    'Hippopotamuses are found in Africa.'
+    'The name hippopotamus means ‘river horse’ and is often shortened to hippo.',
+    'The hippopotamus is generally considered the third largest land mammal (after the White rhinoceros and elephant).',
+    'Hippopotamuses spend a large amount of time in water such as rivers, lakes and swamps.',
+    'Resting in water helps keep hippopotamuses temperature down.',
+    'Hippopotamuses give birth in water.',
+    'Hippopotamuses have short legs, a huge mouth and a body shaped like a barrel.',
+    'The closest relations of the hippopotamus are surprisingly cetaceans such as whales and dolphins. Scientists believe this family of animals diverged in evolution around 55 million years ago.',
+    'Although hippos might look a little chubby, they can easily outrun a human.',
+    'Hippos can be extremely aggressive, especially if they feel threatened. They are regarded as one of the most dangerous animals in Africa.',
+    'Hippos are threatened by habitat loss and poachers who hunt them for their meat and teeth.',
+    'A male hippopotamus is called a ‘bull’.',
+    'A female hippopotamus is called a ‘cow’.',
+    'A baby hippo is called a ‘calf’.',
+    'A group of hippos in known as a ‘herd’, ‘pod’, ‘dale’ or ‘bloat’.',
+    'Hippos typically live for around 45 years.,'
+    'Hippos eat mostly grass.'
+    ]
+
+MONKEY_FACTS = [
+    'There are currently 264 known monkey species.',
+    'Monkeys can be divided into two groups, Old World monkeys that live in Africa and Asia, and New World monkeys that live in South America.',
+    'A baboon is an example of an Old World monkey, while a marmoset is an example of a New World monkey.',
+    'Apes are not monkeys.',
+    'Some monkeys live on the ground, while others live in trees.',
+    'Different monkey species eat a variety of foods, such as fruit, insects, flowers, leaves and reptiles.',
+    'Most monkeys have tails.',
+    'Groups of monkeys are known as a ‘tribe’, ‘troop’ or ‘mission’.',
+    'The Pygmy Marmoset is the smallest type of monkey, with adults weighing between 120 and 140 grams.',
+    'The Mandrill is the largest type of monkey, with adult males weighing up to 35 kg.',
+    'Capuchin monkeys are believed to be one of the smartest New World monkey species. They have the ability to use tools, learn new skills and show various signs of self-awareness.',
+    'Spider monkeys get their name because of their long arms, legs and tail.',
+    'The monkey is the 9th animal that appears on the Chinese zodiac, appearing as the zodiac sign in 2016.'
+    ]
 
 ZEBRA_FACTS = [
     'Zebra are part of the equidae family along with horse and donkeys.',
