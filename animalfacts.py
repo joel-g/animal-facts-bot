@@ -47,6 +47,7 @@ def animalfactsbot(reddit):
     botengine('tiger', reddit, TIGER_FACTS)
     botengine('frog', reddit, FROG_FACTS)
     botengine('giraffe', reddit, GIRAFFE_FACTS)
+    botengine('wolf', reddit, WOLF_FACTS)
     botengine('turtle', reddit, TURTLE_FACTS)
     botengine('jellyfish', reddit, JELLYFISH_FACTS)
     botengine('koala', reddit, KOALA_FACTS)
@@ -244,9 +245,9 @@ TIGER_FACTS = [
     'Tiger cubs leave their mother when they are around 2 years of age.',
     'A group of tigers is known as an ‘ambush’ or ‘streak’.',
     'Tigers are good swimmers and can swim up to 6 kilometers.',
-    'Rare white tigers carry a gene that is only present in around 1 in every 10000 tigers.',
+    'Rare white tigers carry a gene that is only present in around 1 in every 10,000 tigers.',
     'Tigers usually hunt alone at night time.',
-    'Tigers have been known to reach speeds up to 65 kph (40 mph).',
+    'Tigers have been known to reach speeds up to 40 mph (65 kph).',
     "Less than 10% of hunts end successfully for tigers",
     'Tigers can easily jump over 5 meters in length.',
     'Various tiger subspecies are the national animals of Bangladesh, India, North Korea, South Korea and Malaysia.',
@@ -267,6 +268,22 @@ FROG_FACTS = [
     'Frogs can see forwards, sideways and upwards all at the same time. They never close their eyes, even when they sleep.',
     "Remarkably, frogs actually use their eyes to help them swallow food. When the frog blinks, its eyeballs are pushed downwards creating a bulge in the roof of its mouth. This bulge squeezes the food inside the frog's mouth down the back of its throat."
     ]
+
+WOLF_FACTS = [
+    'Wolves are excellent hunters and have been found to be living in more places in the world than any other mammal except humans.',
+    'The wolf is the ancestor of all breeds of domestic dog. It is part of a group of animals called the wild dogs which also includes the dingo and the coyote.',
+    'Most wolves weigh about 40 kilograms but the heaviest wolf ever recorded weighed over 80 kilograms!',
+    'Adult wolves have large feet. A fully grown wolf would have a paw print nearly 13 centimeters long and 10 centimeters wide.',
+    'Wolves live and hunt in groups called a pack. A pack can range from two wolves to as many as 20 wolves depending on such factors as habitat and food supply. Most packs have one breeding pair of wolves, called the alpha pair, who lead the hunt.',
+    'Wolf pups are born deaf and blind while weighing around 0.5 kg (1 lb). It takes about 8 months before they are old enough to actively join in wolf pack hunts.',
+    'Wolves in the Arctic have to travel much longer distances than wolves in the forest to find food and will sometimes go for several days without eating.',
+    'When hunting alone, the wolf catches small animals such as squirrels, hares, chipmunks, raccoons or rabbits. However, a pack of wolves can hunt very large animals like moose, caribou and yaks.',
+    'When the pack kills an animal, the alpha pair always eats first. As food supply is often irregular for wolves, they will eat up to 1/5th of their own body weight at a time to make up for days of missed food.',
+    'Wolves have two layers of fur, an undercoat and a top coat, which allow them to survive in temperatures as low at minus 40 degrees fahrenheit! In warmer weather they flatten their fur to keep cool.',
+    'A wolf can run at a speed of 40 miles per hour during a chase. Wolves have long legs and spend most of their time trotting at a speed of 7-10 miles per hour. They can keep up a reasonable pace for hours and have been known to cover distances of 55 miles in one night.'
+    ]
+
+
 
 def main():
     reddit = authenticate()
