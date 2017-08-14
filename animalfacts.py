@@ -5,7 +5,7 @@ import time
 from pygame import mixer
 # from '/' import lists
 
-BLACKLIST = {'asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin'}
+BLACKLIST = {'asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression'}
 
 mixer.init()
 alert=mixer.Sound('bird.wav')
@@ -24,13 +24,13 @@ def botengine(animal, regex, reddit, facts):
         match = re.findall(regex, comment.body)
 
         if match:
-            print(animal + " found in comment with comment ID: " + comment.id)
+            print(animal.upper() + " found in comment with comment ID: " + comment.id)
             file_obj_r = open(history,'r')
             if comment.id not in file_obj_r.read().splitlines():
                 if comment.author.name == reddit.user.me():
                     print('     Skipping my own comment...\n')
                 else:
-                    print('     Found new comment by ' + comment.author.name + '\n')
+                    print('     by ' + comment.author.name + '\n')
                     comment.reply(random.choice(facts))
                     alert.play()
                     file_obj_r.close()
@@ -43,6 +43,7 @@ def botengine(animal, regex, reddit, facts):
                 print('Already commented on this!\n')
 
 def animalfactsbot(reddit):
+    botengine('zebra', '\szebra?\s', reddit, ZEBRA_FACTS)
     botengine('owl', '\sowls?\s', reddit, OWL_FACTS)
     botengine('horse', '\shorses?\s', reddit, HORSE_FACTS)
     botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS)
@@ -61,7 +62,20 @@ def animalfactsbot(reddit):
     botengine('snake', '\ssnake?\s', reddit, SNAKE_FACTS)
     botengine('whale', '\swhale?\s', reddit, WHALE_FACTS)
 
-
+ZEBRA_FACTS = [
+    'Zebra are part of the equidae family along with horse and donkeys.',
+    'Every zebra has a unique pattern of black and white stripes.',
+    'There are a number of different theories which attempt to explain zebra’s unique stripes with most relating to camouflage.',
+    'Wild zebras live in Africa.',
+    'Common plain zebras have tails around half a meter in length (18 inches).',
+    'Zebra crossings (pedestrian crossings) are named after the black and white stripes of zebras.',
+    'Zebras run from side to side to being chased by a predator.',
+    'Zebras have excellent eyesight and hearing.',
+    'Zebras stand up while sleeping.',
+    'Zebras eat mostly grass.',
+    'The ears of a zebra show its mood.',
+    'A zebra named Marty starred in the 2005 animated film Madagascar.',
+    ]
 
 OWL_FACTS = [
     'There are around 200 different owl species.',
