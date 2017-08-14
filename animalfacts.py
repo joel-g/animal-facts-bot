@@ -46,6 +46,7 @@ def animalfactsbot(reddit):
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS)
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS)
+    botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS)
     botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS)
     botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS)
@@ -55,6 +56,7 @@ def animalfactsbot(reddit):
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS)
     botengine('octopus', '\soctopus?\s', reddit, OCTOPUS_FACTS)
     botengine('owl', '\sowls?\s', reddit, OWL_FACTS)
+    botengine('panda', '\spandas?\s', reddit, PANDA_FACTS)
     botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS)
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS)
@@ -112,6 +114,23 @@ CAMEL_FACTS = [
     'Long eyelashes, ear hair, and closable nostrils keep sand from affecting the camel, while their wide feet help them move without sinking into sand.',
     'Camels have long been used in wartimes. Romans used camels for their ability to scare off horses who are afraid of their scent, and in recent times camels have been used to carry heavy gear and troops across hot sandy deserts.',
     'There are estimated to be over 14 million camels in the world. Camels introduced to desert areas of Australia are the worlds largest populations of feral camels.'
+    ]
+
+FLAMINGO_FACTS = [
+    'Flamingos are a type of wading bird that live in areas of large shallow lakes, lagoons, mangrove swamps, tidal flats, and sandy islands.',
+    'The word "flamingo" comes from the Spanish word "flamenco" which came from the earlier Latin word "flamma" meaning flame or fire.',
+    'There are six species of flamingo in the world. Two are found in the Old World and four species live in the New World - Americas.',
+    'The most widespread flamingo is the Greater flamingo found in areas of Africa, Southern Europe and South, Southwest Asia. The Lesser flamingo is the most numerous and lives in the Great Rift Valley of Africa through to Northwest India.',
+    "The four species in the New World include the Chilean flamingo, found in temperate South American areas, the Andean Flamingo and James's flamingo found in the high Andes mountains in Peru, Chile, Bolivia and Argentina and the American flamingo of the Caribbean islands, Belize and Galapagos islands.",
+    'The Greater flamingo is the largest species, at up to 1.5 m (5 ft) tall and weighing up to 3.5 kg (8 lbs). The Lesser flamingo is just 90 cm (3 ft) tall, weighing 2.5 kg (5.5 lbs).',
+    'In the wild flamingos live 20 - 30 years and sometimes over 50 years in captivity.',
+    "Flamingo legs can be longer than their entire body. The backward bending 'knee' of a flamingo's leg is actually its ankle, the knee is out of sight further up the leg.",
+    'Quite often flamingos will stand on one leg, with the other tucked under the body. Its not fully understood why they do this but it is believed to conserve body heat.',
+    'The flamingo is a filter-feeder, holding its curved beak upside down in the water it sucks in the muddy water and pushes the mud and silt out the side while tiny hair-like filters along the beak called lamellae sieve food from the water.',
+    "The pink to reddish color of a flamingo's feathers comes from carotenoids (the pigment that also makes carrots orange) in their diet of plankton, brine shrimp and blue-green algae.",
+    'Flamingos are social birds, they live in colonies of sometimes thousands, this helps in avoiding predators, maximizing food intake, and is better for nesting.',
+    'Flamingo colonies split into breeding groups of up to 50 birds, who then perform a synchronized ritual "dance" whereby they stand together stretching their necks upwards, uttering calls while waving their heads and then flapping their wings.',
+    'The flamingo is the national bird of the Bahamas.'
     ]
 
 HIPPO_FACTS = [
@@ -263,7 +282,8 @@ SNAKE_FACTS = [
     'Snakeskin is smooth and dry.',
     'Snakes shed their skin a number of times a year in a process that usually lasts a few days.',
     'Some species of snake, such as cobras and black mambas, use venom to hunt and kill their prey.',
-    'Snakes smell with their tongue.','Pythons kill their prey by tightly wrapping around it and suffocating it in a process called constriction.',
+    'Snakes smell with their tongue.',
+    'Pythons kill their prey by tightly wrapping around it and suffocating it in a process called constriction.',
     'Some sea snakes can breathe partially through their skin, allowing for longer dives underwater.',
     'Anacondas are large, non-venomous snakes found in South America that can reach over 5 m (16 ft) in length.',
     'Python reticulates can grow over 8.7 m (28 ft) in length and are considered the longest snakes in the world.'
@@ -282,6 +302,20 @@ SCORPION_FACTS = [
     'Areas of China have a traditional dish of fried scorpion, and scorpion wine features in Chinese medicine.',
     'The scorpion is one of the 12 signs of the Zodiac, with the Scorpio constellation identified in the stars.',
     'Scorpions moult, they shed their exoskeleton up to 7 times as they grow to full size. They become vulnerable to predators each time until their new protective exoskeleton hardens.'
+    ]
+
+PANDA_FACTS = [
+    'The giant panda is native to China. It has a black and white coat that features large black patches around its eyes.',
+    'Pandas are an endangered species. Population estimates vary but there may be around 2000 left living in the wild.',
+    'A giant panda cub weighs only around 150 grams (5 oz) at birth.',
+    'Adult male pandas can weigh up to 150 kg (330 lb).',
+    'Giant panda have a lifespan of around 20 years in the wild.',
+    'Female pandas raise cubs on their own (the male leaves after mating).',
+    'The diet of a panda is made up almost entirely of bamboo.',
+    'Giant pandas eat as much as 10 kg (22 lb) of bamboo a day.',
+    'Giant pandas are good climbers.',
+    'The scientific name for the giant panda is ‘ailuropoda melanoleuca’.',
+    'An animated movie from 2008 named ‘Kung Fu Panda’ features a giant panda called ‘Po’.'
     ]
 
 DOLPHIN_FACTS = [
