@@ -11,6 +11,52 @@ mixer.init()
 alert=mixer.Sound('bird.wav')
 history = 'commented.txt'
 
+OWL_FACTS = [
+    'There are around 200 different owl species.',
+    'Owls are active at night (nocturnal).',
+    'A group of owls is called a parliament.',
+    'Most owls hunt insects, small mammals and other birds.',
+    'Some owl species hunt fish.',
+    'Owls have powerful talons (claws) which help them catch and kill prey.',
+    'Owls have large eyes and a flat face.',
+    'Owls can turn their heads as much as 270 degrees.',
+    'Owls are farsighted, meaning they can’t see things close to their eyes clearly.',
+    'Owls are very quiet in flight compared to other birds of prey.',
+    'The color of owl’s feathers helps them blend into their environment (camouflage).',
+    'Barn owls can be recognized by their heart shaped face.'
+    ]
+
+TURTLE_FACTS = [
+    'Turtles are reptiles.',
+    'Turtles have a hard shell that protects them like a shield, this upper shell is called a ‘carapace’.',
+    'Turtles also have a lower shell called a ‘plastron’.',
+    'Many turtle species (not all) can hide their heads inside their shells when attacked by predators.',
+    'Turtles have existed for around 215 million years.',
+    'Like other reptiles, turtles are cold blooded.',
+    'The largest turtle is the leatherback sea turtle, it can weigh over 900 kg! (2000 lb)',
+    'Turtles lay eggs.',
+    'In some species of turtle the temperature determines if the egg will develop into a male or female, lower temperatures lead to a male while higher temperatures lead to a female.',
+    'Some turtles lay eggs in the sand and leave them to hatch on their own. The young turtles make their way to the top of the sand and scramble to the water while trying to avoid predators.',
+    'Sea turtles have special glands which help remove salt from the water they drink.',
+    'Many turtle species are endangered.'
+    ]
+
+KOALA_FACTS = [
+    'Koalas are native to Australia.',
+    'Koalas are not bears.',
+    'Koala fossils found in Australia have been dated as long ago as 20 million years.',
+    'Koalas eat eucalypt leaves and almost nothing else.',
+    'The brain size of modern koalas has reduced substantially from their ancestors, possibly as an adaptation to the low energy they get from their diets.',
+    'The closest living relative of the koala is the wombat.',
+    'Koalas have sharp claws which help them climb trees.',
+    'Koalas have similar fingerprints to humans.',
+    'Koalas have large noses that are coloured pink or black.',
+    'Outside of breeding seasons, koalas are quiet animals.',
+    'A baby koala is called a ‘joey’.',
+    'Joeys live in their mother’s pouch for around six months and remain with them for another six months or so afterwards.',
+    'Koalas cannot be kept legally as pets.',
+    ]
+
 SLOTH_FACTS = [
     'Sloths are a medium-sized mammal. There are two types of sloth the two-toed sloth and the three-toed sloth, they are classified into six different species.',
     'All sloths actually have three toes, but the two-toed sloth has only two fingers.',
@@ -120,7 +166,7 @@ def authenticate():
 def botengine(animal, reddit):
     time.sleep(10)
     print("Checking 500 comments for " + animal + "...\n")
-    for comment in reddit.subreddit('all').comments(limit = 500):
+    for comment in reddit.subreddit('all-gameofthrones-asoiaf').comments(limit = 500):
         match = re.findall(animal, comment.body)
 
         if match:
@@ -143,6 +189,12 @@ def botengine(animal, reddit):
                         comment.reply(random.choice(WHALE_FACTS))
                     elif animal == 'sloth':
                         comment.reply(random.choice(SLOTH_FACTS))
+                    elif animal == 'koala':
+                        comment.reply(random.choice(KOALA_FACTS))
+                    elif animal == 'turtle':
+                        comment.reply(random.choice(TURTLE_FACTS))
+                    elif animal == ' owl':
+                        comment.reply(random.choice(OWL_FACTS))
                     alert.play()
 
                     file_obj_r.close()
@@ -155,9 +207,12 @@ def botengine(animal, reddit):
                 print('Already commented on this!\n')
 
 def animalfactsbot(reddit):
+    botengine(' owl', reddit)
+    botengine('turtle', reddit)
+    botengine('koala', reddit)
     botengine('sloth', reddit)
     botengine('dolphin', reddit)
-    # botengine('horse', reddit)
+    botengine('horse', reddit)
     botengine('scorpion', reddit)
     botengine('snake', reddit)
     botengine('whale', reddit)
