@@ -44,6 +44,7 @@ def botengine(animal, reddit, facts):
 
 def animalfactsbot(reddit):
     # botengine(' owl', reddit)
+    botengine('octopus', reddit, OCTOPUS_FACTS)
     botengine('pig', reddit, PIG_FACTS)
     botengine('tiger', reddit, TIGER_FACTS)
     botengine('frog', reddit, FROG_FACTS)
@@ -284,7 +285,7 @@ WOLF_FACTS = [
     'A wolf can run at a speed of 40 miles per hour during a chase. Wolves have long legs and spend most of their time trotting at a speed of 7-10 miles per hour. They can keep up a reasonable pace for hours and have been known to cover distances of 55 miles in one night.'
     ]
 
-PIG_FACTS [
+PIG_FACTS = [
     'Pigs are intelligent animals.',
     'Like humans, pigs are omnivores, meaning they eat both plants and other animals.',
     'A pig’s snout is an important tool for finding food in the ground and sensing the world around them.',
@@ -297,6 +298,23 @@ PIG_FACTS [
     'Feral pigs that have been introduced into new areas can be a threat to the local ecosystem.',
     'Pigs can pass on a variety of diseases to humans.',
     'Relative to their body size, pigs have small lungs.'
+    ]
+
+OCTOPUS_FACTS = [
+    'There are around 300 species of octopus, usually located in tropical and temperate ocean waters. They are divided into finned deep-sea varieties that live on the ocean floor and finless, shallow water varieties found around coral reefs.',
+    'Octopuses have two eyes in a globe-shaped head (mantle) off which protrude eight long limbs called tentacles that have two rows of sucker senses.',
+    'Octopuses can squeeze into tight spaces as they are invertebrates which means they have no skeleton, (some species have a protective casing in their mantles).',
+    'An octopus has a hard beak, like a parrot beak, which they use to break into and eat their pray such as crabs and shellfish.',
+    'Octopuses have three hearts.',
+    'The largest octopus is believed to be the giant Pacific octopus, Enteroctopus dofleini which weigh about 15 kg (33 lb), and has an arm span up to 4.3 m (14 ft).',
+    'Octopuses are believed to be highly intelligent compared to other invertebrates.',
+    "An octopus's main defence against predators such as sharks is to hide and camouflage itself by using certain skin cells to change its color. This can also be used to talk with or warn other octopuses.",
+    'Another defence is to make a fast escape. Octopuses can eject a thick, blackish ink in a large cloud to distract the predator while the octopus uses a siphon jet propulsion system to quickly swim away headfirst, with arms trailing behind.',
+    'A last ditch defence is for the octopus to shed a tentacle similar to how a gecko or lizard can discard a tale. An octopus is able to regenerate a lost tentacle.',
+    'Octopuses have very good eyesight and an excellent sense of touch.',
+    'A female octopus can lay on average about 200,000 eggs, however, fending for themselves only a handful of the hatchlings will survive to adulthood.',
+    'Octopuses usually live for 6 - 18 months. Males only live a few months after mating, and females die of starvation shortly after their protected eggs hatch.',
+    'Humans eat octopus in many cultures and it is also a popular fish bait.'
     ]
 
 def main():
