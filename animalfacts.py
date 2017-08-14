@@ -10,6 +10,26 @@ mixer.init()
 alert=mixer.Sound('bird.wav')
 history = 'commented.txt'
 
+HORSE_FACTS = [
+    'Horses can sleep both lying down and standing up.',
+    'Horses can run shortly after birth.',
+    'Domestic horses have a lifespan of around 25 years.',
+    'A 19th century horse named ‘Old Billy’ is said to have lived 62 years.',
+    'Horses have around 205 bones in their skeleton.',
+    'Horses have been domesticated for over 5000 years.',
+    'Horses are herbivores (plant eaters).',
+    'Horses have bigger eyes than any other mammal that lives on land.',
+    'Because horse’s eyes are on the side of their head they are capable of seeing nearly 360 degrees at one time.',
+    'Horses gallop at around 44 kph (27 mph).',
+    'The fastest recorded sprinting speed of a horse was 88 kph (55 mph).',
+    'Estimates suggest that there are around 60 million horses in the world.',
+    'Scientists believe that horses have evolved over the past 50 million years from much smaller creatures.',
+    'A male horse is called a stallion.',
+    'A female horse is called a mare.',
+    'A young male horse is called a colt.',
+    'A young female horse is called a filly.'
+    ]
+
 SNAKE_FACTS = [
     'Snakes are carnivores',
     'Snakes don’t have eyelids.',
@@ -71,14 +91,16 @@ def botengine(animal, reddit):
                         comment.reply(random.choice(SNAKE_FACTS))
                     if animal == 'scorpion':
                         comment.reply(random.choice(SCORPION_FACTS))
+                    if animal == 'horse':
+                        comment.reply(random.choice(HORSE_FACTS))
                     alert.play()
 
                     file_obj_r.close()
                     file_obj_w = open(history,'a+')
                     file_obj_w.write(comment.id + '\n')
                     file_obj_w.close()
-                    print('Waiting 10 minute before commenting again')
-                    time.sleep(600)
+                    print('Waiting 1 minute before commenting again')
+                    time.sleep(60)
             else:
                 print('     Already commented on this!\n')
 
@@ -86,8 +108,7 @@ def botengine(animal, reddit):
 
 def animalfactsbot(reddit):
 
-
-
+    botengine('horse', reddit)
     botengine('snake', reddit)
     botengine('scorpion', reddit)
     print('Waiting 30 seconds before pulling more comments...\n')
