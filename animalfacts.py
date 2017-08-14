@@ -5,7 +5,7 @@ import time
 from pygame import mixer
 # from '/' import lists
 
-BLACKLIST = {'asoiaf'}
+BLACKLIST = {'asoiaf', 'gameofthrones'}
 
 mixer.init()
 alert=mixer.Sound('bird.wav')
@@ -157,13 +157,43 @@ WHALE_FACTS = [
     'Whales support many different types of life. Several creatures, such as barnacles and sea lice, attach themselves to the skin of whales and live there.'
 ]
 
+GIRAFFE_FACTS = [
+    'A male giraffe can weigh as much as a pick up truck! That’s about 1400 kilograms.',
+    'Although a giraffe’s neck is 1.5 – 1.8 metres, it contains the same number of vertebrae at a human neck.',
+    "A giraffe's habitat is usually found in African savannas, grasslands or open woodlands.",
+    'The hair that makes up a giraffes tail is about 10 times thicker than the average strand of human hair.',
+    'The distinctive spots that cover a giraffe’s fur act as a good camouflage to protect the giraffe from predators. When the giraffe stands in front of trees and bushes the light and dark colouring of its fur blends in with the shadows and sunlight.',
+    'It is possible to identify the sex of the giraffe from the horns on its head. Both males and females have horns but the females are smaller and covered with hair at the top. Male giraffes may have up to 3 additional horns.',
+    'Giraffes are ruminants. This means that they have more than one stomach. In fact, giraffes have four stomachs, the extra stomachs assisting with digesting food.',
+    'Drinking is one of the most dangerous times for a giraffe. While it is getting a drink it cannot keep a look out for predators and is vulnerable to attack.',
+    'Male giraffes sometimes fight with their necks over female giraffes. This is called “necking”. The two giraffes stand side by side and one giraffe swings his head and neck, hitting his head against the other giraffe. Sometimes one giraffe is hit to the ground during a combat.',
+    'A female giraffe gives birth while standing up. The calf drops approximately 6 feet to the ground, but it is not hurt from the fall.',
+    'Giraffes have bluish-purple tongues which are tough and covered in bristly hair to help them with eating the thorny Acacia trees.',
+    ]
+
+JELLYFISH_FACTS = [
+    'Jellyfish live in the sea and are found in all oceans.',
+    'Some jellyfish live in fresh water.',
+    'Jellyfish look a little like umbrellas.',
+    'Jellyfish can be large and brightly colored.',
+    'They can often be transparent (see-through) or translucent (semi-translucent).',
+    'Some can be very hard to see, nearly invisible to the human eye.',
+    'Although the word is mentioned in their name, jellyfish are not fish.',
+    'A group of jellyfish is called a ‘bloom’, ‘swarm’ or ‘smack’.',
+    'Large blooms can feature over 100000 jellyfish.',
+    'Jellyfish don’t have brains.',
+    'Jellyfish use their tentacles to sting. Most are harmless to humans but stings from some species, such as the box jellyfish, can be very painful and sometimes kill.',
+    'Box jellyfish are almost transparent.',
+    'Jellyfish eat plankton. Some sea turtles eat jellyfish.'
+    ]
+
 def authenticate():
     print('Authenticating...\n')
     reddit = praw.Reddit('animal-facts-bot', user_agent = '/u/AnimalFactsBot')
     print('Authenticated as {}\n'.format(reddit.user.me()))
     return reddit
 
-def botengine(animal, reddit):
+def botengine(animal, reddit, facts):
     time.sleep(10)
     print("Checking 500 comments for " + animal + "...\n")
     for comment in reddit.subreddit('all-gameofthrones-asoiaf').comments(limit = 500):
@@ -177,26 +207,8 @@ def botengine(animal, reddit):
                     print('     Skipping my own comment...\n')
                 else:
                     print('     Found new comment by ' + comment.author.name + '\n')
-                    if animal == 'snake':
-                        comment.reply(random.choice(SNAKE_FACTS))
-                    elif animal == 'scorpion':
-                        comment.reply(random.choice(SCORPION_FACTS))
-                    elif animal == 'horse':
-                        comment.reply(random.choice(HORSE_FACTS))
-                    elif animal == 'dolphin':
-                        comment.reply(random.choice(DOLPHIN_FACTS))
-                    elif animal == 'whale':
-                        comment.reply(random.choice(WHALE_FACTS))
-                    elif animal == 'sloth':
-                        comment.reply(random.choice(SLOTH_FACTS))
-                    elif animal == 'koala':
-                        comment.reply(random.choice(KOALA_FACTS))
-                    elif animal == 'turtle':
-                        comment.reply(random.choice(TURTLE_FACTS))
-                    elif animal == ' owl':
-                        comment.reply(random.choice(OWL_FACTS))
+                    comment.reply(random.choice(facts))
                     alert.play()
-
                     file_obj_r.close()
                     file_obj_w = open(history,'a+')
                     file_obj_w.write(comment.id + '\n')
@@ -207,15 +219,17 @@ def botengine(animal, reddit):
                 print('Already commented on this!\n')
 
 def animalfactsbot(reddit):
-    botengine(' owl', reddit)
-    botengine('turtle', reddit)
-    botengine('koala', reddit)
-    botengine('sloth', reddit)
-    botengine('dolphin', reddit)
-    botengine('horse', reddit)
-    botengine('scorpion', reddit)
-    botengine('snake', reddit)
-    botengine('whale', reddit)
+    # botengine(' owl', reddit)
+    botengine('giraffe', reddit, GIRAFFE_FACTS)
+    botengine('turtle', reddit, TURTLE_FACTS)
+    botengine('jellyfish', reddit, JELLYFISH_FACTS)
+    botengine('koala', reddit, KOALA_FACTS)
+    botengine('sloth', reddit, SLOTH_FACTS)
+    botengine('dolphin', reddit, DOLPHIN_FACTS)
+    botengine('horse', reddit, HORSE_FACTS)
+    botengine('scorpion', reddit, SCORPION_FACTS)
+    botengine('snake', reddit, SNAKE_FACTS)
+    botengine('whale', reddit, WHALE_FACTS)
 
 def main():
     reddit = authenticate()
