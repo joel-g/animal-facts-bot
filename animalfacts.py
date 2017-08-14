@@ -5,11 +5,59 @@ import time
 from pygame import mixer
 # from '/' import lists
 
-BLACKLIST = {'asoiaf', 'gameofthrones'}
+BLACKLIST = {'asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin'}
 
 mixer.init()
 alert=mixer.Sound('bird.wav')
 history = 'commented.txt'
+
+def authenticate():
+    print('Authenticating...\n')
+    reddit = praw.Reddit('animal-facts-bot', user_agent = '/u/AnimalFactsBot')
+    print('Authenticated as {}\n'.format(reddit.user.me()))
+    return reddit
+
+def botengine(animal, reddit, facts):
+    time.sleep(10)
+    print("Checking 500 comments for " + animal + "...\n")
+    for comment in reddit.subreddit('all-gameofthrones-asoiaf-exmorman-suicidewatch-politics-whowouldwin').comments(limit = 500):
+        match = re.findall(animal, comment.body)
+
+        if match:
+            print(animal + " found in comment with comment ID: " + comment.id)
+            file_obj_r = open(history,'r')
+            if comment.id not in file_obj_r.read().splitlines():
+                if comment.author.name == reddit.user.me():
+                    print('     Skipping my own comment...\n')
+                else:
+                    print('     Found new comment by ' + comment.author.name + '\n')
+                    comment.reply(random.choice(facts))
+                    alert.play()
+                    file_obj_r.close()
+                    file_obj_w = open(history,'a+')
+                    file_obj_w.write(comment.id + '\n')
+                    file_obj_w.close()
+                    print('Waiting 1 minute before commenting again\n')
+                    time.sleep(60)
+            else:
+                print('Already commented on this!\n')
+
+def animalfactsbot(reddit):
+    # botengine(' owl', reddit)
+    botengine('tiger', reddit, TIGER_FACTS)
+    botengine('frog', reddit, FROG_FACTS)
+    botengine('giraffe', reddit, GIRAFFE_FACTS)
+    botengine('turtle', reddit, TURTLE_FACTS)
+    botengine('jellyfish', reddit, JELLYFISH_FACTS)
+    botengine('koala', reddit, KOALA_FACTS)
+    botengine('sloth', reddit, SLOTH_FACTS)
+    botengine('dolphin', reddit, DOLPHIN_FACTS)
+    botengine('horse', reddit, HORSE_FACTS)
+    botengine('scorpion', reddit, SCORPION_FACTS)
+    botengine('snake', reddit, SNAKE_FACTS)
+    botengine('whale', reddit, WHALE_FACTS)
+
+
 
 OWL_FACTS = [
     'There are around 200 different owl species.',
@@ -159,7 +207,7 @@ WHALE_FACTS = [
 
 GIRAFFE_FACTS = [
     'A male giraffe can weigh as much as a pick up truck! That’s about 1400 kilograms.',
-    'Although a giraffe’s neck is 1.5 – 1.8 metres, it contains the same number of vertebrae at a human neck.',
+    'Although a giraffe’s neck is 1.5 – 1.8 meters, it contains the same number of vertebrae at a human neck.',
     "A giraffe's habitat is usually found in African savannas, grasslands or open woodlands.",
     'The hair that makes up a giraffes tail is about 10 times thicker than the average strand of human hair.',
     'The distinctive spots that cover a giraffe’s fur act as a good camouflage to protect the giraffe from predators. When the giraffe stands in front of trees and bushes the light and dark colouring of its fur blends in with the shadows and sunlight.',
@@ -180,56 +228,45 @@ JELLYFISH_FACTS = [
     'Some can be very hard to see, nearly invisible to the human eye.',
     'Although the word is mentioned in their name, jellyfish are not fish.',
     'A group of jellyfish is called a ‘bloom’, ‘swarm’ or ‘smack’.',
-    'Large blooms can feature over 100000 jellyfish.',
+    'Large blooms can feature over 100,000 jellyfish.',
     'Jellyfish don’t have brains.',
     'Jellyfish use their tentacles to sting. Most are harmless to humans but stings from some species, such as the box jellyfish, can be very painful and sometimes kill.',
     'Box jellyfish are almost transparent.',
     'Jellyfish eat plankton. Some sea turtles eat jellyfish.'
     ]
 
-def authenticate():
-    print('Authenticating...\n')
-    reddit = praw.Reddit('animal-facts-bot', user_agent = '/u/AnimalFactsBot')
-    print('Authenticated as {}\n'.format(reddit.user.me()))
-    return reddit
+TIGER_FACTS = [
+    'The tiger is the biggest species of the cat family.',
+    'Tigers can reach a length of up to 3.3 meters (11 feet) and weigh as much as 300 kilograms (660 pounds).',
+    'Subspecies of the tiger include the Sumatran Tiger, Siberian Tiger, Bengal Tiger, South China Tiger, Malayan Tiger and Indochinese Tiger.',
+    'Many subspecies of the tiger are either endangered or already extinct. Humans are the primary cause of this through hunting and the destruction of habitats.',
+    'Around half of tiger cubs don’t live beyond two years of age.',
+    'Tiger cubs leave their mother when they are around 2 years of age.',
+    'A group of tigers is known as an ‘ambush’ or ‘streak’.',
+    'Tigers are good swimmers and can swim up to 6 kilometers.',
+    'Rare white tigers carry a gene that is only present in around 1 in every 10000 tigers.',
+    'Tigers usually hunt alone at night time.',
+    'Tigers have been known to reach speeds up to 65 kph (40 mph).',
+    "Less than 10% of hunts end successfully for tigers",
+    'Tigers can easily jump over 5 meters in length.',
+    'Various tiger subspecies are the national animals of Bangladesh, India, North Korea, South Korea and Malaysia.',
+    'There are more tigers held privately as pets than there are in the wild.',
+    'Tigers that breed with lions give birth to hybrids known as tigons and ligers.'
+    ]
 
-def botengine(animal, reddit, facts):
-    time.sleep(10)
-    print("Checking 500 comments for " + animal + "...\n")
-    for comment in reddit.subreddit('all-gameofthrones-asoiaf').comments(limit = 500):
-        match = re.findall(animal, comment.body)
-
-        if match:
-            print(animal + " found in comment with comment ID: " + comment.id)
-            file_obj_r = open(history,'r')
-            if comment.id not in file_obj_r.read().splitlines():
-                if comment.author.name == reddit.user.me():
-                    print('     Skipping my own comment...\n')
-                else:
-                    print('     Found new comment by ' + comment.author.name + '\n')
-                    comment.reply(random.choice(facts))
-                    alert.play()
-                    file_obj_r.close()
-                    file_obj_w = open(history,'a+')
-                    file_obj_w.write(comment.id + '\n')
-                    file_obj_w.close()
-                    print('Waiting 1 minute before commenting again')
-                    time.sleep(60)
-            else:
-                print('Already commented on this!\n')
-
-def animalfactsbot(reddit):
-    # botengine(' owl', reddit)
-    botengine('giraffe', reddit, GIRAFFE_FACTS)
-    botengine('turtle', reddit, TURTLE_FACTS)
-    botengine('jellyfish', reddit, JELLYFISH_FACTS)
-    botengine('koala', reddit, KOALA_FACTS)
-    botengine('sloth', reddit, SLOTH_FACTS)
-    botengine('dolphin', reddit, DOLPHIN_FACTS)
-    botengine('horse', reddit, HORSE_FACTS)
-    botengine('scorpion', reddit, SCORPION_FACTS)
-    botengine('snake', reddit, SNAKE_FACTS)
-    botengine('whale', reddit, WHALE_FACTS)
+FROG_FACTS = [
+    'A frog is an amphibian. They lay their eggs in water. The eggs hatch into a tadpole which lives in water until it metamorphoses into an adult frog.',
+    'Tadpoles look more like fish than frogs, they have long finned tails and breathe through gills.',
+    'An amphibian can live both on land and in water.',
+    'Although frogs live on land their habitat must be near swamps, ponds or in a damp place. This is because they will die if their skin dries out.',
+    'Instead of drinking water, frogs soak it into their body through their skin.',
+    'Frogs breathe through their nostrils while also absorbing about half the air they need through their skin.,',
+    'Frogs use their sticky, muscular tongue to catch and swallow food. Unlike humans, their tongue is not attached to the back of its mouth. Instead it is attached to the front, enabling the frog to stick its tongue out much further.',
+    'The common pond frog is ready to breed when it is only three years old.',
+    'Frogs in the wild face many dangers and are lucky to survive several years. In captivity however, frogs can live for much longer.',
+    'Frogs can see forwards, sideways and upwards all at the same time. They never close their eyes, even when they sleep.',
+    "Remarkably, frogs actually use their eyes to help them swallow food. When the frog blinks, its eyeballs are pushed downwards creating a bulge in the roof of its mouth. This bulge squeezes the food inside the frog's mouth down the back of its throat."
+    ]
 
 def main():
     reddit = authenticate()
