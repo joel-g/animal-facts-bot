@@ -3,8 +3,14 @@ import praw
 import random
 import time
 from pygame import mixer
+# from '/' import lists
 
-SNAKES_FACTS = [
+
+mixer.init()
+alert=mixer.Sound('bird.wav')
+history = 'commented.txt'
+
+SNAKE_FACTS = [
     'Snakes are carnivores',
     'Snakes don’t have eyelids.',
     'Snakes can’t bite food so have to swallow it whole.',
@@ -29,30 +35,15 @@ SCORPION_FACTS = [
     'Scorpions have eight legs, a pair of pincers (pedipalps) and a narrow segmented tail that often curves over their back, on the end of which is a venomous stinger.',
     'The scorpion uses their pincers to quickly grab prey and then whip their poisonous tail stinger over to kill or paralyze the prey. The tail is also used as a useful defence against predators.',
     'Scorpion species range in size from 0.09 cm to 20 cm.',
-    'Scorpions can be found on all continents except for Antarctica.'
+    'Scorpions can be found on all continents except for Antarctica.',
+    'There are over 1750 known species of scorpion. While humans generally fear the scorpion and its poisonous sting only about 25 of the species have venom capable of killing a human.',
+    'Under UV light such as a black light scorpions are known to glow due to the presence of fluorescent chemicals in their exoskeleton.',
+    'The scorpion is nocturnal, often hiding during the day under rocks and in holes in the ground before emerging at night to feed.',
+    'Scorpions can eat a massive amount of food in one meal. Their large food storage organs, together with a low metabolism rate and an inactive lifestyle means that if necessary they can survive 6-12 months without eating again.',
+    'Areas of China have a traditional dish of fried scorpion, and scorpion wine features in Chinese medicine.',
+    'The scorpion is one of the 12 signs of the Zodiac, with the Scorpio constellation identified in the stars.',
+    'Scorpions moult, they shed their exoskeleton up to 7 times as they grow to full size. They become vulnerable to predators each time until their new protective exoskeleton hardens.'
     ]
-
-# There are over 1750 known species of scorpion. While humans generally fear the scorpion and its poisonous sting only about 25 of the species have venom capable of killing a human.
-#
-# Under UV light such as a black light scorpions are known to glow due to the presence of fluorescent chemicals in their exoskeleton.
-#
-# The scorpion is nocturnal, often hiding during the day under rocks and in holes in the ground before emerging at night to feed.
-#
-# Scorpions can eat a massive amount of food in one meal. Their large food storage organs, together with a low metabolism rate and an inactive lifestyle means that if necessary they can survive 6-12 months without eating again.
-#
-# Areas of China have a traditional dish of fried scorpion, and scorpion wine features in Chinese medicine.
-#
-# The scorpion is one of the 12 signs of the Zodiac, with the Scorpio constellation identified in the stars.
-#
-# Scorpions moult, they shed their exoskeleton up to 7 times as they grow to full size. They become vulnerable to predators each time until their new protective exoskeleton hardens.
-
-
-mixer.init()
-alert=mixer.Sound('bird.wav')
-history = 'commented.txt'
-
-# def animal_check(animal)
-#
 
 
 def authenticate():
@@ -62,56 +53,43 @@ def authenticate():
     print('Authenticated as {}\n'.format(reddit.user.me()))
     return reddit
 
+def botengine(animal, reddit):
 
-def animalfactsbot(reddit):
+    print("Getting 2000 comments...\n")
+    for comment in reddit.subreddit('all').comments(limit = 2000):
+        match = re.findall(animal, comment.body)
 
-    print("Getting 500 comments...\n")
-    for comment in reddit.subreddit('all').comments(limit = 500):
-        snake = re.findall("snake", comment.body)
-        scorpion = re.findall("scorpion", comment.body)
-
-        if snake:
-            print("'Snake' found in comment with comment ID: " + comment.id)
+        if match:
+            print(animal + " found in comment with comment ID: " + comment.id)
             file_obj_r = open(history,'r')
             if comment.id not in file_obj_r.read().splitlines():
                 if comment.author.name == reddit.user.me():
                     print('     Skipping my own comment...\n')
                 else:
                     print('     Found new comment by ' + comment.author.name + '\n')
-                    comment.reply(random.choice(SNAKE_FACTS))
-                    # alert.play()
+                    if animal == 'snake':
+                        comment.reply(random.choice(SNAKE_FACTS))
+                    if animal == 'scorpion':
+                        comment.reply(random.choice(SCORPION_FACTS))
+                    alert.play()
 
                     file_obj_r.close()
                     file_obj_w = open(history,'a+')
                     file_obj_w.write(comment.id + '\n')
                     file_obj_w.close()
-                    print('Waiting 1 minute before commenting again')
-                    time.sleep(60)
-            else:
-                print('     Already commented on this!\n')
-
-        if scorpion:
-            print("'Scorpion' found in comment with comment ID: " + comment.id)
-            file_obj_r = open(history,'r')
-            if comment.id not in file_obj_r.read().splitlines():
-                if comment.author.name == reddit.user.me():
-                    print('     Skipping my own comment...\n')
-                else:
-                    print('     Found new comment by ' + comment.author.name + '\n')
-                    comment.reply(random.choice(SCORPION_FACTS))
-                    # alert.play()
-
-                    file_obj_r.close()
-                    file_obj_w = open(history,'a+')
-                    file_obj_w.write(comment.id + '\n')
-                    file_obj_w.close()
-                    print('Waiting 1 minute before commenting again')
+                    print('Waiting 10 minute before commenting again')
                     time.sleep(600)
             else:
                 print('     Already commented on this!\n')
 
 
 
+def animalfactsbot(reddit):
+
+
+
+    botengine('snake', reddit)
+    botengine('scorpion', reddit)
     print('Waiting 30 seconds before pulling more comments...\n')
     time.sleep(30)
 
