@@ -44,6 +44,7 @@ def botengine(animal, reddit, facts):
 
 def animalfactsbot(reddit):
     # botengine(' owl', reddit)
+    botengine('pig', reddit, PIG_FACTS)
     botengine('tiger', reddit, TIGER_FACTS)
     botengine('frog', reddit, FROG_FACTS)
     botengine('giraffe', reddit, GIRAFFE_FACTS)
@@ -283,7 +284,20 @@ WOLF_FACTS = [
     'A wolf can run at a speed of 40 miles per hour during a chase. Wolves have long legs and spend most of their time trotting at a speed of 7-10 miles per hour. They can keep up a reasonable pace for hours and have been known to cover distances of 55 miles in one night.'
     ]
 
-
+PIG_FACTS [
+    'Pigs are intelligent animals.',
+    'Like humans, pigs are omnivores, meaning they eat both plants and other animals.',
+    'A pig’s snout is an important tool for finding food in the ground and sensing the world around them.',
+    'Pigs have an excellent sense of smell.',
+    'There are around 2 billion pigs in the world.',
+    'Humans farm pigs for meat such as pork, bacon and ham.',
+    'Some people like to keep pigs as pets.',
+    'Wild pigs (boar) are often hunted in the wild.',
+    'In some areas of the world, wild boars are the main source of food for tigers.',
+    'Feral pigs that have been introduced into new areas can be a threat to the local ecosystem.',
+    'Pigs can pass on a variety of diseases to humans.',
+    'Relative to their body size, pigs have small lungs.'
+    ]
 
 def main():
     reddit = authenticate()

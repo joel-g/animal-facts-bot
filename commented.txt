@@ -73,3 +73,10 @@ dlmcsma
 dlmctk9
 dlmcx6g
 dlmd530
+dlmdble
+dlmdfoc
+dlmdh0x
+dlmdh0k
+dlmdova
+dlmdsiy
+dlme06h
