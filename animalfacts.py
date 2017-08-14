@@ -17,11 +17,11 @@ def authenticate():
     print('Authenticated as {}\n'.format(reddit.user.me()))
     return reddit
 
-def botengine(animal, reddit, facts):
+def botengine(animal, regex, reddit, facts):
     time.sleep(10)
     print("Checking 500 comments for " + animal + "...\n")
     for comment in reddit.subreddit('all-gameofthrones-asoiaf-exmorman-suicidewatch-politics-whowouldwin').comments(limit = 500):
-        match = re.findall(animal, comment.body)
+        match = re.findall(regex, comment.body)
 
         if match:
             print(animal + " found in comment with comment ID: " + comment.id)
@@ -43,22 +43,23 @@ def botengine(animal, reddit, facts):
                 print('Already commented on this!\n')
 
 def animalfactsbot(reddit):
-    # botengine(' owl', reddit)
-    botengine('octopus', reddit, OCTOPUS_FACTS)
-    botengine('pig', reddit, PIG_FACTS)
-    botengine('tiger', reddit, TIGER_FACTS)
-    botengine('frog', reddit, FROG_FACTS)
-    botengine('giraffe', reddit, GIRAFFE_FACTS)
-    botengine('wolf', reddit, WOLF_FACTS)
-    botengine('turtle', reddit, TURTLE_FACTS)
-    botengine('jellyfish', reddit, JELLYFISH_FACTS)
-    botengine('koala', reddit, KOALA_FACTS)
-    botengine('sloth', reddit, SLOTH_FACTS)
-    botengine('dolphin', reddit, DOLPHIN_FACTS)
-    botengine('horse', reddit, HORSE_FACTS)
-    botengine('scorpion', reddit, SCORPION_FACTS)
-    botengine('snake', reddit, SNAKE_FACTS)
-    botengine('whale', reddit, WHALE_FACTS)
+    botengine('owl', '\sowls?\s', reddit, OWL_FACTS)
+    botengine('horse', '\shorses?\s', reddit, HORSE_FACTS)
+    botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS)
+    botengine('octopus', '\soctopus?\s', reddit, OCTOPUS_FACTS)
+    botengine('pig', '\spig?\s', reddit, PIG_FACTS)
+    botengine('tiger', '\stiger?\s', reddit, TIGER_FACTS)
+    botengine('frog', '\sfrog?\s', reddit, FROG_FACTS)
+    botengine('giraffe', '\sgiraffe?\s', reddit, GIRAFFE_FACTS)
+    botengine('wolf', '\swolf?\s', reddit, WOLF_FACTS)
+    botengine('turtle', '\sturtle?\s', reddit, TURTLE_FACTS)
+    botengine('jellyfish', '\sjellyfish?\s', reddit, JELLYFISH_FACTS)
+    botengine('koala', '\skoala?\s', reddit, KOALA_FACTS)
+    botengine('sloth', '\ssloth?\s', reddit, SLOTH_FACTS)
+    botengine('dolphin', '\sdolphin?\s', reddit, DOLPHIN_FACTS)
+    botengine('scorpion', '\sscorpion?\s', reddit, SCORPION_FACTS)
+    botengine('snake', '\ssnake?\s', reddit, SNAKE_FACTS)
+    botengine('whale', '\swhale?\s', reddit, WHALE_FACTS)
 
 
 
@@ -315,6 +316,28 @@ OCTOPUS_FACTS = [
     'A female octopus can lay on average about 200,000 eggs, however, fending for themselves only a handful of the hatchlings will survive to adulthood.',
     'Octopuses usually live for 6 - 18 months. Males only live a few months after mating, and females die of starvation shortly after their protected eggs hatch.',
     'Humans eat octopus in many cultures and it is also a popular fish bait.'
+    ]
+
+PENGUIN_FACTS = [
+    'Penguins are flightless birds.',
+    'While other birds have wings for flying, penguins have adapted flippers to help them swim in the water.',
+    'Most penguins live in the Southern Hemisphere.',
+    'The Galapagos Penguin is the only penguin specie that ventures north of the equator in the wild.',
+    'Large penguin populations can be found in countries such as New Zealand, Australia, Chile, Argentina and South Africa.',
+    'No penguins live at the North Pole.',
+    'Penguins eat a range of fish and other sealife that they catch underwater.',
+    'Penguins can drink sea water.',
+    'Penguins spend around half their time in water and the other half on land.',
+    'The Emperor Penguin is the tallest of all penguin species, reaching as tall as 120 cm (47 in) in height.',
+    'Emperor Penguins can stay underwater for around 20 minutes at a time.',
+    'Emperor Penguins often huddle together to keep warm in the cold temperatures of Antarctica.',
+    'King Penguins are the second largest penguin specie. They have four layers of feathers to help keep them warm on the cold subantarctic islands where they breed.',
+    'Chinstrap Penguins get their name from the thin black band under their head. At times it looks like they’re wearing a black helmet, which might be useful as they’re considered the most aggressive type of penguin.',
+    'Crested penguins have yellow crests, as well as red bills and eyes.',
+    'Yellow eyed penguins (or Hoiho) are endangered penguins native to New Zealand. Their population is believed to be around 4000.',
+    'Little Blue Penguins are the smallest type of penguin, averaging around 33 cm (13 in) in height.',
+    'Penguin’s black and white plumage serves as camouflage while swimming. The black plumage on their back is hard to see from above, while the white plumage on their front looks like the sun reflecting off the surface of the water when seen from below.',
+    'Penguins in Antarctica have no land based predators.'
     ]
 
 def main():
