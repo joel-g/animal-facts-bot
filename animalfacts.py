@@ -67,16 +67,15 @@ SCORPION_FACTS = [
 
 
 def authenticate():
-
     print('Authenticating...\n')
     reddit = praw.Reddit('animal-facts-bot', user_agent = '/u/AnimalFactsBot')
     print('Authenticated as {}\n'.format(reddit.user.me()))
     return reddit
 
 def botengine(animal, reddit):
-
-    print("Getting 2000 comments...\n")
-    for comment in reddit.subreddit('all').comments(limit = 2000):
+    time.sleep(10)
+    print("Checking 500 comments for " + animal + "...\n")
+    for comment in reddit.subreddit('all').comments(limit = 500):
         match = re.findall(animal, comment.body)
 
         if match:
@@ -102,24 +101,17 @@ def botengine(animal, reddit):
                     print('Waiting 1 minute before commenting again')
                     time.sleep(60)
             else:
-                print('     Already commented on this!\n')
-
-
+                print('Already commented on this!\n')
 
 def animalfactsbot(reddit):
-
     botengine('horse', reddit)
     botengine('snake', reddit)
     botengine('scorpion', reddit)
-    print('Waiting 30 seconds before pulling more comments...\n')
-    time.sleep(30)
-
 
 def main():
     reddit = authenticate()
     while True:
         animalfactsbot(reddit)
-
 
 if __name__ == '__main__':
     main()
