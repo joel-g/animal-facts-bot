@@ -11,6 +11,24 @@ mixer.init()
 alert=mixer.Sound('bird.wav')
 history = 'commented.txt'
 
+SLOTH_FACTS = [
+    'Sloths are a medium-sized mammal. There are two types of sloth the two-toed sloth and the three-toed sloth, they are classified into six different species.',
+    'All sloths actually have three toes, but the two-toed sloth has only two fingers.',
+    'Sloths are part of the order Pilosa so they are related to anteaters and armadillos.',
+    'Sloths are tree-dwelling animals, they are found in the jungles of Central and South America.',
+    "A sloth's body is usually 50 to 60 cm long. Skeletons of now extinct species of sloth suggest some varieties used to be as large as elephants.",
+    'Sloths mainly eat the tree buds, new shoots, fruit and leaves, of the Cecropia tree. Some two-toed sloths also eat insects, small reptiles, and birds.',
+    'Sloths have a four-part stomach that very slowly digests the tough leaves they eat, it can sometimes take up to a month for them to digest a meal. Digesting this diet means a sloth has very little energy left to move around making it one of the slowest moving animals in the world.',
+    'Sloths can move along the ground at just 2 m (6.5 ft) per minute! In the trees they are slightly quicker at 3 m (10 ft) per minute.',
+    'The slow-movement and unique thick fur of the sloth make it a great habitat for other creatures such as moths, beetles, cockroaches, fungi, and algae. In fact, this green colored algae provides a camouflage so sloths can avoid predators.',
+    'Sloths can extend their tongues 10 to 12 inches out of their mouths.',
+    'The sloth has very long, sharp, and strong claws that they use to hold on to tree branches. The claws are also their only natural defense against predators.',
+    'Sloths usually only leave the tree they live in to go to the toilet once a week on the ground. This is when they are most vulnerable to being attacked by their main predators such as jaguars, the harpy eagle and snakes.',
+    'Two-toed sloths are nocturnal, being most active at night. While three-toed sloths are diurnal which means they are most active during the day.',
+    'It used to be thought sloths slept for 15 to 20 hours a day. However, its now believed they only sleep around 10 hours a day.',
+    'In the wild, sloths live on average 10 - 16 years and in captivity over 30 years.',
+    ]
+
 HORSE_FACTS = [
     'Horses can sleep both lying down and standing up.',
     'Horses can run shortly after birth.',
@@ -123,6 +141,8 @@ def botengine(animal, reddit):
                         comment.reply(random.choice(DOLPHIN_FACTS))
                     elif animal == 'whale':
                         comment.reply(random.choice(WHALE_FACTS))
+                    elif animal == 'sloth':
+                        comment.reply(random.choice(SLOTH_FACTS))
                     alert.play()
 
                     file_obj_r.close()
@@ -135,6 +155,7 @@ def botengine(animal, reddit):
                 print('Already commented on this!\n')
 
 def animalfactsbot(reddit):
+    botengine('sloth', reddit)
     botengine('dolphin', reddit)
     # botengine('horse', reddit)
     botengine('scorpion', reddit)
