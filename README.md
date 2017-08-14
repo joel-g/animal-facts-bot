@@ -1,6 +1,8 @@
 # animal-facts-bot
 
-A Reddit bot that searches for comments on reddit that contain the name of the animal then replies to the comment with a fact about that animal.
+A Reddit bot that searches for comments on reddit that contain the name of the animal and then replies to the comment with a fact about that animal.
+
+You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comments/
 
 ### Current supported animals:
 * alligator
