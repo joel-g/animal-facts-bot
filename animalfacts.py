@@ -5,6 +5,7 @@ import time
 from pygame import mixer
 # from '/' import lists
 
+BLACKLIST = {'asoiaf'}
 
 mixer.init()
 alert=mixer.Sound('bird.wav')
@@ -17,7 +18,7 @@ HORSE_FACTS = [
     'A 19th century horse named ‘Old Billy’ is said to have lived 62 years.',
     'Horses have around 205 bones in their skeleton.',
     'Horses have been domesticated for over 5000 years.',
-    'Horses are herbivores (plant eaters).',
+    'Horses are herbivores.',
     'Horses have bigger eyes than any other mammal that lives on land.',
     'Because horse’s eyes are on the side of their head they are capable of seeing nearly 360 degrees at one time.',
     'Horses gallop at around 44 kph (27 mph).',
@@ -65,6 +66,32 @@ SCORPION_FACTS = [
     'Scorpions moult, they shed their exoskeleton up to 7 times as they grow to full size. They become vulnerable to predators each time until their new protective exoskeleton hardens.'
     ]
 
+DOLPHIN_FACTS = [
+    'Compared to other animals, dolphins are believed to be very intelligent.',
+    'Dolphins are carnivores.',
+    'The Killer Whale (also known as Orca) is actually a type of dolphin.',
+    'Bottlenose dolphins are the most common and well known type of dolphin.',
+    'Female dolphins are called cows, males are called bulls and young dolphins are called calves.',
+    'Dolphins live in schools or pods of up to 12 individuals.',
+    'Dolphins often display a playful attitude which makes them popular in human culture. They can be seen jumping out of the water, riding waves, play fighting and occasionally interacting with humans swimming in the water.',
+    'Dolphins use a blowhole on top of their heads to breathe.',
+    'Dolphins have excellent eyesight and hearing as well as the ability to use echolocation for finding the exact location of objects.',
+    'Dolphins communicate with each other by clicking, whistling and other sounds.',
+    'Some dolphin species face the threat of extinction, often directly as a result of human behavior. The Yangtze River Dolphin is an example of a dolphin species which may have recently become extinct.',
+    'Some fishing methods, such as the use of nets, kill a large number of dolphins every year.'
+    ]
+
+WHALE_FACTS = [
+    'Many whales are toothless. They use a plate of comb-like fibre called baleen to filter small crustaceans and other creatures from the water.',
+    'There are 79 to 84 different species of whale. They came in many different shapes and sizes!',
+    'A baby whale is called a calf. Whales form groups to look after calves and feed together. These groups are often made up of all female or all male whales.',
+    'Whales that are found in both Northern and Southern hemisphere never meet or breed together. Their migration is timed so that they are never in breeding areas at the same time.',
+    'The arched lower lip of a whale can often make it look like it is smiling! However, this isn’t a “real” smile as the blubber in the head of the whale prevents the muscles of the face from reaching the surface.',
+    'You can tell the age of a whale by looking at the wax plug in its ear. This plug in the ear has a pattern of layers when cut lengthwise that scientists can count to estimate the age of the whale.',
+    'Whales love to sing! They use this as a call to mates, a way to communicate and also just for fun! After a period of time they get bored of the same whale song and begin to sing a different tune.',
+    'Sometimes whales make navigation mistakes during migrations. Although they may have made the mistake days before, they don’t realise it until they becoming stranded.',
+    'Whales support many different types of life. Several creatures, such as barnacles and sea lice, attach themselves to the skin of whales and live there.'
+]
 
 def authenticate():
     print('Authenticating...\n')
@@ -88,10 +115,14 @@ def botengine(animal, reddit):
                     print('     Found new comment by ' + comment.author.name + '\n')
                     if animal == 'snake':
                         comment.reply(random.choice(SNAKE_FACTS))
-                    if animal == 'scorpion':
+                    elif animal == 'scorpion':
                         comment.reply(random.choice(SCORPION_FACTS))
-                    if animal == 'horse':
+                    elif animal == 'horse':
                         comment.reply(random.choice(HORSE_FACTS))
+                    elif animal == 'dolphin':
+                        comment.reply(random.choice(DOLPHIN_FACTS))
+                    elif animal == 'whale':
+                        comment.reply(random.choice(WHALE_FACTS))
                     alert.play()
 
                     file_obj_r.close()
@@ -104,9 +135,11 @@ def botengine(animal, reddit):
                 print('Already commented on this!\n')
 
 def animalfactsbot(reddit):
-    botengine('horse', reddit)
-    botengine('snake', reddit)
+    botengine('dolphin', reddit)
+    # botengine('horse', reddit)
     botengine('scorpion', reddit)
+    botengine('snake', reddit)
+    botengine('whale', reddit)
 
 def main():
     reddit = authenticate()
