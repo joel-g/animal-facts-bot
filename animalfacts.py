@@ -5,7 +5,7 @@ import time
 from pygame import mixer
 # from '/' import lists
 
-BLACKLIST = {'asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression'}
+BLACKLIST = ['asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes']
 
 mixer.init()
 alert=mixer.Sound('bird.wav')
@@ -18,9 +18,8 @@ def authenticate():
     return reddit
 
 def botengine(animal, regex, reddit, facts):
-    time.sleep(10)
     print("Checking 500 comments for " + animal + "...\n")
-    for comment in reddit.subreddit('all-gameofthrones-asoiaf-exmorman-suicidewatch-politics-whowouldwin').comments(limit = 500):
+    for comment in reddit.subreddit('all-gameofthrones-asoiaf-exmorman-suicidewatch-politics-whowouldwin-snakes').comments(limit = 500):
         match = re.findall(regex, comment.body)
 
         if match:
@@ -43,6 +42,8 @@ def botengine(animal, regex, reddit, facts):
                 print('Already commented on this!\n')
 
 def animalfactsbot(reddit):
+    botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS)
+    botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS)
     botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS)
     botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS)
@@ -63,6 +64,37 @@ def animalfactsbot(reddit):
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS)
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS)
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS)
+
+ALLIGATOR_FACTS = [
+    'Alligators are reptiles.',
+    'Alligators have been living on Earth for millions of years and are sometimes described as ‘living fossils’.',
+    'There are two different species of alligator, the American alligator and the Chinese alligator.',
+    'American alligators live in south-eastern areas of the United States such as Florida and Louisiana.',
+    'Chinese alligators are found in the Yangtze River but they are critically endangered and only a few remain in the wild.',
+    'Like other reptiles, alligators are cold-blooded.',
+    'Alligators can weigh over 450 kg (1000 lb).',
+    'Alligators have a powerful bite but the muscles that open the jaw are relatively weak. An adult human could hold the jaws of an alligator shut with their bare hands.',
+    'Alligators eat a range of different animals such as fish, birds, turtles and even deer.',
+    'Alligator eggs become male or female depending on the temperature, male in warmer temperatures and female in cooler temperatures.',
+    'Like crocodiles, alligators are part of the order ‘Crocodylia’.'
+    ]
+
+BADGER_FACTS = [
+    'Badgers are part of the family Mustelidae this is the same family as otters, ferret, polecats, weasels and wolverines.',
+    'There are 11 species of badger, grouped into 3 types, the Melinae (Eurasian badgers), Mellivorinae (Honey badger) and Taxideinae (American badger).',
+    'Badgers are found in North America, Ireland, Great Britain and most of Europe. There are species in Japan, China, Indonesia and Malaysia. The honey badger is found in sub-Saharan Africa, the Arabian Desert, Turkmenistan, and India.',
+    'Badgers are nocturnal mammals.',
+    'Badgers have stocky bodies with short legs that are suitable for digging. They digs burrows underground called a sett. Their sett are often a maze of tunnels and chambers for sleeping around 6 badgers, setts are kept very clean.',
+    'The badger has an elongated head with small ears and a distinctive black and white face, their body has greyish fur with black and white areas underneath.',
+    'Badgers can grow to nearly a meter in length. The European badger is larger than the American badger and the Honey badger.',
+    'Badgers on average weigh around 9 - 11 kg (20 - 24 lbs).',
+    'The badger can run up to 30 km/h (19 mph) for a short period of time.',
+    'A male badger is called a boar, the female is called a sow and the young are called cubs.',
+    'A group of badgers is called a cete, although they are often called clans. There are usually 2 - 15 badgers in a cete.',
+    'The honey badger is a carnivorous species that has the reputation of being the most fearless and vicious of all mammals.',
+    'Badgers were eaten in Britain during World War II and were once part of the Native American and settlers diets in the US. Russia still eats badger meat today.',
+    "Badgers have featured in lots of British literature over the years, such as Brian Jacques' Redwall series, 'Tommy Brock' in Beatrix Potter's The Tale of Mr. Tod, 'Bill Badger' in Mary Tourtel's Rupert Bear, 'Mr. Badger' in Kenneth Grahame's The Wind in the Willows and 'Trufflehunter' in C. S. Lewis's Chronicles of Narnia."
+    ]
 
 HIPPO_FACTS = [
     'Hippopotamuses are found in Africa.'
