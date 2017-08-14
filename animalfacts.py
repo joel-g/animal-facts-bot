@@ -5,7 +5,7 @@ import time
 from pygame import mixer
 # from '/' import lists
 
-BLACKLIST = ['asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes']
+BLACKLIST = ['asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes', 'protectandserve']
 
 mixer.init()
 alert=mixer.Sound('bird.wav')
@@ -19,7 +19,7 @@ def authenticate():
 
 def botengine(animal, regex, reddit, facts):
     print("Checking 500 comments for " + animal + "...\n")
-    for comment in reddit.subreddit('all-gameofthrones-asoiaf-exmorman-suicidewatch-politics-whowouldwin-snakes').comments(limit = 500):
+    for comment in reddit.subreddit('all-gameofthrones-asoiaf-exmorman-suicidewatch-politics-whowouldwin-snakes-protectandserve').comments(limit = 500):
         match = re.findall(regex, comment.body)
 
         if match:
@@ -44,26 +44,27 @@ def botengine(animal, regex, reddit, facts):
 def animalfactsbot(reddit):
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS)
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS)
-    botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS)
-    botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS)
-    botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS)
-    botengine('owl', '\sowls?\s', reddit, OWL_FACTS)
-    botengine('horse', '\shorses?\s', reddit, HORSE_FACTS)
-    botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS)
-    botengine('octopus', '\soctopus?\s', reddit, OCTOPUS_FACTS)
-    botengine('pig', '\spigs?\s', reddit, PIG_FACTS)
-    botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS)
+    botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS)
+    botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS)
     botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS)
-    botengine('wolf', '\swolf\s', reddit, WOLF_FACTS)
-    botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS)
+    botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS)
+    botengine('horse', '\shorses?\s', reddit, HORSE_FACTS)
     botengine('jellyfish', '\sjellyfish\s', reddit, JELLYFISH_FACTS)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS)
-    botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS)
-    botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS)
+    botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS)
+    botengine('octopus', '\soctopus?\s', reddit, OCTOPUS_FACTS)
+    botengine('owl', '\sowls?\s', reddit, OWL_FACTS)
+    botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS)
+    botengine('pig', '\spigs?\s', reddit, PIG_FACTS)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS)
+    botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS)
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS)
+    botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS)
+    botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS)
+    botengine('wolf', '\swolf\s', reddit, WOLF_FACTS)
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS)
+    botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS)
 
 ALLIGATOR_FACTS = [
     'Alligators are reptiles.',
@@ -94,6 +95,23 @@ BADGER_FACTS = [
     'The honey badger is a carnivorous species that has the reputation of being the most fearless and vicious of all mammals.',
     'Badgers were eaten in Britain during World War II and were once part of the Native American and settlers diets in the US. Russia still eats badger meat today.',
     "Badgers have featured in lots of British literature over the years, such as Brian Jacques' Redwall series, 'Tommy Brock' in Beatrix Potter's The Tale of Mr. Tod, 'Bill Badger' in Mary Tourtel's Rupert Bear, 'Mr. Badger' in Kenneth Grahame's The Wind in the Willows and 'Trufflehunter' in C. S. Lewis's Chronicles of Narnia."
+    ]
+
+CAMEL_FACTS = [
+    'There are two species of true camel. The dromedary, is a single humped camel that lives in the Middle East and the Horn of Africa area. The bactrian, is a two-humped camel that lives in areas of Central Asia.',
+    'There are four camel-like mammals that live in South America, llama and alpaca are called "New World camels", while guanaco and vicuna are called "South American camels".',
+    'Camels have been domesticated by humans for thousands of years. Used mostly for transport or to carry heavy loads, they also provide a source of milk, meat, and hair/wool.',
+    'Camels live on average for 40 to 50 years.,'
+    'Camels are 1.85 m (6 ft 1 in) at shoulder level and 2.15 m (7 ft 1 in) at the hump.',
+    'Camels are capable of running as fast as 65 km/h (40 mph) for a short period of time, and can maintain a speed of around 40 km/h (25 mph).',
+    'Dromedary camels weigh 300 to 600 kg (660 to 1,320 lb) and bactrian camels weigh 300 to 1,000 kg (660 to 2,200 lb).',
+    'Camels do not actually hold liquid water in their humps. The humps contain fatty tissue reserves, which can be converted to water or energy when required. They can survive up to six months without food or water by using up these fatty stores.',
+    'Camels are well suited to the hot sandy deserts they roam in. Their thick coat insulates them from heat and also lightens during summer to help reflect heat.',
+    'A camels long legs help its body to be high from the hot desert surface and a pad of thick tissue called a pedestal raises the body slightly when the camel sits so cool air can pass underneath.',
+    'A large camel can drink around 30 gallons (113 liters) in just 13 minutes, making them able to rehydrate faster than any other mammal.',
+    'Long eyelashes, ear hair, and closable nostrils keep sand from affecting the camel, while their wide feet help them move without sinking into sand.',
+    'Camels have long been used in wartimes. Romans used camels for their ability to scare off horses who are afraid of their scent, and in recent times camels have been used to carry heavy gear and troops across hot sandy deserts.',
+    'There are estimated to be over 14 million camels in the world. Camels introduced to desert areas of Australia are the worlds largest populations of feral camels.'
     ]
 
 HIPPO_FACTS = [
