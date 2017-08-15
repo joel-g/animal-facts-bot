@@ -5,7 +5,7 @@ import time
 from pygame import mixer
 # from '/' import lists
 
-BLACKLIST = ['asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes', 'protectandserve']
+BLACKLIST = ['asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes', 'protectandserve', 'kansas', 'inceltears', 'explainlikeimfive', 'retconned', 'neoliberal']
 
 mixer.init()
 alert=mixer.Sound('bird.wav')
@@ -103,7 +103,7 @@ CAMEL_FACTS = [
     'There are two species of true camel. The dromedary, is a single humped camel that lives in the Middle East and the Horn of Africa area. The bactrian, is a two-humped camel that lives in areas of Central Asia.',
     'There are four camel-like mammals that live in South America, llama and alpaca are called "New World camels", while guanaco and vicuna are called "South American camels".',
     'Camels have been domesticated by humans for thousands of years. Used mostly for transport or to carry heavy loads, they also provide a source of milk, meat, and hair/wool.',
-    'Camels live on average for 40 to 50 years.,'
+    'Camels live on average for 40 to 50 years.',
     'Camels are 1.85 m (6 ft 1 in) at shoulder level and 2.15 m (7 ft 1 in) at the hump.',
     'Camels are capable of running as fast as 65 km/h (40 mph) for a short period of time, and can maintain a speed of around 40 km/h (25 mph).',
     'Dromedary camels weigh 300 to 600 kg (660 to 1,320 lb) and bactrian camels weigh 300 to 1,000 kg (660 to 2,200 lb).',
@@ -149,7 +149,7 @@ HIPPO_FACTS = [
     'A female hippopotamus is called a ‘cow’.',
     'A baby hippo is called a ‘calf’.',
     'A group of hippos in known as a ‘herd’, ‘pod’, ‘dale’ or ‘bloat’.',
-    'Hippos typically live for around 45 years.,'
+    'Hippos typically live for around 45 years.',
     'Hippos eat mostly grass.'
     ]
 
@@ -251,7 +251,9 @@ SLOTH_FACTS = [
 HORSE_FACTS = [
     'Horses can sleep both lying down and standing up.',
     'Horses can run shortly after birth.',
+    'You can generally tell the difference between male and female horses by their number of teeth: males have 40 while females have 36 (but honestly, most us are going to use the much “easier” way).',
     'Domestic horses have a lifespan of around 25 years.',
+    'The Przewalski’s horse is the only truly wild horse species still in existence. The only wild population is in Mongolia. There are however numerous populations across the world of feral horses e.g. mustangs in North America.',
     'A 19th century horse named ‘Old Billy’ is said to have lived 62 years.',
     'Horses have around 205 bones in their skeleton.',
     'Horses have been domesticated for over 5000 years.',
@@ -265,7 +267,9 @@ HORSE_FACTS = [
     'A male horse is called a stallion.',
     'A female horse is called a mare.',
     'A young male horse is called a colt.',
-    'A young female horse is called a filly.'
+    'A young female horse is called a filly.',
+    'An adult horse’s brain weights 22 oz, about half that of a human.',
+    'The first cloned horse was a Haflinger mare in Italy in 2003.'
     ]
 
 SNAKE_FACTS = [
@@ -400,7 +404,7 @@ FROG_FACTS = [
     'An amphibian can live both on land and in water.',
     'Although frogs live on land their habitat must be near swamps, ponds or in a damp place. This is because they will die if their skin dries out.',
     'Instead of drinking water, frogs soak it into their body through their skin.',
-    'Frogs breathe through their nostrils while also absorbing about half the air they need through their skin.,',
+    'Frogs breathe through their nostrils while also absorbing about half the air they need through their skin.',
     'Frogs use their sticky, muscular tongue to catch and swallow food. Unlike humans, their tongue is not attached to the back of its mouth. Instead it is attached to the front, enabling the frog to stick its tongue out much further.',
     'The common pond frog is ready to breed when it is only three years old.',
     'Frogs in the wild face many dangers and are lucky to survive several years. In captivity however, frogs can live for much longer.',
