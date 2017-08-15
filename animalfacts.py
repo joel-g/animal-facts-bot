@@ -117,6 +117,21 @@ CAMEL_FACTS = [
     'There are estimated to be over 14 million camels in the world. Camels introduced to desert areas of Australia are the worlds largest populations of feral camels.'
     ]
 
+DOLPHIN_FACTS = [
+    'Compared to other animals, dolphins are believed to be very intelligent.',
+    'Dolphins are carnivores.',
+    'The Killer Whale (also known as Orca) is actually a type of dolphin.',
+    'Bottlenose dolphins are the most common and well known type of dolphin.',
+    'Female dolphins are called cows, males are called bulls and young dolphins are called calves.',
+    'Dolphins live in schools or pods of up to 12 individuals.',
+    'Dolphins often display a playful attitude which makes them popular in human culture. They can be seen jumping out of the water, riding waves, play fighting and occasionally interacting with humans swimming in the water.',
+    'Dolphins use a blowhole on top of their heads to breathe.',
+    'Dolphins have excellent eyesight and hearing as well as the ability to use echolocation for finding the exact location of objects.',
+    'Dolphins communicate with each other by clicking, whistling and other sounds.',
+    'Some dolphin species face the threat of extinction, often directly as a result of human behavior. The Yangtze River Dolphin is an example of a dolphin species which may have recently become extinct.',
+    'Some fishing methods, such as the use of nets, kill a large number of dolphins every year.'
+    ]
+
 FLAMINGO_FACTS = [
     'Flamingos are a type of wading bird that live in areas of large shallow lakes, lagoons, mangrove swamps, tidal flats, and sandy islands.',
     'The word "flamingo" comes from the Spanish word "flamenco" which came from the earlier Latin word "flamma" meaning flame or fire.',
@@ -170,20 +185,6 @@ MONKEY_FACTS = [
     'The monkey is the 9th animal that appears on the Chinese zodiac, appearing as the zodiac sign in 2016.'
     ]
 
-ZEBRA_FACTS = [
-    'Zebra are part of the equidae family along with horse and donkeys.',
-    'Every zebra has a unique pattern of black and white stripes.',
-    'There are a number of different theories which attempt to explain zebra’s unique stripes with most relating to camouflage.',
-    'Wild zebras live in Africa.',
-    'Common plain zebras have tails around half a meter in length (18 inches).',
-    'Zebra crossings (pedestrian crossings) are named after the black and white stripes of zebras.',
-    'Zebras run from side to side to being chased by a predator.',
-    'Zebras have excellent eyesight and hearing.',
-    'Zebras stand up while sleeping.',
-    'Zebras eat mostly grass.',
-    'The ears of a zebra show its mood.',
-    'A zebra named Marty starred in the 2005 animated film Madagascar.',
-    ]
 
 OWL_FACTS = [
     'There are around 200 different owl species.',
@@ -342,32 +343,20 @@ PANDA_FACTS = [
     'An animated movie from 2008 named ‘Kung Fu Panda’ features a giant panda called ‘Po’.'
     ]
 
-DOLPHIN_FACTS = [
-    'Compared to other animals, dolphins are believed to be very intelligent.',
-    'Dolphins are carnivores.',
-    'The Killer Whale (also known as Orca) is actually a type of dolphin.',
-    'Bottlenose dolphins are the most common and well known type of dolphin.',
-    'Female dolphins are called cows, males are called bulls and young dolphins are called calves.',
-    'Dolphins live in schools or pods of up to 12 individuals.',
-    'Dolphins often display a playful attitude which makes them popular in human culture. They can be seen jumping out of the water, riding waves, play fighting and occasionally interacting with humans swimming in the water.',
-    'Dolphins use a blowhole on top of their heads to breathe.',
-    'Dolphins have excellent eyesight and hearing as well as the ability to use echolocation for finding the exact location of objects.',
-    'Dolphins communicate with each other by clicking, whistling and other sounds.',
-    'Some dolphin species face the threat of extinction, often directly as a result of human behavior. The Yangtze River Dolphin is an example of a dolphin species which may have recently become extinct.',
-    'Some fishing methods, such as the use of nets, kill a large number of dolphins every year.'
-    ]
 
-WHALE_FACTS = [
-    'Many whales are toothless. They use a plate of comb-like fibre called baleen to filter small crustaceans and other creatures from the water.',
-    'There are 79 to 84 different species of whale. They came in many different shapes and sizes!',
-    'A baby whale is called a calf. Whales form groups to look after calves and feed together. These groups are often made up of all female or all male whales.',
-    'Whales that are found in both Northern and Southern hemisphere never meet or breed together. Their migration is timed so that they are never in breeding areas at the same time.',
-    'The arched lower lip of a whale can often make it look like it is smiling! However, this isn’t a “real” smile as the blubber in the head of the whale prevents the muscles of the face from reaching the surface.',
-    'You can tell the age of a whale by looking at the wax plug in its ear. This plug in the ear has a pattern of layers when cut lengthwise that scientists can count to estimate the age of the whale.',
-    'Whales love to sing! They use this as a call to mates, a way to communicate and also just for fun! After a period of time they get bored of the same whale song and begin to sing a different tune.',
-    'Sometimes whales make navigation mistakes during migrations. Although they may have made the mistake days before, they don’t realise it until they becoming stranded.',
-    'Whales support many different types of life. Several creatures, such as barnacles and sea lice, attach themselves to the skin of whales and live there.'
-]
+FROG_FACTS = [
+    'A frog is an amphibian. They lay their eggs in water. The eggs hatch into a tadpole which lives in water until it metamorphoses into an adult frog.',
+    'Tadpoles look more like fish than frogs, they have long finned tails and breathe through gills.',
+    'An amphibian can live both on land and in water.',
+    'Although frogs live on land their habitat must be near swamps, ponds or in a damp place. This is because they will die if their skin dries out.',
+    'Instead of drinking water, frogs soak it into their body through their skin.',
+    'Frogs breathe through their nostrils while also absorbing about half the air they need through their skin.',
+    'Frogs use their sticky, muscular tongue to catch and swallow food. Unlike humans, their tongue is not attached to the back of its mouth. Instead it is attached to the front, enabling the frog to stick its tongue out much further.',
+    'The common pond frog is ready to breed when it is only three years old.',
+    'Frogs in the wild face many dangers and are lucky to survive several years. In captivity however, frogs can live for much longer.',
+    'Frogs can see forwards, sideways and upwards all at the same time. They never close their eyes, even when they sleep.',
+    "Remarkably, frogs actually use their eyes to help them swallow food. When the frog blinks, its eyeballs are pushed downwards creating a bulge in the roof of its mouth. This bulge squeezes the food inside the frog's mouth down the back of its throat."
+    ]
 
 GIRAFFE_FACTS = [
     'A male giraffe can weigh as much as a pick up truck! That’s about 1400 kilograms.',
@@ -418,18 +407,34 @@ TIGER_FACTS = [
     'Tigers that breed with lions give birth to hybrids known as tigons and ligers.'
     ]
 
-FROG_FACTS = [
-    'A frog is an amphibian. They lay their eggs in water. The eggs hatch into a tadpole which lives in water until it metamorphoses into an adult frog.',
-    'Tadpoles look more like fish than frogs, they have long finned tails and breathe through gills.',
-    'An amphibian can live both on land and in water.',
-    'Although frogs live on land their habitat must be near swamps, ponds or in a damp place. This is because they will die if their skin dries out.',
-    'Instead of drinking water, frogs soak it into their body through their skin.',
-    'Frogs breathe through their nostrils while also absorbing about half the air they need through their skin.',
-    'Frogs use their sticky, muscular tongue to catch and swallow food. Unlike humans, their tongue is not attached to the back of its mouth. Instead it is attached to the front, enabling the frog to stick its tongue out much further.',
-    'The common pond frog is ready to breed when it is only three years old.',
-    'Frogs in the wild face many dangers and are lucky to survive several years. In captivity however, frogs can live for much longer.',
-    'Frogs can see forwards, sideways and upwards all at the same time. They never close their eyes, even when they sleep.',
-    "Remarkably, frogs actually use their eyes to help them swallow food. When the frog blinks, its eyeballs are pushed downwards creating a bulge in the roof of its mouth. This bulge squeezes the food inside the frog's mouth down the back of its throat."
+
+OCTOPUS_FACTS = [
+    'There are around 300 species of octopus, usually located in tropical and temperate ocean waters. They are divided into finned deep-sea varieties that live on the ocean floor and finless, shallow water varieties found around coral reefs.',
+    'Octopuses have two eyes in a globe-shaped head (mantle) off which protrude eight long limbs called tentacles that have two rows of sucker senses.',
+    'Octopuses can squeeze into tight spaces as they are invertebrates which means they have no skeleton, (some species have a protective casing in their mantles).',
+    'An octopus has a hard beak, like a parrot beak, which they use to break into and eat their pray such as crabs and shellfish.',
+    'Octopuses have three hearts.',
+    'The largest octopus is believed to be the giant Pacific octopus, Enteroctopus dofleini which weigh about 15 kg (33 lb), and has an arm span up to 4.3 m (14 ft).',
+    'Octopuses are believed to be highly intelligent compared to other invertebrates.',
+    "An octopus's main defence against predators such as sharks is to hide and camouflage itself by using certain skin cells to change its color. This can also be used to talk with or warn other octopuses.",
+    'Another defence is to make a fast escape. Octopuses can eject a thick, blackish ink in a large cloud to distract the predator while the octopus uses a siphon jet propulsion system to quickly swim away headfirst, with arms trailing behind.',
+    'A last ditch defence is for the octopus to shed a tentacle similar to how a gecko or lizard can discard a tale. An octopus is able to regenerate a lost tentacle.',
+    'Octopuses have very good eyesight and an excellent sense of touch.',
+    'A female octopus can lay on average about 200,000 eggs, however, fending for themselves only a handful of the hatchlings will survive to adulthood.',
+    'Octopuses usually live for 6 - 18 months. Males only live a few months after mating, and females die of starvation shortly after their protected eggs hatch.',
+    'Humans eat octopus in many cultures and it is also a popular fish bait.'
+    ]
+
+WHALE_FACTS = [
+    'Many whales are toothless. They use a plate of comb-like fibre called baleen to filter small crustaceans and other creatures from the water.',
+    'There are 79 to 84 different species of whale. They came in many different shapes and sizes!',
+    'A baby whale is called a calf. Whales form groups to look after calves and feed together. These groups are often made up of all female or all male whales.',
+    'Whales that are found in both Northern and Southern hemisphere never meet or breed together. Their migration is timed so that they are never in breeding areas at the same time.',
+    'The arched lower lip of a whale can often make it look like it is smiling! However, this isn’t a “real” smile as the blubber in the head of the whale prevents the muscles of the face from reaching the surface.',
+    'You can tell the age of a whale by looking at the wax plug in its ear. This plug in the ear has a pattern of layers when cut lengthwise that scientists can count to estimate the age of the whale.',
+    'Whales love to sing! They use this as a call to mates, a way to communicate and also just for fun! After a period of time they get bored of the same whale song and begin to sing a different tune.',
+    'Sometimes whales make navigation mistakes during migrations. Although they may have made the mistake days before, they don’t realise it until they becoming stranded.',
+    'Whales support many different types of life. Several creatures, such as barnacles and sea lice, attach themselves to the skin of whales and live there.'
     ]
 
 WOLF_FACTS = [
@@ -461,22 +466,6 @@ PIG_FACTS = [
     'Relative to their body size, pigs have small lungs.'
     ]
 
-OCTOPUS_FACTS = [
-    'There are around 300 species of octopus, usually located in tropical and temperate ocean waters. They are divided into finned deep-sea varieties that live on the ocean floor and finless, shallow water varieties found around coral reefs.',
-    'Octopuses have two eyes in a globe-shaped head (mantle) off which protrude eight long limbs called tentacles that have two rows of sucker senses.',
-    'Octopuses can squeeze into tight spaces as they are invertebrates which means they have no skeleton, (some species have a protective casing in their mantles).',
-    'An octopus has a hard beak, like a parrot beak, which they use to break into and eat their pray such as crabs and shellfish.',
-    'Octopuses have three hearts.',
-    'The largest octopus is believed to be the giant Pacific octopus, Enteroctopus dofleini which weigh about 15 kg (33 lb), and has an arm span up to 4.3 m (14 ft).',
-    'Octopuses are believed to be highly intelligent compared to other invertebrates.',
-    "An octopus's main defence against predators such as sharks is to hide and camouflage itself by using certain skin cells to change its color. This can also be used to talk with or warn other octopuses.",
-    'Another defence is to make a fast escape. Octopuses can eject a thick, blackish ink in a large cloud to distract the predator while the octopus uses a siphon jet propulsion system to quickly swim away headfirst, with arms trailing behind.',
-    'A last ditch defence is for the octopus to shed a tentacle similar to how a gecko or lizard can discard a tale. An octopus is able to regenerate a lost tentacle.',
-    'Octopuses have very good eyesight and an excellent sense of touch.',
-    'A female octopus can lay on average about 200,000 eggs, however, fending for themselves only a handful of the hatchlings will survive to adulthood.',
-    'Octopuses usually live for 6 - 18 months. Males only live a few months after mating, and females die of starvation shortly after their protected eggs hatch.',
-    'Humans eat octopus in many cultures and it is also a popular fish bait.'
-    ]
 
 PENGUIN_FACTS = [
     'Penguins are flightless birds.',
@@ -498,6 +487,21 @@ PENGUIN_FACTS = [
     'Little Blue Penguins are the smallest type of penguin, averaging around 33 cm (13 in) in height.',
     'Penguin’s black and white plumage serves as camouflage while swimming. The black plumage on their back is hard to see from above, while the white plumage on their front looks like the sun reflecting off the surface of the water when seen from below.',
     'Penguins in Antarctica have no land based predators.'
+    ]
+
+ZEBRA_FACTS = [
+    'Zebra are part of the equidae family along with horse and donkeys.',
+    'Every zebra has a unique pattern of black and white stripes.',
+    'There are a number of different theories which attempt to explain zebra’s unique stripes with most relating to camouflage.',
+    'Wild zebras live in Africa.',
+    'Common plain zebras have tails around half a meter in length (18 inches).',
+    'Zebra crossings (pedestrian crossings) are named after the black and white stripes of zebras.',
+    'Zebras run from side to side to being chased by a predator.',
+    'Zebras have excellent eyesight and hearing.',
+    'Zebras stand up while sleeping.',
+    'Zebras eat mostly grass.',
+    'The ears of a zebra show its mood.',
+    'A zebra named Marty starred in the 2005 animated film Madagascar.',
     ]
 
 def main():
