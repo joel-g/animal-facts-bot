@@ -5,7 +5,7 @@ import time
 from pygame import mixer
 # from '/' import lists
 
-BLACKLIST = ['asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes', 'protectandserve', 'kansas', 'inceltears', 'explainlikeimfive', 'retconned', 'neoliberal', 'writingprompts', 'dnd', 'worldbuilding', 'parent']
+BLACKLIST = ['asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes', 'protectandserve', 'kansas', 'inceltears', 'explainlikeimfive', 'retconned', 'neoliberal', 'writingprompts', 'dnd', 'worldbuilding', 'parenting', 'tattoos']
 
 mixer.init()
 alert=mixer.Sound('bird.wav')
@@ -22,31 +22,36 @@ def authenticate():
 def check_messages(reddit):
     print("Checking my messages...\n")
     for comment in reddit.inbox.comment_replies(limit=50):
-        file_obj_r = open(reply_history,'r')
-        if comment.id not in file_obj_r.read().splitlines():
-            if 'good bot' in comment.body.lower():
-                comment.reply('Thanks! I try to be a good bot.')
-                print('     Thanked someone for "good bot"\n')
-                record_already_replied(file_obj_r, comment)
-            elif 'bad bot' in comment.body.lower():
-                comment.reply("I'm sorry. :(  You can PM me to tell my owner how to improve.")
-                print('     Apologized to someone for "bad bot"\n')
-                record_already_replied(file_obj_r, comment)
-            elif 'silly' in comment.body.lower():
-                comment.reply('I am programmed to be silly!')
-                print('     Explained why I am silly\n')
-                record_already_replied(file_obj_r, comment)
-            elif 'thank' in comment.body.lower():
-                comment.reply('You are most welcome. Beep boop.')
-                print('     Replied to a thank you\n')
-                record_already_replied(file_obj_r, comment)
-            elif 'more' in comment.body.lower():
-                comment.reply("It looks like you asked for more animal facts! " + random_fact())
-                print('     Gave someone more facts!\n')
-                record_already_replied(file_obj_r, comment)
+        if comment.subreddit.display_name.lower() not in BLACKLIST:
+            file_obj_r = open(reply_history,'r')
+            if comment.id not in file_obj_r.read().splitlines():
+                if 'good bot' in comment.body.lower():
+                    comment.reply('Thanks! I try to be!')
+                    print('     Thanked someone for "good bot"\n')
+                    record_already_replied(file_obj_r, comment)
+                elif 'bad bot' in comment.body.lower():
+                    comment.reply("I'm sorry. :(  You can PM me to tell my owner how to improve.")
+                    print('     Apologized to someone for "bad bot"\n')
+                    record_already_replied(file_obj_r, comment)
+                elif 'TIL' in comment.body:
+                    comment.reply("I'm always happy to help people learn!")
+                    print('     Replied to a TIL\n')
+                    record_already_replied(file_obj_r, comment)
+                elif 'silly' in comment.body.lower():
+                    comment.reply('I am programmed to be silly!')
+                    print('     Explained why I am silly\n')
+                    record_already_replied(file_obj_r, comment)
+                elif 'thank' in comment.body.lower():
+                    comment.reply('You are most welcome. Beep boop.')
+                    print('     Replied to a thank you\n')
+                    record_already_replied(file_obj_r, comment)
+                elif 'more' in comment.body.lower():
+                    comment.reply("It looks like you asked for more animal facts! " + random_fact())
+                    print('     Gave someone more facts!\n')
+                    record_already_replied(file_obj_r, comment)
 
-def record_already_replied(file, comment):
-    file.close()
+def record_already_replied(read_file, comment):
+    read_file.close()
     file_obj_w = open(reply_history,'a+')
     file_obj_w.write(comment.id + '\n')
     file_obj_w.close()
@@ -76,8 +81,8 @@ def botengine(animal, regex, reddit, facts):
                         file_obj_w = open(history,'a+')
                         file_obj_w.write(comment.id + '\n')
                         file_obj_w.close()
-                        print('Waiting 1 minute before commenting again\n')
-                        time.sleep(60)
+                        print('Waiting 1.5 minutes before checking more\n')
+                        time.sleep(90)
                 else:
                     print('     Already commented on this!\n')
             else:
@@ -105,6 +110,7 @@ def animalfactsbot(reddit):
     botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS)
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS)
+    botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS)
     botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS)
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS)
@@ -358,35 +364,18 @@ SNAKE_FACTS = [
     'Python reticulates can grow over 8.7 m (28 ft) in length and are considered the longest snakes in the world.'
     ]
 
-SCORPION_FACTS = [
-    'Scorpions are predatory animals of the class Arachnida, making them cousins to spiders, mites and ticks.',
-    'Scorpions have eight legs, a pair of pincers (pedipalps) and a narrow segmented tail that often curves over their back, on the end of which is a venomous stinger.',
-    'The scorpion uses their pincers to quickly grab prey and then whip their poisonous tail stinger over to kill or paralyze the prey. The tail is also used as a useful defence against predators.',
-    'Scorpion species range in size from 0.09 cm to 20 cm.',
-    'Scorpions can be found on all continents except for Antarctica.',
-    'There are over 1750 known species of scorpion. While humans generally fear the scorpion and its poisonous sting only about 25 of the species have venom capable of killing a human.',
-    'Under UV light such as a black light scorpions are known to glow due to the presence of fluorescent chemicals in their exoskeleton.',
-    'The scorpion is nocturnal, often hiding during the day under rocks and in holes in the ground before emerging at night to feed.',
-    'Scorpions can eat a massive amount of food in one meal. Their large food storage organs, together with a low metabolism rate and an inactive lifestyle means that if necessary they can survive 6-12 months without eating again.',
-    'Areas of China have a traditional dish of fried scorpion, and scorpion wine features in Chinese medicine.',
-    'The scorpion is one of the 12 signs of the Zodiac, with the Scorpio constellation identified in the stars.',
-    'Scorpions moult, they shed their exoskeleton up to 7 times as they grow to full size. They become vulnerable to predators each time until their new protective exoskeleton hardens.'
+SHARK_FACTS = [
+    'Sharks do not have a single bone in their bodies. Instead they have a skeleton made up of cartilage; the same type of tough, flexible tissue that makes up human ears and noses.',
+    'Some sharks remain on the move for their entire lives. This forces water over their gills, delivering oxygen to the blood stream. If the shark stops moving then it will suffocate and die.',
+    'Sharks have outstanding hearing. They can hear a fish thrashing in the water from as far as 500 metres away!',
+    'If a shark was put into a large swimming pool, it would be able to smell a single drop of blood in the water.',
+    'Although most species of shark are less than one metre long, there are some species such as the whale shark, which can be 14 metres long.',
+    'A pup (baby shark) is born ready to take care of itself. The mother shark leaves the pup to fend for itself and the pup usually makes a fast get away before the mother tries to eat it!',
+    'Not all species of shark give birth to live pups. Some species lay the egg case on the ocean floor and the pup hatches later on its own.',
+    'Great whites are the deadliest shark in the ocean. These powerful predators can race through the water at 30 km per hour.',
+    'Unlike other species of shark, the great white is warm-blooded. Although the great white does not keep a constant body temperature, it needs to eat a lot of meat in order to be able to regulate its temperature. ',
+    'A shark always has a row of smaller teeth developing behind its front teeth. Eventually the smaller teeth move forward, like a conveyor belt, and the front teeth fall out.'
     ]
-
-PANDA_FACTS = [
-    'The giant panda is native to China. It has a black and white coat that features large black patches around its eyes.',
-    'Pandas are an endangered species. Population estimates vary but there may be around 2000 left living in the wild.',
-    'A giant panda cub weighs only around 150 grams (5 oz) at birth.',
-    'Adult male pandas can weigh up to 150 kg (330 lb).',
-    'Giant panda have a lifespan of around 20 years in the wild.',
-    'Female pandas raise cubs on their own (the male leaves after mating).',
-    'The diet of a panda is made up almost entirely of bamboo.',
-    'Giant pandas eat as much as 10 kg (22 lb) of bamboo a day.',
-    'Giant pandas are good climbers.',
-    'The scientific name for the giant panda is ‘ailuropoda melanoleuca’.',
-    'An animated movie from 2008 named ‘Kung Fu Panda’ features a giant panda called ‘Po’.'
-    ]
-
 
 FROG_FACTS = [
     'A frog is an amphibian. They lay their eggs in water. The eggs hatch into a tadpole which lives in water until it metamorphoses into an adult frog.',
@@ -451,6 +440,34 @@ TIGER_FACTS = [
     'Tigers that breed with lions give birth to hybrids known as tigons and ligers.'
     ]
 
+SCORPION_FACTS = [
+    'Scorpions are predatory animals of the class Arachnida, making them cousins to spiders, mites and ticks.',
+    'Scorpions have eight legs, a pair of pincers (pedipalps) and a narrow segmented tail that often curves over their back, on the end of which is a venomous stinger.',
+    'The scorpion uses their pincers to quickly grab prey and then whip their poisonous tail stinger over to kill or paralyze the prey. The tail is also used as a useful defence against predators.',
+    'Scorpion species range in size from 0.09 cm to 20 cm.',
+    'Scorpions can be found on all continents except for Antarctica.',
+    'There are over 1750 known species of scorpion. While humans generally fear the scorpion and its poisonous sting only about 25 of the species have venom capable of killing a human.',
+    'Under UV light such as a black light scorpions are known to glow due to the presence of fluorescent chemicals in their exoskeleton.',
+    'The scorpion is nocturnal, often hiding during the day under rocks and in holes in the ground before emerging at night to feed.',
+    'Scorpions can eat a massive amount of food in one meal. Their large food storage organs, together with a low metabolism rate and an inactive lifestyle means that if necessary they can survive 6-12 months without eating again.',
+    'Areas of China have a traditional dish of fried scorpion, and scorpion wine features in Chinese medicine.',
+    'The scorpion is one of the 12 signs of the Zodiac, with the Scorpio constellation identified in the stars.',
+    'Scorpions moult, they shed their exoskeleton up to 7 times as they grow to full size. They become vulnerable to predators each time until their new protective exoskeleton hardens.'
+    ]
+
+PANDA_FACTS = [
+    'The giant panda is native to China. It has a black and white coat that features large black patches around its eyes.',
+    'Pandas are an endangered species. Population estimates vary but there may be around 2000 left living in the wild.',
+    'A giant panda cub weighs only around 150 grams (5 oz) at birth.',
+    'Adult male pandas can weigh up to 150 kg (330 lb).',
+    'Giant panda have a lifespan of around 20 years in the wild.',
+    'Female pandas raise cubs on their own (the male leaves after mating).',
+    'The diet of a panda is made up almost entirely of bamboo.',
+    'Giant pandas eat as much as 10 kg (22 lb) of bamboo a day.',
+    'Giant pandas are good climbers.',
+    'The scientific name for the giant panda is ‘ailuropoda melanoleuca’.',
+    'An animated movie from 2008 named ‘Kung Fu Panda’ features a giant panda called ‘Po’.'
+    ]
 
 OCTOPUS_FACTS = [
     'There are around 300 species of octopus, usually located in tropical and temperate ocean waters. They are divided into finned deep-sea varieties that live on the ocean floor and finless, shallow water varieties found around coral reefs.',

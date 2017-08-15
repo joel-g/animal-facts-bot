@@ -38,4 +38,5 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * thank
 * more
 * silly
+* TIL
 AnimalFactsBot gets these fairly often.
