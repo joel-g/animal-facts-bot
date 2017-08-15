@@ -5,17 +5,56 @@ import time
 from pygame import mixer
 # from '/' import lists
 
-BLACKLIST = ['asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes', 'protectandserve', 'kansas', 'inceltears', 'explainlikeimfive', 'retconned', 'neoliberal', 'writingprompts', 'dnd']
+BLACKLIST = ['asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes', 'protectandserve', 'kansas', 'inceltears', 'explainlikeimfive', 'retconned', 'neoliberal', 'writingprompts', 'dnd', 'worldbuilding', 'parent']
 
 mixer.init()
 alert=mixer.Sound('bird.wav')
+bell=mixer.Sound('bell.wav')
 history = 'commented.txt'
+reply_history = 'repliedto.txt'
 
 def authenticate():
     print('Authenticating...\n')
     reddit = praw.Reddit('animal-facts-bot', user_agent = '/u/AnimalFactsBot')
     print('Authenticated as {}\n'.format(reddit.user.me()))
     return reddit
+
+def check_messages(reddit):
+    print("Checking my messages...\n")
+    for comment in reddit.inbox.comment_replies(limit=50):
+        file_obj_r = open(reply_history,'r')
+        if comment.id not in file_obj_r.read().splitlines():
+            if 'good bot' in comment.body.lower():
+                comment.reply('Thanks! I try to be a good bot.')
+                print('     Thanked someone for "good bot"\n')
+                record_already_replied(file_obj_r, comment)
+            elif 'bad bot' in comment.body.lower():
+                comment.reply("I'm sorry. :(  You can PM me to tell my owner how to improve.")
+                print('     Apologized to someone for "bad bot"\n')
+                record_already_replied(file_obj_r, comment)
+            elif 'silly' in comment.body.lower():
+                comment.reply('I am programmed to be silly!')
+                print('     Explained why I am silly\n')
+                record_already_replied(file_obj_r, comment)
+            elif 'thank' in comment.body.lower():
+                comment.reply('You are most welcome. Beep boop.')
+                print('     Replied to a thank you\n')
+                record_already_replied(file_obj_r, comment)
+            elif 'more' in comment.body.lower():
+                comment.reply("It looks like you asked for more animal facts! " + random_fact())
+                print('     Gave someone more facts!\n')
+                record_already_replied(file_obj_r, comment)
+
+def record_already_replied(file, comment):
+    file.close()
+    file_obj_w = open(reply_history,'a+')
+    file_obj_w.write(comment.id + '\n')
+    file_obj_w.close()
+    time.sleep(60)
+
+def random_fact():
+    fact_collection =  random.choice(ALL_FACTS)
+    return random.choice(fact_collection)
 
 def botengine(animal, regex, reddit, facts):
     print("Checking 500 comments for " + animal + "...\n")
@@ -24,24 +63,29 @@ def botengine(animal, regex, reddit, facts):
 
         if match:
             print(animal.upper() + " found in comment with comment ID: " + comment.id)
-            file_obj_r = open(history,'r')
-            if comment.id not in file_obj_r.read().splitlines():
-                if comment.author.name == reddit.user.me():
-                    print('     Skipping my own comment...\n')
+            if comment.subreddit.display_name.lower() not in BLACKLIST:
+                file_obj_r = open(history,'r')
+                if comment.id not in file_obj_r.read().splitlines():
+                    if comment.author.name == reddit.user.me():
+                        print('     Skipping my own comment...\n')
+                    else:
+                        print('     by ' + comment.author.name + '\n')
+                        comment.reply(random.choice(facts))
+                        alert.play()
+                        file_obj_r.close()
+                        file_obj_w = open(history,'a+')
+                        file_obj_w.write(comment.id + '\n')
+                        file_obj_w.close()
+                        print('Waiting 1 minute before commenting again\n')
+                        time.sleep(60)
                 else:
-                    print('     by ' + comment.author.name + '\n')
-                    comment.reply(random.choice(facts))
-                    alert.play()
-                    file_obj_r.close()
-                    file_obj_w = open(history,'a+')
-                    file_obj_w.write(comment.id + '\n')
-                    file_obj_w.close()
-                    print('Waiting 1 minute before commenting again\n')
-                    time.sleep(60)
+                    print('     Already commented on this!\n')
             else:
-                print('Already commented on this!\n')
+                print('     This comment is in a blacklisted subreddit: ' + comment.subreddit.display_name + '\n')
+                bell.play()
 
 def animalfactsbot(reddit):
+    check_messages(reddit)
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS)
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS)
@@ -286,7 +330,7 @@ OTTER_FACTS = [
     'Otter species range in size from the smallest Oriental small-clawed otter at 0.6 m (2 ft) and 1 kg (2.2 lb). Through to the large Giant otter and Sea otters who can reach 1.8 m (5.9 ft) and 45 kg (99.2 lb).',
     'Four of the main otter species include the European otter, the North American river otter, the Sea otter, and the Giant otter.',
     'The European otter or Eurasian otter, are found in Europe, Asia, parts of North Africa and the British Isles.',
-    'The North American river otter was one of the most hunted animals for its fur after Europeans arrived. Sea otters have also been hunted in large numbers for their fur'.,
+    'The North American river otter was one of the most hunted animals for its fur after Europeans arrived. Sea otters have also been hunted in large numbers for their fur.',
     'Unlike most marine mammals, otters do not have a layer of insulating blubber. Instead air is trapped in their fur which keeps them warm.',
     'The Giant otter is found in South America around the Amazon river basin.',
     'The otter is a very playful animal and are believe to take part in some activities just for the enjoyment. Some make waterslides to slide down into the water!',
@@ -502,6 +546,35 @@ ZEBRA_FACTS = [
     'Zebras eat mostly grass.',
     'The ears of a zebra show its mood.',
     'A zebra named Marty starred in the 2005 animated film Madagascar.',
+    ]
+
+ALL_FACTS = [
+    ALLIGATOR_FACTS,
+    BADGER_FACTS,
+    CAMEL_FACTS,
+    DOLPHIN_FACTS,
+    FLAMINGO_FACTS,
+    FROG_FACTS,
+    GIRAFFE_FACTS,
+    HIPPO_FACTS,
+    HORSE_FACTS,
+    JELLYFISH_FACTS,
+    KOALA_FACTS,
+    MONKEY_FACTS,
+    OCTOPUS_FACTS,
+    OTTER_FACTS,
+    OWL_FACTS,
+    PANDA_FACTS,
+    PENGUIN_FACTS,
+    PIG_FACTS,
+    SCORPION_FACTS,
+    SLOTH_FACTS,
+    SNAKE_FACTS,
+    TIGER_FACTS,
+    TURTLE_FACTS,
+    WOLF_FACTS,
+    WHALE_FACTS,
+    ZEBRA_FACTS
     ]
 
 def main():
