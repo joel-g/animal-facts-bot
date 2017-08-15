@@ -5,7 +5,7 @@ import time
 from pygame import mixer
 # from '/' import lists
 
-BLACKLIST = ['asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes', 'protectandserve', 'kansas', 'inceltears', 'explainlikeimfive', 'retconned', 'neoliberal']
+BLACKLIST = ['asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes', 'protectandserve', 'kansas', 'inceltears', 'explainlikeimfive', 'retconned', 'neoliberal', 'writingprompts', 'dnd']
 
 mixer.init()
 alert=mixer.Sound('bird.wav')
@@ -55,6 +55,7 @@ def animalfactsbot(reddit):
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS)
     botengine('octopus', '\soctopus?\s', reddit, OCTOPUS_FACTS)
+    botengine('otter', '\sotters?\s', reddit, OTTER_FACTS)
     botengine('owl', '\sowls?\s', reddit, OWL_FACTS)
     botengine('panda', '\spandas?\s', reddit, PANDA_FACTS)
     botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS)
@@ -269,7 +270,26 @@ HORSE_FACTS = [
     'A young male horse is called a colt.',
     'A young female horse is called a filly.',
     'An adult horse’s brain weights 22 oz, about half that of a human.',
-    'The first cloned horse was a Haflinger mare in Italy in 2003.'
+    'The first cloned horse was a Haflinger mare in Italy in 2003.',
+    'Horses with pink skin can get a sunburn.'
+    ]
+
+OTTER_FACTS = [
+    'The otter is a carnivorous mammal in a branch of the weasel family called Lutrinae.',
+    'There are 13 species of otter found all around the world.',
+    'Some otter species spend all their time in the water while others are land and water based animals.',
+    "An otter's den is called a 'holt' or a 'couch'.",
+    "A group of otters are called a 'bevy', 'family', 'lodge', or 'romp', or, when in water the group is called a 'raft'.",
+    'Otters live up to 16 years in the wild.',
+    'Otters are very active hunters, spending many hours a day chasing prey through water or scouring the rivers and the sea bed. They mainly eat fish but also frogs, crayfish and crabs, some species carry a rock to help smash open shellfish.',
+    'Otter species range in size from the smallest Oriental small-clawed otter at 0.6 m (2 ft) and 1 kg (2.2 lb). Through to the large Giant otter and Sea otters who can reach 1.8 m (5.9 ft) and 45 kg (99.2 lb).',
+    'Four of the main otter species include the European otter, the North American river otter, the Sea otter, and the Giant otter.',
+    'The European otter or Eurasian otter, are found in Europe, Asia, parts of North Africa and the British Isles.',
+    'The North American river otter was one of the most hunted animals for its fur after Europeans arrived. Sea otters have also been hunted in large numbers for their fur'.,
+    'Unlike most marine mammals, otters do not have a layer of insulating blubber. Instead air is trapped in their fur which keeps them warm.',
+    'The Giant otter is found in South America around the Amazon river basin.',
+    'The otter is a very playful animal and are believe to take part in some activities just for the enjoyment. Some make waterslides to slide down into the water!',
+    'Otters are a popular animal in Japanese folklore where they are called "kawauso". In these tales the smart kawauso often fool humans, kind of like a fox.',
     ]
 
 SNAKE_FACTS = [
@@ -287,7 +307,7 @@ SNAKE_FACTS = [
     'Snakes shed their skin a number of times a year in a process that usually lasts a few days.',
     'Some species of snake, such as cobras and black mambas, use venom to hunt and kill their prey.',
     'Snakes smell with their tongue.',
-    'Pythons kill their prey by tightly wrapping around it and suffocating it in a process called constriction.',
+    'Pythons kill their prey by tightly wrapping around it and suffocating it in a process called constriction. This bot is written in Python',
     'Some sea snakes can breathe partially through their skin, allowing for longer dives underwater.',
     'Anacondas are large, non-venomous snakes found in South America that can reach over 5 m (16 ft) in length.',
     'Python reticulates can grow over 8.7 m (28 ft) in length and are considered the longest snakes in the world.'
