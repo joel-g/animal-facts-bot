@@ -18,6 +18,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * koala
 * monkey
 * octopus
+* otter
 * owl
 * panda
 * penguin
@@ -30,3 +31,11 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * wolf
 * whale
 * zebra
+
+### AnimalFactsBot will reply to its replies if they contain the phrases:
+* good bot
+* bad bot
+* thank
+* more
+* silly
+AnimalFactsBot gets these fairly often.

@@ -50,7 +50,7 @@ def record_already_replied(file, comment):
     file_obj_w = open(reply_history,'a+')
     file_obj_w.write(comment.id + '\n')
     file_obj_w.close()
-    time.sleep(60)
+    time.sleep(90)
 
 def random_fact():
     fact_collection =  random.choice(ALL_FACTS)
