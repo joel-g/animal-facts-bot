@@ -53,7 +53,7 @@ def check_messages(reddit):
                     comment.reply("https://www.youtube.com/watch?v=hpigjnKl7nI")
                     print('     WATCH YO PROFANITY\n')
                     record_already_replied(file_obj_r, comment)
-                elif re.search('(\scat\s)|(\sdog\s)', comment.body.lower()):
+                elif re.search('(\bcats?\b)|(\bdogs?\b)', comment.body.lower()):
                     comment.reply("Did you ask for cat or dog facts? I'm sorry, if I did cat or dog facts I'd be spamming every thread on reddit. Reply 'more' if you'd like a random animal fact.")
                     print('     Explained why I cant do cat or dog facts\n')
                     record_already_replied(file_obj_r, comment)
