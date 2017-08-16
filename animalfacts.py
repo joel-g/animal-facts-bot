@@ -5,7 +5,7 @@ import time
 from pygame import mixer
 # from '/' import lists
 
-BLACKLIST = ['asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes', 'protectandserve', 'kansas', 'inceltears', 'explainlikeimfive', 'retconned', 'neoliberal', 'writingprompts', 'dnd', 'worldbuilding', 'parenting', 'tattoos', 'evolution', 'kotakuinaction']
+BLACKLIST = ['asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes', 'protectandserve', 'kansas', 'inceltears', 'explainlikeimfive', 'retconned', 'neoliberal', 'writingprompts', 'dnd', 'worldbuilding', 'parenting', 'tattoos', 'evolution', 'kotakuinaction', 'dragonage', 'giantbomb', 'television', 'dodgers', 'portland']
 
 mixer.init()
 alert=mixer.Sound('bird.wav')
@@ -44,6 +44,10 @@ def check_messages(reddit):
                 elif 'thank' in comment.body.lower():
                     comment.reply('You are most welcome. Beep boop.')
                     print('     Replied to a thank you\n')
+                    record_already_replied(file_obj_r, comment)
+                elif 'best bot' in comment.body.lower():
+                    comment.reply("It sounds like you called me the 'best bot'. That's awsome!")
+                    print('     Replied to a "best bot"\n')
                     record_already_replied(file_obj_r, comment)
                 elif 'hate' in comment.body.lower():
                     comment.reply("Please don't hate. Beep boop.")
