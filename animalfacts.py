@@ -5,7 +5,7 @@ import time
 from pygame import mixer
 # from '/' import lists
 
-BLACKLIST = ['asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes', 'protectandserve', 'kansas', 'inceltears', 'explainlikeimfive', 'retconned', 'neoliberal', 'writingprompts', 'dnd', 'worldbuilding', 'parenting', 'tattoos', 'evolution', 'kotakuinaction', 'dragonage', 'giantbomb', 'television', 'dodgers', 'portland', 'legaladvice', 'amwfs', 'texas', 'naruto']
+BLACKLIST = ['asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes', 'protectandserve', 'kansas', 'inceltears', 'explainlikeimfive', 'retconned', 'neoliberal', 'writingprompts', 'dnd', 'worldbuilding', 'parenting', 'tattoos', 'evolution', 'kotakuinaction', 'dragonage', 'giantbomb', 'television', 'dodgers', 'portland', 'legaladvice', 'amwfs', 'texas', 'naruto', 'cars']
 
 mixer.init()
 alert=mixer.Sound('bird.wav')
