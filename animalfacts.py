@@ -5,7 +5,7 @@ import time
 from pygame import mixer
 # from '/' import lists
 
-BLACKLIST = ['asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes', 'protectandserve', 'kansas', 'inceltears', 'explainlikeimfive', 'retconned', 'neoliberal', 'writingprompts', 'dnd', 'worldbuilding', 'parenting', 'tattoos']
+BLACKLIST = ['asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes', 'protectandserve', 'kansas', 'inceltears', 'explainlikeimfive', 'retconned', 'neoliberal', 'writingprompts', 'dnd', 'worldbuilding', 'parenting', 'tattoos', 'evolution', 'kotakuinaction']
 
 mixer.init()
 alert=mixer.Sound('bird.wav')
@@ -26,7 +26,7 @@ def check_messages(reddit):
             file_obj_r = open(reply_history,'r')
             if comment.id not in file_obj_r.read().splitlines():
                 if 'good bot' in comment.body.lower():
-                    comment.reply('Thanks! I try to be!')
+                    comment.reply('Thanks! I try to be! Beep boop.')
                     print('     Thanked someone for "good bot"\n')
                     record_already_replied(file_obj_r, comment)
                 elif 'bad bot' in comment.body.lower():
@@ -44,6 +44,10 @@ def check_messages(reddit):
                 elif 'thank' in comment.body.lower():
                     comment.reply('You are most welcome. Beep boop.')
                     print('     Replied to a thank you\n')
+                    record_already_replied(file_obj_r, comment)
+                elif 'hate' in comment.body.lower():
+                    comment.reply("Please don't hate. Beep boop.")
+                    print('     Replied to a "hate" comment\n')
                     record_already_replied(file_obj_r, comment)
                 elif 'more' in comment.body.lower():
                     comment.reply("It looks like you asked for more animal facts! " + random_fact())
@@ -202,7 +206,7 @@ FLAMINGO_FACTS = [
 HIPPO_FACTS = [
     'Hippopotamuses are found in Africa.'
     'The name hippopotamus means ‘river horse’ and is often shortened to hippo.',
-    'The hippopotamus is generally considered the third largest land mammal (after the White rhinoceros and elephant).',
+    'The hippopotamus is generally considered the third largest land mammal (after the white rhinoceros and elephant).',
     'Hippopotamuses spend a large amount of time in water such as rivers, lakes and swamps.',
     'Resting in water helps keep hippopotamuses temperature down.',
     'Hippopotamuses give birth in water.',
@@ -488,7 +492,7 @@ OCTOPUS_FACTS = [
 
 WHALE_FACTS = [
     'Many whales are toothless. They use a plate of comb-like fibre called baleen to filter small crustaceans and other creatures from the water.',
-    'There are 79 to 84 different species of whale. They came in many different shapes and sizes!',
+    'There are 79 to 84 different species of whale. They come in many different shapes and sizes!',
     'A baby whale is called a calf. Whales form groups to look after calves and feed together. These groups are often made up of all female or all male whales.',
     'Whales that are found in both Northern and Southern hemisphere never meet or breed together. Their migration is timed so that they are never in breeding areas at the same time.',
     'The arched lower lip of a whale can often make it look like it is smiling! However, this isn’t a “real” smile as the blubber in the head of the whale prevents the muscles of the face from reaching the surface.',
