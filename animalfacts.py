@@ -5,7 +5,7 @@ import time
 from pygame import mixer
 # from '/' import lists
 
-BLACKLIST = ['asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes', 'protectandserve', 'kansas', 'inceltears', 'explainlikeimfive', 'retconned', 'neoliberal', 'writingprompts', 'dnd', 'worldbuilding', 'parenting', 'tattoos', 'evolution', 'kotakuinaction', 'dragonage', 'giantbomb', 'television', 'dodgers', 'portland']
+BLACKLIST = ['asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes', 'protectandserve', 'kansas', 'inceltears', 'explainlikeimfive', 'retconned', 'neoliberal', 'writingprompts', 'dnd', 'worldbuilding', 'parenting', 'tattoos', 'evolution', 'kotakuinaction', 'dragonage', 'giantbomb', 'television', 'dodgers', 'portland', 'legaladvice', 'amwfs', 'texas']
 
 mixer.init()
 alert=mixer.Sound('bird.wav')
@@ -30,33 +30,41 @@ def check_messages(reddit):
                     print('     Thanked someone for "good bot"\n')
                     record_already_replied(file_obj_r, comment)
                 elif 'bad bot' in comment.body.lower():
-                    comment.reply("I'm sorry. :(  You can PM me to tell my owner how to improve.")
+                    comment.reply("I'm sorry. :(  You can PM my creator /u/Shaynk253 to tell him how to improve me.")
                     print('     Apologized to someone for "bad bot"\n')
-                    record_already_replied(file_obj_r, comment)
-                elif 'TIL' in comment.body:
-                    comment.reply("I'm always happy to help people learn!")
-                    print('     Replied to a TIL\n')
-                    record_already_replied(file_obj_r, comment)
-                elif 'silly' in comment.body.lower():
-                    comment.reply('I am programmed to be silly!')
-                    print('     Explained why I am silly\n')
-                    record_already_replied(file_obj_r, comment)
-                elif 'thank' in comment.body.lower():
-                    comment.reply('You are most welcome. Beep boop.')
-                    print('     Replied to a thank you\n')
-                    record_already_replied(file_obj_r, comment)
-                elif 'best bot' in comment.body.lower():
-                    comment.reply("It sounds like you called me the 'best bot'. That's awsome!")
-                    print('     Replied to a "best bot"\n')
-                    record_already_replied(file_obj_r, comment)
-                elif 'hate' in comment.body.lower():
-                    comment.reply("Please don't hate. Beep boop.")
-                    print('     Replied to a "hate" comment\n')
                     record_already_replied(file_obj_r, comment)
                 elif 'more' in comment.body.lower():
                     comment.reply("It looks like you asked for more animal facts! " + random_fact())
                     print('     Gave someone more facts!\n')
                     record_already_replied(file_obj_r, comment)
+                elif 'thank' in comment.body.lower():
+                    comment.reply('You are most welcome. Beep boop.')
+                    print('     Replied to a thank you\n')
+                    record_already_replied(file_obj_r, comment)
+                elif 'TIL' in comment.body:
+                    comment.reply("I'm always happy to help people learn!")
+                    print('     Replied to a TIL\n')
+                    record_already_replied(file_obj_r, comment)
+                elif 'best bot' in comment.body.lower():
+                    comment.reply("It sounds like you called me the 'best bot'. That's awesome!")
+                    print('     Replied to a "best bot"\n')
+                    record_already_replied(file_obj_r, comment)
+                elif re.search('(fuck)|(bitch)|(shit)', comment.body.lower()):
+                    comment.reply("https://www.youtube.com/watch?v=hpigjnKl7nI")
+                    print('     WATCH YO PROFANITY\n')
+                elif re.search('(cat)|(dog)', comment.body.lower()):
+                    comment.reply("Did you ask for cat or dog facts? I'm sorry, if I did cat or dog facts I'd be spamming every thread on reddit. Reply 'more' if you'd like a random animal fact.")
+                    print('     Explained why I cant do cat or dog facts\n')
+                    record_already_replied(file_obj_r, comment)
+                elif 'silly' in comment.body.lower():
+                    comment.reply('I am programmed to be silly!')
+                    print('     Explained why I am silly\n')
+                    record_already_replied(file_obj_r, comment)
+                elif 'hate' in comment.body.lower():
+                    comment.reply("Please don't hate. Beep boop.")
+                    print('     Replied to a "hate" comment\n')
+                    record_already_replied(file_obj_r, comment)
+
 
 def record_already_replied(read_file, comment):
     read_file.close()
@@ -71,7 +79,7 @@ def random_fact():
 
 def botengine(animal, regex, reddit, facts):
     print("Checking 500 comments for " + animal + "...\n")
-    for comment in reddit.subreddit('all-gameofthrones-asoiaf-exmorman-suicidewatch-politics-whowouldwin-snakes-protectandserve').comments(limit = 500):
+    for comment in reddit.subreddit('all').comments(limit = 500):
         match = re.findall(regex, comment.body)
 
         if match:
