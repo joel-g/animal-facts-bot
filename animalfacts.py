@@ -6,7 +6,7 @@ import sys
 from pygame import mixer
 # from '/' import lists
 
-BLACKLIST = ('suicidewatch', 'depression', 'snakes', 'mturk', 'babyelephantgifs')
+BLACKLIST = ('suicidewatch', 'depression', 'snakes', 'mturk', 'babyelephantgifs', 'learnprogramming', 'cscareerquestions', 'python')
 
 mixer.init()
 alert=mixer.Sound('bird.wav')
@@ -114,11 +114,12 @@ def botengine(animal, regex, reddit, facts, comment):
                 else:
                     print('     Already commented on this!\n')
 
-ANIMALS = ('alligator', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
+ANIMALS = ('alligator', 'beaver', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
 
 def check_comment_for_animal(comment, reddit):
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
+    botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
@@ -192,7 +193,26 @@ BADGER_FACTS = (
     "Badgers have featured in lots of British literature over the years, such as Brian Jacques' Redwall series, 'Tommy Brock' in Beatrix Potter's The Tale of Mr. Tod, 'Bill Badger' in Mary Tourtel's Rupert Bear, 'Mr. Badger' in Kenneth Grahame's The Wind in the Willows and 'Trufflehunter' in C. S. Lewis's Chronicles of Narnia."
     )
 
-CAMEL_FACTS = [
+BEAVER_FACTS = (
+    'There are two species of beaver. The European or Eurasian beaver (Castor fiber) and the North American beaver (Castor canadensis).',
+    'Beavers are the second largest rodent in the world after the capybara.',
+    'The beaver is mainly a nocturnal animal.',
+    'The large front teeth of the beaver never stop growing. The beavers constant gnawing on wood helps to keep their teeth from growing too long.',
+    'Together beaver colonies create dams of wood and mud to provide still, deep water in order to protect against predators such as wolves, coyotes, bears or eagles, and also so they can float food and building material to their homes.',
+    'Once the dams are completed and ponds formed, beavers will work on building their homes called lodges in the middle. The dome shaped lodges, like the dams, are constructed with branches and mud. Lodges have underwater entrances, making entry tough for most other animals.',
+    'There are usually two dens within the lodge, one is for drying off after entering from the water and another, drier one, is where the family of up to four adults and six to eight young live.'
+    'There were once more than 60 million North American beaver. But due to hunting for its fur, its glands for medicine and because the beavers tree-felling and dams affect other land uses, the population has declined to around 12 million.',
+    'The beaver has a good sense of hearing, smell, and touch. It has poor eyesight, but does have a set of transparent eyelids which allow them to see under water.',
+    'Using their broad, scaly tail, beavers will forcefully slap the water as an alarm signal to other beavers in the area that a predator is approaching.',
+    'Beavers are slow on land but using their webbed feet they are very good swimmers. A beaver can stay under water for up to 15 minutes.',
+    'Beavers are herbivores. They like to eat the wood of trees such as the aspen, cottonwood, willow, birch, maple, cherry and also eat pondweed and water lilies.',
+    'Adult beavers are around 3 feet long and have been known to weigh over 25 kg (55 lb). Females are as large or larger than males of the same age.',
+    'Beavers can live up to 24 years in the wild.',
+    'The beaver is the national animal of Canada, and features on the Canadian five-cent piece.',
+    'Beavers like to keep themselves busy, they are prolific builders during the night. Hence the saying "As busy as a beaver".'
+    )
+
+CAMEL_FACTS = (
     'There are two species of true camel. The dromedary, is a single humped camel that lives in the Middle East and the Horn of Africa area. The bactrian, is a two-humped camel that lives in areas of Central Asia.',
     'There are four camel-like mammals that live in South America, llama and alpaca are called "New World camels", while guanaco and vicuna are called "South American camels".',
     'Camels have been domesticated by humans for thousands of years. Used mostly for transport or to carry heavy loads, they also provide a source of milk, meat, and hair/wool.',
@@ -207,7 +227,7 @@ CAMEL_FACTS = [
     'Long eyelashes, ear hair, and closable nostrils keep sand from affecting the camel, while their wide feet help them move without sinking into sand.',
     'Camels have long been used in wartimes. Romans used camels for their ability to scare off horses who are afraid of their scent, and in recent times camels have been used to carry heavy gear and troops across hot sandy deserts.',
     'There are estimated to be over 14 million camels in the world. Camels introduced to desert areas of Australia are the worlds largest populations of feral camels.'
-    ]
+    )
 
 CHEETAH_FACTS = (
     'The cheetah is the fastest land animal in the world. They can reach a top speed of around 113 km per hour.',
@@ -240,7 +260,7 @@ CRAB_FACTS = (
     'The most consumed species of crab in the world is the Japanese Blue Crab.'
     )
 
-DOLPHIN_FACTS = [
+DOLPHIN_FACTS = (
     'Compared to other animals, dolphins are believed to be very intelligent.',
     'Dolphins are carnivores.',
     'The Killer Whale (also known as Orca) is actually a type of dolphin.',
@@ -253,20 +273,20 @@ DOLPHIN_FACTS = [
     'Dolphins communicate with each other by clicking, whistling and other sounds.',
     'Some dolphin species face the threat of extinction, often directly as a result of human behavior. The Yangtze River Dolphin is an example of a dolphin species which may have recently become extinct.',
     'Some fishing methods, such as the use of nets, kill a large number of dolphins every year.'
-    ]
+    )
 
 ELEPHANT_FACTS = (
-    'There are two types of elephant, the Asian elephant and the African elephant (although sometimes the African Elephant is split into two species, the African Forest Elephant and the African Bush Elephant).'
-    'Elephants are the largest land-living mammal in the world.'
-    'Both female and male African elephants have tusks but only the male Asian elephants have tusks. They use their tusks for digging and finding food.'
-    'Female elephants are called cows. They start to have calves when they are about 12 years old and they are pregnant for 22 months.'
-    'An elephant can use its tusks to dig for ground water. An adult elephant needs to drink around 210 litres of water a day.'
-    'Elephants have large, thin ears. Their ears are made up of a complex network of blood vessels which help regulate their temperature. Blood is circulated through their ears to cool them down in hot climates.'
-    'Elephants have no natural predators. However, lions will sometimes prey on young or weak elephants in the wild. The main risk to elephants is from humans through poaching and changes to their habitat.'
-    'The elephant’s trunk is able to sense the size, shape and temperature of an object. An elephant uses its trunk to lift food and suck up water then pour it into its mouth.'
-    'An elephant’s trunk can grow to be about 2 meters long and can weigh up to 140 kg. Some scientists believe that an elephant’s trunk is made up of 100,000 muscles, but no bones.'
-    'Female elephants spend their entire lives living in large groups called herds. Male elephant leave their herds at about 13 years old and live fairly solitary lives from this point.'
-    'Elephants can swim – they use their trunk to breathe like a snorkel in deep water.'
+    'There are two types of elephant, the Asian elephant and the African elephant (although sometimes the African Elephant is split into two species, the African Forest Elephant and the African Bush Elephant).',
+    'Elephants are the largest land-living mammal in the world.',
+    'Both female and male African elephants have tusks but only the male Asian elephants have tusks. They use their tusks for digging and finding food.',
+    'Female elephants are called cows. They start to have calves when they are about 12 years old and they are pregnant for 22 months.',
+    'An elephant can use its tusks to dig for ground water. An adult elephant needs to drink around 210 litres of water a day.',
+    'Elephants have large, thin ears. Their ears are made up of a complex network of blood vessels which help regulate their temperature. Blood is circulated through their ears to cool them down in hot climates.',
+    'Elephants have no natural predators. However, lions will sometimes prey on young or weak elephants in the wild. The main risk to elephants is from humans through poaching and changes to their habitat.',
+    'The elephant’s trunk is able to sense the size, shape and temperature of an object. An elephant uses its trunk to lift food and suck up water then pour it into its mouth.',
+    'An elephant’s trunk can grow to be about 2 meters long and can weigh up to 140 kg. Some scientists believe that an elephant’s trunk is made up of 100,000 muscles, but no bones.',
+    'Female elephants spend their entire lives living in large groups called herds. Male elephant leave their herds at about 13 years old and live fairly solitary lives from this point.',
+    'Elephants can swim – they use their trunk to breathe like a snorkel in deep water.',
     'Elephants are herbivores and can spend up to 16 hours days collecting leaves, twigs, bamboo and roots.'
     )
 
@@ -363,7 +383,7 @@ HIPPO_FACTS = (
     'Hippos eat mostly grass.'
     )
 
-HORSE_FACTS = [
+HORSE_FACTS = (
     'Horses can sleep both lying down and standing up.',
     'Horses can run shortly after birth.',
     'You can generally tell the difference between male and female horses by their number of teeth: males have 40 while females have 36 (but honestly, most us are going to use the much “easier” way).',
@@ -386,7 +406,7 @@ HORSE_FACTS = [
     'An adult horse’s brain weights 22 oz, about half that of a human.',
     'The first cloned horse was a Haflinger mare in Italy in 2003.',
     'Horses with pink skin can get a sunburn.'
-    ]
+    )
 
 JELLYFISH_FACTS = (
     'Jellyfish live in the sea and are found in all oceans.',
@@ -464,7 +484,7 @@ OWL_FACTS = (
     'Barn owls can be recognized by their heart shaped face.'
     )
 
-TURTLE_FACTS = [
+TURTLE_FACTS = (
     'Turtles are reptiles.',
     'Turtles have a hard shell that protects them like a shield, this upper shell is called a ‘carapace’.',
     'Turtles also have a lower shell called a ‘plastron’.',
@@ -477,11 +497,10 @@ TURTLE_FACTS = [
     'Some turtles lay eggs in the sand and leave them to hatch on their own. The young turtles make their way to the top of the sand and scramble to the water while trying to avoid predators.',
     'Sea turtles have special glands which help remove salt from the water they drink.',
     'Many turtle species are endangered.'
-    ]
+    )
 
-KOALA_FACTS = [
-    'Koalas are native to Australia.',
-    'Koalas are not bears.',
+KOALA_FACTS = (
+    'Koalas are native to Australia. Koalas are not bears.',
     'Koala fossils found in Australia have been dated as long ago as 20 million years.',
     'Koalas eat eucalypt leaves and almost nothing else.',
     'The brain size of modern koalas has reduced substantially from their ancestors, possibly as an adaptation to the low energy they get from their diets.',
@@ -490,10 +509,9 @@ KOALA_FACTS = [
     'Koalas have similar fingerprints to humans.',
     'Koalas have large noses that are coloured pink or black.',
     'Outside of breeding seasons, koalas are quiet animals.',
-    'A baby koala is called a ‘joey’.',
-    'Joeys live in their mother’s pouch for around six months and remain with them for another six months or so afterwards.',
+    'A baby koala is called a ‘joey’. Joeys live in their mother’s pouch for around six months and remain with them for another six months or so afterwards.',
     'Koalas cannot be kept legally as pets.',
-    ]
+    )
 
 SLOTH_FACTS = [
     'Sloths are a medium-sized mammal. There are two types of sloth the two-toed sloth and the three-toed sloth, they are classified into six different species.',
@@ -533,17 +551,14 @@ OTTER_FACTS = [
     ]
 
 SNAKE_FACTS = [
-    'Snakes are carnivores',
     'Snakes don’t have eyelids.',
-    'Snakes can’t bite food so have to swallow it whole.',
+    'Snakes can’t chew food so they have to swallow it whole.',
     'Snakes have flexible jaws which allow them to eat prey bigger than their head!',
     'Snakes are found on every continent of the world except Antarctica.',
     'Snakes have internal ears but not external ones.',
     'Snakes used in snake charming performances respond to movement, not sound.',
     'There are around 3000 different species of snake.',
     'Snakes have a unique anatomy which allows them to swallow and digest large prey.',
-    'Snakes are covered in scales.',
-    'Snakeskin is smooth and dry.',
     'Snakes shed their skin a number of times a year in a process that usually lasts a few days.',
     'Some species of snake, such as cobras and black mambas, use venom to hunt and kill their prey.',
     'Snakes smell with their tongue.',
@@ -713,6 +728,7 @@ ZEBRA_FACTS = [
 ALL_FACTS = (
     ALLIGATOR_FACTS,
     BADGER_FACTS,
+    BEAVER_FACTS,
     CAMEL_FACTS,
     CHEETAH_FACTS,
     CRAB_FACTS,
