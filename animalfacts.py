@@ -3,6 +3,7 @@ import praw
 import random
 import time
 import sys
+import string
 from pygame import mixer
 # from '/' import lists
 
@@ -28,24 +29,24 @@ def authenticate():
 
 def check_messages(reddit):
     print("Checking my messages...\n")
-    for comment in reddit.inbox.comment_replies(limit=25):
+    for comment in reddit.inbox.comment_replies(limit=55):
         if not comment.subreddit.user_is_banned:
             file_obj_r = open(reply_history,'r')
-            commented_obj_r = open(history,'r')
             if comment.id not in file_obj_r.read().splitlines():
-                if 'good bot' in comment.body.lower():
-                    comment.reply('Thanks! I try to be! Beep boop.')
+                comment_body = comment.body.lower()
+                if 'good bot' in comment_body:
+                    comment.reply('Thanks! You can ask me for more facts any time. Beep boop.')
                     print('     Thanked someone for "good bot"\n')
                     record_already_replied(file_obj_r, comment)
-                elif 'bad bot' in comment.body.lower():
+                elif 'bad bot' in comment_body:
                     comment.reply("I'm sorry. :(  You can PM my creator /u/Shaynk253 to tell him how to improve me.")
                     print('     Apologized to someone for "bad bot"\n')
                     record_already_replied(file_obj_r, comment)
-                elif 'more' in comment.body.lower():
+                elif 'more' in comment_body:
                     comment.reply("It looks like you asked for more animal facts! " + random_fact())
                     print('     Gave someone more facts!\n')
                     record_already_replied(file_obj_r, comment)
-                elif 'thank' in comment.body.lower():
+                elif 'thank' in comment_body:
                     comment.reply('You are most welcome. Beep boop.')
                     print('     Replied to a thank you\n')
                     record_already_replied(file_obj_r, comment)
@@ -53,31 +54,45 @@ def check_messages(reddit):
                     comment.reply("I'm always happy to help people learn!")
                     print('     Replied to a TIL\n')
                     record_already_replied(file_obj_r, comment)
-                elif 'best bot' in comment.body.lower():
+                elif 'best bot' in comment_body:
                     comment.reply("It sounds like you called me the 'best bot'. That's awesome!")
                     print('     Replied to a "best bot"\n')
                     record_already_replied(file_obj_r, comment)
-                elif re.search('(fuck)|(bitch)|(shit)', comment.body.lower()):
+                elif re.search('(fuck)|(bitch)|(shit)', comment_body):
                     comment.reply("https://www.youtube.com/watch?v=hpigjnKl7nI")
                     print('     WATCH YO PROFANITY\n')
                     record_already_replied(file_obj_r, comment)
-                elif re.search('(\scats?\s)|(\sdogs?\s)', comment.body.lower()):
+                elif re.search('(\scats?\s)|(\sdogs?\s)', comment_body):
                     comment.reply("Did you ask for cat or dog facts? I'm sorry, if I did cat or dog facts I'd be spamming every thread on reddit. Reply 'more' if you'd like a random animal fact.")
                     print('     Explained why I cant do cat or dog facts\n')
                     record_already_replied(file_obj_r, comment)
-                elif 'silly' in comment.body.lower():
+                elif 'silly' in comment_body:
                     comment.reply('I am programmed to be silly!')
                     print('     Explained why I am silly\n')
                     record_already_replied(file_obj_r, comment)
-                elif 'hate' in comment.body.lower():
+                elif 'hate' in comment_body:
                     comment.reply("Please don't hate. Beep boop.")
                     print('     Replied to a "hate" comment\n')
                     record_already_replied(file_obj_r, comment)
-                elif comment.id not in commented_obj_r.read().splitlines():
+                else:
+                    commented_obj_r = open(history,'r')
+                    # print(len(commented_obj_r.read().splitlines()))
+                    if comment.id not in commented_obj_r.read().splitlines():
+                        check_comment_for_animal(comment, reddit)
                     commented_obj_r.close()
-                    check_comment_for_animal(comment, reddit)
             file_obj_r.close()
 
+def number_of_facts_given():
+    commented_obj_r = open(history,'r')
+    count = len(commented_obj_r.read().splitlines())
+    commented_obj_r.close()
+    return count
+
+def number_of_facts(ALL_FACTS):
+    count = 0
+    for array in ALL_FACTS:
+        count += len(array)
+    return count
 
 def record_already_replied(read_file, comment):
     read_file.close()
@@ -91,7 +106,8 @@ def random_fact():
     return random.choice(fact_collection)
 
 def botengine(animal, regex, reddit, facts, comment):
-    match = re.findall(regex, comment.body)
+    text = ' '.join(word.strip(string.punctuation) for word in comment.body.lower().split()) + ' '
+    match = re.findall(regex, text)
     if match:
         print(animal.upper() + " found in comment with comment ID: " + comment.id)
         if comment.subreddit.display_name.lower() not in BLACKLIST:
@@ -103,7 +119,7 @@ def botengine(animal, regex, reddit, facts, comment):
                     if comment.author.name == reddit.user.me():
                         print('     Skipping my own comment...\n')
                     else:
-                        print('     by ' + comment.author.name + ' in ' + comment.subreddit.display_name + '\n')
+                        print('     by ' + comment.author.name + ' in ' + comment.subreddit.display_name + '\n      commenting a fact...')
                         comment.reply(random.choice(facts))
                         alert.play()
                         file_obj_r.close()
