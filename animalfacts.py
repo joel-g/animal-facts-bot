@@ -5,7 +5,7 @@ import time
 from pygame import mixer
 # from '/' import lists
 
-BLACKLIST = ('suicidewatch', 'depression', 'snakes', 'mturk')
+BLACKLIST = ('suicidewatch', 'depression', 'snakes', 'mturk', 'babyelephantgifs')
 
 mixer.init()
 alert=mixer.Sound('bird.wav')
@@ -108,7 +108,7 @@ def botengine(animal, regex, reddit, facts, comment):
                 else:
                     print('     Already commented on this!\n')
 
-ANIMALS = ('alligator', 'badger', 'camel', 'cheetah', 'dolphin', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hippo', 'horse', 'jellyfish', 'koala', 'lion' 'monkey', 'octopus', 'otter', 'owl', 'panda', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
+ANIMALS = ('alligator', 'badger', 'camel', 'cheetah', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hippo', 'horse', 'jellyfish', 'koala', 'lion' 'monkey', 'octopus', 'otter', 'owl', 'panda', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
 
 def check_comment_for_animal(comment, reddit):
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
@@ -116,6 +116,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
+    botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
     botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
@@ -228,7 +229,22 @@ DOLPHIN_FACTS = [
     'Some fishing methods, such as the use of nets, kill a large number of dolphins every year.'
     ]
 
-FLAMINGO_FACTS = [
+ELEPHANT_FACTS = (
+    'There are two types of elephant, the Asian elephant and the African elephant (although sometimes the African Elephant is split into two species, the African Forest Elephant and the African Bush Elephant).'
+    'Elephants are the largest land-living mammal in the world.'
+    'Both female and male African elephants have tusks but only the male Asian elephants have tusks. They use their tusks for digging and finding food.'
+    'Female elephants are called cows. They start to have calves when they are about 12 years old and they are pregnant for 22 months.'
+    'An elephant can use its tusks to dig for ground water. An adult elephant needs to drink around 210 litres of water a day.'
+    'Elephants have large, thin ears. Their ears are made up of a complex network of blood vessels which help regulate their temperature. Blood is circulated through their ears to cool them down in hot climates.'
+    'Elephants have no natural predators. However, lions will sometimes prey on young or weak elephants in the wild. The main risk to elephants is from humans through poaching and changes to their habitat.'
+    'The elephant’s trunk is able to sense the size, shape and temperature of an object. An elephant uses its trunk to lift food and suck up water then pour it into its mouth.'
+    'An elephant’s trunk can grow to be about 2 metres long and can weigh up to 140 kg. Some scientists believe that an elephant’s trunk is made up of 100,000 muscles, but no bones.'
+    'Female elephants spend their entire lives living in large groups called herds. Male elephant leave their herds at about 13 years old and live fairly solitary lives from this point.'
+    'Elephants can swim – they use their trunk to breathe like a snorkel in deep water.'
+    'Elephants are herbivores and can spend up to 16 hours days collecting leaves, twigs, bamboo and roots.'
+    )
+
+FLAMINGO_FACTS = (
     'Flamingos are a type of wading bird that live in areas of large shallow lakes, lagoons, mangrove swamps, tidal flats, and sandy islands.',
     'The word "flamingo" comes from the Spanish word "flamenco" which came from the earlier Latin word "flamma" meaning flame or fire.',
     'There are six species of flamingo in the world. Two are found in the Old World and four species live in the New World - Americas.',
@@ -243,7 +259,7 @@ FLAMINGO_FACTS = [
     'Flamingos are social birds, they live in colonies of sometimes thousands, this helps in avoiding predators, maximizing food intake, and is better for nesting.',
     'Flamingo colonies split into breeding groups of up to 50 birds, who then perform a synchronized ritual "dance" whereby they stand together stretching their necks upwards, uttering calls while waving their heads and then flapping their wings.',
     'The flamingo is the national bird of the Bahamas.'
-    ]
+    )
 
 FROG_FACTS = [
     'A frog is an amphibian. They lay their eggs in water. The eggs hatch into a tadpole which lives in water until it metamorphoses into an adult frog.',
@@ -648,6 +664,7 @@ ALL_FACTS = (
     DOLPHIN_FACTS,
     FLAMINGO_FACTS,
     FROG_FACTS,
+    ELEPHANT_FACTS,
     GIRAFFE_FACTS,
     GORILLA_FACTS,
     HIPPO_FACTS,
