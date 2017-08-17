@@ -129,6 +129,7 @@ def animalfactsbot(reddit):
         botengine('horse', '\shorses?\s', reddit, HORSE_FACTS, comment)
         botengine('jellyfish', '\sjellyfish\s', reddit, JELLYFISH_FACTS, comment)
         botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
+        botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
         botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
         botengine('octopus', '\soctopus?\s', reddit, OCTOPUS_FACTS, comment)
         botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
@@ -315,7 +316,23 @@ JELLYFISH_FACTS = [
     'Jellyfish eat plankton. Some sea turtles eat jellyfish.'
     ]
 
-MONKEY_FACTS = [
+LION_FACTS = (
+    'Lions are the second largest big cat species in the world (behind tigers).',
+    'The average male lion weighs around 180 kg (400 lb) while the average female lion weighs around 130 kg (290 lb).',
+    'The heaviest lion on record weighed an amazing 375 kg (826 lb).',
+    'Lions can reach speeds of up to 81 kph (50 mph) but only in short bursts because of a lack of stamina.',
+    'The roar of a lion can be heard from 8 kilometers (5.0 miles) away.',
+    'Most lions found in the wild live in southern and eastern parts of Africa.',
+    'Lions are very social compared to other cat species, often living in prides that feature females, offspring and a few adult males.',
+    'Male lions are easy to recognize thanks to their distinctive manes. Males with darker manes are more likely to attract female lions (lionesses).',
+    'Lions are the national animal of Albania, Belgium, Bulgaria, England, Ethiopia, Luxembourg, the Netherlands and Singapore.',
+    'Lions in the wild live for around 12 years.',
+    'When lions breed with tigers the resulting hybrids are known as ligers and tigons. There are also lion and leopard hybrids known as leopons and lion and jaguar hybrids known as jaglions.',
+    'Lionesses are better hunters than males and do most of the hunting for a pride.',
+    'In the wild, lions rest for around 20 hours a day.',
+    )
+
+MONKEY_FACTS = (
     'There are currently 264 known monkey species.',
     'Monkeys can be divided into two groups, Old World monkeys that live in Africa and Asia, and New World monkeys that live in South America.',
     'A baboon is an example of an Old World monkey, while a marmoset is an example of a New World monkey.',
@@ -329,10 +346,10 @@ MONKEY_FACTS = [
     'Capuchin monkeys are believed to be one of the smartest New World monkey species. They have the ability to use tools, learn new skills and show various signs of self-awareness.',
     'Spider monkeys get their name because of their long arms, legs and tail.',
     'The monkey is the 9th animal that appears on the Chinese zodiac, appearing as the zodiac sign in 2016.'
-    ]
+    )
 
 
-OWL_FACTS = [
+OWL_FACTS = (
     'There are around 200 different owl species.',
     'Owls are active at night (nocturnal).',
     'A group of owls is called a parliament.',
@@ -345,7 +362,7 @@ OWL_FACTS = [
     'Owls are very quiet in flight compared to other birds of prey.',
     'The color of owl’s feathers helps them blend into their environment (camouflage).',
     'Barn owls can be recognized by their heart shaped face.'
-    ]
+    )
 
 TURTLE_FACTS = [
     'Turtles are reptiles.',
