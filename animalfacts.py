@@ -24,6 +24,7 @@ def check_messages(reddit):
     for comment in reddit.inbox.comment_replies(limit=50):
         if comment.subreddit.display_name.lower() not in BLACKLIST:
             file_obj_r = open(reply_history,'r')
+            commented_obj_r = open(history,'r')
             if comment.id not in file_obj_r.read().splitlines():
                 if 'good bot' in comment.body.lower():
                     comment.reply('Thanks! I try to be! Beep boop.')
@@ -65,6 +66,10 @@ def check_messages(reddit):
                     comment.reply("Please don't hate. Beep boop.")
                     print('     Replied to a "hate" comment\n')
                     record_already_replied(file_obj_r, comment)
+                elif comment.id not in commented_obj_r.read().splitlines():
+                    commented_obj_r.close()
+                    check_comment_for_animal(comment, reddit)
+            file_obj_r.close()
 
 
 def record_already_replied(read_file, comment):
@@ -108,9 +113,38 @@ def botengine(animal, regex, reddit, facts, comment):
         #     print('     This comment is in a blacklisted subreddit: ' + comment.subreddit.display_name + '\n')
         #     bell.play()
 
-ANIMALS = ('alligator', 'badger', 'camel', 'dolphin', 'flamingo', 'frog', 'giraffe', 'hippo', 'horse', 'jellyfish', 'koala', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
+ANIMALS = ('alligator', 'badger', 'camel', 'dolphin', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hippo', 'horse', 'jellyfish', 'koala', 'lion' 'monkey', 'octopus', 'otter', 'owl', 'panda', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
 
-
+def check_comment_for_animal(comment, reddit):
+    botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
+    botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
+    botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
+    botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
+    botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
+    botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
+    botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
+    botengine('gorilla', '\sgorillas?\s', reddit, GORILLA_FACTS, comment)
+    botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS, comment)
+    botengine('horse', '\shorses?\s', reddit, HORSE_FACTS, comment)
+    botengine('jellyfish', '\sjellyfish\s', reddit, JELLYFISH_FACTS, comment)
+    botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
+    botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
+    botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
+    botengine('octopus', '\soctopus?\s', reddit, OCTOPUS_FACTS, comment)
+    botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
+    botengine('owl', '\sowls?\s', reddit, OWL_FACTS, comment)
+    botengine('panda', '\spandas?\s', reddit, PANDA_FACTS, comment)
+    botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS, comment)
+    botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
+    botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
+    botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
+    botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS, comment)
+    botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
+    botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
+    botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
+    botengine('wolf', '\swolf\s', reddit, WOLF_FACTS, comment)
+    botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
+    botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS, comment)
 
 def animalfactsbot(reddit):
     check_messages(reddit)
@@ -118,34 +152,8 @@ def animalfactsbot(reddit):
     comment_list = reddit.subreddit('all').comments(limit = 1500)
     print("     checking each comment for " + str(len(ANIMALS)) + " different animals\n")
     for comment in comment_list:
-        botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
-        botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
-        botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
-        botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
-        botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
-        botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
-        botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
-        botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS, comment)
-        botengine('horse', '\shorses?\s', reddit, HORSE_FACTS, comment)
-        botengine('jellyfish', '\sjellyfish\s', reddit, JELLYFISH_FACTS, comment)
-        botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
-        botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
-        botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
-        botengine('octopus', '\soctopus?\s', reddit, OCTOPUS_FACTS, comment)
-        botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
-        botengine('owl', '\sowls?\s', reddit, OWL_FACTS, comment)
-        botengine('panda', '\spandas?\s', reddit, PANDA_FACTS, comment)
-        botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS, comment)
-        botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
-        botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
-        botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
-        botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS, comment)
-        botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
-        botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
-        botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
-        botengine('wolf', '\swolf\s', reddit, WOLF_FACTS, comment)
-        botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
-        botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS, comment)
+        check_comment_for_animal(comment, reddit)
+
 
 ALLIGATOR_FACTS = [
     'Alligators are reptiles.',
@@ -241,7 +249,7 @@ FROG_FACTS = [
     "Remarkably, frogs actually use their eyes to help them swallow food. When the frog blinks, its eyeballs are pushed downwards creating a bulge in the roof of its mouth. This bulge squeezes the food inside the frog's mouth down the back of its throat."
     ]
 
-GIRAFFE_FACTS = [
+GIRAFFE_FACTS = (
     'A male giraffe can weigh as much as a pick up truck! That’s about 1400 kilograms.',
     'Although a giraffe’s neck is 1.5 – 1.8 meters, it contains the same number of vertebrae at a human neck.',
     "A giraffe's habitat is usually found in African savannas, grasslands or open woodlands.",
@@ -253,7 +261,19 @@ GIRAFFE_FACTS = [
     'Male giraffes sometimes fight with their necks over female giraffes. This is called “necking”. The two giraffes stand side by side and one giraffe swings his head and neck, hitting his head against the other giraffe. Sometimes one giraffe is hit to the ground during a combat.',
     'A female giraffe gives birth while standing up. The calf drops approximately 6 feet to the ground, but it is not hurt from the fall.',
     'Giraffes have bluish-purple tongues which are tough and covered in bristly hair to help them with eating the thorny Acacia trees.',
-    ]
+    )
+
+GORILLA_FACTS = (
+    'There are only about 700 mountain gorillas and they live high in the mountains in two protected parks in Africa. Lowland gorillas live in central Africa.',
+    'You may have seen baby gorillas being carried on the back of their mothers, but for the first few months after birth the mother holds the baby gorilla to her chest.',
+    'An adult male gorilla is called a silverback because of the distinctive silvery fur growing on their back and hips. Each gorilla family has a silverback as leader who scares away other animals by standing on their back legs and beating their chest!',
+    'Young male gorillas usually leave their family group when they are about 11 years old and have their own family group by the age of 15 years old. Young female gorillas join a new group at about 8 years old.',
+    'Gorillas are herbivores. They spend most of their day foraging for food and eating bamboo, leafy plants and sometimes small insects. Adult gorillas can eat up to 30 kilograms of food each day.'
+    'An adult gorilla is about 1 meter tall to their shoulders when walking on all fours using their arms and their legs.',
+    'A gorilla can live for 40 – 50 years.',
+    'Gorillas are considered to be very intelligent animals. They are known for their use of tools and their varied communication. Some gorillas in captivity at a zoo have been taught to use sign language.',
+    'Gorillas are endangered animals. Their habitat is destroyed when people use the land for farming and the trees for fuel. Gorillas are also killed by poachers and sometimes get caught in poacher’s snares meant for other animals.'
+    )
 
 HIPPO_FACTS = [
     'Hippopotamuses are found in Africa.'
@@ -621,10 +641,12 @@ ALL_FACTS = (
     FLAMINGO_FACTS,
     FROG_FACTS,
     GIRAFFE_FACTS,
+    GORILLA_FACTS,
     HIPPO_FACTS,
     HORSE_FACTS,
     JELLYFISH_FACTS,
     KOALA_FACTS,
+    LION_FACTS,
     MONKEY_FACTS,
     OCTOPUS_FACTS,
     OTTER_FACTS,
