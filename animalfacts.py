@@ -108,7 +108,7 @@ def botengine(animal, regex, reddit, facts, comment):
                 else:
                     print('     Already commented on this!\n')
 
-ANIMALS = ('alligator', 'badger', 'camel', 'cheetah', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hippo', 'horse', 'jellyfish', 'koala', 'lion' 'monkey', 'octopus', 'otter', 'owl', 'panda', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
+ANIMALS = ('alligator', 'badger', 'camel', 'cheetah', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
 
 def check_comment_for_animal(comment, reddit):
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
@@ -126,6 +126,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('jellyfish', '\sjellyfish\s', reddit, JELLYFISH_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
+    botengine('leopard', '\sleopards?\s', reddit, LEOPARD_FACTS, comment)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
     botengine('octopus', '\soctopus?\s', reddit, OCTOPUS_FACTS, comment)
     botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
@@ -152,7 +153,7 @@ def animalfactsbot(reddit):
         check_comment_for_animal(comment, reddit)
 
 
-ALLIGATOR_FACTS = [
+ALLIGATOR_FACTS = (
     'Alligators are reptiles.',
     'Alligators have been living on Earth for millions of years and are sometimes described as ‘living fossils’.',
     'There are two different species of alligator, the American alligator and the Chinese alligator.',
@@ -164,9 +165,9 @@ ALLIGATOR_FACTS = [
     'Alligators eat a range of different animals such as fish, birds, turtles and even deer.',
     'Alligator eggs become male or female depending on the temperature, male in warmer temperatures and female in cooler temperatures.',
     'Like crocodiles, alligators are part of the order ‘Crocodylia’.'
-    ]
+    )
 
-BADGER_FACTS = [
+BADGER_FACTS = (
     'Badgers are part of the family Mustelidae this is the same family as otters, ferret, polecats, weasels and wolverines.',
     'There are 11 species of badger, grouped into 3 types, the Melinae (Eurasian badgers), Mellivorinae (Honey badger) and Taxideinae (American badger).',
     'Badgers are found in North America, Ireland, Great Britain and most of Europe. There are species in Japan, China, Indonesia and Malaysia. The honey badger is found in sub-Saharan Africa, the Arabian Desert, Turkmenistan, and India.',
@@ -181,7 +182,7 @@ BADGER_FACTS = [
     'The honey badger is a carnivorous species that has the reputation of being the most fearless and vicious of all mammals.',
     'Badgers were eaten in Britain during World War II and were once part of the Native American and settlers diets in the US. Russia still eats badger meat today.',
     "Badgers have featured in lots of British literature over the years, such as Brian Jacques' Redwall series, 'Tommy Brock' in Beatrix Potter's The Tale of Mr. Tod, 'Bill Badger' in Mary Tourtel's Rupert Bear, 'Mr. Badger' in Kenneth Grahame's The Wind in the Willows and 'Trufflehunter' in C. S. Lewis's Chronicles of Narnia."
-    ]
+    )
 
 CAMEL_FACTS = [
     'There are two species of true camel. The dromedary, is a single humped camel that lives in the Middle East and the Horn of Africa area. The bactrian, is a two-humped camel that lives in areas of Central Asia.',
@@ -346,7 +347,7 @@ HORSE_FACTS = [
     'Horses with pink skin can get a sunburn.'
     ]
 
-JELLYFISH_FACTS = [
+JELLYFISH_FACTS = (
     'Jellyfish live in the sea and are found in all oceans.',
     'Some jellyfish live in fresh water.',
     'Jellyfish look a little like umbrellas.',
@@ -360,7 +361,21 @@ JELLYFISH_FACTS = [
     'Jellyfish use their tentacles to sting. Most are harmless to humans but stings from some species, such as the box jellyfish, can be very painful and sometimes kill.',
     'Box jellyfish are almost transparent.',
     'Jellyfish eat plankton. Some sea turtles eat jellyfish.'
-    ]
+    )
+
+LEOPARD_FACTS = (
+    'Leopards are part of the cat family, Felidae. The scientific name for a leopard is Panthera pardus.',
+    'Leopards are well known for their cream and gold spotted fur, but some leopards have black fur with dark spots. These black leopards are often mistaken for panthers.',
+    'Adult leopards are solitary animals. Each adult leopard has its own territory where it lives and, although they often share parts of it, they try to avoid one another.',
+    'A leopard’s body is built for hunting. They have sleek, powerful bodies and can run at speeds of up to 57 kilometres per hour. They are also excellent swimmers and climbers and can leap and jump long distances.',
+    'A leopard’s tail is just about as long as its entire body. This helps it with balance and enables it to make sharp turns quickly.',
+    'Leopards are mostly nocturnal, hunting prey at night.',
+    'Leopards protect their food from other animals by dragging it high up into the trees. A leopard will often leave their prey up in the tree for days and return only when they are hungry!',
+    'Female leopards give birth to a litter of two or three cubs at a time. By the time a cub is two years old it will leave the company of its mother and live on their own.',
+    'When a female leopard is ready to mate she will give a scent and rub her body on the trees to leave her smell there. Male leopards either smell the females scent or hear her call to know that she is ready to mate.',
+    'Some people believe that the bones and whiskers of leopards can heal sick people. Many leopards are killed each year for their fur and body parts and this is one reason why the leopard is an endangered animal. While they were previously found in the wild in a number of areas around the world, their habitat is largely restricted to sub-Saharan Africa with small numbers also found in India, Pakistan, Malaysia, China and Indochina.'
+    )
+
 
 LION_FACTS = (
     'Lions are the second largest big cat species in the world (behind tigers).',
@@ -672,6 +687,7 @@ ALL_FACTS = (
     JELLYFISH_FACTS,
     KOALA_FACTS,
     LION_FACTS,
+    LEOPARD_FACTS,
     MONKEY_FACTS,
     OCTOPUS_FACTS,
     OTTER_FACTS,
