@@ -5,7 +5,7 @@ import time
 from pygame import mixer
 # from '/' import lists
 
-BLACKLIST = ('asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes', 'protectandserve', 'kansas', 'inceltears', 'explainlikeimfive', 'retconned', 'neoliberal', 'writingprompts', 'dnd', 'worldbuilding', 'parenting', 'tattoos', 'evolution', 'kotakuinaction', 'dragonage', 'giantbomb', 'television', 'dodgers', 'portland', 'legaladvice', 'amwfs', 'texas', 'naruto', 'cars', 'mma', 'belgium', 'gadgets', 'guildwars2', 'justnomil', 'aww', 'nba', 'history')
+BLACKLIST = ('suicidewatch', 'depression', 'snakes', 'mturk')
 
 mixer.init()
 alert=mixer.Sound('bird.wav')
@@ -22,7 +22,7 @@ def authenticate():
 def check_messages(reddit):
     print("Checking my messages...\n")
     for comment in reddit.inbox.comment_replies(limit=50):
-        if comment.subreddit.display_name.lower() not in BLACKLIST:
+        if not comment.subreddit.user_is_banned:
             file_obj_r = open(reply_history,'r')
             commented_obj_r = open(history,'r')
             if comment.id not in file_obj_r.read().splitlines():
@@ -89,29 +89,27 @@ def botengine(animal, regex, reddit, facts, comment):
     match = re.findall(regex, comment.body)
     if match:
         print(animal.upper() + " found in comment with comment ID: " + comment.id)
-        # if comment.subreddit.display_name.lower() not in BLACKLIST:
-        if comment.subreddit.user_is_banned:
-            print("     Not commenting because I am banned from " + comment.subreddit.display_name + "\n")
-        else:
-            file_obj_r = open(history,'r')
-            if comment.id not in file_obj_r.read().splitlines():
-                if comment.author.name == reddit.user.me():
-                    print('     Skipping my own comment...\n')
-                else:
-                    print('     by ' + comment.author.name + ' in ' + comment.subreddit.display_name + '\n')
-                    comment.reply(random.choice(facts))
-                    alert.play()
-                    file_obj_r.close()
-                    file_obj_w = open(history,'a+')
-                    file_obj_w.write(comment.id + '\n')
-                    file_obj_w.close()
-                    print('Waiting 10 seconds before checking more\n')
-                    time.sleep(10)
+        if comment.subreddit.display_name.lower() not in BLACKLIST:
+            if comment.subreddit.user_is_banned:
+                print("     Not commenting because I am banned from " + comment.subreddit.display_name + "\n")
             else:
-                print('     Already commented on this!\n')
-        # else:
-        #     print('     This comment is in a blacklisted subreddit: ' + comment.subreddit.display_name + '\n')
-        #     bell.play()
+                file_obj_r = open(history,'r')
+                if comment.id not in file_obj_r.read().splitlines():
+                    if comment.author.name == reddit.user.me():
+                        print('     Skipping my own comment...\n')
+                    else:
+                        print('     by ' + comment.author.name + ' in ' + comment.subreddit.display_name + '\n')
+                        comment.reply(random.choice(facts))
+                        alert.play()
+                        file_obj_r.close()
+                        file_obj_w = open(history,'a+')
+                        file_obj_w.write(comment.id + '\n')
+                        file_obj_w.close()
+                        print('Waiting 10 seconds before checking more\n')
+                        time.sleep(10)
+                else:
+                    print('     Already commented on this!\n')
+
 
 ANIMALS = ('alligator', 'badger', 'camel', 'dolphin', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hippo', 'horse', 'jellyfish', 'koala', 'lion' 'monkey', 'octopus', 'otter', 'owl', 'panda', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
 
