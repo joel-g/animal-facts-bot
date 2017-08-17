@@ -5,7 +5,7 @@ import time
 from pygame import mixer
 # from '/' import lists
 
-BLACKLIST = ['asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes', 'protectandserve', 'kansas', 'inceltears', 'explainlikeimfive', 'retconned', 'neoliberal', 'writingprompts', 'dnd', 'worldbuilding', 'parenting', 'tattoos', 'evolution', 'kotakuinaction', 'dragonage', 'giantbomb', 'television', 'dodgers', 'portland', 'legaladvice', 'amwfs', 'texas', 'naruto', 'cars', 'mma', 'belgium', 'gadgets', 'guildwars2', 'justnomil']
+BLACKLIST = ('asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes', 'protectandserve', 'kansas', 'inceltears', 'explainlikeimfive', 'retconned', 'neoliberal', 'writingprompts', 'dnd', 'worldbuilding', 'parenting', 'tattoos', 'evolution', 'kotakuinaction', 'dragonage', 'giantbomb', 'television', 'dodgers', 'portland', 'legaladvice', 'amwfs', 'texas', 'naruto', 'cars', 'mma', 'belgium', 'gadgets', 'guildwars2', 'justnomil')
 
 mixer.init()
 alert=mixer.Sound('bird.wav')
@@ -78,65 +78,71 @@ def random_fact():
     fact_collection =  random.choice(ALL_FACTS)
     return random.choice(fact_collection)
 
-def botengine(animal, regex, reddit, facts):
-    print("Checking 500 comments for " + animal + "...\n")
-    for comment in reddit.subreddit('all').comments(limit = 500):
-        match = re.findall(regex, comment.body)
 
-        if match:
-            print(animal.upper() + " found in comment with comment ID: " + comment.id)
-            if comment.subreddit.display_name.lower() not in BLACKLIST:
-                file_obj_r = open(history,'r')
-                if comment.id not in file_obj_r.read().splitlines():
-                    if comment.author.name == reddit.user.me():
-                        print('     Skipping my own comment...\n')
-                    else:
-                        print('     by ' + comment.author.name + '\n')
-                        comment.reply(random.choice(facts))
-                        alert.play()
-                        file_obj_r.close()
-                        file_obj_w = open(history,'a+')
-                        file_obj_w.write(comment.id + '\n')
-                        file_obj_w.close()
-                        print('Waiting 1.5 minutes before checking more\n')
-                        time.sleep(90)
+
+def botengine(animal, regex, reddit, facts, comment):
+    # print("     checking for " + animal)
+    match = re.findall(regex, comment.body)
+    if match:
+        print(animal.upper() + " found in comment with comment ID: " + comment.id)
+        if comment.subreddit.display_name.lower() not in BLACKLIST:
+            file_obj_r = open(history,'r')
+            if comment.id not in file_obj_r.read().splitlines():
+                if comment.author.name == reddit.user.me():
+                    print('     Skipping my own comment...\n')
                 else:
-                    print('     Already commented on this!\n')
+                    print('     by ' + comment.author.name + '\n')
+                    comment.reply(random.choice(facts))
+                    alert.play()
+                    file_obj_r.close()
+                    file_obj_w = open(history,'a+')
+                    file_obj_w.write(comment.id + '\n')
+                    file_obj_w.close()
+                    print('Waiting 1.5 minutes before checking more\n')
+                    time.sleep(90)
             else:
-                print('     This comment is in a blacklisted subreddit: ' + comment.subreddit.display_name + '\n')
-                bell.play()
+                print('     Already commented on this!\n')
+        else:
+            print('     This comment is in a blacklisted subreddit: ' + comment.subreddit.display_name + '\n')
+            bell.play()
+
+ANIMALS = ('alligator', 'badger', 'camel', 'dolphin', 'flamingo', 'frog', 'giraffe', 'hippo', 'horse', 'jellyfish', 'koala', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
 
 
 
 def animalfactsbot(reddit):
     check_messages(reddit)
-    botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS)
-    botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS)
-    botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS)
-    botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS)
-    botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS)
-    botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS)
-    botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS)
-    botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS)
-    botengine('horse', '\shorses?\s', reddit, HORSE_FACTS)
-    botengine('jellyfish', '\sjellyfish\s', reddit, JELLYFISH_FACTS)
-    botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS)
-    botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS)
-    botengine('octopus', '\soctopus?\s', reddit, OCTOPUS_FACTS)
-    botengine('otter', '\sotters?\s', reddit, OTTER_FACTS)
-    botengine('owl', '\sowls?\s', reddit, OWL_FACTS)
-    botengine('panda', '\spandas?\s', reddit, PANDA_FACTS)
-    botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS)
-    botengine('pig', '\spigs?\s', reddit, PIG_FACTS)
-    botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS)
-    botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS)
-    botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS)
-    botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS)
-    botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS)
-    botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS)
-    botengine('wolf', '\swolf\s', reddit, WOLF_FACTS)
-    botengine('whale', '\swhales?\s', reddit, WHALE_FACTS)
-    botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS)
+    print("Pulling 1500 comments...")
+    comment_list = reddit.subreddit('all').comments(limit = 1500)
+    print("     checking each comment for " + str(len(ANIMALS)) + " different animals\n")
+    for comment in comment_list:
+        botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
+        botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
+        botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
+        botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
+        botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
+        botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
+        botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
+        botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS, comment)
+        botengine('horse', '\shorses?\s', reddit, HORSE_FACTS, comment)
+        botengine('jellyfish', '\sjellyfish\s', reddit, JELLYFISH_FACTS, comment)
+        botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
+        botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
+        botengine('octopus', '\soctopus?\s', reddit, OCTOPUS_FACTS, comment)
+        botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
+        botengine('owl', '\sowls?\s', reddit, OWL_FACTS, comment)
+        botengine('panda', '\spandas?\s', reddit, PANDA_FACTS, comment)
+        botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS, comment)
+        botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
+        botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
+        botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
+        botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS, comment)
+        botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
+        botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
+        botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
+        botengine('wolf', '\swolf\s', reddit, WOLF_FACTS, comment)
+        botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
+        botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS, comment)
 
 ALLIGATOR_FACTS = [
     'Alligators are reptiles.',
@@ -218,6 +224,34 @@ FLAMINGO_FACTS = [
     'The flamingo is the national bird of the Bahamas.'
     ]
 
+FROG_FACTS = [
+    'A frog is an amphibian. They lay their eggs in water. The eggs hatch into a tadpole which lives in water until it metamorphoses into an adult frog.',
+    'Tadpoles look more like fish than frogs, they have long finned tails and breathe through gills.',
+    'An amphibian can live both on land and in water.',
+    'Although frogs live on land their habitat must be near swamps, ponds or in a damp place. This is because they will die if their skin dries out.',
+    'Instead of drinking water, frogs soak it into their body through their skin.',
+    'Frogs breathe through their nostrils while also absorbing about half the air they need through their skin.',
+    'Frogs use their sticky, muscular tongue to catch and swallow food. Unlike humans, their tongue is not attached to the back of its mouth. Instead it is attached to the front, enabling the frog to stick its tongue out much further.',
+    'The common pond frog is ready to breed when it is only three years old.',
+    'Frogs in the wild face many dangers and are lucky to survive several years. In captivity however, frogs can live for much longer.',
+    'Frogs can see forwards, sideways and upwards all at the same time. They never close their eyes, even when they sleep.',
+    "Remarkably, frogs actually use their eyes to help them swallow food. When the frog blinks, its eyeballs are pushed downwards creating a bulge in the roof of its mouth. This bulge squeezes the food inside the frog's mouth down the back of its throat."
+    ]
+
+GIRAFFE_FACTS = [
+    'A male giraffe can weigh as much as a pick up truck! That’s about 1400 kilograms.',
+    'Although a giraffe’s neck is 1.5 – 1.8 meters, it contains the same number of vertebrae at a human neck.',
+    "A giraffe's habitat is usually found in African savannas, grasslands or open woodlands.",
+    'The hair that makes up a giraffes tail is about 10 times thicker than the average strand of human hair.',
+    'The distinctive spots that cover a giraffe’s fur act as a good camouflage to protect the giraffe from predators. When the giraffe stands in front of trees and bushes the light and dark colouring of its fur blends in with the shadows and sunlight.',
+    'It is possible to identify the sex of the giraffe from the horns on its head. Both males and females have horns but the females are smaller and covered with hair at the top. Male giraffes may have up to 3 additional horns.',
+    'Giraffes are ruminants. This means that they have more than one stomach. In fact, giraffes have four stomachs, the extra stomachs assisting with digesting food.',
+    'Drinking is one of the most dangerous times for a giraffe. While it is getting a drink it cannot keep a look out for predators and is vulnerable to attack.',
+    'Male giraffes sometimes fight with their necks over female giraffes. This is called “necking”. The two giraffes stand side by side and one giraffe swings his head and neck, hitting his head against the other giraffe. Sometimes one giraffe is hit to the ground during a combat.',
+    'A female giraffe gives birth while standing up. The calf drops approximately 6 feet to the ground, but it is not hurt from the fall.',
+    'Giraffes have bluish-purple tongues which are tough and covered in bristly hair to help them with eating the thorny Acacia trees.',
+    ]
+
 HIPPO_FACTS = [
     'Hippopotamuses are found in Africa.'
     'The name hippopotamus means ‘river horse’ and is often shortened to hippo.',
@@ -236,6 +270,47 @@ HIPPO_FACTS = [
     'A group of hippos in known as a ‘herd’, ‘pod’, ‘dale’ or ‘bloat’.',
     'Hippos typically live for around 45 years.',
     'Hippos eat mostly grass.'
+    ]
+
+HORSE_FACTS = [
+    'Horses can sleep both lying down and standing up.',
+    'Horses can run shortly after birth.',
+    'You can generally tell the difference between male and female horses by their number of teeth: males have 40 while females have 36 (but honestly, most us are going to use the much “easier” way).',
+    'Domestic horses have a lifespan of around 25 years.',
+    'The Przewalski’s horse is the only truly wild horse species still in existence. The only wild population is in Mongolia. There are however numerous populations across the world of feral horses e.g. mustangs in North America.',
+    'A 19th century horse named ‘Old Billy’ is said to have lived 62 years.',
+    'Horses have around 205 bones in their skeleton.',
+    'Horses have been domesticated for over 5000 years.',
+    'Horses are herbivores.',
+    'Horses have bigger eyes than any other mammal that lives on land.',
+    'Because horse’s eyes are on the side of their head they are capable of seeing nearly 360 degrees at one time.',
+    'Horses gallop at around 44 kph (27 mph).',
+    'The fastest recorded sprinting speed of a horse was 88 kph (55 mph).',
+    'Estimates suggest that there are around 60 million horses in the world.',
+    'Scientists believe that horses have evolved over the past 50 million years from much smaller creatures.',
+    'A male horse is called a stallion.',
+    'A female horse is called a mare.',
+    'A young male horse is called a colt.',
+    'A young female horse is called a filly.',
+    'An adult horse’s brain weights 22 oz, about half that of a human.',
+    'The first cloned horse was a Haflinger mare in Italy in 2003.',
+    'Horses with pink skin can get a sunburn.'
+    ]
+
+JELLYFISH_FACTS = [
+    'Jellyfish live in the sea and are found in all oceans.',
+    'Some jellyfish live in fresh water.',
+    'Jellyfish look a little like umbrellas.',
+    'Jellyfish can be large and brightly colored.',
+    'They can often be transparent (see-through) or translucent (semi-translucent).',
+    'Some can be very hard to see, nearly invisible to the human eye.',
+    'Although the word is mentioned in their name, jellyfish are not fish.',
+    'A group of jellyfish is called a ‘bloom’, ‘swarm’ or ‘smack’.',
+    'Large blooms can feature over 100,000 jellyfish.',
+    'Jellyfish don’t have brains.',
+    'Jellyfish use their tentacles to sting. Most are harmless to humans but stings from some species, such as the box jellyfish, can be very painful and sometimes kill.',
+    'Box jellyfish are almost transparent.',
+    'Jellyfish eat plankton. Some sea turtles eat jellyfish.'
     ]
 
 MONKEY_FACTS = [
@@ -319,30 +394,6 @@ SLOTH_FACTS = [
     'In the wild, sloths live on average 10 - 16 years and in captivity over 30 years.',
     ]
 
-HORSE_FACTS = [
-    'Horses can sleep both lying down and standing up.',
-    'Horses can run shortly after birth.',
-    'You can generally tell the difference between male and female horses by their number of teeth: males have 40 while females have 36 (but honestly, most us are going to use the much “easier” way).',
-    'Domestic horses have a lifespan of around 25 years.',
-    'The Przewalski’s horse is the only truly wild horse species still in existence. The only wild population is in Mongolia. There are however numerous populations across the world of feral horses e.g. mustangs in North America.',
-    'A 19th century horse named ‘Old Billy’ is said to have lived 62 years.',
-    'Horses have around 205 bones in their skeleton.',
-    'Horses have been domesticated for over 5000 years.',
-    'Horses are herbivores.',
-    'Horses have bigger eyes than any other mammal that lives on land.',
-    'Because horse’s eyes are on the side of their head they are capable of seeing nearly 360 degrees at one time.',
-    'Horses gallop at around 44 kph (27 mph).',
-    'The fastest recorded sprinting speed of a horse was 88 kph (55 mph).',
-    'Estimates suggest that there are around 60 million horses in the world.',
-    'Scientists believe that horses have evolved over the past 50 million years from much smaller creatures.',
-    'A male horse is called a stallion.',
-    'A female horse is called a mare.',
-    'A young male horse is called a colt.',
-    'A young female horse is called a filly.',
-    'An adult horse’s brain weights 22 oz, about half that of a human.',
-    'The first cloned horse was a Haflinger mare in Italy in 2003.',
-    'Horses with pink skin can get a sunburn.'
-    ]
 
 OTTER_FACTS = [
     'The otter is a carnivorous mammal in a branch of the weasel family called Lutrinae.',
@@ -396,49 +447,8 @@ SHARK_FACTS = [
     'A shark always has a row of smaller teeth developing behind its front teeth. Eventually the smaller teeth move forward, like a conveyor belt, and the front teeth fall out.'
     ]
 
-FROG_FACTS = [
-    'A frog is an amphibian. They lay their eggs in water. The eggs hatch into a tadpole which lives in water until it metamorphoses into an adult frog.',
-    'Tadpoles look more like fish than frogs, they have long finned tails and breathe through gills.',
-    'An amphibian can live both on land and in water.',
-    'Although frogs live on land their habitat must be near swamps, ponds or in a damp place. This is because they will die if their skin dries out.',
-    'Instead of drinking water, frogs soak it into their body through their skin.',
-    'Frogs breathe through their nostrils while also absorbing about half the air they need through their skin.',
-    'Frogs use their sticky, muscular tongue to catch and swallow food. Unlike humans, their tongue is not attached to the back of its mouth. Instead it is attached to the front, enabling the frog to stick its tongue out much further.',
-    'The common pond frog is ready to breed when it is only three years old.',
-    'Frogs in the wild face many dangers and are lucky to survive several years. In captivity however, frogs can live for much longer.',
-    'Frogs can see forwards, sideways and upwards all at the same time. They never close their eyes, even when they sleep.',
-    "Remarkably, frogs actually use their eyes to help them swallow food. When the frog blinks, its eyeballs are pushed downwards creating a bulge in the roof of its mouth. This bulge squeezes the food inside the frog's mouth down the back of its throat."
-    ]
 
-GIRAFFE_FACTS = [
-    'A male giraffe can weigh as much as a pick up truck! That’s about 1400 kilograms.',
-    'Although a giraffe’s neck is 1.5 – 1.8 meters, it contains the same number of vertebrae at a human neck.',
-    "A giraffe's habitat is usually found in African savannas, grasslands or open woodlands.",
-    'The hair that makes up a giraffes tail is about 10 times thicker than the average strand of human hair.',
-    'The distinctive spots that cover a giraffe’s fur act as a good camouflage to protect the giraffe from predators. When the giraffe stands in front of trees and bushes the light and dark colouring of its fur blends in with the shadows and sunlight.',
-    'It is possible to identify the sex of the giraffe from the horns on its head. Both males and females have horns but the females are smaller and covered with hair at the top. Male giraffes may have up to 3 additional horns.',
-    'Giraffes are ruminants. This means that they have more than one stomach. In fact, giraffes have four stomachs, the extra stomachs assisting with digesting food.',
-    'Drinking is one of the most dangerous times for a giraffe. While it is getting a drink it cannot keep a look out for predators and is vulnerable to attack.',
-    'Male giraffes sometimes fight with their necks over female giraffes. This is called “necking”. The two giraffes stand side by side and one giraffe swings his head and neck, hitting his head against the other giraffe. Sometimes one giraffe is hit to the ground during a combat.',
-    'A female giraffe gives birth while standing up. The calf drops approximately 6 feet to the ground, but it is not hurt from the fall.',
-    'Giraffes have bluish-purple tongues which are tough and covered in bristly hair to help them with eating the thorny Acacia trees.',
-    ]
 
-JELLYFISH_FACTS = [
-    'Jellyfish live in the sea and are found in all oceans.',
-    'Some jellyfish live in fresh water.',
-    'Jellyfish look a little like umbrellas.',
-    'Jellyfish can be large and brightly colored.',
-    'They can often be transparent (see-through) or translucent (semi-translucent).',
-    'Some can be very hard to see, nearly invisible to the human eye.',
-    'Although the word is mentioned in their name, jellyfish are not fish.',
-    'A group of jellyfish is called a ‘bloom’, ‘swarm’ or ‘smack’.',
-    'Large blooms can feature over 100,000 jellyfish.',
-    'Jellyfish don’t have brains.',
-    'Jellyfish use their tentacles to sting. Most are harmless to humans but stings from some species, such as the box jellyfish, can be very painful and sometimes kill.',
-    'Box jellyfish are almost transparent.',
-    'Jellyfish eat plankton. Some sea turtles eat jellyfish.'
-    ]
 
 TIGER_FACTS = [
     'The tiger is the biggest species of the cat family.',
@@ -584,7 +594,7 @@ ZEBRA_FACTS = [
     'A zebra named Marty starred in the 2005 animated film Madagascar.',
     ]
 
-ALL_FACTS = [
+ALL_FACTS = (
     ALLIGATOR_FACTS,
     BADGER_FACTS,
     CAMEL_FACTS,
@@ -604,6 +614,7 @@ ALL_FACTS = [
     PENGUIN_FACTS,
     PIG_FACTS,
     SCORPION_FACTS,
+    SHARK_FACTS,
     SLOTH_FACTS,
     SNAKE_FACTS,
     TIGER_FACTS,
@@ -611,7 +622,7 @@ ALL_FACTS = [
     WOLF_FACTS,
     WHALE_FACTS,
     ZEBRA_FACTS
-    ]
+    )
 
 def main():
     reddit = authenticate()
