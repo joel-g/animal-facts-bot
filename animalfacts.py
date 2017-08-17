@@ -21,7 +21,7 @@ def authenticate():
 
 def check_messages(reddit):
     print("Checking my messages...\n")
-    for comment in reddit.inbox.comment_replies(limit=50):
+    for comment in reddit.inbox.comment_replies(limit=100):
         if comment.subreddit.display_name.lower() not in BLACKLIST:
             file_obj_r = open(reply_history,'r')
             if comment.id not in file_obj_r.read().splitlines():
@@ -105,6 +105,8 @@ def botengine(animal, regex, reddit, facts):
             else:
                 print('     This comment is in a blacklisted subreddit: ' + comment.subreddit.display_name + '\n')
                 bell.play()
+
+
 
 def animalfactsbot(reddit):
     check_messages(reddit)
