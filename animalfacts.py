@@ -7,7 +7,7 @@ import string
 from pygame import mixer
 # from '/' import lists
 
-BLACKLIST = ('suicidewatch', 'depression', 'snakes', 'mturk', 'babyelephantgifs', 'learnprogramming', 'cscareerquestions', 'python')
+BLACKLIST = ('suicidewatch', 'depression', 'snakes', 'mturk', 'babyelephantgifs', 'learnprogramming', 'cscareerquestions', 'python', 'japan')
 
 mixer.init()
 alert=mixer.Sound('bird.wav')
@@ -106,7 +106,8 @@ def random_fact():
     return random.choice(fact_collection)
 
 def botengine(animal, regex, reddit, facts, comment):
-    text = ' '.join(word.strip(string.punctuation) for word in comment.body.lower().split()) + ' '
+    text = ' '.join(word.strip(string.punctuation) for word in comment.body.lower().split())
+    text = ' ' + text + ' '
     match = re.findall(regex, text)
     if match:
         print(animal.upper() + " found in comment with comment ID: " + comment.id)
