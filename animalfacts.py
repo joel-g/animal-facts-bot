@@ -114,13 +114,14 @@ def botengine(animal, regex, reddit, facts, comment):
                 else:
                     print('     Already commented on this!\n')
 
-ANIMALS = ('alligator', 'badger', 'camel', 'cheetah', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
+ANIMALS = ('alligator', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
 
 def check_comment_for_animal(comment, reddit):
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
+    botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
     botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
@@ -219,6 +220,23 @@ CHEETAH_FACTS = (
     'Cheetahs cannot climb trees and have poor night vision.',
     'With their light body weight and blunt claws, cheetahs are not well designed to protect themselves or their prey. When a larger or more aggressive animal approaches a cheetah in the wild, it will give up its catch to avoid a fight.',
     'Cheetahs only need to drink once every three to four days.'
+    )
+
+CRAB_FACTS = (
+    'Crabs are decapods from the crustacean family.',
+    'Crabs have 10 legs, however, the first pair are its claws which are called chelae.',
+    'Crabs have a thick external skeleton called an exoskeleton. It is a shell made of calcium carbonate and provides protection for the soft tissue underneath.',
+    "Crabs live in all the world's oceans, in fresh water, and on land. There are over 4500 species of crabs.",
+    "Other animals with similar names such as hermit crabs, king crabs, porcelain crabs, horseshoe crabs and crab lice, are not true crabs.",
+    'Crabs usually have a distinct sideways walk. However, some crabs can walk forwards or backwards, and some are capable of swimming.',
+    'The collective name for a group of crabs is a "cast".',
+    'Crabs communicate with each other by drumming or waving their pincers.',
+    'Male crabs tend to often fight with each other over females or hiding holes.',
+    'The Pea Crab is the smallest known species at just a few millimetres wide. The largest species is the Japanese Spider Crab, with a leg span of up to 4 m (13 ft).',
+    'Crabs are omnivores, they feed mainly on algae, but also bacteria, other crustaceans, molluscs, worms, and fungi.',
+    'Some crab species can naturally autotomise (shed) limbs such as their claws, which then regenerate after about a year.',
+    'Of all marine crustaceans caught be humans each year, crabs make up 20%. This adds up to a total of 1.5 million ton annually'.,
+    'The most consumed species of crab in the world is the Japanese Blue Crab.'
     )
 
 DOLPHIN_FACTS = [
@@ -680,6 +698,7 @@ ALL_FACTS = (
     BADGER_FACTS,
     CAMEL_FACTS,
     CHEETAH_FACTS,
+    CRAB_FACTS,
     DOLPHIN_FACTS,
     FLAMINGO_FACTS,
     FROG_FACTS,
