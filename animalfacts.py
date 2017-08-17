@@ -21,7 +21,7 @@ def authenticate():
 
 def check_messages(reddit):
     print("Checking my messages...\n")
-    for comment in reddit.inbox.comment_replies(limit=50):
+    for comment in reddit.inbox.comment_replies(limit=25):
         if not comment.subreddit.user_is_banned:
             file_obj_r = open(reply_history,'r')
             commented_obj_r = open(history,'r')
@@ -83,8 +83,6 @@ def random_fact():
     fact_collection =  random.choice(ALL_FACTS)
     return random.choice(fact_collection)
 
-
-
 def botengine(animal, regex, reddit, facts, comment):
     match = re.findall(regex, comment.body)
     if match:
@@ -110,13 +108,13 @@ def botengine(animal, regex, reddit, facts, comment):
                 else:
                     print('     Already commented on this!\n')
 
-
-ANIMALS = ('alligator', 'badger', 'camel', 'dolphin', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hippo', 'horse', 'jellyfish', 'koala', 'lion' 'monkey', 'octopus', 'otter', 'owl', 'panda', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
+ANIMALS = ('alligator', 'badger', 'camel', 'cheetah', 'dolphin', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hippo', 'horse', 'jellyfish', 'koala', 'lion' 'monkey', 'octopus', 'otter', 'owl', 'panda', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
 
 def check_comment_for_animal(comment, reddit):
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
+    botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
@@ -200,6 +198,20 @@ CAMEL_FACTS = [
     'Camels have long been used in wartimes. Romans used camels for their ability to scare off horses who are afraid of their scent, and in recent times camels have been used to carry heavy gear and troops across hot sandy deserts.',
     'There are estimated to be over 14 million camels in the world. Camels introduced to desert areas of Australia are the worlds largest populations of feral camels.'
     ]
+
+CHEETAH_FACTS = (
+    'The cheetah is the fastest land animal in the world. They can reach a top speed of around 113 km per hour.',
+    'A cheetah can accelerate from 0 to 113 km in just a few seconds.',
+    'Cheetahs are extremely fast however they tire quickly and can only keep up their top speed for a few minutes before they are too tired to continue.',
+    'Cheetahs are smaller than other members of the big cat family, weighing only 45 – 60 kilograms.',
+    'One way to always recognise a cheetah is by the long, black lines which run from the inside of each eye to the mouth. These are usually called “tear lines” and scientists believe they help protect the cheetah’s eyes from the harsh sun and help them to see long distances.',
+    'Cheetahs are the only big cat that cannot roar. They can purr though and usually purr most loudly when they are grooming or sitting near other cheetahs.',
+    'While lions and leopards usually do their hunting at night, cheetahs hunt for food during the day.',
+    'A cheetah has amazing eyesight during the day and can spot prey from 5 km away.',
+    'Cheetahs cannot climb trees and have poor night vision.',
+    'With their light body weight and blunt claws, cheetahs are not well designed to protect themselves or their prey. When a larger or more aggressive animal approaches a cheetah in the wild, it will give up its catch to avoid a fight.',
+    'Cheetahs only need to drink once every three to four days.'
+    )
 
 DOLPHIN_FACTS = [
     'Compared to other animals, dolphins are believed to be very intelligent.',
@@ -484,9 +496,6 @@ SHARK_FACTS = [
     'A shark always has a row of smaller teeth developing behind its front teeth. Eventually the smaller teeth move forward, like a conveyor belt, and the front teeth fall out.'
     ]
 
-
-
-
 TIGER_FACTS = [
     'The tiger is the biggest species of the cat family.',
     'Tigers can reach a length of up to 3.3 meters (11 feet) and weigh as much as 300 kilograms (660 pounds).',
@@ -635,6 +644,7 @@ ALL_FACTS = (
     ALLIGATOR_FACTS,
     BADGER_FACTS,
     CAMEL_FACTS,
+    CHEETAH_FACTS,
     DOLPHIN_FACTS,
     FLAMINGO_FACTS,
     FROG_FACTS,
