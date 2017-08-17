@@ -114,7 +114,7 @@ def botengine(animal, regex, reddit, facts, comment):
                 else:
                     print('     Already commented on this!\n')
 
-ANIMALS = ('alligator', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
+ANIMALS = ('alligator', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
 
 def check_comment_for_animal(comment, reddit):
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
@@ -128,6 +128,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
     botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
     botengine('gorilla', '\sgorillas?\s', reddit, GORILLA_FACTS, comment)
+    botengine('hedgehog', '\shedgehogs?\s', reddit, HEDGEHOG_FACTS, comment)
     botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS, comment)
     botengine('horse', '\shorses?\s', reddit, HORSE_FACTS, comment)
     botengine('jellyfish', '\sjellyfish\s', reddit, JELLYFISH_FACTS, comment)
@@ -235,7 +236,7 @@ CRAB_FACTS = (
     'The Pea Crab is the smallest known species at just a few millimetres wide. The largest species is the Japanese Spider Crab, with a leg span of up to 4 m (13 ft).',
     'Crabs are omnivores, they feed mainly on algae, but also bacteria, other crustaceans, molluscs, worms, and fungi.',
     'Some crab species can naturally autotomise (shed) limbs such as their claws, which then regenerate after about a year.',
-    'Of all marine crustaceans caught be humans each year, crabs make up 20%. This adds up to a total of 1.5 million ton annually'.,
+    'Crabs make up 20% of all marine crustaceans caught by humans each year. This adds up to a total of 1.5 million ton annually',
     'The most consumed species of crab in the world is the Japanese Blue Crab.'
     )
 
@@ -326,7 +327,23 @@ GORILLA_FACTS = (
     'Gorillas are endangered animals. Their habitat is destroyed when people use the land for farming and the trees for fuel. Gorillas are also killed by poachers and sometimes get caught in poacher’s snares meant for other animals.'
     )
 
-HIPPO_FACTS = [
+HEDGEHOG_FACTS = (
+    'There are 17 species of hedgehog. They are found in parts of Europe, Asia, Africa and were introduced in New Zealand by settlers.',
+    'Hedgehogs are nocturnal animals, often sleep during the day in a nest or under bushes and shrubs before coming out to feed at night.',
+    'Hedgehogs are not related to other spine covered creatures such as the porcupine or echidna.',
+    'The spines of a hedgehogs, are stiff hollow hairs, they are not poisonous or barbed and cannot be easily removed, they fall out naturally when a hedgehog sheds its baby spines and grows adult spines a process called "quilling".',
+    'Hedgehogs have about 5,000 to 6,500 spines at any one time.',
+    'Most hedgehog species will roll into a tight ball if threatened, making it hard for its attacker to get past the spiky defences.',
+    'A baby hedgehog is called a hoglet.',
+    'Hedgehogs communicate through a combination of snuffles, grunts and squeals.',
+    'Hedgehogs have weak eyesight but a strong sense of hearing and smell. They can swim, climb and run surprising quickly over short distances.',
+    'For their size hedgehogs have a relatively long lifespan. They live on average for 4-7 years in the wild and longer in captivity.',
+    'Hedgehogs in colder climates such as the UK will hibernate through winter.',
+    'If hedgehogs come in contact with humans they can sometimes pass on infections and diseases.',
+    'The hedgehog is a pest in countries such as New Zealand where it has been introduced, as it does not have many natural predators and eats native species of insects, snails, lizards and baby ground-nesting birds.'
+    )
+
+HIPPO_FACTS = (
     'Hippopotamuses are found in Africa.'
     'The name hippopotamus means ‘river horse’ and is often shortened to hippo.',
     'The hippopotamus is generally considered the third largest land mammal (after the white rhinoceros and elephant).',
@@ -344,7 +361,7 @@ HIPPO_FACTS = [
     'A group of hippos in known as a ‘herd’, ‘pod’, ‘dale’ or ‘bloat’.',
     'Hippos typically live for around 45 years.',
     'Hippos eat mostly grass.'
-    ]
+    )
 
 HORSE_FACTS = [
     'Horses can sleep both lying down and standing up.',
@@ -705,6 +722,7 @@ ALL_FACTS = (
     ELEPHANT_FACTS,
     GIRAFFE_FACTS,
     GORILLA_FACTS,
+    HEDGEHOG_FACTS,
     HIPPO_FACTS,
     HORSE_FACTS,
     JELLYFISH_FACTS,
