@@ -5,7 +5,7 @@ import time
 from pygame import mixer
 # from '/' import lists
 
-BLACKLIST = ('asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes', 'protectandserve', 'kansas', 'inceltears', 'explainlikeimfive', 'retconned', 'neoliberal', 'writingprompts', 'dnd', 'worldbuilding', 'parenting', 'tattoos', 'evolution', 'kotakuinaction', 'dragonage', 'giantbomb', 'television', 'dodgers', 'portland', 'legaladvice', 'amwfs', 'texas', 'naruto', 'cars', 'mma', 'belgium', 'gadgets', 'guildwars2', 'justnomil')
+BLACKLIST = ('asoiaf', 'gameofthrones', 'exmormon', 'suicidewatch', 'politics', 'whowouldwin', 'depression', 'snakes', 'protectandserve', 'kansas', 'inceltears', 'explainlikeimfive', 'retconned', 'neoliberal', 'writingprompts', 'dnd', 'worldbuilding', 'parenting', 'tattoos', 'evolution', 'kotakuinaction', 'dragonage', 'giantbomb', 'television', 'dodgers', 'portland', 'legaladvice', 'amwfs', 'texas', 'naruto', 'cars', 'mma', 'belgium', 'gadgets', 'guildwars2', 'justnomil', 'aww', 'nba', 'history')
 
 mixer.init()
 alert=mixer.Sound('bird.wav')
@@ -21,7 +21,7 @@ def authenticate():
 
 def check_messages(reddit):
     print("Checking my messages...\n")
-    for comment in reddit.inbox.comment_replies(limit=100):
+    for comment in reddit.inbox.comment_replies(limit=50):
         if comment.subreddit.display_name.lower() not in BLACKLIST:
             file_obj_r = open(reply_history,'r')
             if comment.id not in file_obj_r.read().splitlines():
@@ -53,7 +53,7 @@ def check_messages(reddit):
                     comment.reply("https://www.youtube.com/watch?v=hpigjnKl7nI")
                     print('     WATCH YO PROFANITY\n')
                     record_already_replied(file_obj_r, comment)
-                elif re.search('(\bcats?\b)|(\bdogs?\b)', comment.body.lower()):
+                elif re.search('(\scats?\s)|(\sdogs?\s)', comment.body.lower()):
                     comment.reply("Did you ask for cat or dog facts? I'm sorry, if I did cat or dog facts I'd be spamming every thread on reddit. Reply 'more' if you'd like a random animal fact.")
                     print('     Explained why I cant do cat or dog facts\n')
                     record_already_replied(file_obj_r, comment)
@@ -72,7 +72,7 @@ def record_already_replied(read_file, comment):
     file_obj_w = open(reply_history,'a+')
     file_obj_w.write(comment.id + '\n')
     file_obj_w.close()
-    time.sleep(90)
+    time.sleep(10)
 
 def random_fact():
     fact_collection =  random.choice(ALL_FACTS)
@@ -81,30 +81,32 @@ def random_fact():
 
 
 def botengine(animal, regex, reddit, facts, comment):
-    # print("     checking for " + animal)
     match = re.findall(regex, comment.body)
     if match:
         print(animal.upper() + " found in comment with comment ID: " + comment.id)
-        if comment.subreddit.display_name.lower() not in BLACKLIST:
+        # if comment.subreddit.display_name.lower() not in BLACKLIST:
+        if comment.subreddit.user_is_banned:
+            print("     Not commenting because I am banned from " + comment.subreddit.display_name + "\n")
+        else:
             file_obj_r = open(history,'r')
             if comment.id not in file_obj_r.read().splitlines():
                 if comment.author.name == reddit.user.me():
                     print('     Skipping my own comment...\n')
                 else:
-                    print('     by ' + comment.author.name + '\n')
+                    print('     by ' + comment.author.name + ' in ' + comment.subreddit.display_name + '\n')
                     comment.reply(random.choice(facts))
                     alert.play()
                     file_obj_r.close()
                     file_obj_w = open(history,'a+')
                     file_obj_w.write(comment.id + '\n')
                     file_obj_w.close()
-                    print('Waiting 1.5 minutes before checking more\n')
-                    time.sleep(90)
+                    print('Waiting 10 seconds before checking more\n')
+                    time.sleep(10)
             else:
                 print('     Already commented on this!\n')
-        else:
-            print('     This comment is in a blacklisted subreddit: ' + comment.subreddit.display_name + '\n')
-            bell.play()
+        # else:
+        #     print('     This comment is in a blacklisted subreddit: ' + comment.subreddit.display_name + '\n')
+        #     bell.play()
 
 ANIMALS = ('alligator', 'badger', 'camel', 'dolphin', 'flamingo', 'frog', 'giraffe', 'hippo', 'horse', 'jellyfish', 'koala', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
 
