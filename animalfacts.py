@@ -2,6 +2,7 @@ import re
 import praw
 import random
 import time
+import sys
 from pygame import mixer
 # from '/' import lists
 
@@ -12,6 +13,12 @@ alert=mixer.Sound('bird.wav')
 bell=mixer.Sound('bell.wav')
 history = 'commented.txt'
 reply_history = 'repliedto.txt'
+if len(sys.argv) > 1:
+    wait_time = sys.argv[1]
+else:
+    wait_time = 90
+
+
 
 def authenticate():
     print('Authenticating...\n')
@@ -77,7 +84,7 @@ def record_already_replied(read_file, comment):
     file_obj_w = open(reply_history,'a+')
     file_obj_w.write(comment.id + '\n')
     file_obj_w.close()
-    time.sleep(10)
+    time.sleep(wait_time)
 
 def random_fact():
     fact_collection =  random.choice(ALL_FACTS)
@@ -103,8 +110,7 @@ def botengine(animal, regex, reddit, facts, comment):
                         file_obj_w = open(history,'a+')
                         file_obj_w.write(comment.id + '\n')
                         file_obj_w.close()
-                        print('Waiting 10 seconds before checking more\n')
-                        time.sleep(10)
+                        time.sleep(wait_time)
                 else:
                     print('     Already commented on this!\n')
 
@@ -239,7 +245,7 @@ ELEPHANT_FACTS = (
     'Elephants have large, thin ears. Their ears are made up of a complex network of blood vessels which help regulate their temperature. Blood is circulated through their ears to cool them down in hot climates.'
     'Elephants have no natural predators. However, lions will sometimes prey on young or weak elephants in the wild. The main risk to elephants is from humans through poaching and changes to their habitat.'
     'The elephant’s trunk is able to sense the size, shape and temperature of an object. An elephant uses its trunk to lift food and suck up water then pour it into its mouth.'
-    'An elephant’s trunk can grow to be about 2 metres long and can weigh up to 140 kg. Some scientists believe that an elephant’s trunk is made up of 100,000 muscles, but no bones.'
+    'An elephant’s trunk can grow to be about 2 meters long and can weigh up to 140 kg. Some scientists believe that an elephant’s trunk is made up of 100,000 muscles, but no bones.'
     'Female elephants spend their entire lives living in large groups called herds. Male elephant leave their herds at about 13 years old and live fairly solitary lives from this point.'
     'Elephants can swim – they use their trunk to breathe like a snorkel in deep water.'
     'Elephants are herbivores and can spend up to 16 hours days collecting leaves, twigs, bamboo and roots.'
@@ -367,7 +373,7 @@ LEOPARD_FACTS = (
     'Leopards are part of the cat family, Felidae. The scientific name for a leopard is Panthera pardus.',
     'Leopards are well known for their cream and gold spotted fur, but some leopards have black fur with dark spots. These black leopards are often mistaken for panthers.',
     'Adult leopards are solitary animals. Each adult leopard has its own territory where it lives and, although they often share parts of it, they try to avoid one another.',
-    'A leopard’s body is built for hunting. They have sleek, powerful bodies and can run at speeds of up to 57 kilometres per hour. They are also excellent swimmers and climbers and can leap and jump long distances.',
+    'A leopard’s body is built for hunting. They have sleek, powerful bodies and can run at speeds of up to 57 kilometers per hour. They are also excellent swimmers and climbers and can leap and jump long distances.',
     'A leopard’s tail is just about as long as its entire body. This helps it with balance and enables it to make sharp turns quickly.',
     'Leopards are mostly nocturnal, hunting prey at night.',
     'Leopards protect their food from other animals by dragging it high up into the trees. A leopard will often leave their prey up in the tree for days and return only when they are hungry!',
@@ -517,9 +523,9 @@ SNAKE_FACTS = [
 SHARK_FACTS = [
     'Sharks do not have a single bone in their bodies. Instead they have a skeleton made up of cartilage; the same type of tough, flexible tissue that makes up human ears and noses.',
     'Some sharks remain on the move for their entire lives. This forces water over their gills, delivering oxygen to the blood stream. If the shark stops moving then it will suffocate and die.',
-    'Sharks have outstanding hearing. They can hear a fish thrashing in the water from as far as 500 metres away!',
+    'Sharks have outstanding hearing. They can hear a fish thrashing in the water from as far as 500 meters away!',
     'If a shark was put into a large swimming pool, it would be able to smell a single drop of blood in the water.',
-    'Although most species of shark are less than one metre long, there are some species such as the whale shark, which can be 14 metres long.',
+    'Although most species of shark are less than one meter long, there are some species such as the whale shark, which can be 14 meters long.',
     'A pup (baby shark) is born ready to take care of itself. The mother shark leaves the pup to fend for itself and the pup usually makes a fast get away before the mother tries to eat it!',
     'Not all species of shark give birth to live pups. Some species lay the egg case on the ocean floor and the pup hatches later on its own.',
     'Great whites are the deadliest shark in the ocean. These powerful predators can race through the water at 30 km per hour.',
@@ -709,6 +715,7 @@ ALL_FACTS = (
 def main():
     reddit = authenticate()
     while True:
+        print("Wait time after commenting will be " + str(wait_time) + " seconds.\n")
         animalfactsbot(reddit)
 
 if __name__ == '__main__':
