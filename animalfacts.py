@@ -14,7 +14,7 @@ bell=mixer.Sound('bell.wav')
 history = 'commented.txt'
 reply_history = 'repliedto.txt'
 if len(sys.argv) > 1:
-    wait_time = sys.argv[1]
+    wait_time = int(sys.argv[1])
 else:
     wait_time = 90
 
@@ -356,10 +356,8 @@ HORSE_FACTS = [
 JELLYFISH_FACTS = (
     'Jellyfish live in the sea and are found in all oceans.',
     'Some jellyfish live in fresh water.',
-    'Jellyfish look a little like umbrellas.',
-    'Jellyfish can be large and brightly colored.',
-    'They can often be transparent (see-through) or translucent (semi-translucent).',
-    'Some can be very hard to see, nearly invisible to the human eye.',
+    'Jellyfish can be large and brightly colored. They can often be transparent or translucent.',
+    'Some jellyfish can be very hard to see, nearly invisible to the human eye.',
     'Although the word is mentioned in their name, jellyfish are not fish.',
     'A group of jellyfish is called a ‘bloom’, ‘swarm’ or ‘smack’.',
     'Large blooms can feature over 100,000 jellyfish.',
