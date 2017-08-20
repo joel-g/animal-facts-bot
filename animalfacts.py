@@ -174,6 +174,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
     botengine('leopard', '\sleopards?\s', reddit, LEOPARD_FACTS, comment)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
+    botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
     botengine('octopus', '\soctopus?\s', reddit, OCTOPUS_FACTS, comment)
     botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
     botengine('owl', '\sowls?\s', reddit, OWL_FACTS, comment)
@@ -685,7 +686,7 @@ PANDA_FACTS = [
     'An animated movie from 2008 named ‘Kung Fu Panda’ features a giant panda called ‘Po’.'
     ]
 
-OCTOPUS_FACTS = [
+OCTOPUS_FACTS = (
     'There are around 300 species of octopus, usually located in tropical and temperate ocean waters. They are divided into finned deep-sea varieties that live on the ocean floor and finless, shallow water varieties found around coral reefs.',
     'Octopuses have two eyes in a globe-shaped head (mantle) off which protrude eight long limbs called tentacles that have two rows of sucker senses.',
     'Octopuses can squeeze into tight spaces as they are invertebrates which means they have no skeleton, (some species have a protective casing in their mantles).',
@@ -700,7 +701,22 @@ OCTOPUS_FACTS = [
     'A female octopus can lay on average about 200,000 eggs, however, fending for themselves only a handful of the hatchlings will survive to adulthood.',
     'Octopuses usually live for 6 - 18 months. Males only live a few months after mating, and females die of starvation shortly after their protected eggs hatch.',
     'Humans eat octopus in many cultures and it is also a popular fish bait.'
-    ]
+    )
+
+OCELOT_FACTS = (
+    'Ocelot is two times bigger than domestic cat. It can reach 28 to 35 inches in length and between 24 and 35 pounds of weight. Males are bigger than females. Length of a tail measures half of the body size.'
+    'Ocelots have beautiful fur which is the reason why people hunt them. Color of the fur is usually tawny, yellow or brown-grayish, covered with black rosettes and stripes.'
+    'Ocelot has pointed teeth that are used for biting and blade-like teeth that are used for tearing of the food. It does not have teeth for chewing so it swallows chunks of food.'
+    'Ocelot has raspy tongue, which successfully removes every little piece of meat from bones.'
+    'Ocelots are carnivores (meat-eaters). They eat rodents, monkeys, tortoises, armadillos, rabbits, birds, lizards, fish, snakes…'
+    'Ocelot has excellent eyesight (adapted to night vision) and sense of hearing, which are used for detection of the prey.'
+    'Ocelots are nocturnal animals. During the day, they rest in the hollow trees, on the branches or dense vegetation.'
+    'Due to smaller size, ocelot is an easy prey of larger cats (such as jaguars and pumas), birds of prey (eagles) and large snakes (anaconda).'
+    'Unlike other cat species, ocelots are not afraid of the water. They are excellent swimmers.'
+    'Ocelots are territorial and solitary creatures. Males usually live on the territory of 30 square meters. Females occupy territory that is two times smaller.'
+    'Ocelots are active 12 hours per day. During that time, ocelot may travel up to 7 miles while it searches for the food.',
+    'Average lifespan of ocelot is 10 to 13 years in the wild and up to 20 years in captivity.'
+    )
 
 WHALE_FACTS = [
     'Many whales are toothless. They use a plate of comb-like fibre called baleen to filter small crustaceans and other creatures from the water.',
@@ -786,6 +802,7 @@ ALL_FACTS = (
     BADGER_FACTS,
     BEAVER_FACTS,
     CAMEL_FACTS,
+    COW_FACTS,
     CHEETAH_FACTS,
     CRAB_FACTS,
     DOLPHIN_FACTS,
@@ -805,6 +822,7 @@ ALL_FACTS = (
     OCTOPUS_FACTS,
     OTTER_FACTS,
     OWL_FACTS,
+    OCELOT_FACTS,
     PANDA_FACTS,
     PENGUIN_FACTS,
     PIG_FACTS,
