@@ -162,6 +162,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
     botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)
+    botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
     botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
@@ -195,8 +196,8 @@ def check_comment_for_animal(comment, reddit):
 
 def animalfactsbot(reddit):
     check_messages(reddit)
-    print("Pulling 1500 comments...")
-    comment_list = reddit.subreddit('all').comments(limit = 1500)
+    print("Pulling 1000 comments...")
+    comment_list = reddit.subreddit('all').comments(limit = 1000)
     print("     checking each comment for " + str(len(ANIMALS)) + " different animals\n")
     for comment in comment_list:
         check_comment_for_animal(comment, reddit)
@@ -343,6 +344,20 @@ DRAGON_FACTS = (
     'In medieval times, dragons were considered very real, but demonic. Religions had widely different views of dragons: some loved them and some feared them.',
     'In many cultural stories, dragons exhibit features of other animals, like the head of elephants, claws of lions and beaks of predatory birds. Their body colors are widely different – red, blue, green, gold, but usually earth tones. In some cultures, the colors have specific meanings.',
     '“Dragon” is actually a family term that includes other mythological creatures, such as cockatrices, gargoyles, wyverns, phoenix, basilisks, hydras, and even some hybrid man-dragon creatures.'
+    )
+
+EAGLE_FACTS = (
+    'Eagles build their nests on high cliffs or in tall trees.',
+    'There are over 60 different species of eagle.',
+    'Eagles feature prominently on the coat of arms of a large number of countries, such as Germany, Mexico, Egypt, Poland and Austria.',
+    'Golden eagles have been known to hunt foxes, wild cats and even young deer and goats.',
+    'Female golden eagles usually lay between one and four eggs each breeding season.',
+    'The Great Seal of the United States features a bald eagle. The bald eagle is the national bird of the United States.',
+    'Female bald eagles are larger than male bald eagles.',
+    'Bald eagles eat mostly fish, swooping down to the water and catching them with their powerful talons.',
+    'Bald eagles live for around 20 years in the wild.',
+    'Bald eagles build very large nests, sometimes weighing as much as a ton!',
+    'The bald eagle was added to the list of endangered species in the United States in 1967 and its numbers have recovered well since.'
     )
 
 ELEPHANT_FACTS = (
@@ -835,6 +850,7 @@ ALL_FACTS = (
     CHEETAH_FACTS,
     CRAB_FACTS,
     DOLPHIN_FACTS,
+    EAGLE_FACTS,
     FLAMINGO_FACTS,
     FROG_FACTS,
     ELEPHANT_FACTS,
