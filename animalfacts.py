@@ -30,8 +30,11 @@ def authenticate():
 
 def check_messages(reddit):
     print("Checking my messages...\n")
-    for comment in reddit.inbox.comment_replies(limit=55):
-        if not unsubscribed_author_check(comment):
+    count = 1
+    for comment in reddit.inbox.comment_replies(limit=1000):
+        print(count)
+        count += 1
+        if unsubscribed_author_check(comment):
             if not comment.subreddit.user_is_banned:
                 file_obj_r = open(reply_history,'r')
                 if comment.id not in file_obj_r.read().splitlines():
@@ -65,7 +68,7 @@ def check_messages(reddit):
                         comment.reply("https://www.youtube.com/watch?v=hpigjnKl7nI")
                         print('     WATCH YO PROFANITY\n')
                         record_already_replied(file_obj_r, comment)
-                    elif re.search('(\scats?\s)|(\sdogs?\s)', comment_body):
+                    elif re.search('(\scats?\s)|(\sdogs?\s)', ' ' + comment_body + ' '):
                         comment.reply("Did you ask for cat or dog facts? I'm sorry, if I did cat or dog facts I'd be spamming every thread on reddit. Reply 'more' if you'd like a random animal fact.")
                         print('     Explained why I cant do cat or dog facts\n')
                         record_already_replied(file_obj_r, comment)
@@ -104,18 +107,18 @@ def record_already_replied(read_file, comment):
     time.sleep(wait_time)
 
 def unsubscribe(redditor):
-    unsub_w = open(unsubscribed, 'a+')
+    unsub_w = open(unsubscribed_list, 'a+')
     unsub_w.write(redditor.name + '\n')
     unsub_w.close()
 
 def unsubscribed_author_check(comment):
     unsub_r = open(unsubscribed_list, 'r')
-    if comment.author.name in unsub_r:
-        unsub_r.close()
-        return True
-    else:
+    if comment.author.name in unsub_r.read().splitlines():
         unsub_r.close()
         return False
+    else:
+        unsub_r.close()
+        return True
 
 def random_fact():
     fact_collection =  random.choice(ALL_FACTS)
@@ -131,7 +134,7 @@ def botengine(animal, regex, reddit, facts, comment):
             if comment.subreddit.user_is_banned:
                 print("     Not commenting because I am banned from " + comment.subreddit.display_name + "\n")
             else:
-                if unsubscribed_author_check(comment):
+                if not unsubscribed_author_check(comment):
                     print("     Not commenting because author is unsubscribed.")
                 else:
                     file_obj_r = open(history,'r')
