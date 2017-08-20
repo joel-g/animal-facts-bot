@@ -182,6 +182,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS, comment)
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
+    botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
     botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
     botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS, comment)
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
@@ -607,6 +608,24 @@ OTTER_FACTS = [
     'Otters are a popular animal in Japanese folklore where they are called "kawauso". In these tales the smart kawauso often fool humans, kind of like a fox.',
     ]
 
+SEAGULL_FACTS = (
+    'Smallest species of seagulls can reach 11.5 inches in length and 4.2 ounces of weight. Large species can reach 30 inches in length and 3.8 pounds of weight.',
+    'Body of most seagulls is covered with white plumage. Wingtips are usually black or dark in color. Some species are grey or entirely white.',
+    'Seagull has strong body, elongated legs and webbed feet. Beak is slightly hooked and usually yellow in color.',
+    'Seagulls are one of the rare animals that are able to drink salt water. They have special glands (located above the eyes) which eliminate excess salt from the body.',
+    'Diet of seagulls includes different types of insects, earthworms, small rodents, reptiles and amphibians. They also consume seed, fruit and leftovers of human meals.',
+    'Seagulls are very intelligent birds. They use bread crumbs to attract fish and produce rain-like sound with their feet to attract earthworms hidden under the ground. Seagulls transfer all hunting skills and techniques to their offspring.',
+    'Seagulls often steal food from other birds, animals and people. They occasionally eat young members of their own species.',
+    'Main predators of seagulls are large birds of prey, such as eagles.',
+    'Seagulls live in colonies that consist of few pairs of birds or couple of thousands birds.',
+    'Seagulls use wide repertoire of sounds and body language for communication.',
+    'Seagulls are monogamous creatures (they mate for a lifetime). Mating couple gathers each year during the mating season to reproduce and to take care of their offspring.',
+    'Even though they live in large colonies, breeding couple occupies and defends its territory from the nearby couples.',
+    'Couple collects plant material and builds nest together. Nests are cup-shaped and usually located on the ground or hardly accessible cliffs.',
+    'Depending on the species, female can lay one, two or three dark brown or olive green eggs. Incubation period lasts 22 to 26 days. Fathers play very important role in feeding of chicks. Young birds live in nursery flocks where they learn all skill required for independent life.',
+    'Lifespan of seagulls depends on the species. Most seagulls can survive from 10 to 15 years in the wild.'
+    )
+
 SNAKE_FACTS = [
     'Snakes don’t have eyelids.',
     'Snakes can’t chew food so they have to swallow it whole.',
@@ -827,6 +846,7 @@ ALL_FACTS = (
     PENGUIN_FACTS,
     PIG_FACTS,
     SCORPION_FACTS,
+    SEAGULL_FACTS,
     SHARK_FACTS,
     SLOTH_FACTS,
     SNAKE_FACTS,
