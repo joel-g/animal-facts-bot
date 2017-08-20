@@ -30,10 +30,7 @@ def authenticate():
 
 def check_messages(reddit):
     print("Checking my messages...\n")
-    count = 1
-    for comment in reddit.inbox.comment_replies(limit=1000):
-        print(count)
-        count += 1
+    for comment in reddit.inbox.comment_replies(limit=50):
         if unsubscribed_author_check(comment):
             if not comment.subreddit.user_is_banned:
                 file_obj_r = open(reply_history,'r')
@@ -161,6 +158,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
+    botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
     botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
@@ -280,6 +278,27 @@ CHEETAH_FACTS = (
     'Cheetahs cannot climb trees and have poor night vision.',
     'With their light body weight and blunt claws, cheetahs are not well designed to protect themselves or their prey. When a larger or more aggressive animal approaches a cheetah in the wild, it will give up its catch to avoid a fight.',
     'Cheetahs only need to drink once every three to four days.'
+    )
+
+COW_FACTS = (
+    'There are well over 1 billion cattle in the world.',
+    'Cattle are sacred in India. There are an estimated 300 million cattle in India.',
+    'Young cattle are generally known as calves. Adult females are generally called cows. Adult males that are not castrated are generally called bulls.',
+    'Cattle are red/green color blind.',
+    'In the sometimes controversial sport of bull fighting, bulls are angered by the movement of the cape rather than its red color.',
+    'Cattle trained to be draft animals are known as oxen (ox).',
+    'Cows are social animals, and they naturally form large herds. Like people, they will make friends and bond to some herd members, while avoiding others',
+    'Cows can hear lower and higher frequencies better than humans.',
+    'An average dairy cow weighs about 1,200 pounds.',
+    'A cows normal body temperature is 101.5°F.',
+    'The average cow chews at least 50 times per minute.',
+    'The typical cow stands up and sits down about 14 times a day.',
+    'An average cow has more than 40,000 jaw movements in a day.',
+    'Cows actually do not bite grass; instead they curl their tongue around it.',
+    'Cows have almost total 360-degree panoramic vision.',
+    'Cows have a single stomach, but four different digestive compartments.',
+    'Cows are pregnant for 9 months just like people',
+    'A dairy cow can produce 125 lbs. of saliva a day'
     )
 
 CRAB_FACTS = (
@@ -431,20 +450,18 @@ HORSE_FACTS = (
     'A 19th century horse named ‘Old Billy’ is said to have lived 62 years.',
     'Horses have around 205 bones in their skeleton.',
     'Horses have been domesticated for over 5000 years.',
-    'Horses are herbivores.',
     'Horses have bigger eyes than any other mammal that lives on land.',
     'Because horse’s eyes are on the side of their head they are capable of seeing nearly 360 degrees at one time.',
     'Horses gallop at around 44 kph (27 mph).',
     'The fastest recorded sprinting speed of a horse was 88 kph (55 mph).',
     'Estimates suggest that there are around 60 million horses in the world.',
     'Scientists believe that horses have evolved over the past 50 million years from much smaller creatures.',
-    'A male horse is called a stallion.',
-    'A female horse is called a mare.',
-    'A young male horse is called a colt.',
-    'A young female horse is called a filly.',
+    'A male horse is called a stallion. A female horse is called a mare.',
+    'A young male horse is called a colt. A young female horse is called a filly.',
     'An adult horse’s brain weights 22 oz, about half that of a human.',
     'The first cloned horse was a Haflinger mare in Italy in 2003.',
-    'Horses with pink skin can get a sunburn.'
+    'Horses with pink skin can get a sunburn.',
+    'A group of horses will not go to sleep at the same time - at least one of them will stay awake to look out for the others.'
     )
 
 JELLYFISH_FACTS = (
