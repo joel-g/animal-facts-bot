@@ -165,6 +165,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
     botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
+    botengine('fox', '\sfoxe?s?\s', reddit, FOX_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
     botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
     botengine('gorilla', '\sgorillas?\s', reddit, GORILLA_FACTS, comment)
@@ -391,6 +392,17 @@ FLAMINGO_FACTS = (
     'Flamingos are social birds, they live in colonies of sometimes thousands, this helps in avoiding predators, maximizing food intake, and is better for nesting.',
     'Flamingo colonies split into breeding groups of up to 50 birds, who then perform a synchronized ritual "dance" whereby they stand together stretching their necks upwards, uttering calls while waving their heads and then flapping their wings.',
     'The flamingo is the national bird of the Bahamas.'
+    )
+
+FOX_FACTS = (
+     'A group of foxes is called a "skulk" or "leash".',
+     'Grey foxes can retract their claws like cats do',
+     'A male is called a ‘dog fox’ while a female is called a ‘vixen’',
+     'Foxes are generally solitary animals; unlike wolves, they hunt on their own rather than in packs',
+     "Foxes' pupils are vertical, similar to a cat, helping them to see well at night",
+     "The tip of a red fox’s tail is white, whereas swift foxes have a black-tipped tail",
+    "Foxes have excellent hearing. Red foxes can reportedly hear a watch ticking 40 yards away!",
+    'Foxes stink, their funny ‘musky’ smell comes from scent glands at the base of their tail'
     )
 
 FROG_FACTS = [
@@ -871,6 +883,7 @@ ALL_FACTS = (
     DOLPHIN_FACTS,
     EAGLE_FACTS,
     FLAMINGO_FACTS,
+    FOX_FACTS,
     FROG_FACTS,
     ELEPHANT_FACTS,
     GIRAFFE_FACTS,
@@ -890,6 +903,7 @@ ALL_FACTS = (
     PANDA_FACTS,
     PENGUIN_FACTS,
     PIG_FACTS,
+    PIGEON_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,
     SHARK_FACTS,
