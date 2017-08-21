@@ -183,6 +183,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('panda', '\spandas?\s', reddit, PANDA_FACTS, comment)
     botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS, comment)
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
+    botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
     botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
@@ -802,6 +803,24 @@ PIG_FACTS = [
     'Pigs can pass on a variety of diseases to humans.',
     'Relative to their body size, pigs have small lungs.'
     ]
+
+PIGEON_FACTS = (
+    'Size of pigeon depends on the species. Large pigeons can reach 19 inches in length and 8.8 pounds of weight. Small pigeons can reach 5 inches in length and up to 0.8 ounces of weight.',
+    'Pigeons can have dull or colorful plumage, depending on the habitat and type of diet. The most common type of pigeon (that lives in the cities) has grayish plumage. On average, a pigeon has 10,000 feathers on their body.',
+    'Pigeons have strong muscles used for flying. They can fly at the altitude of 6000 feet.',
+    'Pigeons can move their wings ten times per second and maintain heartbeats at the rate of 600 times per minute.',
+    'Pigeons can fly at the speed of 50 to 60 miles per hour. Fastest known pigeon managed to reach speed on 92 miles per hour.',
+    'Because of their incredible speed and endurance, pigeons are used for racing. Winners of 400 mile long races can earn million dollars.',
+    "Pigeons were used as mail carriers during the First and Second World War. They saved numerous lives by delivering information under enemy fire.",
+    'Pigeons are herbivores. Their diet consists of seeds, fruit and various plants.',
+    'Pigeons are highly intelligent animals. They are able to recognize themselves in the mirror, to find same people on two different pictures and to recognize all letters of the English alphabet.'
+    'Pigeons have exceptional eyesight and ability to identify objects at a distance of 26 miles.',
+    'Pigeons have very sensitive sense of hearing. They are able to detect distant storms, earthquakes and volcanic eruptions.',
+    'Pigeons are social animals that live in the groups (flocks) composed of 20 to 30 animals.',
+    'Pigeons are monogamous creatures. Couples of pigeons can produce up to 8 broods per year when food is abundant.',
+    'Female lays 2 eggs that hatch after incubation period of 18 days. Young birds depend on their parents during the first two months of their life. Both parents take care of the chicks (called squabs).',
+    'Pigeons can survive more than 30 years in the wild.'
+    )
 
 
 PENGUIN_FACTS = [
