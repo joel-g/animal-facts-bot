@@ -176,6 +176,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
     botengine('leopard', '\sleopards?\s', reddit, LEOPARD_FACTS, comment)
+    botengine('lizard', '\slizards?\s', reddit, LIZARD_FACTS, comment)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
     botengine('octopus', '\soctopus?\s', reddit, OCTOPUS_FACTS, comment)
@@ -546,6 +547,20 @@ LION_FACTS = (
     'When lions breed with tigers the resulting hybrids are known as ligers and tigons. There are also lion and leopard hybrids known as leopons and lion and jaguar hybrids known as jaglions.',
     'Lionesses are better hunters than males and do most of the hunting for a pride.',
     'In the wild, lions rest for around 20 hours a day.',
+    )
+
+LIZARD_FACTS = (
+    'Some lizards can detach their tails if caught by predators.',
+    'The upper and lower eyelids of chameleons are joined, leaving just a small hole for them to see through. They can move their eyes independently however, allowing them to look in two different directions at the same time.',
+    'Chameleons have long tongues which they rapidly extend from their mouth, too fast for human eyes to see properly.',
+    'Chameleons generally eat insects.',
+    'Some chameleons have the ability to change color. This helps them communicate with each other and can also be used for camouflage.',
+    'Geckos have no eyelids.',
+    'Geckos have unique toes which allow them to be good climbers.',
+    'Iguanas have a row of spines which run down their back and tail.',
+    'The Komodo dragon is the largest type of lizard, growing up to 3 meters (10 feet) in length.',
+    'Komodo dragons are found on a number of different Indonesian Islands.',
+    'Komodo dragons are carnivores and can be very aggressive.'
     )
 
 MONKEY_FACTS = (
