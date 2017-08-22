@@ -208,7 +208,6 @@ def animalfactsbot(reddit):
 
 
 ALLIGATOR_FACTS = (
-    'Alligators are reptiles.',
     'Alligators have been living on Earth for millions of years and are sometimes described as ‘living fossils’.',
     'There are two different species of alligator, the American alligator and the Chinese alligator.',
     'American alligators live in south-eastern areas of the United States such as Florida and Louisiana.',
@@ -225,7 +224,6 @@ BADGER_FACTS = (
     'Badgers are part of the family Mustelidae this is the same family as otters, ferret, polecats, weasels and wolverines.',
     'There are 11 species of badger, grouped into 3 types, the Melinae (Eurasian badgers), Mellivorinae (Honey badger) and Taxideinae (American badger).',
     'Badgers are found in North America, Ireland, Great Britain and most of Europe. There are species in Japan, China, Indonesia and Malaysia. The honey badger is found in sub-Saharan Africa, the Arabian Desert, Turkmenistan, and India.',
-    'Badgers are nocturnal mammals.',
     'Badgers have stocky bodies with short legs that are suitable for digging. They digs burrows underground called a sett. Their sett are often a maze of tunnels and chambers for sleeping around 6 badgers, setts are kept very clean.',
     'The badger has an elongated head with small ears and a distinctive black and white face, their body has greyish fur with black and white areas underneath.',
     'Badgers can grow to nearly a meter in length. The European badger is larger than the American badger and the Honey badger.',
@@ -328,7 +326,6 @@ CRAB_FACTS = (
 
 DOLPHIN_FACTS = (
     'Compared to other animals, dolphins are believed to be very intelligent.',
-    'Dolphins are carnivores.',
     'The Killer Whale (also known as Orca) is actually a type of dolphin.',
     'Bottlenose dolphins are the most common and well known type of dolphin.',
     'Female dolphins are called cows, males are called bulls and young dolphins are called calves.',
@@ -476,7 +473,6 @@ HEDGEHOG_FACTS = (
     )
 
 HIPPO_FACTS = (
-    'Hippopotamuses are found in Africa.'
     'The name hippopotamus means ‘river horse’ and is often shortened to hippo.',
     'The hippopotamus is generally considered the third largest land mammal (after the white rhinoceros and elephant).',
     'Hippopotamuses spend a large amount of time in water such as rivers, lakes and swamps.',
@@ -487,12 +483,9 @@ HIPPO_FACTS = (
     'Although hippos might look a little chubby, they can easily outrun a human.',
     'Hippos can be extremely aggressive, especially if they feel threatened. They are regarded as one of the most dangerous animals in Africa.',
     'Hippos are threatened by habitat loss and poachers who hunt them for their meat and teeth.',
-    'A male hippopotamus is called a ‘bull’.',
-    'A female hippopotamus is called a ‘cow’.',
-    'A baby hippo is called a ‘calf’.',
+    'A male hippopotamus is called a ‘bull’. A female hippopotamus is called a ‘cow’. A baby hippo is called a ‘calf’.',
     'A group of hippos in known as a ‘herd’, ‘pod’, ‘dale’ or ‘bloat’.',
     'Hippos typically live for around 45 years.',
-    'Hippos eat mostly grass.'
     )
 
 HORSE_FACTS = (
@@ -522,13 +515,11 @@ JELLYFISH_FACTS = (
     'Jellyfish live in the sea and are found in all oceans.',
     'Some jellyfish live in fresh water.',
     'Jellyfish can be large and brightly colored. They can often be transparent or translucent.',
-    'Some jellyfish can be very hard to see, nearly invisible to the human eye.',
+    'Some jellyfish can be very hard to see, nearly invisible to the human eye. Box jellyfish are almost transparent.',
     'Although the word is mentioned in their name, jellyfish are not fish.',
-    'A group of jellyfish is called a ‘bloom’, ‘swarm’ or ‘smack’.',
-    'Large blooms can feature over 100,000 jellyfish.',
+    'A group of jellyfish is called a ‘bloom’, ‘swarm’ or ‘smack’. Large blooms can feature over 100,000 jellyfish.',
     'Jellyfish don’t have brains.',
     'Jellyfish use their tentacles to sting. Most are harmless to humans but stings from some species, such as the box jellyfish, can be very painful and sometimes kill.',
-    'Box jellyfish are almost transparent.',
     'Jellyfish eat plankton. Some sea turtles eat jellyfish.'
     )
 
@@ -580,10 +571,10 @@ MONKEY_FACTS = (
     'There are currently 264 known monkey species.',
     'Monkeys can be divided into two groups, Old World monkeys that live in Africa and Asia, and New World monkeys that live in South America.',
     'A baboon is an example of an Old World monkey, while a marmoset is an example of a New World monkey.',
-    'Apes are not monkeys.',
+    'Apes are not monkeys. Most monkeys have tails.',
     'Some monkeys live on the ground, while others live in trees.',
     'Different monkey species eat a variety of foods, such as fruit, insects, flowers, leaves and reptiles.',
-    'Most monkeys have tails.',
+
     'Groups of monkeys are known as a ‘tribe’, ‘troop’ or ‘mission’.',
     'The Pygmy Marmoset is the smallest type of monkey, with adults weighing between 120 and 140 grams.',
     'The Mandrill is the largest type of monkey, with adult males weighing up to 35 kg.',
@@ -595,12 +586,9 @@ MONKEY_FACTS = (
 
 OWL_FACTS = (
     'There are around 200 different owl species.',
-    'Owls are active at night (nocturnal).',
     'A group of owls is called a parliament.',
     'Most owls hunt insects, small mammals and other birds.',
-    'Some owl species hunt fish.',
-    'Owls have powerful talons (claws) which help them catch and kill prey.',
-    'Owls have large eyes and a flat face.',
+    'Some owl species hunt fish. Owls have powerful talons which help them catch and kill prey.',
     'Owls can turn their heads as much as 270 degrees.',
     'Owls are farsighted, meaning they can’t see things close to their eyes clearly.',
     'Owls are very quiet in flight compared to other birds of prey.',
@@ -609,18 +597,15 @@ OWL_FACTS = (
     )
 
 TURTLE_FACTS = (
-    'Turtles are reptiles.',
     'Turtles have a hard shell that protects them like a shield, this upper shell is called a ‘carapace’.',
     'Turtles also have a lower shell called a ‘plastron’.',
     'Many turtle species (not all) can hide their heads inside their shells when attacked by predators.',
     'Turtles have existed for around 215 million years.',
     'Like other reptiles, turtles are cold blooded.',
     'The largest turtle is the leatherback sea turtle, it can weigh over 900 kg! (2000 lb)',
-    'Turtles lay eggs.',
     'In some species of turtle the temperature determines if the egg will develop into a male or female, lower temperatures lead to a male while higher temperatures lead to a female.',
     'Some turtles lay eggs in the sand and leave them to hatch on their own. The young turtles make their way to the top of the sand and scramble to the water while trying to avoid predators.',
     'Sea turtles have special glands which help remove salt from the water they drink.',
-    'Many turtle species are endangered.'
     )
 
 KOALA_FACTS = (
@@ -703,7 +688,6 @@ SNAKE_FACTS = [
     'Snakes have a unique anatomy which allows them to swallow and digest large prey.',
     'Snakes shed their skin a number of times a year in a process that usually lasts a few days.',
     'Some species of snake, such as cobras and black mambas, use venom to hunt and kill their prey.',
-    'Snakes smell with their tongue.',
     'Pythons kill their prey by tightly wrapping around it and suffocating it in a process called constriction. This bot is written in Python',
     'Some sea snakes can breathe partially through their skin, allowing for longer dives underwater.',
     'Anacondas are large, non-venomous snakes found in South America that can reach over 5 m (16 ft) in length.',
@@ -766,7 +750,7 @@ PANDA_FACTS = [
     'Female pandas raise cubs on their own (the male leaves after mating).',
     'The diet of a panda is made up almost entirely of bamboo.',
     'Giant pandas eat as much as 10 kg (22 lb) of bamboo a day.',
-    'Giant pandas are good climbers.',
+    'Despite their appearance Giant pandas are good climbers.',
     'The scientific name for the giant panda is ‘ailuropoda melanoleuca’.',
     'An animated movie from 2008 named ‘Kung Fu Panda’ features a giant panda called ‘Po’.'
     ]
@@ -830,13 +814,11 @@ WOLF_FACTS = [
     ]
 
 PIG_FACTS = [
-    'Pigs are intelligent animals.',
-    'Like humans, pigs are omnivores, meaning they eat both plants and other animals.',
+    'Pigs are intelligent animals. Some people like to keep pigs as pets.',
     'A pig’s snout is an important tool for finding food in the ground and sensing the world around them.',
     'Pigs have an excellent sense of smell.',
     'There are around 2 billion pigs in the world.',
     'Humans farm pigs for meat such as pork, bacon and ham.',
-    'Some people like to keep pigs as pets.',
     'Wild pigs (boar) are often hunted in the wild.',
     'In some areas of the world, wild boars are the main source of food for tigers.',
     'Feral pigs that have been introduced into new areas can be a threat to the local ecosystem.',
@@ -845,7 +827,7 @@ PIG_FACTS = [
     ]
 
 PIGEON_FACTS = (
-    'Size of pigeon depends on the species. Large pigeons can reach 19 inches in length and 8.8 pounds of weight. Small pigeons can reach 5 inches in length and up to 0.8 ounces of weight.',
+    'The size of a of pigeon depends on the species. Large pigeons can reach 19 inches in length and 8.8 pounds of weight. Small pigeons can reach 5 inches in length and up to 0.8 ounces of weight.',
     'Pigeons can have dull or colorful plumage, depending on the habitat and type of diet. The most common type of pigeon (that lives in the cities) has grayish plumage. On average, a pigeon has 10,000 feathers on their body.',
     'Pigeons have strong muscles used for flying. They can fly at the altitude of 6000 feet.',
     'Pigeons can move their wings ten times per second and maintain heartbeats at the rate of 600 times per minute.',
@@ -864,7 +846,6 @@ PIGEON_FACTS = (
 
 
 PENGUIN_FACTS = [
-    'Penguins are flightless birds.',
     'While other birds have wings for flying, penguins have adapted flippers to help them swim in the water.',
     'Most penguins live in the Southern Hemisphere.',
     'The Galapagos Penguin is the only penguin specie that ventures north of the equator in the wild.',
@@ -889,7 +870,6 @@ ZEBRA_FACTS = [
     'Zebra are part of the equidae family along with horse and donkeys.',
     'Every zebra has a unique pattern of black and white stripes.',
     'There are a number of different theories which attempt to explain zebra’s unique stripes with most relating to camouflage.',
-    'Wild zebras live in Africa.',
     'Common plain zebras have tails around half a meter in length (18 inches).',
     'Zebra crossings (pedestrian crossings) are named after the black and white stripes of zebras.',
     'Zebras run from side to side to being chased by a predator.',
