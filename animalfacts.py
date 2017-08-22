@@ -163,6 +163,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
     # botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
+    botengine('echidna', '\sechidnas?\s', reddit, ECHIDNA_FACTS, comment)
     botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
     botengine('fox', '\sfoxe?s?\s', reddit, FOX_FACTS, comment)
@@ -361,6 +362,18 @@ EAGLE_FACTS = (
     'Bald eagles live for around 20 years in the wild.',
     'Bald eagles build very large nests, sometimes weighing as much as a ton!',
     'The bald eagle was added to the list of endangered species in the United States in 1967 and its numbers have recovered well since.'
+    )
+
+ECHIDNA_FACTS = (
+    'Male echidnas have a bizarre 4-headed penis.',
+    "Echidnas are covered with fur and spiky spines. These spines are modified hairs, similar to that of the porcupines. There are tiny muscle bundles connected to the base of each spine so the echidna can control the spine's movement and direction.",
+    'A mother echidna lays a single leathery egg in her pouch, then carries it for about ten days before it hatches. The baby echidna, called a puggle, is born hairless and spineless - but with formidable claws.',
+    "Female echidnas produce milk, but they have no nipples. Instead, they secrete milk in two small, hairy areas known as aerola patches, which are connected to the milk glands. A baby echidna suckles milk straight out of its mom's skin.",
+    'Echidna is Named After the Greek "Mother of Monsters".',
+    "Echidnas are weird - they have a mish-mash of reptilian and mammalian features, which was recognized early on by biologists. In 1802, British anatomist Everard Home named the curious animal after the Greek goddess Ekhidna (meaning 'she viper') who was half-snake and half-woman.",
+    'Echidnas are egg-laying mammals. Along with the platypus, the echidna is a member of the monotremes, an order of egg-laying mammals found in Australia.',
+    'At the end of their slender snouts, echidnas have tiny mouths and toothless jaws. They use their long, sticky tongues to feed on ants, termites, worms, and insect larvae.',
+    "The echidna has a very large brain for its body size. Part of this might be due to their enlarged neocortex, which makes up half of the echidna's brain (compare this to about 30 percent in most other mammals and 80 percent in humans)."
     )
 
 ELEPHANT_FACTS = (
@@ -897,6 +910,7 @@ ALL_FACTS = (
     CRAB_FACTS,
     DOLPHIN_FACTS,
     EAGLE_FACTS,
+    ECHIDNA_FACTS,
     FLAMINGO_FACTS,
     FOX_FACTS,
     FROG_FACTS,
