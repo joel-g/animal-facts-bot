@@ -110,7 +110,7 @@ def unsubscribe(redditor):
 
 def unsubscribed_author_check(comment):
     unsub_r = open(unsubscribed_list, 'r')
-    if comment.author.name in unsub_r.read().splitlines():
+    if comment.author and comment.author.name in unsub_r.read().splitlines():
         unsub_r.close()
         return False
     else:
