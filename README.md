@@ -7,16 +7,30 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 ### Current supported animals:
 * alligator
 * badger
+* beaver
 * camel
+* cheetah
+* cow
+* crab
 * dolphin
+* eagle
+* echidna
+* elephant
 * flamingo
+* fox
 * frog
 * giraffe
+* gorilla
+* hedgehog
 * hippo
 * horse
 * jellyfish
 * koala
+* lion
+* leopard
+* lizard
 * monkey
+* ocelot
 * octopus
 * otter
 * owl
@@ -24,6 +38,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * penguin
 * pig
 * scorpion
+* seagull
 * shark
 * sloth
 * snake
@@ -40,4 +55,5 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * more
 * silly
 * TIL
+
 AnimalFactsBot gets these fairly often.
