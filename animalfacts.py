@@ -77,6 +77,11 @@ def check_messages(reddit):
                         comment.reply("Please don't hate. Beep boop.")
                         print('     Replied to a "hate" comment\n')
                         record_already_replied(file_obj_r, comment)
+                    elif 'animalfactsbot' in comment_body:
+                        print('found my name')
+                        comment.reply("You said my name! Would you like to know more about ME? I am written in Python. I am running from a computer in Seattle. I have given an animal fact to a Redditors " + str(number_of_facts_given()) + " times!")
+                        print('     Told someone about myself.\n')
+                        record_already_replied(file_obj_r, comment)
                     else:
                         commented_obj_r = open(history,'r')
                         if comment.id not in commented_obj_r.read().splitlines():
@@ -800,7 +805,7 @@ WHALE_FACTS = [
     ]
 
 WOLF_FACTS = [
-    'Wolves are excellent hunters and have been found to be living in more places in the world than any other mammal except humans.',
+    'Wolves are excellent hunters and have been found to be living in more places in the world than any other land mammal except humans.',
     'The wolf is the ancestor of all breeds of domestic dog. It is part of a group of animals called the wild dogs which also includes the dingo and the coyote.',
     'Most wolves weigh about 40 kilograms but the heaviest wolf ever recorded weighed over 80 kilograms!',
     'Adult wolves have large feet. A fully grown wolf would have a paw print nearly 13 centimeters long and 10 centimeters wide.',
