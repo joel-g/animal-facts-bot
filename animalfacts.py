@@ -79,7 +79,7 @@ def check_messages(reddit):
                         record_already_replied(file_obj_r, comment)
                     elif 'animalfactsbot' in comment_body:
                         print('found my name')
-                        comment.reply("You said my name! Would you like to know more about ME? I am written in Python. I am running from a computer in Seattle. I have given an animal fact to a Redditors " + str(number_of_facts_given()) + " times!")
+                        comment.reply("You said my name! Would you like to know more about ME? I am written in Python. I am running from a computer in Seattle. I have given an animal fact to a Redditor " + str(number_of_facts_given()) + " times!")
                         print('     Told someone about myself.\n')
                         record_already_replied(file_obj_r, comment)
                     else:
