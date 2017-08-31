@@ -55,5 +55,6 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * more
 * silly
 * TIL
+* AnimalFactsBot
 
 AnimalFactsBot gets these fairly often.
