@@ -166,7 +166,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
-    # botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)
+    botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
     botengine('echidna', '\sechidnas?\s', reddit, ECHIDNA_FACTS, comment)
     botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
@@ -179,6 +179,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS, comment)
     botengine('horse', '\shorses?\s', reddit, HORSE_FACTS, comment)
     botengine('jellyfish', '\sjellyfish\s', reddit, JELLYFISH_FACTS, comment)
+    botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
     botengine('leopard', '\sleopards?\s', reddit, LEOPARD_FACTS, comment)
@@ -208,9 +209,9 @@ def animalfactsbot(reddit):
     check_messages(reddit)
     print("Pulling 1000 comments...")
     comment_list = reddit.subreddit('all').comments(limit = 1000)
-    print("     checking each comment for " + str(len(ANIMALS)) + " different animals\n")
+    print("     checking each comment for " + str(len(ALL_FACTS)) + " different animals\n")
     for comment in comment_list:
-        check_comment_for_animal(comment, reddit)
+        heck_comment_for_animal(comment, reddit)
 
 
 ALLIGATOR_FACTS = (
@@ -422,7 +423,7 @@ FOX_FACTS = (
     'Foxes stink, their funny ‘musky’ smell comes from scent glands at the base of their tail'
     )
 
-FROG_FACTS = [
+FROG_FACTS = (
     'A frog is an amphibian. They lay their eggs in water. The eggs hatch into a tadpole which lives in water until it metamorphoses into an adult frog.',
     'Tadpoles look more like fish than frogs, they have long finned tails and breathe through gills.',
     'An amphibian can live both on land and in water.',
@@ -434,7 +435,7 @@ FROG_FACTS = [
     'Frogs in the wild face many dangers and are lucky to survive several years. In captivity however, frogs can live for much longer.',
     'Frogs can see forwards, sideways and upwards all at the same time. They never close their eyes, even when they sleep.',
     "Remarkably, frogs actually use their eyes to help them swallow food. When the frog blinks, its eyeballs are pushed downwards creating a bulge in the roof of its mouth. This bulge squeezes the food inside the frog's mouth down the back of its throat."
-    ]
+    )
 
 GIRAFFE_FACTS = (
     'A male giraffe can weigh as much as a pick up truck! That’s about 1400 kilograms.',
@@ -612,6 +613,18 @@ TURTLE_FACTS = (
     'In some species of turtle the temperature determines if the egg will develop into a male or female, lower temperatures lead to a male while higher temperatures lead to a female.',
     'Some turtles lay eggs in the sand and leave them to hatch on their own. The young turtles make their way to the top of the sand and scramble to the water while trying to avoid predators.',
     'Sea turtles have special glands which help remove salt from the water they drink.',
+    )
+
+KANGAROO_FACTS = (
+    'Kangaroos are marsupial animals that are found in Australia as well as New Guinea.',
+    'There are four different kangaroo species, the red kangaroo, eastern grey kangaroo, western grey kangaroo and antilopine kangaroo.',
+    'Kangaroos can hop around quickly on two legs or walk around slowly on all four.',
+    'Kangaroos can’t walk backwards.',
+    'Kangaroos can jump very high, sometimes three times their own height.',
+    'Kangaroos can swim.',
+    'Baby kangaroos are known as ‘joeys’. A group of kangaroos is called a ‘mob’, ‘troop’ or ‘court’.',
+    'The red kangaroo is the largest marsupial in the world.',
+    'Kangaroos usually live to around six years old in the wild.'
     )
 
 KOALA_FACTS = (
@@ -920,6 +933,7 @@ ALL_FACTS = (
     HIPPO_FACTS,
     HORSE_FACTS,
     JELLYFISH_FACTS,
+    KANGAROO_FACTS,
     KOALA_FACTS,
     LION_FACTS,
     LEOPARD_FACTS,
