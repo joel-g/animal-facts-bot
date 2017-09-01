@@ -79,7 +79,7 @@ def check_messages(reddit):
                         record_already_replied(file_obj_r, comment)
                     elif 'animalfactsbot' in comment_body:
                         print('found my name')
-                        comment.reply("You said my name! Would you like to know more about ME? I am written in Python. I am running from a computer in Seattle. I have given an animal fact to a Redditors " + str(number_of_facts_given()) + " times!")
+                        comment.reply("You said my name! Would you like to know more about me? I am written in Python. I am running from a computer in Seattle. I have given an animal fact to redditors " + str(number_of_facts_given()) + " times!")
                         print('     Told someone about myself.\n')
                         record_already_replied(file_obj_r, comment)
                     else:
@@ -155,7 +155,7 @@ def botengine(animal, regex, reddit, facts, comment):
                     else:
                         print('     Already commented on this!\n')
 
-ANIMALS = ('alligator', 'beaver', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
+ANIMALS = ('alligator', 'beaver', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'parrot', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
 
 def check_comment_for_animal(comment, reddit):
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
@@ -188,6 +188,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('octopus', '\soctopus?\s', reddit, OCTOPUS_FACTS, comment)
     botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
     botengine('owl', '\sowls?\s', reddit, OWL_FACTS, comment)
+    botengine('parrot', '\sparrots?\s', reddit, PARROT_FACTS, comment)
     botengine('panda', '\spandas?\s', reddit, PANDA_FACTS, comment)
     botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS, comment)
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
@@ -746,7 +747,7 @@ SCORPION_FACTS = [
     'Scorpions moult, they shed their exoskeleton up to 7 times as they grow to full size. They become vulnerable to predators each time until their new protective exoskeleton hardens.'
     ]
 
-PANDA_FACTS = [
+PANDA_FACTS = (
     'The giant panda is native to China. It has a black and white coat that features large black patches around its eyes.',
     'Pandas are an endangered species. Population estimates vary but there may be around 2000 left living in the wild.',
     'A giant panda cub weighs only around 150 grams (5 oz) at birth.',
@@ -758,7 +759,20 @@ PANDA_FACTS = [
     'Despite their appearance Giant pandas are good climbers.',
     'The scientific name for the giant panda is ‘ailuropoda melanoleuca’.',
     'An animated movie from 2008 named ‘Kung Fu Panda’ features a giant panda called ‘Po’.'
-    ]
+    )
+
+PARROT_FACTS = (
+    'There are around 372 different parrot species.',
+    'Parrots are believed to be one of the most intelligent bird species. Some species are known for imitating human voices.',
+    'Most parrot species rely on seeds as food. Others may eat fruit, nectar, flowers or small insects.',
+    'Parrots such as the budgerigar (budgie) and cockatiel are popular as pets.',
+    'Some parrot species can live for over 80 years.',
+    'There are 21 different species of cockatoo.',
+    'Cockatoos usually have black, grey or white plumage (feathers).',
+    'Keas are large, intelligent parrots that live in alpine areas of New Zealand’s South Island. They are the world’s only alpine parrot and are known for their curious and sometimes cheeky behaviour near ski fields where they like to investigate bags, steal small items and damage cars.',
+    'Kakapos are critically endangered flightless parrots, as of 2010 only around 130 are known to exist. They are active at night (nocturnal) and feed on a range of seeds, fruit, plants and pollen. Kakapos are also the world’s heaviest parrot.',
+    'The flag of Dominica features the sisserou parrot.'
+    )
 
 OCTOPUS_FACTS = (
     'There are around 300 species of octopus, usually located in tropical and temperate ocean waters. They are divided into finned deep-sea varieties that live on the ocean floor and finless, shallow water varieties found around coral reefs.',
@@ -915,6 +929,7 @@ ALL_FACTS = (
     OWL_FACTS,
     OCELOT_FACTS,
     PANDA_FACTS,
+    PARROT_FACTS,
     PENGUIN_FACTS,
     PIG_FACTS,
     PIGEON_FACTS,
