@@ -677,8 +677,8 @@ SEAGULL_FACTS = (
     'Seagulls live in colonies that consist of few pairs of birds or couple of thousands birds.',
     'Seagulls use wide repertoire of sounds and body language for communication.',
     'Seagulls are monogamous creatures (they mate for a lifetime). Mating couple gathers each year during the mating season to reproduce and to take care of their offspring.',
-    'Even though they live in large colonies, breeding couple occupies and defends its territory from the nearby couples.',
-    'Couple collects plant material and builds nest together. Nests are cup-shaped and usually located on the ground or hardly accessible cliffs.',
+    'Even though they live in large colonies, breeding couples occupy and defends its territory from nearby couple.',
+    'Seagull couples collects plant material and build nests together. Nests are cup-shaped and usually located on the ground or hardly accessible cliffs.',
     'Depending on the species, female can lay one, two or three dark brown or olive green eggs. Incubation period lasts 22 to 26 days. Fathers play very important role in feeding of chicks. Young birds live in nursery flocks where they learn all skill required for independent life.',
     'Lifespan of seagulls depends on the species. Most seagulls can survive from 10 to 15 years in the wild.'
     )
