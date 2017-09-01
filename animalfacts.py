@@ -211,7 +211,7 @@ def animalfactsbot(reddit):
     comment_list = reddit.subreddit('all').comments(limit = 1000)
     print("     checking each comment for " + str(len(ALL_FACTS)) + " different animals\n")
     for comment in comment_list:
-        heck_comment_for_animal(comment, reddit)
+        check_comment_for_animal(comment, reddit)
 
 
 ALLIGATOR_FACTS = (
@@ -630,7 +630,7 @@ KANGAROO_FACTS = (
 KOALA_FACTS = (
     'Koalas are native to Australia. Koalas are not bears.',
     'Koala fossils found in Australia have been dated as long ago as 20 million years.',
-    'Koalas eat eucalypt leaves and almost nothing else.',
+    'Koalas eat eucalyptus leaves and almost nothing else.',
     'The brain size of modern koalas has reduced substantially from their ancestors, possibly as an adaptation to the low energy they get from their diets.',
     'The closest living relative of the koala is the wombat.',
     'Koalas have sharp claws which help them climb trees.',
