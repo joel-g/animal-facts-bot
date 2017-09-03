@@ -155,7 +155,7 @@ def botengine(animal, regex, reddit, facts, comment):
                     else:
                         print('     Already commented on this!\n')
 
-ANIMALS = ('alligator', 'beaver', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'parrot', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
+# ANIMALS = ('alligator', 'beaver', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'parrot', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
 
 def check_comment_for_animal(comment, reddit):
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
@@ -175,6 +175,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
     botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
     botengine('gorilla', '\sgorillas?\s', reddit, GORILLA_FACTS, comment)
+    botengine('hamster', '\shamsters?\s', reddit, HAMSTER_FACTS, comment)
     botengine('hedgehog', '\shedgehogs?\s', reddit, HEDGEHOG_FACTS, comment)
     botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS, comment)
     botengine('horse', '\shorses?\s', reddit, HORSE_FACTS, comment)
@@ -462,6 +463,23 @@ GORILLA_FACTS = (
     'A gorilla can live for 40 – 50 years.',
     'Gorillas are considered to be very intelligent animals. They are known for their use of tools and their varied communication. Some gorillas in captivity at a zoo have been taught to use sign language.',
     'Gorillas are endangered animals. Their habitat is destroyed when people use the land for farming and the trees for fuel. Gorillas are also killed by poachers and sometimes get caught in poacher’s snares meant for other animals.'
+    )
+
+HAMSTER_FACTS = (
+    "Hamsters are rodents from the subfamily Cricetinae.",
+    "There are 25 species of hamster.",
+    "Hamsters have thick silky fur, short tails, small ears, short legs, wide feet and large eyes.",
+    "Hamsters usually live in burrows underground during the day, they are crepuscular which means they come out at twilight to feed.",
+    "Wild hamsters feed mainly on seeds, fruits, vegetables and sometimes insects.",
+    "Hamsters are very good diggers, they will create burrows in the soil that can be over half a meter deep, containing various rooms for different purposes.",
+    "Hamsters have large cheek in which they carry food back to their burrows. Full pouches can make their heads double or triple in size.",
+    "Hamsters do not have good eyesight, they are nearsighted and also colour-blind.",
+    "The hamster relies on scent to find their way. They have scent glands which they rub on objects along a path.",
+    "Depending on the species hamsters can be black, grey, honey, white, brown, yellow, red, or a combination of these colors.",
+    "Hamsters are great as pets because they are easy to breed in captivity, easy to care for and interact well with people. They are also used as laboratory animals.",
+    "The Syrian hamster is the most popular and well known breed kept as pets. All Syrian hamsters as pets are believed to have descended from one pair in 1930.",
+    "Syrian hamsters live 2 - 3 years in captivity, and less in the wild. Other popular pet types such as Russian dwarf hamsters live about 2- 4 years in captivity.",
+    "Hamsters range in size from the largest breed, the European hamster at 13.4 in (34 cm) long, to the smallest, the dwarf hamster at 2 - 4 in (5.5 - 10.5 cm) long."
     )
 
 HEDGEHOG_FACTS = (
@@ -946,6 +964,7 @@ ALL_FACTS = (
     ELEPHANT_FACTS,
     GIRAFFE_FACTS,
     GORILLA_FACTS,
+    HAMSTER_FACTS,
     HEDGEHOG_FACTS,
     HIPPO_FACTS,
     HORSE_FACTS,
