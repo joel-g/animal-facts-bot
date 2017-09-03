@@ -191,6 +191,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('owl', '\sowls?\s', reddit, OWL_FACTS, comment)
     botengine('parrot', '\sparrots?\s', reddit, PARROT_FACTS, comment)
     botengine('panda', '\spandas?\s', reddit, PANDA_FACTS, comment)
+    botengine('peacock', '\speacocks?\s', reddit, PEACOCK_FACTS, comment) 
     botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS, comment)
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
@@ -787,6 +788,22 @@ PARROT_FACTS = (
     'The flag of Dominica features the sisserou parrot.'
     )
 
+PEACOCK_FACTS = (
+    '"Peacock" is commonly used as the name for a peafowl of the pheasant family. But in fact "peacock" is the name for the colorfully plumaged male peafowl only. The females are called peahens, they are smaller and grey or brown in color. The name of a baby peafowl is a peachick.',
+    'Peacocks are best known for their amazing eye-spotted tail feathers or plumage. During a display ceremony the peacock will stand its tail feathers up to form a fan that stretches out nearly 2 m in length.',
+    "A peacock's colourful display is believed to be a way to attract females for mating purposes, and secondly to make the peacock look bigger and intimidating if he feels threatened by predators.",
+    'There are 3 varieties of peafowl, the Indian, the Green and the Congo.',
+    'The most common type of peafowl found in many zoos and parks around the world is the Indian peafowl. The head and neck of which is covered in shining, blue feathers arranged like scales. It is native to South Asia areas of Pakistan, Sri Lanka and India (where it is the national bird).',
+    "The Congo peafowl is native to central Africa. It doesn't have a large plumage like other varieties. It is the national bird of the Democratic Republic of Congo.",
+    "The Green peafowl is native to Southeast Asia, it has chrome green and bronze feathers. It lives in areas such as Myanmar (its national symbol) and Java. It is regarded as an endangered species due to hunting and a reduction in its habitat.",
+    "White varieties of peacocks are not albinos, they have a genetic mutation that causes the lack of pigments in the plumage.",
+    "Peacock feathers accounts for 60 percent of the bird's total body length and with a wingspan measuring 5 feet, it is one of the largest flying birds in the world.",
+    "A peafowl can live to over the age of 20 years, the peacocks plumage looks its best when the male reaches the age of 5 or 6.",
+    "Peacocks have spurs on their feet that are primarily used to fight with other males.",
+    "Peafowl are omnivorous, they eat many types of plants, flower petals, seeds, insects and small reptiles such as lizards.",
+    "In Hindu culture, Lord Karthikeya, the god of war, is said to ride a peacock."
+    )
+
 OCTOPUS_FACTS = (
     'There are around 300 species of octopus, usually located in tropical and temperate ocean waters. They are divided into finned deep-sea varieties that live on the ocean floor and finless, shallow water varieties found around coral reefs.',
     'Octopuses have two eyes in a globe-shaped head (mantle) off which protrude eight long limbs called tentacles that have two rows of sucker senses.',
@@ -945,6 +962,7 @@ ALL_FACTS = (
     PANDA_FACTS,
     PARROT_FACTS,
     PENGUIN_FACTS,
+    PEACOCK_FACTS,
     PIG_FACTS,
     PIGEON_FACTS,
     SCORPION_FACTS,
