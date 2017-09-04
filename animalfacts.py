@@ -179,6 +179,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('hedgehog', '\shedgehogs?\s', reddit, HEDGEHOG_FACTS, comment)
     botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS, comment)
     botengine('horse', '\shorses?\s', reddit, HORSE_FACTS, comment)
+    botengine('hummingbird', '\shummingbirds?\s', reddit, HUMMINGBIRD_FACTS, comment)
     botengine('jellyfish', '\sjellyfish\s', reddit, JELLYFISH_FACTS, comment)
     botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
@@ -535,6 +536,23 @@ HORSE_FACTS = (
     'The first cloned horse was a Haflinger mare in Italy in 2003.',
     'Horses with pink skin can get a sunburn.',
     'A group of horses will not go to sleep at the same time - at least one of them will stay awake to look out for the others.'
+    )
+
+HUMMINGBIRD_FACTS = (
+    'Hummingbirds are New World birds found only in the Americas',
+    'There are more than 340 species of hummingbirds.',
+    'Hummingbirds are one of the smallest kinds of bird in the world. With most species 7.5 - 13 cm (3 - 5 in) in length. The Bee hummingbird is the smallest at just 5 cm (2 in). The largest is the Giant Hummingbird reaching over 20 cm (8 in).',
+    'They are called hummingbirds due to the sound created by their rapidly beating wings.',
+    "Depending on the species a hummingbird's wings can flap on average around 50 times per second, and can reach as high as 200 times per second. This allows them to fly faster than 15 m/s (54 km/h or 34 mph).",
+    'The hummingbird can hover, fly forwards, backwards and even upside down.',
+    'Hummingbirds drink the nectar of flowers which gives them a good source of glucose energy, they will catch insects every now and again for a protein boost.',
+    "A hummingbird's bill varies dramatically depending on the species. Most have a fairly long, thin bill that allows them to reach down to the nectar of a flower. With the bill slightly open they use their tongue to quickly lap up the nectar inside.",
+    'Apart from insects, hummingbirds have the highest metabolism of all animals due to the need to keep their wings rapidly beating. Because of this the hummingbird visits hundreds of flowers each day and consuming more than their own weight in nectar each day.'
+    'Because they need to conserve energy hummingbirds do not spend all day flying, they spend the majority of their time perched digesting their food.',
+    'To conserve energy overnight a hummingbird enters a hibernation-like sleep state called torpor.',
+    'Depending on the species hummingbirds live on average 3 to 5 years but have been known to live as long as 12 years.',
+    'Most hummingbirds of the United States and Canada migrate over 3000km south in fall to spend winter in Mexico or Central America. Some South American species also move north to these areas during the southern winter.',
+    'Before migrating, the hummingbird will store up a layer of fat equal to half its body weight in order to slowly use up this energy source while flying.'
     )
 
 JELLYFISH_FACTS = (
@@ -968,6 +986,7 @@ ALL_FACTS = (
     HEDGEHOG_FACTS,
     HIPPO_FACTS,
     HORSE_FACTS,
+    HUMMINGBIRD_FACTS,
     JELLYFISH_FACTS,
     KANGAROO_FACTS,
     KOALA_FACTS,
