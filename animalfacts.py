@@ -193,6 +193,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('owl', '\sowls?\s', reddit, OWL_FACTS, comment)
     botengine('parrot', '\sparrots?\s', reddit, PARROT_FACTS, comment)
     botengine('panda', '\spandas?\s', reddit, PANDA_FACTS, comment)
+    botengine('panther', '\spanthers?\s', reddit, PANTHER_FACTS, comment)
     botengine('peacock', '\speacocks?\s', reddit, PEACOCK_FACTS, comment) 
     botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS, comment)
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
@@ -665,7 +666,7 @@ KANGAROO_FACTS = (
     )
 
 KOALA_FACTS = (
-    'Koalas are native to Australia. Koalas are not bears.',
+    'Koalas are native to Australia. Koal1as are not bears.',
     'Koala fossils found in Australia have been dated as long ago as 20 million years.',
     'Koalas eat eucalyptus leaves and almost nothing else.',
     'The brain size of modern koalas has reduced substantially from their ancestors, possibly as an adaptation to the low energy they get from their diets.',
@@ -809,6 +810,19 @@ PANDA_FACTS = (
     'Despite their appearance Giant pandas are good climbers.',
     'The scientific name for the giant panda is ‘ailuropoda melanoleuca’.',
     'An animated movie from 2008 named ‘Kung Fu Panda’ features a giant panda called ‘Po’.'
+    )
+
+PANTHER_FACTS = (
+    'The animal known as a "panther" actually refers to 3 different types of big cats, leopards (Panthera pardus) or jaguars (Panthera onca) that have a black or white color mutation and a subspecies of the cougar (Puma concolor).',
+    "The 'black panther' is a black jaguar of the Americas or a black leopard of Asia and Africa. In fact, the black panther actually has normal rosettes (spots), they are often just too hard to see because the animal's fur is so dark. Melanism is the name of the dark color pigmentation mutation in a jaguar or leopard that cause the fur to be blackish, it occurs in about 6% of the population.",
+    'The opposite of melanism is albinism which is an even rarer mutation that can occur in most animal species. The extremely rare "white panther" are albino leopards, jaguars or cougars.',
+    'Because the melanism gene is a dominant gene in jaguars, a black jaguar may produce either black or spotted cubs, while a pair of spotted jaguars can only have spotted cubs.',
+    'Apart from color the black panther is believed to be less fertile than normal-colored big cats and also much more unpredictable and aggressive.',
+    'Black panthers are great swimmers and are one of the strongest tree climbing big cats, often pouncing on prey from a tree, they are capable of leaping up to 20 feet to catch their prey which includes medium sized animals like deer and monkeys and smaller rabbits and birds.',
+    'Black panthers have good hearing, extremely good eyesight, and a strong jaw.',
+    "The black panther is often called 'the ghost of the forest'. It is a smart, stealth-like attacker, its dark coat helps it hide and stalk prey very easily, especially at night.",
+    'The light tan colored Florida panther is one of over 30 subspecies of cougar (Puma concolor) found in North America.',
+    "The Florida panther has adapted to the subtropical forests and swamp environments of Florida, however they are very rare animals, as of 2013 it is believed only 160 Florida panthers remain in the wild."
     )
 
 PARROT_FACTS = (
@@ -998,6 +1012,7 @@ ALL_FACTS = (
     OWL_FACTS,
     OCELOT_FACTS,
     PANDA_FACTS,
+    PANTHER_FACTS,
     PARROT_FACTS,
     PENGUIN_FACTS,
     PEACOCK_FACTS,
