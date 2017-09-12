@@ -191,6 +191,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('leopard', '\sleopards?\s', reddit, LEOPARD_FACTS, comment)
     botengine('lizard', '\slizards?\s', reddit, LIZARD_FACTS, comment)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
+    botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
     botengine('octopus', '\soctopus?\s', reddit, OCTOPUS_FACTS, comment)
     botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
@@ -632,6 +633,14 @@ MONKEY_FACTS = (
     'The monkey is the 9th animal that appears on the Chinese zodiac, appearing as the zodiac sign in 2016.'
     )
 
+NARWHAL_FACTS = (
+    'Unlike some whale species that migrate, narwhals spend their lives in the Arctic waters of Canada, Greenland, Norway and Russia. Most narwhals winter for up to five months under sea ice in the Baffin Bay-Davis Strait area.',
+    'Narwhals feed on Greenland halibut, Arctic and polar cod, squid and shrimp. They do their chomping at the ice floe edge and in the ice-free summer waters.',
+    'Narwhals can dive a mile-and-a-half deep in the ocean. Cracks in the sea ice above allow them to pop up for air when they need it.',
+    'Narwhals change color as they age. Newborns are a blue-gray, juveniles are blue-black and adults are a mottled gray. Old narwhals are nearly all white.',
+    'The narwhal tusk—most commonly found on males—is actually an enlarged tooth with sensory capability and up to 10 million nerve endings inside. Some narwhals have up to two tusks, while others have none. The spiraled tusk juts from the head and can grow as long at 10 feet.'
+    )
+
 
 OWL_FACTS = (
     'There are around 200 different owl species.',
@@ -1011,6 +1020,7 @@ ALL_FACTS = (
     LION_FACTS,
     LEOPARD_FACTS,
     MONKEY_FACTS,
+    NARWHAL_FACTS,
     OCTOPUS_FACTS,
     OTTER_FACTS,
     OWL_FACTS,
