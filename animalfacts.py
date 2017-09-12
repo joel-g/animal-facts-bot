@@ -54,6 +54,7 @@ def check_messages(reddit):
                         print('     Gave someone more facts!\n')
                         record_already_replied(file_obj_r, comment)
                     elif 'thank' in comment_body:
+                        print('Thanks found in commment ' + comment.id)
                         comment.reply('You are most welcome. Beep boop.')
                         print('     Replied to a thank you\n')
                         record_already_replied(file_obj_r, comment)
