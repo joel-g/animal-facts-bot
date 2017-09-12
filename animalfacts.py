@@ -21,6 +21,10 @@ else:
     wait_time = 90
 
 
+if len(sys.argv) > 2:
+    number_of_messages = int(sys.argv[2])
+else:
+    number_of_messages = 50
 
 def authenticate():
     print('Authenticating...\n')
@@ -30,7 +34,7 @@ def authenticate():
 
 def check_messages(reddit):
     print("Checking my messages...\n")
-    for comment in reddit.inbox.comment_replies(limit=50):
+    for comment in reddit.inbox.comment_replies(limit=number_of_messages):
         if unsubscribed_author_check(comment):
             if not comment.subreddit.user_is_banned:
                 file_obj_r = open(reply_history,'r')
