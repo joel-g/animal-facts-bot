@@ -35,6 +35,7 @@ def authenticate():
 def check_messages(reddit):
     print("Checking my messages...\n")
     for comment in reddit.inbox.comment_replies(limit=number_of_messages):
+        print("Checking comment ID " + comment.id, end='\r')
         if unsubscribed_author_check(comment):
             if not comment.subreddit.user_is_banned:
                 file_obj_r = open(reply_history,'r')
