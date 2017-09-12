@@ -638,7 +638,9 @@ NARWHAL_FACTS = (
     'Narwhals feed on Greenland halibut, Arctic and polar cod, squid and shrimp. They do their chomping at the ice floe edge and in the ice-free summer waters.',
     'Narwhals can dive a mile-and-a-half deep in the ocean. Cracks in the sea ice above allow them to pop up for air when they need it.',
     'Narwhals change color as they age. Newborns are a blue-gray, juveniles are blue-black and adults are a mottled gray. Old narwhals are nearly all white.',
+    'There are no narwhals in captivity. In the 60s and 70s, several attempts at capturing and keeping narwhals resulted in all of the animals dying within several months.',
     'The narwhal tusk—most commonly found on males—is actually an enlarged tooth with sensory capability and up to 10 million nerve endings inside. Some narwhals have up to two tusks, while others have none. The spiraled tusk juts from the head and can grow as long at 10 feet.'
+    "A narwhal tusk's tough core and soft outer layer result in a tusk that is both strong and flexible. It can bend significantly without cracking."
     )
 
 
