@@ -176,6 +176,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
     botengine('echidna', '\sechidnas?\s', reddit, ECHIDNA_FACTS, comment)
     botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
+    botengine('emu', '\semus?\s', reddit, EMU_FACTS, comment)
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
     botengine('fox', '\sfoxe?s?\s', reddit, FOX_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
@@ -404,6 +405,19 @@ ELEPHANT_FACTS = (
     'Female elephants spend their entire lives living in large groups called herds. Male elephant leave their herds at about 13 years old and live fairly solitary lives from this point.',
     'Elephants can swim – they use their trunk to breathe like a snorkel in deep water.',
     'Elephants are herbivores and can spend up to 16 hours days collecting leaves, twigs, bamboo and roots.'
+    )
+
+EMU_FACTS = (
+    'Emus are very docile and curious, and are easily tamed in captivity.',
+    "Emus feed on grains, flowers, berries, soft shoots, insects, grubs and whatever else they can find. They even eat stones, dirt and tin cans by accident.",
+    "When food is plentiful, emus store large amounts of fat in their bodies. They use these fat stores to survive while looking for more food.",
+    'The emu belongs to a family of flightless birds called Ratites. Most Ratites are now extinct, and only the emu, ostrich, cassowary, kiwi and rhea are alive today.',
+    'Emus pair in summer and breed in the cooler months. The female develops blue skin on her neck and her feathers turn a darker brown. She struts around the male making special noises to say that she is ready to mate.',
+    'Emus are found only in Australia. They live in most of the less-populated areas of the continent and although they can survive in most regions, they avoid dense forest and severe desert.',
+    'Emus can grow to between 5 to 6.5 feet (1.5 – 2 metres) in height and weigh up to 130 pounds (60 kg). Males are slightly smaller than females. Males make a grunting sound like a pig and females make a loud booming sound.',
+    "The emu is the largest bird in Australia, and the second largest in the world after the ostrich.",
+    'Emu chicks grow very quickly, up to 2 pounds (1 kg) a week, and are full-grown in 12 to 14 months. They stay with their family group for another six months or so before they split up to breed in their second season.',
+    'Emus must drink every day, and they don’t waste water. On very hot days they breathe rapidly, using their lungs as evaporative coolers. Their large nasal passages have multiple folds inside. In cooler weather they use these folds to recycle air and create moisture for reuse.'
     )
 
 FLAMINGO_FACTS = (
@@ -1007,6 +1021,7 @@ ALL_FACTS = (
     DOLPHIN_FACTS,
     EAGLE_FACTS,
     ECHIDNA_FACTS,
+    EMU_FACTS,
     FLAMINGO_FACTS,
     FOX_FACTS,
     FROG_FACTS,
