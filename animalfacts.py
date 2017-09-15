@@ -885,6 +885,12 @@ PEACOCK_FACTS = (
     "In Hindu culture, Lord Karthikeya, the god of war, is said to ride a peacock."
     )
 
+SQUID_FACTS = (
+    'Many species of squid have a life span that is only about one year',
+    'The Humboldt squid is very aggressive and will even attack sharks in the water.',
+    'The only predators that giant squid have are sperm whales.'
+    )
+
 OCTOPUS_FACTS = (
     'There are around 300 species of octopus, usually located in tropical and temperate ocean waters. They are divided into finned deep-sea varieties that live on the ocean floor and finless, shallow water varieties found around coral reefs.',
     'Octopuses have two eyes in a globe-shaped head (mantle) off which protrude eight long limbs called tentacles that have two rows of sucker senses.',
