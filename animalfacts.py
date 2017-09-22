@@ -171,6 +171,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
+    botengine('cuttlefish', '\scuttlefishs?\s', reddit, CUTTLEFISH_FACTS, comment)
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
     botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
@@ -341,6 +342,19 @@ CRAB_FACTS = (
     'Some crab species can naturally autotomise (shed) limbs such as their claws, which then regenerate after about a year.',
     'Crabs make up 20% of all marine crustaceans caught by humans each year. This adds up to a total of 1.5 million ton annually',
     'The most consumed species of crab in the world is the Japanese Blue Crab.'
+    )
+
+CUTTLEFISH_FACTS = (
+    "Cuttlefish are cephalopods, not fish. Cephalopods include octopus, squid and nautilus.",
+    "Cuttlefish, along with most cephalopods, are the ocean’s most intelligent invertebrates.",
+    "Cuttlebone, found in the body of a cuttlefish, is used by pet birds to get calcium.",
+    "Cuttlefish have green-blue blood and 3 hearts!",
+    "A cuttlefish’s camouflage is so good that it can take on a checkerboard pattern placed beneath it.",
+    "Cuttlefish are color blind.",
+    'Cuttlefish taste with their suckers.',
+    "Cuttlefish have 8 arms and 2 long tentacles used for feeding.",
+    "The largest cuttlefish is the Australian giant cuttlefish, which is the size and shape of an American football.",
+    "Cuttlefish have W shaped eyelids so they can see in front of them and behind them at the same time."
     )
 
 DOLPHIN_FACTS = (
@@ -1024,6 +1038,7 @@ ALL_FACTS = (
     COW_FACTS,
     CHEETAH_FACTS,
     CRAB_FACTS,
+    CUTTLEFISH_FACTS,
     DOLPHIN_FACTS,
     EAGLE_FACTS,
     ECHIDNA_FACTS,
