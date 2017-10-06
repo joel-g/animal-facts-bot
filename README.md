@@ -60,13 +60,13 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 AnimalFactsBot gets these fairly often.
 
 
-## How to contribute:
+## How to contribute (Teach AnimalFactsBot a new animal): 
 
 * Fork/clone the repo
 * Add a tuple of strings of facts (to animalfacts.py) pertaining to a particular animal. Name the tuple variable following the format 'NAMEOFANIMAL_FACTS'. Put the tuple in alphabetical order with the other tuples.
 * Add your tuple to the ALL_FACTS tuple.
 * Add a line to the check_comment_for_animal() function for your animal following the format.
+* Make sure to tag joel-g in the pull request to master.
 
 Please: Don't add a very small set of facts (this will cause the bot to be repetetive regarding your animal).
         Only add TRUE facts. Please no trolling with 'alternative facts'.
-* Make sure to tag joel-g in the pull request to master.
