@@ -990,7 +990,7 @@ PIGEON_FACTS = (
     'Pigeons have very sensitive sense of hearing. They are able to detect distant storms, earthquakes and volcanic eruptions.',
     'Pigeons are social animals that live in the groups (flocks) composed of 20 to 30 animals.',
     'Pigeons are monogamous creatures. Couples of pigeons can produce up to 8 broods per year when food is abundant.',
-    'Female lays 2 eggs that hatch after incubation period of 18 days. Young birds depend on their parents during the first two months of their life. Both parents take care of the chicks (called squabs).',
+    'Female pigeons lay 2 eggs that hatch after incubation period of 18 days. Young birds depend on their parents during the first two months of their life. Both parents take care of the chicks (called squabs).',
     'Pigeons can survive more than 30 years in the wild.'
     )
 
