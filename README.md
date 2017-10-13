@@ -58,8 +58,8 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * jellyfish
 * kangaroo
 * koala
-* lion
 * leopard
+* lion
 * lizard
 * monkey
 * narwhal
@@ -70,8 +70,8 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * panda
 * pangolin
 * panther
-* peacock
 * parrot
+* peacock
 * penguin
 * pig
 * pigeon
@@ -82,8 +82,9 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * snake
 * tiger
 * turtle
-* wolf
+* wallaby
 * whale
+* wolf
 * zebra
 
 ### AnimalFactsBot will reply to its replies if they contain the phrases:

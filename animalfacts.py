@@ -215,7 +215,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
-    botengine('cuttlefish', '\scuttlefishs?\s', reddit, CUTTLEFISH_FACTS, comment)
+    botengine('cuttlefish', '\scuttlefish(es)?\s', reddit, CUTTLEFISH_FACTS, comment)
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
     # botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)   Disabled because this was only a temp feature during Game of Thrones season. Dragons aren't real.
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
@@ -223,7 +223,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
     botengine('emu', '\semus?\s', reddit, EMU_FACTS, comment)
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
-    botengine('fox', '\sfoxe?s?\s', reddit, FOX_FACTS, comment)
+    botengine('fox', '\sfox(es)?\s', reddit, FOX_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
     botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
     botengine('goose', '\s(goose|geese)\s', reddit, GOOSE_FACTS, comment)
@@ -233,8 +233,8 @@ def check_comment_for_animal(comment, reddit):
     botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS, comment)
     botengine('horse', '\shorses?\s', reddit, HORSE_FACTS, comment)
     botengine('hummingbird', '\shummingbirds?\s', reddit, HUMMINGBIRD_FACTS, comment)
-    botengine('husky', '\s(husky|huskie)s?\s', reddit, HUSKY_FACTS, comment)
-    botengine('jellyfish', '\sjellyfish\s', reddit, JELLYFISH_FACTS, comment)
+    botengine('husky', '\shusk(y|ies)\s', reddit, HUSKY_FACTS, comment)
+    botengine('jellyfish', '\sjellyfish(es)\s', reddit, JELLYFISH_FACTS, comment)
     botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
@@ -243,7 +243,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
-    botengine('octopus', '\soctopus?\s', reddit, OCTOPUS_FACTS, comment)
+    botengine('octopus', '\socto(pus|puses|pusses|pi)\s', reddit, OCTOPUS_FACTS, comment)
     botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
     botengine('owl', '\sowls?\s', reddit, OWL_FACTS, comment)
     botengine('parrot', '\sparrots?\s', reddit, PARROT_FACTS, comment)
@@ -262,8 +262,9 @@ def check_comment_for_animal(comment, reddit):
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
-    botengine('wolf', '\swolf\s', reddit, WOLF_FACTS, comment)
+    botengine('wallaby', '\swallab(y|ies)\s', reddit, WALLABY_FACTS, comment)
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
+    botengine('wolf', '\swol(f|ves)\s', reddit, WOLF_FACTS, comment)
     botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS, comment)
 
 
@@ -1108,6 +1109,20 @@ TURTLE_FACTS = (
     'Sea turtles have special glands which help remove salt from the water they drink.',
 )
 
+WALLABY_FACTS = (
+    'Wallabies are members of the kangaroo clan found primarily in Australia and on nearby islands.',
+    'Wallabies are marsupials or pouched mammals. Wallaby young are defenseless and develop in the pouch of their mother.',
+    'The largest wallabies can reach 6 feet from head to tail.',
+    'Wallabies have powerful hind legs they use to bound along at high speeds and jump great distances.',
+    'Wallabies are herbivores. They survive primarily off of grasses and plants.',
+    'Nail-tailed wallabies are so-named because of the sharp growth at the end of their tails.',
+    'When wallabies fight, they use their hind legs to deliver powerful kicks.',
+    "A wallaby's gestation period is roughly 28 days.",
+    'A baby wallaby is called a joey.',
+    'Four species of wallaby have already gone extinct. Many others are endangered, while others are considered vulnerable.',
+    'Large species of wallaby tend to live in groups, but smaller species tend to live alone.'
+    )
+ 
 WHALE_FACTS = (
     'Many whales are toothless. They use a plate of comb-like fibre called baleen to filter small crustaceans and other creatures from the water.',
     'There are 79 to 84 different species of whale. They come in many different shapes and sizes!',
@@ -1152,9 +1167,9 @@ ALL_FACTS = (
     BADGER_FACTS,
     BEAVER_FACTS,
     CAMEL_FACTS,
-    COW_FACTS,
     CHAMELEON_FACTS,
     CHEETAH_FACTS,
+    COW_FACTS,
     CRAB_FACTS,
     CROCODILE_FACTS,
     CUTTLEFISH_FACTS,
@@ -1191,8 +1206,8 @@ ALL_FACTS = (
     PANGOLIN_FACTS,
     PANTHER_FACTS,
     PARROT_FACTS,
-    PENGUIN_FACTS,
     PEACOCK_FACTS,
+    PENGUIN_FACTS,
     PIG_FACTS,
     PIGEON_FACTS,
     RABBIT_FACTS,
@@ -1203,8 +1218,9 @@ ALL_FACTS = (
     SNAKE_FACTS,
     TIGER_FACTS,
     TURTLE_FACTS,
-    WOLF_FACTS,
+    WALLABY_FACTS,
     WHALE_FACTS,
+    WOLF_FACTS,
     ZEBRA_FACTS
 )
 
