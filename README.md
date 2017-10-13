@@ -8,14 +8,13 @@
 * Add your animal to the Readme
 * Add me on Twitter @joelatwar
 
-
 Please: 
 * Don't add a very small set of facts (this will cause the bot to be repetetive regarding your animal).
 * Each fact must make sense independent of the other facts in the tuple because users will only get one fact at a time.
 * Only add TRUE facts. Please no trolling with 'alternative facts'.
 * Don't add 'seal', 'bat' or 'duck' facts unless you've figured out how to not reply to homonyms.
 * Don't add 'cat' or 'dog' because they are just too common on reddit.
- 
+        
 If you have a question the quickest way to reach is me on twitter @joelatwar
 
 
@@ -27,15 +26,14 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 
 ### Current supported animals:
 * alligator
-* ant
 * badger
 * beaver
+* bee
 * camel
 * chameleon
 * cheetah
 * cow
 * crab
-* crocodile
 * cuttlefish
 * dolphin
 * dragon

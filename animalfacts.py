@@ -201,20 +201,19 @@ def botengine(animal, regex, reddit, facts, comment):
                     else:
                         print('     Already commented on this!\n')
 
-# ANIMALS = ('alligator', 'ant', 'beaver', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'parrot', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
+# ANIMALS = ('alligator', 'beaver', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'parrot', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
 
 
 def check_comment_for_animal(comment, reddit):
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
-    botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
+    botengine('bee', '\sbee?\s', reddit, BEE_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
     botengine('chameleon', '\schameleons?\s', reddit, CHAMELEON_FACTS, comment)
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
-    botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
     botengine('cuttlefish', '\scuttlefishs?\s', reddit, CUTTLEFISH_FACTS, comment)
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
     # botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)   Disabled because this was only a temp feature during Game of Thrones season. Dragons aren't real.
@@ -254,7 +253,6 @@ def check_comment_for_animal(comment, reddit):
     botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS, comment)
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
-    botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
     botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
@@ -289,23 +287,6 @@ ALLIGATOR_FACTS = (
     'Alligator eggs become male or female depending on the temperature, male in warmer temperatures and female in cooler temperatures.',
     'Like crocodiles, alligators are part of the order ‘Crocodylia’.')
 
-ANT_FACTS = (
-	'There are more than 12,000 species of ants all over the world.',
-	'An ant can lift 20 times its own body weight. If a second grader was as strong as an ant, she would be able to pick up a car!',
-	'Some queen ants can live for many years and have millions of babies!',
-	'Ants don’t have ears. Ants "hear" by feeling vibrations in the ground through their feet.',
-	'Ants are the longest living of all insects, living for up to 30 years.',
-	'When ants fight, it is usually to the death!',
-	'When foraging, ants leave a pheromone trail so that they know where they’ve been.',
-	'One ant species (Trap-Jaw Ants) owns the record for the fastest movement within the animal kingdom.',
-	'The largest ant colony ever found was over 6000 Km or 3750 miles wide.',
-	'All worker, soldier and queen ants are female.',
-	'Some ant species are asexual, they clone themselves and do not require any males.',
-	'Ants and humans are the only creatures that farm other creatures.',
-	'Some ants can swim.',
-	'Ants can be found on every continent accept antarctica.'
-	)
-
 BADGER_FACTS = (
     'Badgers are part of the family Mustelidae this is the same family as otters, ferret, polecats, weasels and wolverines.',
     'There are 11 species of badger, grouped into 3 types, the Melinae (Eurasian badgers), Mellivorinae (Honey badger) and Taxideinae (American badger).',
@@ -339,6 +320,23 @@ BEAVER_FACTS = (
     'Beavers can live up to 24 years in the wild.',
     'The beaver is the national animal of Canada, and features on the Canadian five-cent piece.',
     'Beavers like to keep themselves busy, they are prolific builders during the night. Hence the saying "As busy as a beaver".')
+
+BEE_FACTS = (
+'There are three types of bees in the hive – Queen, Worker and Drone.',
+'The queen may lay 600-800 or even 1,500 eggs each day during her 3 or 4 year lifetime. This daily egg production may equal her own weight. She is constantly fed and groomed by attendant worker bees. ',
+'Honey bees fly at 15 miles per hour. ',
+'Honey bees wings stroke 11,400 times per minute, thus making their distinctive buzz.',
+'Honeybees are the only insect that produce food for humans.',
+'Honeybees will usually travel approximately 3 miles from their hive.',
+'Honeybees are the only bees that die after they sting.',
+'A populous colony may contain 40,000 to 60,000 bees during the late spring or early summer. ',
+'Bees maintain a temperature of 92-93 degrees Fahrenheit in their central brood nest regardless of whether the outside temperature is 110 or -40 degrees.',
+'Although Utah enjoys the title "The Beehive State," the top honey-producing states include California, Florida, and South Dakota.',
+'Honeybees never sleep!',
+'Bees communicate with each other by dancing and by using pheromones (scents).',
+'Honeybees have five eyes, 3 small ones on top of the head and two big ones in front.  They also have hair on their eyes!',
+'Honeybees are responsible for pollinating approx 80% of all fruit, vegetable and seed crops in the U.S. '
+)
 
 CAMEL_FACTS = (
     'There are two species of true camel. The dromedary, is a single humped camel that lives in the Middle East and the Horn of Africa area. The bactrian, is a two-humped camel that lives in areas of Central Asia.',
@@ -422,21 +420,6 @@ CRAB_FACTS = (
     'Some crab species can naturally autotomise (shed) limbs such as their claws, which then regenerate after about a year.',
     'Crabs make up 20% of all marine crustaceans caught by humans each year. This adds up to a total of 1.5 million ton annually',
     'The most consumed species of crab in the world is the Japanese Blue Crab.')
-
-CROCODILE_FACTS = (
-    'There are 23 different species of crocodiles that live on this planet.',
-    'Crocodiles do not chew their food! Instead, they swallow stones to grind their food inside their stomachs.',
-    'Crocodiles with open motuhs is not necessarily a sign of aggression. Instead, that is their only way cooling off.',
-    'Crocodiles do not possess any sweat glands.',
-    "The muscles responsible for opening a crocodile's jaws are weak, such that even humans can keep a crocdile's mouth closed.",
-    'However, opening their mouth when it is closed is almost impossible',
-    'After mating, a female crocodile can lay between 20 to 80 eggs.',
-    'Crocodiles can have a lifespan of up to 80 years.',
-    'The skin on the back of the crocodile is so hard and tough, not even a bullet can pierce it.',
-    'The closest relatives of the crocodile in the animal kingdom are rather disparate: Birds and Dinosaurs.',
-    'Crocodiles normally drown their prey by dragging them underwater before cutting their meat into smaller chunks.',
-    'Crocodiles can shoot out from the water at almost 12 meters per second!'
-    )
 
 CUTTLEFISH_FACTS = (
     "Cuttlefish are cephalopods, not fish. Cephalopods include octopus, squid and nautilus.",
@@ -972,20 +955,6 @@ PIGEON_FACTS = (
     'Female pigeons lay 2 eggs that hatch after incubation period of 18 days. Young birds depend on their parents during the first two months of their life. Both parents take care of the chicks (called squabs).',
     'Pigeons can survive more than 30 years in the wild.')
 
-RABBIT_FACTS = (
-    'A rabbit’s teeth never stop growing, which is why it is very important to provide chews and treats for them to keep their teeth from becoming overgrown.',
-    'Rabbits have 28 teeth.',
-    'When rabbits are happy they can jump and twist. This is commonly called a "binky."',
-    'The average size of a rabbit litter is usually between 4 and 12 babies, just after a short 30-day pregnancy.',
-    'More than half of the world’s rabbits live in North America.',
-    'Jackrabbits, which belong to the genus “Lepus,” have been clocked at speeds of 45 miles per hour.',
-    'Rabbits have a life span about 8 years, though sterilized rabbits (those who are spayed/neutered) can live as long as 10-12 years.'
-    'A rabbit can run between 25-45miles per hour.',
-    'Rabbits sleep about 8 hours a day.',
-    'Rabbits cannot vomit. They don’t have enough muscles in their stomach.',
-    'A male rabbit is called a buck, a female is a doe, and a baby is a kit/kitten.',
-    )
-
 SCORPION_FACTS = (
     'Scorpions are predatory animals of the class Arachnida, making them cousins to spiders, mites and ticks.',
     'Scorpions have eight legs, a pair of pincers (pedipalps) and a narrow segmented tail that often curves over their back, on the end of which is a venomous stinger.',
@@ -1066,17 +1035,7 @@ SNAKE_FACTS = (
 SQUID_FACTS = (
     'Many species of squid have a life span that is only about one year',
     'The Humboldt squid is very aggressive and will even attack sharks in the water.',
-    'The only predators that giant squid have are sperm whales.',
-    'Squid are strong swimmers and certain species can "fly" for short distances out of the water.',
-    'The majority of squid are no more than 60 cm (24 in) long, although the giant squid may reach 13 m (43 ft).',
-    'The smallest squid is the pygmy squid which can be less than 2.5 centimeters (1 inch) long.',
-    'It wasn\'t until 2004 that researchers in Japan took the first images ever of a live giant squid.',
-    'Giant squid have the largest eyes in the animal kingdom, measuring up to 10 inches in diameter.',
-    'Squid, like cuttlefish, have eight arms arranged in pairs, and two longer tentacles with suckers.',
-    'Squids belong to a particularly successful group of mollusks called the cephalopods, which have been around for about 500 million years.',
-    'Giant squid mostly eat deep water fishes and other squids including other giant squids.',
     'The only predators that giant squid have are sperm whales.')
-
 
 TIGER_FACTS = (
     'The tiger is the biggest species of the cat family.',
@@ -1151,12 +1110,12 @@ ALL_FACTS = (
     ALLIGATOR_FACTS,
     BADGER_FACTS,
     BEAVER_FACTS,
+    BEE_FACTS,
     CAMEL_FACTS,
     COW_FACTS,
     CHAMELEON_FACTS,
     CHEETAH_FACTS,
     CRAB_FACTS,
-    CROCODILE_FACTS,
     CUTTLEFISH_FACTS,
     DOLPHIN_FACTS,
     EAGLE_FACTS,
@@ -1195,7 +1154,6 @@ ALL_FACTS = (
     PEACOCK_FACTS,
     PIG_FACTS,
     PIGEON_FACTS,
-    RABBIT_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,
     SHARK_FACTS,
