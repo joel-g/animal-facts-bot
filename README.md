@@ -1,4 +1,4 @@
-## How to contribute (Teach AnimalFactsBot a new animal): 
+## How to contribute (Teach AnimalFactsBot a new animal):
         Choose an animal listed in the issues or any other real animal.
 
 * Fork/clone the repo
@@ -27,6 +27,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * badger
 * beaver
 * camel
+* chameleon
 * cheetah
 * cow
 * crab
