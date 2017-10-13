@@ -171,6 +171,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
+    botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
     botengine('cuttlefish', '\scuttlefishs?\s', reddit, CUTTLEFISH_FACTS, comment)
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
     botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)
@@ -344,6 +345,19 @@ CRAB_FACTS = (
     'Some crab species can naturally autotomise (shed) limbs such as their claws, which then regenerate after about a year.',
     'Crabs make up 20% of all marine crustaceans caught by humans each year. This adds up to a total of 1.5 million ton annually',
     'The most consumed species of crab in the world is the Japanese Blue Crab.'
+    )
+
+CROCODILE_FACTS = (
+    'Crocodiles can swim at 25mph just with the help of their powerful tail.',
+    'Crocodiles are carnivores. This means that they will eat only and only meat.',
+    'When crocodiles sit on river banks with their mouths opens, it is not aggression. They are trying to cool off as they sweat through their mouths.',
+    'Each crocodile jaw has 24 teeth that are meant to grasp and crush, not chew. They swallow stones that grind food inside their stomachs, and also act as ballast.',
+    'Crocodile skin is considered one of the finest, treasured for it durability and softness. It is a sign of status in tribal societies.',
+    'Crocodiles, which first appeared 240 million years ago, can live up to 80 years.',
+    'Ninety-nine per cent of crocodile offspring are eaten in the first year after birth, by large fish, herons, monitor lizards and adult crocodiles.',
+    'There are 23 different species of crocodiles that live on this planet. Some are small, some are really big. The smallest species goes by the name dwarf crocodile. The maximum length it attains is 5.6 feet.',
+    'Did you know that once a crocodile closes its mouth, a human can use his bare hands to keep its mouth closed? That happens because the muscles that help crocodiles to open their mouth or jaws are actually very weak.',
+    '"Crying crocodile tears" – displaying fake sadness – comes from the myth that the reptiles weep when eating humans. They do wipe their eyes when feeding, but only because their eyes bubble and froth when eating.'
     )
 
 CUTTLEFISH_FACTS = (
@@ -1059,9 +1073,10 @@ ALL_FACTS = (
     BADGER_FACTS,
     BEAVER_FACTS,
     CAMEL_FACTS,
-    COW_FACTS,
     CHEETAH_FACTS,
+    COW_FACTS,
     CRAB_FACTS,
+    CROCODILE_FACTS,
     CUTTLEFISH_FACTS,
     DOLPHIN_FACTS,
     EAGLE_FACTS,
