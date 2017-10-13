@@ -205,6 +205,7 @@ def botengine(animal, regex, reddit, facts, comment):
 
 
 def check_comment_for_animal(comment, reddit):
+    botengine('albatross', '\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
     botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
@@ -276,6 +277,19 @@ def animalfactsbot(reddit):
     for comment in comment_list:
         check_comment_for_animal(comment, reddit)
 
+
+ALBATROSS_FACTS = (
+    'Albatrosses are known to live until their fifties sixties.',
+    'The Wandering albatross has a wingspan that measures up to 11 feet 4 inches from end to end, the largest of any living bird.',
+    'When albatrosses find a mate they will pair for life, a union that will often last for 50 years.',
+    'The top albatros predator is the tiger shark, that will prey on young chicks shortly after nesting season',
+    'Simply using thermal currents, albatrosses can glide for several hundred miles without flapping.',
+    'Albatrosses can smell out prey from over 12 miles away.',
+    'Of the 22 regognised species of albatrosses, all are listed as at some level of concern; 3 species are Critically Endangered, 5 species are Endangered, 7 species are Near Threatened, and 7 species are Vulnerable.',
+    'The scientific name for the albatross is Diomedeidae.',
+    'Albatrosses perform dances to attract a mate, these are then repeated each time they meet.',
+    'The body of an albatross is covered with white, black, brown, red or yellow feathers. They were used for decoration of hats in the past.',
+    'Albatrosses can reach the speed of 40 miles per hour.')
 
 ALLIGATOR_FACTS = (
     'Alligators have been living on Earth for millions of years and are sometimes described as ‘living fossils’.',
@@ -1148,6 +1162,7 @@ ZEBRA_FACTS = (
 )
 
 ALL_FACTS = (
+    ALBATROSS_FACTS,
     ALLIGATOR_FACTS,
     BADGER_FACTS,
     BEAVER_FACTS,
