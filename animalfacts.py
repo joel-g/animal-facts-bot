@@ -201,7 +201,7 @@ def botengine(animal, regex, reddit, facts, comment):
                     else:
                         print('     Already commented on this!\n')
 
-# ANIMALS = ('alligator', 'beaver', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'parrot', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
+# ANIMALS = ('alligator', 'beaver', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'parrot', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snail', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
 
 
 def check_comment_for_animal(comment, reddit):
@@ -255,6 +255,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
     botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
     botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS, comment)
+    botengine('snail', '\ssnails?\s', reddit, SNAIL_FACTS, comment)
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
@@ -979,6 +980,24 @@ SLOTH_FACTS = (
     'In the wild, sloths live on average 10 - 16 years and in captivity over 30 years.',
 )
 
+SNAIL_FACTS = (
+    'Snails are gastropod mollusks, members of the ‘phylum Mollusca’ and the class ‘Gastropoda’.',
+    'When they feel threatened, they usually retreat into their shell to protect themselves.',
+    'The largest land snail is the ‘Achatina achatina’, the Giant African Snail.',
+    'Snails have no backbone.',
+    'Some land snails feed on other terrestrial snails.',
+    'Most snails live from 2 to 5 years, but in captivity, some have exceeded 10 or 15 years of age.',
+    'The mucus of the garden snail is used to treat wrinkles, spots, and scars on the skin.',
+    'Most snail species are hermaphrodites, so they have both male and female reproductive organs.',
+    'The speed of snails is around 0.5-0.8 inches per second. If they moved without stopping, it would take more than a week to complete 1 kilometer.',
+    'Snails do not change shells when they grow up. Instead, the shell grows along with them.',
+    'Snails host several types of parasites that, while may not kill them, they are capable of affecting or killing their predators or animals that eat the snails. Even humans who eat poorly cooked snails can become seriously ill.',
+    'A single garden snail (Helix aspersa) can have up to 430 hatchlings after a year.', 
+    'Many snails are in danger of extinction. Among these are the species ‘Aaadonta constricta’ and ‘Aaadonta fuscozonata’, and others of the ‘genus Aaadonta’ and ‘Achatinella’ are in critical danger of extinction.',
+    'The size of the shell of a snail reflects its age.',
+    'Land snails do not chew their food. They scrap it.',
+    'Calcium carbonate is the main component of the snail shells.')
+
 SNAKE_FACTS = (
     'Snakes don’t have eyelids.',
     'Snakes can’t chew food so they have to swallow it whole.',
@@ -1119,6 +1138,7 @@ ALL_FACTS = (
     SEAGULL_FACTS,
     SHARK_FACTS,
     SLOTH_FACTS,
+    SNAIL_FACTS,
     SNAKE_FACTS,
     TIGER_FACTS,
     TURTLE_FACTS,
