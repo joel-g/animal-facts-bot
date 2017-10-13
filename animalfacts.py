@@ -534,7 +534,7 @@ GOOSE_FACTS = (
     ' European geese descend from wild greylag geese, birds with short necks and round bodies. Asian geese, the breeds now known as African and Chinese, descend from the swan goose and have long, elegant necks and a distinct knob on their beaks.',
     'Geese can live up to twenty years if well cared for.',
     'A baby goose is called a gosling.',
-    'A group of feese is called a gaggle')
+    'A group of geese is called a gaggle')
 
 GORILLA_FACTS = (
     'There are only about 700 mountain gorillas and they live high in the mountains in two protected parks in Africa. Lowland gorillas live in central Africa.',
