@@ -623,13 +623,14 @@ HEDGEHOG_FACTS = (
     'Hedgehogs are nocturnal animals, often sleep during the day in a nest or under bushes and shrubs before coming out to feed at night.',
     'Hedgehogs are not related to other spine covered creatures such as the porcupine or echidna.',
     'The spines of a hedgehogs, are stiff hollow hairs, they are not poisonous or barbed and cannot be easily removed, they fall out naturally when a hedgehog sheds its baby spines and grows adult spines a process called "quilling".',
-    'Hedgehogs have about 5,000 to 6,500 spines at any one time.',
+    'Hedgehogs have about 5,000 to 6,500 spines at any one time, each which last about a year',
+    'Its illegal to sell hedgehogs in Georgia, USA'
     'Most hedgehog species will roll into a tight ball if threatened, making it hard for its attacker to get past the spiky defences.',
     'A baby hedgehog is called a hoglet.',
     'Hedgehogs communicate through a combination of snuffles, grunts and squeals.',
     'Hedgehogs have weak eyesight but a strong sense of hearing and smell. They can swim, climb and run surprising quickly over short distances.',
     'For their size hedgehogs have a relatively long lifespan. They live on average for 4-7 years in the wild and longer in captivity.',
-    'Hedgehogs in colder climates such as the UK will hibernate through winter.',
+    'Hedgehogs in colder climates, such as the UK, will hibernate through winter.',
     'If hedgehogs come in contact with humans they can sometimes pass on infections and diseases.',
     'The hedgehog is a pest in countries such as New Zealand where it has been introduced, as it does not have many natural predators and eats native species of insects, snails, lizards and baby ground-nesting birds.')
 
