@@ -536,7 +536,7 @@ GOAT_FACTS = (
     'In bright light, the pupil in a goat\'s eye is rectangular rather than round.',
     'Goat meat — called chevon or cabrito — is eaten all over the world.',
     'More people consume goat milk than the milk from any other animal.',
-    'The phrase Judas goat is a tern that has been used to describe a goat that is trained to herd other animals to slaughter while its own life is spared.',
+    'The phrase "Judas goat" is a term that has been used to describe a goat that is trained to herd other animals to slaughter while its own life is spared.',
 )
 
 GOOSE_FACTS = (
