@@ -42,6 +42,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * otter
 * owl
 * panda
+* pangolin
 * panther
 * peacock
 * parrot
