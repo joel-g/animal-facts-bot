@@ -262,6 +262,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
+    botengine('walrus', '\swalrus\s', reddit, WALRUS_FACTS, comment)
     botengine('wolf', '\swolf\s', reddit, WOLF_FACTS, comment)
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
     botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS, comment)
@@ -1108,6 +1109,30 @@ TURTLE_FACTS = (
     'Sea turtles have special glands which help remove salt from the water they drink.',
 )
 
+WALRUS_FACTS = (
+    'The scientific name for a walrus is Odobenus Rosmarus. It is latin for tooth walking sea-horse.',
+    'Walrus is a marine mammal.',
+    'A male walrus is called a bull.',
+    'A female walrus is called a cow.',
+    'A baby walrus is called a calf.',
+    'Walruses spend half their time on land and the other half in water.',
+    'There are two sub-species of walruses. The Atlantic Walrus and the Pacific Walrus.',
+    'Walruses live in the Northern Hemisphere in the Arctic.',
+    'Atlantic Walruses live near Northern Canada to Greenland.',
+    'Walruses are grey or brown but turn a pinkish color as they age.',
+    'Walruses have thick skin and then a layer of blubber.  Their blubber keeps them warm in icy waters.',
+    'Walruses grow to be 7.5 pounds to 11.5ft.',
+    'Walruses can weigh up to 4,000 pounds',
+    'Walruses whiskers are called vibrissae.',
+    'Walruses have 450 whiskers. Their whiskers are very sensitive and are used to help them locate food.',
+    'Walruses can hold thier breath under water for up to 30 minutes.',
+    'Walruses live between 30-40 years in the wild.',
+    'Female Walruses give birth to their babies on land or on ice floes.',
+    'Baby walruses weigh between 100-165 pounds!',
+    'There are around 250,000 walruses left in the wild.',
+    'Walruses were hunted by humans for their blubber and ivory tusks.',
+    )
+
 WHALE_FACTS = (
     'Many whales are toothless. They use a plate of comb-like fibre called baleen to filter small crustaceans and other creatures from the water.',
     'There are 79 to 84 different species of whale. They come in many different shapes and sizes!',
@@ -1203,6 +1228,7 @@ ALL_FACTS = (
     SNAKE_FACTS,
     TIGER_FACTS,
     TURTLE_FACTS,
+    WALRUS_FACTS,
     WOLF_FACTS,
     WHALE_FACTS,
     ZEBRA_FACTS
