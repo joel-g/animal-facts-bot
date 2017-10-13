@@ -591,6 +591,7 @@ HUMMINGBIRD_FACTS = (
     'Most hummingbirds of the United States and Canada migrate over 3000km south in fall to spend winter in Mexico or Central America. Some South American species also move north to these areas during the southern winter.',
     'Before migrating, the hummingbird will store up a layer of fat equal to half its body weight in order to slowly use up this energy source while flying.'
     )
+
 HUSKY_FACTS = (
     'Huskies have a double-layer coat that can keep them warm in temperatures as low as -60 degrees Fahrenheit.',
     'A husky\'s howl can be heard up to ten miles away.',
@@ -603,6 +604,7 @@ HUSKY_FACTS = (
     'When diptheria broke out in Nome, Alaska in 1925, a sled dog team led by the husky, Balto, transported medicine to the town before the epidemic could spread any further. The dogs made the trip during a blizzard, braving strong winds and temperatures as low as -23 degrees Fahrenheit.',
     'They\'re good dogs, Brent.'
     )
+
 JELLYFISH_FACTS = (
     'Jellyfish live in the sea and are found in all oceans.',
     'Some jellyfish live in fresh water.',
@@ -613,6 +615,32 @@ JELLYFISH_FACTS = (
     'Jellyfish don’t have brains.',
     'Jellyfish use their tentacles to sting. Most are harmless to humans but stings from some species, such as the box jellyfish, can be very painful and sometimes kill.',
     'Jellyfish eat plankton. Some sea turtles eat jellyfish.'
+    )
+
+KANGAROO_FACTS = (
+    'Kangaroos are marsupial animals that are found in Australia as well as New Guinea.',
+    'There are four different kangaroo species, the red kangaroo, eastern grey kangaroo, western grey kangaroo and antilopine kangaroo.',
+    'Kangaroos can hop around quickly on two legs or walk around slowly on all four.',
+    'Kangaroos can’t walk backwards.',
+    'Kangaroos can jump very high, sometimes three times their own height.',
+    'Kangaroos can swim.',
+    'Baby kangaroos are known as ‘joeys’. A group of kangaroos is called a ‘mob’, ‘troop’ or ‘court’.',
+    'The red kangaroo is the largest marsupial in the world.',
+    'Kangaroos usually live to around six years old in the wild.'
+    )
+
+KOALA_FACTS = (
+    'Koalas are native to Australia. Koal1as are not bears.',
+    'Koala fossils found in Australia have been dated as long ago as 20 million years.',
+    'Koalas eat eucalyptus leaves and almost nothing else.',
+    'The brain size of modern koalas has reduced substantially from their ancestors, possibly as an adaptation to the low energy they get from their diets.',
+    'The closest living relative of the koala is the wombat.',
+    'Koalas have sharp claws which help them climb trees.',
+    'Koalas have similar fingerprints to humans.',
+    'Koalas have large noses that are coloured pink or black.',
+    'Outside of breeding seasons, koalas are quiet animals.',
+    'A baby koala is called a ‘joey’. Joeys live in their mother’s pouch for around six months and remain with them for another six months or so afterwards.',
+    'Koalas cannot be kept legally as pets.',
     )
 
 LEOPARD_FACTS = (
@@ -627,7 +655,6 @@ LEOPARD_FACTS = (
     'When a female leopard is ready to mate she will give a scent and rub her body on the trees to leave her smell there. Male leopards either smell the females scent or hear her call to know that she is ready to mate.',
     'Some people believe that the bones and whiskers of leopards can heal sick people. Many leopards are killed each year for their fur and body parts and this is one reason why the leopard is an endangered animal. While they were previously found in the wild in a number of areas around the world, their habitat is largely restricted to sub-Saharan Africa with small numbers also found in India, Pakistan, Malaysia, China and Indochina.'
     )
-
 
 LION_FACTS = (
     'Lions are the second largest big cat species in the world (behind tigers).',
@@ -685,77 +712,39 @@ NARWHAL_FACTS = (
     "A narwhal tusk's tough core and soft outer layer result in a tusk that is both strong and flexible. It can bend significantly without cracking."
     )
 
-
-OWL_FACTS = (
-    'There are around 200 different owl species.',
-    'A group of owls is called a parliament.',
-    'Most owls hunt insects, small mammals and other birds.',
-    'Some owl species hunt fish. Owls have powerful talons which help them catch and kill prey.',
-    'Owls can turn their heads as much as 270 degrees.',
-    'Owls are farsighted, meaning they can’t see things close to their eyes clearly.',
-    'Owls are very quiet in flight compared to other birds of prey.',
-    'The color of owl’s feathers helps them blend into their environment (camouflage).',
-    'Barn owls can be recognized by their heart shaped face.'
+OCELOT_FACTS = (
+    'Ocelot is two times bigger than domestic cat. It can reach 28 to 35 inches in length and between 24 and 35 pounds of weight. Males are bigger than females. Length of a tail measures half of the body size.',
+    'Ocelots have beautiful fur which is the reason why people hunt them. Color of the fur is usually tawny, yellow or brown-grayish, covered with black rosettes and stripes.',
+    'Ocelot has pointed teeth that are used for biting and blade-like teeth that are used for tearing of the food. It does not have teeth for chewing so it swallows chunks of food.',
+    'Ocelot has raspy tongue, which successfully removes every little piece of meat from bones.',
+    'Ocelots are carnivores (meat-eaters). They eat rodents, monkeys, tortoises, armadillos, rabbits, birds, lizards, fish, snakes…',
+    'Ocelot has excellent eyesight (adapted to night vision) and sense of hearing, which are used for detection of the prey.',
+    'Ocelots are nocturnal animals. During the day, they rest in the hollow trees, on the branches or dense vegetation.',
+    'Due to smaller size, ocelot is an easy prey of larger cats (such as jaguars and pumas), birds of prey (eagles) and large snakes (anaconda).',
+    'Unlike other cat species, ocelots are not afraid of the water. They are excellent swimmers.',
+    'Ocelots are territorial and solitary creatures. Males usually live on the territory of 30 square meters. Females occupy territory that is two times smaller.',
+    'Ocelots are active 12 hours per day. During that time, ocelot may travel up to 7 miles while it searches for the food.',
+    'Average lifespan of ocelot is 10 to 13 years in the wild and up to 20 years in captivity.'
     )
 
-TURTLE_FACTS = (
-    'Turtles have a hard shell that protects them like a shield, this upper shell is called a ‘carapace’.',
-    'Turtles also have a lower shell called a ‘plastron’.',
-    'Many turtle species (not all) can hide their heads inside their shells when attacked by predators.',
-    'Turtles have existed for around 215 million years.',
-    'Like other reptiles, turtles are cold blooded.',
-    'The largest turtle is the leatherback sea turtle, it can weigh over 900 kg! (2000 lb)',
-    'In some species of turtle the temperature determines if the egg will develop into a male or female, lower temperatures lead to a male while higher temperatures lead to a female.',
-    'Some turtles lay eggs in the sand and leave them to hatch on their own. The young turtles make their way to the top of the sand and scramble to the water while trying to avoid predators.',
-    'Sea turtles have special glands which help remove salt from the water they drink.',
+OCTOPUS_FACTS = (
+    'There are around 300 species of octopus, usually located in tropical and temperate ocean waters. They are divided into finned deep-sea varieties that live on the ocean floor and finless, shallow water varieties found around coral reefs.',
+    'Octopuses have two eyes in a globe-shaped head (mantle) off which protrude eight long limbs called tentacles that have two rows of sucker senses.',
+    'Octopuses can squeeze into tight spaces as they are invertebrates which means they have no skeleton, (some species have a protective casing in their mantles).',
+    'An octopus has a hard beak, like a parrot beak, which they use to break into and eat their pray such as crabs and shellfish.',
+    'Octopuses have three hearts.',
+    'The largest octopus is believed to be the giant Pacific octopus, Enteroctopus dofleini which weigh about 15 kg (33 lb), and has an arm span up to 4.3 m (14 ft).',
+    'Octopuses are believed to be highly intelligent compared to other invertebrates.',
+    "An octopus's main defense against predators such as sharks is to hide and camouflage itself by using certain skin cells to change its color. This can also be used to talk with or warn other octopuses.",
+    'Octopuses can eject a thick, blackish ink in a large cloud to distract a predator while the octopus uses a siphon jet propulsion system to quickly swim away headfirst, with arms trailing behind.',
+    'A last ditch defense is for the octopus to shed a tentacle similar to how a gecko or lizard can discard a tale. An octopus is able to regenerate a lost tentacle.',
+    'Octopuses have very good eyesight and an excellent sense of touch.',
+    'A female octopus can lay on average about 200,000 eggs, however, fending for themselves only a handful of the hatchlings will survive to adulthood.',
+    'Octopuses usually live for 6 - 18 months. Males only live a few months after mating, and females die of starvation shortly after their protected eggs hatch.',
+    'Humans eat octopus in many cultures and it is also a popular fish bait.'
     )
 
-KANGAROO_FACTS = (
-    'Kangaroos are marsupial animals that are found in Australia as well as New Guinea.',
-    'There are four different kangaroo species, the red kangaroo, eastern grey kangaroo, western grey kangaroo and antilopine kangaroo.',
-    'Kangaroos can hop around quickly on two legs or walk around slowly on all four.',
-    'Kangaroos can’t walk backwards.',
-    'Kangaroos can jump very high, sometimes three times their own height.',
-    'Kangaroos can swim.',
-    'Baby kangaroos are known as ‘joeys’. A group of kangaroos is called a ‘mob’, ‘troop’ or ‘court’.',
-    'The red kangaroo is the largest marsupial in the world.',
-    'Kangaroos usually live to around six years old in the wild.'
-    )
-
-KOALA_FACTS = (
-    'Koalas are native to Australia. Koal1as are not bears.',
-    'Koala fossils found in Australia have been dated as long ago as 20 million years.',
-    'Koalas eat eucalyptus leaves and almost nothing else.',
-    'The brain size of modern koalas has reduced substantially from their ancestors, possibly as an adaptation to the low energy they get from their diets.',
-    'The closest living relative of the koala is the wombat.',
-    'Koalas have sharp claws which help them climb trees.',
-    'Koalas have similar fingerprints to humans.',
-    'Koalas have large noses that are coloured pink or black.',
-    'Outside of breeding seasons, koalas are quiet animals.',
-    'A baby koala is called a ‘joey’. Joeys live in their mother’s pouch for around six months and remain with them for another six months or so afterwards.',
-    'Koalas cannot be kept legally as pets.',
-    )
-
-SLOTH_FACTS = [
-    'Sloths are a medium-sized mammal. There are two types of sloth the two-toed sloth and the three-toed sloth, they are classified into six different species.',
-    'All sloths actually have three toes, but the two-toed sloth has only two fingers.',
-    'Sloths are part of the order Pilosa so they are related to anteaters and armadillos.',
-    'Sloths are tree-dwelling animals, they are found in the jungles of Central and South America.',
-    "A sloth's body is usually 50 to 60 cm long. Skeletons of now extinct species of sloth suggest some varieties used to be as large as elephants.",
-    'Sloths mainly eat the tree buds, new shoots, fruit and leaves, of the Cecropia tree. Some two-toed sloths also eat insects, small reptiles, and birds.',
-    'Sloths have a four-part stomach that very slowly digests the tough leaves they eat, it can sometimes take up to a month for them to digest a meal. Digesting this diet means a sloth has very little energy left to move around making it one of the slowest moving animals in the world.',
-    'Sloths can move along the ground at just 2 m (6.5 ft) per minute! In the trees they are slightly quicker at 3 m (10 ft) per minute.',
-    'The slow-movement and unique thick fur of the sloth make it a great habitat for other creatures such as moths, beetles, cockroaches, fungi, and algae. In fact, this green colored algae provides a camouflage so sloths can avoid predators.',
-    'Sloths can extend their tongues 10 to 12 inches out of their mouths.',
-    'The sloth has very long, sharp, and strong claws that they use to hold on to tree branches. The claws are also their only natural defense against predators.',
-    'Sloths usually only leave the tree they live in to go to the toilet once a week on the ground. This is when they are most vulnerable to being attacked by their main predators such as jaguars, the harpy eagle and snakes.',
-    'Two-toed sloths are nocturnal, being most active at night. While three-toed sloths are diurnal which means they are most active during the day.',
-    'It used to be thought sloths slept for 15 to 20 hours a day. However, its now believed they only sleep around 10 hours a day.',
-    'In the wild, sloths live on average 10 - 16 years and in captivity over 30 years.',
-    ]
-
-
-OTTER_FACTS = [
+OTTER_FACTS = (
     'The otter is a carnivorous mammal in a branch of the weasel family called Lutrinae.',
     'There are 13 species of otter found all around the world.',
     'Some otter species spend all their time in the water while others are land and water based animals.',
@@ -771,89 +760,19 @@ OTTER_FACTS = [
     'The Giant otter is found in South America around the Amazon river basin.',
     'The otter is a very playful animal and are believe to take part in some activities just for the enjoyment. Some make waterslides to slide down into the water!',
     'Otters are a popular animal in Japanese folklore where they are called "kawauso". In these tales the smart kawauso often fool humans, kind of like a fox.',
-    ]
-
-SEAGULL_FACTS = (
-    'Smallest species of seagulls can reach 11.5 inches in length and 4.2 ounces of weight. Large species can reach 30 inches in length and 3.8 pounds of weight.',
-    'Body of most seagulls is covered with white plumage. Wingtips are usually black or dark in color. Some species are grey or entirely white.',
-    'Seagull has strong body, elongated legs and webbed feet. Beak is slightly hooked and usually yellow in color.',
-    'Seagulls are one of the rare animals that are able to drink salt water. They have special glands (located above the eyes) which eliminate excess salt from the body.',
-    'Diet of seagulls includes different types of insects, earthworms, small rodents, reptiles and amphibians. They also consume seed, fruit and leftovers of human meals.',
-    'Seagulls are very intelligent birds. They use bread crumbs to attract fish and produce rain-like sound with their feet to attract earthworms hidden under the ground. Seagulls transfer all hunting skills and techniques to their offspring.',
-    'Seagulls often steal food from other birds, animals and people. They occasionally eat young members of their own species.',
-    'Main predators of seagulls are large birds of prey, such as eagles.',
-    'Seagulls live in colonies that consist of few pairs of birds or couple of thousands birds.',
-    'Seagulls use wide repertoire of sounds and body language for communication.',
-    'Seagulls are monogamous creatures (they mate for a lifetime). Mating couple gathers each year during the mating season to reproduce and to take care of their offspring.',
-    'Even though they live in large colonies, breeding couples occupy and defends its territory from nearby couple.',
-    'Seagull couples collects plant material and build nests together. Nests are cup-shaped and usually located on the ground or hardly accessible cliffs.',
-    'Depending on the species, female can lay one, two or three dark brown or olive green eggs. Incubation period lasts 22 to 26 days. Fathers play very important role in feeding of chicks. Young birds live in nursery flocks where they learn all skill required for independent life.',
-    'Lifespan of seagulls depends on the species. Most seagulls can survive from 10 to 15 years in the wild.'
     )
 
-SNAKE_FACTS = [
-    'Snakes don’t have eyelids.',
-    'Snakes can’t chew food so they have to swallow it whole.',
-    'Snakes have flexible jaws which allow them to eat prey bigger than their head!',
-    'Snakes are found on every continent of the world except Antarctica.',
-    'Snakes have internal ears but not external ones.',
-    'Snakes used in snake charming performances respond to movement, not sound.',
-    'There are around 3000 different species of snake.',
-    'Snakes have a unique anatomy which allows them to swallow and digest large prey.',
-    'Snakes shed their skin a number of times a year in a process that usually lasts a few days.',
-    'Some species of snake, such as cobras and black mambas, use venom to hunt and kill their prey.',
-    'Pythons kill their prey by tightly wrapping around it and suffocating it in a process called constriction. This bot is written in Python',
-    'Some sea snakes can breathe partially through their skin, allowing for longer dives underwater.',
-    'Anacondas are large, non-venomous snakes found in South America that can reach over 5 m (16 ft) in length.',
-    'Python reticulates can grow over 8.7 m (28 ft) in length and are considered the longest snakes in the world.'
-    ]
-
-SHARK_FACTS = [
-    'Sharks do not have a single bone in their bodies. Instead they have a skeleton made up of cartilage; the same type of tough, flexible tissue that makes up human ears and noses.',
-    'Some sharks remain on the move for their entire lives. This forces water over their gills, delivering oxygen to the blood stream. If the shark stops moving then it will suffocate and die.',
-    'Sharks have outstanding hearing. They can hear a fish thrashing in the water from as far as 500 meters away!',
-    'If a shark was put into a large swimming pool, it would be able to smell a single drop of blood in the water.',
-    'Although most species of shark are less than one meter long, there are some species such as the whale shark, which can be 14 meters long.',
-    'A pup (baby shark) is born ready to take care of itself. The mother shark leaves the pup to fend for itself and the pup usually makes a fast get away before the mother tries to eat it!',
-    'Not all species of shark give birth to live pups. Some species lay the egg case on the ocean floor and the pup hatches later on its own.',
-    'Great whites are the deadliest shark in the ocean. These powerful predators can race through the water at 30 km per hour.',
-    'Unlike other species of shark, the great white is warm-blooded. Although the great white does not keep a constant body temperature, it needs to eat a lot of meat in order to be able to regulate its temperature. ',
-    'A shark always has a row of smaller teeth developing behind its front teeth. Eventually the smaller teeth move forward, like a conveyor belt, and the front teeth fall out.'
-    ]
-
-TIGER_FACTS = [
-    'The tiger is the biggest species of the cat family.',
-    'Tigers can reach a length of up to 3.3 meters (11 feet) and weigh as much as 300 kilograms (660 pounds).',
-    'Subspecies of the tiger include the Sumatran Tiger, Siberian Tiger, Bengal Tiger, South China Tiger, Malayan Tiger and Indochinese Tiger.',
-    'Many subspecies of the tiger are either endangered or already extinct. Humans are the primary cause of this through hunting and the destruction of habitats.',
-    'Around half of tiger cubs don’t live beyond two years of age.',
-    'Tiger cubs leave their mother when they are around 2 years of age.',
-    'A group of tigers is known as an ‘ambush’ or ‘streak’.',
-    'Tigers are good swimmers and can swim up to 6 kilometers.',
-    'Rare white tigers carry a gene that is only present in around 1 in every 10,000 tigers.',
-    'Tigers usually hunt alone at night time.',
-    'Tigers have been known to reach speeds up to 40 mph (65 kph).',
-    "Less than 10% of hunts end successfully for tigers",
-    'Tigers can easily jump over 5 meters in length.',
-    'Various tiger subspecies are the national animals of Bangladesh, India, North Korea, South Korea and Malaysia.',
-    'There are more tigers held privately as pets than there are in the wild.',
-    'Tigers that breed with lions give birth to hybrids known as tigons and ligers.'
-    ]
-
-SCORPION_FACTS = [
-    'Scorpions are predatory animals of the class Arachnida, making them cousins to spiders, mites and ticks.',
-    'Scorpions have eight legs, a pair of pincers (pedipalps) and a narrow segmented tail that often curves over their back, on the end of which is a venomous stinger.',
-    'The scorpion uses their pincers to quickly grab prey and then whip their poisonous tail stinger over to kill or paralyze the prey. The tail is also used as a useful defense against predators.',
-    'Scorpion species range in size from 0.09 cm to 20 cm.',
-    'Scorpions can be found on all continents except for Antarctica.',
-    'There are over 1750 known species of scorpion. While humans generally fear the scorpion and its poisonous sting only about 25 of the species have venom capable of killing a human.',
-    'Under UV light such as a black light scorpions are known to glow due to the presence of fluorescent chemicals in their exoskeleton.',
-    'The scorpion is nocturnal, often hiding during the day under rocks and in holes in the ground before emerging at night to feed.',
-    'Scorpions can eat a massive amount of food in one meal. Their large food storage organs, together with a low metabolism rate and an inactive lifestyle means that if necessary they can survive 6-12 months without eating again.',
-    'Areas of China have a traditional dish of fried scorpion, and scorpion wine features in Chinese medicine.',
-    'The scorpion is one of the 12 signs of the Zodiac, with the Scorpio constellation identified in the stars.',
-    'Scorpions moult, they shed their exoskeleton up to 7 times as they grow to full size. They become vulnerable to predators each time until their new protective exoskeleton hardens.'
-    ]
+OWL_FACTS = (
+    'There are around 200 different owl species.',
+    'A group of owls is called a parliament.',
+    'Most owls hunt insects, small mammals and other birds.',
+    'Some owl species hunt fish. Owls have powerful talons which help them catch and kill prey.',
+    'Owls can turn their heads as much as 270 degrees.',
+    'Owls are farsighted, meaning they can’t see things close to their eyes clearly.',
+    'Owls are very quiet in flight compared to other birds of prey.',
+    'The color of owl’s feathers helps them blend into their environment (camouflage).',
+    'Barn owls can be recognized by their heart shaped face.'
+    )
 
 PANDA_FACTS = (
     'The giant panda is native to China. It has a black and white coat that features large black patches around its eyes.',
@@ -911,68 +830,25 @@ PEACOCK_FACTS = (
     "In Hindu culture, Lord Karthikeya, the god of war, is said to ride a peacock."
     )
 
-SQUID_FACTS = (
-    'Many species of squid have a life span that is only about one year',
-    'The Humboldt squid is very aggressive and will even attack sharks in the water.',
-    'The only predators that giant squid have are sperm whales.'
-    )
-
-OCTOPUS_FACTS = (
-    'There are around 300 species of octopus, usually located in tropical and temperate ocean waters. They are divided into finned deep-sea varieties that live on the ocean floor and finless, shallow water varieties found around coral reefs.',
-    'Octopuses have two eyes in a globe-shaped head (mantle) off which protrude eight long limbs called tentacles that have two rows of sucker senses.',
-    'Octopuses can squeeze into tight spaces as they are invertebrates which means they have no skeleton, (some species have a protective casing in their mantles).',
-    'An octopus has a hard beak, like a parrot beak, which they use to break into and eat their pray such as crabs and shellfish.',
-    'Octopuses have three hearts.',
-    'The largest octopus is believed to be the giant Pacific octopus, Enteroctopus dofleini which weigh about 15 kg (33 lb), and has an arm span up to 4.3 m (14 ft).',
-    'Octopuses are believed to be highly intelligent compared to other invertebrates.',
-    "An octopus's main defense against predators such as sharks is to hide and camouflage itself by using certain skin cells to change its color. This can also be used to talk with or warn other octopuses.",
-    'Octopuses can eject a thick, blackish ink in a large cloud to distract a predator while the octopus uses a siphon jet propulsion system to quickly swim away headfirst, with arms trailing behind.',
-    'A last ditch defense is for the octopus to shed a tentacle similar to how a gecko or lizard can discard a tale. An octopus is able to regenerate a lost tentacle.',
-    'Octopuses have very good eyesight and an excellent sense of touch.',
-    'A female octopus can lay on average about 200,000 eggs, however, fending for themselves only a handful of the hatchlings will survive to adulthood.',
-    'Octopuses usually live for 6 - 18 months. Males only live a few months after mating, and females die of starvation shortly after their protected eggs hatch.',
-    'Humans eat octopus in many cultures and it is also a popular fish bait.'
-    )
-
-OCELOT_FACTS = (
-    'Ocelot is two times bigger than domestic cat. It can reach 28 to 35 inches in length and between 24 and 35 pounds of weight. Males are bigger than females. Length of a tail measures half of the body size.',
-    'Ocelots have beautiful fur which is the reason why people hunt them. Color of the fur is usually tawny, yellow or brown-grayish, covered with black rosettes and stripes.',
-    'Ocelot has pointed teeth that are used for biting and blade-like teeth that are used for tearing of the food. It does not have teeth for chewing so it swallows chunks of food.',
-    'Ocelot has raspy tongue, which successfully removes every little piece of meat from bones.',
-    'Ocelots are carnivores (meat-eaters). They eat rodents, monkeys, tortoises, armadillos, rabbits, birds, lizards, fish, snakes…',
-    'Ocelot has excellent eyesight (adapted to night vision) and sense of hearing, which are used for detection of the prey.',
-    'Ocelots are nocturnal animals. During the day, they rest in the hollow trees, on the branches or dense vegetation.',
-    'Due to smaller size, ocelot is an easy prey of larger cats (such as jaguars and pumas), birds of prey (eagles) and large snakes (anaconda).',
-    'Unlike other cat species, ocelots are not afraid of the water. They are excellent swimmers.',
-    'Ocelots are territorial and solitary creatures. Males usually live on the territory of 30 square meters. Females occupy territory that is two times smaller.',
-    'Ocelots are active 12 hours per day. During that time, ocelot may travel up to 7 miles while it searches for the food.',
-    'Average lifespan of ocelot is 10 to 13 years in the wild and up to 20 years in captivity.'
-    )
-
-WHALE_FACTS = [
-    'Many whales are toothless. They use a plate of comb-like fibre called baleen to filter small crustaceans and other creatures from the water.',
-    'There are 79 to 84 different species of whale. They come in many different shapes and sizes!',
-    'A baby whale is called a calf. Whales form groups to look after calves and feed together. These groups are often made up of all female or all male whales.',
-    'Whales that are found in both Northern and Southern hemisphere never meet or breed together. Their migration is timed so that they are never in breeding areas at the same time.',
-    'The arched lower lip of a whale can often make it look like it is smiling! However, this isn’t a “real” smile as the blubber in the head of the whale prevents the muscles of the face from reaching the surface.',
-    'You can tell the age of a whale by looking at the wax plug in its ear. This plug in the ear has a pattern of layers when cut lengthwise that scientists can count to estimate the age of the whale.',
-    'Whales love to sing! They use this as a call to mates, a way to communicate and also just for fun! After a period of time they get bored of the same whale song and begin to sing a different tune.',
-    'Sometimes whales make navigation mistakes during migrations. Although they may have made the mistake days before, they don’t realise it until they becoming stranded.',
-    'Whales support many different types of life. Several creatures, such as barnacles and sea lice, attach themselves to the skin of whales and live there.'
-    ]
-
-WOLF_FACTS = [
-    'Wolves are excellent hunters and have been found to be living in more places in the world than any other land mammal except humans.',
-    'The wolf is the ancestor of all breeds of domestic dog. It is part of a group of animals called the wild dogs which also includes the dingo and the coyote.',
-    'Most wolves weigh about 40 kilograms but the heaviest wolf ever recorded weighed over 80 kilograms!',
-    'Adult wolves have large feet. A fully grown wolf would have a paw print nearly 13 centimeters long and 10 centimeters wide.',
-    'Wolves live and hunt in groups called a pack. A pack can range from two wolves to as many as 20 wolves depending on such factors as habitat and food supply. Most packs have one breeding pair of wolves, called the alpha pair, who lead the hunt.',
-    'Wolf pups are born deaf and blind while weighing around 0.5 kg (1 lb). It takes about 8 months before they are old enough to actively join in wolf pack hunts.',
-    'Wolves in the Arctic have to travel much longer distances than wolves in the forest to find food and will sometimes go for several days without eating.',
-    'When hunting alone, the wolf catches small animals such as squirrels, hares, chipmunks, raccoons or rabbits. However, a pack of wolves can hunt very large animals like moose, caribou and yaks.',
-    'When the pack kills an animal, the alpha pair always eats first. As food supply is often irregular for wolves, they will eat up to 1/5th of their own body weight at a time to make up for days of missed food.',
-    'Wolves have two layers of fur, an undercoat and a top coat, which allow them to survive in temperatures as low at minus 40 degrees fahrenheit! In warmer weather they flatten their fur to keep cool.',
-    'A wolf can run at a speed of 40 miles per hour during a chase. Wolves have long legs and spend most of their time trotting at a speed of 7-10 miles per hour. They can keep up a reasonable pace for hours and have been known to cover distances of 55 miles in one night.'
+PENGUIN_FACTS = [
+    'While other birds have wings for flying, penguins have adapted flippers to help them swim in the water.',
+    'Most penguins live in the Southern Hemisphere.',
+    'The Galapagos Penguin is the only penguin specie that ventures north of the equator in the wild.',
+    'Large penguin populations can be found in countries such as New Zealand, Australia, Chile, Argentina and South Africa.',
+    'No penguins live at the North Pole.',
+    'Penguins eat a range of fish and other sealife that they catch underwater.',
+    'Penguins can drink sea water.',
+    'Penguins spend around half their time in water and the other half on land.',
+    'The Emperor Penguin is the tallest of all penguin species, reaching as tall as 120 cm (47 in) in height.',
+    'Emperor Penguins can stay underwater for around 20 minutes at a time.',
+    'Emperor Penguins often huddle together to keep warm in the cold temperatures of Antarctica.',
+    'King Penguins are the second largest penguin specie. They have four layers of feathers to help keep them warm on the cold subantarctic islands where they breed.',
+    'Chinstrap Penguins get their name from the thin black band under their head. At times it looks like they’re wearing a black helmet, which might be useful as they’re considered the most aggressive type of penguin.',
+    'Crested penguins have yellow crests, as well as red bills and eyes.',
+    'Yellow eyed penguins (or Hoiho) are endangered penguins native to New Zealand. Their population is believed to be around 4000.',
+    'Little Blue Penguins are the smallest type of penguin, averaging around 33 cm (13 in) in height.',
+    'Penguin’s black and white plumage serves as camouflage while swimming. The black plumage on their back is hard to see from above, while the white plumage on their front looks like the sun reflecting off the surface of the water when seen from below.',
+    'Penguins in Antarctica have no land based predators.'
     ]
 
 PIG_FACTS = [
@@ -1006,26 +882,148 @@ PIGEON_FACTS = (
     'Pigeons can survive more than 30 years in the wild.'
     )
 
+SCORPION_FACTS = [
+    'Scorpions are predatory animals of the class Arachnida, making them cousins to spiders, mites and ticks.',
+    'Scorpions have eight legs, a pair of pincers (pedipalps) and a narrow segmented tail that often curves over their back, on the end of which is a venomous stinger.',
+    'The scorpion uses their pincers to quickly grab prey and then whip their poisonous tail stinger over to kill or paralyze the prey. The tail is also used as a useful defense against predators.',
+    'Scorpion species range in size from 0.09 cm to 20 cm.',
+    'Scorpions can be found on all continents except for Antarctica.',
+    'There are over 1750 known species of scorpion. While humans generally fear the scorpion and its poisonous sting only about 25 of the species have venom capable of killing a human.',
+    'Under UV light such as a black light scorpions are known to glow due to the presence of fluorescent chemicals in their exoskeleton.',
+    'The scorpion is nocturnal, often hiding during the day under rocks and in holes in the ground before emerging at night to feed.',
+    'Scorpions can eat a massive amount of food in one meal. Their large food storage organs, together with a low metabolism rate and an inactive lifestyle means that if necessary they can survive 6-12 months without eating again.',
+    'Areas of China have a traditional dish of fried scorpion, and scorpion wine features in Chinese medicine.',
+    'The scorpion is one of the 12 signs of the Zodiac, with the Scorpio constellation identified in the stars.',
+    'Scorpions moult, they shed their exoskeleton up to 7 times as they grow to full size. They become vulnerable to predators each time until their new protective exoskeleton hardens.'
+    ]
 
-PENGUIN_FACTS = [
-    'While other birds have wings for flying, penguins have adapted flippers to help them swim in the water.',
-    'Most penguins live in the Southern Hemisphere.',
-    'The Galapagos Penguin is the only penguin specie that ventures north of the equator in the wild.',
-    'Large penguin populations can be found in countries such as New Zealand, Australia, Chile, Argentina and South Africa.',
-    'No penguins live at the North Pole.',
-    'Penguins eat a range of fish and other sealife that they catch underwater.',
-    'Penguins can drink sea water.',
-    'Penguins spend around half their time in water and the other half on land.',
-    'The Emperor Penguin is the tallest of all penguin species, reaching as tall as 120 cm (47 in) in height.',
-    'Emperor Penguins can stay underwater for around 20 minutes at a time.',
-    'Emperor Penguins often huddle together to keep warm in the cold temperatures of Antarctica.',
-    'King Penguins are the second largest penguin specie. They have four layers of feathers to help keep them warm on the cold subantarctic islands where they breed.',
-    'Chinstrap Penguins get their name from the thin black band under their head. At times it looks like they’re wearing a black helmet, which might be useful as they’re considered the most aggressive type of penguin.',
-    'Crested penguins have yellow crests, as well as red bills and eyes.',
-    'Yellow eyed penguins (or Hoiho) are endangered penguins native to New Zealand. Their population is believed to be around 4000.',
-    'Little Blue Penguins are the smallest type of penguin, averaging around 33 cm (13 in) in height.',
-    'Penguin’s black and white plumage serves as camouflage while swimming. The black plumage on their back is hard to see from above, while the white plumage on their front looks like the sun reflecting off the surface of the water when seen from below.',
-    'Penguins in Antarctica have no land based predators.'
+SEAGULL_FACTS = (
+    'Smallest species of seagulls can reach 11.5 inches in length and 4.2 ounces of weight. Large species can reach 30 inches in length and 3.8 pounds of weight.',
+    'Body of most seagulls is covered with white plumage. Wingtips are usually black or dark in color. Some species are grey or entirely white.',
+    'Seagull has strong body, elongated legs and webbed feet. Beak is slightly hooked and usually yellow in color.',
+    'Seagulls are one of the rare animals that are able to drink salt water. They have special glands (located above the eyes) which eliminate excess salt from the body.',
+    'Diet of seagulls includes different types of insects, earthworms, small rodents, reptiles and amphibians. They also consume seed, fruit and leftovers of human meals.',
+    'Seagulls are very intelligent birds. They use bread crumbs to attract fish and produce rain-like sound with their feet to attract earthworms hidden under the ground. Seagulls transfer all hunting skills and techniques to their offspring.',
+    'Seagulls often steal food from other birds, animals and people. They occasionally eat young members of their own species.',
+    'Main predators of seagulls are large birds of prey, such as eagles.',
+    'Seagulls live in colonies that consist of few pairs of birds or couple of thousands birds.',
+    'Seagulls use wide repertoire of sounds and body language for communication.',
+    'Seagulls are monogamous creatures (they mate for a lifetime). Mating couple gathers each year during the mating season to reproduce and to take care of their offspring.',
+    'Even though they live in large colonies, breeding couples occupy and defends its territory from nearby couple.',
+    'Seagull couples collects plant material and build nests together. Nests are cup-shaped and usually located on the ground or hardly accessible cliffs.',
+    'Depending on the species, female can lay one, two or three dark brown or olive green eggs. Incubation period lasts 22 to 26 days. Fathers play very important role in feeding of chicks. Young birds live in nursery flocks where they learn all skill required for independent life.',
+    'Lifespan of seagulls depends on the species. Most seagulls can survive from 10 to 15 years in the wild.'
+    )
+
+SHARK_FACTS = [
+    'Sharks do not have a single bone in their bodies. Instead they have a skeleton made up of cartilage; the same type of tough, flexible tissue that makes up human ears and noses.',
+    'Some sharks remain on the move for their entire lives. This forces water over their gills, delivering oxygen to the blood stream. If the shark stops moving then it will suffocate and die.',
+    'Sharks have outstanding hearing. They can hear a fish thrashing in the water from as far as 500 meters away!',
+    'If a shark was put into a large swimming pool, it would be able to smell a single drop of blood in the water.',
+    'Although most species of shark are less than one meter long, there are some species such as the whale shark, which can be 14 meters long.',
+    'A pup (baby shark) is born ready to take care of itself. The mother shark leaves the pup to fend for itself and the pup usually makes a fast get away before the mother tries to eat it!',
+    'Not all species of shark give birth to live pups. Some species lay the egg case on the ocean floor and the pup hatches later on its own.',
+    'Great whites are the deadliest shark in the ocean. These powerful predators can race through the water at 30 km per hour.',
+    'Unlike other species of shark, the great white is warm-blooded. Although the great white does not keep a constant body temperature, it needs to eat a lot of meat in order to be able to regulate its temperature. ',
+    'A shark always has a row of smaller teeth developing behind its front teeth. Eventually the smaller teeth move forward, like a conveyor belt, and the front teeth fall out.'
+    ]
+
+SLOTH_FACTS = [
+    'Sloths are a medium-sized mammal. There are two types of sloth the two-toed sloth and the three-toed sloth, they are classified into six different species.',
+    'All sloths actually have three toes, but the two-toed sloth has only two fingers.',
+    'Sloths are part of the order Pilosa so they are related to anteaters and armadillos.',
+    'Sloths are tree-dwelling animals, they are found in the jungles of Central and South America.',
+    "A sloth's body is usually 50 to 60 cm long. Skeletons of now extinct species of sloth suggest some varieties used to be as large as elephants.",
+    'Sloths mainly eat the tree buds, new shoots, fruit and leaves, of the Cecropia tree. Some two-toed sloths also eat insects, small reptiles, and birds.',
+    'Sloths have a four-part stomach that very slowly digests the tough leaves they eat, it can sometimes take up to a month for them to digest a meal. Digesting this diet means a sloth has very little energy left to move around making it one of the slowest moving animals in the world.',
+    'Sloths can move along the ground at just 2 m (6.5 ft) per minute! In the trees they are slightly quicker at 3 m (10 ft) per minute.',
+    'The slow-movement and unique thick fur of the sloth make it a great habitat for other creatures such as moths, beetles, cockroaches, fungi, and algae. In fact, this green colored algae provides a camouflage so sloths can avoid predators.',
+    'Sloths can extend their tongues 10 to 12 inches out of their mouths.',
+    'The sloth has very long, sharp, and strong claws that they use to hold on to tree branches. The claws are also their only natural defense against predators.',
+    'Sloths usually only leave the tree they live in to go to the toilet once a week on the ground. This is when they are most vulnerable to being attacked by their main predators such as jaguars, the harpy eagle and snakes.',
+    'Two-toed sloths are nocturnal, being most active at night. While three-toed sloths are diurnal which means they are most active during the day.',
+    'It used to be thought sloths slept for 15 to 20 hours a day. However, its now believed they only sleep around 10 hours a day.',
+    'In the wild, sloths live on average 10 - 16 years and in captivity over 30 years.',
+    ]
+
+SNAKE_FACTS = [
+    'Snakes don’t have eyelids.',
+    'Snakes can’t chew food so they have to swallow it whole.',
+    'Snakes have flexible jaws which allow them to eat prey bigger than their head!',
+    'Snakes are found on every continent of the world except Antarctica.',
+    'Snakes have internal ears but not external ones.',
+    'Snakes used in snake charming performances respond to movement, not sound.',
+    'There are around 3000 different species of snake.',
+    'Snakes have a unique anatomy which allows them to swallow and digest large prey.',
+    'Snakes shed their skin a number of times a year in a process that usually lasts a few days.',
+    'Some species of snake, such as cobras and black mambas, use venom to hunt and kill their prey.',
+    'Pythons kill their prey by tightly wrapping around it and suffocating it in a process called constriction. This bot is written in Python',
+    'Some sea snakes can breathe partially through their skin, allowing for longer dives underwater.',
+    'Anacondas are large, non-venomous snakes found in South America that can reach over 5 m (16 ft) in length.',
+    'Python reticulates can grow over 8.7 m (28 ft) in length and are considered the longest snakes in the world.'
+    ]
+
+SQUID_FACTS = (
+    'Many species of squid have a life span that is only about one year',
+    'The Humboldt squid is very aggressive and will even attack sharks in the water.',
+    'The only predators that giant squid have are sperm whales.'
+    )
+
+TIGER_FACTS = [
+    'The tiger is the biggest species of the cat family.',
+    'Tigers can reach a length of up to 3.3 meters (11 feet) and weigh as much as 300 kilograms (660 pounds).',
+    'Subspecies of the tiger include the Sumatran Tiger, Siberian Tiger, Bengal Tiger, South China Tiger, Malayan Tiger and Indochinese Tiger.',
+    'Many subspecies of the tiger are either endangered or already extinct. Humans are the primary cause of this through hunting and the destruction of habitats.',
+    'Around half of tiger cubs don’t live beyond two years of age.',
+    'Tiger cubs leave their mother when they are around 2 years of age.',
+    'A group of tigers is known as an ‘ambush’ or ‘streak’.',
+    'Tigers are good swimmers and can swim up to 6 kilometers.',
+    'Rare white tigers carry a gene that is only present in around 1 in every 10,000 tigers.',
+    'Tigers usually hunt alone at night time.',
+    'Tigers have been known to reach speeds up to 40 mph (65 kph).',
+    "Less than 10% of hunts end successfully for tigers",
+    'Tigers can easily jump over 5 meters in length.',
+    'Various tiger subspecies are the national animals of Bangladesh, India, North Korea, South Korea and Malaysia.',
+    'There are more tigers held privately as pets than there are in the wild.',
+    'Tigers that breed with lions give birth to hybrids known as tigons and ligers.'
+    ]
+
+TURTLE_FACTS = (
+    'Turtles have a hard shell that protects them like a shield, this upper shell is called a ‘carapace’.',
+    'Turtles also have a lower shell called a ‘plastron’.',
+    'Many turtle species (not all) can hide their heads inside their shells when attacked by predators.',
+    'Turtles have existed for around 215 million years.',
+    'Like other reptiles, turtles are cold blooded.',
+    'The largest turtle is the leatherback sea turtle, it can weigh over 900 kg! (2000 lb)',
+    'In some species of turtle the temperature determines if the egg will develop into a male or female, lower temperatures lead to a male while higher temperatures lead to a female.',
+    'Some turtles lay eggs in the sand and leave them to hatch on their own. The young turtles make their way to the top of the sand and scramble to the water while trying to avoid predators.',
+    'Sea turtles have special glands which help remove salt from the water they drink.',
+    )
+
+WHALE_FACTS = [
+    'Many whales are toothless. They use a plate of comb-like fibre called baleen to filter small crustaceans and other creatures from the water.',
+    'There are 79 to 84 different species of whale. They come in many different shapes and sizes!',
+    'A baby whale is called a calf. Whales form groups to look after calves and feed together. These groups are often made up of all female or all male whales.',
+    'Whales that are found in both Northern and Southern hemisphere never meet or breed together. Their migration is timed so that they are never in breeding areas at the same time.',
+    'The arched lower lip of a whale can often make it look like it is smiling! However, this isn’t a “real” smile as the blubber in the head of the whale prevents the muscles of the face from reaching the surface.',
+    'You can tell the age of a whale by looking at the wax plug in its ear. This plug in the ear has a pattern of layers when cut lengthwise that scientists can count to estimate the age of the whale.',
+    'Whales love to sing! They use this as a call to mates, a way to communicate and also just for fun! After a period of time they get bored of the same whale song and begin to sing a different tune.',
+    'Sometimes whales make navigation mistakes during migrations. Although they may have made the mistake days before, they don’t realise it until they becoming stranded.',
+    'Whales support many different types of life. Several creatures, such as barnacles and sea lice, attach themselves to the skin of whales and live there.'
+    ]
+
+WOLF_FACTS = [
+    'Wolves are excellent hunters and have been found to be living in more places in the world than any other land mammal except humans.',
+    'The wolf is the ancestor of all breeds of domestic dog. It is part of a group of animals called the wild dogs which also includes the dingo and the coyote.',
+    'Most wolves weigh about 40 kilograms but the heaviest wolf ever recorded weighed over 80 kilograms!',
+    'Adult wolves have large feet. A fully grown wolf would have a paw print nearly 13 centimeters long and 10 centimeters wide.',
+    'Wolves live and hunt in groups called a pack. A pack can range from two wolves to as many as 20 wolves depending on such factors as habitat and food supply. Most packs have one breeding pair of wolves, called the alpha pair, who lead the hunt.',
+    'Wolf pups are born deaf and blind while weighing around 0.5 kg (1 lb). It takes about 8 months before they are old enough to actively join in wolf pack hunts.',
+    'Wolves in the Arctic have to travel much longer distances than wolves in the forest to find food and will sometimes go for several days without eating.',
+    'When hunting alone, the wolf catches small animals such as squirrels, hares, chipmunks, raccoons or rabbits. However, a pack of wolves can hunt very large animals like moose, caribou and yaks.',
+    'When the pack kills an animal, the alpha pair always eats first. As food supply is often irregular for wolves, they will eat up to 1/5th of their own body weight at a time to make up for days of missed food.',
+    'Wolves have two layers of fur, an undercoat and a top coat, which allow them to survive in temperatures as low at minus 40 degrees fahrenheit! In warmer weather they flatten their fur to keep cool.',
+    'A wolf can run at a speed of 40 miles per hour during a chase. Wolves have long legs and spend most of their time trotting at a speed of 7-10 miles per hour. They can keep up a reasonable pace for hours and have been known to cover distances of 55 miles in one night.'
     ]
 
 ZEBRA_FACTS = [
@@ -1070,14 +1068,15 @@ ALL_FACTS = (
     JELLYFISH_FACTS,
     KANGAROO_FACTS,
     KOALA_FACTS,
-    LION_FACTS,
     LEOPARD_FACTS,
+    LION_FACTS,
+    LIZARD_FACTS,
     MONKEY_FACTS,
     NARWHAL_FACTS,
+    OCELOT_FACTS,
     OCTOPUS_FACTS,
     OTTER_FACTS,
     OWL_FACTS,
-    OCELOT_FACTS,
     PANDA_FACTS,
     PANTHER_FACTS,
     PARROT_FACTS,
