@@ -213,6 +213,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
+    botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
     botengine('cuttlefish', '\scuttlefishs?\s', reddit, CUTTLEFISH_FACTS, comment)
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
     # botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)   Disabled because this was only a temp feature during Game of Thrones season. Dragons aren't real.
@@ -402,6 +403,21 @@ CRAB_FACTS = (
     'Some crab species can naturally autotomise (shed) limbs such as their claws, which then regenerate after about a year.',
     'Crabs make up 20% of all marine crustaceans caught by humans each year. This adds up to a total of 1.5 million ton annually',
     'The most consumed species of crab in the world is the Japanese Blue Crab.')
+
+CROCODILE_FACTS = (
+    'There are 23 different species of crocodiles that live on this planet.',
+    'Crocodiles do not chew their food! Instead, they swallow stones to grind their food inside their stomachs.',
+    'Crocodiles with open motuhs is not necessarily a sign of aggression. Instead, that is their only way cooling off.',
+    'Crocodiles do not possess any sweat glands.',
+    "The muscles responsible for opening a crocodile's jaws are weak, such that even humans can keep a crocdile's mouth closed.",
+    'However, opening their mouth when it is closed is almost impossible',
+    'After mating, a female crocodile can lay between 20 to 80 eggs.',
+    'Crocodiles can have a lifespan of up to 80 years.',
+    'The skin on the back of the crocodile is so hard and tough, not even a bullet can pierce it.',
+    'The closest relatives of the crocodile in the animal kingdom are rather disparate: Birds and Dinosaurs.',
+    'Crocodiles normally drown their prey by dragging them underwater before cutting their meat into smaller chunks.',
+    'Crocodiles can shoot out from the water at almost 12 meters per second!'
+    )
 
 CUTTLEFISH_FACTS = (
     "Cuttlefish are cephalopods, not fish. Cephalopods include octopus, squid and nautilus.",
@@ -1097,6 +1113,7 @@ ALL_FACTS = (
     CHAMELEON_FACTS,
     CHEETAH_FACTS,
     CRAB_FACTS,
+    CROCODILE_FACTS,
     CUTTLEFISH_FACTS,
     DOLPHIN_FACTS,
     EAGLE_FACTS,
