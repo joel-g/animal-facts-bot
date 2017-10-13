@@ -227,6 +227,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
     botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
     botengine('goose', '\s(goose|geese)\s', reddit, GOOSE_FACTS, comment)
+    botengine('gopher', '\sgopher\s', reddit, GOPHER_FACTS, comment)
     botengine('gorilla', '\sgorillas?\s', reddit, GORILLA_FACTS, comment)
     botengine('hamster', '\shamsters?\s', reddit, HAMSTER_FACTS, comment)
     botengine('hedgehog', '\shedgehogs?\s', reddit, HEDGEHOG_FACTS, comment)
@@ -589,6 +590,18 @@ GOOSE_FACTS = (
     'Geese can live up to twenty years if well cared for.',
     'A baby goose is called a gosling.',
     'A group of geese is called a gaggle')
+
+GOPHER_FACTS = (
+    'Pocket gophers, commonly referred to as gophers, are burrowing rodents of the family Geomyidae.',
+    'The gopher has large cheek pouches lined with fur which it uses to carry food and nesting material.',
+    'About 35 species of gophers live in Central and North America.',
+    'Gophers are commonly known for their extensive tunneling activities.',
+    'Gophers weigh around 0.5 lb (230 g), and are about 6–8 in (150–200 mm) in body length, with a tail 1–2 in (25–51 mm) long.',
+    'A gophers daily intake of food is equal to 60% of its body weight.',
+    'Mating season of gophers takes place during the spring.',
+    'Gopher can survive 2 to 3 years (rarely up to 5) in the wild.',
+    'Natural enemies of gophers are owls, hawks, coyotes, weasels and snakes.',
+    'The gopher is an iconic mascot and one of the most distinctive features of the Go programming language.')
 
 GORILLA_FACTS = (
     'There are only about 700 mountain gorillas and they live high in the mountains in two protected parks in Africa. Lowland gorillas live in central Africa.',
@@ -1168,6 +1181,7 @@ ALL_FACTS = (
     ELEPHANT_FACTS,
     GIRAFFE_FACTS,
     GOOSE_FACTS,
+    GOPHER_FACTS,
     GORILLA_FACTS,
     HAMSTER_FACTS,
     HEDGEHOG_FACTS,
