@@ -203,6 +203,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('owl', '\sowls?\s', reddit, OWL_FACTS, comment)
     botengine('parrot', '\sparrots?\s', reddit, PARROT_FACTS, comment)
     botengine('panda', '\spandas?\s', reddit, PANDA_FACTS, comment)
+    botengine('pangolin', '\spangolins?\s', reddit, PANGOLIN_FACTS, comment)
     botengine('panther', '\spanthers?\s', reddit, PANTHER_FACTS, comment)
     botengine('peacock', '\speacocks?\s', reddit, PEACOCK_FACTS, comment)
     botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS, comment)
@@ -788,6 +789,19 @@ PANDA_FACTS = (
     'An animated movie from 2008 named ‘Kung Fu Panda’ features a giant panda called ‘Po’.'
     )
 
+PANGOLIN_FACTS = (
+    'The name "pangolin" comes from the Malay word pengguling, meaning "one who rolls up".',
+    'Pangolins can also emit a noxious-smelling chemical from glands near the anus, similar to the spray of a skunk.',
+    'Large pangolins can extend their tongues as much as 40 cm (16 in), with a diameter of only 0.5 cm (0.20 in).',
+    'A pangolin can consume 140 to 200 g (4.9 to 7.1 oz) of insects per day.',
+    'Pangolins have a very poor sense of vision, so they rely heavily on smell and hearing.',
+    'Pangolins lack teeth, so also lack the ability to chew.',
+    'The weight of a pangolin at birth is 80 to 450 g (2.8 to 15.9 oz) and the average length is 150 mm (5.9 in).',
+    'Pangolin meat is considered a delicacy in southern China and Vietnam.',
+    'Pangolin is the most trafficked animal in the world.',
+    'All eight species of pangolin are categorized on IUCN Red List of Threatened Species.'
+    )
+
 PANTHER_FACTS = (
     'The animal known as a "panther" actually refers to 3 different types of big cats, leopards (Panthera pardus) or jaguars (Panthera onca) that have a black or white color mutation and a subspecies of the cougar (Puma concolor).',
     "The 'black panther' is a black jaguar of the Americas or a black leopard of Asia and Africa. In fact, the black panther actually has normal rosettes (spots), they are often just too hard to see because the animal's fur is so dark. Melanism is the name of the dark color pigmentation mutation in a jaguar or leopard that cause the fur to be blackish, it occurs in about 6% of the population.",
@@ -1078,6 +1092,7 @@ ALL_FACTS = (
     OTTER_FACTS,
     OWL_FACTS,
     PANDA_FACTS,
+    PANGOLIN_FACTS,
     PANTHER_FACTS,
     PARROT_FACTS,
     PENGUIN_FACTS,
