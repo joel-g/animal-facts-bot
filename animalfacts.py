@@ -201,17 +201,17 @@ def botengine(animal, regex, reddit, facts, comment):
                     else:
                         print('     Already commented on this!\n')
 
-# ANIMALS = ('alligator', 'ant', 'beaver', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'parrot', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
+# ANIMALS = ('alligator', 'beaver', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'parrot', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
 
 
 def check_comment_for_animal(comment, reddit):
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
-    botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
     botengine('chameleon', '\schameleons?\s', reddit, CHAMELEON_FACTS, comment)
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
+    botengine('chicken', '\schickens?\s', reddit, CHICKEN_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
@@ -254,7 +254,6 @@ def check_comment_for_animal(comment, reddit):
     botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS, comment)
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
-    botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
     botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
@@ -288,23 +287,6 @@ ALLIGATOR_FACTS = (
     'Alligators eat a range of different animals such as fish, birds, turtles and even deer.',
     'Alligator eggs become male or female depending on the temperature, male in warmer temperatures and female in cooler temperatures.',
     'Like crocodiles, alligators are part of the order ‘Crocodylia’.')
-
-ANT_FACTS = (
-	'There are more than 12,000 species of ants all over the world.',
-	'An ant can lift 20 times its own body weight. If a second grader was as strong as an ant, she would be able to pick up a car!',
-	'Some queen ants can live for many years and have millions of babies!',
-	'Ants don’t have ears. Ants "hear" by feeling vibrations in the ground through their feet.',
-	'Ants are the longest living of all insects, living for up to 30 years.',
-	'When ants fight, it is usually to the death!',
-	'When foraging, ants leave a pheromone trail so that they know where they’ve been.',
-	'One ant species (Trap-Jaw Ants) owns the record for the fastest movement within the animal kingdom.',
-	'The largest ant colony ever found was over 6000 Km or 3750 miles wide.',
-	'All worker, soldier and queen ants are female.',
-	'Some ant species are asexual, they clone themselves and do not require any males.',
-	'Ants and humans are the only creatures that farm other creatures.',
-	'Some ants can swim.',
-	'Ants can be found on every continent accept antarctica.'
-	)
 
 BADGER_FACTS = (
     'Badgers are part of the family Mustelidae this is the same family as otters, ferret, polecats, weasels and wolverines.',
@@ -386,6 +368,27 @@ CHEETAH_FACTS = (
     'Cheetahs cannot climb trees and have poor night vision.',
     'With their light body weight and blunt claws, cheetahs are not well designed to protect themselves or their prey. When a larger or more aggressive animal approaches a cheetah in the wild, it will give up its catch to avoid a fight.',
     'Cheetahs only need to drink once every three to four days.')
+
+CHICKEN_FACTS = (
+
+    'Chickens can distinguish among more than 100 faces of members of their species',
+    'Chickens have full-colour vision, just likes humans do.',
+    'Chickens tell each other about what they see. They communicate with more than 24 vocalisations, each with a distinct meaning. They can alsow arn their friends about different types of predators.',
+    'Chickens have pain receptors, enabling them to feel pain and distress. Just imagine their agony, then, when they endure mutilations such as having the ends of their sensitive beaks cut off with an infra-red laser – with no painkillers.',
+    'Chickens love to play and will run, jump and sunbathe when given the chance – yet billions of them spend their entire lives in cramped sheds with less floor space than an A4 piece of paper.',
+    'Chickens dream just like we do. They experience REM (rapid eye movement) during sleep, indicating that their minds may be wandering far from the four walls of the factory farms where they are imprisoned.',
+    'Wild chickens lay only approximately 10 to 15 eggs a year during breeding season. The hens who are bred by the egg industry to produce eggs every single day often suffer from painful reproductive disorders and become exhausted after just a few years.',
+    'Chickens know who’s boss. Just like us, they form social structures, known as “pecking orders”, and all chickens know their place on the ladder. It’s only when they’re packed into sheds on intensive farms with tens of thousands of other birds that their social hierarchy collapses and stress leads to feather-pecking and cannibalism.',
+    'Chickens originate from tropical rainforests, where they evolved for millions of years, and artificial farm pastures leave hens feeling vulnerable and exposed.',
+    'Roosters will attempt to woo hens by performing a little dance, called “tidbitting”, involving moving their heads up and down and making a certain type of call. Female hens are also thought to be especially attracted to roosters who have a large wattle!',
+    'Mother hens talk to their unborn babies, and they chirp back through their shells. Factory-farmed chicks never meet their parents because they are taken away as soon as they’re laid.',
+    )
+
+
+
+
+
+    
 
 COW_FACTS = (
     'There are well over 1 billion cattle in the world.',
@@ -972,20 +975,6 @@ PIGEON_FACTS = (
     'Female pigeons lay 2 eggs that hatch after incubation period of 18 days. Young birds depend on their parents during the first two months of their life. Both parents take care of the chicks (called squabs).',
     'Pigeons can survive more than 30 years in the wild.')
 
-RABBIT_FACTS = (
-    'A rabbit’s teeth never stop growing, which is why it is very important to provide chews and treats for them to keep their teeth from becoming overgrown.',
-    'Rabbits have 28 teeth.',
-    'When rabbits are happy they can jump and twist. This is commonly called a "binky."',
-    'The average size of a rabbit litter is usually between 4 and 12 babies, just after a short 30-day pregnancy.',
-    'More than half of the world’s rabbits live in North America.',
-    'Jackrabbits, which belong to the genus “Lepus,” have been clocked at speeds of 45 miles per hour.',
-    'Rabbits have a life span about 8 years, though sterilized rabbits (those who are spayed/neutered) can live as long as 10-12 years.'
-    'A rabbit can run between 25-45miles per hour.',
-    'Rabbits sleep about 8 hours a day.',
-    'Rabbits cannot vomit. They don’t have enough muscles in their stomach.',
-    'A male rabbit is called a buck, a female is a doe, and a baby is a kit/kitten.',
-    )
-
 SCORPION_FACTS = (
     'Scorpions are predatory animals of the class Arachnida, making them cousins to spiders, mites and ticks.',
     'Scorpions have eight legs, a pair of pincers (pedipalps) and a narrow segmented tail that often curves over their back, on the end of which is a venomous stinger.',
@@ -1066,17 +1055,7 @@ SNAKE_FACTS = (
 SQUID_FACTS = (
     'Many species of squid have a life span that is only about one year',
     'The Humboldt squid is very aggressive and will even attack sharks in the water.',
-    'The only predators that giant squid have are sperm whales.',
-    'Squid are strong swimmers and certain species can "fly" for short distances out of the water.',
-    'The majority of squid are no more than 60 cm (24 in) long, although the giant squid may reach 13 m (43 ft).',
-    'The smallest squid is the pygmy squid which can be less than 2.5 centimeters (1 inch) long.',
-    'It wasn\'t until 2004 that researchers in Japan took the first images ever of a live giant squid.',
-    'Giant squid have the largest eyes in the animal kingdom, measuring up to 10 inches in diameter.',
-    'Squid, like cuttlefish, have eight arms arranged in pairs, and two longer tentacles with suckers.',
-    'Squids belong to a particularly successful group of mollusks called the cephalopods, which have been around for about 500 million years.',
-    'Giant squid mostly eat deep water fishes and other squids including other giant squids.',
     'The only predators that giant squid have are sperm whales.')
-
 
 TIGER_FACTS = (
     'The tiger is the biggest species of the cat family.',
@@ -1155,6 +1134,7 @@ ALL_FACTS = (
     COW_FACTS,
     CHAMELEON_FACTS,
     CHEETAH_FACTS,
+    CHICKEN_FACTS,
     CRAB_FACTS,
     CROCODILE_FACTS,
     CUTTLEFISH_FACTS,
@@ -1195,7 +1175,6 @@ ALL_FACTS = (
     PEACOCK_FACTS,
     PIG_FACTS,
     PIGEON_FACTS,
-    RABBIT_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,
     SHARK_FACTS,
