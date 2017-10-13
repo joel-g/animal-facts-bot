@@ -199,6 +199,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
     botengine('octopus', '\soctopus?\s', reddit, OCTOPUS_FACTS, comment)
+    botengine('orca', '\sorca?\s', reddit, ORCA_FACTS, comment)
     botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
     botengine('owl', '\sowls?\s', reddit, OWL_FACTS, comment)
     botengine('parrot', '\sparrots?\s', reddit, PARROT_FACTS, comment)
@@ -745,6 +746,27 @@ OCTOPUS_FACTS = (
     'Humans eat octopus in many cultures and it is also a popular fish bait.'
     )
 
+ORCA_FACTS = (
+    "The orca's large size and strength make it among the fastest marine mammals, able to reach speeds in excess of 55 km/h.",
+    "Many orcas live with their mothers for their entire lives.",
+    "The orca is not a fish, but a mammal. However it is not a whale, as it is part of the dolphin family.",
+    "The largest orca caught was 10 meters long and weighted 10 tons, as heavy as an African elephant.",
+    "Orcas live in groups of related females, led by the oldest female, called pods. A pod can have as few as three members or as many as a hundred or more.",
+    "Orcas do not have smelling organs or a lobe in the brain dedicated to smelling, so it is believed they cannot smell.",
+    "Orcas can sleep with one eye open, like dolphins, as they cannot completely go to sleep, having to go to the surface to get air from time to time.",
+    "In captivity, an orca's dorsal fin often flops. This is possible as the fin is not made up of bones, but of large connective tissue."
+    "Orcas are the most widely distributed animals in the world, not counting humans. They can be found in all oceans, both in warm and cold waters and even in freezing waters.",
+    "The oldest known orca lived to be 103.",
+    "There is no record of a wild orca ever attacking a human.",
+    "There are fifty-two orcas in captivity all over the world.",
+    "Mother orcas give birth every three to ten years, after a 17-month pregnancy.",
+    "In Argentina, orcas hurl themselves on-shore to grab sea lion pups.",
+    "Whalers call the orca the 'killer of whales'. It preys on sperm, gray, fin, humpback and other whales.",
+    "Orcas can weigh up to 6 tons.",
+    "An orca's teeth can grow to be 4 inches (10 cm) long.",
+    "The orca can reach speeds in excess of 30 knots (about 34 mph, or 56 kph)."
+    )
+
 OTTER_FACTS = (
     'The otter is a carnivorous mammal in a branch of the weasel family called Lutrinae.',
     'There are 13 species of otter found all around the world.',
@@ -1089,6 +1111,7 @@ ALL_FACTS = (
     NARWHAL_FACTS,
     OCELOT_FACTS,
     OCTOPUS_FACTS,
+    ORCA_FACTS,
     OTTER_FACTS,
     OWL_FACTS,
     PANDA_FACTS,
