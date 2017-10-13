@@ -1108,6 +1108,19 @@ TURTLE_FACTS = (
     'Sea turtles have special glands which help remove salt from the water they drink.',
 )
 
+WALLABY_FACTS = (
+    'A young wallaby is called Joey. The males are called Jack while the females are called Jill.',
+    'Wallabies are part of the marsupial family, where the female raises the young in a pouch.'
+    'There are 30 different species of wallabies and are all native to Australia and Tasmania.',
+    'The average lifespan of a wallaby is from 9 - 15 years.',
+    'A group of wallabies is known as a ‘mob’.',
+    'A female typically gives birth to a single wallaby and in very rare cases, twins. The gestation period is one month.',
+    'They have strong back legs that help them hop and move about powerfully. The forearms of the wallaby are small and used mainly for balancing or for feeding.',
+    'An adult wallaby weighs about 15 – 26 kg. The males are 77-88 cm in height and the females are about 70-84 cm tall. Their tail is 80 cm long, which is almost the length of their entire body. They use their tail to balance and jump around. They also use it to prop into a sitting position.',
+    'Wallabies are herbivores and eat mainly roots, grass, tree leaves and ferns. They rest during the day and are active mainly at night.',
+    'Wallabies are Pink and Furless at Birth.',
+)
+
 WHALE_FACTS = (
     'Many whales are toothless. They use a plate of comb-like fibre called baleen to filter small crustaceans and other creatures from the water.',
     'There are 79 to 84 different species of whale. They come in many different shapes and sizes!',
