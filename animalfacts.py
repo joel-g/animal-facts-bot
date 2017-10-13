@@ -215,6 +215,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('skunk', '\sskunks?\s', reddit, SKUNK_FACTS, comment)
     botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS, comment)
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
+    botengine('snake', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
     botengine('wolf', '\swolf\s', reddit, WOLF_FACTS, comment)
@@ -1001,6 +1002,26 @@ SQUID_FACTS = (
     'The only predators that giant squid have are sperm whales.'
     )
 
+STINGRAY_FACTS = (
+     'Stingrays are diverse group of fish characterized by flattened bodies.',
+     'The largest species of stingray measure 6.5 feet in length and can weigh up to 790 pounds.',
+     'Stingrays are closely related to sharks.',
+     'Their flattened body ends with long tail that usually contains spine and venom. Spine can be serrated in some species.',
+     'There Are More Than 70 Species of Stingray.',
+     'Stingrays Don’t Have Bones.',
+     'Mouths are located on the bottom side of their body. When they catch clams, shrimps, and mussels, they will crash and eat them using their powerful jaws.',
+     'Their long tails usually have a spine and venom.',
+     'Stingrays Use Camouflage for Protection and Hunting.',
+     'Stingrays don’t use their eyes to find prey. They use their electro-sensors to locate their prey',
+     'Stingrays are solitary, but can also live in groups.',
+     'Stingrays have a lifespan of 15-25 years.',
+     'They can be found in oceans in tropical and subtropical areas around the world. Stingrays like warm and shallow water.',
+     'Stingrays are found both in freshwater and ocean.',
+     'Stingrays give birth to 2-6 young stingrays each year.',
+     'Baby stingrays are born fully developed; they look like miniature versions of adult animals. Babies take care of themselves from the moment of birth.'
+     
+     )
+
 TIGER_FACTS = (
     'The tiger is the biggest species of the cat family.',
     'Tigers can reach a length of up to 3.3 meters (11 feet) and weigh as much as 300 kilograms (660 pounds).',
@@ -1123,6 +1144,7 @@ ALL_FACTS = (
     SKUNK_FACTS,
     SLOTH_FACTS,
     SNAKE_FACTS,
+    STINGRAY_FACTS,
     TIGER_FACTS,
     TURTLE_FACTS,
     WOLF_FACTS,
