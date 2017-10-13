@@ -953,7 +953,10 @@ PIG_FACTS = (
     'In some areas of the world, wild boars are the main source of food for tigers.',
     'Feral pigs that have been introduced into new areas can be a threat to the local ecosystem.',
     'Pigs can pass on a variety of diseases to humans.',
-    'Relative to their body size, pigs have small lungs.')
+    'Relative to their body size, pigs have small lungs.',
+    'Contrary to popular belief, pigs are actually considered to be very clean animals.',
+    'Pigs cannot sweat, so they bathe in water and mud to cool themselves off.',
+    'When pigs have ample space, they will try not to soil in the areas where they sleep and eat.' )
 
 PIGEON_FACTS = (
     'The size of a of pigeon depends on the species. Large pigeons can reach 19 inches in length and 8.8 pounds of weight. Small pigeons can reach 5 inches in length and up to 0.8 ounces of weight.',
