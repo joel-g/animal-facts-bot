@@ -209,6 +209,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS, comment)
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
+    botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
     botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
@@ -896,6 +897,20 @@ PIGEON_FACTS = (
     'Pigeons can survive more than 30 years in the wild.'
     )
 
+RABBIT_FACTS = (
+    'A rabbit’s teeth never stop growing, which is why it is very important to provide chews and treats for them to keep their teeth from becoming overgrown.',
+    'Rabbits have 28 teeth.',
+    'When rabbits are happy they can jump and twist. This is commonly called a "binky."',
+    'The average size of a rabbit litter is usually between 4 and 12 babies, just after a short 30-day pregnancy.',
+    'More than half of the world’s rabbits live in North America.',
+    'Jackrabbits, which belong to the genus “Lepus,” have been clocked at speeds of 45 miles per hour.',
+    'Rabbits have a life span about 8 years, though sterilized rabbits (those who are spayed/neutered) can live as long as 10-12 years.'
+    'A rabbit can run between 25-45miles per hour.',
+    'Rabbits sleep about 8 hours a day.',
+    'Rabbits cannot vomit. They don’t have enough muscles in their stomach.',
+    'A male rabbit is called a buck, a female is a doe, and a baby is a kit/kitten.',
+    )
+
 SCORPION_FACTS = (
     'Scorpions are predatory animals of the class Arachnida, making them cousins to spiders, mites and ticks.',
     'Scorpions have eight legs, a pair of pincers (pedipalps) and a narrow segmented tail that often curves over their back, on the end of which is a venomous stinger.',
@@ -1099,6 +1114,7 @@ ALL_FACTS = (
     PEACOCK_FACTS,
     PIG_FACTS,
     PIGEON_FACTS,
+    RABBIT_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,
     SHARK_FACTS,
