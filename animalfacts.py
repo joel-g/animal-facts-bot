@@ -1078,7 +1078,8 @@ SNAIL_FACTS = (
     'Snails do not change shells when they grow. Instead, the shell grows along with them.',
     'A single garden snail (Helix aspersa) can have up to 430 hatchlings after a year.',
     'Most land snails have two set of tentacles, the upper one carry the eyes, while the lower one has the olfactory organs. However, they do not have ears or ear canal.',
-    'Snails are strong and can lift up to 10 times their body weight in a vertical position.'
+    'Snails are strong and can lift up to 10 times their body weight in a vertical position.',
+    'The snail Lymnaea makes decisions by using only two types of neuron: one deciding whether the snail is hungry, and the other deciding whether there is food in the vicinity.'
 )
 
 SQUID_FACTS = (
