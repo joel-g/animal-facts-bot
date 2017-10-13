@@ -200,6 +200,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
     botengine('octopus', '\soctopus(es)?\s', reddit, OCTOPUS_FACTS, comment)
     botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
+    botengine('oryx', '\soryx(es)?\s', reddit, ORYX_FACTS, comment)
     botengine('owl', '\sowls?\s', reddit, OWL_FACTS, comment)
     botengine('panda', '\spandas?\s', reddit, PANDA_FACTS, comment)
     botengine('pangolin', '\spangolins?\s', reddit, PANGOLIN_FACTS, comment)
@@ -764,6 +765,20 @@ OTTER_FACTS = (
     'Otters are a popular animal in Japanese folklore where they are called "kawauso". In these tales the smart kawauso often fool humans, kind of like a fox.',
     )
 
+ORYX_FACTS = (
+    'Oryxes are species of antelope native to Africa and the Arabian Peninsula.',
+    'The Arabian oryx was only saved from extinction through a captive breeding program and reintroduction to the wild.',
+    'Small populations of several oryx speciies, such as the scimitar oryx, exist in Texas and New Mexico in wild game ranches.',
+    'White oryxes are known to dig holes in the sand for the sake of coolness.',
+    'The smallest species of oryx is the Arabian oryx. It became extinct in the wild in 1972, but was reintroduced in 1982 in Oman.',
+    "The Arabian oryx was the first speicies to have its threat category downgraded from 'Extinct in the Wild' to 'Vulnerable'.",
+    'All oryx specicies prefer near-desert conditions and can survive without water for long periods of time.',
+    'Oryxes live in herds in numbers up to 600.',
+    'Newborn oryx calves are able to run with their herd immediately after birth.',
+    'Oryxes have been known to kill lions with their horns.',
+    'Oryx horns make the animals a prized game trophy, which has led to the near-extinction of the two northern species.'
+    )   
+
 OWL_FACTS = (
     'There are around 200 different owl species.',
     'A group of owls is called a parliament.',
@@ -1105,6 +1120,7 @@ ALL_FACTS = (
     OCELOT_FACTS,
     OCTOPUS_FACTS,
     OTTER_FACTS,
+    ORYX_FACTS,
     OWL_FACTS,
     PANDA_FACTS,
     PANGOLIN_FACTS,
