@@ -1029,6 +1029,19 @@ SHARK_FACTS = (
     'Unlike other species of shark, the great white is warm-blooded. Although the great white does not keep a constant body temperature, it needs to eat a lot of meat in order to be able to regulate its temperature. ',
     'A shark always has a row of smaller teeth developing behind its front teeth. Eventually the smaller teeth move forward, like a conveyor belt, and the front teeth fall out.')
 
+SKUNK_FACTS = (
+    'Skunks are omnivores, which mean that they eat both plants and animals. They like to eat fruits, insects, worms, reptiles and rodents.',
+    'Skunks often attack beehive because they eat honeybees.',
+    'Before it sprays the victim, skunk will turn its back, lift its tail, start hissing and stumping with its feet. Those are the warning signs that precede spraying.',
+    'Skunk can spray its oily and smelly substance up to 10 feet distance.',
+    'Their worst enemies are coyotes, bobcats and owls.',
+    'Skunks can survive a snake bite.',
+    'They have poor eyesight, but they have excellent sense of smell and hearing.',
+    'During mating season, one male with get in touch with more females.',
+    'Skunks live up to 3 years in the wild. They can survive up to 10 years in captivity.',
+    'Skunk can transmit rabies.'
+    )
+
 SLOTH_FACTS = (
     'Sloths are a medium-sized mammal. There are two types of sloth the two-toed sloth and the three-toed sloth, they are classified into six different species.',
     'All sloths actually have three toes, but the two-toed sloth has only two fingers.',
