@@ -182,6 +182,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('fox', '\sfoxe?s?\s', reddit, FOX_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
     botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
+    botengine('grasshopper', '\sgrasshoppers?\s', reddit, GRASSHOPPER_FACTS,comment)
     botengine('gorilla', '\sgorillas?\s', reddit, GORILLA_FACTS, comment)
     botengine('hamster', '\shamsters?\s', reddit, HAMSTER_FACTS, comment)
     botengine('hedgehog', '\shedgehogs?\s', reddit, HEDGEHOG_FACTS, comment)
@@ -490,6 +491,20 @@ GIRAFFE_FACTS = (
     'Male giraffes sometimes fight with their necks over female giraffes. This is called “necking”. The two giraffes stand side by side and one giraffe swings his head and neck, hitting his head against the other giraffe. Sometimes one giraffe is hit to the ground during a combat.',
     'A female giraffe gives birth while standing up. The calf drops approximately 6 feet to the ground, but it is not hurt from the fall.',
     'Giraffes have bluish-purple tongues which are tough and covered in bristly hair to help them with eating the thorny Acacia trees.',
+    )
+
+GRASSHOPPER_FACTS = (
+    'Grasshoppers have typanal organs on their bellies, but no ears.',
+    'Grasshoppers make music by stridulating or crepitating.',
+    'Grasshoppers cause billions of dollars to crops annually.',
+    'Grasshoppers existed as early as 300 million years ago.',
+    'Grasshoppers are herbivores.',
+    'Grasshoppers can jump twenty times the length of their bodies.',
+    'Grasshoppers go through three stages of development: egg, nymph, and adult.',
+    'In Africa, Central America, and South America, grasshoppers are eaten as a source of protein.',
+    'Grasshoppers can grow up to five inches. Females are usually bigger than males.',
+    'There are 11,000 known species of grasshoppers.',
+    'A single grasshopper can eat half its bodyweight in a day.',
     )
 
 GORILLA_FACTS = (
@@ -1072,6 +1087,7 @@ ALL_FACTS = (
     FROG_FACTS,
     ELEPHANT_FACTS,
     GIRAFFE_FACTS,
+    GRASSHOPPER_FACTS,
     GORILLA_FACTS,
     HAMSTER_FACTS,
     HEDGEHOG_FACTS,
