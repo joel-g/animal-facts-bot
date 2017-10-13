@@ -79,6 +79,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * scorpion
 * seagull
 * shark
+* skunk
 * sloth
 * snake
 * tiger

@@ -266,6 +266,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
     botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS, comment)
     botengine('orca', '\sorca?\s', reddit, ORCA_FACTS, comment)
+    botengine('skunk', '\sskunk?\s', reddit, SKUNK_FACTS, comment)
 
 
 def animalfactsbot(reddit):
@@ -1042,6 +1043,17 @@ SHARK_FACTS = (
     'Unlike other species of shark, the great white is warm-blooded. Although the great white does not keep a constant body temperature, it needs to eat a lot of meat in order to be able to regulate its temperature. ',
     'A shark always has a row of smaller teeth developing behind its front teeth. Eventually the smaller teeth move forward, like a conveyor belt, and the front teeth fall out.')
 
+SKUNK_FACTS = (
+	"Skunks are extremely adaptable and thrive in many different habitats, as long as food and shelter are available. Because they rarely travel more than 2 miles from their established dens, a skunk will typically settle down within 2 miles of a water source.",
+	"Skunks are nocturnal, so they are most active at night. They do not hibernate, but they tend to be inactive during the coldest months in winter, when many gather in communal dens for warmth. For the remainder of the year, skunks are generally solitary, living and foraging alone.",
+	"Mating season is one of the only other times when skunks tend to socialize. Skunks have litters of 1-7 young in late April through early June.",
+	"Skunks have strong forefeet and long nails, which make them excellent diggers. They dig holes in lawns, gardens and golf courses in search of food like grubs and earthworms. When no other form of shelter is available, they may even burrow underneath buildings by entering foundation openings.",
+	"Skunks are known to release a powerful smell through their anal glands when threatened. Skunks will usually only attack when cornered or defending their young, and spraying is not the first method of defense. ",
+	"Skunks are omnivores, which mean that they eat both plants and animals. They like to eat fruits, insects, worms, reptiles and rodents. ",
+	"Male skunk is called buck, female - doe, and baby skunk - kit. ",
+	"Skunks live up to 3 years in the wild. They can survive up to 10 years in captivity. ",
+	"Skunks often attack beehive because they eat honeybees. ",
+)
 SLOTH_FACTS = (
     'Sloths are a medium-sized mammal. There are two types of sloth the two-toed sloth and the three-toed sloth, they are classified into six different species.',
     'All sloths actually have three toes, but the two-toed sloth has only two fingers.',
