@@ -238,6 +238,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
     botengine('leopard', '\sleopards?\s', reddit, LEOPARD_FACTS, comment)
     botengine('lizard', '\slizards?\s', reddit, LIZARD_FACTS, comment)
+    botengine('meerkat', '\smeerkats?\s', reddit, MEERKAT_FACTS, comment)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
@@ -742,6 +743,22 @@ LIZARD_FACTS = (
     'Komodo dragons are found on a number of different Indonesian Islands.',
     'Komodo dragons are carnivores and can be very aggressive.')
 
+MEERKAT_FACTS = (
+    'Meerkats can spot an eagle in flight more than a thousand feet away.',
+    'Meerkats, or suricates, are a type of mongoose that live in the southern African plains.',
+    'When foraging for food, a few meerkats will stand guard while the rest look for insects, lizards, birds, and fruit.',
+    'Female meerkats give birth to two to four young each year. They are cared for by fathers and siblings who teach them to play and forage.',
+    'Meerkat mobs sleep in a single furry pile inside a burrow. Each burrow is an extensive tunnel-and-room system that stays cool under the African sun.',
+    'Meerkats have strictly defined roles in their societies including sentry, babysitter, hunter, and teacher.',
+    'Meerkat coats can be gold, silver, orange, or brown. Their tails are 7.5 to 9.5 inches (19 to 24 cm) long.',
+    'Meerkat burrows can be up to 6.5 feet (2 meters) deep and can have as many as 15 entrances. Mobs of meerkats live in more than one burrow at a time.',
+    'Meerkats start their mornings by grooming and lying in the sun.',
+    'Meerkats can eat scorpions. Adult meerkats have some immunity to scorpion venom. Mothers will cut off the the tail of a scorpion before feeding it to their young.',
+    'Baby meerkats, called pups, are born under ground. They weigh 25 to 36 grams (0.9 to 1.3 ounces) and are blind, deaf, and almost hairless.',
+    'A membrane covers and protects a meerkat\'s eyes while they dig. They can also close their ears to keep them free of soil.',
+    'Meerkats live in groups of up to 40. These groups are called gangs or mobs.',
+    'Meerkats are vicious fighters that often kill each other in skirmishes. Both sides line up across a field before charging forward with leaps and bounds. Before attacking, they try to psych out their opponents with aggressive posturing and bluffing to avoid serious conflict if possible.')
+
 MONKEY_FACTS = (
     'There are currently 264 known monkey species.',
     'Monkeys can be divided into two groups, Old World monkeys that live in Africa and Asia, and New World monkeys that live in South America.',
@@ -1121,6 +1138,7 @@ ALL_FACTS = (
     LEOPARD_FACTS,
     LION_FACTS,
     LIZARD_FACTS,
+    MEERKAT_FACTS,
     MONKEY_FACTS,
     NARWHAL_FACTS,
     OCELOT_FACTS,
