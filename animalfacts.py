@@ -849,7 +849,7 @@ OTTER_FACTS = (
 )
 
 OWL_FACTS = (
-	'Owls are nocturnal and hunt in the night.',
+		'Owls are nocturnal and hunt in the night.',
     'There are around 200 different owl species.',
     'A group of owls is called a parliament.',
     'Most owls hunt insects, small mammals and other birds.',
