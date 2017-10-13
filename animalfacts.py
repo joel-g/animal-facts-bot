@@ -259,6 +259,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
     botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
     botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS, comment)
+    botengine('snail', '\ssnails?\s', reddit, SNAIL_FACTS, comment)
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
@@ -1063,6 +1064,23 @@ SNAKE_FACTS = (
     'Anacondas are large, non-venomous snakes found in South America that can reach over 5 m (16 ft) in length.',
     'Python reticulates can grow over 8.7 m (28 ft) in length and are considered the longest snakes in the world.')
 
+SNAIL_FACTS = (
+    'Snails can have lungs or gills depending on the species and their habitat. Some marine snails actually can have lungs and some land based snails can have gills.',
+    'Most snail species have a ribbon-like tongue called a radula that contains thousands of microscopic teeth. The radula works like a file, ripping food up into tiny pieces.',
+    'The majority of snails are herbivores eating vegetation such as leaves, stems and flowers, some larger species and marine based species can be predatory omnivores or even carnivores.',
+    'The giant African land snail grows to about 38 cm (15 in) and weigh 1 kg (2lb).',
+    "The largest living sea snail species is the Syrinx aruanus who's shell can reach 90 cm (35 in) in length and the snail can weigh up to 18 kg (40lbs)!",
+    'Common garden snails have a top speed of 45 m (50 yards) per hour.',
+    'As they move along snails leave behind a trail of mucus which acts as a lubricant to reduce surface friction. This also allows the snail to move along upside down.',
+    'Depending on the species snails can live 5 - 25 years.',
+    'Snail is a common name for gastropod molluscs that can be split into three groups, land snails, sea snails and freshwater snails.',
+    'North America has about 500 native species of land snails.',
+    'Snails do not change shells when they grow. Instead, the shell grows along with them.',
+    'A single garden snail (Helix aspersa) can have up to 430 hatchlings after a year.',
+    'Most land snails have two set of tentacles, the upper one carry the eyes, while the lower one has the olfactory organs. However, they do not have ears or ear canal.',
+    'Snails are strong and can lift up to 10 times their body weight in a vertical position.'
+)
+
 SQUID_FACTS = (
     'Many species of squid have a life span that is only about one year',
     'The Humboldt squid is very aggressive and will even attack sharks in the water.',
@@ -1200,6 +1218,7 @@ ALL_FACTS = (
     SEAGULL_FACTS,
     SHARK_FACTS,
     SLOTH_FACTS,
+    SNAIL_FACTS,
     SNAKE_FACTS,
     TIGER_FACTS,
     TURTLE_FACTS,
