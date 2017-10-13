@@ -260,6 +260,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
     botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS, comment)
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
+    botengine('tarantula', '\starantulas?\s', reddit, TARANTULA_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
     botengine('wolf', '\swolf\s', reddit, WOLF_FACTS, comment)
@@ -1077,6 +1078,23 @@ SQUID_FACTS = (
     'Giant squid mostly eat deep water fishes and other squids including other giant squids.',
     'The only predators that giant squid have are sperm whales.')
 
+TARANTULA_FACTS = (
+    'Female tarantulas can live 30 years or longer in the wild.',
+    'The largest tarantulas have a leg span the size of a dinner table.',
+    'Tarantulas are quite docile and rarely bite people.',
+    'Tarantulas defend themselves by throwing needle-like hairs at their attackers.',
+    'TARANTULAS AMBUSH SMALL PREY AT NIGHT.',
+    'A fall can be fatal for a tarantula.',
+    'Tarantulas have retractable claws on each leg, much alike a cat.',
+    'Though tarantulas do not spin webs, they do use silk',
+    'Most tarantulas wander during the summer months.',
+    'Tarantulas cannot regenerate lost legs.',
+    'Because tarantulas molt throughout their lives, replacing their exoskeletons as they grow, they have the ability to repair any damage they've sustained. ',
+    "Female tarantulas are famously long-lived.",
+    'If a tarantula does feel threatened, it uses its hind legs to scrape barbed hairs from its abdomen and flings them in the direction of the threat.',
+    'Tarantulas do not use webs to capture prey, they do it the hard way – hunting on foot. ',
+    'Like other spiders, tarantulas paralyze their prey with venom, then use digestive enzymes to turn the meal into a soupy liquid.',
+    'Since falls can be so dangerous for tarantulas, it is important for them to get a good grip when climbing.')
 
 TIGER_FACTS = (
     'The tiger is the biggest species of the cat family.',
@@ -1201,6 +1219,7 @@ ALL_FACTS = (
     SHARK_FACTS,
     SLOTH_FACTS,
     SNAKE_FACTS,
+    TARANTULA_FACTS,
     TIGER_FACTS,
     TURTLE_FACTS,
     WOLF_FACTS,
