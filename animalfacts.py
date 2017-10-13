@@ -591,7 +591,18 @@ HUMMINGBIRD_FACTS = (
     'Most hummingbirds of the United States and Canada migrate over 3000km south in fall to spend winter in Mexico or Central America. Some South American species also move north to these areas during the southern winter.',
     'Before migrating, the hummingbird will store up a layer of fat equal to half its body weight in order to slowly use up this energy source while flying.'
     )
-
+HUSKY_FACTS = (
+    'Huskies have a double-layer coat that can keep them warm in temperatures as low as -60 degrees Fahrenheit.',
+    'A husky\'s howl can be heard up to ten miles away.',
+    'Huskies were brought to the US from Siberia during the Nome Gold Rush in 1909.',
+    'Huskies\' coats come in six different shades.',
+    'Heterochromia, a condition in which each eye is a different color, is common in huskies.',
+    'Huskies were bred by the Chukchi Eskimos of northeastern Siberia.',
+    'The color of a husky\'s nose depends on the color of its coat.',
+    'Huskies have hair between their toes to keep their feet warm.',
+    'When diptheria broke out in Nome, Alaska in 1925, a sled dog team led by the husky, Balto, transported medicine to the town before the epidemic could spread any further. The dogs made the trip during a blizzard, braving strong winds and temperatures as low as -23 degrees Fahrenheit.',
+    'They\'re good dogs, Brent.'
+    )
 JELLYFISH_FACTS = (
     'Jellyfish live in the sea and are found in all oceans.',
     'Some jellyfish live in fresh water.',
@@ -1055,6 +1066,7 @@ ALL_FACTS = (
     HIPPO_FACTS,
     HORSE_FACTS,
     HUMMINGBIRD_FACTS,
+    HUSKY_FACTS,
     JELLYFISH_FACTS,
     KANGAROO_FACTS,
     KOALA_FACTS,
