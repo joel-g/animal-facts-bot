@@ -7,11 +7,20 @@ import string
 from pygame import mixer
 # from '/' import lists
 
-BLACKLIST = ('suicidewatch', 'depression', 'snakes', 'mturk', 'babyelephantgifs', 'learnprogramming', 'cscareerquestions', 'python', 'japan')
+BLACKLIST = (
+    'suicidewatch',
+    'depression',
+    'snakes',
+    'mturk',
+    'babyelephantgifs',
+    'learnprogramming',
+    'cscareerquestions',
+    'python',
+    'japan')
 
 mixer.init()
-alert=mixer.Sound('bird.wav')
-bell=mixer.Sound('bell.wav')
+alert = mixer.Sound('bird.wav')
+bell = mixer.Sound('bell.wav')
 history = 'commented.txt'
 reply_history = 'repliedto.txt'
 unsubscribed_list = 'unsubscribed.txt'
@@ -26,11 +35,13 @@ if len(sys.argv) > 2:
 else:
     number_of_messages = 50
 
+
 def authenticate():
     print('Authenticating...\n')
-    reddit = praw.Reddit('animal-facts-bot', user_agent = '/u/AnimalFactsBot')
+    reddit = praw.Reddit('animal-facts-bot', user_agent='/u/AnimalFactsBot')
     print('Authenticated as {}\n'.format(reddit.user.me()))
     return reddit
+
 
 def check_messages(reddit):
     print("Checking my messages...\n")
@@ -38,20 +49,25 @@ def check_messages(reddit):
         print("Checking comment ID " + comment.id, end='\r')
         if unsubscribed_author_check(comment):
             if not comment.subreddit.user_is_banned:
-                file_obj_r = open(reply_history,'r')
+                file_obj_r = open(reply_history, 'r')
                 if comment.id not in file_obj_r.read().splitlines():
                     comment_body = comment.body.lower()
                     if 'good bot' in comment_body:
-                        comment.reply('Thanks! You can ask me for more facts any time. Beep boop.')
+                        comment.reply(
+                            'Thanks! You can ask me for more facts any time. Beep boop.')
                         print('     Thanked someone for "good bot"\n')
                         record_already_replied(file_obj_r, comment)
                     elif 'bad bot' in comment_body or 'unsubscribe' in comment_body:
-                        comment.reply(comment.author.name + " has been unsubscribed from AnimalFactsBot. I won't reply to your comments any more.")
+                        comment.reply(
+                            comment.author.name +
+                            " has been unsubscribed from AnimalFactsBot. I won't reply to your comments any more.")
                         print('     Unsubbed ' + comment.author.name + '\n')
                         unsubscribe(comment.author)
                         record_already_replied(file_obj_r, comment)
                     elif 'more' in comment_body:
-                        comment.reply("It looks like you asked for more animal facts! " + random_fact())
+                        comment.reply(
+                            "It looks like you asked for more animal facts! " +
+                            random_fact())
                         print('     Gave someone more facts!\n')
                         record_already_replied(file_obj_r, comment)
                     elif 'thank' in comment_body:
@@ -64,15 +80,18 @@ def check_messages(reddit):
                         print('     Replied to a TIL\n')
                         record_already_replied(file_obj_r, comment)
                     elif 'best bot' in comment_body:
-                        comment.reply("It sounds like you called me the 'best bot'. That's awesome!")
+                        comment.reply(
+                            "It sounds like you called me the 'best bot'. That's awesome!")
                         print('     Replied to a "best bot"\n')
                         record_already_replied(file_obj_r, comment)
                     elif re.search('(fuck)|(bitch)|(shit)', comment_body):
-                        comment.reply("https://www.youtube.com/watch?v=hpigjnKl7nI")
+                        comment.reply(
+                            "https://www.youtube.com/watch?v=hpigjnKl7nI")
                         print('     WATCH YO PROFANITY\n')
                         record_already_replied(file_obj_r, comment)
                     elif re.search('(\scats?\s)|(\sdogs?\s)', ' ' + comment_body + ' '):
-                        comment.reply("Did you ask for cat or dog facts? I'm sorry, if I did cat or dog facts I'd be spamming every thread on reddit. Reply 'more' if you'd like a random animal fact.")
+                        comment.reply(
+                            "Did you ask for cat or dog facts? I'm sorry, if I did cat or dog facts I'd be spamming every thread on reddit. Reply 'more' if you'd like a random animal fact.")
                         print('     Explained why I cant do cat or dog facts\n')
                         record_already_replied(file_obj_r, comment)
                     elif 'silly' in comment_body:
@@ -85,21 +104,27 @@ def check_messages(reddit):
                         record_already_replied(file_obj_r, comment)
                     elif 'animalfactsbot' in comment_body:
                         print('found my name')
-                        comment.reply("You said my name! Would you like to know more about me? I am written in Python. I am running from a computer in Seattle. I have given an animal fact to redditors " + str(number_of_facts_given()) + " times!")
+                        comment.reply(
+                            "You said my name! Would you like to know more about me? I am written in Python. I am running from a computer in Seattle. I have given an animal fact to redditors " +
+                            str(
+                                number_of_facts_given()) +
+                            " times!")
                         print('     Told someone about myself.\n')
                         record_already_replied(file_obj_r, comment)
                     else:
-                        commented_obj_r = open(history,'r')
+                        commented_obj_r = open(history, 'r')
                         if comment.id not in commented_obj_r.read().splitlines():
                             check_comment_for_animal(comment, reddit)
                         commented_obj_r.close()
                 file_obj_r.close()
 
+
 def number_of_facts_given():
-    commented_obj_r = open(history,'r')
+    commented_obj_r = open(history, 'r')
     count = len(commented_obj_r.read().splitlines())
     commented_obj_r.close()
     return count
+
 
 def number_of_facts(ALL_FACTS):
     count = 0
@@ -107,17 +132,20 @@ def number_of_facts(ALL_FACTS):
         count += len(array)
     return count
 
+
 def record_already_replied(read_file, comment):
     read_file.close()
-    file_obj_w = open(reply_history,'a+')
+    file_obj_w = open(reply_history, 'a+')
     file_obj_w.write(comment.id + '\n')
     file_obj_w.close()
     time.sleep(wait_time)
+
 
 def unsubscribe(redditor):
     unsub_w = open(unsubscribed_list, 'a+')
     unsub_w.write(redditor.name + '\n')
     unsub_w.close()
+
 
 def unsubscribed_author_check(comment):
     unsub_r = open(unsubscribed_list, 'r')
@@ -128,33 +156,45 @@ def unsubscribed_author_check(comment):
         unsub_r.close()
         return True
 
+
 def random_fact():
-    fact_collection =  random.choice(ALL_FACTS)
+    fact_collection = random.choice(ALL_FACTS)
     return random.choice(fact_collection)
 
+
 def botengine(animal, regex, reddit, facts, comment):
-    text = ' '.join(word.strip(string.punctuation) for word in comment.body.lower().split())
+    text = ' '.join(word.strip(string.punctuation)
+                    for word in comment.body.lower().split())
     text = ' ' + text + ' '
     match = re.findall(regex, text)
     if match:
-        print(animal.upper() + " found in comment with comment ID: " + comment.id)
+        print(
+            animal.upper() +
+            " found in comment with comment ID: " +
+            comment.id)
         if comment.subreddit.display_name.lower() not in BLACKLIST:
             if comment.subreddit.user_is_banned:
-                print("     Not commenting because I am banned from " + comment.subreddit.display_name + "\n")
+                print("     Not commenting because I am banned from " +
+                      comment.subreddit.display_name + "\n")
             else:
                 if not unsubscribed_author_check(comment):
                     print("     Not commenting because author is unsubscribed.")
                 else:
-                    file_obj_r = open(history,'r')
+                    file_obj_r = open(history, 'r')
                     if comment.id not in file_obj_r.read().splitlines():
                         if comment.author.name == reddit.user.me():
                             print('     Skipping my own comment...\n')
                         else:
-                            print('     by ' + comment.author.name + ' in ' + comment.subreddit.display_name + '\n      commenting a fact...')
+                            print(
+                                '     by ' +
+                                comment.author.name +
+                                ' in ' +
+                                comment.subreddit.display_name +
+                                '\n      commenting a fact...')
                             comment.reply(random.choice(facts))
                             alert.play()
                             file_obj_r.close()
-                            file_obj_w = open(history,'a+')
+                            file_obj_w = open(history, 'a+')
                             file_obj_w.write(comment.id + '\n')
                             file_obj_w.close()
                             time.sleep(wait_time)
@@ -162,6 +202,7 @@ def botengine(animal, regex, reddit, facts, comment):
                         print('     Already commented on this!\n')
 
 # ANIMALS = ('alligator', 'beaver', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'parrot', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
+
 
 def check_comment_for_animal(comment, reddit):
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
@@ -171,7 +212,12 @@ def check_comment_for_animal(comment, reddit):
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
-    botengine('cuttlefish', '\scuttlefishs?\s', reddit, CUTTLEFISH_FACTS, comment)
+    botengine(
+        'cuttlefish',
+        '\scuttlefishs?\s',
+        reddit,
+        CUTTLEFISH_FACTS,
+        comment)
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
     botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
@@ -182,13 +228,18 @@ def check_comment_for_animal(comment, reddit):
     botengine('fox', '\sfoxe?s?\s', reddit, FOX_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
     botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
-    botengine('goose', '\s(goose|geese)\s', reddit , GOOSE_FACTS, comment)
+    botengine('goose', '\s(goose|geese)\s', reddit, GOOSE_FACTS, comment)
     botengine('gorilla', '\sgorillas?\s', reddit, GORILLA_FACTS, comment)
     botengine('hamster', '\shamsters?\s', reddit, HAMSTER_FACTS, comment)
     botengine('hedgehog', '\shedgehogs?\s', reddit, HEDGEHOG_FACTS, comment)
     botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS, comment)
     botengine('horse', '\shorses?\s', reddit, HORSE_FACTS, comment)
-    botengine('hummingbird', '\shummingbirds?\s', reddit, HUMMINGBIRD_FACTS, comment)
+    botengine(
+        'hummingbird',
+        '\shummingbirds?\s',
+        reddit,
+        HUMMINGBIRD_FACTS,
+        comment)
     botengine('husky', '\shuskys?\s', reddit, HUSKY_FACTS, comment)
     botengine('jellyfish', '\sjellyfish\s', reddit, JELLYFISH_FACTS, comment)
     botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
@@ -221,11 +272,13 @@ def check_comment_for_animal(comment, reddit):
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
     botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS, comment)
 
+
 def animalfactsbot(reddit):
     check_messages(reddit)
     print("Pulling 1000 comments...")
-    comment_list = reddit.subreddit('all').comments(limit = 1000)
-    print("     checking each comment for " + str(len(ALL_FACTS)) + " different animals\n")
+    comment_list = reddit.subreddit('all').comments(limit=1000)
+    print("     checking each comment for " +
+          str(len(ALL_FACTS)) + " different animals\n")
     for comment in comment_list:
         check_comment_for_animal(comment, reddit)
 
@@ -240,8 +293,7 @@ ALLIGATOR_FACTS = (
     'Alligators have a powerful bite but the muscles that open the jaw are relatively weak. An adult human could hold the jaws of an alligator shut with their bare hands.',
     'Alligators eat a range of different animals such as fish, birds, turtles and even deer.',
     'Alligator eggs become male or female depending on the temperature, male in warmer temperatures and female in cooler temperatures.',
-    'Like crocodiles, alligators are part of the order ‘Crocodylia’.'
-    )
+    'Like crocodiles, alligators are part of the order ‘Crocodylia’.')
 
 BADGER_FACTS = (
     'Badgers are part of the family Mustelidae this is the same family as otters, ferret, polecats, weasels and wolverines.',
@@ -257,7 +309,7 @@ BADGER_FACTS = (
     'The honey badger is a carnivorous species that has the reputation of being the most fearless and vicious of all mammals.',
     'Badgers were eaten in Britain during World War II and were once part of the Native American and settlers diets in the US. Russia still eats badger meat today.',
     "Badgers have featured in lots of British literature over the years, such as Brian Jacques' Redwall series, 'Tommy Brock' in Beatrix Potter's The Tale of Mr. Tod, 'Bill Badger' in Mary Tourtel's Rupert Bear, 'Mr. Badger' in Kenneth Grahame's The Wind in the Willows and 'Trufflehunter' in C. S. Lewis's Chronicles of Narnia."
-    )
+)
 
 BEAVER_FACTS = (
     'There are two species of beaver. The European or Eurasian beaver (Castor fiber) and the North American beaver (Castor canadensis).',
@@ -275,8 +327,7 @@ BEAVER_FACTS = (
     'Adult beavers are around 3 feet long and have been known to weigh over 25 kg (55 lb). Females are as large or larger than males of the same age.',
     'Beavers can live up to 24 years in the wild.',
     'The beaver is the national animal of Canada, and features on the Canadian five-cent piece.',
-    'Beavers like to keep themselves busy, they are prolific builders during the night. Hence the saying "As busy as a beaver".'
-    )
+    'Beavers like to keep themselves busy, they are prolific builders during the night. Hence the saying "As busy as a beaver".')
 
 CAMEL_FACTS = (
     'There are two species of true camel. The dromedary, is a single humped camel that lives in the Middle East and the Horn of Africa area. The bactrian, is a two-humped camel that lives in areas of Central Asia.',
@@ -292,8 +343,7 @@ CAMEL_FACTS = (
     'A large camel can drink around 30 gallons (113 liters) in just 13 minutes, making them able to rehydrate faster than any other mammal.',
     'Long eyelashes, ear hair, and closable nostrils keep sand from affecting the camel, while their wide feet help them move without sinking into sand.',
     'Camels have long been used in wartimes. Romans used camels for their ability to scare off horses who are afraid of their scent, and in recent times camels have been used to carry heavy gear and troops across hot sandy deserts.',
-    'There are estimated to be over 14 million camels in the world. Camels introduced to desert areas of Australia are the worlds largest populations of feral camels.'
-    )
+    'There are estimated to be over 14 million camels in the world. Camels introduced to desert areas of Australia are the worlds largest populations of feral camels.')
 
 CHEETAH_FACTS = (
     'The cheetah is the fastest land animal in the world. They can reach a top speed of around 113 km per hour.',
@@ -306,8 +356,7 @@ CHEETAH_FACTS = (
     'A cheetah has amazing eyesight during the day and can spot prey from 5 km away.',
     'Cheetahs cannot climb trees and have poor night vision.',
     'With their light body weight and blunt claws, cheetahs are not well designed to protect themselves or their prey. When a larger or more aggressive animal approaches a cheetah in the wild, it will give up its catch to avoid a fight.',
-    'Cheetahs only need to drink once every three to four days.'
-    )
+    'Cheetahs only need to drink once every three to four days.')
 
 COW_FACTS = (
     'There are well over 1 billion cattle in the world.',
@@ -327,8 +376,7 @@ COW_FACTS = (
     'Cows have almost total 360-degree panoramic vision.',
     'Cows have a single stomach, but four different digestive compartments.',
     'Cows are pregnant for 9 months just like people',
-    'A dairy cow can produce 125 lbs. of saliva a day'
-    )
+    'A dairy cow can produce 125 lbs. of saliva a day')
 
 CRAB_FACTS = (
     'Crabs are decapods from the crustacean family.',
@@ -344,8 +392,7 @@ CRAB_FACTS = (
     'Crabs are omnivores, they feed mainly on algae, but also bacteria, other crustaceans, molluscs, worms, and fungi.',
     'Some crab species can naturally autotomise (shed) limbs such as their claws, which then regenerate after about a year.',
     'Crabs make up 20% of all marine crustaceans caught by humans each year. This adds up to a total of 1.5 million ton annually',
-    'The most consumed species of crab in the world is the Japanese Blue Crab.'
-    )
+    'The most consumed species of crab in the world is the Japanese Blue Crab.')
 
 CUTTLEFISH_FACTS = (
     "Cuttlefish are cephalopods, not fish. Cephalopods include octopus, squid and nautilus.",
@@ -357,8 +404,7 @@ CUTTLEFISH_FACTS = (
     'Cuttlefish taste with their suckers.',
     "Cuttlefish have 8 arms and 2 long tentacles used for feeding.",
     "The largest cuttlefish is the Australian giant cuttlefish, which is the size and shape of an American football.",
-    "Cuttlefish have W shaped eyelids so they can see in front of them and behind them at the same time."
-    )
+    "Cuttlefish have W shaped eyelids so they can see in front of them and behind them at the same time.")
 
 DOLPHIN_FACTS = (
     'Compared to other animals, dolphins are believed to be very intelligent.',
@@ -371,8 +417,7 @@ DOLPHIN_FACTS = (
     'Dolphins have excellent eyesight and hearing as well as the ability to use echolocation for finding the exact location of objects.',
     'Dolphins communicate with each other by clicking, whistling and other sounds.',
     'Some dolphin species face the threat of extinction, often directly as a result of human behavior. The Yangtze River Dolphin is an example of a dolphin species which may have recently become extinct.',
-    'Some fishing methods, such as the use of nets, kill a large number of dolphins every year.'
-    )
+    'Some fishing methods, such as the use of nets, kill a large number of dolphins every year.')
 
 DRAGON_FACTS = (
     'The word “dragon” comes from the Greek word “draconta,” which means “to watch.” The Greeks saw dragons as beasts that guarded valuable items. In fact, many cultures depict dragons as hoarding treasure.',
@@ -380,8 +425,7 @@ DRAGON_FACTS = (
     'The Komodo dragon is a type of monitor lizard, which is aggressive and deadly. They can be 10 feet long and use toxic bacteria in their mouths to wound their prey.',
     'In medieval times, dragons were considered very real, but demonic. Religions had widely different views of dragons: some loved them and some feared them.',
     'In many cultural stories, dragons exhibit features of other animals, like the head of elephants, claws of lions and beaks of predatory birds. Their body colors are widely different – red, blue, green, gold, but usually earth tones. In some cultures, the colors have specific meanings.',
-    '“Dragon” is actually a family term that includes other mythological creatures, such as cockatrices, gargoyles, wyverns, phoenix, basilisks, hydras, and even some hybrid man-dragon creatures.'
-    )
+    '“Dragon” is actually a family term that includes other mythological creatures, such as cockatrices, gargoyles, wyverns, phoenix, basilisks, hydras, and even some hybrid man-dragon creatures.')
 
 EAGLE_FACTS = (
     'Eagles build their nests on high cliffs or in tall trees.',
@@ -395,7 +439,7 @@ EAGLE_FACTS = (
     'Bald eagles live for around 20 years in the wild.',
     'Bald eagles build very large nests, sometimes weighing as much as a ton!',
     'The bald eagle was added to the list of endangered species in the United States in 1967 and its numbers have recovered well since.'
-    )
+)
 
 ECHIDNA_FACTS = (
     'Male echidnas have a bizarre 4-headed penis.',
@@ -406,8 +450,7 @@ ECHIDNA_FACTS = (
     "Echidnas are weird - they have a mish-mash of reptilian and mammalian features, which was recognized early on by biologists. In 1802, British anatomist Everard Home named the curious animal after the Greek goddess Ekhidna (meaning 'she viper') who was half-snake and half-woman.",
     'Echidnas are egg-laying mammals. Along with the platypus, the echidna is a member of the monotremes, an order of egg-laying mammals found in Australia.',
     'At the end of their slender snouts, echidnas have tiny mouths and toothless jaws. They use their long, sticky tongues to feed on ants, termites, worms, and insect larvae.',
-    "The echidna has a very large brain for its body size. Part of this might be due to their enlarged neocortex, which makes up half of the echidna's brain (compare this to about 30 percent in most other mammals and 80 percent in humans)."
-    )
+    "The echidna has a very large brain for its body size. Part of this might be due to their enlarged neocortex, which makes up half of the echidna's brain (compare this to about 30 percent in most other mammals and 80 percent in humans).")
 
 ELEPHANT_FACTS = (
     'There are two types of elephant, the Asian elephant and the African elephant (although sometimes the African Elephant is split into two species, the African Forest Elephant and the African Bush Elephant).',
@@ -421,8 +464,7 @@ ELEPHANT_FACTS = (
     'An elephant’s trunk can grow to be about 2 meters long and can weigh up to 140 kg. Some scientists believe that an elephant’s trunk is made up of 100,000 muscles, but no bones.',
     'Female elephants spend their entire lives living in large groups called herds. Male elephant leave their herds at about 13 years old and live fairly solitary lives from this point.',
     'Elephants can swim – they use their trunk to breathe like a snorkel in deep water.',
-    'Elephants are herbivores and can spend up to 16 hours days collecting leaves, twigs, bamboo and roots.'
-    )
+    'Elephants are herbivores and can spend up to 16 hours days collecting leaves, twigs, bamboo and roots.')
 
 EMU_FACTS = (
     'Emus are very docile and curious, and are easily tamed in captivity.',
@@ -435,7 +477,7 @@ EMU_FACTS = (
     "The emu is the largest bird in Australia, and the second largest in the world after the ostrich.",
     'Emu chicks grow very quickly, up to 2 pounds (1 kg) a week, and are full-grown in 12 to 14 months. They stay with their family group for another six months or so before they split up to breed in their second season.',
     'Emus must drink every day, and they don’t waste water. On very hot days they breathe rapidly, using their lungs as evaporative coolers. Their large nasal passages have multiple folds inside. In cooler weather they use these folds to recycle air and create moisture for reuse.'
-    )
+)
 
 FLAMINGO_FACTS = (
     'Flamingos are a type of wading bird that live in areas of large shallow lakes, lagoons, mangrove swamps, tidal flats, and sandy islands.',
@@ -451,19 +493,17 @@ FLAMINGO_FACTS = (
     "The pink to reddish color of a flamingo's feathers comes from carotenoids (the pigment that also makes carrots orange) in their diet of plankton, brine shrimp and blue-green algae.",
     'Flamingos are social birds, they live in colonies of sometimes thousands, this helps in avoiding predators, maximizing food intake, and is better for nesting.',
     'Flamingo colonies split into breeding groups of up to 50 birds, who then perform a synchronized ritual "dance" whereby they stand together stretching their necks upwards, uttering calls while waving their heads and then flapping their wings.',
-    'The flamingo is the national bird of the Bahamas.'
-    )
+    'The flamingo is the national bird of the Bahamas.')
 
 FOX_FACTS = (
-     'A group of foxes is called a "skulk" or "leash".',
-     'Grey foxes can retract their claws like cats do',
-     'A male is called a ‘dog fox’ while a female is called a ‘vixen’',
-     'Foxes are generally solitary animals; unlike wolves, they hunt on their own rather than in packs',
-     "Foxes' pupils are vertical, similar to a cat, helping them to see well at night",
-     "The tip of a red fox’s tail is white, whereas swift foxes have a black-tipped tail",
+    'A group of foxes is called a "skulk" or "leash".',
+    'Grey foxes can retract their claws like cats do',
+    'A male is called a ‘dog fox’ while a female is called a ‘vixen’',
+    'Foxes are generally solitary animals; unlike wolves, they hunt on their own rather than in packs',
+    "Foxes' pupils are vertical, similar to a cat, helping them to see well at night",
+    "The tip of a red fox’s tail is white, whereas swift foxes have a black-tipped tail",
     "Foxes have excellent hearing. Red foxes can reportedly hear a watch ticking 40 yards away!",
-    'Foxes stink, their funny ‘musky’ smell comes from scent glands at the base of their tail'
-    )
+    'Foxes stink, their funny ‘musky’ smell comes from scent glands at the base of their tail')
 
 FROG_FACTS = (
     'A frog is an amphibian. They lay their eggs in water. The eggs hatch into a tadpole which lives in water until it metamorphoses into an adult frog.',
@@ -477,7 +517,7 @@ FROG_FACTS = (
     'Frogs in the wild face many dangers and are lucky to survive several years. In captivity however, frogs can live for much longer.',
     'Frogs can see forwards, sideways and upwards all at the same time. They never close their eyes, even when they sleep.',
     "Remarkably, frogs actually use their eyes to help them swallow food. When the frog blinks, its eyeballs are pushed downwards creating a bulge in the roof of its mouth. This bulge squeezes the food inside the frog's mouth down the back of its throat."
-    )
+)
 
 GIRAFFE_FACTS = (
     'A male giraffe can weigh as much as a pick up truck! That’s about 1400 kilograms.',
@@ -491,7 +531,7 @@ GIRAFFE_FACTS = (
     'Male giraffes sometimes fight with their necks over female giraffes. This is called “necking”. The two giraffes stand side by side and one giraffe swings his head and neck, hitting his head against the other giraffe. Sometimes one giraffe is hit to the ground during a combat.',
     'A female giraffe gives birth while standing up. The calf drops approximately 6 feet to the ground, but it is not hurt from the fall.',
     'Giraffes have bluish-purple tongues which are tough and covered in bristly hair to help them with eating the thorny Acacia trees.',
-    )
+)
 
 GOOSE_FACTS = (
     'Some geese migrate every year. Others stay in the same place year round.',
@@ -504,8 +544,7 @@ GOOSE_FACTS = (
     ' European geese descend from wild greylag geese, birds with short necks and round bodies. Asian geese, the breeds now known as African and Chinese, descend from the swan goose and have long, elegant necks and a distinct knob on their beaks.',
     'Geese can live up to twenty years if well cared for.',
     'A baby goose is called a gosling.',
-    'A group of feese is called a gaggle'
-)
+    'A group of feese is called a gaggle')
 
 GORILLA_FACTS = (
     'There are only about 700 mountain gorillas and they live high in the mountains in two protected parks in Africa. Lowland gorillas live in central Africa.',
@@ -516,8 +555,7 @@ GORILLA_FACTS = (
     'An adult gorilla is about 1 meter tall to their shoulders when walking on all fours using their arms and their legs.',
     'A gorilla can live for 40 – 50 years.',
     'Gorillas are considered to be very intelligent animals. They are known for their use of tools and their varied communication. Some gorillas in captivity at a zoo have been taught to use sign language.',
-    'Gorillas are endangered animals. Their habitat is destroyed when people use the land for farming and the trees for fuel. Gorillas are also killed by poachers and sometimes get caught in poacher’s snares meant for other animals.'
-    )
+    'Gorillas are endangered animals. Their habitat is destroyed when people use the land for farming and the trees for fuel. Gorillas are also killed by poachers and sometimes get caught in poacher’s snares meant for other animals.')
 
 HAMSTER_FACTS = (
     "Hamsters are rodents from the subfamily Cricetinae.",
@@ -534,7 +572,7 @@ HAMSTER_FACTS = (
     "The Syrian hamster is the most popular and well known breed kept as pets. All Syrian hamsters as pets are believed to have descended from one pair in 1930.",
     "Syrian hamsters live 2 - 3 years in captivity, and less in the wild. Other popular pet types such as Russian dwarf hamsters live about 2- 4 years in captivity.",
     "Hamsters range in size from the largest breed, the European hamster at 13.4 in (34 cm) long, to the smallest, the dwarf hamster at 2 - 4 in (5.5 - 10.5 cm) long."
-    )
+)
 
 HEDGEHOG_FACTS = (
     'There are 17 species of hedgehog. They are found in parts of Europe, Asia, Africa and were introduced in New Zealand by settlers.',
@@ -549,8 +587,7 @@ HEDGEHOG_FACTS = (
     'For their size hedgehogs have a relatively long lifespan. They live on average for 4-7 years in the wild and longer in captivity.',
     'Hedgehogs in colder climates such as the UK will hibernate through winter.',
     'If hedgehogs come in contact with humans they can sometimes pass on infections and diseases.',
-    'The hedgehog is a pest in countries such as New Zealand where it has been introduced, as it does not have many natural predators and eats native species of insects, snails, lizards and baby ground-nesting birds.'
-    )
+    'The hedgehog is a pest in countries such as New Zealand where it has been introduced, as it does not have many natural predators and eats native species of insects, snails, lizards and baby ground-nesting birds.')
 
 HIPPO_FACTS = (
     'The name hippopotamus means ‘river horse’ and is often shortened to hippo.',
@@ -566,7 +603,7 @@ HIPPO_FACTS = (
     'A male hippopotamus is called a ‘bull’. A female hippopotamus is called a ‘cow’. A baby hippo is called a ‘calf’.',
     'A group of hippos in known as a ‘herd’, ‘pod’, ‘dale’ or ‘bloat’.',
     'Hippos typically live for around 45 years.',
-    )
+)
 
 HORSE_FACTS = (
     'Horses can sleep both lying down and standing up.',
@@ -588,8 +625,7 @@ HORSE_FACTS = (
     'An adult horse’s brain weights 22 oz, about half that of a human.',
     'The first cloned horse was a Haflinger mare in Italy in 2003.',
     'Horses with pink skin can get a sunburn.',
-    'A group of horses will not go to sleep at the same time - at least one of them will stay awake to look out for the others.'
-    )
+    'A group of horses will not go to sleep at the same time - at least one of them will stay awake to look out for the others.')
 
 HUMMINGBIRD_FACTS = (
     'Hummingbirds are New World birds found only in the Americas',
@@ -605,8 +641,7 @@ HUMMINGBIRD_FACTS = (
     'To conserve energy overnight a hummingbird enters a hibernation-like sleep state called torpor.',
     'Depending on the species hummingbirds live on average 3 to 5 years but have been known to live as long as 12 years.',
     'Most hummingbirds of the United States and Canada migrate over 3000km south in fall to spend winter in Mexico or Central America. Some South American species also move north to these areas during the southern winter.',
-    'Before migrating, the hummingbird will store up a layer of fat equal to half its body weight in order to slowly use up this energy source while flying.'
-    )
+    'Before migrating, the hummingbird will store up a layer of fat equal to half its body weight in order to slowly use up this energy source while flying.')
 
 HUSKY_FACTS = (
     'Huskies have a double-layer coat that can keep them warm in temperatures as low as -60 degrees Fahrenheit.',
@@ -618,8 +653,7 @@ HUSKY_FACTS = (
     'The color of a husky\'s nose depends on the color of its coat.',
     'Huskies have hair between their toes to keep their feet warm.',
     'When diptheria broke out in Nome, Alaska in 1925, a sled dog team led by the husky, Balto, transported medicine to the town before the epidemic could spread any further. The dogs made the trip during a blizzard, braving strong winds and temperatures as low as -23 degrees Fahrenheit.',
-    'They\'re good dogs, Brent.'
-    )
+    'They\'re good dogs, Brent.')
 
 JELLYFISH_FACTS = (
     'Jellyfish live in the sea and are found in all oceans.',
@@ -630,8 +664,7 @@ JELLYFISH_FACTS = (
     'A group of jellyfish is called a ‘bloom’, ‘swarm’ or ‘smack’. Large blooms can feature over 100,000 jellyfish.',
     'Jellyfish don’t have brains.',
     'Jellyfish use their tentacles to sting. Most are harmless to humans but stings from some species, such as the box jellyfish, can be very painful and sometimes kill.',
-    'Jellyfish eat plankton. Some sea turtles eat jellyfish.'
-    )
+    'Jellyfish eat plankton. Some sea turtles eat jellyfish.')
 
 KANGAROO_FACTS = (
     'Kangaroos are marsupial animals that are found in Australia as well as New Guinea.',
@@ -642,8 +675,7 @@ KANGAROO_FACTS = (
     'Kangaroos can swim.',
     'Baby kangaroos are known as ‘joeys’. A group of kangaroos is called a ‘mob’, ‘troop’ or ‘court’.',
     'The red kangaroo is the largest marsupial in the world.',
-    'Kangaroos usually live to around six years old in the wild.'
-    )
+    'Kangaroos usually live to around six years old in the wild.')
 
 KOALA_FACTS = (
     'Koalas are native to Australia. Koal1as are not bears.',
@@ -657,7 +689,7 @@ KOALA_FACTS = (
     'Outside of breeding seasons, koalas are quiet animals.',
     'A baby koala is called a ‘joey’. Joeys live in their mother’s pouch for around six months and remain with them for another six months or so afterwards.',
     'Koalas cannot be kept legally as pets.',
-    )
+)
 
 LEOPARD_FACTS = (
     'Leopards are part of the cat family, Felidae. The scientific name for a leopard is Panthera pardus.',
@@ -670,7 +702,7 @@ LEOPARD_FACTS = (
     'Female leopards give birth to a litter of two or three cubs at a time. By the time a cub is two years old it will leave the company of its mother and live on their own.',
     'When a female leopard is ready to mate she will give a scent and rub her body on the trees to leave her smell there. Male leopards either smell the females scent or hear her call to know that she is ready to mate.',
     'Some people believe that the bones and whiskers of leopards can heal sick people. Many leopards are killed each year for their fur and body parts and this is one reason why the leopard is an endangered animal. While they were previously found in the wild in a number of areas around the world, their habitat is largely restricted to sub-Saharan Africa with small numbers also found in India, Pakistan, Malaysia, China and Indochina.'
-    )
+)
 
 LION_FACTS = (
     'Lions are the second largest big cat species in the world (behind tigers).',
@@ -686,7 +718,7 @@ LION_FACTS = (
     'When lions breed with tigers the resulting hybrids are known as ligers and tigons. There are also lion and leopard hybrids known as leopons and lion and jaguar hybrids known as jaglions.',
     'Lionesses are better hunters than males and do most of the hunting for a pride.',
     'In the wild, lions rest for around 20 hours a day.',
-    )
+)
 
 LIZARD_FACTS = (
     'Some lizards can detach their tails if caught by predators.',
@@ -699,8 +731,7 @@ LIZARD_FACTS = (
     'Iguanas have a row of spines which run down their back and tail.',
     'The Komodo dragon is the largest type of lizard, growing up to 3 meters (10 feet) in length.',
     'Komodo dragons are found on a number of different Indonesian Islands.',
-    'Komodo dragons are carnivores and can be very aggressive.'
-    )
+    'Komodo dragons are carnivores and can be very aggressive.')
 
 MONKEY_FACTS = (
     'There are currently 264 known monkey species.',
@@ -709,14 +740,12 @@ MONKEY_FACTS = (
     'Apes are not monkeys. Most monkeys have tails.',
     'Some monkeys live on the ground, while others live in trees.',
     'Different monkey species eat a variety of foods, such as fruit, insects, flowers, leaves and reptiles.',
-
     'Groups of monkeys are known as a ‘tribe’, ‘troop’ or ‘mission’.',
     'The Pygmy Marmoset is the smallest type of monkey, with adults weighing between 120 and 140 grams.',
     'The Mandrill is the largest type of monkey, with adult males weighing up to 35 kg.',
     'Capuchin monkeys are believed to be one of the smartest New World monkey species. They have the ability to use tools, learn new skills and show various signs of self-awareness.',
     'Spider monkeys get their name because of their long arms, legs and tail.',
-    'The monkey is the 9th animal that appears on the Chinese zodiac, appearing as the zodiac sign in 2016.'
-    )
+    'The monkey is the 9th animal that appears on the Chinese zodiac, appearing as the zodiac sign in 2016.')
 
 NARWHAL_FACTS = (
     'Unlike some whale species that migrate, narwhals spend their lives in the Arctic waters of Canada, Greenland, Norway and Russia. Most narwhals winter for up to five months under sea ice in the Baffin Bay-Davis Strait area.',
@@ -725,8 +754,7 @@ NARWHAL_FACTS = (
     'Narwhals change color as they age. Newborns are a blue-gray, juveniles are blue-black and adults are a mottled gray. Old narwhals are nearly all white.',
     'There are no narwhals in captivity. In the 60s and 70s, several attempts at capturing and keeping narwhals resulted in all of the animals dying within several months.',
     'The narwhal tusk—most commonly found on males—is actually an enlarged tooth with sensory capability and up to 10 million nerve endings inside. Some narwhals have up to two tusks, while others have none. The spiraled tusk juts from the head and can grow as long at 10 feet.'
-    "A narwhal tusk's tough core and soft outer layer result in a tusk that is both strong and flexible. It can bend significantly without cracking."
-    )
+    "A narwhal tusk's tough core and soft outer layer result in a tusk that is both strong and flexible. It can bend significantly without cracking.")
 
 OCELOT_FACTS = (
     'Ocelot is two times bigger than domestic cat. It can reach 28 to 35 inches in length and between 24 and 35 pounds of weight. Males are bigger than females. Length of a tail measures half of the body size.',
@@ -740,8 +768,7 @@ OCELOT_FACTS = (
     'Unlike other cat species, ocelots are not afraid of the water. They are excellent swimmers.',
     'Ocelots are territorial and solitary creatures. Males usually live on the territory of 30 square meters. Females occupy territory that is two times smaller.',
     'Ocelots are active 12 hours per day. During that time, ocelot may travel up to 7 miles while it searches for the food.',
-    'Average lifespan of ocelot is 10 to 13 years in the wild and up to 20 years in captivity.'
-    )
+    'Average lifespan of ocelot is 10 to 13 years in the wild and up to 20 years in captivity.')
 
 OCTOPUS_FACTS = (
     'There are around 300 species of octopus, usually located in tropical and temperate ocean waters. They are divided into finned deep-sea varieties that live on the ocean floor and finless, shallow water varieties found around coral reefs.',
@@ -757,8 +784,7 @@ OCTOPUS_FACTS = (
     'Octopuses have very good eyesight and an excellent sense of touch.',
     'A female octopus can lay on average about 200,000 eggs, however, fending for themselves only a handful of the hatchlings will survive to adulthood.',
     'Octopuses usually live for 6 - 18 months. Males only live a few months after mating, and females die of starvation shortly after their protected eggs hatch.',
-    'Humans eat octopus in many cultures and it is also a popular fish bait.'
-    )
+    'Humans eat octopus in many cultures and it is also a popular fish bait.')
 
 OTTER_FACTS = (
     'The otter is a carnivorous mammal in a branch of the weasel family called Lutrinae.',
@@ -776,7 +802,7 @@ OTTER_FACTS = (
     'The Giant otter is found in South America around the Amazon river basin.',
     'The otter is a very playful animal and are believe to take part in some activities just for the enjoyment. Some make waterslides to slide down into the water!',
     'Otters are a popular animal in Japanese folklore where they are called "kawauso". In these tales the smart kawauso often fool humans, kind of like a fox.',
-    )
+)
 
 OWL_FACTS = (
     'There are around 200 different owl species.',
@@ -787,8 +813,7 @@ OWL_FACTS = (
     'Owls are farsighted, meaning they can’t see things close to their eyes clearly.',
     'Owls are very quiet in flight compared to other birds of prey.',
     'The color of owl’s feathers helps them blend into their environment (camouflage).',
-    'Barn owls can be recognized by their heart shaped face.'
-    )
+    'Barn owls can be recognized by their heart shaped face.')
 
 PANDA_FACTS = (
     'The giant panda is native to China. It has a black and white coat that features large black patches around its eyes.',
@@ -801,8 +826,7 @@ PANDA_FACTS = (
     'Giant pandas eat as much as 10 kg (22 lb) of bamboo a day.',
     'Despite their appearance Giant pandas are good climbers.',
     'The scientific name for the giant panda is ‘ailuropoda melanoleuca’.',
-    'An animated movie from 2008 named ‘Kung Fu Panda’ features a giant panda called ‘Po’.'
-    )
+    'An animated movie from 2008 named ‘Kung Fu Panda’ features a giant panda called ‘Po’.')
 
 PANGOLIN_FACTS = (
     'The name "pangolin" comes from the Malay word pengguling, meaning "one who rolls up".',
@@ -814,8 +838,7 @@ PANGOLIN_FACTS = (
     'The weight of a pangolin at birth is 80 to 450 g (2.8 to 15.9 oz) and the average length is 150 mm (5.9 in).',
     'Pangolin meat is considered a delicacy in southern China and Vietnam.',
     'Pangolin is the most trafficked animal in the world.',
-    'All eight species of pangolin are categorized on IUCN Red List of Threatened Species.'
-    )
+    'All eight species of pangolin are categorized on IUCN Red List of Threatened Species.')
 
 PANTHER_FACTS = (
     'The animal known as a "panther" actually refers to 3 different types of big cats, leopards (Panthera pardus) or jaguars (Panthera onca) that have a black or white color mutation and a subspecies of the cougar (Puma concolor).',
@@ -827,8 +850,7 @@ PANTHER_FACTS = (
     'Black panthers have good hearing, extremely good eyesight, and a strong jaw.',
     "The black panther is often called 'the ghost of the forest'. It is a smart, stealth-like attacker, its dark coat helps it hide and stalk prey very easily, especially at night.",
     'The light tan colored Florida panther is one of over 30 subspecies of cougar (Puma concolor) found in North America.',
-    "The Florida panther has adapted to the subtropical forests and swamp environments of Florida, however they are very rare animals, as of 2013 it is believed only 160 Florida panthers remain in the wild."
-    )
+    "The Florida panther has adapted to the subtropical forests and swamp environments of Florida, however they are very rare animals, as of 2013 it is believed only 160 Florida panthers remain in the wild.")
 
 PARROT_FACTS = (
     'There are around 372 different parrot species.',
@@ -840,8 +862,7 @@ PARROT_FACTS = (
     'Cockatoos usually have black, grey or white plumage (feathers).',
     'Keas are large, intelligent parrots that live in alpine areas of New Zealand’s South Island. They are the world’s only alpine parrot and are known for their curious and sometimes cheeky behaviour near ski fields where they like to investigate bags, steal small items and damage cars.',
     'Kakapos are critically endangered flightless parrots, as of 2010 only around 130 are known to exist. They are active at night (nocturnal) and feed on a range of seeds, fruit, plants and pollen. Kakapos are also the world’s heaviest parrot.',
-    'The flag of Dominica features the sisserou parrot.'
-    )
+    'The flag of Dominica features the sisserou parrot.')
 
 PEACOCK_FACTS = (
     '"Peacock" is commonly used as the name for a peafowl of the pheasant family. But in fact "peacock" is the name for the colorfully plumaged male peafowl only. The females are called peahens, they are smaller and grey or brown in color. The name of a baby peafowl is a peachick.',
@@ -856,8 +877,7 @@ PEACOCK_FACTS = (
     "A peafowl can live to over the age of 20 years, the peacocks plumage looks its best when the male reaches the age of 5 or 6.",
     "Peacocks have spurs on their feet that are primarily used to fight with other males.",
     "Peafowl are omnivorous, they eat many types of plants, flower petals, seeds, insects and small reptiles such as lizards.",
-    "In Hindu culture, Lord Karthikeya, the god of war, is said to ride a peacock."
-    )
+    "In Hindu culture, Lord Karthikeya, the god of war, is said to ride a peacock.")
 
 PENGUIN_FACTS = (
     'While other birds have wings for flying, penguins have adapted flippers to help them swim in the water.',
@@ -877,8 +897,7 @@ PENGUIN_FACTS = (
     'Yellow eyed penguins (or Hoiho) are endangered penguins native to New Zealand. Their population is believed to be around 4000.',
     'Little Blue Penguins are the smallest type of penguin, averaging around 33 cm (13 in) in height.',
     'Penguin’s black and white plumage serves as camouflage while swimming. The black plumage on their back is hard to see from above, while the white plumage on their front looks like the sun reflecting off the surface of the water when seen from below.',
-    'Penguins in Antarctica have no land based predators.'
-    )
+    'Penguins in Antarctica have no land based predators.')
 
 PIG_FACTS = (
     'Pigs are intelligent animals. Some people like to keep pigs as pets.',
@@ -890,8 +909,7 @@ PIG_FACTS = (
     'In some areas of the world, wild boars are the main source of food for tigers.',
     'Feral pigs that have been introduced into new areas can be a threat to the local ecosystem.',
     'Pigs can pass on a variety of diseases to humans.',
-    'Relative to their body size, pigs have small lungs.'
-    )
+    'Relative to their body size, pigs have small lungs.')
 
 PIGEON_FACTS = (
     'The size of a of pigeon depends on the species. Large pigeons can reach 19 inches in length and 8.8 pounds of weight. Small pigeons can reach 5 inches in length and up to 0.8 ounces of weight.',
@@ -908,8 +926,7 @@ PIGEON_FACTS = (
     'Pigeons are social animals that live in the groups (flocks) composed of 20 to 30 animals.',
     'Pigeons are monogamous creatures. Couples of pigeons can produce up to 8 broods per year when food is abundant.',
     'Female pigeons lay 2 eggs that hatch after incubation period of 18 days. Young birds depend on their parents during the first two months of their life. Both parents take care of the chicks (called squabs).',
-    'Pigeons can survive more than 30 years in the wild.'
-    )
+    'Pigeons can survive more than 30 years in the wild.')
 
 SCORPION_FACTS = (
     'Scorpions are predatory animals of the class Arachnida, making them cousins to spiders, mites and ticks.',
@@ -923,8 +940,7 @@ SCORPION_FACTS = (
     'Scorpions can eat a massive amount of food in one meal. Their large food storage organs, together with a low metabolism rate and an inactive lifestyle means that if necessary they can survive 6-12 months without eating again.',
     'Areas of China have a traditional dish of fried scorpion, and scorpion wine features in Chinese medicine.',
     'The scorpion is one of the 12 signs of the Zodiac, with the Scorpio constellation identified in the stars.',
-    'Scorpions moult, they shed their exoskeleton up to 7 times as they grow to full size. They become vulnerable to predators each time until their new protective exoskeleton hardens.'
-    )
+    'Scorpions moult, they shed their exoskeleton up to 7 times as they grow to full size. They become vulnerable to predators each time until their new protective exoskeleton hardens.')
 
 SEAGULL_FACTS = (
     'Smallest species of seagulls can reach 11.5 inches in length and 4.2 ounces of weight. Large species can reach 30 inches in length and 3.8 pounds of weight.',
@@ -941,8 +957,7 @@ SEAGULL_FACTS = (
     'Even though they live in large colonies, breeding couples occupy and defends its territory from nearby couple.',
     'Seagull couples collects plant material and build nests together. Nests are cup-shaped and usually located on the ground or hardly accessible cliffs.',
     'Depending on the species, female can lay one, two or three dark brown or olive green eggs. Incubation period lasts 22 to 26 days. Fathers play very important role in feeding of chicks. Young birds live in nursery flocks where they learn all skill required for independent life.',
-    'Lifespan of seagulls depends on the species. Most seagulls can survive from 10 to 15 years in the wild.'
-    )
+    'Lifespan of seagulls depends on the species. Most seagulls can survive from 10 to 15 years in the wild.')
 
 SHARK_FACTS = (
     'Sharks do not have a single bone in their bodies. Instead they have a skeleton made up of cartilage; the same type of tough, flexible tissue that makes up human ears and noses.',
@@ -954,8 +969,7 @@ SHARK_FACTS = (
     'Not all species of shark give birth to live pups. Some species lay the egg case on the ocean floor and the pup hatches later on its own.',
     'Great whites are the deadliest shark in the ocean. These powerful predators can race through the water at 30 km per hour.',
     'Unlike other species of shark, the great white is warm-blooded. Although the great white does not keep a constant body temperature, it needs to eat a lot of meat in order to be able to regulate its temperature. ',
-    'A shark always has a row of smaller teeth developing behind its front teeth. Eventually the smaller teeth move forward, like a conveyor belt, and the front teeth fall out.'
-    )
+    'A shark always has a row of smaller teeth developing behind its front teeth. Eventually the smaller teeth move forward, like a conveyor belt, and the front teeth fall out.')
 
 SLOTH_FACTS = (
     'Sloths are a medium-sized mammal. There are two types of sloth the two-toed sloth and the three-toed sloth, they are classified into six different species.',
@@ -973,7 +987,7 @@ SLOTH_FACTS = (
     'Two-toed sloths are nocturnal, being most active at night. While three-toed sloths are diurnal which means they are most active during the day.',
     'It used to be thought sloths slept for 15 to 20 hours a day. However, its now believed they only sleep around 10 hours a day.',
     'In the wild, sloths live on average 10 - 16 years and in captivity over 30 years.',
-    )
+)
 
 SNAKE_FACTS = (
     'Snakes don’t have eyelids.',
@@ -989,14 +1003,12 @@ SNAKE_FACTS = (
     'Pythons kill their prey by tightly wrapping around it and suffocating it in a process called constriction. This bot is written in Python',
     'Some sea snakes can breathe partially through their skin, allowing for longer dives underwater.',
     'Anacondas are large, non-venomous snakes found in South America that can reach over 5 m (16 ft) in length.',
-    'Python reticulates can grow over 8.7 m (28 ft) in length and are considered the longest snakes in the world.'
-    )
+    'Python reticulates can grow over 8.7 m (28 ft) in length and are considered the longest snakes in the world.')
 
 SQUID_FACTS = (
     'Many species of squid have a life span that is only about one year',
     'The Humboldt squid is very aggressive and will even attack sharks in the water.',
-    'The only predators that giant squid have are sperm whales.'
-    )
+    'The only predators that giant squid have are sperm whales.')
 
 TIGER_FACTS = (
     'The tiger is the biggest species of the cat family.',
@@ -1014,8 +1026,7 @@ TIGER_FACTS = (
     'Tigers can easily jump over 5 meters in length.',
     'Various tiger subspecies are the national animals of Bangladesh, India, North Korea, South Korea and Malaysia.',
     'There are more tigers held privately as pets than there are in the wild.',
-    'Tigers that breed with lions give birth to hybrids known as tigons and ligers.'
-    )
+    'Tigers that breed with lions give birth to hybrids known as tigons and ligers.')
 
 TURTLE_FACTS = (
     'Turtles have a hard shell that protects them like a shield, this upper shell is called a ‘carapace’.',
@@ -1027,7 +1038,7 @@ TURTLE_FACTS = (
     'In some species of turtle the temperature determines if the egg will develop into a male or female, lower temperatures lead to a male while higher temperatures lead to a female.',
     'Some turtles lay eggs in the sand and leave them to hatch on their own. The young turtles make their way to the top of the sand and scramble to the water while trying to avoid predators.',
     'Sea turtles have special glands which help remove salt from the water they drink.',
-    )
+)
 
 WHALE_FACTS = (
     'Many whales are toothless. They use a plate of comb-like fibre called baleen to filter small crustaceans and other creatures from the water.',
@@ -1038,8 +1049,7 @@ WHALE_FACTS = (
     'You can tell the age of a whale by looking at the wax plug in its ear. This plug in the ear has a pattern of layers when cut lengthwise that scientists can count to estimate the age of the whale.',
     'Whales love to sing! They use this as a call to mates, a way to communicate and also just for fun! After a period of time they get bored of the same whale song and begin to sing a different tune.',
     'Sometimes whales make navigation mistakes during migrations. Although they may have made the mistake days before, they don’t realise it until they becoming stranded.',
-    'Whales support many different types of life. Several creatures, such as barnacles and sea lice, attach themselves to the skin of whales and live there.'
-    )
+    'Whales support many different types of life. Several creatures, such as barnacles and sea lice, attach themselves to the skin of whales and live there.')
 
 WOLF_FACTS = (
     'Wolves are excellent hunters and have been found to be living in more places in the world than any other land mammal except humans.',
@@ -1053,7 +1063,7 @@ WOLF_FACTS = (
     'When the pack kills an animal, the alpha pair always eats first. As food supply is often irregular for wolves, they will eat up to 1/5th of their own body weight at a time to make up for days of missed food.',
     'Wolves have two layers of fur, an undercoat and a top coat, which allow them to survive in temperatures as low at minus 40 degrees fahrenheit! In warmer weather they flatten their fur to keep cool.',
     'A wolf can run at a speed of 40 miles per hour during a chase. Wolves have long legs and spend most of their time trotting at a speed of 7-10 miles per hour. They can keep up a reasonable pace for hours and have been known to cover distances of 55 miles in one night.'
-    )
+)
 
 ZEBRA_FACTS = (
     'Zebra are part of the equidae family along with horse and donkeys.',
@@ -1067,7 +1077,7 @@ ZEBRA_FACTS = (
     'Zebras eat mostly grass.',
     'The ears of a zebra show its mood.',
     'A zebra named Marty starred in the 2005 animated film Madagascar.',
-    )
+)
 
 ALL_FACTS = (
     ALLIGATOR_FACTS,
@@ -1125,13 +1135,18 @@ ALL_FACTS = (
     WOLF_FACTS,
     WHALE_FACTS,
     ZEBRA_FACTS
-    )
+)
+
 
 def main():
     reddit = authenticate()
     while True:
-        print("Wait time after commenting will be " + str(wait_time) + " seconds.\n")
+        print(
+            "Wait time after commenting will be " +
+            str(wait_time) +
+            " seconds.\n")
         animalfactsbot(reddit)
+
 
 if __name__ == '__main__':
     main()
