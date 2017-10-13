@@ -258,6 +258,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
     botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
+    botengine('shrimp', '\sshrimps?\s', reddit, SHRIMP_FACTS, comment)
     botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS, comment)
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
@@ -1029,6 +1030,18 @@ SHARK_FACTS = (
     'Unlike other species of shark, the great white is warm-blooded. Although the great white does not keep a constant body temperature, it needs to eat a lot of meat in order to be able to regulate its temperature. ',
     'A shark always has a row of smaller teeth developing behind its front teeth. Eventually the smaller teeth move forward, like a conveyor belt, and the front teeth fall out.')
 
+SHRIMP_FACTS = (
+    'Snapping shrimp produce a noise with their claws that is greater than a gunshot or jet engine.',
+    'To attract fish, cleaning shrimp wave their white antennae and do a little dance.',
+    'Harlequin shrimp, from the Pacific and Indian oceans, use their flat, oversize claws to sever arms from sea stars for food.',
+    'Most shrimp are breeding machines -- within hours after their eggs hatch, females are carrying a new batch of fertilized embryos.',
+    'Some species of shrimp also have a symbiotic relationship with fish and clean parasites, bacteria, and fungi off their host.',
+    'While microwaving frozen shrimp might seem like a good shortcut when you need dinner in a hurry, it’s not a good idea.',
+    'shrimp are a very low-calorie food (a medium cooked shrimp has about 7 calories), which means you can eat quite a few without feeling guilty.',
+    'Certain shrimp species are able to make a snapping sound that is louder than any other marine noise by hitting their large and small pincers together. It’s believed they do this to communicate with other shrimp or temporarily stun their prey.',
+    'Shrimp acquire their food either by sifting through the sand of the ocean floor or filtering the surrounding waters to ingest small particles of various plant or animal species.',
+    'Because of their small size, it is advantageous for them to stay in groups in order to protect themselves from larger predators.')
+
 SLOTH_FACTS = (
     'Sloths are a medium-sized mammal. There are two types of sloth the two-toed sloth and the three-toed sloth, they are classified into six different species.',
     'All sloths actually have three toes, but the two-toed sloth has only two fingers.',
@@ -1199,6 +1212,7 @@ ALL_FACTS = (
     SCORPION_FACTS,
     SEAGULL_FACTS,
     SHARK_FACTS,
+    SHRIMP_FACTS,
     SLOTH_FACTS,
     SNAKE_FACTS,
     TIGER_FACTS,
