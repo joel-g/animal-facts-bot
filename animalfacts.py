@@ -222,6 +222,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('echidna', '\sechidnas?\s', reddit, ECHIDNA_FACTS, comment)
     botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
     botengine('emu', '\semus?\s', reddit, EMU_FACTS, comment)
+    botengine('falcon', '\sfalcons?\s', reddit, FALCON_FACTS, comment)
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
     botengine('fox', '\sfoxe?s?\s', reddit, FOX_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
@@ -522,6 +523,19 @@ EMU_FACTS = (
     'Emu chicks grow very quickly, up to 2 pounds (1 kg) a week, and are full-grown in 12 to 14 months. They stay with their family group for another six months or so before they split up to breed in their second season.',
     'Emus must drink every day, and they don’t waste water. On very hot days they breathe rapidly, using their lungs as evaporative coolers. Their large nasal passages have multiple folds inside. In cooler weather they use these folds to recycle air and create moisture for reuse.'
 )
+
+FALCON_FACTS = (
+    'Peregrine falcons have been clocked at reaching speeds of 242 miles per hour while diving for prey, making them the fastest recorded animal ever.',
+    'Falcon is a carnivore. Its diet is based on rodents, frogs, fish, bats and small birds.',
+    'Falcons have a lifespan between 12 and 20 years in the wild, depending on species. Some species can live up to 25 years in captivity.',
+    'The gyrfalcon (Falco rusticolus) is the largest falcon species. It is up to 61 centimeters (24 inches) long withwingspan up to 130 centimeters (51 inches) and weight up to 1,350 grams (47.6 ounces).',
+    'The Seychelles kestrel (Falco araea) is the smallest falcon species. It is 18–23 centimeters 7-9 inches long with a wingspan of 40–45 centimeters (16-18 inches) and weight 73-87 grams (2.5-3 unces).',
+    'Falcons have excellent eyesight which they use to locate their prey. They can see up to 8 times more clearly than the sharpest human eye.',
+    'Most species of falcon are dark brown or grey-colored with white, yellow and black spots and markings on the body.',
+    'Falcons are strong, fast fliers with great aerial agility, which makes them successful hunters capable of taking prey 6 times their own body weight! Usually they kill cleanly, breaking the back of their victims.',
+    'The falcon is a bird of prey that, typically sitting close to the top of the food chain, has few predators. Falcons may be killed by other large birds of prey, such as eagles and owls. The eggs and chicks are vulnerable to mammals that may climb into the nest if it is too low to the ground.',
+    'Falcons can process four types of light while humans can only process three. This means that the falcon has a very good night vision and can also see ultraviolet rays.'
+    )
 
 FLAMINGO_FACTS = (
     'Flamingos are a type of wading bird that live in areas of large shallow lakes, lagoons, mangrove swamps, tidal flats, and sandy islands.',
@@ -1162,6 +1176,7 @@ ALL_FACTS = (
     EAGLE_FACTS,
     ECHIDNA_FACTS,
     EMU_FACTS,
+    FALCON_FACTS,
     FLAMINGO_FACTS,
     FOX_FACTS,
     FROG_FACTS,
