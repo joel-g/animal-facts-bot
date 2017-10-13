@@ -23,6 +23,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * fox
 * frog
 * giraffe
+* goose
 * gorilla
 * hamster
 * hedgehog

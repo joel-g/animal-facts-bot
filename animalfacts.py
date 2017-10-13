@@ -182,6 +182,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('fox', '\sfoxe?s?\s', reddit, FOX_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
     botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
+    botengine('goose', '\s(goose|geese)\s', reddit , GOOSE_FACTS, comment)
     botengine('gorilla', '\sgorillas?\s', reddit, GORILLA_FACTS, comment)
     botengine('hamster', '\shamsters?\s', reddit, HAMSTER_FACTS, comment)
     botengine('hedgehog', '\shedgehogs?\s', reddit, HEDGEHOG_FACTS, comment)
@@ -491,6 +492,20 @@ GIRAFFE_FACTS = (
     'A female giraffe gives birth while standing up. The calf drops approximately 6 feet to the ground, but it is not hurt from the fall.',
     'Giraffes have bluish-purple tongues which are tough and covered in bristly hair to help them with eating the thorny Acacia trees.',
     )
+
+GOOSE_FACTS = (
+    'Some geese migrate every year. Others stay in the same place year round.',
+    'Geese eat seeds, nuts, grass, plants and berries. They love blueberries.',
+    'Geese can live almost anywhere. They like fields, parks and grassy areas near water.',
+    'Geese fly in a “V” formation. If one goose is injured, other geese will stay with it until it dies or can rejoin the flock.',
+    'Geese are sometimes raised like chickens for their meat or eggs.',
+    'Male geese protect the nest while the female geese sit on the eggs.',
+    'Goose is actually the term for female geese, male geese are called ganders. A group of geese on land or in water are a gaggle, while in the air they are called a skein.',
+    ' European geese descend from wild greylag geese, birds with short necks and round bodies. Asian geese, the breeds now known as African and Chinese, descend from the swan goose and have long, elegant necks and a distinct knob on their beaks.',
+    'Geese can live up to twenty years if well cared for.',
+    'A baby goose is called a gosling.',
+    'A group of feese is called a gaggle'
+)
 
 GORILLA_FACTS = (
     'There are only about 700 mountain gorillas and they live high in the mountains in two protected parks in Africa. Lowland gorillas live in central Africa.',
@@ -1072,6 +1087,7 @@ ALL_FACTS = (
     FROG_FACTS,
     ELEPHANT_FACTS,
     GIRAFFE_FACTS,
+    GOOSE_FACTS,
     GORILLA_FACTS,
     HAMSTER_FACTS,
     HEDGEHOG_FACTS,
