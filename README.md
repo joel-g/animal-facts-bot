@@ -12,8 +12,6 @@ Please: Don't add a very small set of facts (this will cause the bot to be repet
         Only add TRUE facts. Please no trolling with 'alternative facts'.
         Don't add 'seal', 'bat' or 'duck' facts unless you've figured out how to not reply to homonyms.
         Don't add 'cat' or 'dog' because they are just too common on reddit.
-        
-If you have a question the quickest way to reach is me on twitter @joelatwar
 
 
 # animal-facts-bot
@@ -24,6 +22,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 
 ### Current supported animals:
 * alligator
+* ant
 * badger
 * beaver
 * camel

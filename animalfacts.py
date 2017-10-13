@@ -161,10 +161,11 @@ def botengine(animal, regex, reddit, facts, comment):
                     else:
                         print('     Already commented on this!\n')
 
-# ANIMALS = ('alligator', 'beaver', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'parrot', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
+# ANIMALS = ('alligator', 'ant', 'beaver', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'parrot', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
 
 def check_comment_for_animal(comment, reddit):
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
+    botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
@@ -241,6 +242,23 @@ ALLIGATOR_FACTS = (
     'Alligator eggs become male or female depending on the temperature, male in warmer temperatures and female in cooler temperatures.',
     'Like crocodiles, alligators are part of the order ‘Crocodylia’.'
     )
+
+ANT_FACTS = (
+	'There are more than 12,000 species of ants all over the world.',
+	'An ant can lift 20 times its own body weight. If a second grader was as strong as an ant, she would be able to pick up a car!',
+	'Some queen ants can live for many years and have millions of babies!',
+	'Ants don’t have ears. Ants "hear" by feeling vibrations in the ground through their feet.',
+	'Ants are the longest living of all insects, living for up to 30 years.',
+	'When ants fight, it is usually to the death!',
+	'When foraging, ants leave a pheromone trail so that they know where they’ve been.',
+	'One ant species (Trap-Jaw Ants) owns the record for the fastest movement within the animal kingdom.',
+	'The largest ant colony ever found was over 6000 Km or 3750 miles wide.',
+	'All worker, soldier and queen ants are female.',
+	'Some ant species are asexual, they clone themselves and do not require any males.',
+	'Ants and humans are the only creatures that farm other creatures.',
+	'Some ants can swim.',
+	'Ants can be found on every continent accept antarctica.'
+	)
 
 BADGER_FACTS = (
     'Badgers are part of the family Mustelidae this is the same family as otters, ferret, polecats, weasels and wolverines.',
