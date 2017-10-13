@@ -577,6 +577,19 @@ GIRAFFE_FACTS = (
     'Giraffes have bluish-purple tongues which are tough and covered in bristly hair to help them with eating the thorny Acacia trees.',
 )
 
+GOAT_FACTS = {
+    'Goats do not have teeth on their upper jaw',
+    'Goats have the uncanny ability to yell like humans. Their calls are known as bleating.',
+    'A baby goat is a kid and giving birth is called kidding.',
+    'According to Norse mythology, during a thunderstorm Thor, the god of thunder, rode in a chariot pulled by two goats, Tanngrisni and Tanngnost.',
+    'A goat can jump 5 feet high.',
+    'Goat population is roughly 600 million maintained worldwide (not including feral populations).',
+    'Goats are fussy eaters that take a lot of time to search out the best snacks. Goats will often stand on their hind legs to reach the best part of foliage that may be out of reach of sheep.',
+    'Goat Milk is alkaline and cow milk is acid. Goat milk is lower in cholesterol and higher in calcium, phosphorus and vitamins A.',
+    'The largest number of goats in the United States resides in Texas. Goats can be raised, however, anywhere in the United States.',
+    'Goats were first domesticated by man in 10,000 B. C., and were the first animals to be used for milk by humans.'
+}
+
 GOOSE_FACTS = (
     'Some geese migrate every year. Others stay in the same place year round.',
     'Geese eat seeds, nuts, grass, plants and berries. They love blueberries.',
@@ -1167,6 +1180,7 @@ ALL_FACTS = (
     FROG_FACTS,
     ELEPHANT_FACTS,
     GIRAFFE_FACTS,
+    GOAT_FACTS,
     GOOSE_FACTS,
     GORILLA_FACTS,
     HAMSTER_FACTS,
