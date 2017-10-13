@@ -205,6 +205,7 @@ def botengine(animal, regex, reddit, facts, comment):
 
 
 def check_comment_for_animal(comment, reddit):
+
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
     botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
@@ -262,6 +263,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
     botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS, comment)
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
+    botengine('starfish', '\sstarfish?\s', reddit, STARFISH_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
     botengine('wolf', '\swolf\s', reddit, WOLF_FACTS, comment)
@@ -1101,6 +1103,21 @@ SNAKE_FACTS = (
     'Anacondas are large, non-venomous snakes found in South America that can reach over 5 m (16 ft) in length.',
     'Python reticulates can grow over 8.7 m (28 ft) in length and are considered the longest snakes in the world.')
 
+STARFISH_FACTS = (
+    'Starfish have no brain and no blood.',
+    'Starfish can be really heavy.',
+    'Starfish have a lot of birthdays!',
+    'Starfish are not fish!',
+    'There are around 2,000 species of sea star.',
+    'Starfish usually have five arms.',
+    'Starfish cannot survive in fresh water.',
+    'Starfish can regenerate.',
+    'Starfish can eat inside out!',
+    'Starfish can move using their tube feet',
+    'Starfish have eyes!',
+    'Starfish can reproduce in two ways.',
+)
+
 SQUID_FACTS = (
     'Many species of squid have a life span that is only about one year',
     'The Humboldt squid is very aggressive and will even attack sharks in the water.',
@@ -1185,6 +1202,7 @@ ZEBRA_FACTS = (
     'A zebra named Marty starred in the 2005 animated film Madagascar.',
 )
 
+
 ALL_FACTS = (
     ALLIGATOR_FACTS,
     BADGER_FACTS,
@@ -1241,6 +1259,7 @@ ALL_FACTS = (
     SHARK_FACTS,
     SLOTH_FACTS,
     SNAKE_FACTS,
+    STARFISH_FACTS,
     TIGER_FACTS,
     TURTLE_FACTS,
     WOLF_FACTS,
