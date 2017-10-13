@@ -1,5 +1,5 @@
 ## How to contribute (Teach AnimalFactsBot a new animal):
-        Choose an animal listed in the issues or any other real animal.
+        Check open pull requests to make sure you don't duplicate someone else's work.
 
 * Fork/clone the repo
 * Add a tuple of strings of facts (to animalfacts.py) pertaining to a particular animal. Name the tuple variable following the format 'NAMEOFANIMAL_FACTS'. Put the tuple in alphabetical order with the other tuples.
