@@ -830,7 +830,7 @@ PEACOCK_FACTS = (
     "In Hindu culture, Lord Karthikeya, the god of war, is said to ride a peacock."
     )
 
-PENGUIN_FACTS = [
+PENGUIN_FACTS = (
     'While other birds have wings for flying, penguins have adapted flippers to help them swim in the water.',
     'Most penguins live in the Southern Hemisphere.',
     'The Galapagos Penguin is the only penguin specie that ventures north of the equator in the wild.',
@@ -849,9 +849,9 @@ PENGUIN_FACTS = [
     'Little Blue Penguins are the smallest type of penguin, averaging around 33 cm (13 in) in height.',
     'Penguin’s black and white plumage serves as camouflage while swimming. The black plumage on their back is hard to see from above, while the white plumage on their front looks like the sun reflecting off the surface of the water when seen from below.',
     'Penguins in Antarctica have no land based predators.'
-    ]
+    )
 
-PIG_FACTS = [
+PIG_FACTS = (
     'Pigs are intelligent animals. Some people like to keep pigs as pets.',
     'A pig’s snout is an important tool for finding food in the ground and sensing the world around them.',
     'Pigs have an excellent sense of smell.',
@@ -862,7 +862,7 @@ PIG_FACTS = [
     'Feral pigs that have been introduced into new areas can be a threat to the local ecosystem.',
     'Pigs can pass on a variety of diseases to humans.',
     'Relative to their body size, pigs have small lungs.'
-    ]
+    )
 
 PIGEON_FACTS = (
     'The size of a of pigeon depends on the species. Large pigeons can reach 19 inches in length and 8.8 pounds of weight. Small pigeons can reach 5 inches in length and up to 0.8 ounces of weight.',
@@ -882,7 +882,7 @@ PIGEON_FACTS = (
     'Pigeons can survive more than 30 years in the wild.'
     )
 
-SCORPION_FACTS = [
+SCORPION_FACTS = (
     'Scorpions are predatory animals of the class Arachnida, making them cousins to spiders, mites and ticks.',
     'Scorpions have eight legs, a pair of pincers (pedipalps) and a narrow segmented tail that often curves over their back, on the end of which is a venomous stinger.',
     'The scorpion uses their pincers to quickly grab prey and then whip their poisonous tail stinger over to kill or paralyze the prey. The tail is also used as a useful defense against predators.',
@@ -895,7 +895,7 @@ SCORPION_FACTS = [
     'Areas of China have a traditional dish of fried scorpion, and scorpion wine features in Chinese medicine.',
     'The scorpion is one of the 12 signs of the Zodiac, with the Scorpio constellation identified in the stars.',
     'Scorpions moult, they shed their exoskeleton up to 7 times as they grow to full size. They become vulnerable to predators each time until their new protective exoskeleton hardens.'
-    ]
+    )
 
 SEAGULL_FACTS = (
     'Smallest species of seagulls can reach 11.5 inches in length and 4.2 ounces of weight. Large species can reach 30 inches in length and 3.8 pounds of weight.',
@@ -915,7 +915,7 @@ SEAGULL_FACTS = (
     'Lifespan of seagulls depends on the species. Most seagulls can survive from 10 to 15 years in the wild.'
     )
 
-SHARK_FACTS = [
+SHARK_FACTS = (
     'Sharks do not have a single bone in their bodies. Instead they have a skeleton made up of cartilage; the same type of tough, flexible tissue that makes up human ears and noses.',
     'Some sharks remain on the move for their entire lives. This forces water over their gills, delivering oxygen to the blood stream. If the shark stops moving then it will suffocate and die.',
     'Sharks have outstanding hearing. They can hear a fish thrashing in the water from as far as 500 meters away!',
@@ -926,9 +926,9 @@ SHARK_FACTS = [
     'Great whites are the deadliest shark in the ocean. These powerful predators can race through the water at 30 km per hour.',
     'Unlike other species of shark, the great white is warm-blooded. Although the great white does not keep a constant body temperature, it needs to eat a lot of meat in order to be able to regulate its temperature. ',
     'A shark always has a row of smaller teeth developing behind its front teeth. Eventually the smaller teeth move forward, like a conveyor belt, and the front teeth fall out.'
-    ]
+    )
 
-SLOTH_FACTS = [
+SLOTH_FACTS = (
     'Sloths are a medium-sized mammal. There are two types of sloth the two-toed sloth and the three-toed sloth, they are classified into six different species.',
     'All sloths actually have three toes, but the two-toed sloth has only two fingers.',
     'Sloths are part of the order Pilosa so they are related to anteaters and armadillos.',
@@ -944,9 +944,9 @@ SLOTH_FACTS = [
     'Two-toed sloths are nocturnal, being most active at night. While three-toed sloths are diurnal which means they are most active during the day.',
     'It used to be thought sloths slept for 15 to 20 hours a day. However, its now believed they only sleep around 10 hours a day.',
     'In the wild, sloths live on average 10 - 16 years and in captivity over 30 years.',
-    ]
+    )
 
-SNAKE_FACTS = [
+SNAKE_FACTS = (
     'Snakes don’t have eyelids.',
     'Snakes can’t chew food so they have to swallow it whole.',
     'Snakes have flexible jaws which allow them to eat prey bigger than their head!',
@@ -961,7 +961,7 @@ SNAKE_FACTS = [
     'Some sea snakes can breathe partially through their skin, allowing for longer dives underwater.',
     'Anacondas are large, non-venomous snakes found in South America that can reach over 5 m (16 ft) in length.',
     'Python reticulates can grow over 8.7 m (28 ft) in length and are considered the longest snakes in the world.'
-    ]
+    )
 
 SQUID_FACTS = (
     'Many species of squid have a life span that is only about one year',
@@ -969,7 +969,7 @@ SQUID_FACTS = (
     'The only predators that giant squid have are sperm whales.'
     )
 
-TIGER_FACTS = [
+TIGER_FACTS = (
     'The tiger is the biggest species of the cat family.',
     'Tigers can reach a length of up to 3.3 meters (11 feet) and weigh as much as 300 kilograms (660 pounds).',
     'Subspecies of the tiger include the Sumatran Tiger, Siberian Tiger, Bengal Tiger, South China Tiger, Malayan Tiger and Indochinese Tiger.',
@@ -986,7 +986,7 @@ TIGER_FACTS = [
     'Various tiger subspecies are the national animals of Bangladesh, India, North Korea, South Korea and Malaysia.',
     'There are more tigers held privately as pets than there are in the wild.',
     'Tigers that breed with lions give birth to hybrids known as tigons and ligers.'
-    ]
+    )
 
 TURTLE_FACTS = (
     'Turtles have a hard shell that protects them like a shield, this upper shell is called a ‘carapace’.',
@@ -1000,7 +1000,7 @@ TURTLE_FACTS = (
     'Sea turtles have special glands which help remove salt from the water they drink.',
     )
 
-WHALE_FACTS = [
+WHALE_FACTS = (
     'Many whales are toothless. They use a plate of comb-like fibre called baleen to filter small crustaceans and other creatures from the water.',
     'There are 79 to 84 different species of whale. They come in many different shapes and sizes!',
     'A baby whale is called a calf. Whales form groups to look after calves and feed together. These groups are often made up of all female or all male whales.',
@@ -1010,9 +1010,9 @@ WHALE_FACTS = [
     'Whales love to sing! They use this as a call to mates, a way to communicate and also just for fun! After a period of time they get bored of the same whale song and begin to sing a different tune.',
     'Sometimes whales make navigation mistakes during migrations. Although they may have made the mistake days before, they don’t realise it until they becoming stranded.',
     'Whales support many different types of life. Several creatures, such as barnacles and sea lice, attach themselves to the skin of whales and live there.'
-    ]
+    )
 
-WOLF_FACTS = [
+WOLF_FACTS = (
     'Wolves are excellent hunters and have been found to be living in more places in the world than any other land mammal except humans.',
     'The wolf is the ancestor of all breeds of domestic dog. It is part of a group of animals called the wild dogs which also includes the dingo and the coyote.',
     'Most wolves weigh about 40 kilograms but the heaviest wolf ever recorded weighed over 80 kilograms!',
@@ -1024,9 +1024,9 @@ WOLF_FACTS = [
     'When the pack kills an animal, the alpha pair always eats first. As food supply is often irregular for wolves, they will eat up to 1/5th of their own body weight at a time to make up for days of missed food.',
     'Wolves have two layers of fur, an undercoat and a top coat, which allow them to survive in temperatures as low at minus 40 degrees fahrenheit! In warmer weather they flatten their fur to keep cool.',
     'A wolf can run at a speed of 40 miles per hour during a chase. Wolves have long legs and spend most of their time trotting at a speed of 7-10 miles per hour. They can keep up a reasonable pace for hours and have been known to cover distances of 55 miles in one night.'
-    ]
+    )
 
-ZEBRA_FACTS = [
+ZEBRA_FACTS = (
     'Zebra are part of the equidae family along with horse and donkeys.',
     'Every zebra has a unique pattern of black and white stripes.',
     'There are a number of different theories which attempt to explain zebra’s unique stripes with most relating to camouflage.',
@@ -1038,7 +1038,7 @@ ZEBRA_FACTS = [
     'Zebras eat mostly grass.',
     'The ears of a zebra show its mood.',
     'A zebra named Marty starred in the 2005 animated film Madagascar.',
-    ]
+    )
 
 ALL_FACTS = (
     ALLIGATOR_FACTS,
