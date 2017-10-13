@@ -226,6 +226,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('fox', '\sfoxe?s?\s', reddit, FOX_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
     botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
+    botengine('goat', '\sgoats?\s', reddit, GOAT_FACTS, comment)
     botengine('goose', '\s(goose|geese)\s', reddit, GOOSE_FACTS, comment)
     botengine('gorilla', '\sgorillas?\s', reddit, GORILLA_FACTS, comment)
     botengine('hamster', '\shamsters?\s', reddit, HAMSTER_FACTS, comment)
@@ -575,6 +576,21 @@ GIRAFFE_FACTS = (
     'Male giraffes sometimes fight with their necks over female giraffes. This is called “necking”. The two giraffes stand side by side and one giraffe swings his head and neck, hitting his head against the other giraffe. Sometimes one giraffe is hit to the ground during a combat.',
     'A female giraffe gives birth while standing up. The calf drops approximately 6 feet to the ground, but it is not hurt from the fall.',
     'Giraffes have bluish-purple tongues which are tough and covered in bristly hair to help them with eating the thorny Acacia trees.',
+)
+
+GOAT_FACTS = (
+    'Goats are members of the Bovidae family, which also includes antelopes, cattle and sheep.',
+    'There are two types of goats: domestic goats (Capra hircus), which are raised and bred as farm animals; and mountain goats (Oreamnos americanus), which live in steep, rocky areas in the American Northwest.',
+    'There are about 200 breeds of domestic goat, according to the Smithsonian Institution.',
+    'Mountain goats are found in the Rocky Mountains, typically in Alaska, western Montana, central Idaho, South Dakota, Colorado and Washington. The wide spread of their cloven hooves allows them to climb steep mountain sides with ease.',
+    'Goats and sheep are different species, and there are several physical and behavioral differences.',
+    'Mountain goats can jump 12 feet (3.5 meters) in a single bound, according to National Geographic.',
+    'Mountain goats have bright white coats that help them blend into the snowy areas of their home ranges. Domestic goats have coats that are yellow, chocolate or black.',
+    'Goats were one of the first domesticated animals and were first domesticated around 9,000 years ago, according to the Smithsonian.',
+    'In bright light, the pupil in a goat\'s eye is rectangular rather than round.',
+    'Goat meat — called chevon or cabrito — is eaten all over the world.',
+    'More people consume goat milk than the milk from any other animal.',
+    'The phrase "Judas goat" is a term that has been used to describe a goat that is trained to herd other animals to slaughter while its own life is spared.',
 )
 
 GOOSE_FACTS = (
@@ -1167,6 +1183,7 @@ ALL_FACTS = (
     FROG_FACTS,
     ELEPHANT_FACTS,
     GIRAFFE_FACTS,
+    GOAT_FACTS,
     GOOSE_FACTS,
     GORILLA_FACTS,
     HAMSTER_FACTS,
