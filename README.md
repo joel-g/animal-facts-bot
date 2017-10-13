@@ -29,6 +29,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * hippo
 * horse
 * hummingbird
+* husky
 * jellyfish
 * kangaroo
 * koala
@@ -78,7 +79,9 @@ AnimalFactsBot gets these fairly often.
 * Add a tuple of strings of facts (to animalfacts.py) pertaining to a particular animal. Name the tuple variable following the format 'NAMEOFANIMAL_FACTS'. Put the tuple in alphabetical order with the other tuples.
 * Add your tuple to the ALL_FACTS tuple.
 * Add a line to the check_comment_for_animal() function for your animal following the format.
-* Make sure to tag joel-g in the pull request to master.
+* Add your animal to the Readme
 
 Please: Don't add a very small set of facts (this will cause the bot to be repetetive regarding your animal).
         Only add TRUE facts. Please no trolling with 'alternative facts'.
+        Don't add 'seal', 'bat' or 'duck' facts unless you've figured out how to not reply to homonyms.
+        Don't add 'cat' or 'dog' because they are just too common on reddit.
