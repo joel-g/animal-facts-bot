@@ -241,6 +241,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
     botengine('leopard', '\sleopards?\s', reddit, LEOPARD_FACTS, comment)
     botengine('lizard', '\slizards?\s', reddit, LIZARD_FACTS, comment)
+    botengine('lobster', '\slobsters?\s', reddit, LOBSTER_FACTS, comment)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
@@ -796,6 +797,16 @@ LIZARD_FACTS = (
     'Komodo dragons are found on a number of different Indonesian Islands.',
     'Komodo dragons are carnivores and can be very aggressive.')
 
+LOBSTER_FACTS = (
+    'Lobsters were once considered the the go-to prison food. In Colonial times, it was fed to pigs and goats and only eaten by paupers.',
+    'Lobsters turn red when cooked, but in nature they can be green or yellow or even bright blue.',
+    'Lobsters can grow up to four feet long and weigh as much as 40 pounds.',
+    'Lobsters have a crusher claw and a pincer claw; some lobsters have the crusher claw on the right side and others have it on the left.',
+    'Lobsters have poor eyesight, but have highly developed senses of smell and taste.',
+    'Lobsters taste with their legs and chew with their stomachs.',
+    'Lobsters keep growing forever. They do not get weaker or lose their ability to reproduce, and will keep on molting and growing.'
+    )
+
 MONKEY_FACTS = (
     'There are currently 264 known monkey species.',
     'Monkeys can be divided into two groups, Old World monkeys that live in Africa and Asia, and New World monkeys that live in South America.',
@@ -1258,6 +1269,7 @@ ALL_FACTS = (
     LEOPARD_FACTS,
     LION_FACTS,
     LIZARD_FACTS,
+    LOBSTER_FACTS,
     MONKEY_FACTS,
     NARWHAL_FACTS,
     OCELOT_FACTS,
