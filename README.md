@@ -73,6 +73,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * seagull
 * shark
 * sloth
+* snail
 * snake
 * tiger
 * turtle
