@@ -168,6 +168,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
+    botengine('chameleon', '\schameleons?\s', reddit, CHAMELEON_FACTS, comment)
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
@@ -293,6 +294,24 @@ CAMEL_FACTS = (
     'Camels have long been used in wartimes. Romans used camels for their ability to scare off horses who are afraid of their scent, and in recent times camels have been used to carry heavy gear and troops across hot sandy deserts.',
     'There are estimated to be over 14 million camels in the world. Camels introduced to desert areas of Australia are the worlds largest populations of feral camels.'
     )
+
+CHAMELEON_FACTS = (
+    'Chameleons are a very unique branch of the lizard group of reptiles.',
+    'There are around 160 species of chameleon.',
+    'Chameleons live in warm varied habitats from rainforests through to deserts.',
+    'Almost half of the world’s chameleon species are native to Madagascar.',
+    'Special color pigment cells under the skin called chromatophores allow some chameleon species to change their skin color, creating combined patterns of pink, blue, red, orange, green, black, brown, yellow and purple.',
+    'Chameleon change color for camouflage but this is not always the main reason. Some show darker colors when angry, or when trying to scare others',
+    'Male chameleons show light multi-colored patterns when vying for female attention.',
+    'Chameleons living in the desert change to black when its cooler to absorb heat, then to a light grey to reflect heat.',
+    'Chameleons have amazing eyes. The bulging upper and lower eyelids are joined and the pupil peaks out from a pinhole sized gap.',
+    'The chameleons’ eyes can rotate and focus separately on 180-degree arcs, so they can see two different objects at the same time. This gives them a full 360-degree field of vision.',
+    'Chameleons feed by ballistically projecting their tongues often over twice the length of their body to catch prey, forming a suction cup as it hits its target.',
+    'Chameleons are not deaf but they do not actually have ear openings.',
+    'Chameleons eat insects and birds.',
+    'Chameleons are different from many reptiles because some of the species, like the Jackson’s chameleon, have live births. These species can give birth to eight to 30 young at one time',
+    'According to International Union for Conservation of Nature’s Red List of Threatened Species, many species of chameleon are endangered.'
+)
 
 CHEETAH_FACTS = (
     'The cheetah is the fastest land animal in the world. They can reach a top speed of around 113 km per hour.',
@@ -1060,6 +1079,7 @@ ALL_FACTS = (
     BEAVER_FACTS,
     CAMEL_FACTS,
     COW_FACTS,
+    CHAMELEON_FACTS,
     CHEETAH_FACTS,
     CRAB_FACTS,
     CUTTLEFISH_FACTS,
