@@ -265,6 +265,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('wolf', '\swolf\s', reddit, WOLF_FACTS, comment)
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
     botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS, comment)
+    botengine('orca', '\sorca?\s', reddit, ORCA_FACTS, comment)
 
 
 def animalfactsbot(reddit):
@@ -829,6 +830,18 @@ OCTOPUS_FACTS = (
     'A female octopus can lay on average about 200,000 eggs, however, fending for themselves only a handful of the hatchlings will survive to adulthood.',
     'Octopuses usually live for 6 - 18 months. Males only live a few months after mating, and females die of starvation shortly after their protected eggs hatch.',
     'Humans eat octopus in many cultures and it is also a popular fish bait.')
+
+ORCA_FACTS = (
+	"Orcas are often called killer whales. Though they don't typically attack humans, this name is still well-chosen due to the animal's ability to take down large marine animals, such as sea lions and whales.",
+	"Orcas are considered the largest species of the dolphin family. ",
+	"Orca weigh up to 6 tons (5,443 kilograms) and grow to 23 to 32 feet (7 to 9.7 meters).",
+	"Orcas adapt very well to any climate. For example, they can live in the warm waters near the equator or the icy waters of the North and South Pole regions. Orcas are more likely to be found at higher latitudes and near the shore, though.",
+	"Orcas are very social and live in groups called pods, which usually have up to 40 members",
+	"Orcas are apex predators, at the top of the food chain. No other animals  (except for humans) hunt orcas. Killer whales feed on sea birds, squid, octopuses, sea turtles, sharks, rays and fish. They also eat most marine mammals, such as seals and dugongs.",
+	"A female Orca will give birth every three to 10 years, to one offspring at a time. The gestation period usually lasts for around 17 months. A baby orca is called a calf, and they are about 8.5 feet (2.6 m) long and 265 to 353 lbs."
+	"Orcas are black and white for a reason; their coloring helps to camouflage them by obscuring their outline in the water.",
+	"The killer whale is not a fish. It is a marine mammal. However, it is not a whale. It is in fact a dolphin, and the largest dolphin to boot.",
+)
 
 OTTER_FACTS = (
     'The otter is a carnivorous mammal in a branch of the weasel family called Lutrinae.',
