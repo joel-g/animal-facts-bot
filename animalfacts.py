@@ -260,8 +260,10 @@ def check_comment_for_animal(comment, reddit):
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
     botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
+    botengine('skunk', '\sskunks?\s', reddit, SKUNK_FACTS, comment)
     botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS, comment)
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
+    botengine('stingray', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
     botengine('wolf', '\swolf\s', reddit, WOLF_FACTS, comment)
@@ -1067,6 +1069,23 @@ SHARK_FACTS = (
     'Unlike other species of shark, the great white is warm-blooded. Although the great white does not keep a constant body temperature, it needs to eat a lot of meat in order to be able to regulate its temperature. ',
     'A shark always has a row of smaller teeth developing behind its front teeth. Eventually the smaller teeth move forward, like a conveyor belt, and the front teeth fall out.')
 
+SKUNK_FACTS = (
+    'Skunks are small, furry animals with black and white stripes.',
+    'Skunks are typically around the size of house cats. They grow to 8 to 19 inches long and weigh around 7 ounces to 14 lbs.',
+    'Skunks average lifespan can range from 2-4 years.',
+    'Skunks appeared 40 million years ago, evolving from common ancestors with weasels and polecats.',
+    'Skunks are found in the United States, Canada, South America and Mexico.',
+    'Skunks live in forest edges, woodlands, grasslands and deserts. They typically make their homes in abandoned burrows, but will also live in abandoned buildings, under large rocks and in hollow logs.',
+    'Though they typically prefer to dine on insects and grubs, skunks are omnivores, consuming a vast diet of both plant and animal matter. Skunks are opportunistic eaters, and their diets are flexible, often shifting with the seasons.',
+    'Skunks have strong forefeet and long nails, which make them excellent diggers. When no other form of shelter is available they may even burrow underneath buildings by entering foundation openings.',
+    'Skunks are known to release a powerful smell through their anal glands when threatened. Skunks will usually only attack when cornered or defending their young, and spraying is not the first method of defense. A skunk will growl, spit, fluff its fur, shake its tail, and stamp the ground.',
+    'Although skunks have very poor eyesight, they have excellent senses of smell and hearing.',
+    'Skunks are nocturnal, which means they search for food at night and sleep in dens lined with leaves during the day.',
+    'Skunks are slow and can run only 10 miles per hour.',
+    'Skunks are immune to rattlesnake venom, bee stings and scorpions.',
+    'Females can bear 3-10 young and male skunks reach sexual maturity from 4-6 months after birth while females reach sexual maturity nine months to a year after birth.'
+    )
+
 SLOTH_FACTS = (
     'Sloths are a medium-sized mammal. There are two types of sloth the two-toed sloth and the three-toed sloth, they are classified into six different species.',
     'All sloths actually have three toes, but the two-toed sloth has only two fingers.',
@@ -1115,6 +1134,25 @@ SQUID_FACTS = (
     'Giant squid mostly eat deep water fishes and other squids including other giant squids.',
     'The only predators that giant squid have are sperm whales.')
 
+
+STINGRAY_FACTS = (
+     'Stingrays are diverse group of fish characterized by flattened bodies.',
+     'The largest species of stingray measure 6.5 feet in length and can weigh up to 790 pounds.',
+     'Stingrays are closely related to sharks. Stingrays don’t have bones.',
+     'Stringrays flattened body ends with long tail that usually contains spine and venom. Spines can be serrated in some species.',
+     'There are more than 70 Species of stingray.',
+     'Stringray mouths are located on the bottom side of their body. When they catch clams, shrimps, and mussels, they will crash and eat them using their powerful jaws.',
+     'Stringray`s long tails usually have a spine and venom.',
+     'Stingrays Use camouflage for protection and hunting.',
+     'Stingrays don’t use their eyes to find prey. They use their electro-sensors to locate their prey',
+     'Stingrays are solitary, but can also live in groups.',
+     'Stingrays have a lifespan of 15-25 years.',
+     'Stringrays can be found in oceans in tropical and subtropical areas around the world. Stingrays like warm and shallow water.',
+     'Stingrays are found both in freshwater and ocean.',
+     'Stingrays give birth to 2-6 young stingrays each year.',
+     'Baby stingrays are born fully developed; they look like miniature versions of adult animals. Babies take care of themselves from the moment of birth.'
+     
+     )
 
 TIGER_FACTS = (
     'The tiger is the biggest species of the cat family.',
@@ -1239,8 +1277,10 @@ ALL_FACTS = (
     SCORPION_FACTS,
     SEAGULL_FACTS,
     SHARK_FACTS,
+    SKUNK_FACTS,
     SLOTH_FACTS,
     SNAKE_FACTS,
+    STINGRAY_FACTS,
     TIGER_FACTS,
     TURTLE_FACTS,
     WOLF_FACTS,
