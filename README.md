@@ -75,6 +75,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * penguin
 * pig
 * pigeon
+* platypus
 * scorpion
 * seagull
 * shark
