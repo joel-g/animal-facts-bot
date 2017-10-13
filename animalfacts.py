@@ -242,6 +242,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('lizard', '\slizards?\s', reddit, LIZARD_FACTS, comment)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
+    botengine('newt', '\snewts?\s', reddit, NEWT_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
     botengine('octopus', '\soctopus?\s', reddit, OCTOPUS_FACTS, comment)
     botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
