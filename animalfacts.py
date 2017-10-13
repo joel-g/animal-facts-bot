@@ -244,6 +244,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
     botengine('octopus', '\soctopus?\s', reddit, OCTOPUS_FACTS, comment)
+    botengine('opossum', '\sopossum?\s', reddit, OPOSSUM_FACTS, comment)
     botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
     botengine('owl', '\sowls?\s', reddit, OWL_FACTS, comment)
     botengine('parrot', '\sparrots?\s', reddit, PARROT_FACTS, comment)
@@ -830,6 +831,19 @@ OCTOPUS_FACTS = (
     'Octopuses usually live for 6 - 18 months. Males only live a few months after mating, and females die of starvation shortly after their protected eggs hatch.',
     'Humans eat octopus in many cultures and it is also a popular fish bait.')
 
+OPOSSUM_FACTS = (
+    'The opossum is a marsupial endemic to the Americas.',
+    'Due to their unspecialized biology, flexible diet and reproductive habits, opossums have successfully colonized diverse locations.',
+    'Opossums have remarkably strong immune systems and show partial or total immunity to the venom of rattlesnakes, cottonmouths, and other pit vipers. They are also resistant to rabies.',
+    'All opossums have prehensile tails, and females have pouches.',
+    'When threatened or harmed, adult opossums will \'play dead\', and this is the origin of the expression \'to play possum\'',
+    'Opossum was traditionally eaten across the Americans, but is now eaten mainly in certain Carribean islands.',
+    'A baby opossum is called a joey.',
+    'Opossums typically live between two and four years.',
+    'The opossum is typically known as a \'possum\' in the southern United States.',
+    'The gestation period of an opossum is short, typically between 12 and 14 days.'
+)
+
 OTTER_FACTS = (
     'The otter is a carnivorous mammal in a branch of the weasel family called Lutrinae.',
     'There are 13 species of otter found all around the world.',
@@ -1185,6 +1199,7 @@ ALL_FACTS = (
     NARWHAL_FACTS,
     OCELOT_FACTS,
     OCTOPUS_FACTS,
+    OPOSSUM_FACTS,
     OTTER_FACTS,
     OWL_FACTS,
     PANDA_FACTS,
