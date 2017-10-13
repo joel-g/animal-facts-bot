@@ -212,14 +212,9 @@ def check_comment_for_animal(comment, reddit):
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
-    botengine(
-        'cuttlefish',
-        '\scuttlefishs?\s',
-        reddit,
-        CUTTLEFISH_FACTS,
-        comment)
+    botengine('cuttlefish', '\scuttlefishs?\s', reddit, CUTTLEFISH_FACTS, comment)
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
-    # botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)
+    # botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)   Disabled because this was only a temp feature during Game of Thrones season. Dragons aren't real.
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
     botengine('echidna', '\sechidnas?\s', reddit, ECHIDNA_FACTS, comment)
     botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
@@ -234,12 +229,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('hedgehog', '\shedgehogs?\s', reddit, HEDGEHOG_FACTS, comment)
     botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS, comment)
     botengine('horse', '\shorses?\s', reddit, HORSE_FACTS, comment)
-    botengine(
-        'hummingbird',
-        '\shummingbirds?\s',
-        reddit,
-        HUMMINGBIRD_FACTS,
-        comment)
+    botengine('hummingbird', '\shummingbirds?\s', reddit, HUMMINGBIRD_FACTS, comment)
     botengine('husky', '\shuskys?\s', reddit, HUSKY_FACTS, comment)
     botengine('jellyfish', '\sjellyfish\s', reddit, JELLYFISH_FACTS, comment)
     botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
