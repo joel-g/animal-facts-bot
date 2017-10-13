@@ -216,6 +216,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
     botengine('cuttlefish', '\scuttlefishs?\s', reddit, CUTTLEFISH_FACTS, comment)
+    botengine('dingo', '\sdingos?\s', reddit, DINGO_FACTS, comment)
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
     # botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)   Disabled because this was only a temp feature during Game of Thrones season. Dragons aren't real.
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
@@ -450,6 +451,14 @@ CUTTLEFISH_FACTS = (
     "The largest cuttlefish is the Australian giant cuttlefish, which is the size and shape of an American football.",
     "Cuttlefish have W shaped eyelids so they can see in front of them and behind them at the same time.")
 
+DINGO_FACTS = (
+    'Dingoes actually originate from Southeast Asia, where they can still be found today.',
+    'Dingoes mate once per year, from March to June.',
+    'Dingoes cannot bark, but they can howl.',
+    'Dingoes have permanently erect ears.',
+    'Dingoes arrived in Australia from the Asian mainland about 5,000 years ago.',
+    'Dingoes live to five or siz years of age in the wild and fifteen years in captivity.')
+	
 DOLPHIN_FACTS = (
     'Compared to other animals, dolphins are believed to be very intelligent.',
     'The Killer Whale (also known as Orca) is actually a type of dolphin.',
@@ -1158,6 +1167,7 @@ ALL_FACTS = (
     CRAB_FACTS,
     CROCODILE_FACTS,
     CUTTLEFISH_FACTS,
+    DINGO_FACTS,
     DOLPHIN_FACTS,
     EAGLE_FACTS,
     ECHIDNA_FACTS,
