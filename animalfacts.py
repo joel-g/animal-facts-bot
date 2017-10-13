@@ -1048,7 +1048,17 @@ SNAKE_FACTS = (
 SQUID_FACTS = (
     'Many species of squid have a life span that is only about one year',
     'The Humboldt squid is very aggressive and will even attack sharks in the water.',
+    'The only predators that giant squid have are sperm whales.',
+    'Squid are strong swimmers and certain species can "fly" for short distances out of the water.',
+    'The majority of squid are no more than 60 cm (24 in) long, although the giant squid may reach 13 m (43 ft).',
+    'The smallest squid is the pygmy squid which can be less than 2.5 centimeters (1 inch) long.',
+    'It wasn\'t until 2004 that researchers in Japan took the first images ever of a live giant squid.',
+    'Giant squid have the largest eyes in the animal kingdom, measuring up to 10 inches in diameter.',
+    'Squid, like cuttlefish, have eight arms arranged in pairs, and two longer tentacles with suckers.',
+    'Squids belong to a particularly successful group of mollusks called the cephalopods, which have been around for about 500 million years.',
+    'Giant squid mostly eat deep water fishes and other squids including other giant squids.',
     'The only predators that giant squid have are sperm whales.')
+
 
 TIGER_FACTS = (
     'The tiger is the biggest species of the cat family.',
