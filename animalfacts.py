@@ -262,12 +262,14 @@ def check_comment_for_animal(comment, reddit):
     botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
     botengine('skunk', '\sskunks?\s', reddit, SKUNK_FACTS, comment)
     botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS, comment)
+    botengine('snail', '\ssnails?\s', reddit, SNAIL_FACTS, comment)
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
     botengine('stingray', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
-    botengine('wolf', '\swolf\s', reddit, WOLF_FACTS, comment)
+    botengine('walrus', '\swalrus?\s', reddit, WALRUS_FACTS, comment)
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
+    botengine('wolf', '\swolf\s', reddit, WOLF_FACTS, comment)
     botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS, comment)
 
 
@@ -1104,6 +1106,23 @@ SLOTH_FACTS = (
     'In the wild, sloths live on average 10 - 16 years and in captivity over 30 years.',
 )
 
+SNAIL_FACTS = (
+    'Snails are gastropod mollusks, members of the ‘phylum Mollusca’ and the class ‘Gastropoda’.',
+    'Snails have no back bone. When they feel threatened, they usually retreat into their shell to protect themselves.',
+    'The largest land snail is the ‘Achatina achatina’, the Giant African Snail.',
+    'Some land snails feed on other terrestrial snails.',
+    'Most snails live from 2 to 5 years, but in captivity, some have exceeded 10 or 15 years of age.',
+    'The mucus of the garden snail is used to treat wrinkles, spots, and scars on the skin.',
+    'Most snail species are hermaphrodites, so they have both male and female reproductive organs.',
+    'The speed of snails is around 0.5-0.8 inches per second. If they moved without stopping, it would take more than a week to complete 1 kilometer.',
+    'Snails do not change shells when they grow up. Instead, the shell grows along with them.',
+    'Snails host several types of parasites that, while may not kill them, they are capable of affecting or killing their predators or animals that eat the snails. Even humans who eat poorly cooked snails can become seriously ill.',
+    'A single garden snail (Helix aspersa) can have up to 430 hatchlings after a year.', 
+    'Many snails are in danger of extinction. Among these are the species ‘Aaadonta constricta’ and ‘Aaadonta fuscozonata’, and others of the ‘genus Aaadonta’ and ‘Achatinella’ are in critical danger of extinction.',
+    'The size of the shell of a snail reflects its age.',
+    'Land snails do not chew their food. They scrape it.',
+    'Calcium carbonate is the main component of the snail shells.')
+
 SNAKE_FACTS = (
     'Snakes don’t have eyelids.',
     'Snakes can’t chew food so they have to swallow it whole.',
@@ -1183,6 +1202,19 @@ TURTLE_FACTS = (
     'Some turtles lay eggs in the sand and leave them to hatch on their own. The young turtles make their way to the top of the sand and scramble to the water while trying to avoid predators.',
     'Sea turtles have special glands which help remove salt from the water they drink.',
 )
+
+WALRUS_FACTS = (
+    'Walruses weigh from 600 to 1,500 kilograms (1,320 to 3,300 lbs.) and can be as long as 3.2 meters (10.5 feet).',
+    'Walrus tusks can grow up to 3 feet (1 m). The tusks are canine teeth and stick out from either side of the animal’s mouth.',
+    'Walruses use their tusks to break through ice, and to assist in climbing out of the water and onto the ice. The animals also use their tusks to defend themselves from larger predators and to establish dominance and a hierarchy among walruses.',
+    'Walruses can swim on average around 4.35 mph (7 km/h) and as fast as 21.74 mph (35 km/h).',
+    'A group of walruses is called a herd. They gather by the hundreds to sunbathe on the ice. During mating season, walruses amass by the thousands.',
+    'Walruses are carnivores, but they aren’t ferocious hunters. The walrus’ favorite food is shellfish.',
+    'There are three subspecies of walrus. Atlantic walruses live in the coastal areas along northeastern Canada to Greenland. Pacific walruses live in the northern seas near Russia and Alaska. Laptev walruses live in the Laptev Sea of Russia.',
+    'In the 1950s, the population of walruses was almost eliminated due to commercial hunting, but the population was brought back to a thriving number in the 1980s.',
+    'Native people of the Arctic hunt walruses for hides, food, ivory and bones. These natives are now the only people who are allowed to legally hunt walruses.',
+    'Odobenus rosmarus, the walruses’ scientific name, is Latin for ‘tooth-walking sea-horse’.',
+    'Walruses have only two natural predators: the orca (or killer whale) and the polar bear. Both are more likely to hunt walrus calves than adults.')
 
 WHALE_FACTS = (
     'Many whales are toothless. They use a plate of comb-like fibre called baleen to filter small crustaceans and other creatures from the water.',
@@ -1279,12 +1311,14 @@ ALL_FACTS = (
     SHARK_FACTS,
     SKUNK_FACTS,
     SLOTH_FACTS,
+    SNAIL_FACTS,
     SNAKE_FACTS,
     STINGRAY_FACTS,
     TIGER_FACTS,
     TURTLE_FACTS,
-    WOLF_FACTS,
+    WALRUS_FACTS,
     WHALE_FACTS,
+    WOLF_FACTS,
     ZEBRA_FACTS
 )
 

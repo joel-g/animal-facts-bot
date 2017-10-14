@@ -82,12 +82,14 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * shark
 * skunk
 * sloth
+* snail
 * snake
 * stingray
 * tiger
 * turtle
-* wolf
+* walrus
 * whale
+* wolf
 * zebra
 
 ### AnimalFactsBot will reply to its replies if they contain the phrases:
