@@ -253,6 +253,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
     botengine('newt', '\snewts?\s', reddit, NEWT_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
+    botengine('oryx', '\soryx(es)?\s', reddit, ORYX_FACTS, comment)
     botengine('octopus', '\socto(pus|puses|pusses|pi)\s', reddit, OCTOPUS_FACTS, comment)
     botengine('orca', '\sorcas?\s', reddit, ORCA_FACTS, comment)
     botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
@@ -1000,6 +1001,20 @@ OCTOPUS_FACTS = (
     'Octopuses usually live for 6 - 18 months. Males only live a few months after mating, and females die of starvation shortly after their protected eggs hatch.',
     'Humans eat octopus in many cultures and it is also a popular fish bait.')
 
+ORYX_FACTS = (
+    'Oryxes are species of antelope native to Africa and the Arabian Peninsula.',
+    'The Arabian oryx was only saved from extinction through a captive breeding program and reintroduction to the wild.',
+    'Small populations of several oryx speciies, such as the scimitar oryx, exist in Texas and New Mexico in wild game ranches.',
+    'White oryxes are known to dig holes in the sand for the sake of coolness.',
+    'The smallest species of oryx is the Arabian oryx. It became extinct in the wild in 1972, but was reintroduced in 1982 in Oman.',
+    "The Arabian oryx was the first speicies to have its threat category downgraded from 'Extinct in the Wild' to 'Vulnerable'.",
+    'All oryx specicies prefer near-desert conditions and can survive without water for long periods of time.',
+    'Oryxes live in herds in numbers up to 600.',
+    'Newborn oryx calves are able to run with their herd immediately after birth.',
+    'Oryxes have been known to kill lions with their horns.',
+    'Oryx horns make the animals a prized game trophy, which has led to the near-extinction of the two northern species.'
+    )
+
 ORCA_FACTS = (
     "The orca's large size and strength make it among the fastest marine mammals, able to reach speeds in excess of 55 km/h.",
     "Many orcas live with their mothers for their entire lives.",
@@ -1555,6 +1570,7 @@ ALL_FACTS = (
     NEWT_FACTS,
     OCELOT_FACTS,
     OCTOPUS_FACTS,
+    ORYX_FACTS,
     ORCA_FACTS,
     OTTER_FACTS,
     OWL_FACTS,
