@@ -254,7 +254,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
     botengine('newt', '\snewts?\s', reddit, NEWT_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
-    botengine('opossum', '\sopossum?\s', reddit, OPOSSUM_FACTS, comment)
+    botengine('opossum', '\sopossums?\s', reddit, OPOSSUM_FACTS, comment)
     botengine('oryx', '\soryx(es)?\s', reddit, ORYX_FACTS, comment)
     botengine('octopus', '\socto(pus|puses|pusses|pi)\s', reddit, OCTOPUS_FACTS, comment)
     botengine('orca', '\sorcas?\s', reddit, ORCA_FACTS, comment)
@@ -1408,9 +1408,7 @@ STARFISH_FACTS = (
     'Starfish cannot survive in fresh water.',
     'Starfish can eat inside out!',
     'Starfish can move using their tube feet',
-    'Starfish have eyes.',
-#     'Starfish can reproduce in two ways.',   what are they?
-)
+    'Starfish have eyes.',)
 
 SQUID_FACTS = (
     'Many species of squid have a life span that is only about one year',
