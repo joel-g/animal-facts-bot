@@ -1599,10 +1599,18 @@ ZEBRA_FACTS = (
     'A zebra named Marty starred in the 2005 animated film Madagascar.',
 )
 
+ATLANTIC_PUFFIN_FACTS = (
+    'The Atlantic Puffin is the only puffin native to the Atlantic Ocean.',
+    'The Atlantic Puffin breeds in Iceland, Norway, Greenland, Newfoundland and many North Atlantic islands, and as far south as Maine in the west and the British Isles in the east.',
+    'There are considered to be three subspecies: Fratercula arctica arctica, Fratercula arctica grabae, Fratercula arctica naumanni.',
+    'Like many seabirds, the Atlantic puffin spends most of the year far from land in the open ocean and only visits coastal areas to breed.',
+)
+
 
 ALL_FACTS = (
     ALBATROSS_FACTS,
     ALLIGATOR_FACTS,
+    ATLANTIC_PUFFIN_FACTS,
     ANT_FACTS,
     BADGER_FACTS,
     BEAVER_FACTS,
