@@ -226,6 +226,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('fox', '\sfoxe?s?\s', reddit, FOX_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
     botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
+    botengine('grasshopper', '\sgrasshoppers?\s', reddit, GRASSHOPPER_FACTS,comment)
     botengine('goat', '\sgoats?\s', reddit, GOAT_FACTS, comment)
     botengine('goose', '\s(goose|geese)\s', reddit, GOOSE_FACTS, comment)
     botengine('gorilla', '\sgorillas?\s', reddit, GORILLA_FACTS, comment)
@@ -612,6 +613,18 @@ GOOSE_FACTS = (
     'Geese can live up to twenty years if well cared for.',
     'A baby goose is called a gosling.',
     'A group of geese is called a gaggle')
+
+GRASSHOPPER_FACTS = (
+    'Grasshoppers have typanal organs on their bellies, but no ears.',
+    'Grasshoppers make music by stridulating or crepitating.',
+    'Grasshoppers cause billions of dollars of damage to crops annually.',
+    'Grasshoppers existed as early as 300 million years ago.',
+    'Grasshoppers can jump twenty times the length of their bodies.',
+    'Grasshoppers go through three stages of development: egg, nymph, and adult.',
+    'In Africa, Central America, and South America, grasshoppers are eaten as a source of protein.',
+    'Grasshoppers can grow up to five inches. Females are usually bigger than males.',
+    'There are 11,000 known species of grasshoppers.',
+    'A single grasshopper can eat half its bodyweight in a day.',)
 
 GORILLA_FACTS = (
     'There are only about 700 mountain gorillas and they live high in the mountains in two protected parks in Africa. Lowland gorillas live in central Africa.',
@@ -1306,6 +1319,7 @@ ALL_FACTS = (
     FROG_FACTS,
     ELEPHANT_FACTS,
     GIRAFFE_FACTS,
+    GRASSHOPPER_FACTS,
     GOAT_FACTS,
     GOOSE_FACTS,
     GORILLA_FACTS,
@@ -1344,7 +1358,7 @@ ALL_FACTS = (
     SLOTH_FACTS,
     SNAIL_FACTS,
     SNAKE_FACTS,
-	SQUIRREL_FACTS,
+    SQUIRREL_FACTS,
     STINGRAY_FACTS,
     TIGER_FACTS,
     TURTLE_FACTS,
