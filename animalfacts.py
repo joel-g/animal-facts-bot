@@ -239,7 +239,6 @@ def check_comment_for_animal(comment, reddit):
     botengine('honeybee', '\shoney bees?\s', reddit, HONEYBEE_FACTS, comment)
     botengine('horse', '\shorses?\s', reddit, HORSE_FACTS, comment)
     botengine('hummingbird', '\shummingbirds?\s', reddit, HUMMINGBIRD_FACTS, comment)
-    botengine('husky', '\shusk(y|ies)\s', reddit, HUSKY_FACTS, comment)
     botengine('husky', '\s(husky|huskie)s?\s', reddit, HUSKY_FACTS, comment)
     botengine('iguana', '\siguanas?\s', reddit, IGUANA_FACTS, comment)
     botengine('jellyfish', '\sjellyfish(es)\s', reddit, JELLYFISH_FACTS, comment)
@@ -271,6 +270,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
     botengine('platypus', '\splatypuse?s?\s', reddit, PLATYPUS_FACTS, comment)
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
+    botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
     botengine('sea cucumber', '\ssea cucumbers?\s', reddit, SEA_CUCUMBER_FACTS, comment)
@@ -1318,7 +1318,7 @@ PLATYPUS_FACTS = (
     "Platypus fur, being very thick and waterproof, used to be very in the fur trade until Australia banned platypus hunting to protect the species.",
     "Platypuses is the correct plural form, although platypi and platypodes are also accepted.",
     )
-
+    
 RABBIT_FACTS = (
     'A rabbit’s teeth never stop growing, which is why it is very important to provide chews and treats for them to keep their teeth from becoming overgrown.',
     'Rabbits have 28 teeth.',
@@ -1331,6 +1331,23 @@ RABBIT_FACTS = (
     'Rabbits sleep about 8 hours a day.',
     'Rabbits cannot vomit. They don’t have enough muscles in their stomach.',
     'A male rabbit is called a buck, a female is a doe, and a baby is a kit/kitten.',
+    )
+    
+RACCOON_FACTS = (
+    'The raccoon has the ability to rotate their hind feet a full 180 degrees to allow for their ability to climb down from trees head first.',
+    'On the mammal IQ scale raccoons rank higher than cats and just below monkeys.',
+    'The raccoon’s scientific name, Procyon lotor, means “washer dog” although it is a closer relative to the bear family.',
+    'Raccoon rabies makes up almost half of all wildlife rabies cases that are reported in the U.S.',
+    'Raccoons range in weight from about 12-35 pounds and up to 50% of their body weight can be made up of fat.',
+    'Breeding season for raccoons is between January and June, and they do not have more than one litter per year. Litters are anywhere from 1-7 babies.',
+    'Raccoons can live up to 16 years in the wild, but most don\'t make it past 2.',
+    'Raccoon pelts are sometimes sold as imitation mink, otter, or even seal fur.',
+    'Raccoons climb with great ease and are not bothered by a drop of 35 to 40 feet!',
+    'Bandit-masked raccoons are a familiar sight just about everywhere, because they will eat just about anything. These ubiquitous     mammals are found in forests, marshes, prairies, and even in cities.',
+    'In the natural world, raccoons snare a lot of their meals in the water. These nocturnal foragers use lightning-quick paws to grab crayfish, frogs, and other aquatic creatures.',
+    'Raccoons have a large array of vocalizations. Scientists have determined that they can make over 51 different sounds! They purr, whistle, growl, hiss, scream and even whinny.',
+    'Bobcats, great horned owls, wolves, eagle owls, lynxes and coyotes are the most common predators of raccoons, but cars kill more raccoons than anything.',
+    'Dakota Sioux believed that raccoons possessed supernatural powers'
     )
 
 SCORPION_FACTS = (
@@ -1774,6 +1791,7 @@ ALL_FACTS = (
     PIGEON_FACTS,
     PLATYPUS_FACTS,
     RABBIT_FACTS,
+    RACCOON_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,
     SEA_CUCUMBER_FACTS,
