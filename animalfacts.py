@@ -260,6 +260,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
     botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
+    botengine('sheep', '\ssheep?\s', reddit, SHARK_FACTS, comment)
     botengine('skunk', '\sskunks?\s', reddit, SKUNK_FACTS, comment)
     botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS, comment)
     botengine('snail', '\ssnails?\s', reddit, SNAIL_FACTS, comment)
@@ -1351,6 +1352,7 @@ ALL_FACTS = (
     SCORPION_FACTS,
     SEAGULL_FACTS,
     SHARK_FACTS,
+    SHEEP_FACTS,
     SKUNK_FACTS,
     SLOTH_FACTS,
     SNAIL_FACTS,
