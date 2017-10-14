@@ -2,7 +2,7 @@
 
 Check the open issues to claim a listed animal, or come up with your own. Be sure to also check currently open pull requests to make sure you don't duplicate someone else's work.
 
-        Due to Hacktoberfests pull requests are coming in fast! Comment on an issue you are going to work on - and also check open pull requests before you do work someone else has already done.
+        Due to Hacktoberfest pull requests are coming in fast! Comment on an issue you are going to work on - and also check open pull requests before you do work someone else has already done.
 
 Steps:
 * Fork/clone the repo
