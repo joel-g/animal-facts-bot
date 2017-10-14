@@ -277,6 +277,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS, comment)
     botengine('snail', '\ssnails?\s', reddit, SNAIL_FACTS, comment)
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
+    botengine('starfish', '\sstarfish(es)?\s', reddit, STARFISH_FACTS, comment)
     botengine('tarantula', '\starantulas?\s', reddit, TARANTULA_FACTS, comment)
     botengine('squirrel', '\ssquirrels?\s', reddit, SQUIRREL_FACTS, comment)
     botengine('stingray', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
@@ -1372,6 +1373,17 @@ SNAKE_FACTS = (
     'Anacondas are large, non-venomous snakes found in South America that can reach over 5 m (16 ft) in length.',
     'Python reticulates can grow over 8.7 m (28 ft) in length and are considered the longest snakes in the world.')
 
+STARFISH_FACTS = (
+    'Starfish have no brain and no blood.',,
+    'There are around 2,000 species of sea star.',
+    'Starfish usually have five arms and they can regenerate them.',
+    'Starfish cannot survive in fresh water.',
+    'Starfish can eat inside out!',
+    'Starfish can move using their tube feet',
+    'Starfish have eyes.',
+#     'Starfish can reproduce in two ways.',   what are they?
+)
+
 SQUID_FACTS = (
     'Many species of squid have a life span that is only about one year',
     'The Humboldt squid is very aggressive and will even attack sharks in the water.',
@@ -1551,6 +1563,7 @@ ZEBRA_FACTS = (
     'A zebra named Marty starred in the 2005 animated film Madagascar.',
 )
 
+
 ALL_FACTS = (
     ALBATROSS_FACTS,
     ALLIGATOR_FACTS,
@@ -1623,6 +1636,7 @@ ALL_FACTS = (
     SLOTH_FACTS,
     SNAIL_FACTS,
     SNAKE_FACTS,
+    STARFISH_FACTS,
     SQUIRREL_FACTS,
     STINGRAY_FACTS,
     TARANTULA_FACTS,
@@ -1634,7 +1648,6 @@ ALL_FACTS = (
     WOLF_FACTS,
     ZEBRA_FACTS
 )
-
 
 def main():
     reddit = authenticate()
