@@ -205,6 +205,7 @@ def botengine(animal, regex, reddit, facts, comment):
 
 
 def check_comment_for_animal(comment, reddit):
+    botengine('aardvark', '\saardvarks?\s', reddit, AARDVARK_FACTS, comment)
     botengine('albatross', '\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
     botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
@@ -303,6 +304,18 @@ def animalfactsbot(reddit):
         check_comment_for_animal(comment, reddit)
 
 
+AARDVARK_FACTS = (
+    "An aardvark has a long snout that ends with a pig-like nose, rabbit-like ears and a tail similar to a kangaroo's. Yet it is not closely related to any of those animals.",
+    'Aardvarks are found throughout sub-Saharan Africa. The aardvark’s name comes from the Afrikaans/Dutch language and means "earth pig," according to National Geographic.',
+    'Aardvarks are about the size of a small pig. Typically, they weigh from 110 to 180 lbs. (50 to 82 kilograms).',
+    'If it stuck its tongue out, an aardvark would be much longer. Their tongues can be up to 12 inches (30.5 cm) long.',
+    'Aardvarks live in many different types of habitats, such as grasslands, savannas, rainforests, woodlands and thickets throughout Africa in the areas south of the Sahara.',
+    'Their spoon-shaped claws are like steel – and used to rip into extremely hard ground and termite mounds.',
+    'They change burrows frequently, providing opportunity for subsequent residents like wild dogs, pythons, warthogs and South African shelduck.',
+    'They are nocturnal and travel up to 16km every night, foraging for food.',
+    'Aardvarks feed almost exclusively on ants and termites, and are known to eat around 50,000 in one night. They can eat plants and often feed on an African cucumber known as the aardvark cucumber.',
+    'Aardvarks are prey to many animals including lions, leopards, hunting dogs, hyenas, and pythons.',
+    'Aardvarks are solitary and only come together to mate; females have a gestation period of seven months. One cub is born between May and July and will remain in the burrow for the first two weeks of life.')
 ALBATROSS_FACTS = (
     'Albatrosses are known to live until their fifties sixties.',
     'The Wandering albatross has a wingspan that measures up to 11 feet 4 inches from end to end, the largest of any living bird.',
