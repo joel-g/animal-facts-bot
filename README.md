@@ -1,6 +1,7 @@
 ## How to contribute (Teach AnimalFactsBot a new animal):
-        Choose an animal listed in the issues or any other real animal.
+        Due to Hacktoberfests pull requests are coming in fast! Comment on an issue you are going to work on - and also check open pull requests before you do work someone else has already done.
 
+Steps:
 * Fork/clone the repo
 * Add a tuple of strings of facts (to animalfacts.py) pertaining to a particular animal. Name the tuple variable following the format 'NAMEOFANIMAL_FACTS'. Put the tuple in alphabetical order with the other tuples.
 * Add your tuple to the ALL_FACTS tuple.
@@ -47,6 +48,8 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * fox
 * frog
 * giraffe
+* grasshopper
+* goat
 * goose
 * gorilla
 * hamster
@@ -61,10 +64,12 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * lion
 * leopard
 * lizard
+* llama
 * monkey
 * narwhal
 * ocelot
 * octopus
+* orca
 * otter
 * owl
 * panda
@@ -78,13 +83,18 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * scorpion
 * seagull
 * shark
+* skunk
 * sloth
+* snail
 * snake
+* squirrel
+* stingray
 * tiger
 * turtle
 * walrus
 * wolf
 * whale
+* wolf
 * zebra
 
 ### AnimalFactsBot will reply to its replies if they contain the phrases:
