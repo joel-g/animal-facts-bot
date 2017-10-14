@@ -1,4 +1,5 @@
 ## How to contribute (Teach AnimalFactsBot a new animal):
+
         Due to Hacktoberfests pull requests are coming in fast! Comment on an issue you are going to work on - and also check open pull requests before you do work someone else has already done.
 
 Steps:
@@ -55,6 +56,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * hamster
 * hedgehog
 * hippo
+* honeybee
 * horse
 * hummingbird
 * husky
