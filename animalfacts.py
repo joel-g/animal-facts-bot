@@ -983,9 +983,8 @@ SLOTH_FACTS = (
 
 SNAIL_FACTS = (
     'Snails are gastropod mollusks, members of the ‘phylum Mollusca’ and the class ‘Gastropoda’.',
-    'When they feel threatened, they usually retreat into their shell to protect themselves.',
+    'Snails have no back bone. When they feel threatened, they usually retreat into their shell to protect themselves.',
     'The largest land snail is the ‘Achatina achatina’, the Giant African Snail.',
-    'Snails have no backbone.',
     'Some land snails feed on other terrestrial snails.',
     'Most snails live from 2 to 5 years, but in captivity, some have exceeded 10 or 15 years of age.',
     'The mucus of the garden snail is used to treat wrinkles, spots, and scars on the skin.',
@@ -996,7 +995,7 @@ SNAIL_FACTS = (
     'A single garden snail (Helix aspersa) can have up to 430 hatchlings after a year.', 
     'Many snails are in danger of extinction. Among these are the species ‘Aaadonta constricta’ and ‘Aaadonta fuscozonata’, and others of the ‘genus Aaadonta’ and ‘Achatinella’ are in critical danger of extinction.',
     'The size of the shell of a snail reflects its age.',
-    'Land snails do not chew their food. They scrap it.',
+    'Land snails do not chew their food. They scrape it.',
     'Calcium carbonate is the main component of the snail shells.')
 
 SNAKE_FACTS = (
