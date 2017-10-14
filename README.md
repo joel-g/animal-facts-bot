@@ -26,6 +26,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * alligator
 * badger
 * beaver
+* bison
 * camel
 * cheetah
 * cow
