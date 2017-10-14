@@ -213,6 +213,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
     botengine('chameleon', '\schameleons?\s', reddit, CHAMELEON_FACTS, comment)
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
+    botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
@@ -422,6 +423,19 @@ CHEETAH_FACTS = (
     'Cheetahs cannot climb trees and have poor night vision.',
     'With their light body weight and blunt claws, cheetahs are not well designed to protect themselves or their prey. When a larger or more aggressive animal approaches a cheetah in the wild, it will give up its catch to avoid a fight.',
     'Cheetahs only need to drink once every three to four days.')
+
+CHIPMUNK_FACTS = (
+    'Chipmunks are the smallest members of the squirrel family. Smallest species has 1.1 to 1.8 ounces of weight and reaches 7.2 to 8.5 inches in length. Largest species can reach 4.4 ounces of weight and 11 inches in length.',
+    'Chipmunks have fluffy tail that can reach 3 to 5 inches in length.',
+    'Chipmunks are very vocal animals. They produce bird-like noise that can be heard in the case of near danger and during the mating season, when female wants to attract males.',
+    'There are more than 20 different species of chipmunks some of which can be found in North America and which belong to the Tamias genus, with two subgenus species called Tamias and Neotamias.',
+    'The most endangered species of chipmunk is the Palmers genus.',
+    'Chipmunks are very talkative creatures, and they boast a distinct and unique way of talking to each other, often making bird-like noises. They also use many different gestures as a way of communicating with one another thats highly amusing to watch.',
+    'A single chipmunk can store up to 8lbs of food in a burrow.',
+    'Chipmunks are known to be very territorial around their burrows and nests. Their territory can extend up to ½ acre around the burrow but an adult chipmunk will only usually defend up to 50 ft from the entrance of their burrow when they have to.',
+    'Chipmunks have 4 toes on their back paws but 5 toes on their front ones!',
+    'Male chipmunks are called Bucks and females are referred to as Does.',
+    'Unlike other squirrels, chipmunks live mainly in the underground burrows. They can be 30 feet long and 3 feet wide. All burrows are divided in several sections: nursery, food storing chamber and resting area.')	
 
 COW_FACTS = (
     'There are well over 1 billion cattle in the world.',
@@ -1573,6 +1587,7 @@ ALL_FACTS = (
     CAMEL_FACTS,
     CHAMELEON_FACTS,
     CHEETAH_FACTS,
+    CHIPMUNK_FACTS,
     COW_FACTS,
     CRAB_FACTS,
     CROCODILE_FACTS,
