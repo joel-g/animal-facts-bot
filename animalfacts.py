@@ -233,6 +233,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('hamster', '\shamsters?\s', reddit, HAMSTER_FACTS, comment)
     botengine('hedgehog', '\shedgehogs?\s', reddit, HEDGEHOG_FACTS, comment)
     botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS, comment)
+    botengine('honeybee', '\shoney bees?\s', reddit, HONEYBEE_FACTS, comment)
     botengine('horse', '\shorses?\s', reddit, HORSE_FACTS, comment)
     botengine('hummingbird', '\shummingbirds?\s', reddit, HUMMINGBIRD_FACTS, comment)
     botengine('husky', '\s(husky|huskie)s?\s', reddit, HUSKY_FACTS, comment)
@@ -270,7 +271,8 @@ def check_comment_for_animal(comment, reddit):
     botengine('stingray', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
-    botengine('walrus', '\swalruss?\s', reddit, WALRUS_FACTS, comment)
+    botengine('walrus', '\swalrus\s', reddit, WALRUS_FACTS, comment)
+    botengine('wolf', '\swolf\s', reddit, WOLF_FACTS, comment)
     botengine('wallaby', '\s(wallaby|wallabie)s?\s', reddit, WALLABY_FACTS, comment)
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
     botengine('wolf', '\swolf\s', reddit, WOLF_FACTS, comment)
@@ -685,6 +687,22 @@ HIPPO_FACTS = (
     'A group of hippos in known as a ‘herd’, ‘pod’, ‘dale’ or ‘bloat’.',
     'Hippos typically live for around 45 years.',
 )
+
+HONEYBEE_FACTS = (
+    'The honey bee has been around for millions of years.',
+    'Honey bees, scientifically also known as Apis mellifera, which mean "honey-carrying bee", are environmentally friendly and are vital as pollinators.',
+    'Honey bee is the only insect that produces food eaten by man.',
+    'Honey is the only food that includes all the substances necessary to sustain life, including enzymes, vitamins, minerals, and water; and it\'s the only food that contains "pinocembrin", an antioxidant associated with improved brain functioning.',
+    'Honey bees have 6 legs, 2 compound eyes made up of thousands of tiny lenses (one on each side of the head), 3 simple eyes on the top of the head, 2 pairs of wings, a nectar pouch, and a stomach.',
+    'Honey bees have 170 odorant receptors, compared with only 62 in fruit flies and 79 in mosquitoes. Their exceptional olfactory abilities include kin recognition signals, social communication within the hive, and odor recognition for finding food. Their sense of smell is so precise that it could differentiate hundreds of different floral varieties and tell whether a flower carried pollen or nectar from meters away.',
+    'The honey bee\'s wings stroke incredibly fast, about 200 beats per second, thus making their famous, distinctive buzz. A honey bee can fly for up to six miles, and as fast as 15 miles per hour.',
+    'The average worker bee produces only about 1/12th teaspoon of honey in her lifetime. Doesn\'t this fact make you love every drop of honey? Read and you will understand why it makes so much sense to say: "as busy as a bee".',
+    'A hive of bees will fly 90,000 miles, the equivalent of three orbits around the earth to collect 1 kg of honey.',
+    'It takes one ounce of honey to fuel a bee\'s flight around the world (National Honey Board).',
+    'A honey bee visits 50 to 100 flowers during a collection trip.',
+    'The bee\'s brain is oval in shape and only about the size of a sesame seed (iflscience.com), yet it has remarkable capacity to learn and remember things and is able to make complex calculations on distance travelled and foraging efficiency.',
+    'A colony of bees consists of 20,000-60,000 honeybees and one queen. Worker honey bees are female, live for about 6 weeks and do all the work.',
+    'Each honey bee colony has a unique odour for members\' identification.'    )
 
 HORSE_FACTS = (
     'Horses can sleep both lying down and standing up.',
@@ -1253,6 +1271,37 @@ TURTLE_FACTS = (
     'Sea turtles have special glands which help remove salt from the water they drink.',
 )
 
+WALRUS_FACTS = (
+    'The scientific name for a walrus is Odobenus Rosmarus. It is latin for tooth walking sea-horse.',
+    'A male walrus is called a bull. A female walrus is called a cow. A baby walrus is called a calf.',
+    'Walruses spend half their time on land and the other half in water.',
+    'There are two sub-species of walruses. The Atlantic Walrus and the Pacific Walrus.',
+    'Walruses live in the Northern Hemisphere in the Arctic.',
+    'Atlantic Walruses live near Northern Canada to Greenland.',
+    'Walruses are grey or brown but turn a pinkish color as they age.',
+    'Walruses have thick skin and then a layer of blubber.  Their blubber keeps them warm in icy waters.',
+    'Walruses grow to be 7.5 pounds to 11.5ft. Walruses can weigh up to 4,000 pounds',
+    'Walruses whiskers are called vibrissae.',
+    'Walruses have 450 whiskers. Their whiskers are very sensitive and are used to help them locate food.',
+    'Walruses can hold their breath under water for up to 30 minutes.',
+    'Walruses live between 30-40 years in the wild.',
+    'Female Walruses give birth to their babies on land or on ice floes.',
+    'Baby walruses weigh between 100-165 pounds!',
+    'There are around 250,000 walruses left in the wild.',
+    'Walruses were hunted by humans for their blubber and ivory tusks.',
+    'Walruses weigh from 600 to 1,500 kilograms (1,320 to 3,300 lbs.) and can be as long as 3.2 meters (10.5 feet).',
+    'Walrus tusks can grow up to 3 feet (1 m). The tusks are canine teeth and stick out from either side of the animal’s mouth.',
+    'Walruses use their tusks to break through ice, and to assist in climbing out of the water and onto the ice. The animals also use their tusks to defend themselves from larger predators and to establish dominance and a hierarchy among walruses.',
+    'Walruses can swim on average around 4.35 mph (7 km/h) and as fast as 21.74 mph (35 km/h).',
+    'A group of walruses is called a herd. They gather by the hundreds to sunbathe on the ice. During mating season, walruses amass by the thousands.',
+    'Walruses are carnivores, but they aren’t ferocious hunters. The walrus’ favorite food is shellfish.',
+    'There are three subspecies of walrus. Atlantic walruses live in the coastal areas along northeastern Canada to Greenland. Pacific walruses live in the northern seas near Russia and Alaska. Laptev walruses live in the Laptev Sea of Russia.',
+    'In the 1950s, the population of walruses was almost eliminated due to commercial hunting, but the population was brought back to a thriving number in the 1980s.',
+    'Native people of the Arctic hunt walruses for hides, food, ivory and bones. These natives are now the only people who are allowed to legally hunt walruses.',
+    'Odobenus rosmarus, the walruses’ scientific name, is Latin for ‘tooth-walking sea-horse’.',
+    'Walruses have only two natural predators: the orca (or killer whale) and the polar bear. Both are more likely to hunt walrus calves than adults.')
+    )
+
 WALLABY_FACTS = (
     'A young wallaby is called Joey. The males are called Jack while the females are called Jill.',
     'Wallabies are part of the marsupial family, where the female raises the young in a pouch.'
@@ -1266,18 +1315,6 @@ WALLABY_FACTS = (
     'Wallabies are pink and furless at Birth.',
 )
 
-WALRUS_FACTS = (
-    'Walruses weigh from 600 to 1,500 kilograms (1,320 to 3,300 lbs.) and can be as long as 3.2 meters (10.5 feet).',
-    'Walrus tusks can grow up to 3 feet (1 m). The tusks are canine teeth and stick out from either side of the animal’s mouth.',
-    'Walruses use their tusks to break through ice, and to assist in climbing out of the water and onto the ice. The animals also use their tusks to defend themselves from larger predators and to establish dominance and a hierarchy among walruses.',
-    'Walruses can swim on average around 4.35 mph (7 km/h) and as fast as 21.74 mph (35 km/h).',
-    'A group of walruses is called a herd. They gather by the hundreds to sunbathe on the ice. During mating season, walruses amass by the thousands.',
-    'Walruses are carnivores, but they aren’t ferocious hunters. The walrus’ favorite food is shellfish.',
-    'There are three subspecies of walrus. Atlantic walruses live in the coastal areas along northeastern Canada to Greenland. Pacific walruses live in the northern seas near Russia and Alaska. Laptev walruses live in the Laptev Sea of Russia.',
-    'In the 1950s, the population of walruses was almost eliminated due to commercial hunting, but the population was brought back to a thriving number in the 1980s.',
-    'Native people of the Arctic hunt walruses for hides, food, ivory and bones. These natives are now the only people who are allowed to legally hunt walruses.',
-    'Odobenus rosmarus, the walruses’ scientific name, is Latin for ‘tooth-walking sea-horse’.',
-    'Walruses have only two natural predators: the orca (or killer whale) and the polar bear. Both are more likely to hunt walrus calves than adults.')
 
 WHALE_FACTS = (
     'Many whales are toothless. They use a plate of comb-like fibre called baleen to filter small crustaceans and other creatures from the water.',
@@ -1346,6 +1383,7 @@ ALL_FACTS = (
     HAMSTER_FACTS,
     HEDGEHOG_FACTS,
     HIPPO_FACTS,
+    HONEYBEE_FACTS,
     HORSE_FACTS,
     HUMMINGBIRD_FACTS,
     HUSKY_FACTS,
