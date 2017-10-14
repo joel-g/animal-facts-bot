@@ -33,6 +33,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * alligator
 * ant
 * badger
+* bat
 * beaver
 * camel
 * chameleon
