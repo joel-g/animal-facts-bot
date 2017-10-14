@@ -246,6 +246,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('llama', '\sllamas?\s', reddit, LLAMA_FACTS, comment)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
+    botengine('newt', '\snewts?\s', reddit, NEWT_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
     botengine('octopus', '\soctopus\s', reddit, OCTOPUS_FACTS, comment)
     botengine('orca', '\sorca?\s', reddit, ORCA_FACTS, comment)
@@ -874,6 +875,24 @@ NARWHAL_FACTS = (
     'The narwhal tusk—most commonly found on males—is actually an enlarged tooth with sensory capability and up to 10 million nerve endings inside. Some narwhals have up to two tusks, while others have none. The spiraled tusk juts from the head and can grow as long at 10 feet.'
     "A narwhal tusk's tough core and soft outer layer result in a tusk that is both strong and flexible. It can bend significantly without cracking.")
 
+NEWT_FACTS = (
+    'Newts are a type of salamander.',
+    'There are more than 100 known species of newts found in North America, Europe, North Africa, and Asia.',
+    'Unlike other members of the salamander family, Newts are semi-aquatic, spending part of their lives on land and part in the water.',
+    'During their terrestrial juvenile phase, newts are called "efts" (after the Old English name for newts).',
+    'At least once species of newt has gone extinct: the Yunnan lake newt.',
+    'The Old English name for the newt was "efte," which later became "euft" or "ewt(e)." The term "newt" came from merging in the article "an" (i.e. "an ewte" --> "a newt").',
+    'Newts can regenerate their limbs, eyes, spinal cords, hearts, intestines, and upper and lower jaws.',
+    'Newts are born as tadpoles, then undergo metamorphosis where they develop legs and their gills are absorbed and replaced by lungs.',
+    'Many newts produce toxins, and some produce enough to kill a human, but the toxins are only dangerous if ingested.',
+    'Newts are also known as Tritones in historical literature, after the mythological figure Triton.',
+    'Alhough newts have air-breathing lungs, they also absorb oxygen and other substances through their water-permeable skin.',
+    'The newt\'s thin, sensitive, water-permeable skin make it an excellent bioindicator (i.e. indicator of the health of an ecosystem or environment).',
+    'One of the characteristis distinguishing newts from other salamanders is its relatively rougher skin.',
+    'Several species of newt are considered threatened or endangered, including the Edough ribbed newt, Kaiser\'s spotted net, and the Montseny brook newt.',
+    'In the UK, it is illegal to catch, possess, or handle great crested newts without a license.'
+    )
+
 OCELOT_FACTS = (
     'Ocelot is two times bigger than domestic cat. It can reach 28 to 35 inches in length and between 24 and 35 pounds of weight. Males are bigger than females. Length of a tail measures half of the body size.',
     'Ocelots have beautiful fur which is the reason why people hunt them. Color of the fur is usually tawny, yellow or brown-grayish, covered with black rosettes and stripes.',
@@ -1395,6 +1414,7 @@ ALL_FACTS = (
     LLAMA_FACTS,
     MONKEY_FACTS,
     NARWHAL_FACTS,
+    NEWT_FACTS,
     OCELOT_FACTS,
     OCTOPUS_FACTS,
     ORCA_FACTS,
