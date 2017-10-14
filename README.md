@@ -79,6 +79,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * newt
 * ocelot
 * octopus
+* opossum
 * oryx
 * orca
 * otter
