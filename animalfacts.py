@@ -226,6 +226,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('fox', '\sfoxe?s?\s', reddit, FOX_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
     botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
+    botengine('goat', '\sgoats?\s', reddit, GOAT_FACTS, comment)
     botengine('goose', '\s(goose|geese)\s', reddit, GOOSE_FACTS, comment)
     botengine('gorilla', '\sgorillas?\s', reddit, GORILLA_FACTS, comment)
     botengine('hamster', '\shamsters?\s', reddit, HAMSTER_FACTS, comment)
@@ -244,6 +245,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
     botengine('octopus', '\soctopus?\s', reddit, OCTOPUS_FACTS, comment)
+    botengine('orca', '\sorca?\s', reddit, ORCA_FACTS, comment)
     botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
     botengine('owl', '\sowls?\s', reddit, OWL_FACTS, comment)
     botengine('parrot', '\sparrots?\s', reddit, PARROT_FACTS, comment)
@@ -258,12 +260,17 @@ def check_comment_for_animal(comment, reddit):
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
     botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
+    botengine('skunk', '\sskunks?\s', reddit, SKUNK_FACTS, comment)
     botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS, comment)
+    botengine('snail', '\ssnails?\s', reddit, SNAIL_FACTS, comment)
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
+  	botengine('squirrel', '\ssquirrels?\s', reddit, SQUIRREL_FACTS, comment)
+    botengine('stingray', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
-    botengine('wolf', '\swolf\s', reddit, WOLF_FACTS, comment)
+    botengine('walrus', '\swalrus?\s', reddit, WALRUS_FACTS, comment)
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
+    botengine('wolf', '\swolf\s', reddit, WOLF_FACTS, comment)
     botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS, comment)
 
 
@@ -577,6 +584,21 @@ GIRAFFE_FACTS = (
     'Giraffes have bluish-purple tongues which are tough and covered in bristly hair to help them with eating the thorny Acacia trees.',
 )
 
+GOAT_FACTS = (
+    'Goats are members of the Bovidae family, which also includes antelopes, cattle and sheep.',
+    'There are two types of goats: domestic goats (Capra hircus), which are raised and bred as farm animals; and mountain goats (Oreamnos americanus), which live in steep, rocky areas in the American Northwest.',
+    'There are about 200 breeds of domestic goat, according to the Smithsonian Institution.',
+    'Mountain goats are found in the Rocky Mountains, typically in Alaska, western Montana, central Idaho, South Dakota, Colorado and Washington. The wide spread of their cloven hooves allows them to climb steep mountain sides with ease.',
+    'Goats and sheep are different species, and there are several physical and behavioral differences.',
+    'Mountain goats can jump 12 feet (3.5 meters) in a single bound, according to National Geographic.',
+    'Mountain goats have bright white coats that help them blend into the snowy areas of their home ranges. Domestic goats have coats that are yellow, chocolate or black.',
+    'Goats were one of the first domesticated animals and were first domesticated around 9,000 years ago, according to the Smithsonian.',
+    'In bright light, the pupil in a goat\'s eye is rectangular rather than round.',
+    'Goat meat — called chevon or cabrito — is eaten all over the world.',
+    'More people consume goat milk than the milk from any other animal.',
+    'The phrase "Judas goat" is a term that has been used to describe a goat that is trained to herd other animals to slaughter while its own life is spared.',
+)
+
 GOOSE_FACTS = (
     'Some geese migrate every year. Others stay in the same place year round.',
     'Geese eat seeds, nuts, grass, plants and berries. They love blueberries.',
@@ -830,6 +852,27 @@ OCTOPUS_FACTS = (
     'Octopuses usually live for 6 - 18 months. Males only live a few months after mating, and females die of starvation shortly after their protected eggs hatch.',
     'Humans eat octopus in many cultures and it is also a popular fish bait.')
 
+ORCA_FACTS = (
+    "The orca's large size and strength make it among the fastest marine mammals, able to reach speeds in excess of 55 km/h.",
+    "Many orcas live with their mothers for their entire lives.",
+    "The orca is not a fish, but a mammal. However it is not a whale, as it is part of the dolphin family.",
+    "The largest orca caught was 10 meters long and weighted 10 tons, as heavy as an African elephant.",
+    "Orcas live in groups of related females, led by the oldest female, called pods. A pod can have as few as three members or as many as a hundred or more.",
+    "Orcas do not have smelling organs or a lobe in the brain dedicated to smelling, so it is believed they cannot smell.",
+    "Orcas can sleep with one eye open, like dolphins, as they cannot completely go to sleep, having to go to the surface to get air from time to time.",
+    "In captivity, an orca's dorsal fin often flops. This is possible as the fin is not made up of bones, but of large connective tissue."
+    "Orcas are the most widely distributed animals in the world, not counting humans. They can be found in all oceans, both in warm and cold waters and even in freezing waters.",
+    "The oldest known orca lived to be 103.",
+    "There is no record of a wild orca ever attacking a human.",
+    "There are fifty-two orcas in captivity all over the world.",
+    "Mother orcas give birth every three to ten years, after a 17-month pregnancy.",
+    "In Argentina, orcas hurl themselves on-shore to grab sea lion pups.",
+    "Whalers call the orca the 'killer of whales'. It preys on sperm, gray, fin, humpback and other whales.",
+    "Orcas can weigh up to 6 tons.",
+    "An orca's teeth can grow to be 4 inches (10 cm) long.",
+    "The orca can reach speeds in excess of 30 knots (about 34 mph, or 56 kph)."
+    )
+
 OTTER_FACTS = (
     'The otter is a carnivorous mammal in a branch of the weasel family called Lutrinae.',
     'There are 13 species of otter found all around the world.',
@@ -1034,12 +1077,21 @@ SKUNK_FACTS = (
     'Skunks often attack beehive because they eat honeybees.',
     'Before it sprays the victim, skunk will turn its back, lift its tail, start hissing and stumping with its feet. Those are the warning signs that precede spraying.',
     'Skunk can spray its oily and smelly substance up to 10 feet distance.',
-    'Their worst enemies are coyotes, bobcats and owls.',
-    'Skunks can survive a snake bite.',
-    'They have poor eyesight, but they have excellent sense of smell and hearing.',
-    'During mating season, one male with get in touch with more females.',
+    "Skunks's worst predators are coyotes, bobcats and owls.",
     'Skunks live up to 3 years in the wild. They can survive up to 10 years in captivity.',
     'Skunk can transmit rabies.'
+    'Skunks are typically around the size of house cats. They grow to 8 to 19 inches long and weigh around 7 ounces to 14 lbs.',
+    'Skunks appeared 40 million years ago, evolving from common ancestors with weasels and polecats.',
+    'Skunks are found in the United States, Canada, South America and Mexico.',
+    'Skunks live in forest edges, woodlands, grasslands and deserts. They typically make their homes in abandoned burrows, but will also live in abandoned buildings, under large rocks and in hollow logs.',
+    'Though they typically prefer to dine on insects and grubs, skunks are omnivores, consuming a vast diet of both plant and animal matter. Skunks are opportunistic eaters, and their diets are flexible, often shifting with the seasons.',
+    'Skunks have strong forefeet and long nails, which make them excellent diggers. When no other form of shelter is available they may even burrow underneath buildings by entering foundation openings.',
+    'Skunks are known to release a powerful smell through their anal glands when threatened. Skunks will usually only attack when cornered or defending their young, and spraying is not the first method of defense. A skunk will growl, spit, fluff its fur, shake its tail, and stamp the ground.',
+    'Although skunks have very poor eyesight, they have excellent senses of smell and hearing.',
+    'Skunks are nocturnal, which means they search for food at night and sleep in dens lined with leaves during the day.',
+    'Skunks are slow and can run only 10 miles per hour.',
+    'Skunks are immune to rattlesnake venom, bee stings and scorpions.',
+    'Females can bear 3-10 young and male skunks reach sexual maturity from 4-6 months after birth while females reach sexual maturity nine months to a year after birth.'
     )
 
 SLOTH_FACTS = (
@@ -1059,6 +1111,23 @@ SLOTH_FACTS = (
     'It used to be thought sloths slept for 15 to 20 hours a day. However, its now believed they only sleep around 10 hours a day.',
     'In the wild, sloths live on average 10 - 16 years and in captivity over 30 years.',
 )
+
+SNAIL_FACTS = (
+    'Snails are gastropod mollusks, members of the ‘phylum Mollusca’ and the class ‘Gastropoda’.',
+    'Snails have no back bone. When they feel threatened, they usually retreat into their shell to protect themselves.',
+    'The largest land snail is the ‘Achatina achatina’, the Giant African Snail.',
+    'Some land snails feed on other terrestrial snails.',
+    'Most snails live from 2 to 5 years, but in captivity, some have exceeded 10 or 15 years of age.',
+    'The mucus of the garden snail is used to treat wrinkles, spots, and scars on the skin.',
+    'Most snail species are hermaphrodites, so they have both male and female reproductive organs.',
+    'The speed of snails is around 0.5-0.8 inches per second. If they moved without stopping, it would take more than a week to complete 1 kilometer.',
+    'Snails do not change shells when they grow up. Instead, the shell grows along with them.',
+    'Snails host several types of parasites that, while may not kill them, they are capable of affecting or killing their predators or animals that eat the snails. Even humans who eat poorly cooked snails can become seriously ill.',
+    'A single garden snail (Helix aspersa) can have up to 430 hatchlings after a year.', 
+    'Many snails are in danger of extinction. Among these are the species ‘Aaadonta constricta’ and ‘Aaadonta fuscozonata’, and others of the ‘genus Aaadonta’ and ‘Achatinella’ are in critical danger of extinction.',
+    'The size of the shell of a snail reflects its age.',
+    'Land snails do not chew their food. They scrape it.',
+    'Calcium carbonate is the main component of the snail shells.')
 
 SNAKE_FACTS = (
     'Snakes don’t have eyelids.',
@@ -1090,6 +1159,35 @@ SQUID_FACTS = (
     'Giant squid mostly eat deep water fishes and other squids including other giant squids.',
     'The only predators that giant squid have are sperm whales.')
 
+SQUIRREL_FACTS = (
+    'In fall, squirrels bury more food than they will recover.',
+    'Squirrels can find food buried beneath a foot of snow.',
+    'A squirrel’s front teeth never stop growing.',
+    'Squirrels may lose 25% of their buried food to thieves.',
+    'Squirrels zigzag to escape predators.',
+    'Squirrels may pretend to bury a nut to throw off potential thieves.',
+    'A newborn squirrel is about an inch long.',
+    'Humans introduced squirrels to most of our major city parks.',
+    'Squirrels are acrobatic, intelligent and adaptable.',
+    'Squirrels get bulky to stay warm during the winter.',
+    'Squirrels don’t dig up all of their buried nuts, which results in more trees!')
+	
+STINGRAY_FACTS = (
+     'Stingrays are diverse group of fish characterized by flattened bodies.',
+     'The largest species of stingray measure 6.5 feet in length and can weigh up to 790 pounds.',
+     'Stingrays are closely related to sharks. Stingrays don’t have bones.',
+     'Stringrays flattened body ends with long tail that usually contains spine and venom. Spines can be serrated in some species.',
+     'There are more than 70 Species of stingray.',
+     'Stringray mouths are located on the bottom side of their body. When they catch clams, shrimps, and mussels, they will crash and eat them using their powerful jaws.',
+     'Stringray`s long tails usually have a spine and venom.',
+     'Stingrays Use camouflage for protection and hunting.',
+     'Stingrays don’t use their eyes to find prey. They use their electro-sensors to locate their prey',
+     'Stingrays are solitary, but can also live in groups.',
+     'Stingrays have a lifespan of 15-25 years.',
+     'Stringrays can be found in oceans in tropical and subtropical areas around the world. Stingrays like warm and shallow water.',
+     'Stingrays are found both in freshwater and ocean.',
+     'Stingrays give birth to 2-6 young stingrays each year.',
+     'Baby stingrays are born fully developed; they look like miniature versions of adult animals. Babies take care of themselves from the moment of birth.')
 
 TIGER_FACTS = (
     'The tiger is the biggest species of the cat family.',
@@ -1124,15 +1222,28 @@ TURTLE_FACTS = (
 WALLABY_FACTS = (
     'A young wallaby is called Joey. The males are called Jack while the females are called Jill.',
     'Wallabies are part of the marsupial family, where the female raises the young in a pouch.'
-    'There are 30 different species of wallabies and are all native to Australia and Tasmania.',
+    'There are 30 different species of wallabies and all are native to Australia and Tasmania.',
     'The average lifespan of a wallaby is from 9 - 15 years.',
     'A group of wallabies is known as a ‘mob’.',
     'A female typically gives birth to a single wallaby and in very rare cases, twins. The gestation period is one month.',
-    'They have strong back legs that help them hop and move about powerfully. The forearms of the wallaby are small and used mainly for balancing or for feeding.',
+    'Wallabies have strong back legs that help them hop and move about powerfully. The forearms of the wallaby are small and used mainly for balancing or for feeding.',
     'An adult wallaby weighs about 15 – 26 kg. The males are 77-88 cm in height and the females are about 70-84 cm tall. Their tail is 80 cm long, which is almost the length of their entire body. They use their tail to balance and jump around. They also use it to prop into a sitting position.',
     'Wallabies are herbivores and eat mainly roots, grass, tree leaves and ferns. They rest during the day and are active mainly at night.',
-    'Wallabies are Pink and Furless at Birth.',
+    'Wallabies are pink and furless at Birth.',
 )
+
+WALRUS_FACTS = (
+    'Walruses weigh from 600 to 1,500 kilograms (1,320 to 3,300 lbs.) and can be as long as 3.2 meters (10.5 feet).',
+    'Walrus tusks can grow up to 3 feet (1 m). The tusks are canine teeth and stick out from either side of the animal’s mouth.',
+    'Walruses use their tusks to break through ice, and to assist in climbing out of the water and onto the ice. The animals also use their tusks to defend themselves from larger predators and to establish dominance and a hierarchy among walruses.',
+    'Walruses can swim on average around 4.35 mph (7 km/h) and as fast as 21.74 mph (35 km/h).',
+    'A group of walruses is called a herd. They gather by the hundreds to sunbathe on the ice. During mating season, walruses amass by the thousands.',
+    'Walruses are carnivores, but they aren’t ferocious hunters. The walrus’ favorite food is shellfish.',
+    'There are three subspecies of walrus. Atlantic walruses live in the coastal areas along northeastern Canada to Greenland. Pacific walruses live in the northern seas near Russia and Alaska. Laptev walruses live in the Laptev Sea of Russia.',
+    'In the 1950s, the population of walruses was almost eliminated due to commercial hunting, but the population was brought back to a thriving number in the 1980s.',
+    'Native people of the Arctic hunt walruses for hides, food, ivory and bones. These natives are now the only people who are allowed to legally hunt walruses.',
+    'Odobenus rosmarus, the walruses’ scientific name, is Latin for ‘tooth-walking sea-horse’.',
+    'Walruses have only two natural predators: the orca (or killer whale) and the polar bear. Both are more likely to hunt walrus calves than adults.')
 
 WHALE_FACTS = (
     'Many whales are toothless. They use a plate of comb-like fibre called baleen to filter small crustaceans and other creatures from the water.',
@@ -1193,6 +1304,7 @@ ALL_FACTS = (
     FROG_FACTS,
     ELEPHANT_FACTS,
     GIRAFFE_FACTS,
+    GOAT_FACTS,
     GOOSE_FACTS,
     GORILLA_FACTS,
     HAMSTER_FACTS,
@@ -1211,6 +1323,7 @@ ALL_FACTS = (
     NARWHAL_FACTS,
     OCELOT_FACTS,
     OCTOPUS_FACTS,
+    ORCA_FACTS,
     OTTER_FACTS,
     OWL_FACTS,
     PANDA_FACTS,
@@ -1225,12 +1338,18 @@ ALL_FACTS = (
     SCORPION_FACTS,
     SEAGULL_FACTS,
     SHARK_FACTS,
+    SKUNK_FACTS,
     SLOTH_FACTS,
+    SNAIL_FACTS,
     SNAKE_FACTS,
+	  SQUIRREL_FACTS,
+    STINGRAY_FACTS,
     TIGER_FACTS,
     TURTLE_FACTS,
-    WOLF_FACTS,
+    WALLABY_FACTS,
+    WALRUS_FACTS,
     WHALE_FACTS,
+    WOLF_FACTS,
     ZEBRA_FACTS
 )
 
