@@ -1412,11 +1412,11 @@ SNAKE_FACTS = (
     'Python reticulates can grow over 8.7 m (28 ft) in length and are considered the longest snakes in the world.')
 
 STARFISH_FACTS = (
-    'Starfish have no brain and no blood.',,
+    'Starfish have no brain and no blood.',
     'There are around 2,000 species of sea star.',
     'Starfish usually have five arms and they can regenerate them.',
     'Starfish cannot survive in fresh water.',
-    'Starfish can eat inside out!',
+    'Starfish can eat inside out.',
     'Starfish can move using their tube feet',
     'Starfish have eyes.',)
 
