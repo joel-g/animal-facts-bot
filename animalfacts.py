@@ -201,7 +201,7 @@ def botengine(animal, regex, reddit, facts, comment):
                     else:
                         print('     Already commented on this!\n')
 
-# ANIMALS = ('alligator', 'ant', 'beaver', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'parrot', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
+# ANIMALS = ('alligator', 'ant', 'beaver', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala','lynx', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'parrot', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
 
 
 def check_comment_for_animal(comment, reddit):
@@ -246,6 +246,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
+    botengine('lynx', '\slynxs?\s', reddit, LYNX_FACTS, comment)
     botengine('leopard', '\sleopards?\s', reddit, LEOPARD_FACTS, comment)
     botengine('lizard', '\slizards?\s', reddit, LIZARD_FACTS, comment)
     botengine('lobster', '\slobsters?\s', reddit, LOBSTER_FACTS, comment)
@@ -884,6 +885,27 @@ LEOPARD_FACTS = (
     'When a female leopard is ready to mate she will give a scent and rub her body on the trees to leave her smell there. Male leopards either smell the females scent or hear her call to know that she is ready to mate.',
     'Some people believe that the bones and whiskers of leopards can heal sick people. Many leopards are killed each year for their fur and body parts and this is one reason why the leopard is an endangered animal. While they were previously found in the wild in a number of areas around the world, their habitat is largely restricted to sub-Saharan Africa with small numbers also found in India, Pakistan, Malaysia, China and Indochina.'
 )
+LYNX_FACTS = (   
+ 
+'The Eurasian lynx is one of the widest ranging cats in the world and can be found in the forests of western Europe, Russia and central Asia.',
+
+'These fur-ocious felines are the largest of the lynx species, and the third largest predator in Europe after the brown bear and the wolf.',
+
+'These incredible cats are strict carnivores, feeding mostly on ungulates (hoofed mammals) such as deer. When food is scarce they also eat smaller prey like hares, foxes and rabbits.',
+
+'lynx can be considered quite a secretive creature. The sounds it makes are very low and often not heard, and their presence in an area can go unnoticed for years',
+
+'Come meal time, the lynx stalks its prey from the cover of thick vegetation. It then pounces on its unsuspecting lunch, delivering a fatal bite to the neck or snout.',
+
+'The Eurasian lynx distinctive features are its black tufts at the tips of its ears and a long white facial ruff. It has grey, rusty or red fur which grows thicker in winter. Its coat is also patterned, almost always with dark spots.',
+
+'Although they may hunt during the day (particularly when food is scarce), the Eurasian lynx is mainly nocturnal or crepuscular (active during dawn and dusk). They spend the day sleeping in dense vegetation.',
+
+'lynx measures around 90-110cm in length, and around 60 -70cm in height.',
+
+'In the wild, the Eurasian lynx can survive up to 17 years. Captive Eurasian lynx in sanctuaries have been known to live to up to 24 years.',
+    )
+
 
 LION_FACTS = (
     'Lions are the second largest big cat species in the world (behind tigers).',
@@ -1642,6 +1664,7 @@ ALL_FACTS = (
     KOALA_FACTS,
     LEOPARD_FACTS,
     LION_FACTS,
+    LNYX_FACTS,
     LIZARD_FACTS,
     LOBSTER_FACTS,
     LLAMA_FACTS,
