@@ -276,6 +276,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS, comment)
     botengine('snail', '\ssnails?\s', reddit, SNAIL_FACTS, comment)
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
+    botengine('tarantula', '\starantulas?\s', reddit, TARANTULA_FACTS, comment)
     botengine('squirrel', '\ssquirrels?\s', reddit, SQUIRREL_FACTS, comment)
     botengine('stingray', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
@@ -1402,6 +1403,22 @@ STINGRAY_FACTS = (
      'Stingrays give birth to 2-6 young stingrays each year.',
      'Baby stingrays are born fully developed; they look like miniature versions of adult animals. Babies take care of themselves from the moment of birth.')
 
+TARANTULA_FACTS = (
+    'Female tarantulas can live 30 years or longer in the wild.',
+    'The largest tarantulas have a leg span the size of a dinner table.',
+    'Tarantulas are quite docile and rarely bite people.',
+    'Tarantulas defend themselves by throwing needle-like hairs at their attackers.',
+    'A fall can be fatal for a tarantula.',
+    'Tarantulas have retractable claws on each leg, much alike a cat.',
+    'Though tarantulas do not spin webs, they do use silk',
+    'Most tarantulas wander during the summer months.',
+    'Tarantulas cannot regenerate lost legs.',
+    "Because tarantulas molt throughout their lives, replacing their exoskeletons as they grow, they have the ability to repair any damage they've sustained.",
+    'If a tarantula does feel threatened, it uses its hind legs to scrape barbed hairs from its abdomen and flings them in the direction of the threat.',
+    'Tarantulas do not use webs to capture prey, they do it the hard way – hunting on foot. ',
+    'Like other spiders, tarantulas paralyze their prey with venom, then use digestive enzymes to turn the meal into a soupy liquid.',
+    'Since falls can be so dangerous for tarantulas, it is important for them to get a good grip when climbing.')
+
 TIGER_FACTS = (
     'The tiger is the biggest species of the cat family.',
     'Tigers can reach a length of up to 3.3 meters (11 feet) and weigh as much as 300 kilograms (660 pounds).',
@@ -1594,6 +1611,7 @@ ALL_FACTS = (
     SNAKE_FACTS,
     SQUIRREL_FACTS,
     STINGRAY_FACTS,
+    TARANTULA_FACTS,
     TIGER_FACTS,
     TURTLE_FACTS,
     WALLABY_FACTS,
