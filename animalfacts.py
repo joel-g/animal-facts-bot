@@ -201,13 +201,14 @@ def botengine(animal, regex, reddit, facts, comment):
                     else:
                         print('     Already commented on this!\n')
 
-# ANIMALS = ('alligator', 'ant', 'beaver', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'parrot', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
+# ANIMALS = ('alligator', 'ant', 'bat', 'beaver', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'parrot', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
 
 
 def check_comment_for_animal(comment, reddit):
     botengine('albatross', '\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
     botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
+    botengine('bat', '\sbats?\s', reddit, BAT_FACTS, comment)
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
@@ -360,6 +361,20 @@ BADGER_FACTS = (
     'Badgers were eaten in Britain during World War II and were once part of the Native American and settlers diets in the US. Russia still eats badger meat today.',
     "Badgers have featured in lots of British literature over the years, such as Brian Jacques' Redwall series, 'Tommy Brock' in Beatrix Potter's The Tale of Mr. Tod, 'Bill Badger' in Mary Tourtel's Rupert Bear, 'Mr. Badger' in Kenneth Grahame's The Wind in the Willows and 'Trufflehunter' in C. S. Lewis's Chronicles of Narnia."
 )
+
+BAT_FACTS = (   
+  
+   'Bats can live more than 30 years and can fly at speeds of up to 60 mph.',
+   'Bats can find their food in total darkness. They locate insects by emitting inaudible high-pitched sounds, 10-20 beeps per second and listening to echoes.',
+   'Many bats eat insects. Bats can eat up to 1,200 mosquitoes in an hour and often consume their body weight in insects every night, helping keep bug populations in check.',
+   'Some bats migrate south for the winter, while others hibernate through the cold winter months. During hibernation, bats can survive in freezing temperatures, even after being encased in ice.',
+   'Most bats have only one pup a year, making them extremely vulnerable to extinction. Bat mothers can find their babies among thousands or millions of other bats by their unique voices and scents.',
+   'Bat droppings, called guano, are one of the richest fertilizers. Bat guano was once a big business. Guano was Texas's largest mineral export before oil.',
+   'Bats make up a quarter of all mammals. Yep, you read that right. A quarter of all mammals are bats. There are more than 1,100 species of bats in the world. That's a lot of bats.',
+   
+
+    )
+
 
 BEAVER_FACTS = (
     'There are two species of beaver. The European or Eurasian beaver (Castor fiber) and the North American beaver (Castor canadensis).',
@@ -1605,6 +1620,7 @@ ALL_FACTS = (
     ALLIGATOR_FACTS,
     ANT_FACTS,
     BADGER_FACTS,
+    BAT_FACTS,
     BEAVER_FACTS,
     CAMEL_FACTS,
     CHAMELEON_FACTS,
