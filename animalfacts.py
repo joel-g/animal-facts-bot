@@ -1,4 +1,4 @@
-import re
+﻿import re
 import praw
 import random
 import time
@@ -229,6 +229,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
     botengine('fox', '\sfox(es)?\s', reddit, FOX_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
+    botengine('gazelle', '\sgazelles?\s', reddit, GAZELLE_FACTS, comment)
     botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
     botengine('grasshopper', '\sgrasshoppers?\s', reddit, GRASSHOPPER_FACTS,comment)
     botengine('goat', '\sgoats?\s', reddit, GOAT_FACTS, comment)
@@ -634,6 +635,17 @@ FROG_FACTS = (
     'Frogs in the wild face many dangers and are lucky to survive several years. In captivity however, frogs can live for much longer.',
     'Frogs can see forwards, sideways and upwards all at the same time. They never close their eyes, even when they sleep.',
     "Remarkably, frogs actually use their eyes to help them swallow food. When the frog blinks, its eyeballs are pushed downwards creating a bulge in the roof of its mouth. This bulge squeezes the food inside the frog's mouth down the back of its throat."
+)
+
+GAZELLE_FACTS = (
+    'A gazelle can run up to 60 miles per hour.',
+    'Baby gazelles are called calves or fawns.',
+    'Depending on the species, adult gazelles range in weight from 26 pounds to 165 pounds.',
+    'Gazelles use a bounding leap when running called "pronking" or "stotting".',
+    'When pregnant, gazelles carry their young for about six months before giving birth.',
+    'The name "gazelle" comes from an Arabic poetic form.',
+    'Gazelles generally live up to 10 to 12 years.',
+    'To evade predators, gazelles may zigzag rather than running in a straight line.'
 )
 
 GIRAFFE_FACTS = (
@@ -1624,6 +1636,7 @@ ALL_FACTS = (
     FOX_FACTS,
     FROG_FACTS,
     ELEPHANT_FACTS,
+    GAZELLE_FACTS,
     GIRAFFE_FACTS,
     GRASSHOPPER_FACTS,
     GOAT_FACTS,
