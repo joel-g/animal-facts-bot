@@ -72,6 +72,8 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * jellyfish
 * kangaroo
 * koala
+* lion
+* lemur
 * leopard
 * lion
 * lizard
