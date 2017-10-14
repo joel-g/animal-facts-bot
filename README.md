@@ -67,6 +67,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * horse
 * hummingbird
 * husky
+* iguana
 * jellyfish
 * kangaroo
 * koala

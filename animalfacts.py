@@ -200,10 +200,6 @@ def botengine(animal, regex, reddit, facts, comment):
                     else:
                         print('     Already commented on this!\n')
 
-
-# ANIMALS = ('alligator', 'ant', 'beaver', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'parrot', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
-
-
 def check_comment_for_animal(comment, reddit):
     botengine('albatross', '\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
@@ -243,6 +239,8 @@ def check_comment_for_animal(comment, reddit):
     botengine('horse', '\shorses?\s', reddit, HORSE_FACTS, comment)
     botengine('hummingbird', '\shummingbirds?\s', reddit, HUMMINGBIRD_FACTS, comment)
     botengine('husky', '\shusk(y|ies)\s', reddit, HUSKY_FACTS, comment)
+    botengine('husky', '\s(husky|huskie)s?\s', reddit, HUSKY_FACTS, comment)
+    botengine('iguana', '\siguanas?\s', reddit, IGUANA_FACTS, comment)
     botengine('jellyfish', '\sjellyfish(es)\s', reddit, JELLYFISH_FACTS, comment)
     botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
@@ -874,6 +872,18 @@ HUSKY_FACTS = (
     'When diptheria broke out in Nome, Alaska in 1925, a sled dog team led by the husky, Balto, transported medicine to the town before the epidemic could spread any further. The dogs made the trip during a blizzard, braving strong winds and temperatures as low as -23 degrees Fahrenheit.',
     'They\'re good dogs, Brent.',
     )
+
+IGUANA_FACTS = (
+    'Green iguanas can survive 40 foot falls.',
+    'Iguanas can live between 4 and 60 years!',
+    'The heaviest iguana is the blue iguana weighing upwards of 30 lbs/14 kilograms.',
+    'Often great swimmers, iguanas typically live near water so that they can safely swim away from danger.',
+    'Don\'t even try to beat iguanas at this task: holding their breath. Iguanas can hold their breath a very long time. Around 45 minutes, in fact!',
+    'Green iguanas can vary in color more than just green, like blue, purple, or orange.',
+    'Iguanas absorb water through their skin.',
+    'After female iguanas lay their eggs, she never returns. Bye Mom!',
+    'Iguanas are mainly herbivorous.') 
+ 
 
 JELLYFISH_FACTS = (
     'Jellyfish live in the sea and are found in all oceans.',
@@ -1720,6 +1730,7 @@ ALL_FACTS = (
     HORSE_FACTS,
     HUMMINGBIRD_FACTS,
     HUSKY_FACTS,
+    IGUANA_FACTS,
     JELLYFISH_FACTS,
     KANGAROO_FACTS,
     KOALA_FACTS,
