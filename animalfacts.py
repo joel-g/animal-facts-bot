@@ -270,6 +270,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
     botengine('platypus', '\splatypuse?s?\s', reddit, PLATYPUS_FACTS, comment)
+    botengine('puma', '\spuma?s?\s', reddit, PUMA_FACTS, comment)
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
@@ -437,7 +438,7 @@ CHIPMUNK_FACTS = (
     'Chipmunks are known to be very territorial around their burrows and nests. Their territory can extend up to ½ acre around the burrow but an adult chipmunk will only usually defend up to 50 ft from the entrance of their burrow when they have to.',
     'Chipmunks have 4 toes on their back paws but 5 toes on their front ones!',
     'Male chipmunks are called Bucks and females are referred to as Does.',
-    'Unlike other squirrels, chipmunks live mainly in the underground burrows. They can be 30 feet long and 3 feet wide. All burrows are divided in several sections: nursery, food storing chamber and resting area.')	
+    'Unlike other squirrels, chipmunks live mainly in the underground burrows. They can be 30 feet long and 3 feet wide. All burrows are divided in several sections: nursery, food storing chamber and resting area.')
 
 COW_FACTS = (
     'There are well over 1 billion cattle in the world.',
@@ -509,7 +510,7 @@ DINGO_FACTS = (
     'Dingoes have permanently erect ears.',
     'Dingoes arrived in Australia from the Asian mainland about 5,000 years ago.',
     'Dingoes live to five or six years of age in the wild and fifteen years in captivity.')
-	
+
 DOLPHIN_FACTS = (
     'Compared to other animals, dolphins are believed to be very intelligent.',
     'The Killer Whale (also known as Orca) is actually a type of dolphin.',
@@ -1239,6 +1240,21 @@ PLATYPUS_FACTS = (
     "Platypuses is the correct plural form, although platypi and platypodes are also accepted."
     )
 
+PUMA_FACTS = (
+    'The puma concolor is also known as cougar and montain lion, but is referred to as puma by most scientists.',
+    'Pumas are member of the felinae family, they are the largest of small cats.',
+    'Pumas are fast, they can run up to 80kph (50mph).',
+    'In the wild, pumas live up to 13 years.',
+    'In captivity, pumas live up to 20 years.',
+    'Unlike cats, pumas cannot roar.',
+    'Baby pumas are called cubs and born after a period of gestation of approximately 91 days.'
+    'From head to tail, puma\'s size varies between 1.5 and 2.7 meters (5 and 9 feet).',
+    'Pumas can live anywhere, in montain, desert or even sea-level, once there is shelter and prey.',
+    'Puma are obligated carnivores (like all cats), they need to feed on meat to survive.',
+    'Cubs born blind, they rely exclusively on their mother and begin to hunt after six months.',
+    'Cubs begin to be weaned around three months of age.'
+)
+
 RABBIT_FACTS = (
     'A rabbit’s teeth never stop growing, which is why it is very important to provide chews and treats for them to keep their teeth from becoming overgrown.',
     'Rabbits have 28 teeth.',
@@ -1374,7 +1390,7 @@ SNAIL_FACTS = (
     'The speed of snails is around 0.5-0.8 inches per second. If they moved without stopping, it would take more than a week to complete 1 kilometer.',
     'Snails do not change shells when they grow up. Instead, the shell grows along with them.',
     'Snails host several types of parasites that, while may not kill them, they are capable of affecting or killing their predators or animals that eat the snails. Even humans who eat poorly cooked snails can become seriously ill.',
-    'A single garden snail (Helix aspersa) can have up to 430 hatchlings after a year.', 
+    'A single garden snail (Helix aspersa) can have up to 430 hatchlings after a year.',
     'Many snails are in danger of extinction. Among these are the species ‘Aaadonta constricta’ and ‘Aaadonta fuscozonata’, and others of the ‘genus Aaadonta’ and ‘Achatinella’ are in critical danger of extinction.',
     'The size of the shell of a snail reflects its age.',
     'Land snails do not chew their food. They scrape it.',
@@ -1446,7 +1462,7 @@ SQUIRREL_FACTS = (
     'Squirrels are acrobatic, intelligent and adaptable.',
     'Squirrels get bulky to stay warm during the winter.',
     'Squirrels don’t dig up all of their buried nuts, which results in more trees!')
-	
+
 STINGRAY_FACTS = (
      'Stingrays are diverse group of fish characterized by flattened bodies.',
      'The largest species of stingray measure 6.5 feet in length and can weigh up to 790 pounds.',
@@ -1514,7 +1530,7 @@ WALLABY_FACTS = (
     'Wallabies are members of the kangaroo clan found primarily in Australia and on nearby islands.',
     'Wallabies are marsupials or pouched mammals. Wallaby young are defenseless and develop in the pouch of their mother.',
     'The largest wallabies can reach 6 feet from head to tail.',
-    'Wallabies have powerful hind legs they use to bound along at high speeds and jump great distances.',    
+    'Wallabies have powerful hind legs they use to bound along at high speeds and jump great distances.',
     'Wallabies are herbivores and eat mainly roots, grass, tree leaves and ferns. They rest during the day and are active mainly at night.',
     'Nail-tailed wallabies are so-named because of the sharp growth at the end of their tails.',
     'When wallabies fight, they use their hind legs to deliver powerful kicks.',
@@ -1665,6 +1681,7 @@ ALL_FACTS = (
     PIG_FACTS,
     PIGEON_FACTS,
     PLATYPUS_FACTS,
+    PUMA_FACTS,
     RABBIT_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,
