@@ -264,6 +264,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS, comment)
     botengine('snail', '\ssnails?\s', reddit, SNAIL_FACTS, comment)
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
+  	botengine('squirrel', '\ssquirrels?\s', reddit, SQUIRREL_FACTS, comment)
     botengine('stingray', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
@@ -1153,7 +1154,19 @@ SQUID_FACTS = (
     'Giant squid mostly eat deep water fishes and other squids including other giant squids.',
     'The only predators that giant squid have are sperm whales.')
 
-
+SQUIRREL_FACTS = (
+	'In fall, squirrels bury more food than they will recover.',
+	'Squirrels can find food buried beneath a foot of snow.',
+	'A squirrel’s front teeth never stop growing.',
+	'Squirrels may lose 25% of their buried food to thieves.',
+	'Squirrels zigzag to escape predators.',
+	'Squirrels may pretend to bury a nut to throw off potential thieves.',
+	'A newborn squirrel is about an inch long.',
+	'Humans introduced squirrels to most of our major city parks.',
+	'Squirrels are acrobatic, intelligent and adaptable.',
+	'Squirrels get bulky to stay warm during the winter.',
+	'Squirrels don’t dig up all of their buried nuts, which results in more trees!')
+	
 STINGRAY_FACTS = (
      'Stingrays are diverse group of fish characterized by flattened bodies.',
      'The largest species of stingray measure 6.5 feet in length and can weigh up to 790 pounds.',
@@ -1169,9 +1182,7 @@ STINGRAY_FACTS = (
      'Stringrays can be found in oceans in tropical and subtropical areas around the world. Stingrays like warm and shallow water.',
      'Stingrays are found both in freshwater and ocean.',
      'Stingrays give birth to 2-6 young stingrays each year.',
-     'Baby stingrays are born fully developed; they look like miniature versions of adult animals. Babies take care of themselves from the moment of birth.'
-     
-     )
+     'Baby stingrays are born fully developed; they look like miniature versions of adult animals. Babies take care of themselves from the moment of birth.')
 
 TIGER_FACTS = (
     'The tiger is the biggest species of the cat family.',
@@ -1313,6 +1324,7 @@ ALL_FACTS = (
     SLOTH_FACTS,
     SNAIL_FACTS,
     SNAKE_FACTS,
+	  SQUIRREL_FACTS,
     STINGRAY_FACTS,
     TIGER_FACTS,
     TURTLE_FACTS,
