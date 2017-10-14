@@ -808,6 +808,17 @@ HUSKY_FACTS = (
     'When diptheria broke out in Nome, Alaska in 1925, a sled dog team led by the husky, Balto, transported medicine to the town before the epidemic could spread any further. The dogs made the trip during a blizzard, braving strong winds and temperatures as low as -23 degrees Fahrenheit.',
     'They\'re good dogs, Brent.')
 
+IBEX_FACTS = (
+    'Ibex are wild goats that live in the mountainous regions of Europe, north central Asia and northern Africa.',
+    'There are five species of ibex, according to the Integrated Taxonomic Information System (ITIS).',
+    'They have long, curved horns and cloven hooves.',
+    'Ibex are related to antelopes, buffalo, bison, cattle, goats and sheep.',
+    'Ibex are typically about 1 to 5.5 feet (30 to 170 centimeters) from their hooves to withers, the highest part of the shoulders at the base of the neck.',
+    'Both male and female ibex have very long horns, which are used for territorial defense and sexual selection.',
+    'Ibex are herbivores; they only eat vegetation, such as shrubs, bushes and grasses.',
+    'Ibex make their homes on cliffs that would be dangerous for predators.',
+    'Ibex are very nimble. They can jump more than 6 feet (1.8 meters) straight up without a running start. This helps them climb mountainous terrain with ease.')
+
 JELLYFISH_FACTS = (
     'Jellyfish live in the sea and are found in all oceans.',
     'Some jellyfish live in fresh water.',
