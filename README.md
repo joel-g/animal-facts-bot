@@ -103,7 +103,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * snake
 * squirrel
 * stingray
-* tartigrade
+* tardigrade
 * tiger
 * turtle
 * walrus
