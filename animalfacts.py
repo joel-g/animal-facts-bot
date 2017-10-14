@@ -270,6 +270,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
     botengine('platypus', '\splatypuse?s?\s', reddit, PLATYPUS_FACTS, comment)
+    botengine('porcupine', '\sporcupines?\s', reddit, PORCUPINE_FACTS, comment)
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
@@ -1239,6 +1240,24 @@ PLATYPUS_FACTS = (
     "Platypuses is the correct plural form, although platypi and platypodes are also accepted."
     )
 
+PORCUPINE_FACTS = (
+    "Body of the porcupine is covered with sharp spines or quills.",
+    "Some porcupines have up to 30,000 quills on their body.",
+    "Porcupines can't shoot out their quills, but they will be easily released when predators get it touch with animal.",
+    "Lost quills are replaced with new quills.",
+    "Porcupines are nocturnal animals. This means that they sleep during the day and become active in the evening.",
+    "They use their strong feet and curved claws to climb the tree. They are excellent climbers.",
+    "Porcupine's home is called a den.",
+    "They are herbivorous animals (eat only plants). They like to eat leaves, stem, bark, fruit, etc",
+    "They can live solitary life (left on their own) or in the small groups of up to 6 members.",
+    "During mating season, female initiates close contact with male.",
+    "Couple usually gets 2 babies and both parents take care of their babies.",
+    "Babies are called porcupettes and they are born with soft quills. Soft quills will harden in the next few hours.",
+    "Young porcupine will leave its parents after couple of months and begin solitary life.",
+    "Native Americans used porcupine's quills to decorate themselves in the past. They also used porcupines as a source of food.",
+    "Porcupines can live 15-18 years. "
+)
+
 RABBIT_FACTS = (
     'A rabbit’s teeth never stop growing, which is why it is very important to provide chews and treats for them to keep their teeth from becoming overgrown.',
     'Rabbits have 28 teeth.',
@@ -1665,6 +1684,7 @@ ALL_FACTS = (
     PIG_FACTS,
     PIGEON_FACTS,
     PLATYPUS_FACTS,
+    PORCUPINE_FACTS,
     RABBIT_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,
