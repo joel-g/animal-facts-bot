@@ -1,6 +1,7 @@
 ## How to contribute (Teach AnimalFactsBot a new animal):
-        Check open pull requests to make sure you don't duplicate someone else's work.
+        Due to Hacktoberfests pull requests are coming in fast! Comment on an issue you are going to work on - and also check open pull requests before you do work someone else has already done.
 
+Steps:
 * Fork/clone the repo
 * Add a tuple of strings of facts (to animalfacts.py) pertaining to a particular animal. Name the tuple variable following the format 'NAMEOFANIMAL_FACTS'. Put the tuple in alphabetical order with the other tuples.
 * Add your tuple to the ALL_FACTS tuple.
