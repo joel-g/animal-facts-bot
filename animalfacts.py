@@ -1073,9 +1073,14 @@ SHARK_FACTS = (
     'A shark always has a row of smaller teeth developing behind its front teeth. Eventually the smaller teeth move forward, like a conveyor belt, and the front teeth fall out.')
 
 SKUNK_FACTS = (
-    'Skunks are small, furry animals with black and white stripes.',
+    'Skunks are omnivores, which mean that they eat both plants and animals. They like to eat fruits, insects, worms, reptiles and rodents.',
+    'Skunks often attack beehive because they eat honeybees.',
+    'Before it sprays the victim, skunk will turn its back, lift its tail, start hissing and stumping with its feet. Those are the warning signs that precede spraying.',
+    'Skunk can spray its oily and smelly substance up to 10 feet distance.',
+    "Skunks's worst predators are coyotes, bobcats and owls.",
+    'Skunks live up to 3 years in the wild. They can survive up to 10 years in captivity.',
+    'Skunk can transmit rabies.'
     'Skunks are typically around the size of house cats. They grow to 8 to 19 inches long and weigh around 7 ounces to 14 lbs.',
-    'Skunks average lifespan can range from 2-4 years.',
     'Skunks appeared 40 million years ago, evolving from common ancestors with weasels and polecats.',
     'Skunks are found in the United States, Canada, South America and Mexico.',
     'Skunks live in forest edges, woodlands, grasslands and deserts. They typically make their homes in abandoned burrows, but will also live in abandoned buildings, under large rocks and in hollow logs.',
@@ -1155,17 +1160,17 @@ SQUID_FACTS = (
     'The only predators that giant squid have are sperm whales.')
 
 SQUIRREL_FACTS = (
-	'In fall, squirrels bury more food than they will recover.',
-	'Squirrels can find food buried beneath a foot of snow.',
-	'A squirrel’s front teeth never stop growing.',
-	'Squirrels may lose 25% of their buried food to thieves.',
-	'Squirrels zigzag to escape predators.',
-	'Squirrels may pretend to bury a nut to throw off potential thieves.',
-	'A newborn squirrel is about an inch long.',
-	'Humans introduced squirrels to most of our major city parks.',
-	'Squirrels are acrobatic, intelligent and adaptable.',
-	'Squirrels get bulky to stay warm during the winter.',
-	'Squirrels don’t dig up all of their buried nuts, which results in more trees!')
+    'In fall, squirrels bury more food than they will recover.',
+    'Squirrels can find food buried beneath a foot of snow.',
+    'A squirrel’s front teeth never stop growing.',
+    'Squirrels may lose 25% of their buried food to thieves.',
+    'Squirrels zigzag to escape predators.',
+    'Squirrels may pretend to bury a nut to throw off potential thieves.',
+    'A newborn squirrel is about an inch long.',
+    'Humans introduced squirrels to most of our major city parks.',
+    'Squirrels are acrobatic, intelligent and adaptable.',
+    'Squirrels get bulky to stay warm during the winter.',
+    'Squirrels don’t dig up all of their buried nuts, which results in more trees!')
 	
 STINGRAY_FACTS = (
      'Stingrays are diverse group of fish characterized by flattened bodies.',
@@ -1212,6 +1217,19 @@ TURTLE_FACTS = (
     'In some species of turtle the temperature determines if the egg will develop into a male or female, lower temperatures lead to a male while higher temperatures lead to a female.',
     'Some turtles lay eggs in the sand and leave them to hatch on their own. The young turtles make their way to the top of the sand and scramble to the water while trying to avoid predators.',
     'Sea turtles have special glands which help remove salt from the water they drink.',
+)
+
+WALLABY_FACTS = (
+    'A young wallaby is called Joey. The males are called Jack while the females are called Jill.',
+    'Wallabies are part of the marsupial family, where the female raises the young in a pouch.'
+    'There are 30 different species of wallabies and all are native to Australia and Tasmania.',
+    'The average lifespan of a wallaby is from 9 - 15 years.',
+    'A group of wallabies is known as a ‘mob’.',
+    'A female typically gives birth to a single wallaby and in very rare cases, twins. The gestation period is one month.',
+    'Wallabies have strong back legs that help them hop and move about powerfully. The forearms of the wallaby are small and used mainly for balancing or for feeding.',
+    'An adult wallaby weighs about 15 – 26 kg. The males are 77-88 cm in height and the females are about 70-84 cm tall. Their tail is 80 cm long, which is almost the length of their entire body. They use their tail to balance and jump around. They also use it to prop into a sitting position.',
+    'Wallabies are herbivores and eat mainly roots, grass, tree leaves and ferns. They rest during the day and are active mainly at night.',
+    'Wallabies are pink and furless at Birth.',
 )
 
 WALRUS_FACTS = (
@@ -1328,6 +1346,7 @@ ALL_FACTS = (
     STINGRAY_FACTS,
     TIGER_FACTS,
     TURTLE_FACTS,
+    WALLABY_FACTS,
     WALRUS_FACTS,
     WHALE_FACTS,
     WOLF_FACTS,
