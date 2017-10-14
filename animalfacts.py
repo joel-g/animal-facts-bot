@@ -167,6 +167,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
+    botengine('bison', '\sbisons?\s', reddit, BISON_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
@@ -278,6 +279,22 @@ BEAVER_FACTS = (
     'The beaver is the national animal of Canada, and features on the Canadian five-cent piece.',
     'Beavers like to keep themselves busy, they are prolific builders during the night. Hence the saying "As busy as a beaver".'
     )
+
+BISON_FACTS=(
+    'The bison has long shaggy brown fur, a mane and beard under its chin. It has a big head with short black horns and a hump on its shoulders.'
+    'An adult bison can weigh up to 2,000 pounds and stand 6 feet tall.',
+    'Bison may be big, but they’re also fast. They can run up to 35 miles per hour.They’re extremely agile. ',
+    'Bison can be found in most of Canada, the United States and parts of Mexico.',
+    'Classifications of Bisons include: American Bison, Bison occidentalis, Bison antiques, Steppe bison and European bison',
+    'Bison mainly live on plains, prairies and river valleys.',
+    'The bison is a grazer. Its diet is made up of mostly grasses and sedges',
+    'Bisons generally appear to be sluggish, lazy and peaceful',
+    'The average lifespan of a bison is 10-20 years.',
+    'Bison have poor eyesight but they have excellent senses of smell and hearing.',
+    'The females give birth to one calf after 9 months.',
+    'Bison live in a variety of groups.Each bison group has a dominant male or female.'
+    )
+    
 
 CAMEL_FACTS = (
     'There are two species of true camel. The dromedary, is a single humped camel that lives in the Middle East and the Horn of Africa area. The bactrian, is a two-humped camel that lives in areas of Central Asia.',
@@ -1096,6 +1113,7 @@ ALL_FACTS = (
     ALLIGATOR_FACTS,
     BADGER_FACTS,
     BEAVER_FACTS,
+    BISON_FACTS,
     CAMEL_FACTS,
     COW_FACTS,
     CHEETAH_FACTS,
