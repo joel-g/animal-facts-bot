@@ -272,6 +272,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
     botengine('sea cucumber', '\ssea cucumbers?\s', reddit, SEA_CUCUMBER_FACTS, comment)
     botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
+    botengine('shrimp', '\sshrimps?\s', reddit, SHRIMP_FACTS, comment)
     botengine('skunk', '\sskunks?\s', reddit, SKUNK_FACTS, comment)
     botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS, comment)
     botengine('snail', '\ssnails?\s', reddit, SNAIL_FACTS, comment)
@@ -1271,6 +1272,18 @@ SHARK_FACTS = (
     'Unlike other species of shark, the great white is warm-blooded. Although the great white does not keep a constant body temperature, it needs to eat a lot of meat in order to be able to regulate its temperature. ',
     'A shark always has a row of smaller teeth developing behind its front teeth. Eventually the smaller teeth move forward, like a conveyor belt, and the front teeth fall out.')
 
+SHRIMP_FACTS = (
+    'Snapping shrimp produce a noise with their claws that is greater than a gunshot or jet engine.',
+    'To attract fish, cleaning shrimp wave their white antennae and do a little dance.',
+    'Harlequin shrimp, from the Pacific and Indian oceans, use their flat, oversize claws to sever arms from sea stars for food.',
+    'Most shrimp are breeding machines -- within hours after their eggs hatch, females are carrying a new batch of fertilized embryos.',
+    'Some species of shrimp also have a symbiotic relationship with fish and clean parasites, bacteria, and fungi off their host.',
+    'While microwaving frozen shrimp might seem like a good shortcut when you need dinner in a hurry, it’s not a good idea.',
+    'Shrimp are a very low-calorie food (a medium cooked shrimp has about 7 calories), which means you can eat quite a few without feeling guilty.',
+    'Certain shrimp species are able to make a snapping sound that is louder than any other marine noise by hitting their large and small pincers together. It’s believed they do this to communicate with other shrimp or temporarily stun their prey.',
+    'Shrimp acquire their food either by sifting through the sand of the ocean floor or filtering the surrounding waters to ingest small particles of various plant or animal species.',
+    'Because of their small size, it is advantageous for shrimp to stay in groups in order to protect themselves from larger predators.')
+
 SKUNK_FACTS = (
     'Skunks are omnivores, which mean that they eat both plants and animals. They like to eat fruits, insects, worms, reptiles and rodents.',
     'Skunks often attack beehive because they eat honeybees.',
@@ -1605,6 +1618,7 @@ ALL_FACTS = (
     SEAGULL_FACTS,
     SEA_CUCUMBER_FACTS,
     SHARK_FACTS,
+    SHRIMP_FACTS,
     SKUNK_FACTS,
     SLOTH_FACTS,
     SNAIL_FACTS,
