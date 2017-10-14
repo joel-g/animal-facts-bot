@@ -218,6 +218,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('cuttlefish', '\scuttlefishs?\s', reddit, CUTTLEFISH_FACTS, comment)
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
     # botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)   Disabled because this was only a temp feature during Game of Thrones season. Dragons aren't real.
+    botengine('dugong', '\sdugongs?\s', reddit, DUGONG_FACTS, comment)
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
     botengine('echidna', '\sechidnas?\s', reddit, ECHIDNA_FACTS, comment)
     botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
@@ -484,6 +485,18 @@ DRAGON_FACTS = (
     'In medieval times, dragons were considered very real, but demonic. Religions had widely different views of dragons: some loved them and some feared them.',
     'In many cultural stories, dragons exhibit features of other animals, like the head of elephants, claws of lions and beaks of predatory birds. Their body colors are widely different – red, blue, green, gold, but usually earth tones. In some cultures, the colors have specific meanings.',
     '“Dragon” is actually a family term that includes other mythological creatures, such as cockatrices, gargoyles, wyverns, phoenix, basilisks, hydras, and even some hybrid man-dragon creatures.')
+
+DUGONG_FACTS = (
+    'The dugong is one of four living species of the order Sirenia, which also includes three species of manatees.',
+    'The largest dugong populations occur in wide, shallow, protected areas like bays, mangrove channels, and waters of inshore islands.',
+    'The dugong differs from the manatee by having a fluked, dolphin-like tail and a downturned snout.',
+    'Dugongs are vulernable to extinction because they have been hunted for thousands of years for meat and oil.',
+    'Dugongs can be found near East Africa, South Asia, and Australia.',
+    'Dugongs are herbivores and can typically be found hanging out near seagrass meadows.',
+    'Dugongs can weigh anywhere between 500 and 1100 pounds.',
+    'The average dugong is nearly 10 feet in length.',
+    'It is thought that the legends of mermaids may have originated from sailors seeing the fluked tails of dugongs from a distance.',
+    'Dugongs can often live for upwards of 70 years.')
 
 EAGLE_FACTS = (
     'Eagles build their nests on high cliffs or in tall trees.',
@@ -1403,6 +1416,7 @@ ALL_FACTS = (
     CROCODILE_FACTS,
     CUTTLEFISH_FACTS,
     DOLPHIN_FACTS,
+    DUGONG_FACTS,
     EAGLE_FACTS,
     ECHIDNA_FACTS,
     EMU_FACTS,
