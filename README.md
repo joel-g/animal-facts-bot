@@ -99,6 +99,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * seagull
 * sea cucumber
 * shark
+* sheep
 * skunk
 * sloth
 * snail
