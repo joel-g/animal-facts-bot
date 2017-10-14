@@ -457,7 +457,7 @@ DINGO_FACTS = (
     'Dingoes cannot bark, but they can howl.',
     'Dingoes have permanently erect ears.',
     'Dingoes arrived in Australia from the Asian mainland about 5,000 years ago.',
-    'Dingoes live to five or siz years of age in the wild and fifteen years in captivity.')
+    'Dingoes live to five or six years of age in the wild and fifteen years in captivity.')
 	
 DOLPHIN_FACTS = (
     'Compared to other animals, dolphins are believed to be very intelligent.',
