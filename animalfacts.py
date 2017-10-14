@@ -244,6 +244,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
+    botengine('lemur', '\slemurs?\s', reddit, LEMUR_FACTS, comment)
     botengine('leopard', '\sleopards?\s', reddit, LEOPARD_FACTS, comment)
     botengine('lizard', '\slizards?\s', reddit, LIZARD_FACTS, comment)
     botengine('llama', '\sllamas?\s', reddit, LLAMA_FACTS, comment)
@@ -842,6 +843,18 @@ KOALA_FACTS = (
     'Outside of breeding seasons, koalas are quiet animals.',
     'A baby koala is called a ‘joey’. Joeys live in their mother’s pouch for around six months and remain with them for another six months or so afterwards.',
     'Koalas cannot be kept legally as pets.',
+)
+
+LEMUR_FACTS = (
+    'Lemurs live aobut 18 years.',
+    'Lemurs can range in weight from 30 grams (1.1 oz) to 9 kilograms (20 lb) across species.',
+    'Most lemur species have a tail longer than their body.',
+    'Lemurs are the smallest of all known primates.',
+    'Blue-eyed lemurs are one of the two (non-human) primates to have truly blue eyes.',
+    'Lemurs can slow their metabolism and reproduce less when these adaptations are needed.',
+    'There are 105 known species of lemur.',
+    'Dwarf lemurs store fat in their tails for nourishment when they go dormant during dry seasons.',
+    'Lemurs can live up to 30 years in captivity, or 16-20 years in the wild, depending on the species.',
 )
 
 LEOPARD_FACTS = (
@@ -1530,6 +1543,7 @@ ALL_FACTS = (
     JELLYFISH_FACTS,
     KANGAROO_FACTS,
     KOALA_FACTS,
+    LEMUR_FACTS,
     LEOPARD_FACTS,
     LION_FACTS,
     LIZARD_FACTS,
