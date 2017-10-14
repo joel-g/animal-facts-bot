@@ -284,6 +284,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('tarantula', '\starantulas?\s', reddit, TARANTULA_FACTS, comment)
     botengine('squirrel', '\ssquirrels?\s', reddit, SQUIRREL_FACTS, comment)
     botengine('stingray', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
+    botengine('sunfish', '\ssunfish?\s', reddit, SUNFISH_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
     botengine('wallaby', '\swallab(y|ies)\s', reddit, WALLABY_FACTS, comment)
@@ -1420,6 +1421,20 @@ STARFISH_FACTS = (
     'Starfish can move using their tube feet',
     'Starfish have eyes.',)
 
+SUNFISH_FACTS = (
+    'The ocean sunfish (mola mola) is the heaviest known bony fish in the world, adults typically weigh between 247 and 1000 kg (545-2205 lb).',
+    'Sunfish live on a diet mainly of jellyfish, but because jellyfish are nutritionally poor, sunfish need to consume large amounts to develop and maintain their bulk.',
+    'Despite their size, sunfish are docile and pose no threat to human divers.',
+    'Sunfish have an average life span in captivity of up to 10 years.',
+    'Surface basking behaviour, in which a sunfish swims on its side and presents its largest profile to the sun, near the water surface, may be a method of helping their bodies warm up after deep water dives.',
+    'Female Sunfish can produce as many as 300 million eggs at a time, more than any other vertebrate.',
+    'The dorsal fin of the Sunfish is often mistaken for a shark fin, however can be distinguished as sharks keep their dorsal fin stationary, while sunfish swings its dorsal fin in a sculling motion'
+    'The skin of adult sunfish range from brown to silvery-grey or white with a variety of mottled skin patterns.',
+    'Sunfish neither has nor needs a swim bladder, as they constantly shuttle back and forth between depths instead of trying to maintain a position in the water.',
+    'In the course of the evolution of the sunfish, its tail disappeared and was replaced by a lumpy pseudotail, the clavus, formed by the convergence of the dorsal and anal fins and is used by the sunfish as a rudder.',
+    'Young sunfish school for protection, but this behaviour is abandoned as they grow.',
+    'Sunfish by the time of adulthood have the potential to grow more than 60 million times their birth size of a fraction of a gram, arguably the most extreme size growth of any vertebrate animal.')
+
 SQUID_FACTS = (
     'Many species of squid have a life span that is only about one year',
     'The Humboldt squid is very aggressive and will even attack sharks in the water.',
@@ -1676,6 +1691,7 @@ ALL_FACTS = (
     SNAIL_FACTS,
     SNAKE_FACTS,
     STARFISH_FACTS,
+    SUNFISH_FACTS,
     SQUIRREL_FACTS,
     STINGRAY_FACTS,
     TARANTULA_FACTS,
