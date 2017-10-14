@@ -216,7 +216,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
-    botengine('cuttlefish', '\scuttlefishs?\s', reddit, CUTTLEFISH_FACTS, comment)
+    botengine('cuttlefish', '\scuttlefish(es)?\s', reddit, CUTTLEFISH_FACTS, comment)
     botengine('dingo', '\sdingos?\s', reddit, DINGO_FACTS, comment)
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
     # botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)   Disabled because this was only a temp feature during Game of Thrones season. Dragons aren't real.
@@ -226,7 +226,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('emu', '\semus?\s', reddit, EMU_FACTS, comment)
     botengine('falcon', '\sfalcons?\s', reddit, FALCON_FACTS, comment)
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
-    botengine('fox', '\sfoxe?s?\s', reddit, FOX_FACTS, comment)
+    botengine('fox', '\sfox(es)?\s', reddit, FOX_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
     botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
     botengine('grasshopper', '\sgrasshoppers?\s', reddit, GRASSHOPPER_FACTS,comment)
@@ -240,8 +240,8 @@ def check_comment_for_animal(comment, reddit):
     botengine('honeybee', '\shoney bees?\s', reddit, HONEYBEE_FACTS, comment)
     botengine('horse', '\shorses?\s', reddit, HORSE_FACTS, comment)
     botengine('hummingbird', '\shummingbirds?\s', reddit, HUMMINGBIRD_FACTS, comment)
-    botengine('husky', '\s(husky|huskie)s?\s', reddit, HUSKY_FACTS, comment)
-    botengine('jellyfish', '\sjellyfish\s', reddit, JELLYFISH_FACTS, comment)
+    botengine('husky', '\shusk(y|ies)\s', reddit, HUSKY_FACTS, comment)
+    botengine('jellyfish', '\sjellyfish(es)\s', reddit, JELLYFISH_FACTS, comment)
     botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
@@ -253,8 +253,8 @@ def check_comment_for_animal(comment, reddit):
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
     botengine('newt', '\snewts?\s', reddit, NEWT_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
-    botengine('octopus', '\soctopus\s', reddit, OCTOPUS_FACTS, comment)
-    botengine('orca', '\sorca?\s', reddit, ORCA_FACTS, comment)
+    botengine('octopus', '\socto(pus|puses|pusses|pi)\s', reddit, OCTOPUS_FACTS, comment)
+    botengine('orca', '\sorcas?\s', reddit, ORCA_FACTS, comment)
     botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
     botengine('owl', '\sowls?\s', reddit, OWL_FACTS, comment)
     botengine('parrot', '\sparrots?\s', reddit, PARROT_FACTS, comment)
@@ -279,11 +279,10 @@ def check_comment_for_animal(comment, reddit):
     botengine('stingray', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
+    botengine('wallaby', '\swallab(y|ies)\s', reddit, WALLABY_FACTS, comment)
     botengine('walrus', '\swalrus\s', reddit, WALRUS_FACTS, comment)
-    botengine('wolf', '\swolf\s', reddit, WOLF_FACTS, comment)
-    botengine('wallaby', '\s(wallaby|wallabie)s?\s', reddit, WALLABY_FACTS, comment)
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
-    botengine('wolf', '\swolf\s', reddit, WOLF_FACTS, comment)
+    botengine('wolf', '\swol(f|ves)\s', reddit, WOLF_FACTS, comment)
     botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS, comment)
 
 
@@ -1418,6 +1417,26 @@ TURTLE_FACTS = (
     'Sea turtles have special glands which help remove salt from the water they drink.',
 )
 
+WALLABY_FACTS = (
+    'Wallabies are members of the kangaroo clan found primarily in Australia and on nearby islands.',
+    'Wallabies are marsupials or pouched mammals. Wallaby young are defenseless and develop in the pouch of their mother.',
+    'The largest wallabies can reach 6 feet from head to tail.',
+    'Wallabies have powerful hind legs they use to bound along at high speeds and jump great distances.',    
+    'Wallabies are herbivores and eat mainly roots, grass, tree leaves and ferns. They rest during the day and are active mainly at night.',
+    'Nail-tailed wallabies are so-named because of the sharp growth at the end of their tails.',
+    'When wallabies fight, they use their hind legs to deliver powerful kicks.',
+    'Four species of wallaby have already gone extinct. Many others are endangered, while others are considered vulnerable.',
+    'Large species of wallaby tend to live in groups, but smaller species tend to live alone.',
+    'A young wallaby is called Joey. The males are called Jack while the females are called Jill.',
+    'There are 30 different species of wallabies and all are native to Australia and Tasmania.'
+    'The average lifespan of a wallaby is from 9 - 15 years.',
+    "A group of wallabies is known as a ‘mob’.",
+    'A female typically gives birth to a single wallaby and in very rare cases, twins. The gestation period is one month.',
+    'Wallabies have strong back legs that help them hop and move about powerfully. The forearms of the wallaby are small and used mainly for balancing or for feeding.',
+    'An adult wallaby weighs about 15 – 26 kg. The males are 77-88 cm in height and the females are about 70-84 cm tall. Their tail is 80 cm long, which is almost the length of their entire body. They use their tail to balance and jump around. They also use it to prop into a sitting position.',
+    'Wallabies are pink and furless at birth.',
+    )
+
 WALRUS_FACTS = (
     'The scientific name for a walrus is Odobenus Rosmarus. It is latin for tooth walking sea-horse.',
     'A male walrus is called a bull. A female walrus is called a cow. A baby walrus is called a calf.',
@@ -1447,20 +1466,6 @@ WALRUS_FACTS = (
     'Native people of the Arctic hunt walruses for hides, food, ivory and bones. These natives are now the only people who are allowed to legally hunt walruses.',
     'Odobenus rosmarus, the walruses’ scientific name, is Latin for ‘tooth-walking sea-horse’.',
     'Walruses have only two natural predators: the orca (or killer whale) and the polar bear. Both are more likely to hunt walrus calves than adults.')
-
-WALLABY_FACTS = (
-    'A young wallaby is called Joey. The males are called Jack while the females are called Jill.',
-    'Wallabies are part of the marsupial family, where the female raises the young in a pouch.'
-    'There are 30 different species of wallabies and all are native to Australia and Tasmania.',
-    'The average lifespan of a wallaby is from 9 - 15 years.',
-    'A group of wallabies is known as a ‘mob’.',
-    'A female typically gives birth to a single wallaby and in very rare cases, twins. The gestation period is one month.',
-    'Wallabies have strong back legs that help them hop and move about powerfully. The forearms of the wallaby are small and used mainly for balancing or for feeding.',
-    'An adult wallaby weighs about 15 – 26 kg. The males are 77-88 cm in height and the females are about 70-84 cm tall. Their tail is 80 cm long, which is almost the length of their entire body. They use their tail to balance and jump around. They also use it to prop into a sitting position.',
-    'Wallabies are herbivores and eat mainly roots, grass, tree leaves and ferns. They rest during the day and are active mainly at night.',
-    'Wallabies are pink and furless at Birth.',
-)
-
 
 WHALE_FACTS = (
     'Many whales are toothless. They use a plate of comb-like fibre called baleen to filter small crustaceans and other creatures from the water.',
@@ -1508,9 +1513,9 @@ ALL_FACTS = (
     BADGER_FACTS,
     BEAVER_FACTS,
     CAMEL_FACTS,
-    COW_FACTS,
     CHAMELEON_FACTS,
     CHEETAH_FACTS,
+    COW_FACTS,
     CRAB_FACTS,
     CROCODILE_FACTS,
     CUTTLEFISH_FACTS,
@@ -1557,8 +1562,8 @@ ALL_FACTS = (
     PANGOLIN_FACTS,
     PANTHER_FACTS,
     PARROT_FACTS,
-    PENGUIN_FACTS,
     PEACOCK_FACTS,
+    PENGUIN_FACTS,
     PIG_FACTS,
     PIGEON_FACTS,
     PLATYPUS_FACTS,
