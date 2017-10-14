@@ -201,17 +201,20 @@ def botengine(animal, regex, reddit, facts, comment):
                     else:
                         print('     Already commented on this!\n')
 
-# ANIMALS = ('alligator', 'beaver', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'parrot', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
+# ANIMALS = ('alligator', 'ant', 'beaver', 'badger', 'camel', 'cheetah', 'crab', 'dolphin', 'elephant', 'flamingo', 'frog', 'giraffe', 'gorilla', 'hedgehog','hippo', 'horse', 'jellyfish', 'koala', 'lion', 'lepoard', 'monkey', 'octopus', 'otter', 'owl', 'panda', 'parrot', 'penguin', 'pig', 'scorpion', 'shark', 'sloth', 'snake', 'tiger', 'turtle', 'wolf', 'whale', 'zebra')
 
 
 def check_comment_for_animal(comment, reddit):
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
+    botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
+    botengine('chameleon', '\schameleons?\s', reddit, CHAMELEON_FACTS, comment)
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
+    botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
     botengine('cuttlefish', '\scuttlefishs?\s', reddit, CUTTLEFISH_FACTS, comment)
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
     # botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)   Disabled because this was only a temp feature during Game of Thrones season. Dragons aren't real.
@@ -223,6 +226,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('fox', '\sfoxe?s?\s', reddit, FOX_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
     botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
+    botengine('goat', '\sgoats?\s', reddit, GOAT_FACTS, comment)
     botengine('goose', '\s(goose|geese)\s', reddit, GOOSE_FACTS, comment)
     botengine('gorilla', '\sgorillas?\s', reddit, GORILLA_FACTS, comment)
     botengine('hamster', '\shamsters?\s', reddit, HAMSTER_FACTS, comment)
@@ -241,6 +245,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
     botengine('octopus', '\soctopus?\s', reddit, OCTOPUS_FACTS, comment)
+    botengine('orca', '\sorca?\s', reddit, ORCA_FACTS, comment)
     botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
     botengine('owl', '\sowls?\s', reddit, OWL_FACTS, comment)
     botengine('parrot', '\sparrots?\s', reddit, PARROT_FACTS, comment)
@@ -251,16 +256,21 @@ def check_comment_for_animal(comment, reddit):
     botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS, comment)
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
+    botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
     botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
+    botengine('skunk', '\sskunks?\s', reddit, SKUNK_FACTS, comment)
     botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS, comment)
+    botengine('snail', '\ssnails?\s', reddit, SNAIL_FACTS, comment)
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
-	botengine('squirrel', '\ssquirrels?\s', reddit, SQUIRREL_FACTS, comment)
+  	botengine('squirrel', '\ssquirrels?\s', reddit, SQUIRREL_FACTS, comment)
+    botengine('stingray', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
-    botengine('wolf', '\swolf\s', reddit, WOLF_FACTS, comment)
+    botengine('walrus', '\swalrus?\s', reddit, WALRUS_FACTS, comment)
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
+    botengine('wolf', '\swolf\s', reddit, WOLF_FACTS, comment)
     botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS, comment)
 
 
@@ -285,6 +295,23 @@ ALLIGATOR_FACTS = (
     'Alligators eat a range of different animals such as fish, birds, turtles and even deer.',
     'Alligator eggs become male or female depending on the temperature, male in warmer temperatures and female in cooler temperatures.',
     'Like crocodiles, alligators are part of the order ‘Crocodylia’.')
+
+ANT_FACTS = (
+	'There are more than 12,000 species of ants all over the world.',
+	'An ant can lift 20 times its own body weight. If a second grader was as strong as an ant, she would be able to pick up a car!',
+	'Some queen ants can live for many years and have millions of babies!',
+	'Ants don’t have ears. Ants "hear" by feeling vibrations in the ground through their feet.',
+	'Ants are the longest living of all insects, living for up to 30 years.',
+	'When ants fight, it is usually to the death!',
+	'When foraging, ants leave a pheromone trail so that they know where they’ve been.',
+	'One ant species (Trap-Jaw Ants) owns the record for the fastest movement within the animal kingdom.',
+	'The largest ant colony ever found was over 6000 Km or 3750 miles wide.',
+	'All worker, soldier and queen ants are female.',
+	'Some ant species are asexual, they clone themselves and do not require any males.',
+	'Ants and humans are the only creatures that farm other creatures.',
+	'Some ants can swim.',
+	'Ants can be found on every continent accept antarctica.'
+	)
 
 BADGER_FACTS = (
     'Badgers are part of the family Mustelidae this is the same family as otters, ferret, polecats, weasels and wolverines.',
@@ -336,6 +363,24 @@ CAMEL_FACTS = (
     'Camels have long been used in wartimes. Romans used camels for their ability to scare off horses who are afraid of their scent, and in recent times camels have been used to carry heavy gear and troops across hot sandy deserts.',
     'There are estimated to be over 14 million camels in the world. Camels introduced to desert areas of Australia are the worlds largest populations of feral camels.')
 
+CHAMELEON_FACTS = (
+    'Chameleons are a very unique branch of the lizard group of reptiles.',
+    'There are around 160 species of chameleon.',
+    'Chameleons live in warm varied habitats from rainforests through to deserts.',
+    'Almost half of the world’s chameleon species are native to Madagascar.',
+    'Special color pigment cells under the skin called chromatophores allow some chameleon species to change their skin color, creating combined patterns of pink, blue, red, orange, green, black, brown, yellow and purple.',
+    'Chameleon change color for camouflage but this is not always the main reason. Some show darker colors when angry, or when trying to scare others',
+    'Male chameleons show light multi-colored patterns when vying for female attention.',
+    'Chameleons living in the desert change to black when its cooler to absorb heat, then to a light grey to reflect heat.',
+    'Chameleons have amazing eyes. The bulging upper and lower eyelids are joined and the pupil peaks out from a pinhole sized gap.',
+    'The chameleons’ eyes can rotate and focus separately on 180-degree arcs, so they can see two different objects at the same time. This gives them a full 360-degree field of vision.',
+    'Chameleons feed by ballistically projecting their tongues often over twice the length of their body to catch prey, forming a suction cup as it hits its target.',
+    'Chameleons are not deaf but they do not actually have ear openings.',
+    'Chameleons eat insects and birds.',
+    'Chameleons are different from many reptiles because some of the species, like the Jackson’s chameleon, have live births. These species can give birth to eight to 30 young at one time',
+    'According to International Union for Conservation of Nature’s Red List of Threatened Species, many species of chameleon are endangered.'
+)
+
 CHEETAH_FACTS = (
     'The cheetah is the fastest land animal in the world. They can reach a top speed of around 113 km per hour.',
     'A cheetah can accelerate from 0 to 113 km in just a few seconds.',
@@ -384,6 +429,21 @@ CRAB_FACTS = (
     'Some crab species can naturally autotomise (shed) limbs such as their claws, which then regenerate after about a year.',
     'Crabs make up 20% of all marine crustaceans caught by humans each year. This adds up to a total of 1.5 million ton annually',
     'The most consumed species of crab in the world is the Japanese Blue Crab.')
+
+CROCODILE_FACTS = (
+    'There are 23 different species of crocodiles that live on this planet.',
+    'Crocodiles do not chew their food! Instead, they swallow stones to grind their food inside their stomachs.',
+    'Crocodiles with open motuhs is not necessarily a sign of aggression. Instead, that is their only way cooling off.',
+    'Crocodiles do not possess any sweat glands.',
+    "The muscles responsible for opening a crocodile's jaws are weak, such that even humans can keep a crocdile's mouth closed.",
+    'However, opening their mouth when it is closed is almost impossible',
+    'After mating, a female crocodile can lay between 20 to 80 eggs.',
+    'Crocodiles can have a lifespan of up to 80 years.',
+    'The skin on the back of the crocodile is so hard and tough, not even a bullet can pierce it.',
+    'The closest relatives of the crocodile in the animal kingdom are rather disparate: Birds and Dinosaurs.',
+    'Crocodiles normally drown their prey by dragging them underwater before cutting their meat into smaller chunks.',
+    'Crocodiles can shoot out from the water at almost 12 meters per second!'
+    )
 
 CUTTLEFISH_FACTS = (
     "Cuttlefish are cephalopods, not fish. Cephalopods include octopus, squid and nautilus.",
@@ -522,6 +582,21 @@ GIRAFFE_FACTS = (
     'Male giraffes sometimes fight with their necks over female giraffes. This is called “necking”. The two giraffes stand side by side and one giraffe swings his head and neck, hitting his head against the other giraffe. Sometimes one giraffe is hit to the ground during a combat.',
     'A female giraffe gives birth while standing up. The calf drops approximately 6 feet to the ground, but it is not hurt from the fall.',
     'Giraffes have bluish-purple tongues which are tough and covered in bristly hair to help them with eating the thorny Acacia trees.',
+)
+
+GOAT_FACTS = (
+    'Goats are members of the Bovidae family, which also includes antelopes, cattle and sheep.',
+    'There are two types of goats: domestic goats (Capra hircus), which are raised and bred as farm animals; and mountain goats (Oreamnos americanus), which live in steep, rocky areas in the American Northwest.',
+    'There are about 200 breeds of domestic goat, according to the Smithsonian Institution.',
+    'Mountain goats are found in the Rocky Mountains, typically in Alaska, western Montana, central Idaho, South Dakota, Colorado and Washington. The wide spread of their cloven hooves allows them to climb steep mountain sides with ease.',
+    'Goats and sheep are different species, and there are several physical and behavioral differences.',
+    'Mountain goats can jump 12 feet (3.5 meters) in a single bound, according to National Geographic.',
+    'Mountain goats have bright white coats that help them blend into the snowy areas of their home ranges. Domestic goats have coats that are yellow, chocolate or black.',
+    'Goats were one of the first domesticated animals and were first domesticated around 9,000 years ago, according to the Smithsonian.',
+    'In bright light, the pupil in a goat\'s eye is rectangular rather than round.',
+    'Goat meat — called chevon or cabrito — is eaten all over the world.',
+    'More people consume goat milk than the milk from any other animal.',
+    'The phrase "Judas goat" is a term that has been used to describe a goat that is trained to herd other animals to slaughter while its own life is spared.',
 )
 
 GOOSE_FACTS = (
@@ -777,6 +852,27 @@ OCTOPUS_FACTS = (
     'Octopuses usually live for 6 - 18 months. Males only live a few months after mating, and females die of starvation shortly after their protected eggs hatch.',
     'Humans eat octopus in many cultures and it is also a popular fish bait.')
 
+ORCA_FACTS = (
+    "The orca's large size and strength make it among the fastest marine mammals, able to reach speeds in excess of 55 km/h.",
+    "Many orcas live with their mothers for their entire lives.",
+    "The orca is not a fish, but a mammal. However it is not a whale, as it is part of the dolphin family.",
+    "The largest orca caught was 10 meters long and weighted 10 tons, as heavy as an African elephant.",
+    "Orcas live in groups of related females, led by the oldest female, called pods. A pod can have as few as three members or as many as a hundred or more.",
+    "Orcas do not have smelling organs or a lobe in the brain dedicated to smelling, so it is believed they cannot smell.",
+    "Orcas can sleep with one eye open, like dolphins, as they cannot completely go to sleep, having to go to the surface to get air from time to time.",
+    "In captivity, an orca's dorsal fin often flops. This is possible as the fin is not made up of bones, but of large connective tissue."
+    "Orcas are the most widely distributed animals in the world, not counting humans. They can be found in all oceans, both in warm and cold waters and even in freezing waters.",
+    "The oldest known orca lived to be 103.",
+    "There is no record of a wild orca ever attacking a human.",
+    "There are fifty-two orcas in captivity all over the world.",
+    "Mother orcas give birth every three to ten years, after a 17-month pregnancy.",
+    "In Argentina, orcas hurl themselves on-shore to grab sea lion pups.",
+    "Whalers call the orca the 'killer of whales'. It preys on sperm, gray, fin, humpback and other whales.",
+    "Orcas can weigh up to 6 tons.",
+    "An orca's teeth can grow to be 4 inches (10 cm) long.",
+    "The orca can reach speeds in excess of 30 knots (about 34 mph, or 56 kph)."
+    )
+
 OTTER_FACTS = (
     'The otter is a carnivorous mammal in a branch of the weasel family called Lutrinae.',
     'There are 13 species of otter found all around the world.',
@@ -919,6 +1015,20 @@ PIGEON_FACTS = (
     'Female pigeons lay 2 eggs that hatch after incubation period of 18 days. Young birds depend on their parents during the first two months of their life. Both parents take care of the chicks (called squabs).',
     'Pigeons can survive more than 30 years in the wild.')
 
+RABBIT_FACTS = (
+    'A rabbit’s teeth never stop growing, which is why it is very important to provide chews and treats for them to keep their teeth from becoming overgrown.',
+    'Rabbits have 28 teeth.',
+    'When rabbits are happy they can jump and twist. This is commonly called a "binky."',
+    'The average size of a rabbit litter is usually between 4 and 12 babies, just after a short 30-day pregnancy.',
+    'More than half of the world’s rabbits live in North America.',
+    'Jackrabbits, which belong to the genus “Lepus,” have been clocked at speeds of 45 miles per hour.',
+    'Rabbits have a life span about 8 years, though sterilized rabbits (those who are spayed/neutered) can live as long as 10-12 years.'
+    'A rabbit can run between 25-45miles per hour.',
+    'Rabbits sleep about 8 hours a day.',
+    'Rabbits cannot vomit. They don’t have enough muscles in their stomach.',
+    'A male rabbit is called a buck, a female is a doe, and a baby is a kit/kitten.',
+    )
+
 SCORPION_FACTS = (
     'Scorpions are predatory animals of the class Arachnida, making them cousins to spiders, mites and ticks.',
     'Scorpions have eight legs, a pair of pincers (pedipalps) and a narrow segmented tail that often curves over their back, on the end of which is a venomous stinger.',
@@ -962,6 +1072,23 @@ SHARK_FACTS = (
     'Unlike other species of shark, the great white is warm-blooded. Although the great white does not keep a constant body temperature, it needs to eat a lot of meat in order to be able to regulate its temperature. ',
     'A shark always has a row of smaller teeth developing behind its front teeth. Eventually the smaller teeth move forward, like a conveyor belt, and the front teeth fall out.')
 
+SKUNK_FACTS = (
+    'Skunks are small, furry animals with black and white stripes.',
+    'Skunks are typically around the size of house cats. They grow to 8 to 19 inches long and weigh around 7 ounces to 14 lbs.',
+    'Skunks average lifespan can range from 2-4 years.',
+    'Skunks appeared 40 million years ago, evolving from common ancestors with weasels and polecats.',
+    'Skunks are found in the United States, Canada, South America and Mexico.',
+    'Skunks live in forest edges, woodlands, grasslands and deserts. They typically make their homes in abandoned burrows, but will also live in abandoned buildings, under large rocks and in hollow logs.',
+    'Though they typically prefer to dine on insects and grubs, skunks are omnivores, consuming a vast diet of both plant and animal matter. Skunks are opportunistic eaters, and their diets are flexible, often shifting with the seasons.',
+    'Skunks have strong forefeet and long nails, which make them excellent diggers. When no other form of shelter is available they may even burrow underneath buildings by entering foundation openings.',
+    'Skunks are known to release a powerful smell through their anal glands when threatened. Skunks will usually only attack when cornered or defending their young, and spraying is not the first method of defense. A skunk will growl, spit, fluff its fur, shake its tail, and stamp the ground.',
+    'Although skunks have very poor eyesight, they have excellent senses of smell and hearing.',
+    'Skunks are nocturnal, which means they search for food at night and sleep in dens lined with leaves during the day.',
+    'Skunks are slow and can run only 10 miles per hour.',
+    'Skunks are immune to rattlesnake venom, bee stings and scorpions.',
+    'Females can bear 3-10 young and male skunks reach sexual maturity from 4-6 months after birth while females reach sexual maturity nine months to a year after birth.'
+    )
+
 SLOTH_FACTS = (
     'Sloths are a medium-sized mammal. There are two types of sloth the two-toed sloth and the three-toed sloth, they are classified into six different species.',
     'All sloths actually have three toes, but the two-toed sloth has only two fingers.',
@@ -979,6 +1106,23 @@ SLOTH_FACTS = (
     'It used to be thought sloths slept for 15 to 20 hours a day. However, its now believed they only sleep around 10 hours a day.',
     'In the wild, sloths live on average 10 - 16 years and in captivity over 30 years.',
 )
+
+SNAIL_FACTS = (
+    'Snails are gastropod mollusks, members of the ‘phylum Mollusca’ and the class ‘Gastropoda’.',
+    'Snails have no back bone. When they feel threatened, they usually retreat into their shell to protect themselves.',
+    'The largest land snail is the ‘Achatina achatina’, the Giant African Snail.',
+    'Some land snails feed on other terrestrial snails.',
+    'Most snails live from 2 to 5 years, but in captivity, some have exceeded 10 or 15 years of age.',
+    'The mucus of the garden snail is used to treat wrinkles, spots, and scars on the skin.',
+    'Most snail species are hermaphrodites, so they have both male and female reproductive organs.',
+    'The speed of snails is around 0.5-0.8 inches per second. If they moved without stopping, it would take more than a week to complete 1 kilometer.',
+    'Snails do not change shells when they grow up. Instead, the shell grows along with them.',
+    'Snails host several types of parasites that, while may not kill them, they are capable of affecting or killing their predators or animals that eat the snails. Even humans who eat poorly cooked snails can become seriously ill.',
+    'A single garden snail (Helix aspersa) can have up to 430 hatchlings after a year.', 
+    'Many snails are in danger of extinction. Among these are the species ‘Aaadonta constricta’ and ‘Aaadonta fuscozonata’, and others of the ‘genus Aaadonta’ and ‘Achatinella’ are in critical danger of extinction.',
+    'The size of the shell of a snail reflects its age.',
+    'Land snails do not chew their food. They scrape it.',
+    'Calcium carbonate is the main component of the snail shells.')
 
 SNAKE_FACTS = (
     'Snakes don’t have eyelids.',
@@ -999,21 +1143,47 @@ SNAKE_FACTS = (
 SQUID_FACTS = (
     'Many species of squid have a life span that is only about one year',
     'The Humboldt squid is very aggressive and will even attack sharks in the water.',
+    'The only predators that giant squid have are sperm whales.',
+    'Squid are strong swimmers and certain species can "fly" for short distances out of the water.',
+    'The majority of squid are no more than 60 cm (24 in) long, although the giant squid may reach 13 m (43 ft).',
+    'The smallest squid is the pygmy squid which can be less than 2.5 centimeters (1 inch) long.',
+    'It wasn\'t until 2004 that researchers in Japan took the first images ever of a live giant squid.',
+    'Giant squid have the largest eyes in the animal kingdom, measuring up to 10 inches in diameter.',
+    'Squid, like cuttlefish, have eight arms arranged in pairs, and two longer tentacles with suckers.',
+    'Squids belong to a particularly successful group of mollusks called the cephalopods, which have been around for about 500 million years.',
+    'Giant squid mostly eat deep water fishes and other squids including other giant squids.',
     'The only predators that giant squid have are sperm whales.')
 
 SQUIRREL_FACTS = (
-	'In fall, squirrels bury more food than they will recover.'
-	'Squirrels can find food buried beneath a foot of snow.'
-	'A squirrel’s front teeth never stop growing.'
-	'Squirrels may lose 25% of their buried food to thieves.'
-	'Squirrels zigzag to escape predators.'
-	'Squirrels may pretend to bury a nut to throw off potential thieves.'
-	'A newborn squirrel is about an inch long.'
-	'Humans introduced squirrels to most of our major city parks.'
-	'Squirrels are acrobatic, intelligent and adaptable.'
-	'Squirrels get bulky to stay warm during the winter.'
+	'In fall, squirrels bury more food than they will recover.',
+	'Squirrels can find food buried beneath a foot of snow.',
+	'A squirrel’s front teeth never stop growing.',
+	'Squirrels may lose 25% of their buried food to thieves.',
+	'Squirrels zigzag to escape predators.',
+	'Squirrels may pretend to bury a nut to throw off potential thieves.',
+	'A newborn squirrel is about an inch long.',
+	'Humans introduced squirrels to most of our major city parks.',
+	'Squirrels are acrobatic, intelligent and adaptable.',
+	'Squirrels get bulky to stay warm during the winter.',
 	'Squirrels don’t dig up all of their buried nuts, which results in more trees!')
 	
+STINGRAY_FACTS = (
+     'Stingrays are diverse group of fish characterized by flattened bodies.',
+     'The largest species of stingray measure 6.5 feet in length and can weigh up to 790 pounds.',
+     'Stingrays are closely related to sharks. Stingrays don’t have bones.',
+     'Stringrays flattened body ends with long tail that usually contains spine and venom. Spines can be serrated in some species.',
+     'There are more than 70 Species of stingray.',
+     'Stringray mouths are located on the bottom side of their body. When they catch clams, shrimps, and mussels, they will crash and eat them using their powerful jaws.',
+     'Stringray`s long tails usually have a spine and venom.',
+     'Stingrays Use camouflage for protection and hunting.',
+     'Stingrays don’t use their eyes to find prey. They use their electro-sensors to locate their prey',
+     'Stingrays are solitary, but can also live in groups.',
+     'Stingrays have a lifespan of 15-25 years.',
+     'Stringrays can be found in oceans in tropical and subtropical areas around the world. Stingrays like warm and shallow water.',
+     'Stingrays are found both in freshwater and ocean.',
+     'Stingrays give birth to 2-6 young stingrays each year.',
+     'Baby stingrays are born fully developed; they look like miniature versions of adult animals. Babies take care of themselves from the moment of birth.')
+
 TIGER_FACTS = (
     'The tiger is the biggest species of the cat family.',
     'Tigers can reach a length of up to 3.3 meters (11 feet) and weigh as much as 300 kilograms (660 pounds).',
@@ -1043,6 +1213,19 @@ TURTLE_FACTS = (
     'Some turtles lay eggs in the sand and leave them to hatch on their own. The young turtles make their way to the top of the sand and scramble to the water while trying to avoid predators.',
     'Sea turtles have special glands which help remove salt from the water they drink.',
 )
+
+WALRUS_FACTS = (
+    'Walruses weigh from 600 to 1,500 kilograms (1,320 to 3,300 lbs.) and can be as long as 3.2 meters (10.5 feet).',
+    'Walrus tusks can grow up to 3 feet (1 m). The tusks are canine teeth and stick out from either side of the animal’s mouth.',
+    'Walruses use their tusks to break through ice, and to assist in climbing out of the water and onto the ice. The animals also use their tusks to defend themselves from larger predators and to establish dominance and a hierarchy among walruses.',
+    'Walruses can swim on average around 4.35 mph (7 km/h) and as fast as 21.74 mph (35 km/h).',
+    'A group of walruses is called a herd. They gather by the hundreds to sunbathe on the ice. During mating season, walruses amass by the thousands.',
+    'Walruses are carnivores, but they aren’t ferocious hunters. The walrus’ favorite food is shellfish.',
+    'There are three subspecies of walrus. Atlantic walruses live in the coastal areas along northeastern Canada to Greenland. Pacific walruses live in the northern seas near Russia and Alaska. Laptev walruses live in the Laptev Sea of Russia.',
+    'In the 1950s, the population of walruses was almost eliminated due to commercial hunting, but the population was brought back to a thriving number in the 1980s.',
+    'Native people of the Arctic hunt walruses for hides, food, ivory and bones. These natives are now the only people who are allowed to legally hunt walruses.',
+    'Odobenus rosmarus, the walruses’ scientific name, is Latin for ‘tooth-walking sea-horse’.',
+    'Walruses have only two natural predators: the orca (or killer whale) and the polar bear. Both are more likely to hunt walrus calves than adults.')
 
 WHALE_FACTS = (
     'Many whales are toothless. They use a plate of comb-like fibre called baleen to filter small crustaceans and other creatures from the water.',
@@ -1089,8 +1272,10 @@ ALL_FACTS = (
     BEAVER_FACTS,
     CAMEL_FACTS,
     COW_FACTS,
+    CHAMELEON_FACTS,
     CHEETAH_FACTS,
     CRAB_FACTS,
+    CROCODILE_FACTS,
     CUTTLEFISH_FACTS,
     DOLPHIN_FACTS,
     EAGLE_FACTS,
@@ -1101,6 +1286,7 @@ ALL_FACTS = (
     FROG_FACTS,
     ELEPHANT_FACTS,
     GIRAFFE_FACTS,
+    GOAT_FACTS,
     GOOSE_FACTS,
     GORILLA_FACTS,
     HAMSTER_FACTS,
@@ -1119,6 +1305,7 @@ ALL_FACTS = (
     NARWHAL_FACTS,
     OCELOT_FACTS,
     OCTOPUS_FACTS,
+    ORCA_FACTS,
     OTTER_FACTS,
     OWL_FACTS,
     PANDA_FACTS,
@@ -1129,16 +1316,21 @@ ALL_FACTS = (
     PEACOCK_FACTS,
     PIG_FACTS,
     PIGEON_FACTS,
+    RABBIT_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,
     SHARK_FACTS,
+    SKUNK_FACTS,
     SLOTH_FACTS,
+    SNAIL_FACTS,
     SNAKE_FACTS,
-	SQUIRREL_FACTS,
+	  SQUIRREL_FACTS,
+    STINGRAY_FACTS,
     TIGER_FACTS,
     TURTLE_FACTS,
-    WOLF_FACTS,
+    WALRUS_FACTS,
     WHALE_FACTS,
+    WOLF_FACTS,
     ZEBRA_FACTS
 )
 
