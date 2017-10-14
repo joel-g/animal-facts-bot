@@ -1300,7 +1300,6 @@ WALRUS_FACTS = (
     'Native people of the Arctic hunt walruses for hides, food, ivory and bones. These natives are now the only people who are allowed to legally hunt walruses.',
     'Odobenus rosmarus, the walruses’ scientific name, is Latin for ‘tooth-walking sea-horse’.',
     'Walruses have only two natural predators: the orca (or killer whale) and the polar bear. Both are more likely to hunt walrus calves than adults.')
-    )
 
 WALLABY_FACTS = (
     'A young wallaby is called Joey. The males are called Jack while the females are called Jill.',
