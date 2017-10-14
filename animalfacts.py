@@ -254,6 +254,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS, comment)
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
+    botengine('reindeer', '\sreindeers?\s', reddit, REINDEER_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
     botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
@@ -388,7 +389,7 @@ CHICKEN_FACTS = (
 
 
 
-    
+
 
 COW_FACTS = (
     'There are well over 1 billion cattle in the world.',
@@ -975,6 +976,22 @@ PIGEON_FACTS = (
     'Female pigeons lay 2 eggs that hatch after incubation period of 18 days. Young birds depend on their parents during the first two months of their life. Both parents take care of the chicks (called squabs).',
     'Pigeons can survive more than 30 years in the wild.')
 
+REINDEER_FACTS = (
+'Reindeers are the magical beasts believed to tow Santa Clauses sled accross the world deliveing presents to all those who have been good!',
+'Reindeer hooves expand in summer when the ground is soft and shrink in winter when the ground is hard.',
+'Some subspecies have knees that make a clicking noise while walking so they can stay together in a blizzard.',
+'Though thought of as a tundra species, a form of caribou lived in southern Idaho until the 19th Century (there are ongoing efforts to re-establish them in the State)',
+'Once the entire body of a reindeer was found in a Greenland shark (most likely a case of near shore scavenging versus a migrating land shark',
+'Did you know that reindeer can run 50 miles per hour!',
+'Reindeer’s have an ankle tendon which rubs over a bone causing a clicking sound when they walk. That clicking sound helps the reindeer keep track of each other especially when they can’t see in bad weather.',
+'Like a human’s fingerprint no two reindeer antlers are exactly the same.',
+'Reindeer antlers are actually rubbery, living masses of blood and marrow when they are growing. The antlers grown until around August, then the bone begins to harden.',
+'Did you know that reindeer are the only deer in which both male and females grow antlers.  They shed their antlers in the winter.',
+'Reindeer live in the Northern parts of North America including Canada and Alaska also in Europe, Russia and Greenland.  Lets us not forget with Santa at the North Pole.',
+'Reindeers actual Scientific Name: Rangifer Tarasndus.',
+'Scientific Name: Rangifer Tarasndus.'
+)
+
 SCORPION_FACTS = (
     'Scorpions are predatory animals of the class Arachnida, making them cousins to spiders, mites and ticks.',
     'Scorpions have eight legs, a pair of pincers (pedipalps) and a narrow segmented tail that often curves over their back, on the end of which is a venomous stinger.',
@@ -1175,6 +1192,7 @@ ALL_FACTS = (
     PEACOCK_FACTS,
     PIG_FACTS,
     PIGEON_FACTS,
+    REINDEER_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,
     SHARK_FACTS,
