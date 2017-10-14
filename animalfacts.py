@@ -208,6 +208,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('albatross', '\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
     botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
+    botengine('antelope', '\santelopes?\s', reddit, ANTELOPE_FACTS, comment)
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
@@ -344,6 +345,21 @@ ANT_FACTS = (
 	'Some ants can swim.',
 	'Ants can be found on every continent accept antarctica.'
 	)
+
+ANTELOPE_FACTS = (
+    'Antelopes are large and diverse group of animals of the cow family (Bovidae).',
+    'They live in Africa, Asia, Middle East and North America. Antelopes can be found in grasslands, mountains, deserts and wetlands. There are 90 different species of antelopes.',
+    '25 types of antelopes them are endangered. Poaching and loss of habitat are main reasons why they are faced with extinction.',
+    'The giant eland is the largest species of antelope, with a body length ranging from 220 to 290 centimeters (87–114 inches) and stand approximately 130 to 180 centimeters (4.3 to 5.9 feet) at the shoulder. They weigh from 400 to 1,000 kilograms (880 to 2,200 pounds).',
+    'The royal antelope is the world’s smallest species of antelope; it stands up to merely 25 centimeters (10 inches) at the shoulder and weighs 2.5 to 3 kilograms (5.5 to 6.6 pounds).',
+    'All antelopes have even-toed hooves, horizontal pupils, stomach adapted for re-chewing of the food (they are ruminants, just like all cows) and bony horns.',
+    'All antelope have horns, they can be straight, spiral, curved or twisted; in some species they are only found on the males, whereas in others, such as gazelles, both males and females have them.',
+    'The horns of antelopes are made of a bony core encased in a hard material made largely of keratin (the same substance our fingernails are made of!).',
+    'Hooves are another specialty for many antelope. Each hoof has a split down the middle, dividing the hoof into two toes.',
+    'Antelopes have extremely developed senses which help them detect predators while they still have time to escape.',
+    'Depending on the species, 4-9 months after mating season, baby antelope will be born. Baby antelope is an easy target and mother keeps it on the secret location until it becomes stronger.',
+    'Some antelope are famous for their massive herds, like the thousands of wildebeests making their annual migration across the African plains.',
+)
 
 BADGER_FACTS = (
     'Badgers are part of the family Mustelidae this is the same family as otters, ferret, polecats, weasels and wolverines.',
@@ -1604,6 +1620,7 @@ ALL_FACTS = (
     ALBATROSS_FACTS,
     ALLIGATOR_FACTS,
     ANT_FACTS,
+    ANTELOPE_FACTS,
     BADGER_FACTS,
     BEAVER_FACTS,
     CAMEL_FACTS,
