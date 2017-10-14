@@ -1073,6 +1073,17 @@ SHARK_FACTS = (
     'Unlike other species of shark, the great white is warm-blooded. Although the great white does not keep a constant body temperature, it needs to eat a lot of meat in order to be able to regulate its temperature. ',
     'A shark always has a row of smaller teeth developing behind its front teeth. Eventually the smaller teeth move forward, like a conveyor belt, and the front teeth fall out.')
 
+SHEEP_FACTS = (
+    'There are over 1 billion sheep in the world!',
+    'Sheep have a field of vision (FOV) of around 300 degrees allowing them to look behind themselves without turning their head!',
+    'Sheeps have four stomachs!',
+    'Ancient egyptians believed that sheep were sacred to society. When a sheep died, it would be mummified just like a human.',
+    'Sheep have 24 molar teeth and 8 incisor teeth.',
+    'A collection or group of sheep is called a flock.',
+    'Most sheep live between 6-11 years.',
+    'A lamb is considered a sheep less than one year old.',
+    )
+
 SKUNK_FACTS = (
     'Skunks are omnivores, which mean that they eat both plants and animals. They like to eat fruits, insects, worms, reptiles and rodents.',
     'Skunks often attack beehive because they eat honeybees.',
@@ -1080,7 +1091,7 @@ SKUNK_FACTS = (
     'Skunk can spray its oily and smelly substance up to 10 feet distance.',
     "Skunks's worst predators are coyotes, bobcats and owls.",
     'Skunks live up to 3 years in the wild. They can survive up to 10 years in captivity.',
-    'Skunk can transmit rabies.'
+    'Skunks can transmit rabies.'
     'Skunks are typically around the size of house cats. They grow to 8 to 19 inches long and weigh around 7 ounces to 14 lbs.',
     'Skunks appeared 40 million years ago, evolving from common ancestors with weasels and polecats.',
     'Skunks are found in the United States, Canada, South America and Mexico.',
