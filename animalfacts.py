@@ -268,7 +268,8 @@ def check_comment_for_animal(comment, reddit):
     botengine('stingray', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
-    botengine('walrus', '\swalrus?\s', reddit, WALRUS_FACTS, comment)
+    botengine('walrus', '\swalruss?\s', reddit, WALRUS_FACTS, comment)
+    botengine('wallaby', '\s(wallaby|wallabie)s?\s', reddit, WALLABY_FACTS, comment)
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
     botengine('wolf', '\swolf\s', reddit, WOLF_FACTS, comment)
     botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS, comment)
@@ -1286,6 +1287,7 @@ ZEBRA_FACTS = (
 
 ALL_FACTS = (
     ALLIGATOR_FACTS,
+    ANT_FACTS,
     BADGER_FACTS,
     BEAVER_FACTS,
     CAMEL_FACTS,
@@ -1342,7 +1344,7 @@ ALL_FACTS = (
     SLOTH_FACTS,
     SNAIL_FACTS,
     SNAKE_FACTS,
-	  SQUIRREL_FACTS,
+	SQUIRREL_FACTS,
     STINGRAY_FACTS,
     TIGER_FACTS,
     TURTLE_FACTS,
