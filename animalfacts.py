@@ -607,19 +607,25 @@ GIRAFFE_FACTS = (
 )
 
 GOAT_FACTS = (
+    'Goats do not have teeth on their upper jaw',
+    'Goats have the uncanny ability to yell like humans. Their calls are known as bleating.',
+    'A baby goat is a kid and giving birth is called kidding.',
+    'According to Norse mythology, during a thunderstorm Thor, the god of thunder, rode in a chariot pulled by two goats, Tanngrisni and Tanngnost.',
+    'Goat population is roughly 600 million maintained worldwide (not including feral populations).',
+    'Goats are fussy eaters that take a lot of time to search out the best snacks. Goats will often stand on their hind legs to reach the best part of foliage that may be out of reach of sheep.',
+    'Goat Milk is alkaline and cow milk is acid. Goat milk is lower in cholesterol and higher in calcium, phosphorus and vitamins A.',
+    'The largest number of goats in the United States resides in Texas. Goats can be raised, however, anywhere in the United States.',
     'Goats are members of the Bovidae family, which also includes antelopes, cattle and sheep.',
     'There are two types of goats: domestic goats (Capra hircus), which are raised and bred as farm animals; and mountain goats (Oreamnos americanus), which live in steep, rocky areas in the American Northwest.',
     'There are about 200 breeds of domestic goat, according to the Smithsonian Institution.',
     'Mountain goats are found in the Rocky Mountains, typically in Alaska, western Montana, central Idaho, South Dakota, Colorado and Washington. The wide spread of their cloven hooves allows them to climb steep mountain sides with ease.',
     'Goats and sheep are different species, and there are several physical and behavioral differences.',
-    'Mountain goats can jump 12 feet (3.5 meters) in a single bound, according to National Geographic.',
     'Mountain goats have bright white coats that help them blend into the snowy areas of their home ranges. Domestic goats have coats that are yellow, chocolate or black.',
     'Goats were one of the first domesticated animals and were first domesticated around 9,000 years ago, according to the Smithsonian.',
     'In bright light, the pupil in a goat\'s eye is rectangular rather than round.',
     'Goat meat — called chevon or cabrito — is eaten all over the world.',
     'More people consume goat milk than the milk from any other animal.',
-    'The phrase "Judas goat" is a term that has been used to describe a goat that is trained to herd other animals to slaughter while its own life is spared.',
-)
+    'The phrase "Judas goat" is a term that has been used to describe a goat that is trained to herd other animals to slaughter while its own life is spared.')
 
 GOOSE_FACTS = (
     'Some geese migrate every year. Others stay in the same place year round.',
