@@ -268,6 +268,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
+    botengine('sea cucumber', '\ssea cucumbers?\s', reddit, SEA_CUCUMBER_FACTS, comment)
     botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
     botengine('skunk', '\sskunks?\s', reddit, SKUNK_FACTS, comment)
     botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS, comment)
@@ -1219,6 +1220,21 @@ SEAGULL_FACTS = (
     'Depending on the species, female can lay one, two or three dark brown or olive green eggs. Incubation period lasts 22 to 26 days. Fathers play very important role in feeding of chicks. Young birds live in nursery flocks where they learn all skill required for independent life.',
     'Lifespan of seagulls depends on the species. Most seagulls can survive from 10 to 15 years in the wild.')
 
+SEA_CUCUMBER_FACTS = (
+    'Sea cucumbers can reproduce both sexually and asexually.',
+    'Sea cucumbers breathe through a branched network of hollow tubules circulating through the anus.',
+    'Sea cucumbers have no brain, but they do have a ring of neural tissue surrounding the oral cavity.',
+    'At depths below 5.5 miles (8.9 km) under the sea, sea cucumbers can comprise up to 90 percent of the total mass of macrofauna.',
+    'Many small animals, such as the pearl fish and many species of shrimp, can live in symbiosis with sea cucumbers.',
+    'Sea cucumbers are scavengers, feeding on debris found on the ocean floor.',
+    'Sea cucumbers are closely related to starfish and sea urchins.',
+    'There are over 1,250 known species of sea cucumber.',
+    'As a defense mechanism, sea cucumbers can expel some of their internal organs from their anus. These internal organs can regenerate relatively quickly.',
+    'Most species of sea cucumber are around 4-12 inches long',
+    'Sea cucumbers can easily get into and out of small crevices',
+    'Sea cucumbers communicate by sending hormones through the water',
+    'Some species of sea cucumber can emit a sticky substance that can tangle up predators')
+
 SHARK_FACTS = (
     'Sharks do not have a single bone in their bodies. Instead they have a skeleton made up of cartilage; the same type of tough, flexible tissue that makes up human ears and noses.',
     'Some sharks remain on the move for their entire lives. This forces water over their gills, delivering oxygen to the blood stream. If the shark stops moving then it will suffocate and die.',
@@ -1539,6 +1555,7 @@ ALL_FACTS = (
     RABBIT_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,
+    SEA_CUCUMBER_FACTS,
     SHARK_FACTS,
     SKUNK_FACTS,
     SLOTH_FACTS,
