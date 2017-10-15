@@ -277,6 +277,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
     botengine('platypus', '\splatypuse?s?\s', reddit, PLATYPUS_FACTS, comment)
+    botengine('pony', '\sponies?s?\s', reddit, PONY_FACTS, comment)    
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
@@ -1464,6 +1465,14 @@ PLATYPUS_FACTS = (
     "Platypus fur, being very thick and waterproof, used to be very in the fur trade until Australia banned platypus hunting to protect the species.",
     "Platypuses is the correct plural form, although platypi and platypodes are also accepted.",
     )
+
+PONY_FACTS = (
+    'It is often thought the only difference between horses and ponies is size. This is an important distinguisher but other characteristics also separate horses and ponies.',
+    'Ponies are generally considered to be 14.2 hands or under. Horses and ponies are measured in ‘hands’ with each ‘hand’ measuring 4 inches. Ponies height is measured at their withers – where their neck and back meet.',
+    'Although size is a key distinguisher, the smallest horse, a Falabella is considered to be a horse rather than a pony despite only reaching 8 hands, or 32 inches!',
+    'Shetland ponies are the strongest of the smaller ponies in spite of their small size.',
+    'Ponies’ temperament also separates them from horses. They are steady and have gentle dispositions as a whole, however each pony will have different characteristics!',
+    )
     
 RABBIT_FACTS = (
     'A rabbit’s teeth never stop growing, which is why it is very important to provide chews and treats for them to keep their teeth from becoming overgrown.',
@@ -1960,6 +1969,7 @@ ALL_FACTS = (
     PIG_FACTS,
     PIGEON_FACTS,
     PLATYPUS_FACTS,
+    PONY_FACTS,
     RABBIT_FACTS,
     RACCOON_FACTS,
     SCORPION_FACTS,
