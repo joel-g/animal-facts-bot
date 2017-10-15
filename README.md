@@ -38,6 +38,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * beaver
 * bison
 * camel
+* capybara
 * chameleon
 * cheetah
 * chipmunk

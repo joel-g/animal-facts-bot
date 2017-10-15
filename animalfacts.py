@@ -210,6 +210,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
     botengine('bison', '\sbisons?\s', reddit, BISON_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
+    botengine('capybara', '\scapybaras?\s', reddit, CAPYBARA_FACTS, comment)
     botengine('chameleon', '\schameleons?\s', reddit, CHAMELEON_FACTS, comment)
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
@@ -454,6 +455,21 @@ CAMEL_FACTS = (
     'Camels have long been used in wartimes. Romans used camels for their ability to scare off horses who are afraid of their scent, and in recent times camels have been used to carry heavy gear and troops across hot sandy deserts.',
     'There are estimated to be over 14 million camels in the world. Camels introduced to desert areas of Australia are the worlds largest populations of feral camels.',
     )
+
+CAPYBARA_FACTS = (
+    'The capybara is the largest living rodent in the world. Adults typically range from 3.48 to 4.4 feet long, stand 20 to 24 inches tall, and weigh between 77 and 146 pounds.',
+    'Capybaras can be found in all South American countries but Chile. However, sightings are fairly common in Florida and one was seen on the Central Coast of California in 2011.',
+    'Capybaras can both run as fast as horses and remain completely underwater for up to five minutes.',
+    'The capybara appears on the 2-peso coin of Uruguay.',
+    'Capybaras tend to live in groups. The size of these groups can range from 10 in the wet season to up to 100 capybaras in drier months.',
+    'Capybaras are herbivores. In a typical day, they eat around 6-8 pounds of grass.',
+    'The capybara is a semiaquatic mammal, and actually has slightly webbed feet to aid with swimming.',
+    'Capybaras are autocoprophagous. This means that they eat their own feces, which helps them better digest grass and extract the most protein and nutrients from their food as possible.',
+    'The gestation period for a capybara is typically 130-150 days. Most litters will have 3 or 4 young, but the number can range from 1 to as many as 8 young at once.',
+    'Predators of the capybara include jaguars, pumas, ocelots, caimans, eagles, and anacondas.',
+    'The name "capybara" is derived from the Tupi language, spoken by the native Tupi people of Brazil. The translated name means "one who eats slender leaves".',
+    'Capybaras are very popular captive animals in Japan. One common practice, said to have originated in 1982 and attributed to the Izu Shaboten Zoo, is to keep hot springs in capybara enclosures for them to bathe and relax in during the winter.'
+)
 
 CHAMELEON_FACTS = (
     'Chameleons are a very unique branch of the lizard group of reptiles.',
@@ -1834,6 +1850,7 @@ ALL_FACTS = (
     BEAVER_FACTS,
     BISON_FACTS,
     CAMEL_FACTS,
+    CAPYBARA_FACTS,
     CHAMELEON_FACTS,
     CHEETAH_FACTS,
     CHIPMUNK_FACTS,
