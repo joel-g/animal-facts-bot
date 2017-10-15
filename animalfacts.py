@@ -1157,11 +1157,10 @@ OSTRICH_FACTS = (
     'Ostriches are the largest and heaviest birds in the world',
     'The scientific name for an ostrich is Struthio camelus, from the Struthio genus of ratite family from Africa.',
     'Ostrich often swallows pebbles and sand that aid them in grinding up their ingested food in its gizzard, a peculiar muscular stomach.',
-     'They are the only bird in the world that has only two toes on each foot.  The inner toe has a claw that can measure up to 10 cm long.',
-     'At breeding time, male ostriches scrape out a nest in the ground which is then used by more than one female to lay their eggs which can end up with 20 eggs in them.  Females incubate the eggs during the day and males at night.  The dads then do most of the chick raising, often defending the chicks from potential predators with their powerful kicks.',
-      'Contrary to popular belief, Ostriches do not bury their heads in sand. This myth likely began with Pliny the Elder (AD 23-79), who wrote that Ostriches: “imagine, when they have thrust their head and neck into a bush, that the whole of their body is concealed.',
-
-    ) 
+    'They are the only bird in the world that has only two toes on each foot.  The inner toe has a claw that can measure up to 10 cm long.',
+    'At breeding time, male ostriches scrape out a nest in the ground which is then used by more than one female to lay their eggs which can end up with 20 eggs in them.  Females incubate the eggs during the day and males at night.  The dads then do most of the chick raising, often defending the chicks from potential predators with their powerful kicks.',
+     'Contrary to popular belief, Ostriches do not bury their heads in sand. This myth likely began with Pliny the Elder (AD 23-79), who wrote that Ostriches: “imagine, when they have thrust their head and neck into a bush, that the whole of their body is concealed".',
+     ) 
 
 OTTER_FACTS = (
     'The otter is a carnivorous mammal in a branch of the weasel family called Lutrinae.',
