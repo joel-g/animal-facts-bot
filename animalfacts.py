@@ -201,6 +201,7 @@ def botengine(animal, regex, reddit, facts, comment):
                         print('     Already commented on this!\n')
 
 def check_comment_for_animal(comment, reddit):
+    botengine('aardvark', '\aardvark(es)?\s', reddit, AARDVARK_FACTS, comment)
     botengine('albatross', '\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
     botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
@@ -310,6 +311,19 @@ def animalfactsbot(reddit):
     for comment in comment_list:
         check_comment_for_animal(comment, reddit)
 
+AARDVARK_FACTS = (
+    'Aardvarks look like they were made from parts of other animals.',
+    'An aardvark has a long snout that ends with a pig-like nose, rabbit-like ears and a tail similar to a kangaroo's. Yet it is not closely related to any of those animals.',
+    'Aardvarks are found throughout sub-Saharan Africa.',
+    'The aardvark’s name comes from the Afrikaans/Dutch language and means "earth pig,"',
+    'Aardvarks are about the size of a small pig.',
+    'Aardvarks live in many different types of habitats, such as grasslands, savannas, rainforests, woodlands and thickets throughout Africa in the areas south of the Sahara.',
+    'Aardvarks are solitary animals and only come together to mate.',
+    'Female aardvarks have a gestation of seven months and give birth to one young at a time.',
+    'Aardvarks are also called ant bears.',
+    'Aardvarks have four toes on the front feet and five toes on their back feet.',
+    'Skilled diggers, an aardvark can dig up to 2 f (.6 m) in 15 seconds, according to the African Wildlife Foundation.'
+    )
 
 ALBATROSS_FACTS = (
     'Albatrosses are known to live until their fifties sixties.',
