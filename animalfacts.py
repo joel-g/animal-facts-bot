@@ -315,19 +315,29 @@ def animalfactsbot(reddit):
         check_comment_for_animal(comment, reddit)
 
 AARDVARK_FACTS = (
-	'The aardvark is the only species in its order. It is literally like no other animal on earth.',
-	'The aardvark is admired in African folklore because of its diligent search for food and its lack of fear of soldier ants. The Maasai tribe believe sighting an aardvark brings good fortune.',
-	'The name Aardvark comes from South Africa’s Afrikaans language and means ‘earth pig’ or ‘ground pig’.',
-	'The aardvark takes up an astonishing number of insects with its long, sticky tongue, as many as 50,000 in one night.',
-	'Skilled diggers, an aardvark can dig up to 2ft (0.6 m) in 15 seconds.',
-	'Aardvarks can live to be over 24 years old in captivity. In the wild, they live between 10 – 23 years.',
-	'Aardvarks can close their nostrils to keep out dirt and bugs while they dig.',
-	'Aardvarks have excellent hearing and their long ears allow them to hear tiny sounds, such as termites under the ground.',
-	'Aardvarks can dig fast or run in zigzag fashion to elude enemies, but if all else fails, they will strike with their claws, tail and shoulders, sometimes flipping onto their backs lying motionless except to lash out with all four feet.',
-	'Skin of the aardvark body is thick and tough. It provides protection against bites of angry ants and termites. ',
-	'Aardvark can travel between 16 and 30 kilometers per night while searching for the food.',
-	'Aardvark is excellent swimmer thanks to its webbed feet.',
-	)
+    'The aardvark is the only species in its order. It is literally like no other animal on earth.',
+    'The aardvark is admired in African folklore because of its diligent search for food and its lack of fear of soldier ants. The Maasai tribe believe sighting an aardvark brings good fortune.',
+    'The name Aardvark comes from South Africa’s Afrikaans language and means ‘earth pig’ or ‘ground pig’.',
+    'The aardvark takes up an astonishing number of insects with its long, sticky tongue, as many as 50,000 in one night.',
+    'Skilled diggers, an aardvark can dig up to 2ft (0.6 m) in 15 seconds.',
+    'Aardvarks can live to be over 24 years old in captivity. In the wild, they live between 10 – 23 years.',
+    'Aardvarks can close their nostrils to keep out dirt and bugs while they dig.',
+    'Aardvarks have excellent hearing and their long ears allow them to hear tiny sounds, such as termites under the ground.',
+    'Aardvarks can dig fast or run in zigzag fashion to elude enemies, but if all else fails, they will strike with their claws, tail and shoulders, sometimes flipping onto their backs lying motionless except to lash out with all four feet.',
+    'Skin of the aardvark body is thick and tough. It provides protection against bites of angry ants and termites. ',
+    'Aardvark can travel between 16 and 30 kilometers per night while searching for the food.',
+    'Aardvark is excellent swimmer thanks to its webbed feet.',
+    "An aardvark has a long snout that ends with a pig-like nose, rabbit-like ears and a tail similar to a kangaroo's. Yet it is not closely related to any of those animals.",
+    'Aardvarks are found throughout sub-Saharan Africa. The aardvark’s name comes from the Afrikaans/Dutch language and means "earth pig," according to National Geographic.',
+    'Aardvarks are about the size of a small pig. Typically, they weigh from 110 to 180 lbs. (50 to 82 kilograms).',
+    'If it stuck its tongue out, an aardvark would be much longer. Their tongues can be up to 12 inches (30.5 cm) long.',
+    'Aardvarks live in many different types of habitats, such as grasslands, savannas, rainforests, woodlands and thickets throughout Africa in the areas south of the Sahara.',
+    "Aardvarks have spoon-shaped claws which are like steel – and used to rip into extremely hard ground and termite mounds.",
+    'Aardvarks change burrows frequently, providing opportunity for subsequent residents like wild dogs, pythons, warthogs and South African shelduck.',
+    'Aardvarks are nocturnal and travel up to 16km every night, foraging for food.',
+    'Aardvarks feed almost exclusively on ants and termites, and are known to eat around 50,000 in one night. They can eat plants and often feed on an African cucumber known as the aardvark cucumber.',
+    'Aardvarks are prey to many animals including lions, leopards, hunting dogs, hyenas, and pythons.',
+    'Aardvarks are solitary and only come together to mate; females have a gestation period of seven months. One cub is born between May and July and will remain in the burrow for the first two weeks of life.')
 
 ALBATROSS_FACTS = (
     'Albatrosses are known to live until their fifties sixties.',
@@ -1915,7 +1925,7 @@ ZEBRA_FACTS = (
 )
 
 ALL_FACTS = (
-	AARDVARK_FACTS,
+    AARDVARK_FACTS,
     ALBATROSS_FACTS,
     ALLIGATOR_FACTS,
     ANT_FACTS,
