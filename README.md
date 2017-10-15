@@ -57,6 +57,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * flamingo
 * fox
 * frog
+* gazelle
 * giraffe
 * grasshopper
 * goat
