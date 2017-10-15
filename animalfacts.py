@@ -437,7 +437,7 @@ BISON_FACTS=(
     'The average lifespan of a bison is 10-20 years.',
     'Bison have poor eyesight but they have excellent senses of smell and hearing.',
     'Female bison give birth to one calf after 9 months.',
-    'Bison live in a variety of groups.Each bison group has a dominant male or female.'
+    'Bison live in a variety of groups.Each bison group has a dominant male or female.',
     )
     
 
