@@ -291,7 +291,7 @@ BISON_FACTS=(
     'Bisons generally appear to be sluggish, lazy and peaceful',
     'The average lifespan of a bison is 10-20 years.',
     'Bison have poor eyesight but they have excellent senses of smell and hearing.',
-    'The females give birth to one calf after 9 months.',
+    'Female bison give birth to one calf after 9 months.',
     'Bison live in a variety of groups.Each bison group has a dominant male or female.'
     )
     
