@@ -275,6 +275,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
     botengine('platypus', '\splatypuse?s?\s', reddit, PLATYPUS_FACTS, comment)
+    botengine('puma', '\spuma?s?\s', reddit, PUMA_FACTS, comment)
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
@@ -333,7 +334,7 @@ ALLIGATOR_FACTS = (
     'American alligators live in south-eastern areas of the United States such as Florida and Louisiana.',
     'Chinese alligators are found in the Yangtze River but they are critically endangered and only a few remain in the wild.',
     'Like other reptiles, alligators are cold-blooded.',
-    'Alligators use their tails, which accounts to half of their body length, to propel in the water.', 
+    'Alligators use their tails, which accounts to half of their body length, to propel in the water.',
     'Alligators can weigh over 450 kg (1000 lb).',
     'Alligators are social creatures and often stay in groups called congregations. These groups are typically seen basking in the sun or taking a swim.',
     'Although alligators have no vocal cords, males bellow loudly to attract mates and warn off other males by sucking air into their lungs and blowing it out in intermittent, deep-toned roars.',
@@ -437,7 +438,7 @@ BISON_FACTS=(
     'Female bison give birth to one calf after 9 months.',
     'Bison live in a variety of groups.Each bison group has a dominant male or female.'
     )
-    
+
 
 CAMEL_FACTS = (
     'There are two species of true camel. The dromedary, is a single humped camel that lives in the Middle East and the Horn of Africa area. The bactrian, is a two-humped camel that lives in areas of Central Asia.',
@@ -516,6 +517,7 @@ CHIPMUNK_FACTS = (
     'Male chipmunks are called Bucks and females are referred to as Does.',
     'Unlike other squirrels, chipmunks live mainly in the underground burrows. They can be 30 feet long and 3 feet wide. All burrows are divided in several sections: nursery, food storing chamber and resting area.',
     )
+    'Unlike other squirrels, chipmunks live mainly in the underground burrows. They can be 30 feet long and 3 feet wide. All burrows are divided in several sections: nursery, food storing chamber and resting area.')
 
 COW_FACTS = (
     'There are well over 1 billion cattle in the world.',
@@ -964,8 +966,8 @@ IGUANA_FACTS = (
     'Green iguanas can vary in color more than just green, like blue, purple, or orange.',
     'Iguanas absorb water through their skin.',
     'After female iguanas lay their eggs, she never returns. Bye Mom!',
-    'Iguanas are mainly herbivorous.') 
- 
+    'Iguanas are mainly herbivorous.')
+
 
 IBEX_FACTS = (
     'Ibex are wild goats that live in the mountainous regions of Europe, north central Asia and northern Africa.',
@@ -1040,7 +1042,7 @@ LEOPARD_FACTS = (
     'Some people believe that the bones and whiskers of leopards can heal sick people. Many leopards are killed each year for their fur and body parts and this is one reason why the leopard is an endangered animal. While they were previously found in the wild in a number of areas around the world, their habitat is largely restricted to sub-Saharan Africa with small numbers also found in India, Pakistan, Malaysia, China and Indochina.'
 )
 
-LYNX_FACTS = ( 
+LYNX_FACTS = (
     'The Eurasian lynx is one of the widest ranging cats in the world and can be found in the forests of western Europe, Russia and central Asia.',
     'These fur-ocious felines are the largest of the lynx species, and the third largest predator in Europe after the brown bear and the wolf.',
     'These incredible cats are strict carnivores, feeding mostly on ungulates (hoofed mammals) such as deer. When food is scarce they also eat smaller prey like hares, foxes and rabbits.',
@@ -1421,7 +1423,22 @@ PLATYPUS_FACTS = (
     "Platypus fur, being very thick and waterproof, used to be very in the fur trade until Australia banned platypus hunting to protect the species.",
     "Platypuses is the correct plural form, although platypi and platypodes are also accepted.",
     )
-    
+
+PUMA_FACTS = (
+    'The puma concolor is also known as cougar and montain lion, but is referred to as puma by most scientists.',
+    'Pumas are member of the felinae family, they are the largest of small cats.',
+    'Pumas are fast, they can run up to 80kph (50mph).',
+    'In the wild, pumas live up to 13 years.',
+    'In captivity, pumas live up to 20 years.',
+    'Unlike cats, pumas cannot roar.',
+    'Baby pumas are called cubs and born after a period of gestation of approximately 91 days.'
+    'From head to tail, puma\'s size varies between 1.5 and 2.7 meters (5 and 9 feet).',
+    'Pumas can live anywhere, in montain, desert or even sea-level, once there is shelter and prey.',
+    'Puma are obligated carnivores (like all cats), they need to feed on meat to survive.',
+    'Cubs born blind, they rely exclusively on their mother and begin to hunt after six months.',
+    'Cubs begin to be weaned around three months of age.'
+)
+
 RABBIT_FACTS = (
     'A rabbit’s teeth never stop growing, which is why it is very important to provide chews and treats for them to keep their teeth from becoming overgrown.',
     'Rabbits have 28 teeth.',
@@ -1435,7 +1452,7 @@ RABBIT_FACTS = (
     'Rabbits cannot vomit. They don’t have enough muscles in their stomach.',
     'A male rabbit is called a buck, a female is a doe, and a baby is a kit/kitten.',
     )
-    
+
 RACCOON_FACTS = (
     'The raccoon has the ability to rotate their hind feet a full 180 degrees to allow for their ability to climb down from trees head first.',
     'On the mammal IQ scale raccoons rank higher than cats and just below monkeys.',
@@ -1914,6 +1931,7 @@ ALL_FACTS = (
     PIG_FACTS,
     PIGEON_FACTS,
     PLATYPUS_FACTS,
+    PUMA_FACTS,
     RABBIT_FACTS,
     RACCOON_FACTS,
     SCORPION_FACTS,
