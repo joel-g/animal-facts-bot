@@ -259,7 +259,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('oryx', '\soryx(es)?\s', reddit, ORYX_FACTS, comment)
     botengine('octopus', '\socto(pus|puses|pusses|pi)\s', reddit, OCTOPUS_FACTS, comment)
     botengine('orca', '\sorcas?\s', reddit, ORCA_FACTS, comment)
-    botengine('ostrich', '\sostrich?\s', reddit, OSTRICH_FACTS, comment)
+    botengine('ostrich', '\sostrich(es)?\s', reddit, OSTRICH_FACTS, comment)
     botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
     botengine('owl', '\sowls?\s', reddit, OWL_FACTS, comment)
     botengine('parrot', '\sparrots?\s', reddit, PARROT_FACTS, comment)
@@ -1150,7 +1150,18 @@ ORCA_FACTS = (
     )
 
 OSTRICH_FACTS = (
-	
+    'Ostriches have three stomachs.',
+    'An ostrich can run at 30 miles per hour for 10 miles at a time',
+    'Ostriches, in the wild live an average of 30 to 40 years',
+    'Ostrich eggs contains 2000 calories, and measure 6 inches in diameter',
+    'Ostriches are the largest and heaviest birds in the world',
+    'The scientific name for an ostrich is Struthio camelus, from the Struthio genus of ratite family from Africa.',
+    'Ostrich often swallows pebbles and sand that aid them in grinding up their ingested food in its gizzard, a peculiar muscular stomach.',
+     'They are the only bird in the world that has only two toes on each foot.  The inner toe has a claw that can measure up to 10 cm long.',
+     'At breeding time, male ostriches scrape out a nest in the ground which is then used by more than one female to lay their eggs which can end up with 20 eggs in them.  Females incubate the eggs during the day and males at night.  The dads then do most of the chick raising, often defending the chicks from potential predators with their powerful kicks.',
+      'Contrary to popular belief, Ostriches do not bury their heads in sand. This myth likely began with Pliny the Elder (AD 23-79), who wrote that Ostriches: “imagine, when they have thrust their head and neck into a bush, that the whole of their body is concealed.',
+
+    ) 
 
 OTTER_FACTS = (
     'The otter is a carnivorous mammal in a branch of the weasel family called Lutrinae.',
