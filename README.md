@@ -1,4 +1,4 @@
-## How to contribute (Teach AnimalFactsBot a new animal):
+﻿## How to contribute (Teach AnimalFactsBot a new animal):
 
 Check the open issues to claim a listed animal, or come up with your own. Be sure to also check currently open pull requests to make sure you don't duplicate someone else's work.
 
@@ -113,6 +113,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * tarantula
 * squirrel
 * stingray
+* tardigrade
 * tiger
 * turtle
 * wallaby

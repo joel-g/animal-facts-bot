@@ -286,6 +286,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('tarantula', '\starantulas?\s', reddit, TARANTULA_FACTS, comment)
     botengine('squirrel', '\ssquirrels?\s', reddit, SQUIRREL_FACTS, comment)
     botengine('stingray', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
+    botengine('tardigrade', '\stardigrades?\s', reddit, TARDIGRADE_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
     botengine('wallaby', '\swallab(y|ies)\s', reddit, WALLABY_FACTS, comment)
@@ -1618,6 +1619,21 @@ TARANTULA_FACTS = (
     'Since falls can be so dangerous for tarantulas, it is important for them to get a good grip when climbing.',
     )
 
+TARDIGRADE_FACTS = (
+	'Nicknames for tardigrades include "water bears", "space bears", and "moss piglets"',
+	'The first tardigrade was discovered by Johann August Ephraim Goeze in 1773.',
+	'Tardigrades have been found everywhere in the world: from mountaintops to the deep sea to mud volcanoes; from tropical rain forests to the Antarctic.',
+	'Tardigrades are one of the most resilient animals known. They can survive global extinction events like meteor impacts and even survive in the vacuum of space.',
+	'Tardigrades can go without food or water for more than 30 years, drying out to the point where they are 3% or less water.',
+	'Tardigrades measure about 0.5 millimetres long when fully grown.',
+	'About 1,150 species of tardigrades haven been described.',
+	'All tardigrades of the same species have the same number of cells.',
+	'Tardigrades can withstand 1,000 times more radiation than other animals; the median lethal dose is 5,000 Gy (of gamma rays).',
+	'Many organisms that live in aquatic environments feed on tardigrades.',
+	'Tardigrades work as pioneer species by inhabiting new developing environments in which to live. Their presence attracts other invertebrates and predators to populate the space.',
+	'Tardigrades are the first known animal to survive in space.')
+
+
 TIGER_FACTS = (
     'The tiger is the biggest species of the cat family.',
     'Tigers can reach a length of up to 3.3 meters (11 feet) and weigh as much as 300 kilograms (660 pounds).',
@@ -1824,6 +1840,7 @@ ALL_FACTS = (
     STARFISH_FACTS,
     SQUIRREL_FACTS,
     STINGRAY_FACTS,
+    TARDIGRADE_FACTS,
     TARANTULA_FACTS,
     TIGER_FACTS,
     TURTLE_FACTS,
