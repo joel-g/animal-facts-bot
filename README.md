@@ -40,6 +40,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * bison
 * camel
 * capybara
+* cat
 * chameleon
 * cheetah
 * chipmunk
@@ -49,6 +50,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * crocodile
 * cuttlefish
 * dingo
+* dog
 * dolphin
 * dragon
 * dugong
@@ -106,6 +108,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * pig
 * pigeon
 * platypus
+* pony
 * rabbit
 * raccoon
 * scorpion

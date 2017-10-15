@@ -212,6 +212,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('bison', '\sbisons?\s', reddit, BISON_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
     botengine('capybara', '\scapybaras?\s', reddit, CAPYBARA_FACTS, comment)
+    botengine('cat', '\scats?\s', reddit, CAT_FACTS, comment)
     botengine('chameleon', '\schameleons?\s', reddit, CHAMELEON_FACTS, comment)
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
@@ -220,6 +221,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
     botengine('cuttlefish', '\scuttlefish(es)?\s', reddit, CUTTLEFISH_FACTS, comment)
     botengine('dingo', '\sdingos?\s', reddit, DINGO_FACTS, comment)
+    botengine('dog', '\sdogs?\s', reddit, DOG_FACTS, comment)
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
     # botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)   Disabled because this was only a temp feature during Game of Thrones season. Dragons aren't real.
     botengine('dugong', '\sdugongs?\s', reddit, DUGONG_FACTS, comment)
@@ -276,6 +278,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
     botengine('platypus', '\splatypuse?s?\s', reddit, PLATYPUS_FACTS, comment)
+    botengine('pony', '\sponies?s?\s', reddit, PONY_FACTS, comment)    
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
@@ -390,7 +393,7 @@ ANTELOPE_FACTS = (
     'Antelopes have extremely developed senses which help them detect predators while they still have time to escape.',
     'Depending on the species, 4-9 months after mating season, baby antelope will be born. Baby antelope is an easy target and mother keeps it on the secret location until it becomes stronger.',
     'Some antelope are famous for their massive herds, like the thousands of wildebeests making their annual migration across the African plains.',
-)
+    )
 
 BADGER_FACTS = (
     'Badgers are part of the family Mustelidae this is the same family as otters, ferret, polecats, weasels and wolverines.',
@@ -452,7 +455,7 @@ BISON_FACTS=(
     'The average lifespan of a bison is 10-20 years.',
     'Bison have poor eyesight but they have excellent senses of smell and hearing.',
     'Female bison give birth to one calf after 9 months.',
-    'Bison live in a variety of groups.Each bison group has a dominant male or female.'
+    'Bison live in a variety of groups.Each bison group has a dominant male or female.',
     )
     
 
@@ -486,7 +489,27 @@ CAPYBARA_FACTS = (
     'Predators of the capybara include jaguars, pumas, ocelots, caimans, eagles, and anacondas.',
     'The name "capybara" is derived from the Tupi language, spoken by the native Tupi people of Brazil. The translated name means "one who eats slender leaves".',
     'Capybaras are very popular captive animals in Japan. One common practice, said to have originated in 1982 and attributed to the Izu Shaboten Zoo, is to keep hot springs in capybara enclosures for them to bathe and relax in during the winter.'
-)
+    )
+
+CAT_FACTS = (
+    'A group of cats is called a "clowder".',
+    'When a cat chases its prey, it keeps its head level. Dogs and humans bob their heads up and down.',
+    'Unlike dogs, cats do not have a sweet tooth. Scientists believe this is due to a mutation in a key taste receptor.',
+    'A cat can’t climb head first down a tree because every claw on a cat’s paw points the same way. To get down from a tree, a cat must back down.',
+    'Cats make about 100 different sounds. Dogs make only about 10.',
+    'Every year, nearly four million cats are eaten in Asia.',
+    'There are more than 500 million domestic cats in the world, with approximately 40 recognized breeds.',
+    'Approximately 24 cat skins can make a coat.',
+    'Approximately 40,000 people are bitten by cats in the U.S. annually.',
+    'Cats are North America’s most popular pets: there are 73 million cats compared to 63 million dogs. Over 30% of households in North America own a cat.',
+    'A cat can travel at a top speed of approximately 31 mph (49 km) over a short distance.',
+    'A cat rubs against people not only to be affectionate but also to mark out its territory with scent glands around its face. The tail area and paws also carry the cat’s scent.',
+    'In 1888, more than 300,000 mummified cats were found an Egyptian cemetery. They were stripped of their wrappings and carted off to be used by farmers in England and the U.S. for fertilizer.',
+    'Most cats give birth to a litter of between one and nine kittens. The largest known litter ever produced was 19 kittens, of which 15 survived.',
+    'The biggest wildcat today is the Siberian Tiger. It can be more than 12 feet (3.6 m) long (about the size of a small car) and weigh up to 700 pounds (317 kg).',
+    'Many Egyptians worshipped the goddess Bast, who had a woman’s body and a cat’s head.',
+    'While many parts of Europe and North America consider the black cat a sign of bad luck, in Britain and Australia, black cats are considered lucky.',
+    )
 
 CHAMELEON_FACTS = (
     'Chameleons are a very unique branch of the lizard group of reptiles.',
@@ -609,6 +632,24 @@ DINGO_FACTS = (
     'Dingoes live to five or six years of age in the wild and fifteen years in captivity.',
     )
 
+DOG_FACTS = (
+    'Puppies have 28 teeth and normal adult dogs have 42.',
+    'Three dogs (from First Class cabins!) survived the sinking of the Titanic – two Pomeranians and one Pekingese.',
+    'The Newfoundland breed has a water resistant coat and webbed feet. This dog was originally bred to help haul nets for fishermen and rescuing people at risk of drowning.',
+    'Dogs chase their tails for a variety of reasons: curiosity, exercise, anxiety, predatory instinct or, they might have fleas! If your dog is chasing his tail excessively, talk with your vet.',
+    'Dalmatian puppies are pure white when they are born and develop their spots as they grow older.',
+    'Dogs’ eyes contain a special membrane, called the tapetum lucidum, which allows them to see in the dark.',
+    'A large breed dog’s resting heart beats between 60 and 100 times per minute, and a small dog breed’s heart beats between 100-140. Comparatively, a resting human heart beats 60-100 times per minute.',
+    'According to a Petside.com/Associated Press poll, 72% of dog owners believe their dog can detect when stormy weather is on the way.',
+    'A dog’s normal temperature is between 101 and 102.5 degrees Fahrenheit. How much do you know about dog health? Take our Doggy First Aid Quiz!',
+    'Unlike humans who sweat everywhere, dogs only sweat through the pads of their feet.',
+    'Dogs have three eyelids, an upper lid, a lower lid and the third lid, called a nictitating membrane or “haw,” which helps keep the eye moist and protected.',
+    '62% of U.S. households own a pet, which equates to 72.9 million homes.',
+    '45% of dogs sleep in their owner’s bed (we’re pretty sure a large percentage also hog the blankets!).',
+    'Dogs’ noses secrete a thin layer of mucous that helps them absorb scent. They then lick their noses to sample the scent through their mouth.',
+    'Dogs have about 1,700 taste buds. Humans have approximately 9,000 and cats have around 473.',
+    )
+
 DOLPHIN_FACTS = (
     'Compared to other animals, dolphins are believed to be very intelligent.',
     'The Killer Whale (also known as Orca) is actually a type of dolphin.',
@@ -642,7 +683,8 @@ DUGONG_FACTS = (
     'Dugongs can weigh anywhere between 500 and 1100 pounds.',
     'The average dugong is nearly 10 feet in length.',
     'It is thought that the legends of mermaids may have originated from sailors seeing the fluked tails of dugongs from a distance.',
-    'Dugongs can often live for upwards of 70 years.')
+    'Dugongs can often live for upwards of 70 years.'
+    )
 
 EAGLE_FACTS = (
     'Eagles build their nests on high cliffs or in tall trees.',
@@ -867,7 +909,7 @@ HAMSTER_FACTS = (
     "The Syrian hamster is the most popular and well known breed kept as pets. All Syrian hamsters as pets are believed to have descended from one pair in 1930.",
     "Syrian hamsters live 2 - 3 years in captivity, and less in the wild. Other popular pet types such as Russian dwarf hamsters live about 2- 4 years in captivity.",
     "Hamsters range in size from the largest breed, the European hamster at 13.4 in (34 cm) long, to the smallest, the dwarf hamster at 2 - 4 in (5.5 - 10.5 cm) long.",
-)
+    )
 
 HEDGEHOG_FACTS = (
     'There are 17 species of hedgehog. They are found in parts of Europe, Asia, Africa and were introduced in New Zealand by settlers.',
@@ -900,7 +942,7 @@ HIPPO_FACTS = (
     'A male hippopotamus is called a ‘bull’. A female hippopotamus is called a ‘cow’. A baby hippo is called a ‘calf’.',
     'A group of hippos in known as a ‘herd’, ‘pod’, ‘dale’ or ‘bloat’.',
     'Hippos typically live for around 45 years.',
-)
+    )
 
 HONEYBEE_FACTS = (
     'The honey bee has been around for millions of years.',
@@ -981,7 +1023,8 @@ IGUANA_FACTS = (
     'Green iguanas can vary in color more than just green, like blue, purple, or orange.',
     'Iguanas absorb water through their skin.',
     'After female iguanas lay their eggs, she never returns. Bye Mom!',
-    'Iguanas are mainly herbivorous.') 
+    'Iguanas are mainly herbivorous.',
+    ) 
  
 
 IBEX_FACTS = (
@@ -992,7 +1035,8 @@ IBEX_FACTS = (
     'Both male and female ibex have very long horns, which are used for territorial defense and sexual selection.',
     'Ibex are herbivores; they only eat vegetation, such as shrubs, bushes and grasses.',
     'Ibex make their homes on cliffs that would be dangerous for predators.',
-    'Ibex are very nimble. They can jump more than 6 feet (1.8 meters) straight up without a running start. This helps them climb mountainous terrain with ease.')
+    'Ibex are very nimble. They can jump more than 6 feet (1.8 meters) straight up without a running start. This helps them climb mountainous terrain with ease.',
+    )
 
 JELLYFISH_FACTS = (
     'Jellyfish live in the sea and are found in all oceans.',
@@ -1042,7 +1086,7 @@ LEMUR_FACTS = (
     'There are 105 known species of lemur.',
     'Dwarf lemurs store fat in their tails for nourishment when they go dormant during dry seasons.',
     'Lemurs can live up to 30 years in captivity, or 16-20 years in the wild, depending on the species.',
-)
+    )
 
 LEOPARD_FACTS = (
     'Leopards are part of the cat family, Felidae. The scientific name for a leopard is Panthera pardus.',
@@ -1055,7 +1099,7 @@ LEOPARD_FACTS = (
     'Female leopards give birth to a litter of two or three cubs at a time. By the time a cub is two years old it will leave the company of its mother and live on their own.',
     'When a female leopard is ready to mate she will give a scent and rub her body on the trees to leave her smell there. Male leopards either smell the females scent or hear her call to know that she is ready to mate.',
     'Some people believe that the bones and whiskers of leopards can heal sick people. Many leopards are killed each year for their fur and body parts and this is one reason why the leopard is an endangered animal. While they were previously found in the wild in a number of areas around the world, their habitat is largely restricted to sub-Saharan Africa with small numbers also found in India, Pakistan, Malaysia, China and Indochina.'
-)
+    )
 
 LYNX_FACTS = ( 
     'The Eurasian lynx is one of the widest ranging cats in the world and can be found in the forests of western Europe, Russia and central Asia.',
@@ -1438,6 +1482,14 @@ PLATYPUS_FACTS = (
     "Platypus fur, being very thick and waterproof, used to be very in the fur trade until Australia banned platypus hunting to protect the species.",
     "Platypuses is the correct plural form, although platypi and platypodes are also accepted.",
     )
+
+PONY_FACTS = (
+    'It is often thought the only difference between horses and ponies is size. This is an important distinguisher but other characteristics also separate horses and ponies.',
+    'Ponies are generally considered to be 14.2 hands or under. Horses and ponies are measured in ‘hands’ with each ‘hand’ measuring 4 inches. Ponies height is measured at their withers – where their neck and back meet.',
+    'Although size is a key distinguisher, the smallest horse, a Falabella is considered to be a horse rather than a pony despite only reaching 8 hands, or 32 inches!',
+    'Shetland ponies are the strongest of the smaller ponies in spite of their small size.',
+    'Ponies’ temperament also separates them from horses. They are steady and have gentle dispositions as a whole, however each pony will have different characteristics!',
+    )
     
 RABBIT_FACTS = (
     'A rabbit’s teeth never stop growing, which is why it is very important to provide chews and treats for them to keep their teeth from becoming overgrown.',
@@ -1747,7 +1799,8 @@ TARDIGRADE_FACTS = (
 	'Tardigrades can withstand 1,000 times more radiation than other animals; the median lethal dose is 5,000 Gy (of gamma rays).',
 	'Many organisms that live in aquatic environments feed on tardigrades.',
 	'Tardigrades work as pioneer species by inhabiting new developing environments in which to live. Their presence attracts other invertebrates and predators to populate the space.',
-	'Tardigrades are the first known animal to survive in space.')
+	'Tardigrades are the first known animal to survive in space.',
+    )
 
 
 TIGER_FACTS = (
@@ -1907,6 +1960,7 @@ ALL_FACTS = (
     BISON_FACTS,
     CAMEL_FACTS,
     CAPYBARA_FACTS,
+    CAT_FACTS,
     CHAMELEON_FACTS,
     CHEETAH_FACTS,
     CHIPMUNK_FACTS,
@@ -1915,6 +1969,7 @@ ALL_FACTS = (
     CROCODILE_FACTS,
     CUTTLEFISH_FACTS,
     DINGO_FACTS,
+    DOG_FACTS,
     DOLPHIN_FACTS,
     DUGONG_FACTS,
     EAGLE_FACTS,
@@ -1970,6 +2025,7 @@ ALL_FACTS = (
     PIG_FACTS,
     PIGEON_FACTS,
     PLATYPUS_FACTS,
+    PONY_FACTS,
     RABBIT_FACTS,
     RACCOON_FACTS,
     SCORPION_FACTS,
