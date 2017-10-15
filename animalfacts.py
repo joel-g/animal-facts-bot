@@ -201,7 +201,7 @@ def botengine(animal, regex, reddit, facts, comment):
                         print('     Already commented on this!\n')
 
 def check_comment_for_animal(comment, reddit):
-	botengine('aardvark', '\saardvarks?\s', reddit, AARDVARK_FACTS, comment)
+    botengine('aardvark', '\saardvarks?\s', reddit, AARDVARK_FACTS, comment)
     botengine('albatross', '\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
     botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
