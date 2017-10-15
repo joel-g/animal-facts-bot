@@ -321,11 +321,16 @@ ALBATROSS_FACTS = (
 
 ALLIGATOR_FACTS = (
     'Alligators have been living on Earth for millions of years and are sometimes described as ‘living fossils’.',
+    'Alligators live in freshwater environments, such as ponds, marshes, wetlands, rivers, and swamps, as well as brackish environments.',
     'There are two different species of alligator, the American alligator and the Chinese alligator.',
+    'The American alligator, Alligator mississippiensi, is the largest reptile in North America.',
     'American alligators live in south-eastern areas of the United States such as Florida and Louisiana.',
     'Chinese alligators are found in the Yangtze River but they are critically endangered and only a few remain in the wild.',
     'Like other reptiles, alligators are cold-blooded.',
+    'Alligators use their tails, which accounts to half of their body length, to propel in the water.', 
     'Alligators can weigh over 450 kg (1000 lb).',
+    'Alligators are social creatures and often stay in groups called congregations. These groups are typically seen basking in the sun or taking a swim.',
+    'Although alligators have no vocal cords, males bellow loudly to attract mates and warn off other males by sucking air into their lungs and blowing it out in intermittent, deep-toned roars.',
     'Alligators have a powerful bite but the muscles that open the jaw are relatively weak. An adult human could hold the jaws of an alligator shut with their bare hands.',
     'Alligators eat a range of different animals such as fish, birds, turtles and even deer.',
     'Alligator eggs become male or female depending on the temperature, male in warmer temperatures and female in cooler temperatures.',
