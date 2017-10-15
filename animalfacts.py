@@ -248,6 +248,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('jellyfish', '\sjellyfish(es)\s', reddit, JELLYFISH_FACTS, comment)
     botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
+    botengine('ladybug', '\sladybugs?\s', reddit, LADYBUG_FACTS, comment)    
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
     botengine('lynx', '\slynx(es)?\s', reddit, LYNX_FACTS, comment)
     botengine('lemur', '\slemurs?\s', reddit, LEMUR_FACTS, comment)
@@ -1013,6 +1014,19 @@ KOALA_FACTS = (
     'Outside of breeding seasons, koalas are quiet animals.',
     'A baby koala is called a ‘joey’. Joeys live in their mother’s pouch for around six months and remain with them for another six months or so afterwards.',
     'Koalas cannot be kept legally as pets.',
+    )
+
+LADYBUG_FACTS = (
+    'Ladybugs are a type of beetle. There are about 4,300 kinds of ladybugs in the world.',
+    'Some ladybugs have no spots and others have up to 20 spots. Spots have nothing to do with a ladybug age.',
+    'During winter ladybugs hibernate together to stay warm. Thousands of ladybugs may gather in the same location.',
+    'Ladybugs are both male and female. Female ladybugs are larger than male ladybugs.',
+    'A ladybug can live up to a year long and it can eat up to 5,000 insects in its lifetime.',
+    'A ladybug‘s bright color warns predators that it does not taste good.',
+    'Ladybugs smell with their feet and antennae.',
+    'When a ladybug flies, its wings beat 85 times every second.',
+    'If food is scarce, ladybugs will do what they must to survive, even if it means eating each other.',
+    'Ladybugs got their name from Catholic farmers, who prayed to the Virgin Mary to save their crops from pests. When appeared and ate the pests they were called “the beetles of our lady”.',
     )
 
 LEMUR_FACTS = (
