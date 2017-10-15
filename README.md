@@ -1,4 +1,4 @@
-## How to contribute (Teach AnimalFactsBot a new animal):
+﻿## How to contribute (Teach AnimalFactsBot a new animal):
 
 Check the open issues to claim a listed animal, or come up with your own. Be sure to also check currently open pull requests to make sure you don't duplicate someone else's work.
 
@@ -32,8 +32,11 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * albatross
 * alligator
 * ant
+* antelope
 * badger
+* bear
 * beaver
+* bison
 * camel
 * chameleon
 * cheetah
@@ -45,6 +48,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * dingo
 * dolphin
 * dragon
+* dugong
 * eagle
 * echidna
 * elephant
@@ -66,10 +70,14 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * horse
 * hummingbird
 * husky
+* iguana
 * jellyfish
 * kangaroo
 * koala
+* lion
+* lemur
 * leopard
+* lynx
 * lion
 * lizard
 * lobster
@@ -94,10 +102,13 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * pig
 * pigeon
 * platypus
+* rabbit
+* raccoon
 * scorpion
 * seagull
 * sea cucumber
 * shark
+* sheep
 * skunk
 * sloth
 * snail
@@ -105,6 +116,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * tarantula
 * squirrel
 * stingray
+* tardigrade
 * tiger
 * turtle
 * wallaby
