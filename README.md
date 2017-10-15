@@ -33,6 +33,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * alligator
 * ant
 * badger
+* bear
 * beaver
 * camel
 * chameleon
@@ -45,6 +46,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * dingo
 * dolphin
 * dragon
+* dugong
 * eagle
 * echidna
 * elephant
@@ -66,9 +68,12 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * horse
 * hummingbird
 * husky
+* iguana
 * jellyfish
 * kangaroo
 * koala
+* lion
+* lemur
 * leopard
 * lion
 * lizard
@@ -94,10 +99,13 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * pig
 * pigeon
 * platypus
+* rabbit
+* raccoon
 * scorpion
 * seagull
 * sea cucumber
 * shark
+* sheep
 * skunk
 * sloth
 * snail
