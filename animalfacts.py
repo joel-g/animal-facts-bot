@@ -809,6 +809,10 @@ GOPHER_FACTS = (
     'Gopher can survive 2 to 3 years (rarely up to 5) in the wild.',
     'Natural enemies of gophers are owls, hawks, coyotes, weasels and snakes.',
     'The gopher is an iconic mascot and one of the most distinctive features of the Go programming language.',
+    'A gopher plays a key role in the film Caddyshack.',
+    'Most gophers have brown fur that often closely matches the color of the soil in which they live.',
+    'Gophers eat plant roots, shrubs, and other vegetables such as carrots, lettuce, radishes, and any other vegetables with juice.',
+    'Pocket gophers are solitary outside of the breeding season, aggressively maintaining territories that vary in size depending on the resources available.',
     )
 
 GRASSHOPPER_FACTS = (
