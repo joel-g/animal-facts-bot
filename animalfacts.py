@@ -1664,9 +1664,10 @@ SQUIRREL_FACTS = (
     'A newborn squirrel is about an inch long.',
     'Humans introduced squirrels to most of our major city parks.',
     'Squirrels are acrobatic, intelligent and adaptable.',
-    'Squirrels get bulky to stay warm during the winter.',
     'Squirrels don’t dig up all of their buried nuts, which results in more trees!',
-    )
+    'Baby squirrels will only pee and poop in their mother’s mouth so that the mother can dispose of the waste outside the nest in order to keep predators from smelling the scent.',
+    'Squirrels can rotate their ankles 180 degrees.',
+)
 
 STINGRAY_FACTS = (
     'Stingrays are diverse group of fish characterized by flattened bodies.',
