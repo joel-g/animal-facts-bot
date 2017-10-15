@@ -1,5 +1,7 @@
 ﻿## How to contribute (Teach AnimalFactsBot a new animal):
 
+Check the open issues to claim a listed animal, or come up with your own. Be sure to also check currently open pull requests to make sure you don't duplicate someone else's work.
+
         Due to Hacktoberfests pull requests are coming in fast! Comment on an issue you are going to work on - and also check open pull requests before you do work someone else has already done.
 
 Steps:
@@ -11,17 +13,11 @@ Steps:
 * Add me on Twitter @joelatwar
 
 Please:
-* Don't add a very small set of facts (this will cause the bot to be repetetive regarding your animal).
+* Don't add a very small set of facts (this will cause the bot to be repetitive regarding your animal).
 * Each fact must make sense independent of the other facts in the tuple because users will only get one fact at a time.
 * Only add TRUE facts. Please no trolling with 'alternative facts'.
 * Don't add 'seal', 'bat' or 'duck' facts unless you've figured out how to not reply to homonyms.
 * Don't add 'cat' or 'dog' because they are just too common on reddit.
-
-Please: Don't add a very small set of facts (this will cause the bot to be repetetive regarding your animal).
-        Each fact must make sense independent of the other facts in the tuple because users will only get one fact at a time.
-        Only add TRUE facts. Please no trolling with 'alternative facts'.
-        Don't add 'seal', 'bat' or 'duck' facts unless you've figured out how to not reply to homonyms.
-        Don't add 'cat' or 'dog' because they are just too common on reddit.
 
 If you have a question the quickest way to reach is me on twitter @joelatwar
 
@@ -37,16 +33,20 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * alligator
 * ant
 * badger
+* bear
 * beaver
 * camel
 * chameleon
 * cheetah
+* chipmunk
 * cow
 * crab
 * crocodile
 * cuttlefish
+* dingo
 * dolphin
 * dragon
+* dugong
 * eagle
 * echidna
 * elephant
@@ -68,12 +68,16 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * horse
 * hummingbird
 * husky
+* iguana
 * jellyfish
 * kangaroo
 * koala
 * lion
+* lemur
 * leopard
+* lion
 * lizard
+* lobster
 * llama
 * meerkat
 * monkey
@@ -81,33 +85,39 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * newt
 * ocelot
 * octopus
+* opossum
+* oryx
 * orca
 * otter
 * owl
 * panda
 * pangolin
 * panther
-* peacock
 * parrot
+* peacock
 * penguin
 * pig
 * pigeon
 * platypus
+* rabbit
+* raccoon
 * scorpion
 * seagull
 * sea cucumber
 * shark
+* sheep
 * skunk
 * sloth
 * snail
 * snake
+* tarantula
 * squirrel
 * stingray
 * tardigrade
 * tiger
 * turtle
+* wallaby
 * walrus
-* wolf
 * whale
 * wolf
 * zebra
