@@ -1,4 +1,4 @@
-## How to contribute (Teach AnimalFactsBot a new animal):
+﻿## How to contribute (Teach AnimalFactsBot a new animal):
 
 Check the open issues to claim a listed animal, or come up with your own. Be sure to also check currently open pull requests to make sure you don't duplicate someone else's work.
 
@@ -29,15 +29,21 @@ A Reddit bot that searches for comments on reddit that contain the name of the a
 You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comments/
 
 ### Current supported animals:
+* aardvark
 * albatross
 * alligator
 * ant
+* antelope
 * badger
+* bear
 * beaver
+* bison
 * camel
+* capybara
 * chameleon
 * cheetah
 * chipmunk
+* cougar
 * cow
 * crab
 * crocodile
@@ -45,6 +51,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * dingo
 * dolphin
 * dragon
+* dugong
 * eagle
 * echidna
 * elephant
@@ -53,6 +60,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * flamingo
 * fox
 * frog
+* gazelle
 * giraffe
 * grasshopper
 * goat
@@ -66,10 +74,14 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * horse
 * hummingbird
 * husky
+* iguana
 * jellyfish
 * kangaroo
 * koala
+* lion
+* lemur
 * leopard
+* lynx
 * lion
 * lizard
 * lobster
@@ -94,23 +106,29 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * pig
 * pigeon
 * platypus
+* rabbit
+* raccoon
 * scorpion
 * seagull
 * sea cucumber
 * shark
+* sheep
 * skunk
 * sloth
 * snail
 * snake
-* tarantula
 * squirrel
 * stingray
+* sunfish
+* tarantula
+* tardigrade
 * tiger
 * turtle
 * wallaby
 * walrus
 * whale
 * wolf
+* yak
 * zebra
 
 ### AnimalFactsBot will reply to its replies if they contain the phrases:
