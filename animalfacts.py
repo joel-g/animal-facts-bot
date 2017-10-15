@@ -211,6 +211,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('bison', '\sbisons?\s', reddit, BISON_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
     botengine('capybara', '\scapybaras?\s', reddit, CAPYBARA_FACTS, comment)
+    botengine('cat', '\scats?\s', reddit, CAT_FACTS, comment)
     botengine('chameleon', '\schameleons?\s', reddit, CHAMELEON_FACTS, comment)
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
@@ -469,6 +470,26 @@ CAPYBARA_FACTS = (
     'Predators of the capybara include jaguars, pumas, ocelots, caimans, eagles, and anacondas.',
     'The name "capybara" is derived from the Tupi language, spoken by the native Tupi people of Brazil. The translated name means "one who eats slender leaves".',
     'Capybaras are very popular captive animals in Japan. One common practice, said to have originated in 1982 and attributed to the Izu Shaboten Zoo, is to keep hot springs in capybara enclosures for them to bathe and relax in during the winter.'
+)
+
+CAT_FACTS = (
+    'A group of cats is called a "clowder".',
+    'When a cat chases its prey, it keeps its head level. Dogs and humans bob their heads up and down.',
+    'Unlike dogs, cats do not have a sweet tooth. Scientists believe this is due to a mutation in a key taste receptor.',
+    'A cat can’t climb head first down a tree because every claw on a cat’s paw points the same way. To get down from a tree, a cat must back down.',
+    'Cats make about 100 different sounds. Dogs make only about 10.',
+    'Every year, nearly four million cats are eaten in Asia.',
+    'There are more than 500 million domestic cats in the world, with approximately 40 recognized breeds.',
+    'Approximately 24 cat skins can make a coat.',
+    'Approximately 40,000 people are bitten by cats in the U.S. annually.',
+    'Cats are North America’s most popular pets: there are 73 million cats compared to 63 million dogs. Over 30% of households in North America own a cat.',
+    'A cat can travel at a top speed of approximately 31 mph (49 km) over a short distance.',
+    'A cat rubs against people not only to be affectionate but also to mark out its territory with scent glands around its face. The tail area and paws also carry the cat’s scent.',
+    'In 1888, more than 300,000 mummified cats were found an Egyptian cemetery. They were stripped of their wrappings and carted off to be used by farmers in England and the U.S. for fertilizer.',
+    'Most cats give birth to a litter of between one and nine kittens. The largest known litter ever produced was 19 kittens, of which 15 survived.',
+    'The biggest wildcat today is the Siberian Tiger. It can be more than 12 feet (3.6 m) long (about the size of a small car) and weigh up to 700 pounds (317 kg).',
+    'Many Egyptians worshipped the goddess Bast, who had a woman’s body and a cat’s head.',
+    'While many parts of Europe and North America consider the black cat a sign of bad luck, in Britain and Australia, black cats are considered lucky.'
 )
 
 CHAMELEON_FACTS = (
@@ -1851,6 +1872,7 @@ ALL_FACTS = (
     BISON_FACTS,
     CAMEL_FACTS,
     CAPYBARA_FACTS,
+    CAT_FACTS,
     CHAMELEON_FACTS,
     CHEETAH_FACTS,
     CHIPMUNK_FACTS,
