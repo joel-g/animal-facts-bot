@@ -299,6 +299,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('walrus', '\swalrus\s', reddit, WALRUS_FACTS, comment)
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
     botengine('wolf', '\swol(f|ves)\s', reddit, WOLF_FACTS, comment)
+    botengine('yak', '\syaks?\s', reddit, YAK_FACTS, comment)
     botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS, comment)
 
 
@@ -1846,6 +1847,23 @@ WOLF_FACTS = (
     'A wolf can run at a speed of 40 miles per hour during a chase. Wolves have long legs and spend most of their time trotting at a speed of 7-10 miles per hour. They can keep up a reasonable pace for hours and have been known to cover distances of 55 miles in one night.',
     )
 
+YAK_FACTS = (
+   
+  'The yak is a long-haired bovid found throughout the Himalaya region of southern Central Asia, the Tibetan Plateau and as far north as Mongolia and Russia.',
+  'Most yaks are domesticated animals, though there is also a small, vulnerable wild yak population.',
+  'Bos mutus is the scientific name for the wild yak and Bos grunniens for domesticated yak.',
+  '90% of all known yaks can be found in Tibetan Plateau in the Himalayas.',
+  'Yak is a close relative of buffalo and bison.',
+  'The average lifespan of a yak is about 20 years in the wild and slightly longer when in captivity.',
+  'The yak is a herd animal that tend to gather in herds from 10 yaks to 100 yaks, most of which are females and their young.',
+  'The yak is the third largest beast in Asia, after the elephant and rhino.',
+  'Body of yak is covered with thick, wooly coat. It can be brown, black or white in color. Main purpose of the fur is preservation of the body heat and protection against low outer temperatures.Domesticated yak’s coat is less furry, but more diverse in color than the wild yak.',
+  'Yaks have long, bushy tails which are used for the production of fake beards in certain Chinese theaters.',
+  'Among domesticated animals, yaks are the highest dwelling animals of the world, living at 3,000–5,000 meters (9,800–16,400 feet).',
+  'Yaks are herbivores.A great deal of the yaks time is spent on grassy plains in the mountains grazing on grasses, herbs and wild flowers.',
+  'Yaks grunt and, unlike cattle, are not known to produce the characteristic bovine lowing (mooing) sound.',
+)
+
 ZEBRA_FACTS = (
     'Zebra are part of the equidae family along with horse and donkeys.',
     'Every zebra has a unique pattern of black and white stripes.',
@@ -1960,6 +1978,7 @@ ALL_FACTS = (
     WALRUS_FACTS,
     WHALE_FACTS,
     WOLF_FACTS,
+    YAK_FACTS,
     ZEBRA_FACTS,
     )
 
