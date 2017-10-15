@@ -259,6 +259,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('oryx', '\soryx(es)?\s', reddit, ORYX_FACTS, comment)
     botengine('octopus', '\socto(pus|puses|pusses|pi)\s', reddit, OCTOPUS_FACTS, comment)
     botengine('orca', '\sorcas?\s', reddit, ORCA_FACTS, comment)
+    botengine('ostrich', '\sostrich?\s', reddit, OSTRICH_FACTS, comment)
     botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
     botengine('owl', '\sowls?\s', reddit, OWL_FACTS, comment)
     botengine('parrot', '\sparrots?\s', reddit, PARROT_FACTS, comment)
@@ -1148,6 +1149,9 @@ ORCA_FACTS = (
     "The orca can reach speeds in excess of 30 knots (about 34 mph, or 56 kph).",
     )
 
+OSTRICH_FACTS = (
+	
+
 OTTER_FACTS = (
     'The otter is a carnivorous mammal in a branch of the weasel family called Lutrinae.',
     'There are 13 species of otter found all around the world.',
@@ -1762,6 +1766,7 @@ ALL_FACTS = (
     OPOSSUM_FACTS,
     ORYX_FACTS,
     ORCA_FACTS,
+    OSTRICH_FACTS,
     OTTER_FACTS,
     OWL_FACTS,
     PANDA_FACTS,
