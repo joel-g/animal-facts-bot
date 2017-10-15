@@ -810,8 +810,7 @@ HUSKY_FACTS = (
 
 IBEX_FACTS = (
     'Ibex are wild goats that live in the mountainous regions of Europe, north central Asia and northern Africa.',
-    'There are five species of ibex, according to the Integrated Taxonomic Information System (ITIS).',
-    'They have long, curved horns and cloven hooves.',
+    'There are five species of ibex, according to the Integrated Taxonomic Information System (ITIS). They have long, curved horns and cloven hooves.',
     'Ibex are related to antelopes, buffalo, bison, cattle, goats and sheep.',
     'Ibex are typically about 1 to 5.5 feet (30 to 170 centimeters) from their hooves to withers, the highest part of the shoulders at the base of the neck.',
     'Both male and female ibex have very long horns, which are used for territorial defense and sexual selection.',
