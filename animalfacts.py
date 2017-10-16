@@ -226,6 +226,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('dugong', '\sdugongs?\s', reddit, DUGONG_FACTS, comment)
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
     botengine('echidna', '\sechidnas?\s', reddit, ECHIDNA_FACTS, comment)
+    botengine('eel', '\seels?\s', reddit, EEL_FACTS, comment)
     botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
     botengine('emu', '\semus?\s', reddit, EMU_FACTS, comment)
     botengine('falcon', '\sfalcons?\s', reddit, FALCON_FACTS, comment)
@@ -698,6 +699,20 @@ ECHIDNA_FACTS = (
     'At the end of their slender snouts, echidnas have tiny mouths and toothless jaws. They use their long, sticky tongues to feed on ants, termites, worms, and insect larvae.',
     "The echidna has a very large brain for its body size. Part of this might be due to their enlarged neocortex, which makes up half of the echidna's brain (compare this to about 30 percent in most other mammals and 80 percent in humans).",
     )
+
+EEL_FACTS = (
+
+  'Eels are covered with slimy mucus and this allows them to slither around reefs without getting scratched. They have scale less and slimy smooth skin, sharp teeth and strong jaws.',
+  'They have poor eyesight and often bite fingers of divers who give them food.',
+  'Eel weigh from 95 gm to 215 gm and their length ranges from 5 – 13 fee',
+  'Eels live in shallow waters or hide at the bottom of the oceans in holes which are called eel pits. Eels can swim backwards and forwards. They can travel on land for short distances.',
+  'The life span of an eel is about 85 years', 
+  'Eels are voracious eaters. They are carnivorous and eat lobsters, fish, octopuses, crabs mussels, snails and frog.',
+  'They move through water with an undulating motion. They feed at night and rest in the day. They possess an excellent sense of smell that helps them hunt for their prey.',
+  'Baby eels are called ‘elvers’. The eels go through a larval phase as juveniles and form part of the plankton.',
+  'Moray eels have long sharp canine teeth though some have low nodular teeth. They tie their bodies in knots to anchor when tearing at food.',
+  'Courting eels open their mouths wide and wrap their bodies around each other for hours. They separate only when the female has laid her eggs. The males then fertilize the eggs.',
+)
 
 ELEPHANT_FACTS = (
     'There are two types of elephant, the Asian elephant and the African elephant (although sometimes the African Elephant is split into two species, the African Forest Elephant and the African Bush Elephant).',
@@ -2020,6 +2035,7 @@ ALL_FACTS = (
     DUGONG_FACTS,
     EAGLE_FACTS,
     ECHIDNA_FACTS,
+    EEL_FACTS,
     EMU_FACTS,
     FALCON_FACTS,
     FLAMINGO_FACTS,
