@@ -29,6 +29,7 @@ A Reddit bot that searches for comments on reddit that contain the name of the a
 You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comments/
 
 ### Current supported animals:
+* aardvark
 * albatross
 * alligator
 * ant
@@ -42,6 +43,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * chameleon
 * cheetah
 * chipmunk
+* cougar
 * cow
 * crab
 * crocodile
@@ -116,9 +118,10 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * sloth
 * snail
 * snake
-* tarantula
 * squirrel
 * stingray
+* sunfish
+* tarantula
 * tardigrade
 * tiger
 * turtle
@@ -126,6 +129,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * walrus
 * whale
 * wolf
+* yak
 * zebra
 
 ### AnimalFactsBot will reply to its replies if they contain the phrases:

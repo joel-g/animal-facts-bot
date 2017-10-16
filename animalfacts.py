@@ -201,6 +201,7 @@ def botengine(animal, regex, reddit, facts, comment):
                         print('     Already commented on this!\n')
 
 def check_comment_for_animal(comment, reddit):
+    botengine('aardvark', '\saardvarks?\s', reddit, AARDVARK_FACTS, comment)
     botengine('albatross', '\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
     botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
@@ -275,7 +276,8 @@ def check_comment_for_animal(comment, reddit):
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
     botengine('platypus', '\splatypuse?s?\s', reddit, PLATYPUS_FACTS, comment)
-    botengine('puma', '\spuma?s?\s', reddit, PUMA_FACTS, comment)
+    botengine('puma', '\spumas?\s', reddit, PUMA_FACTS, comment)
+    botengine('porcupine', '\sporcupines?\s', reddit, PORCUPINE_FACTS, comment)
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
@@ -292,6 +294,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('tarantula', '\starantulas?\s', reddit, TARANTULA_FACTS, comment)
     botengine('squirrel', '\ssquirrels?\s', reddit, SQUIRREL_FACTS, comment)
     botengine('stingray', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
+    botengine('sunfish', '\ssunfish(es)?\s', reddit, SUNFISH_FACTS, comment)
     botengine('tardigrade', '\stardigrades?\s', reddit, TARDIGRADE_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
@@ -299,6 +302,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('walrus', '\swalrus\s', reddit, WALRUS_FACTS, comment)
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
     botengine('wolf', '\swol(f|ves)\s', reddit, WOLF_FACTS, comment)
+    botengine('yak', '\syaks?\s', reddit, YAK_FACTS, comment)
     botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS, comment)
 
 
@@ -311,6 +315,30 @@ def animalfactsbot(reddit):
     for comment in comment_list:
         check_comment_for_animal(comment, reddit)
 
+AARDVARK_FACTS = (
+    'The aardvark is the only species in its order. It is literally like no other animal on earth.',
+    'The aardvark is admired in African folklore because of its diligent search for food and its lack of fear of soldier ants. The Maasai tribe believe sighting an aardvark brings good fortune.',
+    'The name Aardvark comes from South Africa’s Afrikaans language and means ‘earth pig’ or ‘ground pig’.',
+    'The aardvark takes up an astonishing number of insects with its long, sticky tongue, as many as 50,000 in one night.',
+    'Skilled diggers, an aardvark can dig up to 2ft (0.6 m) in 15 seconds.',
+    'Aardvarks can live to be over 24 years old in captivity. In the wild, they live between 10 – 23 years.',
+    'Aardvarks can close their nostrils to keep out dirt and bugs while they dig.',
+    'Aardvarks have excellent hearing and their long ears allow them to hear tiny sounds, such as termites under the ground.',
+    'Aardvarks can dig fast or run in zigzag fashion to elude enemies, but if all else fails, they will strike with their claws, tail and shoulders, sometimes flipping onto their backs lying motionless except to lash out with all four feet.',
+    'Skin of the aardvark body is thick and tough. It provides protection against bites of angry ants and termites. ',
+    'Aardvark can travel between 16 and 30 kilometers per night while searching for the food.',
+    'Aardvark is excellent swimmer thanks to its webbed feet.',
+    "An aardvark has a long snout that ends with a pig-like nose, rabbit-like ears and a tail similar to a kangaroo's. Yet it is not closely related to any of those animals.",
+    'Aardvarks are found throughout sub-Saharan Africa. The aardvark’s name comes from the Afrikaans/Dutch language and means "earth pig," according to National Geographic.',
+    'Aardvarks are about the size of a small pig. Typically, they weigh from 110 to 180 lbs. (50 to 82 kilograms).',
+    'If it stuck its tongue out, an aardvark would be much longer. Their tongues can be up to 12 inches (30.5 cm) long.',
+    'Aardvarks live in many different types of habitats, such as grasslands, savannas, rainforests, woodlands and thickets throughout Africa in the areas south of the Sahara.',
+    "Aardvarks have spoon-shaped claws which are like steel – and used to rip into extremely hard ground and termite mounds.",
+    'Aardvarks change burrows frequently, providing opportunity for subsequent residents like wild dogs, pythons, warthogs and South African shelduck.',
+    'Aardvarks are nocturnal and travel up to 16km every night, foraging for food.',
+    'Aardvarks feed almost exclusively on ants and termites, and are known to eat around 50,000 in one night. They can eat plants and often feed on an African cucumber known as the aardvark cucumber.',
+    'Aardvarks are prey to many animals including lions, leopards, hunting dogs, hyenas, and pythons.',
+    'Aardvarks are solitary and only come together to mate; females have a gestation period of seven months. One cub is born between May and July and will remain in the burrow for the first two weeks of life.')
 
 ALBATROSS_FACTS = (
     'Albatrosses are known to live until their fifties sixties.',
@@ -374,7 +402,7 @@ ANTELOPE_FACTS = (
     'Antelopes have extremely developed senses which help them detect predators while they still have time to escape.',
     'Depending on the species, 4-9 months after mating season, baby antelope will be born. Baby antelope is an easy target and mother keeps it on the secret location until it becomes stronger.',
     'Some antelope are famous for their massive herds, like the thousands of wildebeests making their annual migration across the African plains.',
-)
+    )
 
 BADGER_FACTS = (
     'Badgers are part of the family Mustelidae this is the same family as otters, ferret, polecats, weasels and wolverines.',
@@ -439,7 +467,6 @@ BISON_FACTS=(
     'Bison live in a variety of groups.Each bison group has a dominant male or female.'
     )
 
-
 CAMEL_FACTS = (
     'There are two species of true camel. The dromedary, is a single humped camel that lives in the Middle East and the Horn of Africa area. The bactrian, is a two-humped camel that lives in areas of Central Asia.',
     'There are four camel-like mammals that live in South America, llama and alpaca are called "New World camels", while guanaco and vicuna are called "South American camels".',
@@ -470,7 +497,7 @@ CAPYBARA_FACTS = (
     'Predators of the capybara include jaguars, pumas, ocelots, caimans, eagles, and anacondas.',
     'The name "capybara" is derived from the Tupi language, spoken by the native Tupi people of Brazil. The translated name means "one who eats slender leaves".',
     'Capybaras are very popular captive animals in Japan. One common practice, said to have originated in 1982 and attributed to the Izu Shaboten Zoo, is to keep hot springs in capybara enclosures for them to bathe and relax in during the winter.'
-)
+    )
 
 CHAMELEON_FACTS = (
     'Chameleons are a very unique branch of the lizard group of reptiles.',
@@ -517,8 +544,7 @@ CHIPMUNK_FACTS = (
     'Male chipmunks are called Bucks and females are referred to as Does.',
     'Unlike other squirrels, chipmunks live mainly in the underground burrows. They can be 30 feet long and 3 feet wide. All burrows are divided in several sections: nursery, food storing chamber and resting area.',
     )
-    'Unlike other squirrels, chipmunks live mainly in the underground burrows. They can be 30 feet long and 3 feet wide. All burrows are divided in several sections: nursery, food storing chamber and resting area.')
-
+  
 COW_FACTS = (
     'There are well over 1 billion cattle in the world.',
     'Cattle are sacred in India. There are an estimated 300 million cattle in India.',
@@ -747,7 +773,7 @@ GAZELLE_FACTS = (
     'The name "gazelle" comes from an Arabic poetic form.',
     'Gazelles generally live up to 10 to 12 years.',
     'To evade predators, gazelles may zigzag rather than running in a straight line.'
-)
+    )
 
 GIRAFFE_FACTS = (
     'A male giraffe can weigh as much as a pick up truck! That’s about 1400 kilograms.',
@@ -1437,7 +1463,25 @@ PUMA_FACTS = (
     'Puma are obligated carnivores (like all cats), they need to feed on meat to survive.',
     'Cubs born blind, they rely exclusively on their mother and begin to hunt after six months.',
     'Cubs begin to be weaned around three months of age.'
-)
+    )
+
+PORCUPINE_FACTS = (
+    "Body of the porcupine is covered with sharp spines or quills.",
+    "Some porcupines have up to 30,000 quills on their body.",
+    "Porcupines can't shoot out their quills, but they will be easily released when predators get it touch with animal.",
+    "Lost quills are replaced with new quills.",
+    "Porcupines are nocturnal animals. This means that they sleep during the day and become active in the evening.",
+    "They use their strong feet and curved claws to climb the tree. They are excellent climbers.",
+    "Porcupine's home is called a den.",
+    "They are herbivorous animals (eat only plants). They like to eat leaves, stem, bark, fruit, etc",
+    "They can live solitary life (left on their own) or in the small groups of up to 6 members.",
+    "During mating season, female initiates close contact with male.",
+    "Couple usually gets 2 babies and both parents take care of their babies.",
+    "Babies are called porcupettes and they are born with soft quills. Soft quills will harden in the next few hours.",
+    "Young porcupine will leave its parents after couple of months and begin solitary life.",
+    "Native Americans used porcupine's quills to decorate themselves in the past. They also used porcupines as a source of food.",
+    "Porcupines can live 15-18 years. "
+    )
 
 RABBIT_FACTS = (
     'A rabbit’s teeth never stop growing, which is why it is very important to provide chews and treats for them to keep their teeth from becoming overgrown.',
@@ -1656,6 +1700,20 @@ STARFISH_FACTS = (
     'Starfish have eyes.',
     )
 
+SUNFISH_FACTS = (
+    'The ocean sunfish (mola mola) is the heaviest known bony fish in the world, adults typically weigh between 247 and 1000 kg (545-2205 lb).',
+    'Sunfish live on a diet mainly of jellyfish, but because jellyfish are nutritionally poor, sunfish need to consume large amounts to develop and maintain their bulk.',
+    'Despite their size, sunfish are docile and pose no threat to human divers.',
+    'Sunfish have an average life span in captivity of up to 10 years.',
+    'Surface basking behaviour, in which a sunfish swims on its side and presents its largest profile to the sun, near the water surface, may be a method of helping their bodies warm up after deep water dives.',
+    'Female Sunfish can produce as many as 300 million eggs at a time, more than any other vertebrate.',
+    'The dorsal fin of the Sunfish is often mistaken for a shark fin, however can be distinguished as sharks keep their dorsal fin stationary, while sunfish swings its dorsal fin in a sculling motion'
+    'The skin of adult sunfish range from brown to silvery-grey or white with a variety of mottled skin patterns.',
+    'Sunfish neither has nor needs a swim bladder, as they constantly shuttle back and forth between depths instead of trying to maintain a position in the water.',
+    'In the course of the evolution of the sunfish, its tail disappeared and was replaced by a lumpy pseudotail, the clavus, formed by the convergence of the dorsal and anal fins and is used by the sunfish as a rudder.',
+    'Young sunfish school for protection, but this behaviour is abandoned as they grow.',
+    'Sunfish by the time of adulthood have the potential to grow more than 60 million times their birth size of a fraction of a gram, arguably the most extreme size growth of any vertebrate animal.')
+
 SQUID_FACTS = (
     'Many species of squid have a life span that is only about one year',
     'The Humboldt squid is very aggressive and will even attack sharks in the water.',
@@ -1681,8 +1739,9 @@ SQUIRREL_FACTS = (
     'A newborn squirrel is about an inch long.',
     'Humans introduced squirrels to most of our major city parks.',
     'Squirrels are acrobatic, intelligent and adaptable.',
-    'Squirrels get bulky to stay warm during the winter.',
     'Squirrels don’t dig up all of their buried nuts, which results in more trees!',
+    'Baby squirrels will only pee and poop in their mother’s mouth so that the mother can dispose of the waste outside the nest in order to keep predators from smelling the scent.',
+    'Squirrels can rotate their ankles 180 degrees.',
     )
 
 STINGRAY_FACTS = (
@@ -1826,6 +1885,10 @@ WHALE_FACTS = (
     'You can tell the age of a whale by looking at the wax plug in its ear. This plug in the ear has a pattern of layers when cut lengthwise that scientists can count to estimate the age of the whale.',
     'Whales love to sing! They use this as a call to mates, a way to communicate and also just for fun! After a period of time they get bored of the same whale song and begin to sing a different tune.',
     'Sometimes whales make navigation mistakes during migrations. Although they may have made the mistake days before, they don’t realise it until they becoming stranded.',
+    'Whales support many different types of life. Several creatures, such as barnacles and sea lice, attach themselves to the skin of whales and live there.'
+    'Whales are mammals. They breathe air, give birth to live young, and nurse (i.e., feed milk to) their young',
+    'Whales sleep by resting half of their brain at a time. That means they can still surface to breathe while they are sleeping',
+    'Whales have excellent hearing, and can hear other whales from thousands of kilometers away'
     'Whales support many different types of life. Several creatures, such as barnacles and sea lice, attach themselves to the skin of whales and live there.',
     )
 
@@ -1843,6 +1906,23 @@ WOLF_FACTS = (
     'A wolf can run at a speed of 40 miles per hour during a chase. Wolves have long legs and spend most of their time trotting at a speed of 7-10 miles per hour. They can keep up a reasonable pace for hours and have been known to cover distances of 55 miles in one night.',
     )
 
+YAK_FACTS = (
+   
+  'The yak is a long-haired bovid found throughout the Himalaya region of southern Central Asia, the Tibetan Plateau and as far north as Mongolia and Russia.',
+  'Most yaks are domesticated animals, though there is also a small, vulnerable wild yak population.',
+  'Bos mutus is the scientific name for the wild yak and Bos grunniens for domesticated yak.',
+  '90% of all known yaks can be found in Tibetan Plateau in the Himalayas.',
+  'Yak is a close relative of buffalo and bison.',
+  'The average lifespan of a yak is about 20 years in the wild and slightly longer when in captivity.',
+  'The yak is a herd animal that tend to gather in herds from 10 yaks to 100 yaks, most of which are females and their young.',
+  'The yak is the third largest beast in Asia, after the elephant and rhino.',
+  'Body of yak is covered with thick, wooly coat. It can be brown, black or white in color. Main purpose of the fur is preservation of the body heat and protection against low outer temperatures.Domesticated yak’s coat is less furry, but more diverse in color than the wild yak.',
+  'Yaks have long, bushy tails which are used for the production of fake beards in certain Chinese theaters.',
+  'Among domesticated animals, yaks are the highest dwelling animals of the world, living at 3,000–5,000 meters (9,800–16,400 feet).',
+  'Yaks are herbivores.A great deal of the yaks time is spent on grassy plains in the mountains grazing on grasses, herbs and wild flowers.',
+  'Yaks grunt and, unlike cattle, are not known to produce the characteristic bovine lowing (mooing) sound.',
+)
+
 ZEBRA_FACTS = (
     'Zebra are part of the equidae family along with horse and donkeys.',
     'Every zebra has a unique pattern of black and white stripes.',
@@ -1855,11 +1935,22 @@ ZEBRA_FACTS = (
     'Zebras eat mostly grass.',
     'The ears of a zebra show its mood.',
     'A zebra named Marty starred in the 2005 animated film Madagascar.',
-    )
+    'Zebras are very fast animals, and can gallop at speeds of up to 65 km/h. This is fast enough to outrun many predators.',
+    'Zebra foals can run within a few hours of birth.'
+)
+
+ATLANTIC_PUFFIN_FACTS = (
+    'The Atlantic Puffin is the only puffin native to the Atlantic Ocean.',
+    'The Atlantic Puffin breeds in Iceland, Norway, Greenland, Newfoundland and many North Atlantic islands, and as far south as Maine in the west and the British Isles in the east.',
+    'There are considered to be three subspecies of Atlantic puffin: Fratercula arctica arctica, Fratercula arctica grabae, Fratercula arctica naumanni.',
+    'Like many seabirds, the Atlantic puffin spends most of the year far from land in the open ocean and only visits coastal areas to breed.',
+)
 
 ALL_FACTS = (
+    AARDVARK_FACTS,
     ALBATROSS_FACTS,
     ALLIGATOR_FACTS,
+    ATLANTIC_PUFFIN_FACTS,
     ANT_FACTS,
     ANTELOPE_FACTS,
     BADGER_FACTS,
@@ -1932,6 +2023,7 @@ ALL_FACTS = (
     PIGEON_FACTS,
     PLATYPUS_FACTS,
     PUMA_FACTS,
+    PORCUPINE_FACTS,
     RABBIT_FACTS,
     RACCOON_FACTS,
     SCORPION_FACTS,
@@ -1945,6 +2037,7 @@ ALL_FACTS = (
     SNAIL_FACTS,
     SNAKE_FACTS,
     STARFISH_FACTS,
+    SUNFISH_FACTS,
     SQUIRREL_FACTS,
     STINGRAY_FACTS,
     TARDIGRADE_FACTS,
@@ -1955,6 +2048,7 @@ ALL_FACTS = (
     WALRUS_FACTS,
     WHALE_FACTS,
     WOLF_FACTS,
+    YAK_FACTS,
     ZEBRA_FACTS,
     )
 
