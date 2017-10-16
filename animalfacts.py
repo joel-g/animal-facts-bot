@@ -249,7 +249,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('jellyfish', '\sjellyfish(es)\s', reddit, JELLYFISH_FACTS, comment)
     botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
-    botengine('ladybug', '\sladybugs?\s', reddit, LADYBUG_FACTS, comment)    
+    botengine('ladybug', '\s(ladybug|lady bug)s?\s', reddit, LADYBUG_FACTS, comment)    
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
     botengine('lynx', '\slynx(es)?\s', reddit, LYNX_FACTS, comment)
     botengine('lemur', '\slemurs?\s', reddit, LEMUR_FACTS, comment)
@@ -2009,6 +2009,7 @@ ALL_FACTS = (
     JELLYFISH_FACTS,
     KANGAROO_FACTS,
     KOALA_FACTS,
+    LADYBUG_FACTS,
     LEMUR_FACTS,
     LEOPARD_FACTS,
     LION_FACTS,
