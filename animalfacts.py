@@ -250,6 +250,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('jellyfish', '\sjellyfish(es)\s', reddit, JELLYFISH_FACTS, comment)
     botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
+    botengine('ladybug', '\s(ladybug|lady bug)s?\s', reddit, LADYBUG_FACTS, comment)    
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
     botengine('lynx', '\slynx(es)?\s', reddit, LYNX_FACTS, comment)
     botengine('lemur', '\slemurs?\s', reddit, LEMUR_FACTS, comment)
@@ -266,6 +267,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('oryx', '\soryx(es)?\s', reddit, ORYX_FACTS, comment)
     botengine('octopus', '\socto(pus|puses|pusses|pi)\s', reddit, OCTOPUS_FACTS, comment)
     botengine('orca', '\sorcas?\s', reddit, ORCA_FACTS, comment)
+    botengine('ostrich', '\sostrich(es)?\s', reddit, OSTRICH_FACTS, comment)
     botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
     botengine('owl', '\sowls?\s', reddit, OWL_FACTS, comment)
     botengine('parrot', '\sparrots?\s', reddit, PARROT_FACTS, comment)
@@ -852,6 +854,10 @@ GOPHER_FACTS = (
     'Gopher can survive 2 to 3 years (rarely up to 5) in the wild.',
     'Natural enemies of gophers are owls, hawks, coyotes, weasels and snakes.',
     'The gopher is an iconic mascot and one of the most distinctive features of the Go programming language.',
+    'A gopher plays a key role in the film Caddyshack.',
+    'Most gophers have brown fur that often closely matches the color of the soil in which they live.',
+    'Gophers eat plant roots, shrubs, and other vegetables such as carrots, lettuce, radishes, and any other vegetables with juice.',
+    'Pocket gophers are solitary outside of the breeding season, aggressively maintaining territories that vary in size depending on the resources available.',
     )
 
 GRASSHOPPER_FACTS = (
@@ -1057,6 +1063,19 @@ KOALA_FACTS = (
     'Outside of breeding seasons, koalas are quiet animals.',
     'A baby koala is called a ‘joey’. Joeys live in their mother’s pouch for around six months and remain with them for another six months or so afterwards.',
     'Koalas cannot be kept legally as pets.',
+    )
+
+LADYBUG_FACTS = (
+    'Ladybugs are a type of beetle. There are about 4,300 kinds of ladybugs in the world.',
+    'Some ladybugs have no spots and others have up to 20 spots. Spots have nothing to do with a ladybug age.',
+    'During winter ladybugs hibernate together to stay warm. Thousands of ladybugs may gather in the same location.',
+    'Ladybugs are both male and female. Female ladybugs are larger than male ladybugs.',
+    'A ladybug can live up to a year long and it can eat up to 5,000 insects in its lifetime.',
+    'A ladybug‘s bright color warns predators that it does not taste good.',
+    'Ladybugs smell with their feet and antennae.',
+    'When a ladybug flies, its wings beat 85 times every second.',
+    'If food is scarce, ladybugs will do what they must to survive, even if it means eating each other.',
+    'Ladybugs got their name from Catholic farmers, who prayed to the Virgin Mary to save their crops from pests. When appeared and ate the pests they were called “the beetles of our lady”.',
     )
 
 LEMUR_FACTS = (
@@ -1294,6 +1313,19 @@ ORCA_FACTS = (
     "An orca's teeth can grow to be 4 inches (10 cm) long.",
     "The orca can reach speeds in excess of 30 knots (about 34 mph, or 56 kph).",
     )
+
+OSTRICH_FACTS = (
+    'Ostriches have three stomachs.',
+    'An ostrich can run at 30 miles per hour for 10 miles at a time',
+    'Ostriches, in the wild live an average of 30 to 40 years',
+    'Ostrich eggs contains 2000 calories, and measure 6 inches in diameter',
+    'Ostriches are the largest and heaviest birds in the world',
+    'The scientific name for an ostrich is Struthio camelus, from the Struthio genus of ratite family from Africa.',
+    'Ostrich often swallows pebbles and sand that aid them in grinding up their ingested food in its gizzard, a peculiar muscular stomach.',
+    'They are the only bird in the world that has only two toes on each foot.  The inner toe has a claw that can measure up to 10 cm long.',
+    'At breeding time, male ostriches scrape out a nest in the ground which is then used by more than one female to lay their eggs which can end up with 20 eggs in them.  Females incubate the eggs during the day and males at night.  The dads then do most of the chick raising, often defending the chicks from potential predators with their powerful kicks.',
+     'Contrary to popular belief, Ostriches do not bury their heads in sand. This myth likely began with Pliny the Elder (AD 23-79), who wrote that Ostriches: “imagine, when they have thrust their head and neck into a bush, that the whole of their body is concealed".',
+     ) 
 
 OTTER_FACTS = (
     'The otter is a carnivorous mammal in a branch of the weasel family called Lutrinae.',
@@ -2012,6 +2044,7 @@ ALL_FACTS = (
     JELLYFISH_FACTS,
     KANGAROO_FACTS,
     KOALA_FACTS,
+    LADYBUG_FACTS,
     LEMUR_FACTS,
     LEOPARD_FACTS,
     LION_FACTS,
@@ -2028,6 +2061,7 @@ ALL_FACTS = (
     OPOSSUM_FACTS,
     ORYX_FACTS,
     ORCA_FACTS,
+    OSTRICH_FACTS,
     OTTER_FACTS,
     OWL_FACTS,
     PANDA_FACTS,
