@@ -205,6 +205,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('albatross', '\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
     botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
+    botengine('anteater', '\santeaters?\s', reddit, ANTEATER_FACTS, comment)
     botengine('antelope', '\santelopes?\s', reddit, ANTELOPE_FACTS, comment)
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('bear', '\sbears?\s', reddit, BEAR_FACTS, comment)
@@ -389,6 +390,21 @@ ANT_FACTS = (
     'Ants and humans are the only creatures that farm other creatures.',
     'Some ants can swim.',
     'Ants can be found on every continent accept antarctica.',
+    )
+
+ANTEATER_FACTS = (
+    'Anteaters are toothless creatures.',
+    'Since ants can bite, anteaters must eat them quickly. They are flicking their tongue 150-160 times in minute during feeding to grab enough ants and avoid bites.',
+    'Anteaters are solitary animals and they gather only during mating season. Group of anteaters is called "parade".',
+    'Pregnancy lasts 190 days and ends with single baby. Little anteater stays with mother 2 years or until she becomes pregnant again. Mother carries the baby on her back during the first year.',
+    'Anteaters live up to 15 years in the wild and 25 years in captivity.',
+    'There are four species of anteaters.',
+    'Anteaters can range from the size of a squirrel, to seven feet long!',
+    'Anteaters sleep up to fifteen hours a day.',
+    'Anteaters produce formic acid in its stomach instead of hydrochloric acid, which mammals usually produce.',
+    'Anteaters have very poor eyesight and rely on their keen sense of smell to find food.',
+    'Anteaters can eat up to 35,000 insects a day.',
+    'Anteaters will never destroy an anthill because they need it as a source of food.'
     )
 
 ANTELOPE_FACTS = (
@@ -1984,6 +2000,7 @@ ALL_FACTS = (
     ALLIGATOR_FACTS,
     ATLANTIC_PUFFIN_FACTS,
     ANT_FACTS,
+    ANTEATER_FACTS,
     ANTELOPE_FACTS,
     BADGER_FACTS,
     BEAR_FACTS,
