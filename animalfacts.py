@@ -211,6 +211,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('antelope', '\santelopes?\s', reddit, ANTELOPE_FACTS, comment)
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
+    botengine('buffalo', '\sbuffalos?\s', reddit, BUFFALO_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
     botengine('chameleon', '\schameleons?\s', reddit, CHAMELEON_FACTS, comment)
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
@@ -394,6 +395,21 @@ BEAVER_FACTS = (
     'Beavers can live up to 24 years in the wild.',
     'The beaver is the national animal of Canada, and features on the Canadian five-cent piece.',
     'Beavers like to keep themselves busy, they are prolific builders during the night. Hence the saying "As busy as a beaver".')
+
+BUFFALO_FACTS = (
+    'Buffalo are the largest animals found in north America and can grow to 6-7 feet long, weighing up to 2,000lbs. True buffalo only live in Asia and Africa.',
+    'Buffalo are large members of the Bovidae family. There are two types of buffalo: the African or Cape buffalo and the Asian water buffalo. They are dark gray or black animals that look a lot like bulls. They are often confused with bison',
+    'The water buffalo is the largest bovine. It is 8 to 9 feet (2.4 to 2.7 meters) from head to rump with its tail adding an extra 2 to 3.3 feet (60 to 100 centimeters). They weigh a massive 1,500 to 2,650 lbs. (700 to 1,200 kilograms).',
+    'The African buffalo is smaller, but they are still quite impressive in size. They are 4.26 to 4.92 feet long (130 to 150 cm) from head to hoof and weigh 935 to 1,910 lbs. (425 to 870 kg).',
+    'Buffalo are herbivores, and so eat only vegetation. Their favorite foods are grass and herbs, but water buffalo will also eat aquatic plants. Both African and Asian buffalo will eat shrubs and trees when they can not find grass or herbs to eat.',
+    'Buffalo are considered to be an adult when they reach 3 years old. Adults mate from July to October and it takes nine months for the calf to be born. When the calves are born they are a light tan color and they follow and are dependent on their mother for a least one year.',
+    'Buffalo are social animals and live in groups called herds. Water buffalo herds are segregated by gender. African buffalo herds are mostly of mixed gender. An African herd often has more than 1,000 members.',
+    'Male water buffalo have horns that curve backward. These horns can grow to 5 feet (1.5 meters) long. Females also have horns, but they are much smaller.',
+    'African buffalo have a democracy. When they are ready to travel, they will stand and turn in the direction they want to go. The majority of "votes" wins and the head female will lead the herd in the winning direction.',
+    'African buffalo are very aggressive and have a tendency to attack humans. They are very protective of each other and take care of sick and old members of the herd, shielding them from predators.',
+    'Water buffalo have been domesticated for more than 5,000 years. They have buttressed humanity’s survival with their meat, horns, hides, milk, butterfat, and power, plowing and transporting people and crops.',
+    'Wild water buffalo are at-risk and live only in a small number of protected areas stretching across India, Nepal, and Bhutan, and a wildlife reserve in Thailand. And populations are likely to diminish as they are interbred with domesticated water buffalo.'
+)
 
 CAMEL_FACTS = (
     'There are two species of true camel. The dromedary, is a single humped camel that lives in the Middle East and the Horn of Africa area. The bactrian, is a two-humped camel that lives in areas of Central Asia.',
@@ -1623,6 +1639,7 @@ ALL_FACTS = (
     ANTELOPE_FACTS,
     BADGER_FACTS,
     BEAVER_FACTS,
+    BUFFALO_FACTS,
     CAMEL_FACTS,
     CHAMELEON_FACTS,
     CHEETAH_FACTS,
