@@ -129,6 +129,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * tardigrade
 * tiger
 * turtle
+* vampire bat
 * wallaby
 * walrus
 * whale
