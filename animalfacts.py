@@ -227,6 +227,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
     botengine('echidna', '\sechidnas?\s', reddit, ECHIDNA_FACTS, comment)
     botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
+    botengine('elk', '\selks?\s', reddit, ELK_FACTS, comment)
     botengine('emu', '\semus?\s', reddit, EMU_FACTS, comment)
     botengine('falcon', '\sfalcons?\s', reddit, FALCON_FACTS, comment)
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
@@ -713,6 +714,24 @@ ELEPHANT_FACTS = (
     'Elephants can swim – they use their trunk to breathe like a snorkel in deep water.',
     'Elephants are herbivores and can spend up to 16 hours days collecting leaves, twigs, bamboo and roots.',
     )
+
+ELK_FACTS = (
+    'Elks are larger than a deer, but not as massive as moose.',
+    'Elks are usually 4 to 5 feet tool and weigh anywhere from 325 to 1,100 lbs.',
+    'Elks are social animals and live in groups called herds, which can range anywhere from 200 to 400 elks',
+    'Elks primarily eat grass and woody growth, depending on the season.  They also eat dandelions, violets, hawkweed,      aster, clover, and muschrooms',
+    'Male elks are called bulls.  Female elks are called cows.'
+    'A calf, an elk baby, can stand up on its own after just 20 minutes.  They usually weigh around 31 to 35 lbs when t     hey are born.',
+    'There are about 750,000 elk today in Northern American.',
+    'Elk antlers have six tines, or branches, total.',
+    'Elk can reach a top speed of 45 miles per hour.  The average horse can gallop at a top speed of 29 mph',
+    'Elk have a maximum vertical jump of eight feet.',
+    'Elk antlers can grow more than an inch every day and can weigh as much as 40 pounds.  Bulls grow new antlers every      year and are covered with a soft coating called velvet.',
+    'Adult elks usually stay in single-sex groups for most of the year',
+    'The gestation period for an elk lasts somewhere between 240 to 262 days.',
+    'There are estimated to be over 200,000 elks living in the Greater Yellowstone Ecosystem',
+    'The Rocky Mountain elk is the official state animal for Utah.'
+)
 
 EMU_FACTS = (
     'Emus are very docile and curious, and are easily tamed in captivity.',
@@ -2020,12 +2039,13 @@ ALL_FACTS = (
     DUGONG_FACTS,
     EAGLE_FACTS,
     ECHIDNA_FACTS,
+    ELEPHANT_FACTS,
+    ELK_FACTS,
     EMU_FACTS,
     FALCON_FACTS,
     FLAMINGO_FACTS,
     FOX_FACTS,
     FROG_FACTS,
-    ELEPHANT_FACTS,
     GAZELLE_FACTS,
     GIRAFFE_FACTS,
     GRASSHOPPER_FACTS,
