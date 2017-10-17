@@ -228,6 +228,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('echidna', '\sechidnas?\s', reddit, ECHIDNA_FACTS, comment)
     botengine('eel', '\seels?\s', reddit, EEL_FACTS, comment)
     botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
+    botengine('elk', '\selk?\s', reddit, ELK_FACTS, comment)
     botengine('emu', '\semus?\s', reddit, EMU_FACTS, comment)
     botengine('falcon', '\sfalcons?\s', reddit, FALCON_FACTS, comment)
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
@@ -701,18 +702,17 @@ ECHIDNA_FACTS = (
     )
 
 EEL_FACTS = (
-
-  'Eels are covered with slimy mucus and this allows them to slither around reefs without getting scratched. They have scale less and slimy smooth skin, sharp teeth and strong jaws.',
-  'They have poor eyesight and often bite fingers of divers who give them food.',
-  'Eel weigh from 95 gm to 215 gm and their length ranges from 5 – 13 fee',
-  'Eels live in shallow waters or hide at the bottom of the oceans in holes which are called eel pits. Eels can swim backwards and forwards. They can travel on land for short distances.',
-  'The life span of an eel is about 85 years', 
-  'Eels are voracious eaters. They are carnivorous and eat lobsters, fish, octopuses, crabs mussels, snails and frog.',
-  'They move through water with an undulating motion. They feed at night and rest in the day. They possess an excellent sense of smell that helps them hunt for their prey.',
-  'Baby eels are called ‘elvers’. The eels go through a larval phase as juveniles and form part of the plankton.',
-  'Moray eels have long sharp canine teeth though some have low nodular teeth. They tie their bodies in knots to anchor when tearing at food.',
-  'Courting eels open their mouths wide and wrap their bodies around each other for hours. They separate only when the female has laid her eggs. The males then fertilize the eggs.',
-)
+    'Eels are covered with slimy mucus and this allows them to slither around reefs without getting scratched. They have scale less and slimy smooth skin, sharp teeth and strong jaws.',
+    'They have poor eyesight and often bite fingers of divers who give them food.',
+    'Eel weigh from 95 gm to 215 gm and their length ranges from 5 – 13 fee',
+    'Eels live in shallow waters or hide at the bottom of the oceans in holes which are called eel pits. Eels can swim backwards and forwards. They can travel on land for short distances.',
+    'The life span of an eel is about 85 years', 
+    'Eels are voracious eaters. They are carnivorous and eat lobsters, fish, octopuses, crabs mussels, snails and frog.',
+    'Eels move through water with an undulating motion. They feed at night and rest in the day. They possess an excellent sense of smell that helps them hunt for their prey.',
+    'Baby eels are called ‘elvers’. The eels go through a larval phase as juveniles and form part of the plankton.',
+    'Moray eels have long sharp canine teeth though some have low nodular teeth. They tie their bodies in knots to anchor when tearing at food.',
+    'Courting eels open their mouths wide and wrap their bodies around each other for hours. They separate only when the female has laid her eggs. The males then fertilize the eggs.',
+    )
 
 ELEPHANT_FACTS = (
     'There are two types of elephant, the Asian elephant and the African elephant (although sometimes the African Elephant is split into two species, the African Forest Elephant and the African Bush Elephant).',
@@ -727,6 +727,20 @@ ELEPHANT_FACTS = (
     'Female elephants spend their entire lives living in large groups called herds. Male elephant leave their herds at about 13 years old and live fairly solitary lives from this point.',
     'Elephants can swim – they use their trunk to breathe like a snorkel in deep water.',
     'Elephants are herbivores and can spend up to 16 hours days collecting leaves, twigs, bamboo and roots.',
+    )
+
+ELK_FACTS = (
+    'Elk are members of the Cervidae family, which includes caribou, deer, and moose.',
+    "An elk's stomach has four chambers: the first stores food, and the other three digest it.",
+    "When alarmed, elk raise their heads high, open their eyes wide, move stiffly, and rotate their ears to listen.",
+    'Elk threaten each other by curling back their upper lip, grinding their teeth, and hissing softly.',
+    'Elk are among the noisiest ungulates, communicating danger quickly and identifying each other by sound.',
+    'A cow (female elk) can weigh up to 500 pounds (225 kg).',
+    'A bull (male elk) can weigh up to 700 pounds (315 kg).',
+    'Prior to European settlement, more than 10 million elk roamed nearly all of the United States and parts of Canada.',
+    'Elk live in a variety of habitats, from rainforests to alpine meadows and dry desert valleys to hardwood forests.',
+    'Bull elk lose their antlers each March, but they begin to grow them back in May in preparation for the late-summer breeding season.',
+    'In early summer, elk migrate to high mountain grazing grounds where the females will give birth.',
     )
 
 EMU_FACTS = (
@@ -2036,6 +2050,7 @@ ALL_FACTS = (
     EAGLE_FACTS,
     ECHIDNA_FACTS,
     EEL_FACTS,
+    ELK_FACTS,
     EMU_FACTS,
     FALCON_FACTS,
     FLAMINGO_FACTS,
