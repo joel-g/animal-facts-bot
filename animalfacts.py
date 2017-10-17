@@ -262,6 +262,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('llama', '\sllamas?\s', reddit, LLAMA_FACTS, comment)
     botengine('meerkat', '\smeerkats?\s', reddit, MEERKAT_FACTS, comment)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
+    botengine('muskrat','\smuskrat?\s', reddit, MUSKRAT_FACTS, comment)
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
     botengine('newt', '\snewts?\s', reddit, NEWT_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
@@ -322,21 +323,14 @@ def animalfactsbot(reddit):
         check_comment_for_animal(comment, reddit)
 
 AARDVARK_FACTS = (
-    'Aardvarks look like they were made from parts of other animals.',
-    'Aardvarks are found throughout sub-Saharan Africa.',
-    'The aardvark’s name comes from the Afrikaans/Dutch language and means "earth pig,"',
-    'Aardvarks are about the size of a small pig.',
     'Aardvarks live in many different types of habitats, such as grasslands, savannas, rainforests, woodlands and thickets throughout Africa in the areas south of the Sahara.',
-    'Aardvarks are solitary animals and only come together to mate.',
     'Female aardvarks have a gestation of seven months and give birth to one young at a time.',
     'Aardvarks are also called ant bears.',
     'Aardvarks have four toes on the front feet and five toes on their back feet.',
-    'Skilled diggers, an aardvark can dig up to 2 f (.6 m) in 15 seconds, according to the African Wildlife Foundation.'
+    'Skilled diggers, an aardvark can dig up to 2 feet (.6 m) in 15 seconds, according to the African Wildlife Foundation.'
     'The aardvark is the only species in its order. It is literally like no other animal on earth.',
     'The aardvark is admired in African folklore because of its diligent search for food and its lack of fear of soldier ants. The Maasai tribe believe sighting an aardvark brings good fortune.',
     'The name Aardvark comes from South Africa’s Afrikaans language and means ‘earth pig’ or ‘ground pig’.',
-    'The aardvark takes up an astonishing number of insects with its long, sticky tongue, as many as 50,000 in one night.',
-    'Skilled diggers, an aardvark can dig up to 2ft (0.6 m) in 15 seconds.',
     'Aardvarks can live to be over 24 years old in captivity. In the wild, they live between 10 – 23 years.',
     'Aardvarks can close their nostrils to keep out dirt and bugs while they dig.',
     'Aardvarks have excellent hearing and their long ears allow them to hear tiny sounds, such as termites under the ground.',
@@ -345,7 +339,6 @@ AARDVARK_FACTS = (
     'Aardvark can travel between 16 and 30 kilometers per night while searching for the food.',
     'Aardvark is excellent swimmer thanks to its webbed feet.',
     "An aardvark has a long snout that ends with a pig-like nose, rabbit-like ears and a tail similar to a kangaroo's. Yet it is not closely related to any of those animals.",
-    'Aardvarks are found throughout sub-Saharan Africa. The aardvark’s name comes from the Afrikaans/Dutch language and means "earth pig," according to National Geographic.',
     'Aardvarks are about the size of a small pig. Typically, they weigh from 110 to 180 lbs. (50 to 82 kilograms).',
     'If it stuck its tongue out, an aardvark would be much longer. Their tongues can be up to 12 inches (30.5 cm) long.',
     'Aardvarks live in many different types of habitats, such as grasslands, savannas, rainforests, woodlands and thickets throughout Africa in the areas south of the Sahara.',
@@ -1200,6 +1193,25 @@ LIZARD_FACTS = (
     'Komodo dragons are carnivores and can be very aggressive.',
     )
 
+LLAMA_FACTS = (
+    'Llamas are members of the camelid, or camel, family.',
+    'Llamas were first domesticated and used as pack animals 4,000 to 5,000 years ago by Indians in the Peruvian highlands.',
+    'Llamas can grow as much as 6 feet tall.',
+    'Llamas weigh 280 to 450 pounds and can carry about a quarter of their body weight, so a 400-pound male llama can carry about 100 pounds on a trek of 10 to 12 miles with no problem.',
+    'In the Andes Mountains of Peru, llama fleece has been shorn and used in textiles for about 6,000 years. Llama wool is light, warm and water-repellent.',
+    'Llamas are hardy and well suited to harsh environments.',
+    'Llamas are smart and easy to train.',
+    'Llamas are vegetarians and have efficient digestive systems.',
+    'Llama poop has almost no odor. Llama farmers refer to llama manure as "llama beans." It makes great, eco-friendly fertilizer. The Incas in Peru burned dried llama poop for fuel.',
+    'Llamas live to be about 20 years old.',
+    'A baby llama is called a "cria." It\'s pronounced KREE-uh. Mama llamas usually only have one baby at a time. Llama twins are incredibly rare. Pregnancy lasts for about 350 days—nearly a full year. Crias weigh 20 to 35 pounds at birth.',
+    'Llamas come in a range of solid and spotted colors including black, gray, beige, brown, red and white.',
+    'Llamas are social animals and prefer to live with other llamas or herd animals.',
+    'A group of llamas is called a herd.',
+    'Llamas don\'t bite. They spit when they\'re agitated, but that\'s mostly at each other.',
+    'Yarn made from llama fiber is soft and lightweight, yet remarkably warm.',
+    )
+
 LOBSTER_FACTS = (
     'Lobsters were once considered the the go-to prison food. In Colonial times, it was fed to pigs and goats and only eaten by paupers.',
     'Lobsters turn red when cooked, but in nature they can be green or yellow or even bright blue.',
@@ -1227,25 +1239,6 @@ MEERKAT_FACTS = (
     'Meerkats are vicious fighters that often kill each other in skirmishes. Both sides line up across a field before charging forward with leaps and bounds. Before attacking, they try to psych out their opponents with aggressive posturing and bluffing to avoid serious conflict if possible.',
     )
 
-LLAMA_FACTS = (
-    'Llamas are members of the camelid, or camel, family.',
-    'Llamas were first domesticated and used as pack animals 4,000 to 5,000 years ago by Indians in the Peruvian highlands.',
-    'Llamas can grow as much as 6 feet tall.',
-    'Llamas weigh 280 to 450 pounds and can carry about a quarter of their body weight, so a 400-pound male llama can carry about 100 pounds on a trek of 10 to 12 miles with no problem.',
-    'In the Andes Mountains of Peru, llama fleece has been shorn and used in textiles for about 6,000 years. Llama wool is light, warm and water-repellent.',
-    'Llamas are hardy and well suited to harsh environments.',
-    'Llamas are smart and easy to train.',
-    'Llamas are vegetarians and have efficient digestive systems.',
-    'Llama poop has almost no odor. Llama farmers refer to llama manure as "llama beans." It makes great, eco-friendly fertilizer. The Incas in Peru burned dried llama poop for fuel.',
-    'Llamas live to be about 20 years old.',
-    'A baby llama is called a "cria." It\'s pronounced KREE-uh. Mama llamas usually only have one baby at a time. Llama twins are incredibly rare. Pregnancy lasts for about 350 days—nearly a full year. Crias weigh 20 to 35 pounds at birth.',
-    'Llamas come in a range of solid and spotted colors including black, gray, beige, brown, red and white.',
-    'Llamas are social animals and prefer to live with other llamas or herd animals.',
-    'A group of llamas is called a herd.',
-    'Llamas don\'t bite. They spit when they\'re agitated, but that\'s mostly at each other.',
-    'Yarn made from llama fiber is soft and lightweight, yet remarkably warm.',
-    )
-
 MONKEY_FACTS = (
     'There are currently 264 known monkey species.',
     'Monkeys can be divided into two groups, Old World monkeys that live in Africa and Asia, and New World monkeys that live in South America.',
@@ -1259,6 +1252,23 @@ MONKEY_FACTS = (
     'Capuchin monkeys are believed to be one of the smartest New World monkey species. They have the ability to use tools, learn new skills and show various signs of self-awareness.',
     'Spider monkeys get their name because of their long arms, legs and tail.',
     'The monkey is the 9th animal that appears on the Chinese zodiac, appearing as the zodiac sign in 2016.',
+    )
+
+MUSKRAT_FACTS = (
+    'The scientific name for a muskrat is Ondatra zibethicus.',
+    'On average, muskrats size ranges from 16 - 25 inches long (including an 8-11 inch tail!).',
+    'The average lifespan of a Muskrat is 1-3 years in the wild.',
+    'Muskrats are native to North America and can be spotted from Canada down to northern parts of Mexico. They have also been introduced to Northern Europe, Asia, and South America - mainly for their valued pelts.',
+    'Muskrats are semi-aquatic mammals that inhabit areas abundant in water like wetlands, ponds, lakes and marshes.',
+    'For shelter, muskrats will either dig tunnels or construct lodges, depending on the immediate habitat. In areas with steep banks or dams, muskrats will dig tunnels that begin underwater and lead up above the water level, where the chamber can remain dry.',
+    'Muskrats are omnivores, but they mainly enjoy a plant-based diet consisting of the roots, stems, leaves and fruits of aquatic vegetation.',
+    'As local plant food becomes scarce, muskrats will feed on small aquatic animals such as insects, fish and amphibians.',
+    'Female muskrats give birth to 2-3 litters per year, each time yielding an average of 4-8 pups.',
+    'As monogamous breeders, muskrats live with their mates and their young. They are very territorial - especially during breeding season.',
+    'Muskrats are carriers of some diseases that may be transmitted to humans and/or pets including tularemia, leptospirosis, giardiasis, and rabies.',
+    'Muskrat kits are born hairless and blind.',
+    'Known to be most valuable for their fur or pelts, muskrats are one of the most trapped animals in history.',
+    'Muskrats build lodges made of piles of mud and aquatic vegetation that can be up to 8 feet in width and 5 feet tall.',
     )
 
 NARWHAL_FACTS = (
