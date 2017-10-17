@@ -201,9 +201,11 @@ def botengine(animal, regex, reddit, facts, comment):
                         print('     Already commented on this!\n')
 
 def check_comment_for_animal(comment, reddit):
+    botengine('aardvark', '\saardvarks?\s', reddit, AARDVARK_FACTS, comment)
     botengine('albatross', '\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
     botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
+    botengine('anteater', '\santeaters?\s', reddit, ANTEATER_FACTS, comment)
     botengine('antelope', '\santelopes?\s', reddit, ANTELOPE_FACTS, comment)
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('bear', '\sbears?\s', reddit, BEAR_FACTS, comment)
@@ -225,7 +227,9 @@ def check_comment_for_animal(comment, reddit):
     botengine('dugong', '\sdugongs?\s', reddit, DUGONG_FACTS, comment)
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
     botengine('echidna', '\sechidnas?\s', reddit, ECHIDNA_FACTS, comment)
+    botengine('eel', '\seels?\s', reddit, EEL_FACTS, comment)
     botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
+    botengine('elk', '\selk?\s', reddit, ELK_FACTS, comment)
     botengine('emu', '\semus?\s', reddit, EMU_FACTS, comment)
     botengine('falcon', '\sfalcons?\s', reddit, FALCON_FACTS, comment)
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
@@ -249,6 +253,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('jellyfish', '\sjellyfish(es)\s', reddit, JELLYFISH_FACTS, comment)
     botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
+    botengine('ladybug', '\s(ladybug|lady bug)s?\s', reddit, LADYBUG_FACTS, comment)    
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
     botengine('lynx', '\slynx(es)?\s', reddit, LYNX_FACTS, comment)
     botengine('lemur', '\slemurs?\s', reddit, LEMUR_FACTS, comment)
@@ -265,6 +270,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('oryx', '\soryx(es)?\s', reddit, ORYX_FACTS, comment)
     botengine('octopus', '\socto(pus|puses|pusses|pi)\s', reddit, OCTOPUS_FACTS, comment)
     botengine('orca', '\sorcas?\s', reddit, ORCA_FACTS, comment)
+    botengine('ostrich', '\sostrich(es)?\s', reddit, OSTRICH_FACTS, comment)
     botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
     botengine('owl', '\sowls?\s', reddit, OWL_FACTS, comment)
     botengine('parrot', '\sparrots?\s', reddit, PARROT_FACTS, comment)
@@ -276,6 +282,8 @@ def check_comment_for_animal(comment, reddit):
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
     botengine('platypus', '\splatypuse?s?\s', reddit, PLATYPUS_FACTS, comment)
+    botengine('puma', '\spumas?\s', reddit, PUMA_FACTS, comment)
+    botengine('porcupine', '\sporcupines?\s', reddit, PORCUPINE_FACTS, comment)
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
@@ -292,6 +300,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('tarantula', '\starantulas?\s', reddit, TARANTULA_FACTS, comment)
     botengine('squirrel', '\ssquirrels?\s', reddit, SQUIRREL_FACTS, comment)
     botengine('stingray', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
+    botengine('sunfish', '\ssunfish(es)?\s', reddit, SUNFISH_FACTS, comment)
     botengine('tardigrade', '\stardigrades?\s', reddit, TARDIGRADE_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
@@ -299,6 +308,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('walrus', '\swalrus\s', reddit, WALRUS_FACTS, comment)
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
     botengine('wolf', '\swol(f|ves)\s', reddit, WOLF_FACTS, comment)
+    botengine('yak', '\syaks?\s', reddit, YAK_FACTS, comment)
     botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS, comment)
 
 
@@ -311,6 +321,30 @@ def animalfactsbot(reddit):
     for comment in comment_list:
         check_comment_for_animal(comment, reddit)
 
+AARDVARK_FACTS = (
+    'The aardvark is the only species in its order. It is literally like no other animal on earth.',
+    'The aardvark is admired in African folklore because of its diligent search for food and its lack of fear of soldier ants. The Maasai tribe believe sighting an aardvark brings good fortune.',
+    'The name Aardvark comes from South Africa’s Afrikaans language and means ‘earth pig’ or ‘ground pig’.',
+    'The aardvark takes up an astonishing number of insects with its long, sticky tongue, as many as 50,000 in one night.',
+    'Skilled diggers, an aardvark can dig up to 2ft (0.6 m) in 15 seconds.',
+    'Aardvarks can live to be over 24 years old in captivity. In the wild, they live between 10 – 23 years.',
+    'Aardvarks can close their nostrils to keep out dirt and bugs while they dig.',
+    'Aardvarks have excellent hearing and their long ears allow them to hear tiny sounds, such as termites under the ground.',
+    'Aardvarks can dig fast or run in zigzag fashion to elude enemies, but if all else fails, they will strike with their claws, tail and shoulders, sometimes flipping onto their backs lying motionless except to lash out with all four feet.',
+    'Skin of the aardvark body is thick and tough. It provides protection against bites of angry ants and termites. ',
+    'Aardvark can travel between 16 and 30 kilometers per night while searching for the food.',
+    'Aardvark is excellent swimmer thanks to its webbed feet.',
+    "An aardvark has a long snout that ends with a pig-like nose, rabbit-like ears and a tail similar to a kangaroo's. Yet it is not closely related to any of those animals.",
+    'Aardvarks are found throughout sub-Saharan Africa. The aardvark’s name comes from the Afrikaans/Dutch language and means "earth pig," according to National Geographic.',
+    'Aardvarks are about the size of a small pig. Typically, they weigh from 110 to 180 lbs. (50 to 82 kilograms).',
+    'If it stuck its tongue out, an aardvark would be much longer. Their tongues can be up to 12 inches (30.5 cm) long.',
+    'Aardvarks live in many different types of habitats, such as grasslands, savannas, rainforests, woodlands and thickets throughout Africa in the areas south of the Sahara.',
+    "Aardvarks have spoon-shaped claws which are like steel – and used to rip into extremely hard ground and termite mounds.",
+    'Aardvarks change burrows frequently, providing opportunity for subsequent residents like wild dogs, pythons, warthogs and South African shelduck.',
+    'Aardvarks are nocturnal and travel up to 16km every night, foraging for food.',
+    'Aardvarks feed almost exclusively on ants and termites, and are known to eat around 50,000 in one night. They can eat plants and often feed on an African cucumber known as the aardvark cucumber.',
+    'Aardvarks are prey to many animals including lions, leopards, hunting dogs, hyenas, and pythons.',
+    'Aardvarks are solitary and only come together to mate; females have a gestation period of seven months. One cub is born between May and July and will remain in the burrow for the first two weeks of life.')
 
 ALBATROSS_FACTS = (
     'Albatrosses are known to live until their fifties sixties.',
@@ -334,7 +368,7 @@ ALLIGATOR_FACTS = (
     'American alligators live in south-eastern areas of the United States such as Florida and Louisiana.',
     'Chinese alligators are found in the Yangtze River but they are critically endangered and only a few remain in the wild.',
     'Like other reptiles, alligators are cold-blooded.',
-    'Alligators use their tails, which accounts to half of their body length, to propel in the water.', 
+    'Alligators use their tails, which accounts to half of their body length, to propel in the water.',
     'Alligators can weigh over 450 kg (1000 lb).',
     'Alligators are social creatures and often stay in groups called congregations. These groups are typically seen basking in the sun or taking a swim.',
     'Although alligators have no vocal cords, males bellow loudly to attract mates and warn off other males by sucking air into their lungs and blowing it out in intermittent, deep-toned roars.',
@@ -361,6 +395,21 @@ ANT_FACTS = (
     'Ants can be found on every continent accept antarctica.',
     )
 
+ANTEATER_FACTS = (
+    'Anteaters are toothless creatures.',
+    'Since ants can bite, anteaters must eat them quickly. They are flicking their tongue 150-160 times in minute during feeding to grab enough ants and avoid bites.',
+    'Anteaters are solitary animals and they gather only during mating season. Group of anteaters is called "parade".',
+    'Pregnancy lasts 190 days and ends with single baby. Little anteater stays with mother 2 years or until she becomes pregnant again. Mother carries the baby on her back during the first year.',
+    'Anteaters live up to 15 years in the wild and 25 years in captivity.',
+    'There are four species of anteaters.',
+    'Anteaters can range from the size of a squirrel, to seven feet long!',
+    'Anteaters sleep up to fifteen hours a day.',
+    'Anteaters produce formic acid in its stomach instead of hydrochloric acid, which mammals usually produce.',
+    'Anteaters have very poor eyesight and rely on their keen sense of smell to find food.',
+    'Anteaters can eat up to 35,000 insects a day.',
+    'Anteaters will never destroy an anthill because they need it as a source of food.'
+    )
+
 ANTELOPE_FACTS = (
     'Antelopes are large and diverse group of animals of the cow family (Bovidae).',
     'They live in Africa, Asia, Middle East and North America. Antelopes can be found in grasslands, mountains, deserts and wetlands. There are 90 different species of antelopes.',
@@ -374,7 +423,7 @@ ANTELOPE_FACTS = (
     'Antelopes have extremely developed senses which help them detect predators while they still have time to escape.',
     'Depending on the species, 4-9 months after mating season, baby antelope will be born. Baby antelope is an easy target and mother keeps it on the secret location until it becomes stronger.',
     'Some antelope are famous for their massive herds, like the thousands of wildebeests making their annual migration across the African plains.',
-)
+    )
 
 BADGER_FACTS = (
     'Badgers are part of the family Mustelidae this is the same family as otters, ferret, polecats, weasels and wolverines.',
@@ -438,7 +487,6 @@ BISON_FACTS=(
     'Female bison give birth to one calf after 9 months.',
     'Bison live in a variety of groups.Each bison group has a dominant male or female.'
     )
-    
 
 CAMEL_FACTS = (
     'There are two species of true camel. The dromedary, is a single humped camel that lives in the Middle East and the Horn of Africa area. The bactrian, is a two-humped camel that lives in areas of Central Asia.',
@@ -470,7 +518,7 @@ CAPYBARA_FACTS = (
     'Predators of the capybara include jaguars, pumas, ocelots, caimans, eagles, and anacondas.',
     'The name "capybara" is derived from the Tupi language, spoken by the native Tupi people of Brazil. The translated name means "one who eats slender leaves".',
     'Capybaras are very popular captive animals in Japan. One common practice, said to have originated in 1982 and attributed to the Izu Shaboten Zoo, is to keep hot springs in capybara enclosures for them to bathe and relax in during the winter.'
-)
+    )
 
 CHAMELEON_FACTS = (
     'Chameleons are a very unique branch of the lizard group of reptiles.',
@@ -518,21 +566,19 @@ CHIPMUNK_FACTS = (
     'Unlike other squirrels, chipmunks live mainly in the underground burrows. They can be 30 feet long and 3 feet wide. All burrows are divided in several sections: nursery, food storing chamber and resting area.',
     )
 
+
 COUGAR_FACTS = (   
- 
     'The cougar, also known as puma, mountain lion, mountain cat, catamount or panther, depending on the region, holds the Guinness record for the animal with the highest number of names. It has over 40 names in English alone.',
     'the cougar has the greatest range of any large wild terrestrial mammal in the Western Hemisphere, extending from the Yukon in Canada to the southern Andes of South America.',
     'Primary food sources include ungulates such as deer, elk, moose, and bighorn sheep, as well as domestic cattle, horses and sheep, particularly in the northern part of its range. It will also hunt species as small as insects and rodents.',
-   'Adults stand about 60 to 76 centimeters (2.0 to 2.5 ft) tall at the shoulders. The length of adult males is around 2.4 meters (8 ft) long nose to tail, with overall ranges between 1.5 and 2.75 m (5 and 9 ft) nose to tail suggested for the species in general. Males typically weigh 53 to 90 kilograms (115 to 198 pounds), averaging 62 kg (137 lb). Females typically weigh between 29 and 64 kg (64 and 141 lb), averaging 42 kg (93 lb).',
-  'Cougar size is smallest close to the equator and larger towards the poles.',
-  'Females reach sexual maturity between one-and-a-half to three years of age. They typically average one litter every two to three years throughout their reproductive life. Only females are involved in parenting and they are fiercely protective of their cubs.',
-  'Aside from humans, no species preys upon mature cougars in the wild. The cat is not, however, the apex predator throughout much of its range. In its northern range, the cougar interacts with other powerful predators such as the brown bear and gray wolf. In the south, the cougar must compete with the larger jaguar. In Florida it encounters the American Alligator.',
-  'Like almost all cats, the cougar is a solitary animal. Only mothers and kittens live in groups, with adults meeting only to mate. It is secretive and typically most active around dawn and dusk.',
-  'Cougars have large paws and proportionally the largest hind legs in the cat family. This physique allows it great leaping and short-sprint ability. An exceptional vertical leap of 5.4 m (18 ft) is reported for the cougar. Horizontal jumping capability from standing position is suggested anywhere from 6 to 12 m (20 to 40 ft).',
-  'The cougar can run as fast as 55 to 72 km/h (35 to 45 mi/h), but is best adapted for short, powerful sprints rather than long chases.',
-
+    'Adults stand about 60 to 76 centimeters (2.0 to 2.5 ft) tall at the shoulders. The length of adult males is around 2.4 meters (8 ft) long nose to tail, with overall ranges between 1.5 and 2.75 m (5 and 9 ft) nose to tail suggested for the species in general. Males typically weigh 53 to 90 kilograms (115 to 198 pounds), averaging 62 kg (137 lb). Females typically weigh between 29 and 64 kg (64 and 141 lb), averaging 42 kg (93 lb).',
+    'Cougar size is smallest close to the equator and larger towards the poles.',
+    'Female cougars reach sexual maturity between one-and-a-half to three years of age. They typically average one litter every two to three years throughout their reproductive life. Only females are involved in parenting and they are fiercely protective of their cubs.',
+    'Aside from humans, no species preys upon mature cougars in the wild. The cat is not, however, the apex predator throughout much of its range. In its northern range, the cougar interacts with other powerful predators such as the brown bear and gray wolf. In the south, the cougar must compete with the larger jaguar. In Florida it encounters the American Alligator.',
+    'Like almost all cats, the cougar is a solitary animal. Only mothers and kittens live in groups, with adults meeting only to mate. It is secretive and typically most active around dawn and dusk.',
+    'Cougars have large paws and proportionally the largest hind legs in the cat family. This physique allows it great leaping and short-sprint ability. An exceptional vertical leap of 5.4 m (18 ft) is reported for the cougar. Horizontal jumping capability from standing position is suggested anywhere from 6 to 12 m (20 to 40 ft).',
+    'The cougar can run as fast as 55 to 72 km/h (35 to 45 mi/h), but is best adapted for short, powerful sprints rather than long chases.',
     )
-
 
 COW_FACTS = (
     'There are well over 1 billion cattle in the world.',
@@ -670,6 +716,19 @@ ECHIDNA_FACTS = (
     "The echidna has a very large brain for its body size. Part of this might be due to their enlarged neocortex, which makes up half of the echidna's brain (compare this to about 30 percent in most other mammals and 80 percent in humans).",
     )
 
+EEL_FACTS = (
+    'Eels are covered with slimy mucus and this allows them to slither around reefs without getting scratched. They have scale less and slimy smooth skin, sharp teeth and strong jaws.',
+    'They have poor eyesight and often bite fingers of divers who give them food.',
+    'Eel weigh from 95 gm to 215 gm and their length ranges from 5 – 13 fee',
+    'Eels live in shallow waters or hide at the bottom of the oceans in holes which are called eel pits. Eels can swim backwards and forwards. They can travel on land for short distances.',
+    'The life span of an eel is about 85 years', 
+    'Eels are voracious eaters. They are carnivorous and eat lobsters, fish, octopuses, crabs mussels, snails and frog.',
+    'Eels move through water with an undulating motion. They feed at night and rest in the day. They possess an excellent sense of smell that helps them hunt for their prey.',
+    'Baby eels are called ‘elvers’. The eels go through a larval phase as juveniles and form part of the plankton.',
+    'Moray eels have long sharp canine teeth though some have low nodular teeth. They tie their bodies in knots to anchor when tearing at food.',
+    'Courting eels open their mouths wide and wrap their bodies around each other for hours. They separate only when the female has laid her eggs. The males then fertilize the eggs.',
+    )
+
 ELEPHANT_FACTS = (
     'There are two types of elephant, the Asian elephant and the African elephant (although sometimes the African Elephant is split into two species, the African Forest Elephant and the African Bush Elephant).',
     'Elephants are the largest land-living mammal in the world.',
@@ -683,6 +742,20 @@ ELEPHANT_FACTS = (
     'Female elephants spend their entire lives living in large groups called herds. Male elephant leave their herds at about 13 years old and live fairly solitary lives from this point.',
     'Elephants can swim – they use their trunk to breathe like a snorkel in deep water.',
     'Elephants are herbivores and can spend up to 16 hours days collecting leaves, twigs, bamboo and roots.',
+    )
+
+ELK_FACTS = (
+    'Elk are members of the Cervidae family, which includes caribou, deer, and moose.',
+    "An elk's stomach has four chambers: the first stores food, and the other three digest it.",
+    "When alarmed, elk raise their heads high, open their eyes wide, move stiffly, and rotate their ears to listen.",
+    'Elk threaten each other by curling back their upper lip, grinding their teeth, and hissing softly.',
+    'Elk are among the noisiest ungulates, communicating danger quickly and identifying each other by sound.',
+    'A cow (female elk) can weigh up to 500 pounds (225 kg).',
+    'A bull (male elk) can weigh up to 700 pounds (315 kg).',
+    'Prior to European settlement, more than 10 million elk roamed nearly all of the United States and parts of Canada.',
+    'Elk live in a variety of habitats, from rainforests to alpine meadows and dry desert valleys to hardwood forests.',
+    'Bull elk lose their antlers each March, but they begin to grow them back in May in preparation for the late-summer breeding season.',
+    'In early summer, elk migrate to high mountain grazing grounds where the females will give birth.',
     )
 
 EMU_FACTS = (
@@ -762,7 +835,7 @@ GAZELLE_FACTS = (
     'The name "gazelle" comes from an Arabic poetic form.',
     'Gazelles generally live up to 10 to 12 years.',
     'To evade predators, gazelles may zigzag rather than running in a straight line.'
-)
+    )
 
 GIRAFFE_FACTS = (
     'A male giraffe can weigh as much as a pick up truck! That’s about 1400 kilograms.',
@@ -825,6 +898,10 @@ GOPHER_FACTS = (
     'Gopher can survive 2 to 3 years (rarely up to 5) in the wild.',
     'Natural enemies of gophers are owls, hawks, coyotes, weasels and snakes.',
     'The gopher is an iconic mascot and one of the most distinctive features of the Go programming language.',
+    'A gopher plays a key role in the film Caddyshack.',
+    'Most gophers have brown fur that often closely matches the color of the soil in which they live.',
+    'Gophers eat plant roots, shrubs, and other vegetables such as carrots, lettuce, radishes, and any other vegetables with juice.',
+    'Pocket gophers are solitary outside of the breeding season, aggressively maintaining territories that vary in size depending on the resources available.',
     )
 
 GRASSHOPPER_FACTS = (
@@ -981,8 +1058,8 @@ IGUANA_FACTS = (
     'Green iguanas can vary in color more than just green, like blue, purple, or orange.',
     'Iguanas absorb water through their skin.',
     'After female iguanas lay their eggs, she never returns. Bye Mom!',
-    'Iguanas are mainly herbivorous.') 
- 
+    'Iguanas are mainly herbivorous.')
+
 
 IBEX_FACTS = (
     'Ibex are wild goats that live in the mountainous regions of Europe, north central Asia and northern Africa.',
@@ -1032,6 +1109,19 @@ KOALA_FACTS = (
     'Koalas cannot be kept legally as pets.',
     )
 
+LADYBUG_FACTS = (
+    'Ladybugs are a type of beetle. There are about 4,300 kinds of ladybugs in the world.',
+    'Some ladybugs have no spots and others have up to 20 spots. Spots have nothing to do with a ladybug age.',
+    'During winter ladybugs hibernate together to stay warm. Thousands of ladybugs may gather in the same location.',
+    'Ladybugs are both male and female. Female ladybugs are larger than male ladybugs.',
+    'A ladybug can live up to a year long and it can eat up to 5,000 insects in its lifetime.',
+    'A ladybug‘s bright color warns predators that it does not taste good.',
+    'Ladybugs smell with their feet and antennae.',
+    'When a ladybug flies, its wings beat 85 times every second.',
+    'If food is scarce, ladybugs will do what they must to survive, even if it means eating each other.',
+    'Ladybugs got their name from Catholic farmers, who prayed to the Virgin Mary to save their crops from pests. When appeared and ate the pests they were called “the beetles of our lady”.',
+    )
+
 LEMUR_FACTS = (
     'Lemurs live aobut 18 years.',
     'Lemurs can range in weight from 30 grams (1.1 oz) to 9 kilograms (20 lb) across species.',
@@ -1057,7 +1147,7 @@ LEOPARD_FACTS = (
     'Some people believe that the bones and whiskers of leopards can heal sick people. Many leopards are killed each year for their fur and body parts and this is one reason why the leopard is an endangered animal. While they were previously found in the wild in a number of areas around the world, their habitat is largely restricted to sub-Saharan Africa with small numbers also found in India, Pakistan, Malaysia, China and Indochina.'
 )
 
-LYNX_FACTS = ( 
+LYNX_FACTS = (
     'The Eurasian lynx is one of the widest ranging cats in the world and can be found in the forests of western Europe, Russia and central Asia.',
     'These fur-ocious felines are the largest of the lynx species, and the third largest predator in Europe after the brown bear and the wolf.',
     'These incredible cats are strict carnivores, feeding mostly on ungulates (hoofed mammals) such as deer. When food is scarce they also eat smaller prey like hares, foxes and rabbits.',
@@ -1268,6 +1358,19 @@ ORCA_FACTS = (
     "The orca can reach speeds in excess of 30 knots (about 34 mph, or 56 kph).",
     )
 
+OSTRICH_FACTS = (
+    'Ostriches have three stomachs.',
+    'An ostrich can run at 30 miles per hour for 10 miles at a time',
+    'Ostriches, in the wild live an average of 30 to 40 years',
+    'Ostrich eggs contains 2000 calories, and measure 6 inches in diameter',
+    'Ostriches are the largest and heaviest birds in the world',
+    'The scientific name for an ostrich is Struthio camelus, from the Struthio genus of ratite family from Africa.',
+    'Ostrich often swallows pebbles and sand that aid them in grinding up their ingested food in its gizzard, a peculiar muscular stomach.',
+    'They are the only bird in the world that has only two toes on each foot.  The inner toe has a claw that can measure up to 10 cm long.',
+    'At breeding time, male ostriches scrape out a nest in the ground which is then used by more than one female to lay their eggs which can end up with 20 eggs in them.  Females incubate the eggs during the day and males at night.  The dads then do most of the chick raising, often defending the chicks from potential predators with their powerful kicks.',
+     'Contrary to popular belief, Ostriches do not bury their heads in sand. This myth likely began with Pliny the Elder (AD 23-79), who wrote that Ostriches: “imagine, when they have thrust their head and neck into a bush, that the whole of their body is concealed".',
+     ) 
+
 OTTER_FACTS = (
     'The otter is a carnivorous mammal in a branch of the weasel family called Lutrinae.',
     'There are 13 species of otter found all around the world.',
@@ -1438,7 +1541,40 @@ PLATYPUS_FACTS = (
     "Platypus fur, being very thick and waterproof, used to be very in the fur trade until Australia banned platypus hunting to protect the species.",
     "Platypuses is the correct plural form, although platypi and platypodes are also accepted.",
     )
-    
+
+PUMA_FACTS = (
+    'The puma concolor is also known as cougar and montain lion, but is referred to as puma by most scientists.',
+    'Pumas are member of the felinae family, they are the largest of small cats.',
+    'Pumas are fast, they can run up to 80kph (50mph).',
+    'In the wild, pumas live up to 13 years.',
+    'In captivity, pumas live up to 20 years.',
+    'Unlike cats, pumas cannot roar.',
+    'Baby pumas are called cubs and born after a period of gestation of approximately 91 days.'
+    'From head to tail, puma\'s size varies between 1.5 and 2.7 meters (5 and 9 feet).',
+    'Pumas can live anywhere, in montain, desert or even sea-level, once there is shelter and prey.',
+    'Puma are obligated carnivores (like all cats), they need to feed on meat to survive.',
+    'Cubs born blind, they rely exclusively on their mother and begin to hunt after six months.',
+    'Cubs begin to be weaned around three months of age.'
+    )
+
+PORCUPINE_FACTS = (
+    "Body of the porcupine is covered with sharp spines or quills.",
+    "Some porcupines have up to 30,000 quills on their body.",
+    "Porcupines can't shoot out their quills, but they will be easily released when predators get it touch with animal.",
+    "Lost quills are replaced with new quills.",
+    "Porcupines are nocturnal animals. This means that they sleep during the day and become active in the evening.",
+    "They use their strong feet and curved claws to climb the tree. They are excellent climbers.",
+    "Porcupine's home is called a den.",
+    "They are herbivorous animals (eat only plants). They like to eat leaves, stem, bark, fruit, etc",
+    "They can live solitary life (left on their own) or in the small groups of up to 6 members.",
+    "During mating season, female initiates close contact with male.",
+    "Couple usually gets 2 babies and both parents take care of their babies.",
+    "Babies are called porcupettes and they are born with soft quills. Soft quills will harden in the next few hours.",
+    "Young porcupine will leave its parents after couple of months and begin solitary life.",
+    "Native Americans used porcupine's quills to decorate themselves in the past. They also used porcupines as a source of food.",
+    "Porcupines can live 15-18 years. "
+    )
+
 RABBIT_FACTS = (
     'A rabbit’s teeth never stop growing, which is why it is very important to provide chews and treats for them to keep their teeth from becoming overgrown.',
     'Rabbits have 28 teeth.',
@@ -1452,7 +1588,7 @@ RABBIT_FACTS = (
     'Rabbits cannot vomit. They don’t have enough muscles in their stomach.',
     'A male rabbit is called a buck, a female is a doe, and a baby is a kit/kitten.',
     )
-    
+
 RACCOON_FACTS = (
     'The raccoon has the ability to rotate their hind feet a full 180 degrees to allow for their ability to climb down from trees head first.',
     'On the mammal IQ scale raccoons rank higher than cats and just below monkeys.',
@@ -1656,6 +1792,20 @@ STARFISH_FACTS = (
     'Starfish have eyes.',
     )
 
+SUNFISH_FACTS = (
+    'The ocean sunfish (mola mola) is the heaviest known bony fish in the world, adults typically weigh between 247 and 1000 kg (545-2205 lb).',
+    'Sunfish live on a diet mainly of jellyfish, but because jellyfish are nutritionally poor, sunfish need to consume large amounts to develop and maintain their bulk.',
+    'Despite their size, sunfish are docile and pose no threat to human divers.',
+    'Sunfish have an average life span in captivity of up to 10 years.',
+    'Surface basking behaviour, in which a sunfish swims on its side and presents its largest profile to the sun, near the water surface, may be a method of helping their bodies warm up after deep water dives.',
+    'Female Sunfish can produce as many as 300 million eggs at a time, more than any other vertebrate.',
+    'The dorsal fin of the Sunfish is often mistaken for a shark fin, however can be distinguished as sharks keep their dorsal fin stationary, while sunfish swings its dorsal fin in a sculling motion'
+    'The skin of adult sunfish range from brown to silvery-grey or white with a variety of mottled skin patterns.',
+    'Sunfish neither has nor needs a swim bladder, as they constantly shuttle back and forth between depths instead of trying to maintain a position in the water.',
+    'In the course of the evolution of the sunfish, its tail disappeared and was replaced by a lumpy pseudotail, the clavus, formed by the convergence of the dorsal and anal fins and is used by the sunfish as a rudder.',
+    'Young sunfish school for protection, but this behaviour is abandoned as they grow.',
+    'Sunfish by the time of adulthood have the potential to grow more than 60 million times their birth size of a fraction of a gram, arguably the most extreme size growth of any vertebrate animal.')
+
 SQUID_FACTS = (
     'Many species of squid have a life span that is only about one year',
     'The Humboldt squid is very aggressive and will even attack sharks in the water.',
@@ -1681,8 +1831,9 @@ SQUIRREL_FACTS = (
     'A newborn squirrel is about an inch long.',
     'Humans introduced squirrels to most of our major city parks.',
     'Squirrels are acrobatic, intelligent and adaptable.',
-    'Squirrels get bulky to stay warm during the winter.',
     'Squirrels don’t dig up all of their buried nuts, which results in more trees!',
+    'Baby squirrels will only pee and poop in their mother’s mouth so that the mother can dispose of the waste outside the nest in order to keep predators from smelling the scent.',
+    'Squirrels can rotate their ankles 180 degrees.',
     )
 
 STINGRAY_FACTS = (
@@ -1826,6 +1977,10 @@ WHALE_FACTS = (
     'You can tell the age of a whale by looking at the wax plug in its ear. This plug in the ear has a pattern of layers when cut lengthwise that scientists can count to estimate the age of the whale.',
     'Whales love to sing! They use this as a call to mates, a way to communicate and also just for fun! After a period of time they get bored of the same whale song and begin to sing a different tune.',
     'Sometimes whales make navigation mistakes during migrations. Although they may have made the mistake days before, they don’t realise it until they becoming stranded.',
+    'Whales support many different types of life. Several creatures, such as barnacles and sea lice, attach themselves to the skin of whales and live there.'
+    'Whales are mammals. They breathe air, give birth to live young, and nurse (i.e., feed milk to) their young',
+    'Whales sleep by resting half of their brain at a time. That means they can still surface to breathe while they are sleeping',
+    'Whales have excellent hearing, and can hear other whales from thousands of kilometers away'
     'Whales support many different types of life. Several creatures, such as barnacles and sea lice, attach themselves to the skin of whales and live there.',
     )
 
@@ -1843,6 +1998,23 @@ WOLF_FACTS = (
     'A wolf can run at a speed of 40 miles per hour during a chase. Wolves have long legs and spend most of their time trotting at a speed of 7-10 miles per hour. They can keep up a reasonable pace for hours and have been known to cover distances of 55 miles in one night.',
     )
 
+YAK_FACTS = (
+   
+  'The yak is a long-haired bovid found throughout the Himalaya region of southern Central Asia, the Tibetan Plateau and as far north as Mongolia and Russia.',
+  'Most yaks are domesticated animals, though there is also a small, vulnerable wild yak population.',
+  'Bos mutus is the scientific name for the wild yak and Bos grunniens for domesticated yak.',
+  '90% of all known yaks can be found in Tibetan Plateau in the Himalayas.',
+  'Yak is a close relative of buffalo and bison.',
+  'The average lifespan of a yak is about 20 years in the wild and slightly longer when in captivity.',
+  'The yak is a herd animal that tend to gather in herds from 10 yaks to 100 yaks, most of which are females and their young.',
+  'The yak is the third largest beast in Asia, after the elephant and rhino.',
+  'Body of yak is covered with thick, wooly coat. It can be brown, black or white in color. Main purpose of the fur is preservation of the body heat and protection against low outer temperatures.Domesticated yak’s coat is less furry, but more diverse in color than the wild yak.',
+  'Yaks have long, bushy tails which are used for the production of fake beards in certain Chinese theaters.',
+  'Among domesticated animals, yaks are the highest dwelling animals of the world, living at 3,000–5,000 meters (9,800–16,400 feet).',
+  'Yaks are herbivores.A great deal of the yaks time is spent on grassy plains in the mountains grazing on grasses, herbs and wild flowers.',
+  'Yaks grunt and, unlike cattle, are not known to produce the characteristic bovine lowing (mooing) sound.',
+)
+
 ZEBRA_FACTS = (
     'Zebra are part of the equidae family along with horse and donkeys.',
     'Every zebra has a unique pattern of black and white stripes.',
@@ -1855,12 +2027,24 @@ ZEBRA_FACTS = (
     'Zebras eat mostly grass.',
     'The ears of a zebra show its mood.',
     'A zebra named Marty starred in the 2005 animated film Madagascar.',
-    )
+    'Zebras are very fast animals, and can gallop at speeds of up to 65 km/h. This is fast enough to outrun many predators.',
+    'Zebra foals can run within a few hours of birth.'
+)
+
+ATLANTIC_PUFFIN_FACTS = (
+    'The Atlantic Puffin is the only puffin native to the Atlantic Ocean.',
+    'The Atlantic Puffin breeds in Iceland, Norway, Greenland, Newfoundland and many North Atlantic islands, and as far south as Maine in the west and the British Isles in the east.',
+    'There are considered to be three subspecies of Atlantic puffin: Fratercula arctica arctica, Fratercula arctica grabae, Fratercula arctica naumanni.',
+    'Like many seabirds, the Atlantic puffin spends most of the year far from land in the open ocean and only visits coastal areas to breed.',
+)
 
 ALL_FACTS = (
+    AARDVARK_FACTS,
     ALBATROSS_FACTS,
     ALLIGATOR_FACTS,
+    ATLANTIC_PUFFIN_FACTS,
     ANT_FACTS,
+    ANTEATER_FACTS,
     ANTELOPE_FACTS,
     BADGER_FACTS,
     BEAR_FACTS,
@@ -1881,6 +2065,8 @@ ALL_FACTS = (
     DUGONG_FACTS,
     EAGLE_FACTS,
     ECHIDNA_FACTS,
+    EEL_FACTS,
+    ELK_FACTS,
     EMU_FACTS,
     FALCON_FACTS,
     FLAMINGO_FACTS,
@@ -1905,6 +2091,7 @@ ALL_FACTS = (
     JELLYFISH_FACTS,
     KANGAROO_FACTS,
     KOALA_FACTS,
+    LADYBUG_FACTS,
     LEMUR_FACTS,
     LEOPARD_FACTS,
     LION_FACTS,
@@ -1921,6 +2108,7 @@ ALL_FACTS = (
     OPOSSUM_FACTS,
     ORYX_FACTS,
     ORCA_FACTS,
+    OSTRICH_FACTS,
     OTTER_FACTS,
     OWL_FACTS,
     PANDA_FACTS,
@@ -1932,6 +2120,8 @@ ALL_FACTS = (
     PIG_FACTS,
     PIGEON_FACTS,
     PLATYPUS_FACTS,
+    PUMA_FACTS,
+    PORCUPINE_FACTS,
     RABBIT_FACTS,
     RACCOON_FACTS,
     SCORPION_FACTS,
@@ -1945,6 +2135,7 @@ ALL_FACTS = (
     SNAIL_FACTS,
     SNAKE_FACTS,
     STARFISH_FACTS,
+    SUNFISH_FACTS,
     SQUIRREL_FACTS,
     STINGRAY_FACTS,
     TARDIGRADE_FACTS,
@@ -1955,6 +2146,7 @@ ALL_FACTS = (
     WALRUS_FACTS,
     WHALE_FACTS,
     WOLF_FACTS,
+    YAK_FACTS,
     ZEBRA_FACTS,
     )
 
