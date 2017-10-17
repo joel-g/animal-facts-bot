@@ -323,7 +323,6 @@ def animalfactsbot(reddit):
 
 AARDVARK_FACTS = (
     'Aardvarks look like they were made from parts of other animals.',
-    'An aardvark has a long snout that ends with a pig-like nose, rabbit-like ears and a tail similar to a kangaroo's. Yet it is not closely related to any of those animals.',
     'Aardvarks are found throughout sub-Saharan Africa.',
     'The aardvark’s name comes from the Afrikaans/Dutch language and means "earth pig,"',
     'Aardvarks are about the size of a small pig.',
@@ -1915,7 +1914,6 @@ TURTLE_FACTS = (
     )
 
 VAMPIRE_BAT_FACTS = (
-
   'Vampire bats are believed to be the only bats to “adopt” another young bat if something happens to the bat’s mother.',
   'Vampire bats typically gather in colonies of about 100 animals, but sometimes live in groups of 1,000 or more.',
   'In one year, a colony of 100 vampire bats can drink the blood of 25 cows.',
