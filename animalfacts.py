@@ -741,6 +741,20 @@ ELEPHANT_FACTS = (
     )
 
 ELK_FACTS = (
+    'Elks are larger than a deer, but not as massive as moose.',
+    'Elks are usually 4 to 5 feet tall and weigh anywhere from 325 to 1,100 lbs.',
+    'Elks are social animals and live in groups called herds, which can range anywhere from 200 to 400 elks',
+    'Elks primarily eat grass and woody growth, depending on the season.  They also eat dandelions, violets, hawkweed, aster, clover, and muschrooms',
+    'A calf, an elk baby, can stand up on its own after just 20 minutes.  They usually weigh around 31 to 35 lbs when they are born.',
+    'There are about 750,000 elk today in Northern American.',
+    'Elk antlers have six tines, or branches, total.',
+    'Elk can reach a top speed of 45 miles per hour.  The average horse can gallop at a top speed of 29 mph',
+    'Elk have a maximum vertical jump of eight feet.',
+    'Elk antlers can grow more than an inch every day and can weigh as much as 40 pounds.  Bulls grow new antlers every      year and are covered with a soft coating called velvet.',
+    'Adult elks usually stay in single-sex groups for most of the year',
+    'The gestation period for an elk lasts somewhere between 240 to 262 days.',
+    'There are estimated to be over 200,000 elks living in the Greater Yellowstone Ecosystem',
+    'The Rocky Mountain elk is the official state animal for Utah.'
     'Elk are members of the Cervidae family, which includes caribou, deer, and moose.',
     "An elk's stomach has four chambers: the first stores food, and the other three digest it.",
     "When alarmed, elk raise their heads high, open their eyes wide, move stiffly, and rotate their ears to listen.",
@@ -753,6 +767,7 @@ ELK_FACTS = (
     'Bull elk lose their antlers each March, but they begin to grow them back in May in preparation for the late-summer breeding season.',
     'In early summer, elk migrate to high mountain grazing grounds where the females will give birth.',
     )
+
 
 EMU_FACTS = (
     'Emus are very docile and curious, and are easily tamed in captivity.',
@@ -2076,13 +2091,13 @@ ALL_FACTS = (
     DUGONG_FACTS,
     EAGLE_FACTS,
     ECHIDNA_FACTS,
+    ELEPHANT_FACTS,
     ELK_FACTS,
     EMU_FACTS,
     FALCON_FACTS,
     FLAMINGO_FACTS,
     FOX_FACTS,
     FROG_FACTS,
-    ELEPHANT_FACTS,
     GAZELLE_FACTS,
     GIRAFFE_FACTS,
     GRASSHOPPER_FACTS,
