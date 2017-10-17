@@ -217,6 +217,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
+    # botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment) i don't know what happened to the cougar facts...
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
     botengine('cuttlefish', '\scuttlefish(es)?\s', reddit, CUTTLEFISH_FACTS, comment)
@@ -302,6 +303,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('tardigrade', '\stardigrades?\s', reddit, TARDIGRADE_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
+    botengine('vampire bat', '\svampire bats\s', reddit, VAMPIRE_BAT_FACTS, comment)
     botengine('wallaby', '\swallab(y|ies)\s', reddit, WALLABY_FACTS, comment)
     botengine('walrus', '\swalrus\s', reddit, WALRUS_FACTS, comment)
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
@@ -320,6 +322,16 @@ def animalfactsbot(reddit):
         check_comment_for_animal(comment, reddit)
 
 AARDVARK_FACTS = (
+    'Aardvarks look like they were made from parts of other animals.',
+    'Aardvarks are found throughout sub-Saharan Africa.',
+    'The aardvark’s name comes from the Afrikaans/Dutch language and means "earth pig,"',
+    'Aardvarks are about the size of a small pig.',
+    'Aardvarks live in many different types of habitats, such as grasslands, savannas, rainforests, woodlands and thickets throughout Africa in the areas south of the Sahara.',
+    'Aardvarks are solitary animals and only come together to mate.',
+    'Female aardvarks have a gestation of seven months and give birth to one young at a time.',
+    'Aardvarks are also called ant bears.',
+    'Aardvarks have four toes on the front feet and five toes on their back feet.',
+    'Skilled diggers, an aardvark can dig up to 2 f (.6 m) in 15 seconds, according to the African Wildlife Foundation.'
     'The aardvark is the only species in its order. It is literally like no other animal on earth.',
     'The aardvark is admired in African folklore because of its diligent search for food and its lack of fear of soldier ants. The Maasai tribe believe sighting an aardvark brings good fortune.',
     'The name Aardvark comes from South Africa’s Afrikaans language and means ‘earth pig’ or ‘ground pig’.',
@@ -563,7 +575,20 @@ CHIPMUNK_FACTS = (
     'Male chipmunks are called Bucks and females are referred to as Does.',
     'Unlike other squirrels, chipmunks live mainly in the underground burrows. They can be 30 feet long and 3 feet wide. All burrows are divided in several sections: nursery, food storing chamber and resting area.',
     )
-  
+
+COUGAR_FACTS = (   
+    'The cougar, also known as puma, mountain lion, mountain cat, catamount or panther, depending on the region, holds the Guinness record for the animal with the highest number of names. It has over 40 names in English alone.',
+    'the cougar has the greatest range of any large wild terrestrial mammal in the Western Hemisphere, extending from the Yukon in Canada to the southern Andes of South America.',
+    'Primary food sources include ungulates such as deer, elk, moose, and bighorn sheep, as well as domestic cattle, horses and sheep, particularly in the northern part of its range. It will also hunt species as small as insects and rodents.',
+    'Adults stand about 60 to 76 centimeters (2.0 to 2.5 ft) tall at the shoulders. The length of adult males is around 2.4 meters (8 ft) long nose to tail, with overall ranges between 1.5 and 2.75 m (5 and 9 ft) nose to tail suggested for the species in general. Males typically weigh 53 to 90 kilograms (115 to 198 pounds), averaging 62 kg (137 lb). Females typically weigh between 29 and 64 kg (64 and 141 lb), averaging 42 kg (93 lb).',
+    'Cougar size is smallest close to the equator and larger towards the poles.',
+    'Female cougars reach sexual maturity between one-and-a-half to three years of age. They typically average one litter every two to three years throughout their reproductive life. Only females are involved in parenting and they are fiercely protective of their cubs.',
+    'Aside from humans, no species preys upon mature cougars in the wild. The cat is not, however, the apex predator throughout much of its range. In its northern range, the cougar interacts with other powerful predators such as the brown bear and gray wolf. In the south, the cougar must compete with the larger jaguar. In Florida it encounters the American Alligator.',
+    'Like almost all cats, the cougar is a solitary animal. Only mothers and kittens live in groups, with adults meeting only to mate. It is secretive and typically most active around dawn and dusk.',
+    'Cougars have large paws and proportionally the largest hind legs in the cat family. This physique allows it great leaping and short-sprint ability. An exceptional vertical leap of 5.4 m (18 ft) is reported for the cougar. Horizontal jumping capability from standing position is suggested anywhere from 6 to 12 m (20 to 40 ft).',
+    'The cougar can run as fast as 55 to 72 km/h (35 to 45 mi/h), but is best adapted for short, powerful sprints rather than long chases.',
+    )
+    
 COW_FACTS = (
     'There are well over 1 billion cattle in the world.',
     'Cattle are sacred in India. There are an estimated 300 million cattle in India.',
@@ -717,11 +742,10 @@ ELEPHANT_FACTS = (
 
 ELK_FACTS = (
     'Elks are larger than a deer, but not as massive as moose.',
-    'Elks are usually 4 to 5 feet tool and weigh anywhere from 325 to 1,100 lbs.',
+    'Elks are usually 4 to 5 feet tall and weigh anywhere from 325 to 1,100 lbs.',
     'Elks are social animals and live in groups called herds, which can range anywhere from 200 to 400 elks',
-    'Elks primarily eat grass and woody growth, depending on the season.  They also eat dandelions, violets, hawkweed,      aster, clover, and muschrooms',
-    'Male elks are called bulls.  Female elks are called cows.'
-    'A calf, an elk baby, can stand up on its own after just 20 minutes.  They usually weigh around 31 to 35 lbs when t     hey are born.',
+    'Elks primarily eat grass and woody growth, depending on the season.  They also eat dandelions, violets, hawkweed, aster, clover, and muschrooms',
+    'A calf, an elk baby, can stand up on its own after just 20 minutes.  They usually weigh around 31 to 35 lbs when they are born.',
     'There are about 750,000 elk today in Northern American.',
     'Elk antlers have six tines, or branches, total.',
     'Elk can reach a top speed of 45 miles per hour.  The average horse can gallop at a top speed of 29 mph',
@@ -731,7 +755,19 @@ ELK_FACTS = (
     'The gestation period for an elk lasts somewhere between 240 to 262 days.',
     'There are estimated to be over 200,000 elks living in the Greater Yellowstone Ecosystem',
     'The Rocky Mountain elk is the official state animal for Utah.'
-)
+    'Elk are members of the Cervidae family, which includes caribou, deer, and moose.',
+    "An elk's stomach has four chambers: the first stores food, and the other three digest it.",
+    "When alarmed, elk raise their heads high, open their eyes wide, move stiffly, and rotate their ears to listen.",
+    'Elk threaten each other by curling back their upper lip, grinding their teeth, and hissing softly.',
+    'Elk are among the noisiest ungulates, communicating danger quickly and identifying each other by sound.',
+    'A cow (female elk) can weigh up to 500 pounds (225 kg).',
+    'A bull (male elk) can weigh up to 700 pounds (315 kg).',
+    'Prior to European settlement, more than 10 million elk roamed nearly all of the United States and parts of Canada.',
+    'Elk live in a variety of habitats, from rainforests to alpine meadows and dry desert valleys to hardwood forests.',
+    'Bull elk lose their antlers each March, but they begin to grow them back in May in preparation for the late-summer breeding season.',
+    'In early summer, elk migrate to high mountain grazing grounds where the females will give birth.',
+    )
+
 
 EMU_FACTS = (
     'Emus are very docile and curious, and are easily tamed in captivity.',
@@ -1098,7 +1134,7 @@ LADYBUG_FACTS = (
     )
 
 LEMUR_FACTS = (
-    'Lemurs live aobut 18 years.',
+    'Lemurs live about 18 years.',
     'Lemurs can range in weight from 30 grams (1.1 oz) to 9 kilograms (20 lb) across species.',
     'Most lemur species have a tail longer than their body.',
     'Lemurs are the smallest of all known primates.',
@@ -1892,6 +1928,21 @@ TURTLE_FACTS = (
     'Sea turtles have special glands which help remove salt from the water they drink.',
     )
 
+VAMPIRE_BAT_FACTS = (
+  'Vampire bats are believed to be the only bats to “adopt” another young bat if something happens to the bat’s mother.',
+  'Vampire bats typically gather in colonies of about 100 animals, but sometimes live in groups of 1,000 or more.',
+  'In one year, a colony of 100 vampire bats can drink the blood of 25 cows.',
+  'The common vampire bat has the fewest teeth of all bat species.',
+  'The incisor teeth of the common vampire bat do not have any enamel which keeps them extremely sharp.',
+  'The common vampire bat prefers to feed from horses rather than cattle, if given a choice.',
+  'Members often remain in the colony in which they were born for their entire life.',
+  'Vampire bats usually consume about one ounce of blood per night.',
+  'A drug which uses the anticoagulant properties of the saliva of the common vampire bat has been shown to increase blood flow in stroke victims.',
+  'Vampire bats can live for up to 12 years in the wild, although captive individuals have been known to reach the age of 19.',
+  'Young vampire bats feed on milk from the mother, not on blood. They cling tightly to their mothers, even in flight, until they are weaned at about 3 – 4 months.',
+  'Vampire bats are not seasonal breeders and can mate all year round. They are pregnant for 3 – 4 months, which is a long gestation period compared to other small bats. The female gives birth to a single baby.',
+  )
+
 WALLABY_FACTS = (
     'Wallabies are members of the kangaroo clan found primarily in Australia and on nearby islands.',
     'Wallabies are marsupials or pouched mammals. Wallaby young are defenseless and develop in the pouch of their mother.',
@@ -2031,6 +2082,7 @@ ALL_FACTS = (
     CHEETAH_FACTS,
     CHIPMUNK_FACTS,
     COW_FACTS,
+    COUGAR_FACTS,
     CRAB_FACTS,
     CROCODILE_FACTS,
     CUTTLEFISH_FACTS,
@@ -2115,6 +2167,7 @@ ALL_FACTS = (
     TARANTULA_FACTS,
     TIGER_FACTS,
     TURTLE_FACTS,
+    VAMPIRE_BAT_FACTS,
     WALLABY_FACTS,
     WALRUS_FACTS,
     WHALE_FACTS,
