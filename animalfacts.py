@@ -492,7 +492,9 @@ BISON_FACTS=(
     'The average lifespan of a bison is 10-20 years.',
     'Bison have poor eyesight but they have excellent senses of smell and hearing.',
     'Female bison give birth to one calf after 9 months.',
-    'Bison live in a variety of groups.Each bison group has a dominant male or female.'
+    'Bison live in a variety of groups. Each bison group has a dominant male or female.',
+    'Yellowstone National Park is the only place in the U.S. where bison have continuously lived since prehistoric times.',
+    'When bison are born, their fur is orange-red. After a few months, their fur steadily grows more brown.'
     )
 
 CAMEL_FACTS = (
