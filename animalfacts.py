@@ -24,6 +24,7 @@ bell = mixer.Sound('bell.wav')
 history = 'commented.txt'
 reply_history = 'repliedto.txt'
 unsubscribed_list = 'unsubscribed.txt'
+
 if len(sys.argv) > 1:
     wait_time = int(sys.argv[1])
 else:
@@ -119,9 +120,8 @@ def check_messages(reddit):
 
 
 def number_of_facts_given():
-    commented_obj_r = open(history, 'r')
-    count = len(commented_obj_r.read().splitlines())
-    commented_obj_r.close()
+    with open(history, 'r') as commented_obj_r:
+        count = len(commented_obj_r.read().splitlines())
     return count
 
 
@@ -141,19 +141,16 @@ def record_already_replied(read_file, comment):
 
 
 def unsubscribe(redditor):
-    unsub_w = open(unsubscribed_list, 'a+')
-    unsub_w.write(redditor.name + '\n')
-    unsub_w.close()
+    with open(unsubscribed_list, 'a+') as unsub_w:
+        unsub_w.write(redditor.name + '\n')
 
 
 def unsubscribed_author_check(comment):
-    unsub_r = open(unsubscribed_list, 'r')
-    if comment.author and comment.author.name in unsub_r.read().splitlines():
-        unsub_r.close()
-        return False
-    else:
-        unsub_r.close()
-        return True
+    with open(unsubscribed_list, 'r') as unsub_r:
+        if comment.author and comment.author.name in unsub_r.read().splitlines():
+            return False
+        else:
+            return True
 
 
 def random_fact():
@@ -175,30 +172,30 @@ def botengine(animal, regex, reddit, facts, comment):
             if comment.subreddit.user_is_banned:
                 print("     Not commenting because I am banned from " +
                       comment.subreddit.display_name + "\n")
+
+            elif not unsubscribed_author_check(comment):
+                print("     Not commenting because author is unsubscribed.")
+
             else:
-                if not unsubscribed_author_check(comment):
-                    print("     Not commenting because author is unsubscribed.")
-                else:
-                    file_obj_r = open(history, 'r')
-                    if comment.id not in file_obj_r.read().splitlines():
-                        if comment.author.name == reddit.user.me():
-                            print('     Skipping my own comment...\n')
-                        else:
-                            print(
-                                '     by ' +
-                                comment.author.name +
-                                ' in ' +
-                                comment.subreddit.display_name +
-                                '\n      commenting a fact...')
-                            comment.reply(random.choice(facts))
-                            alert.play()
-                            file_obj_r.close()
-                            file_obj_w = open(history, 'a+')
-                            file_obj_w.write(comment.id + '\n')
-                            file_obj_w.close()
-                            time.sleep(wait_time)
+                file_obj_r = open(history, 'r')
+                if comment.id not in file_obj_r.read().splitlines():
+                    if comment.author.name == reddit.user.me():
+                        print('     Skipping my own comment...\n')
                     else:
-                        print('     Already commented on this!\n')
+                        print(
+                            '     by ' +
+                            comment.author.name +
+                            ' in ' +
+                            comment.subreddit.display_name +
+                            '\n      commenting a fact...')
+                        comment.reply(random.choice(facts))
+                        alert.play()
+                        file_obj_r.close()
+                        with open(history, 'a+') as file_obj_w:
+                            file_obj_w.write(comment.id + '\n')
+                        time.sleep(wait_time)
+                else:
+                    print('     Already commented on this!\n')
 
 def check_comment_for_animal(comment, reddit):
     botengine('aardvark', '\saardvarks?\s', reddit, AARDVARK_FACTS, comment)
