@@ -1120,7 +1120,7 @@ LADYBUG_FACTS = (
     )
 
 LEMUR_FACTS = (
-    'Lemurs live aobut 18 years.',
+    'Lemurs live about 18 years.',
     'Lemurs can range in weight from 30 grams (1.1 oz) to 9 kilograms (20 lb) across species.',
     'Most lemur species have a tail longer than their body.',
     'Lemurs are the smallest of all known primates.',
