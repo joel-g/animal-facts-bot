@@ -215,9 +215,9 @@ def check_comment_for_animal(comment, reddit):
     botengine('capybara', '\scapybaras?\s', reddit, CAPYBARA_FACTS, comment)
     botengine('chameleon', '\schameleons?\s', reddit, CHAMELEON_FACTS, comment)
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
-    botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment)
     botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
+    botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
     botengine('cuttlefish', '\scuttlefish(es)?\s', reddit, CUTTLEFISH_FACTS, comment)
@@ -227,9 +227,8 @@ def check_comment_for_animal(comment, reddit):
     botengine('dugong', '\sdugongs?\s', reddit, DUGONG_FACTS, comment)
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
     botengine('echidna', '\sechidnas?\s', reddit, ECHIDNA_FACTS, comment)
-    botengine('eel', '\seels?\s', reddit, EEL_FACTS, comment)
     botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
-    botengine('elk', '\selk?\s', reddit, ELK_FACTS, comment)
+    botengine('elk', '\selks?\s', reddit, ELK_FACTS, comment)
     botengine('emu', '\semus?\s', reddit, EMU_FACTS, comment)
     botengine('falcon', '\sfalcons?\s', reddit, FALCON_FACTS, comment)
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
@@ -565,21 +564,7 @@ CHIPMUNK_FACTS = (
     'Male chipmunks are called Bucks and females are referred to as Does.',
     'Unlike other squirrels, chipmunks live mainly in the underground burrows. They can be 30 feet long and 3 feet wide. All burrows are divided in several sections: nursery, food storing chamber and resting area.',
     )
-
-
-COUGAR_FACTS = (   
-    'The cougar, also known as puma, mountain lion, mountain cat, catamount or panther, depending on the region, holds the Guinness record for the animal with the highest number of names. It has over 40 names in English alone.',
-    'the cougar has the greatest range of any large wild terrestrial mammal in the Western Hemisphere, extending from the Yukon in Canada to the southern Andes of South America.',
-    'Primary food sources include ungulates such as deer, elk, moose, and bighorn sheep, as well as domestic cattle, horses and sheep, particularly in the northern part of its range. It will also hunt species as small as insects and rodents.',
-    'Adults stand about 60 to 76 centimeters (2.0 to 2.5 ft) tall at the shoulders. The length of adult males is around 2.4 meters (8 ft) long nose to tail, with overall ranges between 1.5 and 2.75 m (5 and 9 ft) nose to tail suggested for the species in general. Males typically weigh 53 to 90 kilograms (115 to 198 pounds), averaging 62 kg (137 lb). Females typically weigh between 29 and 64 kg (64 and 141 lb), averaging 42 kg (93 lb).',
-    'Cougar size is smallest close to the equator and larger towards the poles.',
-    'Female cougars reach sexual maturity between one-and-a-half to three years of age. They typically average one litter every two to three years throughout their reproductive life. Only females are involved in parenting and they are fiercely protective of their cubs.',
-    'Aside from humans, no species preys upon mature cougars in the wild. The cat is not, however, the apex predator throughout much of its range. In its northern range, the cougar interacts with other powerful predators such as the brown bear and gray wolf. In the south, the cougar must compete with the larger jaguar. In Florida it encounters the American Alligator.',
-    'Like almost all cats, the cougar is a solitary animal. Only mothers and kittens live in groups, with adults meeting only to mate. It is secretive and typically most active around dawn and dusk.',
-    'Cougars have large paws and proportionally the largest hind legs in the cat family. This physique allows it great leaping and short-sprint ability. An exceptional vertical leap of 5.4 m (18 ft) is reported for the cougar. Horizontal jumping capability from standing position is suggested anywhere from 6 to 12 m (20 to 40 ft).',
-    'The cougar can run as fast as 55 to 72 km/h (35 to 45 mi/h), but is best adapted for short, powerful sprints rather than long chases.',
-    )
-
+  
 COW_FACTS = (
     'There are well over 1 billion cattle in the world.',
     'Cattle are sacred in India. There are an estimated 300 million cattle in India.',
@@ -714,19 +699,6 @@ ECHIDNA_FACTS = (
     'Echidnas are egg-laying mammals. Along with the platypus, the echidna is a member of the monotremes, an order of egg-laying mammals found in Australia.',
     'At the end of their slender snouts, echidnas have tiny mouths and toothless jaws. They use their long, sticky tongues to feed on ants, termites, worms, and insect larvae.',
     "The echidna has a very large brain for its body size. Part of this might be due to their enlarged neocortex, which makes up half of the echidna's brain (compare this to about 30 percent in most other mammals and 80 percent in humans).",
-    )
-
-EEL_FACTS = (
-    'Eels are covered with slimy mucus and this allows them to slither around reefs without getting scratched. They have scale less and slimy smooth skin, sharp teeth and strong jaws.',
-    'They have poor eyesight and often bite fingers of divers who give them food.',
-    'Eel weigh from 95 gm to 215 gm and their length ranges from 5 – 13 fee',
-    'Eels live in shallow waters or hide at the bottom of the oceans in holes which are called eel pits. Eels can swim backwards and forwards. They can travel on land for short distances.',
-    'The life span of an eel is about 85 years', 
-    'Eels are voracious eaters. They are carnivorous and eat lobsters, fish, octopuses, crabs mussels, snails and frog.',
-    'Eels move through water with an undulating motion. They feed at night and rest in the day. They possess an excellent sense of smell that helps them hunt for their prey.',
-    'Baby eels are called ‘elvers’. The eels go through a larval phase as juveniles and form part of the plankton.',
-    'Moray eels have long sharp canine teeth though some have low nodular teeth. They tie their bodies in knots to anchor when tearing at food.',
-    'Courting eels open their mouths wide and wrap their bodies around each other for hours. They separate only when the female has laid her eggs. The males then fertilize the eggs.',
     )
 
 ELEPHANT_FACTS = (
@@ -2055,8 +2027,8 @@ ALL_FACTS = (
     CHAMELEON_FACTS,
     CHEETAH_FACTS,
     CHIPMUNK_FACTS,
-    COUGAR_FACTS,
     COW_FACTS,
+    COUGAR_FACTS,
     CRAB_FACTS,
     CROCODILE_FACTS,
     CUTTLEFISH_FACTS,
@@ -2065,7 +2037,6 @@ ALL_FACTS = (
     DUGONG_FACTS,
     EAGLE_FACTS,
     ECHIDNA_FACTS,
-    EEL_FACTS,
     ELK_FACTS,
     EMU_FACTS,
     FALCON_FACTS,
