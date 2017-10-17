@@ -227,6 +227,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
     botengine('echidna', '\sechidnas?\s', reddit, ECHIDNA_FACTS, comment)
     botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
+    botengine('elk', '\selk?\s', reddit, ELK_FACTS, comment)
     botengine('emu', '\semus?\s', reddit, EMU_FACTS, comment)
     botengine('falcon', '\sfalcons?\s', reddit, FALCON_FACTS, comment)
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
@@ -712,6 +713,20 @@ ELEPHANT_FACTS = (
     'Female elephants spend their entire lives living in large groups called herds. Male elephant leave their herds at about 13 years old and live fairly solitary lives from this point.',
     'Elephants can swim – they use their trunk to breathe like a snorkel in deep water.',
     'Elephants are herbivores and can spend up to 16 hours days collecting leaves, twigs, bamboo and roots.',
+    )
+
+ELK_FACTS = (
+    'Elk are members of the Cervidae family, which includes caribou, deer, and moose.',
+    "An elk's stomach has four chambers: the first stores food, and the other three digest it.",
+    "When alarmed, elk raise their heads high, open their eyes wide, move stiffly, and rotate their ears to listen.",
+    'Elk threaten each other by curling back their upper lip, grinding their teeth, and hissing softly.',
+    'Elk are among the noisiest ungulates, communicating danger quickly and identifying each other by sound.',
+    'A cow (female elk) can weigh up to 500 pounds (225 kg).',
+    'A bull (male elk) can weigh up to 700 pounds (315 kg).',
+    'Prior to European settlement, more than 10 million elk roamed nearly all of the United States and parts of Canada.',
+    'Elk live in a variety of habitats, from rainforests to alpine meadows and dry desert valleys to hardwood forests.',
+    'Bull elk lose their antlers each March, but they begin to grow them back in May in preparation for the late-summer breeding season.',
+    'In early summer, elk migrate to high mountain grazing grounds where the females will give birth.',
     )
 
 EMU_FACTS = (
@@ -2020,6 +2035,7 @@ ALL_FACTS = (
     DUGONG_FACTS,
     EAGLE_FACTS,
     ECHIDNA_FACTS,
+    ELK_FACTS,
     EMU_FACTS,
     FALCON_FACTS,
     FLAMINGO_FACTS,
