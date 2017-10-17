@@ -55,6 +55,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * dugong
 * eagle
 * echidna
+* eel
 * elephant
 * elk
 * emu
