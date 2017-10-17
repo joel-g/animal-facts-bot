@@ -321,6 +321,17 @@ def animalfactsbot(reddit):
         check_comment_for_animal(comment, reddit)
 
 AARDVARK_FACTS = (
+    'Aardvarks look like they were made from parts of other animals.',
+    'An aardvark has a long snout that ends with a pig-like nose, rabbit-like ears and a tail similar to a kangaroo's. Yet it is not closely related to any of those animals.',
+    'Aardvarks are found throughout sub-Saharan Africa.',
+    'The aardvark’s name comes from the Afrikaans/Dutch language and means "earth pig,"',
+    'Aardvarks are about the size of a small pig.',
+    'Aardvarks live in many different types of habitats, such as grasslands, savannas, rainforests, woodlands and thickets throughout Africa in the areas south of the Sahara.',
+    'Aardvarks are solitary animals and only come together to mate.',
+    'Female aardvarks have a gestation of seven months and give birth to one young at a time.',
+    'Aardvarks are also called ant bears.',
+    'Aardvarks have four toes on the front feet and five toes on their back feet.',
+    'Skilled diggers, an aardvark can dig up to 2 f (.6 m) in 15 seconds, according to the African Wildlife Foundation.'
     'The aardvark is the only species in its order. It is literally like no other animal on earth.',
     'The aardvark is admired in African folklore because of its diligent search for food and its lack of fear of soldier ants. The Maasai tribe believe sighting an aardvark brings good fortune.',
     'The name Aardvark comes from South Africa’s Afrikaans language and means ‘earth pig’ or ‘ground pig’.',
