@@ -190,13 +190,17 @@ def botengine(animal, regex, reddit, facts, comment):
                                 ' in ' +
                                 comment.subreddit.display_name +
                                 '\n      commenting a fact...')
-                            comment.reply(random.choice(facts))
-                            alert.play()
-                            file_obj_r.close()
-                            file_obj_w = open(history, 'a+')
-                            file_obj_w.write(comment.id + '\n')
-                            file_obj_w.close()
-                            time.sleep(wait_time)
+                            try:
+                                comment.reply(random.choice(facts))
+                                alert.play()
+                                file_obj_w = open(history, 'a+')
+                                file_obj_w.write(comment.id + '\n')
+                                file_obj_w.close()
+                            except:
+                                print("Failed to comment - either timed out or deleted/locked comment")
+                            finally:
+                                file_obj_r.close()
+                                time.sleep(wait_time)
                     else:
                         print('     Already commented on this!\n')
 
