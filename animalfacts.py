@@ -322,21 +322,14 @@ def animalfactsbot(reddit):
         check_comment_for_animal(comment, reddit)
 
 AARDVARK_FACTS = (
-    'Aardvarks look like they were made from parts of other animals.',
-    'Aardvarks are found throughout sub-Saharan Africa.',
-    'The aardvark’s name comes from the Afrikaans/Dutch language and means "earth pig,"',
-    'Aardvarks are about the size of a small pig.',
     'Aardvarks live in many different types of habitats, such as grasslands, savannas, rainforests, woodlands and thickets throughout Africa in the areas south of the Sahara.',
-    'Aardvarks are solitary animals and only come together to mate.',
     'Female aardvarks have a gestation of seven months and give birth to one young at a time.',
     'Aardvarks are also called ant bears.',
     'Aardvarks have four toes on the front feet and five toes on their back feet.',
-    'Skilled diggers, an aardvark can dig up to 2 f (.6 m) in 15 seconds, according to the African Wildlife Foundation.'
+    'Skilled diggers, an aardvark can dig up to 2 feet (.6 m) in 15 seconds, according to the African Wildlife Foundation.'
     'The aardvark is the only species in its order. It is literally like no other animal on earth.',
     'The aardvark is admired in African folklore because of its diligent search for food and its lack of fear of soldier ants. The Maasai tribe believe sighting an aardvark brings good fortune.',
     'The name Aardvark comes from South Africa’s Afrikaans language and means ‘earth pig’ or ‘ground pig’.',
-    'The aardvark takes up an astonishing number of insects with its long, sticky tongue, as many as 50,000 in one night.',
-    'Skilled diggers, an aardvark can dig up to 2ft (0.6 m) in 15 seconds.',
     'Aardvarks can live to be over 24 years old in captivity. In the wild, they live between 10 – 23 years.',
     'Aardvarks can close their nostrils to keep out dirt and bugs while they dig.',
     'Aardvarks have excellent hearing and their long ears allow them to hear tiny sounds, such as termites under the ground.',
@@ -345,7 +338,6 @@ AARDVARK_FACTS = (
     'Aardvark can travel between 16 and 30 kilometers per night while searching for the food.',
     'Aardvark is excellent swimmer thanks to its webbed feet.',
     "An aardvark has a long snout that ends with a pig-like nose, rabbit-like ears and a tail similar to a kangaroo's. Yet it is not closely related to any of those animals.",
-    'Aardvarks are found throughout sub-Saharan Africa. The aardvark’s name comes from the Afrikaans/Dutch language and means "earth pig," according to National Geographic.',
     'Aardvarks are about the size of a small pig. Typically, they weigh from 110 to 180 lbs. (50 to 82 kilograms).',
     'If it stuck its tongue out, an aardvark would be much longer. Their tongues can be up to 12 inches (30.5 cm) long.',
     'Aardvarks live in many different types of habitats, such as grasslands, savannas, rainforests, woodlands and thickets throughout Africa in the areas south of the Sahara.',
