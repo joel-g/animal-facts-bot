@@ -492,7 +492,11 @@ BISON_FACTS=(
     'The average lifespan of a bison is 10-20 years.',
     'Bison have poor eyesight but they have excellent senses of smell and hearing.',
     'Female bison give birth to one calf after 9 months.',
-    'Bison live in a variety of groups.Each bison group has a dominant male or female.'
+    'Bison live in a variety of groups.Each bison group has a dominant male or female.',
+    'Bisons are the largest Mammals in North America.',
+    'The scientific name for Bison is bison bison bison.',
+    'In winter, Bisons can dig through snow to get to the vegetation below.',
+    'The muscle-filled large hump on a Bison\'s back allows it to plough through snow.'
     )
 
 CAMEL_FACTS = (
