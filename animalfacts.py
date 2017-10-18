@@ -659,6 +659,11 @@ DINGO_FACTS = (
     'Dingoes have permanently erect ears.',
     'Dingoes arrived in Australia from the Asian mainland about 5,000 years ago.',
     'Dingoes live to five or six years of age in the wild and fifteen years in captivity.',
+    'There\'re considered pests in Australia',
+    'The largest fence in the world was built to keep out Dingoes in Australia',
+    'Just like humans, dingoes have rotating wrists. This allows them to use their paws like hands to catch prey. It also helps them better climb trees and even open doors.',
+    'They can even swivel their heads about 180 degrees. Comparatively, owls can turn their heads 270 degrees; humans can only turn theirs 45 to 70 degrees.',
+    'Having a dingo as a pet is a full time responsibility, as dingoes don\'t handle rejection well and will likely not emotionally recover from being placed in a new home.',
     )
 
 DOLPHIN_FACTS = (
