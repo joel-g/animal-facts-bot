@@ -255,6 +255,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('hummingbird', '\shummingbirds?\s', reddit, HUMMINGBIRD_FACTS, comment)
     botengine('husky', '\s(husky|huskie)s?\s', reddit, HUSKY_FACTS, comment)
     botengine('iguana', '\siguanas?\s', reddit, IGUANA_FACTS, comment)
+    botengine('jackal', '\sjackals?\s', reddit, JACKAL_FACTS, comment)
     botengine('jellyfish', '\sjellyfish(es)\s', reddit, JELLYFISH_FACTS, comment)
     botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
@@ -1101,6 +1102,20 @@ IBEX_FACTS = (
     'Ibex are herbivores; they only eat vegetation, such as shrubs, bushes and grasses.',
     'Ibex make their homes on cliffs that would be dangerous for predators.',
     'Ibex are very nimble. They can jump more than 6 feet (1.8 meters) straight up without a running start. This helps them climb mountainous terrain with ease.')
+
+JACKAL_FACTS = (
+    'There are three species of Jackal, the Common Jackal (Canis aureus), the Side-striped Jackal (Canis adustus) and the Black-backed Jackal (Canis mesomelas). Common Jackals are also known as Golden Jackals, Asiatic Jackals and Oriental Jackals.',
+    'Jackals vary in size depending on the species. On average, jackal can reach 15 to 35 pounds in weight and 15 to 20 inches in height at the shoulder.',
+    'Jackals are opportunistic feeders. That mean that they will eat whatever is available. Jackals like to eat snakes and other reptiles, smaller gazelles, sheep, insects, fruit, berries and sometimes even grass.',
+    'Main predators of jackals are leopards, hyenas and eagles. Young animals are especially easy target of eagles.',
+    'Jackals sometimes eat remains of dead animals that were killed by large predators.',
+    'Jackals are very vocal animals. They use wide variety of sounds to communicate. Most notable sounds include: yips, howls, growls and "owl-like hoots". Siren-like howl is produced when the food is located.',
+    'Jackals are fast animals. They can run 40 miles per hour, but they usually run only 10 miles per hour for longer periods of time.',
+    'Jackals respond only to the sounds produced by the members of their family. They ignore all other calls.',
+    'Jackals mate for lifetime (they are monogamous). Pregnancy in females lasts around 2 months and ends usually with 2 to 4 cubs. Large litters may consist of up to 9 cubs.',
+    'Jackals can survive 8 to 9 years in the wild and up to 16 years in captivity.',
+    'Jackals can live solitary life, be part of a couple or part of a large group, called pack. Life in pack ensures protection against predators and ensures cooperative hunt which results in killing of the larger prey.'
+    )
 
 JELLYFISH_FACTS = (
     'Jellyfish live in the sea and are found in all oceans.',
@@ -2136,6 +2151,7 @@ ALL_FACTS = (
     HUMMINGBIRD_FACTS,
     HUSKY_FACTS,
     IGUANA_FACTS,
+    JACKAL_FACTS,
     JELLYFISH_FACTS,
     KANGAROO_FACTS,
     KOALA_FACTS,
