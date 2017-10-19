@@ -39,6 +39,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * bear
 * beaver
 * bison
+* buffalo
 * camel
 * capybara
 * chameleon
@@ -78,6 +79,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * hummingbird
 * husky
 * iguana
+* jackal
 * jellyfish
 * kangaroo
 * koala
@@ -91,7 +93,6 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * llama
 * meerkat
 * monkey
-* muskrat
 * narwhal
 * newt
 * ocelot

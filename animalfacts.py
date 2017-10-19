@@ -1,4 +1,4 @@
-﻿import re
+import re
 import praw
 import random
 import time
@@ -211,9 +211,11 @@ def check_comment_for_animal(comment, reddit):
     botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
     botengine('anteater', '\santeaters?\s', reddit, ANTEATER_FACTS, comment)
     botengine('antelope', '\santelopes?\s', reddit, ANTELOPE_FACTS, comment)
+#     botengine('antlantic puffin', '\santlantic puffins?\s', reddit, ANTLANTIC_PUFFIN_FACTS, comment) un comment this when more puffin facts have been added
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('bear', '\sbears?\s', reddit, BEAR_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
+    botengine('buffalo', '\sbuffalos?\s', reddit, BUFFALO_FACTS, comment)
     botengine('bison', '\sbisons?\s', reddit, BISON_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
     botengine('capybara', '\scapybaras?\s', reddit, CAPYBARA_FACTS, comment)
@@ -221,7 +223,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
-    botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment)
+    botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment) i don't know what happened to the cougar facts...
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
     botengine('cuttlefish', '\scuttlefish(es)?\s', reddit, CUTTLEFISH_FACTS, comment)
@@ -253,10 +255,11 @@ def check_comment_for_animal(comment, reddit):
     botengine('hummingbird', '\shummingbirds?\s', reddit, HUMMINGBIRD_FACTS, comment)
     botengine('husky', '\s(husky|huskie)s?\s', reddit, HUSKY_FACTS, comment)
     botengine('iguana', '\siguanas?\s', reddit, IGUANA_FACTS, comment)
+    botengine('jackal', '\sjackals?\s', reddit, JACKAL_FACTS, comment)
     botengine('jellyfish', '\sjellyfish(es)\s', reddit, JELLYFISH_FACTS, comment)
     botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
-    botengine('ladybug', '\s(ladybug|lady bug)s?\s', reddit, LADYBUG_FACTS, comment)    
+    botengine('ladybug', '\s(ladybug|lady bug)s?\s', reddit, LADYBUG_FACTS, comment)
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
     botengine('lynx', '\slynx(es)?\s', reddit, LYNX_FACTS, comment)
     botengine('lemur', '\slemurs?\s', reddit, LEMUR_FACTS, comment)
@@ -266,7 +269,6 @@ def check_comment_for_animal(comment, reddit):
     botengine('llama', '\sllamas?\s', reddit, LLAMA_FACTS, comment)
     botengine('meerkat', '\smeerkats?\s', reddit, MEERKAT_FACTS, comment)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
-    botengine('muskrat','\smuskrat?\s', reddit, MUSKRAT_FACTS, comment)
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
     botengine('newt', '\snewts?\s', reddit, NEWT_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
@@ -432,6 +434,13 @@ ANTELOPE_FACTS = (
     'Some antelope are famous for their massive herds, like the thousands of wildebeests making their annual migration across the African plains.',
     )
 
+ATLANTIC_PUFFIN_FACTS = (
+    'The Atlantic Puffin is the only puffin native to the Atlantic Ocean.',
+    'The Atlantic Puffin breeds in Iceland, Norway, Greenland, Newfoundland and many North Atlantic islands, and as far south as Maine in the west and the British Isles in the east.',
+    'There are considered to be three subspecies of Atlantic puffin: Fratercula arctica arctica, Fratercula arctica grabae, Fratercula arctica naumanni.',
+    'Like many seabirds, the Atlantic puffin spends most of the year far from land in the open ocean and only visits coastal areas to breed.',
+)
+
 BADGER_FACTS = (
     'Badgers are part of the family Mustelidae this is the same family as otters, ferret, polecats, weasels and wolverines.',
     'There are 11 species of badger, grouped into 3 types, the Melinae (Eurasian badgers), Mellivorinae (Honey badger) and Taxideinae (American badger).',
@@ -497,7 +506,25 @@ BISON_FACTS=(
     'The scientific name for Bison is bison bison bison.',
     'In winter, Bisons can dig through snow to get to the vegetation below.',
     'The muscle-filled large hump on a Bison\'s back allows it to plough through snow.'
+    'Bison live in a variety of groups. Each bison group has a dominant male or female.',
+    'Yellowstone National Park is the only place in the U.S. where bison have continuously lived since prehistoric times.',
+    'When bison are born, their fur is orange-red. After a few months, their fur steadily grows more brown.'
     )
+
+BUFFALO_FACTS = (
+    'Buffalo are the largest animals found in north America and can grow to 6-7 feet long, weighing up to 2,000lbs. True buffalo only live in Asia and Africa.',
+    'Buffalo are large members of the Bovidae family. There are two types of buffalo: the African or Cape buffalo and the Asian water buffalo. They are dark gray or black animals that look a lot like bulls. They are often confused with bison',
+    'The water buffalo is the largest bovine. It is 8 to 9 feet (2.4 to 2.7 meters) from head to rump with its tail adding an extra 2 to 3.3 feet (60 to 100 centimeters). They weigh a massive 1,500 to 2,650 lbs. (700 to 1,200 kilograms).',
+    'The African buffalo is smaller, but they are still quite impressive in size. They are 4.26 to 4.92 feet long (130 to 150 cm) from head to hoof and weigh 935 to 1,910 lbs. (425 to 870 kg).',
+    'Buffalo are herbivores, and so eat only vegetation. Their favorite foods are grass and herbs, but water buffalo will also eat aquatic plants. Both African and Asian buffalo will eat shrubs and trees when they can not find grass or herbs to eat.',
+    'Buffalo are considered to be an adult when they reach 3 years old. Adults mate from July to October and it takes nine months for the calf to be born. When the calves are born they are a light tan color and they follow and are dependent on their mother for a least one year.',
+    'Buffalo are social animals and live in groups called herds. Water buffalo herds are segregated by gender. African buffalo herds are mostly of mixed gender. An African herd often has more than 1,000 members.',
+    'Male water buffalo have horns that curve backward. These horns can grow to 5 feet (1.5 meters) long. Females also have horns, but they are much smaller.',
+    'African buffalo have a democracy. When they are ready to travel, they will stand and turn in the direction they want to go. The majority of "votes" wins and the head female will lead the herd in the winning direction.',
+    'African buffalo are very aggressive and have a tendency to attack humans. They are very protective of each other and take care of sick and old members of the herd, shielding them from predators.',
+    'Water buffalo have been domesticated for more than 5,000 years. They have buttressed humanity’s survival with their meat, horns, hides, milk, butterfat, and power, plowing and transporting people and crops.',
+    'Wild water buffalo are at-risk and live only in a small number of protected areas stretching across India, Nepal, and Bhutan, and a wildlife reserve in Thailand. And populations are likely to diminish as they are interbred with domesticated water buffalo.'
+)
 
 CAMEL_FACTS = (
     'There are two species of true camel. The dromedary, is a single humped camel that lives in the Middle East and the Horn of Africa area. The bactrian, is a two-humped camel that lives in areas of Central Asia.',
@@ -577,7 +604,7 @@ CHIPMUNK_FACTS = (
     'Unlike other squirrels, chipmunks live mainly in the underground burrows. They can be 30 feet long and 3 feet wide. All burrows are divided in several sections: nursery, food storing chamber and resting area.',
     )
 
-COUGAR_FACTS = (   
+COUGAR_FACTS = (
     'The cougar, also known as puma, mountain lion, mountain cat, catamount or panther, depending on the region, holds the Guinness record for the animal with the highest number of names. It has over 40 names in English alone.',
     'the cougar has the greatest range of any large wild terrestrial mammal in the Western Hemisphere, extending from the Yukon in Canada to the southern Andes of South America.',
     'Primary food sources include ungulates such as deer, elk, moose, and bighorn sheep, as well as domestic cattle, horses and sheep, particularly in the northern part of its range. It will also hunt species as small as insects and rodents.',
@@ -589,7 +616,7 @@ COUGAR_FACTS = (
     'Cougars have large paws and proportionally the largest hind legs in the cat family. This physique allows it great leaping and short-sprint ability. An exceptional vertical leap of 5.4 m (18 ft) is reported for the cougar. Horizontal jumping capability from standing position is suggested anywhere from 6 to 12 m (20 to 40 ft).',
     'The cougar can run as fast as 55 to 72 km/h (35 to 45 mi/h), but is best adapted for short, powerful sprints rather than long chases.',
     )
-    
+
 COW_FACTS = (
     'There are well over 1 billion cattle in the world.',
     'Cattle are sacred in India. There are an estimated 300 million cattle in India.',
@@ -1083,6 +1110,20 @@ IBEX_FACTS = (
     'Ibex make their homes on cliffs that would be dangerous for predators.',
     'Ibex are very nimble. They can jump more than 6 feet (1.8 meters) straight up without a running start. This helps them climb mountainous terrain with ease.')
 
+JACKAL_FACTS = (
+    'There are three species of Jackal, the Common Jackal (Canis aureus), the Side-striped Jackal (Canis adustus) and the Black-backed Jackal (Canis mesomelas). Common Jackals are also known as Golden Jackals, Asiatic Jackals and Oriental Jackals.',
+    'Jackals vary in size depending on the species. On average, jackal can reach 15 to 35 pounds in weight and 15 to 20 inches in height at the shoulder.',
+    'Jackals are opportunistic feeders. That mean that they will eat whatever is available. Jackals like to eat snakes and other reptiles, smaller gazelles, sheep, insects, fruit, berries and sometimes even grass.',
+    'Main predators of jackals are leopards, hyenas and eagles. Young animals are especially easy target of eagles.',
+    'Jackals sometimes eat remains of dead animals that were killed by large predators.',
+    'Jackals are very vocal animals. They use wide variety of sounds to communicate. Most notable sounds include: yips, howls, growls and "owl-like hoots". Siren-like howl is produced when the food is located.',
+    'Jackals are fast animals. They can run 40 miles per hour, but they usually run only 10 miles per hour for longer periods of time.',
+    'Jackals respond only to the sounds produced by the members of their family. They ignore all other calls.',
+    'Jackals mate for lifetime (they are monogamous). Pregnancy in females lasts around 2 months and ends usually with 2 to 4 cubs. Large litters may consist of up to 9 cubs.',
+    'Jackals can survive 8 to 9 years in the wild and up to 16 years in captivity.',
+    'Jackals can live solitary life, be part of a couple or part of a large group, called pack. Life in pack ensures protection against predators and ensures cooperative hunt which results in killing of the larger prey.'
+    )
+
 JELLYFISH_FACTS = (
     'Jellyfish live in the sea and are found in all oceans.',
     'Some jellyfish live in fresh water.',
@@ -1201,25 +1242,6 @@ LIZARD_FACTS = (
     'Komodo dragons are carnivores and can be very aggressive.',
     )
 
-LLAMA_FACTS = (
-    'Llamas are members of the camelid, or camel, family.',
-    'Llamas were first domesticated and used as pack animals 4,000 to 5,000 years ago by Indians in the Peruvian highlands.',
-    'Llamas can grow as much as 6 feet tall.',
-    'Llamas weigh 280 to 450 pounds and can carry about a quarter of their body weight, so a 400-pound male llama can carry about 100 pounds on a trek of 10 to 12 miles with no problem.',
-    'In the Andes Mountains of Peru, llama fleece has been shorn and used in textiles for about 6,000 years. Llama wool is light, warm and water-repellent.',
-    'Llamas are hardy and well suited to harsh environments.',
-    'Llamas are smart and easy to train.',
-    'Llamas are vegetarians and have efficient digestive systems.',
-    'Llama poop has almost no odor. Llama farmers refer to llama manure as "llama beans." It makes great, eco-friendly fertilizer. The Incas in Peru burned dried llama poop for fuel.',
-    'Llamas live to be about 20 years old.',
-    'A baby llama is called a "cria." It\'s pronounced KREE-uh. Mama llamas usually only have one baby at a time. Llama twins are incredibly rare. Pregnancy lasts for about 350 days—nearly a full year. Crias weigh 20 to 35 pounds at birth.',
-    'Llamas come in a range of solid and spotted colors including black, gray, beige, brown, red and white.',
-    'Llamas are social animals and prefer to live with other llamas or herd animals.',
-    'A group of llamas is called a herd.',
-    'Llamas don\'t bite. They spit when they\'re agitated, but that\'s mostly at each other.',
-    'Yarn made from llama fiber is soft and lightweight, yet remarkably warm.',
-    )
-
 LOBSTER_FACTS = (
     'Lobsters were once considered the the go-to prison food. In Colonial times, it was fed to pigs and goats and only eaten by paupers.',
     'Lobsters turn red when cooked, but in nature they can be green or yellow or even bright blue.',
@@ -1247,6 +1269,25 @@ MEERKAT_FACTS = (
     'Meerkats are vicious fighters that often kill each other in skirmishes. Both sides line up across a field before charging forward with leaps and bounds. Before attacking, they try to psych out their opponents with aggressive posturing and bluffing to avoid serious conflict if possible.',
     )
 
+LLAMA_FACTS = (
+    'Llamas are members of the camelid, or camel, family.',
+    'Llamas were first domesticated and used as pack animals 4,000 to 5,000 years ago by Indians in the Peruvian highlands.',
+    'Llamas can grow as much as 6 feet tall.',
+    'Llamas weigh 280 to 450 pounds and can carry about a quarter of their body weight, so a 400-pound male llama can carry about 100 pounds on a trek of 10 to 12 miles with no problem.',
+    'In the Andes Mountains of Peru, llama fleece has been shorn and used in textiles for about 6,000 years. Llama wool is light, warm and water-repellent.',
+    'Llamas are hardy and well suited to harsh environments.',
+    'Llamas are smart and easy to train.',
+    'Llamas are vegetarians and have efficient digestive systems.',
+    'Llama poop has almost no odor. Llama farmers refer to llama manure as "llama beans." It makes great, eco-friendly fertilizer. The Incas in Peru burned dried llama poop for fuel.',
+    'Llamas live to be about 20 years old.',
+    'A baby llama is called a "cria." It\'s pronounced KREE-uh. Mama llamas usually only have one baby at a time. Llama twins are incredibly rare. Pregnancy lasts for about 350 days—nearly a full year. Crias weigh 20 to 35 pounds at birth.',
+    'Llamas come in a range of solid and spotted colors including black, gray, beige, brown, red and white.',
+    'Llamas are social animals and prefer to live with other llamas or herd animals.',
+    'A group of llamas is called a herd.',
+    'Llamas don\'t bite. They spit when they\'re agitated, but that\'s mostly at each other.',
+    'Yarn made from llama fiber is soft and lightweight, yet remarkably warm.',
+    )
+
 MONKEY_FACTS = (
     'There are currently 264 known monkey species.',
     'Monkeys can be divided into two groups, Old World monkeys that live in Africa and Asia, and New World monkeys that live in South America.',
@@ -1262,23 +1303,6 @@ MONKEY_FACTS = (
     'The monkey is the 9th animal that appears on the Chinese zodiac, appearing as the zodiac sign in 2016.',
     )
 
-MUSKRAT_FACTS = (
-    'The scientific name for a muskrat is Ondatra zibethicus.',
-    'On average, muskrats size ranges from 16 - 25 inches long (including an 8-11 inch tail!).',
-    'The average lifespan of a Muskrat is 1-3 years in the wild.',
-    'Muskrats are native to North America and can be spotted from Canada down to northern parts of Mexico. They have also been introduced to Northern Europe, Asia, and South America - mainly for their valued pelts.',
-    'Muskrats are semi-aquatic mammals that inhabit areas abundant in water like wetlands, ponds, lakes and marshes.',
-    'For shelter, muskrats will either dig tunnels or construct lodges, depending on the immediate habitat. In areas with steep banks or dams, muskrats will dig tunnels that begin underwater and lead up above the water level, where the chamber can remain dry.',
-    'Muskrats are omnivores, but they mainly enjoy a plant-based diet consisting of the roots, stems, leaves and fruits of aquatic vegetation.',
-    'As local plant food becomes scarce, muskrats will feed on small aquatic animals such as insects, fish and amphibians.',
-    'Female muskrats give birth to 2-3 litters per year, each time yielding an average of 4-8 pups.',
-    'As monogamous breeders, muskrats live with their mates and their young. They are very territorial - especially during breeding season.',
-    'Muskrats are carriers of some diseases that may be transmitted to humans and/or pets including tularemia, leptospirosis, giardiasis, and rabies.',
-    'Muskrat kits are born hairless and blind.',
-    'Known to be most valuable for their fur or pelts, muskrats are one of the most trapped animals in history.',
-    'Muskrats build lodges made of piles of mud and aquatic vegetation that can be up to 8 feet in width and 5 feet tall.',
-    )
-
 NARWHAL_FACTS = (
     'Unlike some whale species that migrate, narwhals spend their lives in the Arctic waters of Canada, Greenland, Norway and Russia. Most narwhals winter for up to five months under sea ice in the Baffin Bay-Davis Strait area.',
     'Narwhals feed on Greenland halibut, Arctic and polar cod, squid and shrimp. They do their chomping at the ice floe edge and in the ice-free summer waters.',
@@ -1287,6 +1311,15 @@ NARWHAL_FACTS = (
     'There are no narwhals in captivity. In the 60s and 70s, several attempts at capturing and keeping narwhals resulted in all of the animals dying within several months.',
     'The narwhal tusk—most commonly found on males—is actually an enlarged tooth with sensory capability and up to 10 million nerve endings inside. Some narwhals have up to two tusks, while others have none. The spiraled tusk juts from the head and can grow as long at 10 feet.'
     "A narwhal tusk's tough core and soft outer layer result in a tusk that is both strong and flexible. It can bend significantly without cracking.",
+    "A narwhal's tusk can be used to detect changes in temperature, water pressure, or salinity, which help the narwahl survive and find prey.",
+    "Narwahls are carnivorous animals that live anywhere from 30 to 55 years.",
+    "There are no narwahls that kept captive.  All previous attempts to capture and keep narwahls have resulted in death within several months.",
+    "Narwahls commonly dive 500 meters and can dive up to 1,500 meters.  They can stay submerged for over 25 minutes at a time.",
+    "Narwahls feed near the ice edge and have been identified as one of the main species that would be affected by climate change.",
+    "In addition to a large tusk, narwahls also have a second tusk.  This is about 1 meter long, but remains embedded in the skull.  Males with two protruding tusks have been discovered.",
+    "Females usually give birth once around every 3 years.  The gestation period lasts around 14 months.",
+    "Narwahls travel in groups of around 15-20 and can even form large groups of 100 narwahls.",
+    "Narwahls inhabit the waters of the Arctic Cirlce, around Greenland and Canada."
     )
 
 NEWT_FACTS = (
@@ -1398,7 +1431,7 @@ OSTRICH_FACTS = (
     'They are the only bird in the world that has only two toes on each foot.  The inner toe has a claw that can measure up to 10 cm long.',
     'At breeding time, male ostriches scrape out a nest in the ground which is then used by more than one female to lay their eggs which can end up with 20 eggs in them.  Females incubate the eggs during the day and males at night.  The dads then do most of the chick raising, often defending the chicks from potential predators with their powerful kicks.',
      'Contrary to popular belief, Ostriches do not bury their heads in sand. This myth likely began with Pliny the Elder (AD 23-79), who wrote that Ostriches: “imagine, when they have thrust their head and neck into a bush, that the whole of their body is concealed".',
-     ) 
+     )
 
 OTTER_FACTS = (
     'The otter is a carnivorous mammal in a branch of the weasel family called Lutrinae.',
@@ -2043,7 +2076,7 @@ WOLF_FACTS = (
     )
 
 YAK_FACTS = (
-   
+
   'The yak is a long-haired bovid found throughout the Himalaya region of southern Central Asia, the Tibetan Plateau and as far north as Mongolia and Russia.',
   'Most yaks are domesticated animals, though there is also a small, vulnerable wild yak population.',
   'Bos mutus is the scientific name for the wild yak and Bos grunniens for domesticated yak.',
@@ -2075,13 +2108,6 @@ ZEBRA_FACTS = (
     'Zebra foals can run within a few hours of birth.'
 )
 
-ATLANTIC_PUFFIN_FACTS = (
-    'The Atlantic Puffin is the only puffin native to the Atlantic Ocean.',
-    'The Atlantic Puffin breeds in Iceland, Norway, Greenland, Newfoundland and many North Atlantic islands, and as far south as Maine in the west and the British Isles in the east.',
-    'There are considered to be three subspecies of Atlantic puffin: Fratercula arctica arctica, Fratercula arctica grabae, Fratercula arctica naumanni.',
-    'Like many seabirds, the Atlantic puffin spends most of the year far from land in the open ocean and only visits coastal areas to breed.',
-)
-
 ALL_FACTS = (
     AARDVARK_FACTS,
     ALBATROSS_FACTS,
@@ -2093,6 +2119,7 @@ ALL_FACTS = (
     BADGER_FACTS,
     BEAR_FACTS,
     BEAVER_FACTS,
+    BUFFALO_FACTS,
     BISON_FACTS,
     CAMEL_FACTS,
     CAPYBARA_FACTS,
@@ -2131,6 +2158,7 @@ ALL_FACTS = (
     HUMMINGBIRD_FACTS,
     HUSKY_FACTS,
     IGUANA_FACTS,
+    JACKAL_FACTS,
     JELLYFISH_FACTS,
     KANGAROO_FACTS,
     KOALA_FACTS,
