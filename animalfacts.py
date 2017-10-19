@@ -211,9 +211,11 @@ def check_comment_for_animal(comment, reddit):
     botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
     botengine('anteater', '\santeaters?\s', reddit, ANTEATER_FACTS, comment)
     botengine('antelope', '\santelopes?\s', reddit, ANTELOPE_FACTS, comment)
+#     botengine('antlantic puffin', '\santlantic puffins?\s', reddit, ANTLANTIC_PUFFIN_FACTS, comment) un comment this when more puffin facts have been added
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('bear', '\sbears?\s', reddit, BEAR_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
+    botengine('buffalo', '\sbuffalos?\s', reddit, BUFFALO_FACTS, comment)
     botengine('bison', '\sbisons?\s', reddit, BISON_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
     botengine('capybara', '\scapybaras?\s', reddit, CAPYBARA_FACTS, comment)
@@ -266,7 +268,6 @@ def check_comment_for_animal(comment, reddit):
     botengine('llama', '\sllamas?\s', reddit, LLAMA_FACTS, comment)
     botengine('meerkat', '\smeerkats?\s', reddit, MEERKAT_FACTS, comment)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
-    botengine('muskrat','\smuskrat?\s', reddit, MUSKRAT_FACTS, comment)
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
     botengine('newt', '\snewts?\s', reddit, NEWT_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
@@ -432,6 +433,13 @@ ANTELOPE_FACTS = (
     'Some antelope are famous for their massive herds, like the thousands of wildebeests making their annual migration across the African plains.',
     )
 
+ATLANTIC_PUFFIN_FACTS = (
+    'The Atlantic Puffin is the only puffin native to the Atlantic Ocean.',
+    'The Atlantic Puffin breeds in Iceland, Norway, Greenland, Newfoundland and many North Atlantic islands, and as far south as Maine in the west and the British Isles in the east.',
+    'There are considered to be three subspecies of Atlantic puffin: Fratercula arctica arctica, Fratercula arctica grabae, Fratercula arctica naumanni.',
+    'Like many seabirds, the Atlantic puffin spends most of the year far from land in the open ocean and only visits coastal areas to breed.',
+)
+
 BADGER_FACTS = (
     'Badgers are part of the family Mustelidae this is the same family as otters, ferret, polecats, weasels and wolverines.',
     'There are 11 species of badger, grouped into 3 types, the Melinae (Eurasian badgers), Mellivorinae (Honey badger) and Taxideinae (American badger).',
@@ -494,6 +502,21 @@ BISON_FACTS=(
     'Female bison give birth to one calf after 9 months.',
     'Bison live in a variety of groups.Each bison group has a dominant male or female.'
     )
+
+BUFFALO_FACTS = (
+    'Buffalo are the largest animals found in north America and can grow to 6-7 feet long, weighing up to 2,000lbs. True buffalo only live in Asia and Africa.',
+    'Buffalo are large members of the Bovidae family. There are two types of buffalo: the African or Cape buffalo and the Asian water buffalo. They are dark gray or black animals that look a lot like bulls. They are often confused with bison',
+    'The water buffalo is the largest bovine. It is 8 to 9 feet (2.4 to 2.7 meters) from head to rump with its tail adding an extra 2 to 3.3 feet (60 to 100 centimeters). They weigh a massive 1,500 to 2,650 lbs. (700 to 1,200 kilograms).',
+    'The African buffalo is smaller, but they are still quite impressive in size. They are 4.26 to 4.92 feet long (130 to 150 cm) from head to hoof and weigh 935 to 1,910 lbs. (425 to 870 kg).',
+    'Buffalo are herbivores, and so eat only vegetation. Their favorite foods are grass and herbs, but water buffalo will also eat aquatic plants. Both African and Asian buffalo will eat shrubs and trees when they can not find grass or herbs to eat.',
+    'Buffalo are considered to be an adult when they reach 3 years old. Adults mate from July to October and it takes nine months for the calf to be born. When the calves are born they are a light tan color and they follow and are dependent on their mother for a least one year.',
+    'Buffalo are social animals and live in groups called herds. Water buffalo herds are segregated by gender. African buffalo herds are mostly of mixed gender. An African herd often has more than 1,000 members.',
+    'Male water buffalo have horns that curve backward. These horns can grow to 5 feet (1.5 meters) long. Females also have horns, but they are much smaller.',
+    'African buffalo have a democracy. When they are ready to travel, they will stand and turn in the direction they want to go. The majority of "votes" wins and the head female will lead the herd in the winning direction.',
+    'African buffalo are very aggressive and have a tendency to attack humans. They are very protective of each other and take care of sick and old members of the herd, shielding them from predators.',
+    'Water buffalo have been domesticated for more than 5,000 years. They have buttressed humanity’s survival with their meat, horns, hides, milk, butterfat, and power, plowing and transporting people and crops.',
+    'Wild water buffalo are at-risk and live only in a small number of protected areas stretching across India, Nepal, and Bhutan, and a wildlife reserve in Thailand. And populations are likely to diminish as they are interbred with domesticated water buffalo.'
+)
 
 CAMEL_FACTS = (
     'There are two species of true camel. The dromedary, is a single humped camel that lives in the Middle East and the Horn of Africa area. The bactrian, is a two-humped camel that lives in areas of Central Asia.',
@@ -1197,25 +1220,6 @@ LIZARD_FACTS = (
     'Komodo dragons are carnivores and can be very aggressive.',
     )
 
-LLAMA_FACTS = (
-    'Llamas are members of the camelid, or camel, family.',
-    'Llamas were first domesticated and used as pack animals 4,000 to 5,000 years ago by Indians in the Peruvian highlands.',
-    'Llamas can grow as much as 6 feet tall.',
-    'Llamas weigh 280 to 450 pounds and can carry about a quarter of their body weight, so a 400-pound male llama can carry about 100 pounds on a trek of 10 to 12 miles with no problem.',
-    'In the Andes Mountains of Peru, llama fleece has been shorn and used in textiles for about 6,000 years. Llama wool is light, warm and water-repellent.',
-    'Llamas are hardy and well suited to harsh environments.',
-    'Llamas are smart and easy to train.',
-    'Llamas are vegetarians and have efficient digestive systems.',
-    'Llama poop has almost no odor. Llama farmers refer to llama manure as "llama beans." It makes great, eco-friendly fertilizer. The Incas in Peru burned dried llama poop for fuel.',
-    'Llamas live to be about 20 years old.',
-    'A baby llama is called a "cria." It\'s pronounced KREE-uh. Mama llamas usually only have one baby at a time. Llama twins are incredibly rare. Pregnancy lasts for about 350 days—nearly a full year. Crias weigh 20 to 35 pounds at birth.',
-    'Llamas come in a range of solid and spotted colors including black, gray, beige, brown, red and white.',
-    'Llamas are social animals and prefer to live with other llamas or herd animals.',
-    'A group of llamas is called a herd.',
-    'Llamas don\'t bite. They spit when they\'re agitated, but that\'s mostly at each other.',
-    'Yarn made from llama fiber is soft and lightweight, yet remarkably warm.',
-    )
-
 LOBSTER_FACTS = (
     'Lobsters were once considered the the go-to prison food. In Colonial times, it was fed to pigs and goats and only eaten by paupers.',
     'Lobsters turn red when cooked, but in nature they can be green or yellow or even bright blue.',
@@ -1243,6 +1247,25 @@ MEERKAT_FACTS = (
     'Meerkats are vicious fighters that often kill each other in skirmishes. Both sides line up across a field before charging forward with leaps and bounds. Before attacking, they try to psych out their opponents with aggressive posturing and bluffing to avoid serious conflict if possible.',
     )
 
+LLAMA_FACTS = (
+    'Llamas are members of the camelid, or camel, family.',
+    'Llamas were first domesticated and used as pack animals 4,000 to 5,000 years ago by Indians in the Peruvian highlands.',
+    'Llamas can grow as much as 6 feet tall.',
+    'Llamas weigh 280 to 450 pounds and can carry about a quarter of their body weight, so a 400-pound male llama can carry about 100 pounds on a trek of 10 to 12 miles with no problem.',
+    'In the Andes Mountains of Peru, llama fleece has been shorn and used in textiles for about 6,000 years. Llama wool is light, warm and water-repellent.',
+    'Llamas are hardy and well suited to harsh environments.',
+    'Llamas are smart and easy to train.',
+    'Llamas are vegetarians and have efficient digestive systems.',
+    'Llama poop has almost no odor. Llama farmers refer to llama manure as "llama beans." It makes great, eco-friendly fertilizer. The Incas in Peru burned dried llama poop for fuel.',
+    'Llamas live to be about 20 years old.',
+    'A baby llama is called a "cria." It\'s pronounced KREE-uh. Mama llamas usually only have one baby at a time. Llama twins are incredibly rare. Pregnancy lasts for about 350 days—nearly a full year. Crias weigh 20 to 35 pounds at birth.',
+    'Llamas come in a range of solid and spotted colors including black, gray, beige, brown, red and white.',
+    'Llamas are social animals and prefer to live with other llamas or herd animals.',
+    'A group of llamas is called a herd.',
+    'Llamas don\'t bite. They spit when they\'re agitated, but that\'s mostly at each other.',
+    'Yarn made from llama fiber is soft and lightweight, yet remarkably warm.',
+    )
+
 MONKEY_FACTS = (
     'There are currently 264 known monkey species.',
     'Monkeys can be divided into two groups, Old World monkeys that live in Africa and Asia, and New World monkeys that live in South America.',
@@ -1256,23 +1279,6 @@ MONKEY_FACTS = (
     'Capuchin monkeys are believed to be one of the smartest New World monkey species. They have the ability to use tools, learn new skills and show various signs of self-awareness.',
     'Spider monkeys get their name because of their long arms, legs and tail.',
     'The monkey is the 9th animal that appears on the Chinese zodiac, appearing as the zodiac sign in 2016.',
-    )
-
-MUSKRAT_FACTS = (
-    'The scientific name for a muskrat is Ondatra zibethicus.',
-    'On average, muskrats size ranges from 16 - 25 inches long (including an 8-11 inch tail!).',
-    'The average lifespan of a Muskrat is 1-3 years in the wild.',
-    'Muskrats are native to North America and can be spotted from Canada down to northern parts of Mexico. They have also been introduced to Northern Europe, Asia, and South America - mainly for their valued pelts.',
-    'Muskrats are semi-aquatic mammals that inhabit areas abundant in water like wetlands, ponds, lakes and marshes.',
-    'For shelter, muskrats will either dig tunnels or construct lodges, depending on the immediate habitat. In areas with steep banks or dams, muskrats will dig tunnels that begin underwater and lead up above the water level, where the chamber can remain dry.',
-    'Muskrats are omnivores, but they mainly enjoy a plant-based diet consisting of the roots, stems, leaves and fruits of aquatic vegetation.',
-    'As local plant food becomes scarce, muskrats will feed on small aquatic animals such as insects, fish and amphibians.',
-    'Female muskrats give birth to 2-3 litters per year, each time yielding an average of 4-8 pups.',
-    'As monogamous breeders, muskrats live with their mates and their young. They are very territorial - especially during breeding season.',
-    'Muskrats are carriers of some diseases that may be transmitted to humans and/or pets including tularemia, leptospirosis, giardiasis, and rabies.',
-    'Muskrat kits are born hairless and blind.',
-    'Known to be most valuable for their fur or pelts, muskrats are one of the most trapped animals in history.',
-    'Muskrats build lodges made of piles of mud and aquatic vegetation that can be up to 8 feet in width and 5 feet tall.',
     )
 
 NARWHAL_FACTS = (
@@ -2071,13 +2077,6 @@ ZEBRA_FACTS = (
     'Zebra foals can run within a few hours of birth.'
 )
 
-ATLANTIC_PUFFIN_FACTS = (
-    'The Atlantic Puffin is the only puffin native to the Atlantic Ocean.',
-    'The Atlantic Puffin breeds in Iceland, Norway, Greenland, Newfoundland and many North Atlantic islands, and as far south as Maine in the west and the British Isles in the east.',
-    'There are considered to be three subspecies of Atlantic puffin: Fratercula arctica arctica, Fratercula arctica grabae, Fratercula arctica naumanni.',
-    'Like many seabirds, the Atlantic puffin spends most of the year far from land in the open ocean and only visits coastal areas to breed.',
-)
-
 ALL_FACTS = (
     AARDVARK_FACTS,
     ALBATROSS_FACTS,
@@ -2089,6 +2088,7 @@ ALL_FACTS = (
     BADGER_FACTS,
     BEAR_FACTS,
     BEAVER_FACTS,
+    BUFFALO_FACTS,
     BISON_FACTS,
     CAMEL_FACTS,
     CAPYBARA_FACTS,
