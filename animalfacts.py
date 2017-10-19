@@ -223,7 +223,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
-    botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment)
+    botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment) i don't know what happened to the cougar facts...
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
     botengine('cuttlefish', '\scuttlefish(es)?\s', reddit, CUTTLEFISH_FACTS, comment)
@@ -1289,6 +1289,15 @@ NARWHAL_FACTS = (
     'There are no narwhals in captivity. In the 60s and 70s, several attempts at capturing and keeping narwhals resulted in all of the animals dying within several months.',
     'The narwhal tusk—most commonly found on males—is actually an enlarged tooth with sensory capability and up to 10 million nerve endings inside. Some narwhals have up to two tusks, while others have none. The spiraled tusk juts from the head and can grow as long at 10 feet.'
     "A narwhal tusk's tough core and soft outer layer result in a tusk that is both strong and flexible. It can bend significantly without cracking.",
+    "A narwhal's tusk can be used to detect changes in temperature, water pressure, or salinity, which help the narwahl survive and find prey.",
+    "Narwahls are carnivorous animals that live anywhere from 30 to 55 years.",
+    "There are no narwahls that kept captive.  All previous attempts to capture and keep narwahls have resulted in death within several months.",
+    "Narwahls commonly dive 500 meters and can dive up to 1,500 meters.  They can stay submerged for over 25 minutes at a time.",
+    "Narwahls feed near the ice edge and have been identified as one of the main species that would be affected by climate change.",
+    "In addition to a large tusk, narwahls also have a second tusk.  This is about 1 meter long, but remains embedded in the skull.  Males with two protruding tusks have been discovered.",
+    "Females usually give birth once around every 3 years.  The gestation period lasts around 14 months.",
+    "Narwahls travel in groups of around 15-20 and can even form large groups of 100 narwahls.",
+    "Narwahls inhabit the waters of the Arctic Cirlce, around Greenland and Canada."
     )
 
 NEWT_FACTS = (
