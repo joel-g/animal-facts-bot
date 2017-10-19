@@ -929,6 +929,15 @@ GOOSE_FACTS = (
     'Geese can live up to twenty years if well cared for.',
     'A baby goose is called a gosling.',
     'A group of geese is called a gaggle',
+    'Goose eggs hatch after 25 to 30 days of incubation',
+    'It takes about 10 weeks before a gosling is able to fly',
+    'Young geese remain with their family group for about one year',
+    'Canadian geese are monogamous, and most couples stay together all of their lives.',
+    'Geese make loud honking noise, especially when angered.',
+    'A group of geese is called a skein when flying, and a gaggle on the ground.',
+    'Originally the word goose was reserved for the female bird. The male was a gander.',
+    'The offspring of a goose and a swan is called swoose.  The plural is either swooses or sweese.',
+    'Geese were probably the first type of poultry diomesitcated by humans, over 3000 years ago in Egypt.'
     )
 
 GOPHER_FACTS = (
