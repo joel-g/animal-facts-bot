@@ -293,6 +293,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('porcupine', '\sporcupines?\s', reddit, PORCUPINE_FACTS, comment)
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
+    botengine('raven', '\sraven?\s', reddit, RAVEN_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
     botengine('sea cucumber', '\ssea cucumbers?\s', reddit, SEA_CUCUMBER_FACTS, comment)
@@ -1700,6 +1701,21 @@ RACCOON_FACTS = (
     'Dakota Sioux believed that raccoons possessed supernatural powers'
     )
 
+RAVEN_FACTS = (
+	'Ravens are larger, about the size of a red-tailed hawk. Crows are similar in size to a dove.',
+	'Ravens have longer middle tail feathers. When extended for flight the tail feathers appear to be wedge-shaped. A crow’s tail feathers are all the same length. Thus when spread open, the crow’s tail feathers appear fan-shaped.',
+	'Ravens have larger, thicker, curved beaks, which are stronger than crows’ beaks.',
+	'Ravens are often seen alone or in pairs, while crows often fly and feed in a group, referred to as a murder.',
+	'Unlike crows with their distinctive cawing sound, the raven’s call is a deep, croaking sound.',
+	'The raven’s lifespan is between 25 and 30 years, but they have been known to live up to 45 years. Crows usually live to 8 years, but can live longer when raised in captivity.',
+	'The raven is the largest bird of the crow family: it is twice heavier than a common crow at 1.3 kg (3 pounds), being 60 cm (two feet) long, with a wingspan of almost 1 m (3.3 ft). Ravens can live 40 years in the wild and 70 in captivity.',
+	'Ravens can soar high above the trees, unlike crows, which rely on active flight. Ravens are capable of aerial stunts similar to those executed by the birds of prey.',
+	'Like in many other birds, when a raven is on a branch, the feet\'s muscles and tendons constrict automatically the toes, so that the birds waste little energy on this.',
+	'Ravens live from deserts to coniferous forests and coastal cliffs. In forests, they nest in stick-made nests on trees, on deserts in rock cavities.',
+    'Common Ravens can mimic the calls of other bird species. When raised in captivity, they can even imitate human words; one Common Raven raised from birth was taught to mimic the word “nevermore.”',
+    'The oldest known wild Common Raven was at least 22 years, 7 months old. It was banded and found in Nova Scotia.'
+	)	
+
 SCORPION_FACTS = (
     'Scorpions are predatory animals of the class Arachnida, making them cousins to spiders, mites and ticks.',
     'Scorpions have eight legs, a pair of pincers (pedipalps) and a narrow segmented tail that often curves over their back, on the end of which is a venomous stinger.',
@@ -2228,6 +2244,7 @@ ALL_FACTS = (
     PORCUPINE_FACTS,
     RABBIT_FACTS,
     RACCOON_FACTS,
+    RAVEN_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,
     SEA_CUCUMBER_FACTS,
