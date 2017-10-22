@@ -295,6 +295,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('porcupine', '\sporcupines?\s', reddit, PORCUPINE_FACTS, comment)
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
+    botengine('rattlesnake', '\srattlesnakes?\s', reddit, RATTLESNAKES_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
     botengine('sea cucumber', '\ssea cucumbers?\s', reddit, SEA_CUCUMBER_FACTS, comment)
@@ -1735,6 +1736,20 @@ RACCOON_FACTS = (
     'Dakota Sioux believed that raccoons possessed supernatural powers'
     )
 
+RATTLESNAKES_FACTS = (
+    'Size of rattlesnake depends on the species. Largest species can reach length of 8 feet. On average, rattlesnakes are 3 to 4 feet long.',
+    'Rattlesnakes are not very colorful because they like to camouflage with their environment. They are usually black, brown, olive or grey in color.',
+    'Rattle grows continuously. New segment is added each time snake shed its skin.',
+    'Rattling sound informs predator to stay away from the snake. When rattlesnake is surprised, it can attack without producing rattling sound.',
+    'Rattlesnakes are venomous snakes. They produce very strong hemotoxic venom (which destroys blood cells and vessels). It is used for hunting and for defense against predators. Rattlesnake bites are fatal for humans if not treated with antidote immediately.',
+    'Some snakes are immune to the poison of rattlesnakes. Thanks to that feature, king snakes are main predators of rattlesnakes.',
+    'Rattlesnakes have special kind of thermal receptors that are used for detection of warm-blooded creatures (their prey). They can also locate prey by using the tongue which collects scent molecules from the air. Also, rattlesnake senses vibration of the ground.',
+    'Optimal temperature for the survival of the rattlesnake is between 27 and 32 degrees of Celsius. They can survive freezing temperature, but temperatures above 38 degrees are fatal for them.',
+    'Rattlesnake hibernates during the cold time of the year. Usually large number of rattlesnakes gathers in the underground dens and curl around each other for the purpose of warming.',
+    'Rattlesnakes have triangular head and vertical pupils. Their name comes from a rattle at the end of the tail. Rattle is made of keratin (same substance builds nails and hair in humans).',
+    'Rattlesnakes have a lot of enemies, from large birds like falcons and crows to larger mammals like raccoons and opossums. One of a rattlesnake’s biggest threats is actually another snake — the kingsnake, which is a constrictor.',
+    'Rattlesnakes are able to consume animals much larger than themselves. They are able to greatly expand their jaws and skin to fit small rodents and birds into their bodies. '
+)
 SCORPION_FACTS = (
     'Scorpions are predatory animals of the class Arachnida, making them cousins to spiders, mites and ticks.',
     'Scorpions have eight legs, a pair of pincers (pedipalps) and a narrow segmented tail that often curves over their back, on the end of which is a venomous stinger.',
@@ -2265,6 +2280,7 @@ ALL_FACTS = (
     PORCUPINE_FACTS,
     RABBIT_FACTS,
     RACCOON_FACTS,
+    RATTLESNAKES_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,
     SEA_CUCUMBER_FACTS,
