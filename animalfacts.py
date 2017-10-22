@@ -275,6 +275,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('newt', '\snewts?\s', reddit, NEWT_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
     botengine('opossum', '\sopossums?\s', reddit, OPOSSUM_FACTS, comment)
+    botengine('orangutan', '\sorangutans?\s', reddit, ORANGUTAN_FACTS, comment)
     botengine('oryx', '\soryx(es)?\s', reddit, ORYX_FACTS, comment)
     botengine('octopus', '\socto(pus|puses|pusses|pi)\s', reddit, OCTOPUS_FACTS, comment)
     botengine('orca', '\sorcas?\s', reddit, ORCA_FACTS, comment)
@@ -1433,6 +1434,24 @@ OPOSSUM_FACTS = (
     'The gestation period of an opossum is short, typically between 12 and 14 days.',
     )
 
+ORANGUTAN_FACTS = (
+    'Orangutans’ arms stretch out longer than their bodies – up to 8 ft. from fingertip to fingertip in the case of very large males.',
+    'When on the ground, orangutans walk on all fours, using their palms or fists. Unlike the African apes, orangutans are not morphologically built to be knuckle-walkers.',
+    'For the first few years of his/her life, a young orangutan holds tight to his/her mother’s body as she moves through the forest canopy.',
+    'When males are fighting, they charge each other, grapple, and bite each other’s heads and cheekpads.',
+    'Orangutans have tremendous strength, which enables them to brachiate and hang upside-down from branches for long periods of time to retrieve fruit and eat young leaves.',
+    'From the age of thirteen years (usually in captivity) past the age of thirty, males may develop flanges and large size.',
+    'Orangutans have the longest birth interval of any mammal. On average they only give birth once every 8 to 10 years.',
+    'Orangutans are very smart. They perform as well as chimpanzees and gorillas in tests of cognitive ability. In captivity, they are excellent tool-users and versatile tool-makers. One captive orangutan was taught how to chip a stone hand-axe.',
+    'Orangutans are red-haired apes that live in the tropical rainforests of Sumatra and Borneo in southeast Asia.',
+    'The orangutan is one of humankind’s closest relatives – in fact, we share nearly 97% of the same DNA!',
+    'Daytime eaters, their diet consists mostly of fruit and leaves – but they also eat nuts, bark, insects and, once in a while, bird eggs, too.',
+    'These amazing apes generally have long lives – in captivity they can live for 50-60 years, and in the wild, 30-40 years.',
+    'Orangutans live in the trees to avoid predators like tigers or leopards that hunt on the ground.',
+    'Orangutans are solitary animals. Males always live on their own while females live alone or with their offspring. Males and females spend time together only during mating season.',
+    'Orangutans are the largest arboreal mammals (animals that spend their life in the trees).'
+
+)
 ORYX_FACTS = (
     'Oryxes are species of antelope native to Africa and the Arabian Peninsula.',
     'The Arabian oryx was only saved from extinction through a captive breeding program and reintroduction to the wild.',
@@ -2227,6 +2246,7 @@ ALL_FACTS = (
     OCELOT_FACTS,
     OCTOPUS_FACTS,
     OPOSSUM_FACTS,
+    ORANGUTAN_FACTS,
     ORYX_FACTS,
     ORCA_FACTS,
     OSTRICH_FACTS,
