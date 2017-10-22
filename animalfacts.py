@@ -222,6 +222,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('chameleon', '\schameleons?\s', reddit, CHAMELEON_FACTS, comment)
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
+    botengine('chinchilla', '\schinchillas?\s', reddit, CHINCHILLA_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
@@ -603,6 +604,19 @@ CHIPMUNK_FACTS = (
     'Male chipmunks are called Bucks and females are referred to as Does.',
     'Unlike other squirrels, chipmunks live mainly in the underground burrows. They can be 30 feet long and 3 feet wide. All burrows are divided in several sections: nursery, food storing chamber and resting area.',
     )
+
+CHINCHILLA_FACTS = (
+   'Chinchillas are nocturnal creatures who are mostly awake at night. They are typical asleep during the day. Therefore, it is best to place your Chinchilla cage in a quiet place away from direct sunlight.',
+   'Chinchillas can overheat. No, not like a car, but a Chinchilla is very sensitive to heat and humidity. In their original home, the weather is cool and dry. They are best in temperatures of 15 degrees centigrade to 25 degrees centigrade.',
+   'Chinchillas grow their teeth for life. It never stops growing and it can even grow as much as 12 inches per year.',
+   'Chinchillas have the softest fur in all of land mammals. Their fur is so soft and luxurious that the first reason why Chinchillas were hunted by the native tribes who lived in The Andes Mountains is not for their meat, but for their fur.',
+   'Chinchillas take dust baths. Yes, they do not take water or wet baths. Their fur is so dense and will have a problem completely drying out. It is why they take dust baths instead to help get rid of oils and dirt. It is like a Chinchilla using a dry shampoo.',
+   'Chinchillas use their tail for balance and are high jumpers and prolific climbers! In the wild, they lived in rocky and mountainous areas, so they are able to jump from high places (about 6 feet).'
+   'Chinchillas are very compassionate animals. If another female cannot produce milk, another female can adopt the babies.',
+   'The breeding season for chinchillas runs from November to May in the Northern Hemisphere and from May to November in the Southern Hemisphere.',
+   'Chinchillas are omnivores; they eat both plants and meat. Primarily, they eat grass and seeds, but they also eat insects and bird eggs when they get the chance. To eat, they hold their food in their front paws and nibble on it.',
+   'Though chinchilla fur is highly valued for use in clothing and coats, the Convention on International Trade in Endangered Species has restricted the sale and trade of wild chinchillas since 1975. Many chinchillas are bred commercially for their fur.',
+   'Chinchillas are native to Chile and Peru. In the wild they live in groups and make their home in burrows and natural outcroppings and crevices.')
 
 COUGAR_FACTS = (
     'The cougar, also known as puma, mountain lion, mountain cat, catamount or panther, depending on the region, holds the Guinness record for the animal with the highest number of names. It has over 40 names in English alone.',
@@ -2144,6 +2158,7 @@ ALL_FACTS = (
     CHAMELEON_FACTS,
     CHEETAH_FACTS,
     CHIPMUNK_FACTS,
+    CHINCHILLA_FACTS,
     COW_FACTS,
     COUGAR_FACTS,
     CRAB_FACTS,
