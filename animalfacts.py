@@ -293,6 +293,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('porcupine', '\sporcupines?\s', reddit, PORCUPINE_FACTS, comment)
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
+    botengine('rattlesnake', '\srattlesnake?\s', reddit, RATTLESNAKE_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
     botengine('sea cucumber', '\ssea cucumbers?\s', reddit, SEA_CUCUMBER_FACTS, comment)
@@ -1700,6 +1701,22 @@ RACCOON_FACTS = (
     'Dakota Sioux believed that raccoons possessed supernatural powers'
     )
 
+RATTLESNAKE_FACTS = (
+    'Rattlesnakes receive their name from the rattle located at the end of their tails, which makes a loud rattling noise when vibrated that deters predators or serves as a warning to passers-by.'
+    'The rattlesnake babies are born with what is called a pre-button.  The baby snake loses this piece when it sheds its skin for the first time.  With the shedding a new button appears.  With every shedding after that another button, or rattle, will be added.  These buttons are made up of a material called Keratin, which is what the scales and your fingernails are made of!'
+    'The rattles are empty, so what makes the noise? The noise comes from each segment knocking together, so until a rattlesnake has two or more pieces it isn’t going to make a sound! But when it does…you WILL hear it…and you WILL RUN!'
+    'The 36 known species of rattlesnakes have between 65 and 70 subspecies, all native to the Americas, ranging from southern Alberta and southern British Columbia in Canada to central Argentina.'
+    'Newborn rattlesnakes are heavily preyed upon by a variety of species, including ravens, crows, roadrunners, raccoons, opossums, skunks, coyotes, weasels, whipsnakes, kingsnakes, and racers.'
+    'Rattlesnakes feed on rodents, squirrels, rabbits and other small critters.'
+    'Rattlesnakes are believed to require at least their own body weight in water annually to remain hydrated. The method in which they drink depends on the water source. In larger bodies of water (streams, ponds, etc.), they submerge their heads and ingest water by opening and closing their jaws, which sucks in water. If drinking dew, or drinking from small puddles, they sip the liquid either by capillary action or by flattening and flooding their lower jaws.'
+    'Rattlesnakes are a key element in Aztec mythology and were widely represented in Aztec art, including sculptures, jewelry, and architectural elements.'
+    'Members of some Christian sects in the southern United States are regularly bitten while participating in "snake handling" rituals. Snake handling is when people hold venomous snakes, unprotected, as part of a religious service inspired by a literal interpretation of the Bible verses Mark 16:17-18 which reads, "In my name ... they will pick up snakes with their hands".'
+    'The rattlesnake became a symbolic animal for the Colonials during the Revolutionary War period, and is depicted prominently on the Gadsden Flag. It continues to be used as a symbol by the United States military, and political movements within the United States.'
+    'The rattlesnakes hibernate through the winter and come out in the spring to eat and then mate.'
+    'Rattlesnake eggs will stay inside their mother until they hatch.  Most of the time there are 8-10 babies born at once and are about 10 inches long.  Babies are born venomous but cannot rattle and are often more aggressive than the adults.'
+    'Rattlesnakes can range from one to eight feet, depending on the species (the big one is the eastern diamondback), according to the National Wildlife Federation. They are thick-bodied snakes with keeled (ridged) scales in a variety of colors and patterns. Most species are patterned with dark diamonds, rhombuses or hexagons on a lighter background.'
+    )
+
 SCORPION_FACTS = (
     'Scorpions are predatory animals of the class Arachnida, making them cousins to spiders, mites and ticks.',
     'Scorpions have eight legs, a pair of pincers (pedipalps) and a narrow segmented tail that often curves over their back, on the end of which is a venomous stinger.',
@@ -2228,6 +2245,7 @@ ALL_FACTS = (
     PORCUPINE_FACTS,
     RABBIT_FACTS,
     RACCOON_FACTS,
+    RATTLESNAKE_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,
     SEA_CUCUMBER_FACTS,
