@@ -718,6 +718,10 @@ DRAGON_FACTS = (
     'In medieval times, dragons were considered very real, but demonic. Religions had widely different views of dragons: some loved them and some feared them.',
     'In many cultural stories, dragons exhibit features of other animals, like the head of elephants, claws of lions and beaks of predatory birds. Their body colors are widely different – red, blue, green, gold, but usually earth tones. In some cultures, the colors have specific meanings.',
     '“Dragon” is actually a family term that includes other mythological creatures, such as cockatrices, gargoyles, wyverns, phoenix, basilisks, hydras, and even some hybrid man-dragon creatures.',
+    'The dragon was traditionally used by the Emperor of China as a symbol of his imperial power and strength, and was more generally a symbol of strenght, power, and good luck.',
+    'Due to its importance as a traditional mythological creature, the Han Chinese commonly referred to themselves as the Descendents of the Dragon. ("long de chuan ren").',
+    'Of the twelve animals representing the Chinese zodiac, the Dragon is the most popular year for childbirth; more children are born during the years of the Dragon than any other year.',
+    'In ancient Chinese folklore, a school of golden koi fish spent a hundred years trying to swim upstream to the top of a waterfall. One koi finally reached the top, and the gods recognized it for its perseverence and determination by turning it into a golden dragon, the image of power and strength.',
     )
 
 DUGONG_FACTS = (
