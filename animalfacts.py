@@ -213,6 +213,7 @@ def check_mentions(reddit):
 
 def check_comment_for_animal(comment, reddit):
     botengine('aardvark', '\saardvarks?\s', reddit, AARDVARK_FACTS, comment)
+    botengine('aardwolf', '\saardwolfs?\s', reddit, AARDWOLF_FACTS, comment)
     botengine('albatross', '\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
     botengine('anglerfish', '\sanglerfish(es)?\s', reddit, ANGLERFISH_FACTS, comment)
@@ -366,6 +367,13 @@ AARDVARK_FACTS = (
     'Aardvarks feed almost exclusively on ants and termites, and are known to eat around 50,000 in one night. They can eat plants and often feed on an African cucumber known as the aardvark cucumber.',
     'Aardvarks are prey to many animals including lions, leopards, hunting dogs, hyenas, and pythons.',
     'Aardvarks are solitary and only come together to mate; females have a gestation period of seven months. One cub is born between May and July and will remain in the burrow for the first two weeks of life.')
+
+AARDVARK_FACTS = (
+    'Aardwolf is small animal. It can reach 3 feet in length and up to 30 pounds in weight. Bushy tail is 7.9 to 11.8 inches long.',
+    'Body of aardwolf is covered with two layers of dense fur that can be yellowish-white or reddish in color. Black stripes cover both sides of the body, including their limbs.',
+    'Aardwolf has a mane that stretches from the head to the tail. Aardwolf raises its mane to appear bigger (and scarier) when it is threatened.',
+    'Aardwolf has narrow muzzle and pointed ears. Its front legs are longer than hind legs. Aardwolf has 5 toes on front feet.',
+    )
 
 ALBATROSS_FACTS = (
     'Albatrosses are known to live until their fifties sixties.',
@@ -2208,6 +2216,7 @@ ZEBRA_FACTS = (
 
 ALL_FACTS = (
     AARDVARK_FACTS,
+    AARDWOLF_FACTS,
     ALBATROSS_FACTS,
     ALLIGATOR_FACTS,
     ATLANTIC_PUFFIN_FACTS,
