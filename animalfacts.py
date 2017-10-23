@@ -269,6 +269,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('lizard', '\slizards?\s', reddit, LIZARD_FACTS, comment)
     botengine('lobster', '\slobsters?\s', reddit, LOBSTER_FACTS, comment)
     botengine('llama', '\sllamas?\s', reddit, LLAMA_FACTS, comment)
+    botengine('mantis shrimp', '\smantis shrimp\s', reddit, MANTIS_SHRIMP_FACTS, comment)
     botengine('meerkat', '\smeerkats?\s', reddit, MEERKAT_FACTS, comment)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
@@ -1306,6 +1307,19 @@ LOBSTER_FACTS = (
     'Lobsters keep growing forever. They do not get weaker or lose their ability to reproduce, and will keep on molting and growing.',
     )
 
+MANTIS_SHRIMP_FACTS = (
+    'Mantis Shrimps can see ultraviolet and polarized light.',
+    'Mantis Shrimp have trinocular vision, meaning they can see using three parts of the same eye.',
+    'Mantis Shrimp can be categorized into "Spearers" and "Smashers", referencing tactics used to kill their prey.',
+    'A Mantis Shrimp can punch at a speed of 10 meters per second, equivalent to a .22 bullet.',
+    'Mantis Shrimp are known to break glass aquariums with their punches.',
+    'Mantis Shrimp are not actually shrimp, they are instead stomatopods, a distant relative.',
+    'A punch of a Mantis Shrimp momentarily causes the temperature of the surrounding water to reach the temperature of the Sun.',
+    'Mantis Shrimp use their ability to see polarized light to commmunicate with other mantis shrimp in a way that is invisible to predators.',
+    'Mantis Shrimp can make a low growling sounds and often grunt at dawn and dusk.',
+    'Stomatopods, like Mantis Shrimp, are older than dinosaurs.'
+    )
+
 MEERKAT_FACTS = (
     'Meerkats can spot an eagle in flight more than a thousand feet away.',
     'Meerkats, or suricates, are a type of mongoose that live in the southern African plains.',
@@ -2249,6 +2263,7 @@ ALL_FACTS = (
     LIZARD_FACTS,
     LOBSTER_FACTS,
     LLAMA_FACTS,
+    MANTIS_SHRIMP_FACTS
     MEERKAT_FACTS,
     MONKEY_FACTS,
     NARWHAL_FACTS,
