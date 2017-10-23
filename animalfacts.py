@@ -391,6 +391,18 @@ ALLIGATOR_FACTS = (
     'Like crocodiles, alligators are part of the order ‘Crocodylia’.',
     )
 
+ANGLER_FACTS = (
+	'According to the National Geographic, the anglerfish is quite possibly the ugliest animal on the planet.',
+	"The anglerfish lives in what is easily Earth's most inhospitable habitat: the lonely, lightless bottom of the sea.",
+	'Although uncommon, some anglerfish live in shallow, tropical waters.',
+	'Most anglerfish are less than a foot in length, although some can grow up to 3.3 feet in length.',
+	'The anglerfish lure is only worn by females and is a piece of dorsal spine that protrudes above their mouths like a fishing pole.',
+	'The anglerfish have mouths so big and their bodies are so pliable, they can actually swallow prey up to twice their own size.',
+	'When a young, free-swimming male anglerfish encounters a female, he latches onto her with his sharp teeth. Over time, the male physically fuses with the female, connecting to her skin and bloodstream and losing his eyes and all his internal organs except the testes. A female will carry six or more males on her body.',
+	'The anglerfish have a luminescent organ, called the esca, at the tip of a modified dorsal ray.',
+	'Because of the small amount of food available in their environment, the anglerfish has adapted to store food when there is an abundance.'
+)
+
 ANT_FACTS = (
     'There are more than 12,000 species of ants all over the world.',
     'An ant can lift 20 times its own body weight. If a second grader was as strong as an ant, she would be able to pick up a car!',
