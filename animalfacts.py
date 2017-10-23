@@ -240,6 +240,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('emu', '\semus?\s', reddit, EMU_FACTS, comment)
     botengine('falcon', '\sfalcons?\s', reddit, FALCON_FACTS, comment)
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
+    botengine('fly', '\sflies?\s', reddit, FLY_FACTS, comment)
     botengine('fox', '\sfox(es)?\s', reddit, FOX_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
     botengine('gazelle', '\sgazelles?\s', reddit, GAZELLE_FACTS, comment)
@@ -883,6 +884,20 @@ FLAMINGO_FACTS = (
     'Flamingos are social birds, they live in colonies of sometimes thousands, this helps in avoiding predators, maximizing food intake, and is better for nesting.',
     'Flamingo colonies split into breeding groups of up to 50 birds, who then perform a synchronized ritual "dance" whereby they stand together stretching their necks upwards, uttering calls while waving their heads and then flapping their wings.',
     'The flamingo is the national bird of the Bahamas.',
+    )
+
+FLY_FACTS = (
+    'Flies are found on every continent except for the innermost polar regions of the Arctic Circle and Antarctica',
+    'Flies are omnivores - they will eat just about everything from nectar to animal blood',
+    'The lifespan of a fly averages around one month',
+    'The time from egg to fly only takes about 2 weeks',
+    'The International Space Station has a Fruit Fly Lab',
+    'Flies can see behind themselves',
+    'House flies can fly about 5 miles per hour',
+    'Hear a fly buzzing?  That is due to their wings beating about one thousand times per second',
+    'Flies taste with their feet',
+    'House flies can transmit several diseases, including cholera, dysentery, typhoid, and many others',
+    'Flies usually defecate when they land',
     )
 
 FOX_FACTS = (
@@ -2220,6 +2235,7 @@ ALL_FACTS = (
     EMU_FACTS,
     FALCON_FACTS,
     FLAMINGO_FACTS,
+    FLY_FACTS,
     FOX_FACTS,
     FROG_FACTS,
     GAZELLE_FACTS,
