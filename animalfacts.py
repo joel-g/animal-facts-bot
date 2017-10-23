@@ -1093,6 +1093,23 @@ HIPPO_FACTS = (
     'Hippos typically live for around 45 years.',
 )
 
+HONEYBADGER_FACTS = (
+    'Honey badgers have been known to fight lions',
+    'Honey badgers are really good at digging',
+    'Honey badgers have thick skin and can survive venomous snake bits',
+    'Honey badgers can release a stinky liquid just like skunks',
+    'A honey badgers diet can consist of almost anything',
+    'Honey badgers are very smart and sometimes use tools to help them complete tasks',
+    'The honey badger is part of the wheasel family',
+    'The honey badger got its name because of its love for honey',
+    'Honey badgers are ofter very mean and will pick fights with other animal, often bigger than them',
+    'Honey badgers are from parts of Africa and Asia',
+    'Honey badgers are great swimmers and can climb trees',
+    'Honey badgers are nocturnal',
+    'Honey badgers are mostly solitary and only meet up to hunt or mate',
+    'Beekeepers will often keep their bees elevated to prevent honey badgers from getting to their hives'
+)
+
 HONEYBEE_FACTS = (
     'The honey bee has been around for millions of years.',
     'Honey bees, scientifically also known as Apis mellifera, which mean "honey-carrying bee", are environmentally friendly and are vital as pollinators.',
