@@ -898,6 +898,7 @@ FLY_FACTS = (
     'Flies taste with their feet',
     'House flies can transmit several diseases, including cholera, dysentery, typhoid, and many others',
     'Flies usually defecate when they land',
+    'Flies do not have jaws or teeth, they must drink their food',
     )
 
 FOX_FACTS = (
