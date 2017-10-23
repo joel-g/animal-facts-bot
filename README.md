@@ -32,6 +32,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * aardvark
 * albatross
 * alligator
+* anglerfish
 * ant
 * anteater
 * antelope

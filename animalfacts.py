@@ -208,6 +208,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('aardvark', '\saardvarks?\s', reddit, AARDVARK_FACTS, comment)
     botengine('albatross', '\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
+    botengine('anglerfish', '\sanglerfish?\s', reddit, ANGLERFISH_FACTS, comment)
     botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
     botengine('anteater', '\santeaters?\s', reddit, ANTEATER_FACTS, comment)
     botengine('antelope', '\santelopes?\s', reddit, ANTELOPE_FACTS, comment)
@@ -389,6 +390,19 @@ ALLIGATOR_FACTS = (
     'Alligators eat a range of different animals such as fish, birds, turtles and even deer.',
     'Alligator eggs become male or female depending on the temperature, male in warmer temperatures and female in cooler temperatures.',
     'Like crocodiles, alligators are part of the order ‘Crocodylia’.',
+    )
+
+ANGLERFISH_FACTS = (
+    'The scientific name for the Anglerfish is Lophiiformes.',
+    'An Anglerfish can weigh up to 110lbs/50kgs.',
+    'There are more than 200 species of Anglerfish',
+    'Anglerfish typically live at the bottom of the ocean, between 400 to 2,000 metres, in complete darkness.',
+    'The light in the lure comes from tiny bacteria called photoplankton',
+    'The Anglerfish lure, worn only by females, is a piece of dorsal spine that lights up in order to attract prey.',
+    'The mouth of an Anglerfish is so big, and its body is so pliable, that it can swallow prey up to twice its size.',
+    'Male Anglerfish are significantly smaller than their female counterparts, and when a male encounters a female, it latches on onto her with his sharp teeth. Eventually, the male physically fuses with the female.',
+    'When a male Anglerfish has fused to a female, it loses all its organs apart from its testes.',
+    'A female Anglerfish will carry six or more males on her body.',
     )
 
 ANT_FACTS = (
@@ -1735,7 +1749,7 @@ RAVEN_FACTS = (
 	'Ravens live from deserts to coniferous forests and coastal cliffs. In forests, they nest in stick-made nests on trees, on deserts in rock cavities.',
     'Common Ravens can mimic the calls of other bird species. When raised in captivity, they can even imitate human words; one Common Raven raised from birth was taught to mimic the word “nevermore.”',
     'The oldest known wild Common Raven was at least 22 years, 7 months old. It was banded and found in Nova Scotia.'
-	)	
+	)
 
 SALMON_FACTS = (
 	'Salmon tend to be anadromous, which means they hatch in fresh water, migrate to the ocean, and return to fresh water to reproduce, however this is not always the case.',
@@ -2190,6 +2204,7 @@ ALL_FACTS = (
     ALBATROSS_FACTS,
     ALLIGATOR_FACTS,
     ATLANTIC_PUFFIN_FACTS,
+    ANGLERFISH_FACTS,
     ANT_FACTS,
     ANTEATER_FACTS,
     ANTELOPE_FACTS,
