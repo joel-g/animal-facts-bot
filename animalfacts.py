@@ -47,11 +47,12 @@ def check_messages(reddit):
     for comment in reddit.inbox.comment_replies(limit=number_of_messages):
         print("Checking comment ID " + comment.id, end='\r')
         if unsubscribed_author_check(comment):
-            if not comment.subreddit.user_is_banned:
+            if not comment.subreddit.user_is_banned and not comment.submission.locked:
                 file_obj_r = open(reply_history, 'r')
                 if comment.id not in file_obj_r.read().splitlines():
                     comment_body = comment.body.lower()
                     if 'good bot' in comment_body:
+                        print (comment_body)
                         comment.reply(
                             'Thanks! You can ask me for more facts any time. Beep boop.')
                         print('     Thanked someone for "good bot"\n')
