@@ -368,11 +368,23 @@ AARDVARK_FACTS = (
     'Aardvarks are prey to many animals including lions, leopards, hunting dogs, hyenas, and pythons.',
     'Aardvarks are solitary and only come together to mate; females have a gestation period of seven months. One cub is born between May and July and will remain in the burrow for the first two weeks of life.')
 
-AARDVARK_FACTS = (
+AARDWOLF_FACTS = (
     'Aardwolf is small animal. It can reach 3 feet in length and up to 30 pounds in weight. Bushy tail is 7.9 to 11.8 inches long.',
     'Body of aardwolf is covered with two layers of dense fur that can be yellowish-white or reddish in color. Black stripes cover both sides of the body, including their limbs.',
     'Aardwolf has a mane that stretches from the head to the tail. Aardwolf raises its mane to appear bigger (and scarier) when it is threatened.',
     'Aardwolf has narrow muzzle and pointed ears. Its front legs are longer than hind legs. Aardwolf has 5 toes on front feet.',
+    'Unlike other hyenas, aardwolf has poorly developed teeth. It has long and sticky tongue which is specialized for diet based on insects.',
+    'Aardwolf\'s diet consists almost exclusively of termites. It can eat up to 300 000 termites per night. Maggots and other invertebrates with soft bodies are occasionally consumed. Aardwolf will eat small mammals, birds and carrion only when termites cannot be found.',
+    'Aardwolf is nocturnal creature (active during the night).',
+    'Besides humans, jackals are main enemies of aardwolves.',
+    'Aardwolf is solitary and territorial animal. It occupies territory of 1 to 4 square miles. Boundaries of territory are marked with urine, dung and scent produced in anal gland. Aardwolf fiercely defends its territory (by fighting with other aardwolves).',
+    'Aardwolf lives in underground burrows. Even though it can dig a hole in a ground using the claws, aardwolf prefers abandoned burrows of other animals such as aardvark and porcupine.',
+    'Aardwolf is a silent animal that vocalizes only when it is threatened. Clucking and growling sounds can be heard occasionally.',
+    'Aardwolves are monogamous animals (one couple mate for a lifetime). Mating season takes place in the June and July.',
+    'Pregnancy in females lasts 90 days and ends with 2 to 4 cubs. Babies spend first month of their life hidden in a den.',
+    'Both parents take care of their young. Father guards the den against predators. Young aardwolves drink mother\'s milk during the first 3 or 4 months. After that period, they will join their parents in foraging for food.',
+    'Aardwolves will leave their family group at the age of one year to begin independent life.',
+    'Aardwolf can survive 8 years in the wild and up to 15 years in captivity.',
     )
 
 ALBATROSS_FACTS = (
