@@ -205,6 +205,12 @@ def botengine(animal, regex, reddit, facts, comment):
                     else:
                         print('     Already commented on this!\n')
 
+def check_mentions(reddit):
+    print("Checking mentions...")
+    for mention in reddit.inbox.mentions():
+        check_comment_for_animal(mention, reddit)
+
+
 def check_comment_for_animal(comment, reddit):
     botengine('aardvark', '\saardvarks?\s', reddit, AARDVARK_FACTS, comment)
     botengine('albatross', '\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
