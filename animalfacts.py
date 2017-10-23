@@ -619,19 +619,6 @@ CHINCHILLA_FACTS = (
    'Though chinchilla fur is highly valued for use in clothing and coats, the Convention on International Trade in Endangered Species has restricted the sale and trade of wild chinchillas since 1975. Many chinchillas are bred commercially for their fur.',
    'Chinchillas are native to Chile and Peru. In the wild they live in groups and make their home in burrows and natural outcroppings and crevices.')
 
-COUGAR_FACTS = (
-    'The cougar, also known as puma, mountain lion, mountain cat, catamount or panther, depending on the region, holds the Guinness record for the animal with the highest number of names. It has over 40 names in English alone.',
-    'the cougar has the greatest range of any large wild terrestrial mammal in the Western Hemisphere, extending from the Yukon in Canada to the southern Andes of South America.',
-    'Primary food sources include ungulates such as deer, elk, moose, and bighorn sheep, as well as domestic cattle, horses and sheep, particularly in the northern part of its range. It will also hunt species as small as insects and rodents.',
-    'Adults stand about 60 to 76 centimeters (2.0 to 2.5 ft) tall at the shoulders. The length of adult males is around 2.4 meters (8 ft) long nose to tail, with overall ranges between 1.5 and 2.75 m (5 and 9 ft) nose to tail suggested for the species in general. Males typically weigh 53 to 90 kilograms (115 to 198 pounds), averaging 62 kg (137 lb). Females typically weigh between 29 and 64 kg (64 and 141 lb), averaging 42 kg (93 lb).',
-    'Cougar size is smallest close to the equator and larger towards the poles.',
-    'Female cougars reach sexual maturity between one-and-a-half to three years of age. They typically average one litter every two to three years throughout their reproductive life. Only females are involved in parenting and they are fiercely protective of their cubs.',
-    'Aside from humans, no species preys upon mature cougars in the wild. The cat is not, however, the apex predator throughout much of its range. In its northern range, the cougar interacts with other powerful predators such as the brown bear and gray wolf. In the south, the cougar must compete with the larger jaguar. In Florida it encounters the American Alligator.',
-    'Like almost all cats, the cougar is a solitary animal. Only mothers and kittens live in groups, with adults meeting only to mate. It is secretive and typically most active around dawn and dusk.',
-    'Cougars have large paws and proportionally the largest hind legs in the cat family. This physique allows it great leaping and short-sprint ability. An exceptional vertical leap of 5.4 m (18 ft) is reported for the cougar. Horizontal jumping capability from standing position is suggested anywhere from 6 to 12 m (20 to 40 ft).',
-    'The cougar can run as fast as 55 to 72 km/h (35 to 45 mi/h), but is best adapted for short, powerful sprints rather than long chases.',
-    )
-
 COBRA_FACTS = (
     'Cobras are classified in the phylum Chordata, subphylum Vertebrata, class Reptilia, order Squamata and family Elapidae.',
     'Genetically, true cobras are members of the genus Naja, but according to Viernum, often the name cobra references several species of snakes, most of which are in the venomous snake family Elapidae.',
@@ -649,6 +636,19 @@ COBRA_FACTS = (
     'The Caspian cobra (N. oxiana) of Central Asia is the most venomous Naja species.',
     'Cobras are a medically important group of snakes due to the number of bites and fatalities they cause across their geographical range.',
     'Cobras belong to the family Elapidae, a type of poisonous snake with hollow fangs fixed to the top jaw at the front of the mouth.',
+    )
+
+COUGAR_FACTS = (
+    'The cougar, also known as puma, mountain lion, mountain cat, catamount or panther, depending on the region, holds the Guinness record for the animal with the highest number of names. It has over 40 names in English alone.',
+    'the cougar has the greatest range of any large wild terrestrial mammal in the Western Hemisphere, extending from the Yukon in Canada to the southern Andes of South America.',
+    'Primary food sources include ungulates such as deer, elk, moose, and bighorn sheep, as well as domestic cattle, horses and sheep, particularly in the northern part of its range. It will also hunt species as small as insects and rodents.',
+    'Adults stand about 60 to 76 centimeters (2.0 to 2.5 ft) tall at the shoulders. The length of adult males is around 2.4 meters (8 ft) long nose to tail, with overall ranges between 1.5 and 2.75 m (5 and 9 ft) nose to tail suggested for the species in general. Males typically weigh 53 to 90 kilograms (115 to 198 pounds), averaging 62 kg (137 lb). Females typically weigh between 29 and 64 kg (64 and 141 lb), averaging 42 kg (93 lb).',
+    'Cougar size is smallest close to the equator and larger towards the poles.',
+    'Female cougars reach sexual maturity between one-and-a-half to three years of age. They typically average one litter every two to three years throughout their reproductive life. Only females are involved in parenting and they are fiercely protective of their cubs.',
+    'Aside from humans, no species preys upon mature cougars in the wild. The cat is not, however, the apex predator throughout much of its range. In its northern range, the cougar interacts with other powerful predators such as the brown bear and gray wolf. In the south, the cougar must compete with the larger jaguar. In Florida it encounters the American Alligator.',
+    'Like almost all cats, the cougar is a solitary animal. Only mothers and kittens live in groups, with adults meeting only to mate. It is secretive and typically most active around dawn and dusk.',
+    'Cougars have large paws and proportionally the largest hind legs in the cat family. This physique allows it great leaping and short-sprint ability. An exceptional vertical leap of 5.4 m (18 ft) is reported for the cougar. Horizontal jumping capability from standing position is suggested anywhere from 6 to 12 m (20 to 40 ft).',
+    'The cougar can run as fast as 55 to 72 km/h (35 to 45 mi/h), but is best adapted for short, powerful sprints rather than long chases.',
     )
 
 COW_FACTS = (
