@@ -266,6 +266,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('husky', '\s(husky|huskie)s?\s', reddit, HUSKY_FACTS, comment)
     botengine('iguana', '\siguanas?\s', reddit, IGUANA_FACTS, comment)
     botengine('jackal', '\sjackals?\s', reddit, JACKAL_FACTS, comment)
+    botengine('japanese spider crab', '\sjapanese spider crabs?\s', reddit, JAPANESE_SPIDER_CRAB_FACTS, comment)
     botengine('jellyfish', '\sjellyfish(es)\s', reddit, JELLYFISH_FACTS, comment)
     botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
@@ -297,6 +298,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS, comment)
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
+    botengine('pink fairy armadillo', '\spink fairy armadillos?\s', reddit, PINK_FAIRY_ARMADILLO_FACTS, comment)
     botengine('platypus', '\splatypuse?s?\s', reddit, PLATYPUS_FACTS, comment)
     botengine('puma', '\spumas?\s', reddit, PUMA_FACTS, comment)
     botengine('porcupine', '\sporcupines?\s', reddit, PORCUPINE_FACTS, comment)
@@ -1199,6 +1201,29 @@ JACKAL_FACTS = (
     'Jackals can live solitary life, be part of a couple or part of a large group, called pack. Life in pack ensures protection against predators and ensures cooperative hunt which results in killing of the larger prey.'
     )
 
+JAPANESE_SPIDER_CRAB_FACTS = (
+    'Japanese Spider Crab is known in Japan as Takaashigani which literally means “tall-footed crab”',
+    'It is known scientifically known as Macrocheira kaempferi.',
+    'This marine crab species can be found in the waters of Japan, hence the common name.',
+    'The Japanese Spider Crab has the largest leg span of any arthropod in the world reaching up to 3.8 meters or 12 ft from claw to claw and weighing up to 41 pounds or about 19 kg.',
+    'The body of this crab may grow to a size of 40 cm or 16 inches.',
+    'The Japanese Spider Crab is unique from all other crab species. The first pleopods of males are unusually twisted, and its larvae appear primitive.',
+    'In spite of its odd and ferocious appearance, this creature is known to have a gentle disposition',
+    'The Japanese Spider Crab is orange, with white spots along the legs.',
+    'Japanese Spider Crabs can be found off the southern coasts of the Japanese island of Honshu, from Tokyo Bay to Kagoshima Prefecture.',
+    'They can also be found in Iwate Prefecture and off Su-ao, Taiwan.',
+    'This unique marine creature can be found at depths of up to 600 meter, or as shallow as 50 meters.',
+    'The Japanese Spider Crab is one of the most unusual aquatic pets in the world and requires a huge tank.',
+    'In its natural habitat, this crab species feeds on animal carcasses and shellfish.',
+    'The Japanese Spider Crab is one of the longest living creatures in the world living up to 100 years.',
+    'Be careful in dealing with this gigantic crab because it has been noted that the crab was known to the Japanese for the serious injuries it can cause with its strong claws.',
+    'This arthropod is edible and is occasionally collected for food with a total of 24.7 tonnes collected in 1976 and 3.2 tonnes in 1985.',
+    'This crab which is subject to small scale fishery is centered in Suruga Bay.',
+    'The population of Japanese Spider Crab has decreased in number, forcing fishermen into exploring deeper waters in order to catch them.',
+    'The average size of Japanese Spider Crab caught by fishermen is a leg span of 1.0–1.2 meters.',
+    'When its legs are spread out, an adult giant Japanese spider crab can measure 12 feet across and its body can grow to be 15 inches wide.',
+    )
+	
 JELLYFISH_FACTS = (
     'Jellyfish live in the sea and are found in all oceans.',
     'Some jellyfish live in fresh water.',
@@ -1663,6 +1688,24 @@ PIGEON_FACTS = (
     'Pigeons can survive more than 30 years in the wild.',
     )
 
+PINK_FAIRY_ARMADILLO_FACTS = (
+        'Pink Fairy Armadillo is an armadillo species. It is smallest of all known armadillos.',
+    'Known by the name – Pichiciego, it is found in Central Argentina. Its habitats include scrubby grasslands, dunes and sandy plains.',
+    'Their body length, excluding their tail, ranges between 90 mm and 115 mm.'
+    'Of all armadillo species, this is the only armadillo, whose dorsal shell is totally separate from its body. It is connected to the body with only a thin membrane, which runs right along its spine.',
+    'The pink color of the shell comes from the underlying blood vessels, which show through the shell. It is the blood in the blood vessels that create the pale rose or pink hue.',
+    'The shell is actually fragile and pretty flexible. This means that the shell is not used as a protective armor. Scientists think that the shell is more for thermoregulation.',
+    'The color of the shell can actually change depending on the environment in which the animal is put it. Based on the environmental factors, irrigation of blood into the blood vessels can actually increase or decrease and thereby lead to change in color.',
+    'When more blood flows into the shell or the carapace, the temperature of the creature’s body falls and draining blood out of the shell helps the Pink Fairy Armadillo to retain its body heat.',
+    'Beneath the carapace or the shell is silky fur which is yellowish-white in color.',
+    'Now, the pink and white combination may sound weird in the dessert setting because those colors can attract predators. Pink Fairy Armadillo however, is subterranean and barely stays above the ground for a few moments. So, the pink and white is just fine.',
+    'This armadillo is actually a wonderful burrower or digger and remains 6 inches underneath the ground. It is such an excellent digger that it is often said that it is a sand-swimmer just like the famed sandfish (which is actually a lizard).',
+    'Weirdly, the Pink Fairy Armadillo doesn’t really dig through sand. It actually digs through comparatively firm earth. The reason for it being such an efficient digger is that it actually has enormous front claws. The claws are so big that it can barely walk on any hard surface.',
+    'This armadillo is one of the very few mammals out there that doesn’t have visible external ears.',
+    'This armadillo is strictly nocturnal. It is very elusive and can be rarely seen on ground.',
+    'The armor of the Pink Fairy Armadillo has 24 bands, allowing the mammal to easily curl up and take the shape of a ball. One really interesting Pink Fairy Armadillo fact is that at the rear end of the animal, its armor is flattened.',
+    )
+	
 PLATYPUS_FACTS = (
     "Platypuses have no stomach",
     "A platypus' bill is comprised of thousands of cells that can detect the electric fields generated by all living things, giving them a sixth sense",
@@ -2260,6 +2303,7 @@ ALL_FACTS = (
     HUSKY_FACTS,
     IGUANA_FACTS,
     JACKAL_FACTS,
+    JAPANESE_SPIDER_CRAB_FACTS
     JELLYFISH_FACTS,
     KANGAROO_FACTS,
     KOALA_FACTS,
@@ -2291,13 +2335,14 @@ ALL_FACTS = (
     PENGUIN_FACTS,
     PIG_FACTS,
     PIGEON_FACTS,
+    PINK_FAIRY_ARMADILLO_FACTS,
     PLATYPUS_FACTS,
     PUMA_FACTS,
     PORCUPINE_FACTS,
     RABBIT_FACTS,
     RACCOON_FACTS,
     RAVEN_FACTS,
-  	SALMON_FACTS,
+    SALMON_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,
     SEA_CUCUMBER_FACTS,
