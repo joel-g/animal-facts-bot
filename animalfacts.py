@@ -223,6 +223,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
     botengine('chinchilla', '\schinchillas?\s', reddit, CHINCHILLA_FACTS, comment)
+    botengine('cobra', '\scobras?\s', reddit, COBRA_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
@@ -618,6 +619,25 @@ CHINCHILLA_FACTS = (
    'Chinchillas are omnivores; they eat both plants and meat. Primarily, they eat grass and seeds, but they also eat insects and bird eggs when they get the chance. To eat, they hold their food in their front paws and nibble on it.',
    'Though chinchilla fur is highly valued for use in clothing and coats, the Convention on International Trade in Endangered Species has restricted the sale and trade of wild chinchillas since 1975. Many chinchillas are bred commercially for their fur.',
    'Chinchillas are native to Chile and Peru. In the wild they live in groups and make their home in burrows and natural outcroppings and crevices.')
+
+COBRA_FACTS = (
+    'Cobras are classified in the phylum Chordata, subphylum Vertebrata, class Reptilia, order Squamata and family Elapidae.',
+    'Genetically, true cobras are members of the genus Naja, but according to Viernum, often the name cobra references several species of snakes, most of which are in the venomous snake family Elapidae.',
+    'Cobras are large snakes and many species reach more than 6 feet long (2 meters).',
+    'The most well-known distinctive physical characteristic of cobras is their hood.',
+    'There are 270 different types of Cobras and their relatives, including Taipans, Adders, Mambas, Kraits, and they all have short fangs and are all extremely poisonous.',
+    'Cobras live in hot tropical areas in Africa, Australia, and Southern Asia and their relatives, the Coral Snake, can be found in the United States.',
+    'Cobras are cannibals, which means that they will eat other snakes as well as birds, bird eggs and small mammals. Kraits feed almost totally on other snakes.',
+    'Despite that common name, king cobras are not classified as true cobras, which belong to the genus "Naja".',
+    'Cobras have potent neurotoxic venom, which acts on the nervous system.',
+    'Some cobras, including all spitting cobras, have cytotoxic venom that attacks body tissue and causes severe pain, swelling and possible necrosis (death of cells and tissue).',
+    'The origin of the genus name of Cobras, "Naja" is from the Sanskrit "nāga" (with a hard "g") meaning "snake".',
+    'Naja is a genus of venomous elapid snakes known as cobras.',
+    'Spitting cobras have a specialized venom delivery mechanism, in which their front fangs, instead of releasing venom through the tips, have a rifled opening in the front surface which allows the snake to propel the venom out of the mouth.',
+    'The Caspian cobra (N. oxiana) of Central Asia is the most venomous Naja species.',
+    'Cobras are a medically important group of snakes due to the number of bites and fatalities they cause across their geographical range.',
+    'Cobras belong to the family Elapidae, a type of poisonous snake with hollow fangs fixed to the top jaw at the front of the mouth.',
+    )
 
 COUGAR_FACTS = (
     'The cougar, also known as puma, mountain lion, mountain cat, catamount or panther, depending on the region, holds the Guinness record for the animal with the highest number of names. It has over 40 names in English alone.',
@@ -2175,6 +2195,7 @@ ALL_FACTS = (
     CHEETAH_FACTS,
     CHIPMUNK_FACTS,
     CHINCHILLA_FACTS,
+    COBRA_FACTS,
     COW_FACTS,
     COUGAR_FACTS,
     CRAB_FACTS,
