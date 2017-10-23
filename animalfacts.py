@@ -229,6 +229,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
     botengine('cuttlefish', '\scuttlefish(es)?\s', reddit, CUTTLEFISH_FACTS, comment)
+	botengine('degu', '\sdegus?\s', reddit, DEGU_FACTS, comment)
     botengine('dingo', '\sdingos?\s', reddit, DINGO_FACTS, comment)
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
     # botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)   Disabled because this was only a temp feature during Game of Thrones season. Dragons aren't real.
@@ -719,6 +720,16 @@ CUTTLEFISH_FACTS = (
     "Cuttlefish have W shaped eyelids so they can see in front of them and behind them at the same time.",
     )
 
+DEGU_FACTS = (
+	'The word degu comes from the Mapudungun dewü (mouse, rat).',
+	'Degus have an elaborate vocal repertoire comprising up to 15 unique sounds.',
+	'Degus can live as long as 8 or 9 years although 5 to 6 years is the average lifespan.',
+	'The degu is a south American caviomorph1 which inhabits the semi-arid (desert-like) scrub areas of central Chile. This is the only place in the world where degus can be found in the wild and is where degus originated.',
+	'Degus are prone to diabetes due to their divergent insulin structure. For this reason, they are used frequently for research in this field.',
+	'Unlike other octodontids, degus are diurnal (activity during the day, with a period of sleeping, or other inactivity, at night), and they have good vision.',
+	"In case of predator's attack, the degu can shed its tail from its body. A shed tail will never grow back.",
+    )
+	
 DINGO_FACTS = (
     'Dingoes actually originate from Southeast Asia, where they can still be found today.',
     'Dingoes mate once per year, from March to June.',
@@ -2210,6 +2221,7 @@ ALL_FACTS = (
     CRAB_FACTS,
     CROCODILE_FACTS,
     CUTTLEFISH_FACTS,
+	DEGU_FACTS,
     DINGO_FACTS,
     DOLPHIN_FACTS,
     DUGONG_FACTS,
