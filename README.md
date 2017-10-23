@@ -118,6 +118,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * rabbit
 * raccoon
 * raven
+* salmon
 * scorpion
 * seagull
 * sea cucumber
