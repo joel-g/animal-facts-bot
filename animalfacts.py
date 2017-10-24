@@ -442,6 +442,7 @@ ANTEATER_FACTS = (
     'Anteaters have very poor eyesight and rely on their keen sense of smell to find food.',
     'Anteaters can eat up to 35,000 insects a day.',
     'Anteaters will never destroy an anthill because they need it as a source of food.'
+    'Anteaters have tongues that can be 2 feet long.'
     )
 
 ANTELOPE_FACTS = (
