@@ -24,7 +24,7 @@ If you have a question the quickest way to reach is me on twitter @joelatwar
 
 # animal-facts-bot
 
-A Reddit bot that searches for comments on reddit that contain the name of the animal and then replies to the comment with a fact about that animal.
+Animal-facts-bot is a Reddit bot that searches for comments on reddit that contain the name of the animal and then replies to the comment with a fact about that animal.
 
 You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comments/
 
