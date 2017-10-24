@@ -427,8 +427,8 @@ ANT_FACTS = (
     'Ants and humans are the only creatures that farm other creatures.',
     'Some ants can swim.',
     'Ants can be found on every continent accept antarctica.',
+    'Ants do not breath through a centralized respiratory system, like many other insects ants breath throughout their entire body.',
     )
-
 ANTEATER_FACTS = (
     'Anteaters are toothless creatures.',
     'Since ants can bite, anteaters must eat them quickly. They are flicking their tongue 150-160 times in minute during feeding to grab enough ants and avoid bites.',
@@ -581,6 +581,7 @@ CAPYBARA_FACTS = (
     'Predators of the capybara include jaguars, pumas, ocelots, caimans, eagles, and anacondas.',
     'The name "capybara" is derived from the Tupi language, spoken by the native Tupi people of Brazil. The translated name means "one who eats slender leaves".',
     'Capybaras are very popular captive animals in Japan. One common practice, said to have originated in 1982 and attributed to the Izu Shaboten Zoo, is to keep hot springs in capybara enclosures for them to bathe and relax in during the winter.'
+    'Capybaras are well to do to put their webbed feet to use in water, and the Vatican classifies them as fish in regards to dietary concerns.',
     )
 
 CHAMELEON_FACTS = (
@@ -738,6 +739,7 @@ CUTTLEFISH_FACTS = (
     "Cuttlefish have 8 arms and 2 long tentacles used for feeding.",
     "The largest cuttlefish is the Australian giant cuttlefish, which is the size and shape of an American football.",
     "Cuttlefish have W shaped eyelids so they can see in front of them and behind them at the same time.",
+    'Interestingly enough cuttlefish are known for their sexual dimorphism, particularly in regards to size differences between adult males and females.",
     )
 
 DINGO_FACTS = (
