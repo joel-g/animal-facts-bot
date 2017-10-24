@@ -219,6 +219,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
     botengine('anteater', '\santeaters?\s', reddit, ANTEATER_FACTS, comment)
     botengine('antelope', '\santelopes?\s', reddit, ANTELOPE_FACTS, comment)
+    botengine('armadillo', '\sarmadillos?\s', reddit, ARMADILLO_FACTS, comment)
 #     botengine('antlantic puffin', '\santlantic puffins?\s', reddit, ANTLANTIC_PUFFIN_FACTS, comment) un comment this when more puffin facts have been added
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('bear', '\sbears?\s', reddit, BEAR_FACTS, comment)
@@ -2232,6 +2233,7 @@ ALL_FACTS = (
     ANT_FACTS,
     ANTEATER_FACTS,
     ANTELOPE_FACTS,
+    ARMADILLO_FACTS,
     BADGER_FACTS,
     BEAR_FACTS,
     BEAVER_FACTS,
