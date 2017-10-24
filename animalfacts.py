@@ -315,6 +315,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('snail', '\ssnails?\s', reddit, SNAIL_FACTS, comment)
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
     botengine('starfish', '\sstarfish(es)?\s', reddit, STARFISH_FACTS, comment)
+    botengine('sturgeon', '\ssturgeon?\s', reddit, STURGEON_FACTS, comment)
     botengine('tarantula', '\starantulas?\s', reddit, TARANTULA_FACTS, comment)
     botengine('squirrel', '\ssquirrels?\s', reddit, SQUIRREL_FACTS, comment)
     botengine('stingray', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
@@ -1951,6 +1952,19 @@ STARFISH_FACTS = (
     'Starfish can move using their tube feet',
     'Starfish have eyes.',
     )
+
+STURGEON_FACTS = (
+	'Sturgeons are related to the paddlefish and perhaps to the bichir.',
+	'Sturgeons are found in greatest abundance in the rivers of southern Russia and Ukraine and in the freshwaters of North America.',
+	'Sturgeons are one of the oldest families of bony fish in existence.',
+	'Most sturgeons are anadromous bottom-feeders, spawning upstream and feeding in river deltas and estuaries. While some are entirely freshwater, very few venture into the open ocean beyond near coastal areas.',
+	'Sturgeons commonly range from 7–12 feet (2-3½ m) in length, while some species grow up to 18 feet (5.5 m).',
+	'Sturgeons reach sexual maturity in 6-25 years, making them vulnerable to overfishing.',
+	'Some species of sturgeon are harvested for their roe, which is made into caviar.',
+	'Sturgeons have four soft barbels between the front of the snout and the toothless mouth, which protrudes to pick up food.',
+	'Sturgeons can live 50 to 100 years or more, depending on the species.',
+	)
+	
 
 SUNFISH_FACTS = (
     'The ocean sunfish (mola mola) is the heaviest known bony fish in the world, adults typically weigh between 247 and 1000 kg (545-2205 lb).',
