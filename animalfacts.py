@@ -1,4 +1,4 @@
-﻿import re
+import re
 import praw
 import random
 import time
@@ -299,6 +299,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
     botengine('platypus', '\splatypuse?s?\s', reddit, PLATYPUS_FACTS, comment)
     botengine('puma', '\spumas?\s', reddit, PUMA_FACTS, comment)
+    botengine('pufferfish', '\spufferfish\s', reddit, PUFFERFISH_FACTS, comment)
     botengine('porcupine', '\sporcupines?\s', reddit, PORCUPINE_FACTS, comment)
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
@@ -877,7 +878,7 @@ EMU_FACTS = (
     )
 
 FALCON_FACTS = (
-    'Peregrine falcons have been clocked at reaching speeds of 242 miles per hour while diving for prey, making them the fastest recorded animal ever.',
+    'Peregrine falcons have been clocked at reaching speeds of 242 miles per hour while diving for prey, making them the fastest recorded animal ever.',
     'Falcon is a carnivore. Its diet is based on rodents, frogs, fish, bats and small birds.',
     'Falcons have a lifespan between 12 and 20 years in the wild, depending on species. Some species can live up to 25 years in captivity.',
     'The gyrfalcon (Falco rusticolus) is the largest falcon species. It is up to 61 centimeters (24 inches) long withwingspan up to 130 centimeters (51 inches) and weight up to 1,350 grams (47.6 ounces).',
@@ -1554,13 +1555,13 @@ PANDA_FACTS = (
     )
 
 PANGOLIN_FACTS = (
-    'The name "pangolin" comes from the Malay word pengguling, meaning "one who rolls up".',
-    'Pangolins can also emit a noxious-smelling chemical from glands near the anus, similar to the spray of a skunk.',
-    'Large pangolins can extend their tongues as much as 40 cm (16 in), with a diameter of only 0.5 cm (0.20 in).',
-    'A pangolin can consume 140 to 200 g (4.9 to 7.1 oz) of insects per day.',
-    'Pangolins have a very poor sense of vision, so they rely heavily on smell and hearing.',
+    'The name "pangolin" comes from the Malay word pengguling, meaning "one who rolls up".',
+    'Pangolins can also emit a noxious-smelling chemical from glands near the anus, similar to the spray of a skunk.',
+    'Large pangolins can extend their tongues as much as 40 cm (16 in), with a diameter of only 0.5 cm (0.20 in).',
+    'A pangolin can consume 140 to 200 g (4.9 to 7.1 oz) of insects per day.',
+    'Pangolins have a very poor sense of vision, so they rely heavily on smell and hearing.',
     'Pangolins lack teeth, so also lack the ability to chew.',
-    'The weight of a pangolin at birth is 80 to 450 g (2.8 to 15.9 oz) and the average length is 150 mm (5.9 in).',
+    'The weight of a pangolin at birth is 80 to 450 g (2.8 to 15.9 oz) and the average length is 150 mm (5.9 in).',
     'Pangolin meat is considered a delicacy in southern China and Vietnam.',
     'Pangolin is the most trafficked animal in the world.',
     'All eight species of pangolin are categorized on IUCN Red List of Threatened Species.',
@@ -1692,6 +1693,13 @@ PUMA_FACTS = (
     'Puma are obligated carnivores (like all cats), they need to feed on meat to survive.',
     'Cubs born blind, they rely exclusively on their mother and begin to hunt after six months.',
     'Cubs begin to be weaned around three months of age.'
+    )
+
+PUFFERFISH_FACTS = (
+    'Puffer fish vary in size from one inch long pygmy puffer, to a two feet long freshwater giant puffer.',
+    'Scientists believe that puffer fish developed this tactic as a method of the self-defense because they are poor swimmers that cannot escape from the danger quickly.',
+    'Sharks are the only species immune to the puffer fish's toxin. They can eat puffer fish without any negative consequences',
+    'Puffer fish do not have scales. Their skin is thick and rough. Some species have spines on the skin, which offer additional protection against the predators',
     )
 
 PORCUPINE_FACTS = (
