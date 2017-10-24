@@ -2085,7 +2085,6 @@ TOUCAN_FACTS = (
     'Toucans are the mascot of the Brazilian Social Democracy Party; its party members are called tucanos for this reason.',
     'Toucans are highly social and most species occur in groups of up to 20 or more birds for most of the time. ',
     'The toco toucan is the largest species of toucan.',
-    ,
     )	
 
 TURTLE_FACTS = (
