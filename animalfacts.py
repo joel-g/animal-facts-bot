@@ -1361,6 +1361,8 @@ LLAMA_FACTS = (
     'A group of llamas is called a herd.',
     'Llamas don\'t bite. They spit when they\'re agitated, but that\'s mostly at each other.',
     'Yarn made from llama fiber is soft and lightweight, yet remarkably warm.',
+    'The Llamas scientific name is \"Lama Glama\".', 
+    'Llamas spit when annoyed.',
     )
 
 MONKEY_FACTS = (
