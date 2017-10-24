@@ -95,7 +95,7 @@ def check_messages(reddit):
                         print('     Explained why I cant do cat or dog facts\n')
                         record_already_replied(file_obj_r, comment)
                     elif 'silly' in comment_body:
-                        comment.reply('I am programmed to be silly!')
+                        comment.reply('I am programmed to be silly!!!')
                         print('     Explained why I am silly\n')
                         record_already_replied(file_obj_r, comment)
                     elif 'hate' in comment_body:
