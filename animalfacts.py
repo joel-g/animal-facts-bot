@@ -458,6 +458,14 @@ ANTELOPE_FACTS = (
     'Depending on the species, 4-9 months after mating season, baby antelope will be born. Baby antelope is an easy target and mother keeps it on the secret location until it becomes stronger.',
     'Some antelope are famous for their massive herds, like the thousands of wildebeests making their annual migration across the African plains.',
     )
+	
+ATLANTIC_PUFFIN_FACTS = (
+    'The Atlantic Puffin is the only puffin native to the Atlantic Ocean.',
+    'The Atlantic Puffin breeds in Iceland, Norway, Greenland, Newfoundland and many North Atlantic islands, and as far south as Maine in the west and the British Isles in the east.',
+    'There are considered to be three subspecies of Atlantic puffin: Fratercula arctica arctica, Fratercula arctica grabae, Fratercula arctica naumanni.',
+    'Like many seabirds, the Atlantic puffin spends most of the year far from land in the open ocean and only visits coastal areas to breed.',
+)
+
 AXOLOTL_FACTS = (
     'Wild Axolotls are normally brown or black, not white.',
     'In the wild, Axolotls can only be found in the lakes and canals of Xochimilco, Mexico.',
@@ -467,13 +475,7 @@ AXOLOTL_FACTS = (
     'Because of their extraordinary regenerative ability, Axolotls are the subject of biological and medical research.',
     'Axolotls exhibit neoteny, meaning they reach maturity without going through metamorphosis.',
     'The feather-like branches that grow on their heads are actually their gills .',
-	
-ATLANTIC_PUFFIN_FACTS = (
-    'The Atlantic Puffin is the only puffin native to the Atlantic Ocean.',
-    'The Atlantic Puffin breeds in Iceland, Norway, Greenland, Newfoundland and many North Atlantic islands, and as far south as Maine in the west and the British Isles in the east.',
-    'There are considered to be three subspecies of Atlantic puffin: Fratercula arctica arctica, Fratercula arctica grabae, Fratercula arctica naumanni.',
-    'Like many seabirds, the Atlantic puffin spends most of the year far from land in the open ocean and only visits coastal areas to breed.',
-)
+    )
 
 BADGER_FACTS = (
     'Badgers are part of the family Mustelidae this is the same family as otters, ferret, polecats, weasels and wolverines.',
