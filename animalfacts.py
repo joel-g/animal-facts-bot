@@ -459,6 +459,23 @@ ANTELOPE_FACTS = (
     'Some antelope are famous for their massive herds, like the thousands of wildebeests making their annual migration across the African plains.',
     )
 
+ARMADILLO_FACTS = (
+	'The average lifespan of an armadillo in the wild is 7-10 years.'
+	'All 20 species of armadillos are found in the western hemisphere.'
+	'Armadillos originated in South America.'
+	'The only species of armadillo that has made it into the United States is the nine-banded species, which inhabits Texas and the Gulf Coast states and can be found as far north as Missouri.'
+	'An armadillo burrow is about 7-8" wide and up to 15 feet deep.'
+	'Armadillos are mainly insectivores, with over 90% of their diet consisting of animal matter, like insects and other invertebrates.'
+	'Armadillos are known to eat the occasional reptile or amphibian - especially in colder weather.'
+	'Armadillos have the ability to carry the bacterium that causes leprosy in humans (Mycobacterium leprae).'
+	'"Armadillo" is Spanish for "little armored one".'
+	'Armadillos are the only mammals whose body is covered with hard shell.'
+	'Only three-banded armadillo can curl into the ball to protect itself from predators. Other armadillos run or dig a hole when they need to escape from predators.'
+	'Nine-banded armadillos always give birth to four identical young — the only mammal known to do so.'
+	'Armadillos can hold their breath for 4-6 minutes at a time.'
+	'Because their heavy shell makes it hard for them to float, armadillos gulp air into their intestines to make them more buoyant.'
+)
+
 ATLANTIC_PUFFIN_FACTS = (
     'The Atlantic Puffin is the only puffin native to the Atlantic Ocean.',
     'The Atlantic Puffin breeds in Iceland, Norway, Greenland, Newfoundland and many North Atlantic islands, and as far south as Maine in the west and the British Isles in the east.',
