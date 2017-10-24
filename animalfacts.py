@@ -915,6 +915,15 @@ FOX_FACTS = (
     "The tip of a red fox’s tail is white, whereas swift foxes have a black-tipped tail",
     "Foxes have excellent hearing. Red foxes can reportedly hear a watch ticking 40 yards away!",
     'Foxes stink, their funny ‘musky’ smell comes from scent glands at the base of their tail',
+    "Foxes have whiskers on their legs and face, which help them to navigate",
+    "Foxes are one of the most well known wild animals in the UK, they are native to Britain",
+    "Foxes use 28 different types of calls to communicate with each other",
+    "A fox can run 30 miles per hour",
+    "Foxes are usually monogamous",
+    "Foxes have excellent hearing. They can hear low-frequency sounds and rodents digging underground",
+    "The fox does not chew its food.  Instead it uses its carnassial or shearing teeth to cut the meat into manageable chunks",
+    "There are 21 species of fox",
+    "Foxes have a lifespan of 2 to 5 years but some have lived to be 14 years old in captivity.",
     )
 
 FROG_FACTS = (
