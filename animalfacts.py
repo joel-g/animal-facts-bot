@@ -458,7 +458,16 @@ ANTELOPE_FACTS = (
     'Depending on the species, 4-9 months after mating season, baby antelope will be born. Baby antelope is an easy target and mother keeps it on the secret location until it becomes stronger.',
     'Some antelope are famous for their massive herds, like the thousands of wildebeests making their annual migration across the African plains.',
     )
-
+AXOLOTL_FACTS = (
+    'Wild Axolotls are normally brown or black, not white.',
+    'In the wild, Axolotls can only be found in the lakes and canals of Xochimilco, Mexico.',
+    'Axolotls are endangered.',
+    'Its name is based off of Xolotl, a dog-headed god from Aztec mythology.',
+    'Axolotls have the ability to not only regenerate limbs like some other amphibians but they can also rebuild their spine and even their brain.',
+    'Because of their extraordinary regenerative ability, Axolotls are the subject of biological and medical research.',
+    'Axolotls exhibit neoteny, meaning they reach maturity without going through metamorphosis.',
+    'The feather-like branches that grow on their heads are actually their gills .',
+	
 ATLANTIC_PUFFIN_FACTS = (
     'The Atlantic Puffin is the only puffin native to the Atlantic Ocean.',
     'The Atlantic Puffin breeds in Iceland, Norway, Greenland, Newfoundland and many North Atlantic islands, and as far south as Maine in the west and the British Isles in the east.',
@@ -2215,6 +2224,7 @@ ALL_FACTS = (
     ANT_FACTS,
     ANTEATER_FACTS,
     ANTELOPE_FACTS,
+    AXOLOTL_FACTS,
     BADGER_FACTS,
     BEAR_FACTS,
     BEAVER_FACTS,
