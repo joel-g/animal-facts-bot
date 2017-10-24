@@ -237,6 +237,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
     botengine('cuttlefish', '\scuttlefish(es)?\s', reddit, CUTTLEFISH_FACTS, comment)
+    botengine('deer,' '\deer?\s', reddit, DEER_FACTS, comment)
     botengine('dingo', '\sdingos?\s', reddit, DINGO_FACTS, comment)
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
     # botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)   Disabled because this was only a temp feature during Game of Thrones season. Dragons aren't real.
@@ -739,6 +740,22 @@ CUTTLEFISH_FACTS = (
     "The largest cuttlefish is the Australian giant cuttlefish, which is the size and shape of an American football.",
     "Cuttlefish have W shaped eyelids so they can see in front of them and behind them at the same time.",
     )
+
+DEER_FACTS = (
+    'Deer belongs to the cervidae family.'
+    'Deer constitute the second most diverse family after bovids.'
+    'All male deer except the Chinese water deer possess antlerts.'
+    'Deer species range from very large to very small. The smallest deer is the Southern pudu and the largest deer is the moose.'
+    'Deer can be found in many different ecosystems.'
+    'The Chinese water deer does not have any antlers. Instead, it has very long canine teeth used to attract mates with.'
+    'Deer feed primaraly on leaves.'
+    'Deer were an important source for food for early hominids.'
+    'The only known female deer that possess antlers is the reindeer.'
+    'The male deer is called a buck but some larger males are referred to as stags. A female deer is called a doe or a hind.'
+    'During the mating season the males uses their antlers to fight other males over does.'
+    'Each year, the antlers fall off and regrow. As they regrow they are covered in a furry coat called velvet.'
+    'Deer can jump up to 3 meters (10 feet).'
+)
 
 DINGO_FACTS = (
     'Dingoes actually originate from Southeast Asia, where they can still be found today.',
@@ -2232,6 +2249,7 @@ ALL_FACTS = (
     CRAB_FACTS,
     CROCODILE_FACTS,
     CUTTLEFISH_FACTS,
+    DEER_FACTS,
     DINGO_FACTS,
     DOLPHIN_FACTS,
     DUGONG_FACTS,

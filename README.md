@@ -53,6 +53,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * crab
 * crocodile
 * cuttlefish
+* deer
 * dingo
 * dolphin
 * dragon
