@@ -277,6 +277,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('lizard', '\slizards?\s', reddit, LIZARD_FACTS, comment)
     botengine('lobster', '\slobsters?\s', reddit, LOBSTER_FACTS, comment)
     botengine('llama', '\sllamas?\s', reddit, LLAMA_FACTS, comment)
+    botengine('markhor', '\smarkhors?\s', reddit, MARKHOR_FACTS, comment)
     botengine('meerkat', '\smeerkats?\s', reddit, MEERKAT_FACTS, comment)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
@@ -1327,6 +1328,21 @@ LOBSTER_FACTS = (
     'Lobsters keep growing forever. They do not get weaker or lose their ability to reproduce, and will keep on molting and growing.',
     )
 
+MARKHOR_FACTS = (
+    'The markhor is the national animal of Pakistan.',
+    'The word "markhor" means "snake" in Persian.',
+    'Markhors are diurnal, meaning they are active early in the morning and late in the afternoon.',
+    'Markhors spend most of their time on cliffs that are hard to reach for predators.',
+    'The natural enemies of markhors are snow leapords, wolves, and black bears.',
+    'Markhors have average lifespans of 10 to 13 years in the wild.',
+    'Male markhors are solitary creatures while females and offpring live in groups of up to 9 animals.',
+    'During the summer, male markhors reside in forests while females prefer rocky ridges.',
+    'The mating season of markhors takes place in the winter, where males will fight each other to establish dominance.',
+    'Markhors make alarm class that resemble the calls of common domestic goats.',
+    'The markhor is an endangered species, with only around 2000 to 4000 existing in the wild.',
+    'The markhor is mainly found in the northern areas of Pakistan, especially in the Chitral, Ghizar, and Hunza regions.',
+    )
+
 MEERKAT_FACTS = (
     'Meerkats can spot an eagle in flight more than a thousand feet away.',
     'Meerkats, or suricates, are a type of mongoose that live in the southern African plains.',
@@ -2271,6 +2287,7 @@ ALL_FACTS = (
     LIZARD_FACTS,
     LOBSTER_FACTS,
     LLAMA_FACTS,
+    MARKHOR_FACTS,
     MEERKAT_FACTS,
     MONKEY_FACTS,
     NARWHAL_FACTS,
