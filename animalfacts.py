@@ -914,7 +914,10 @@ FOX_FACTS = (
     "Foxes' pupils are vertical, similar to a cat, helping them to see well at night",
     "The tip of a red fox’s tail is white, whereas swift foxes have a black-tipped tail",
     "Foxes have excellent hearing. Red foxes can reportedly hear a watch ticking 40 yards away!",
-    'Foxes stink, their funny ‘musky’ smell comes from scent glands at the base of their tail',
+    'Foxes stink, their funny ‘musky’ smell comes from scent glands at the base of their tail',		
+    'Foxes only live up to 5 years in the wild, but up to 14 in captivity!',
+    'Foxes are legal to own in 21 states!"
+    'Adult red foxes usually live alone except during the mating season in January and February and when raising young.'
     )
 
 FROG_FACTS = (
