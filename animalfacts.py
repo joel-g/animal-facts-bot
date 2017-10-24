@@ -464,6 +464,7 @@ ATLANTIC_PUFFIN_FACTS = (
     'The Atlantic Puffin breeds in Iceland, Norway, Greenland, Newfoundland and many North Atlantic islands, and as far south as Maine in the west and the British Isles in the east.',
     'There are considered to be three subspecies of Atlantic puffin: Fratercula arctica arctica, Fratercula arctica grabae, Fratercula arctica naumanni.',
     'Like many seabirds, the Atlantic puffin spends most of the year far from land in the open ocean and only visits coastal areas to breed.',
+	'Atlantic Puffins have the same mate each year.'
 )
 
 BADGER_FACTS = (
