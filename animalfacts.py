@@ -321,6 +321,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('sunfish', '\ssunfish(es)?\s', reddit, SUNFISH_FACTS, comment)
     botengine('tardigrade', '\stardigrades?\s', reddit, TARDIGRADE_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
+	botengine('toucan', '\stoucans?\s', reddit, TOUCAN_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
     botengine('vampire bat', '\svampire bats\s', reddit, VAMPIRE_BAT_FACTS, comment)
     botengine('wallaby', '\swallab(y|ies)\s', reddit, WALLABY_FACTS, comment)
@@ -2065,6 +2066,28 @@ TIGER_FACTS = (
     'Tigers that breed with lions give birth to hybrids known as tigons and ligers.',
     )
 
+TOUCAN_FACTS = (
+    'Toucans typically lay 2–21 white eggs in their nests.',
+    'Toucans make their nests in tree hollows and holes excavated by other animals such as woodpeckers.',
+    'The toucan family has five extant genera: Aulacorhynchus, Pteroglossus, Selenidera, Andigena, and Ramphastos.',
+    'Toucan wings are small, as they are forest-dwelling birds who only need to travel short distances, and are often of about the same span as the bill-tip-to-tail-tip measurements of the bird.',
+    'Both sexes of toucans use their bills to catch tasty morsels and pitch them to one another during a mating ritual fruit toss.',
+    'While the beak of a toucan may deter predators due to its size, it is of little use in combat, due to it being a honeycomb of bone that actually contains a lot of air.',
+    'Toucans use their beaks to reach fruit on branches that are too small to support their weight, and also to skin their pickings.',
+    ' In addition to fruit, toucans eat insects and, sometimes, young birds, eggs, or lizards.',
+    'Toucans live in small flocks of about six birds.',
+    'Young toucans do not have a large bill at birth—it grows as they develop and does not become full size for several months.',
+    'Researchers have discovered that the large bill of the toucan is a highly efficient thermoregulation system.',
+    'The tongue of a toucan is long (up to 14–15 cm, or 6 inches), narrow, grey, and singularly frayed on each side, adding to its sensitivity as an organ of taste.',
+    'Toucans are native to the Neotropics, from Southern Mexico, through Central America, into South America south to northern Argentina.',
+    'Toucans are, due to their unique appearance, among the most popular and well known birds in the world.',
+    'The constellation Tucana, containing most of the Small Magellanic Cloud, is named after the toucan.',
+    'Toucans are the mascot of the Brazilian Social Democracy Party; its party members are called tucanos for this reason.',
+    'Toucans are highly social and most species occur in groups of up to 20 or more birds for most of the time. ',
+    'The toco toucan is the largest species of toucan.',
+    ,
+    )	
+
 TURTLE_FACTS = (
     'Turtles have a hard shell that protects them like a shield, this upper shell is called a ‘carapace’.',
     'Turtles also have a lower shell called a ‘plastron’.',
@@ -2315,6 +2338,7 @@ ALL_FACTS = (
     TARDIGRADE_FACTS,
     TARANTULA_FACTS,
     TIGER_FACTS,
+	TOUCAN_FACTS,
     TURTLE_FACTS,
     VAMPIRE_BAT_FACTS,
     WALLABY_FACTS,
