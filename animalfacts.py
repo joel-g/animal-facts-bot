@@ -84,7 +84,7 @@ def check_messages(reddit):
                             "It sounds like you called me the 'best bot'. That's awesome!")
                         print('     Replied to a "best bot"\n')
                         record_already_replied(file_obj_r, comment)
-                    elif re.search('(fuck)|(bitch)|(shit)', comment_body):
+                    elif re.search('(fuck)|(bitch)|(shit)|(ass)', comment_body):
                         comment.reply(
                             "https://www.youtube.com/watch?v=hpigjnKl7nI")
                         print('     WATCH YO PROFANITY\n')
