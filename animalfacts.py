@@ -2090,6 +2090,7 @@ VAMPIRE_BAT_FACTS = (
   'Vampire bats can live for up to 12 years in the wild, although captive individuals have been known to reach the age of 19.',
   'Young vampire bats feed on milk from the mother, not on blood. They cling tightly to their mothers, even in flight, until they are weaned at about 3 – 4 months.',
   'Vampire bats are not seasonal breeders and can mate all year round. They are pregnant for 3 – 4 months, which is a long gestation period compared to other small bats. The female gives birth to a single baby.',
+  'Vampire bat's saliva can be used to prevent blood from clotting.',	
   )
 
 WALLABY_FACTS = (
