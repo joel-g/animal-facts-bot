@@ -693,6 +693,7 @@ COW_FACTS = (
     'Cows have a single stomach, but four different digestive compartments.',
     'Cows are pregnant for 9 months just like people',
     'A dairy cow can produce 125 lbs. of saliva a day',
+    'If you took all the cows in the world and rounded them up into a sphere, that sphere would be nearly 1,200 meters wide!',
     )
 
 CRAB_FACTS = (
