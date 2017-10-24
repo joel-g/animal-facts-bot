@@ -220,6 +220,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('anteater', '\santeaters?\s', reddit, ANTEATER_FACTS, comment)
     botengine('antelope', '\santelopes?\s', reddit, ANTELOPE_FACTS, comment)
 #     botengine('antlantic puffin', '\santlantic puffins?\s', reddit, ANTLANTIC_PUFFIN_FACTS, comment) un comment this when more puffin facts have been added
+    botengine('armadillo', '\sarmadillos?\s', reddit, ARMADILLO_FACTS, comment)
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('bear', '\sbears?\s', reddit, BEAR_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
@@ -465,6 +466,23 @@ ATLANTIC_PUFFIN_FACTS = (
     'The Atlantic Puffin breeds in Iceland, Norway, Greenland, Newfoundland and many North Atlantic islands, and as far south as Maine in the west and the British Isles in the east.',
     'There are considered to be three subspecies of Atlantic puffin: Fratercula arctica arctica, Fratercula arctica grabae, Fratercula arctica naumanni.',
     'Like many seabirds, the Atlantic puffin spends most of the year far from land in the open ocean and only visits coastal areas to breed.',
+)
+
+ARMADILLO_FACTS = (
+    'Armadillos belongs to the Dasypodidae family.'
+    'Armadillos are covered with natural armor.'
+    'There are 21 species of armadillo.'
+    'The smallest armadillo is the pink fairy armadillo. The largest armadillo is the giant armadillo.'
+    'The armor on the armadillo is made up of overlapping plates. The armor covers the back, head legs and the tail.'
+    'Armadillos are small to medium-sized mammals.'
+    'The three-banded armadillo, can roll itself into a hard armored ball.'
+    'Armadillos have poor eyesight, so they hunt with their highly developed sense of smell.'
+    'Armadillos have wiry hairs along their sides and belly, wich they use to feel their way around.'
+    'Armadillos have harp claws and strong legs for digging.'
+    'Armadillos are picky about where they live based on the type of soil is found in the area. Armadillos usually prefer sandy or loam soils that are loose and porous.'
+    'Armadillos are omnivores, wich means that they eat both meat and plants.'
+    'Armadillos use their long, sticky tounge to catch ants, termites, beetles and other insects after digging them out of the ground.'
+    'The nine-banded armadillo is the official stat animal of Texas.'
 )
 
 BADGER_FACTS = (
@@ -2232,6 +2250,7 @@ ALL_FACTS = (
     ANT_FACTS,
     ANTEATER_FACTS,
     ANTELOPE_FACTS,
+    ARMADILLO_FACTS,
     BADGER_FACTS,
     BEAR_FACTS,
     BEAVER_FACTS,
