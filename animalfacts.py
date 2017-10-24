@@ -224,6 +224,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('bear', '\sbears?\s', reddit, BEAR_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
     botengine('buffalo', '\sbuffalos?\s', reddit, BUFFALO_FACTS, comment)
+    botengine('bobcat','\sbobcats?\s',reddit, BOBCAT_FACTS,comment)
     botengine('bison', '\sbisons?\s', reddit, BISON_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
     botengine('capybara', '\scapybaras?\s', reddit, CAPYBARA_FACTS, comment)
@@ -536,6 +537,17 @@ BISON_FACTS=(
     'When bison are born, their fur is orange-red. After a few months, their fur steadily grows more brown.'
     )
 
+BOBCAT_FACTS = (
+    'An adult bobcat’s tail averages just 6 to 7 inches in length.',
+    'The word bobcat a reference to their tail. In barbershop lingo, hair that’s been cut short is sometimes called “bobbed.”',
+    'Wild bobcats do the majority of their hunting in low-light conditions.',
+    'Although adult bobcats only weigh 33 pounds, they can hunt and kill adult white tailed deer which can weigh 250 pounds.',
+    'Bobcats lay claim to an area of land that can be anywhere from 1 to 18 square miles in size.',
+    'Bobcats can’t always consume their victims in one sitting. Sometimes, they use dirt, snow, leaves, or grass to bury the uneaten pieces of especially large corpses, and will return periodically to dig up their leftovers.',
+    'The scientfic name for the bobcat is "Lynx rufus".',
+    'Wild bobcats have an average life span of 10 to 12 years'
+)
+    
 BUFFALO_FACTS = (
     'Buffalo are the largest animals found in north America and can grow to 6-7 feet long, weighing up to 2,000lbs. True buffalo only live in Asia and Africa.',
     'Buffalo are large members of the Bovidae family. There are two types of buffalo: the African or Cape buffalo and the Asian water buffalo. They are dark gray or black animals that look a lot like bulls. They are often confused with bison',
