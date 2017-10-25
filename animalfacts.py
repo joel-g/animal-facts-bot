@@ -325,6 +325,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('sunfish', '\ssunfish(es)?\s', reddit, SUNFISH_FACTS, comment)
     botengine('tardigrade', '\stardigrades?\s', reddit, TARDIGRADE_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
+    botengine('toucan', '\stoucans?\s', reddit, TOUCAN_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
     botengine('vampire bat', '\svampire ?bats\s', reddit, VAMPIRE_BAT_FACTS, comment)
     botengine('wallaby', '\swallab(y|ies)\s', reddit, WALLABY_FACTS, comment)
@@ -2156,6 +2157,21 @@ TIGER_FACTS = (
     'There are more tigers held privately as pets than there are in the wild.',
     'Tigers that breed with lions give birth to hybrids known as tigons and ligers.',
     )
+
+TOUCAN_FACTS = (
+    'The average life span of toucans in the wild is up to 20 years.',
+    "The toucan's beak is serrated like a knife, to tear apart its food.",
+    "The toro toucan's bill is a third of the bird's length.",
+    'Toucan bills are strong but light.',
+    'Toucans are found in the wild only in the Americas.',
+    'A toucan bill exterior is made of keratin; the interior, bone.',
+    'Toucans regulate body temperature by adjusting the flow of blood to their beak.',
+    'Toucans are extremely noisy birds, which makes them obvious targets for their predators.',
+    "Toucans' enormous bill is useless in defending against predators and, in fact, attracts humans to catch them for the pet trade.",
+    'One special adaptation that toucans have in the wild is deafening each other while they are in small flocks. For instance, when they see a bird of prey, "they gather about it in a jeering band"',
+    'In addition to fruit, Toco toucans eat insects and, sometimes, young birds, eggs, or lizards.',
+    'The color of the toucan bill may be black, blue, brown, green, red, white, yellow or a combination of colors.',
+)
 
 TURTLE_FACTS = (
     'Turtles have a hard shell that protects them like a shield, this upper shell is called a ‘carapace’.',
