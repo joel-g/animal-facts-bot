@@ -327,6 +327,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('walrus', '\swalrus\s', reddit, WALRUS_FACTS, comment)
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
     botengine('wolf', '\swol(f|ves)\s', reddit, WOLF_FACTS, comment)
+    botengine('wolverine', '\swolverines?\s', reddit, WOLVERINE_FACTS, comment)
     botengine('yak', '\syaks?\s', reddit, YAK_FACTS, comment)
     botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS, comment)
 
@@ -2173,8 +2174,24 @@ WOLF_FACTS = (
     'A wolf can run at a speed of 40 miles per hour during a chase. Wolves have long legs and spend most of their time trotting at a speed of 7-10 miles per hour. They can keep up a reasonable pace for hours and have been known to cover distances of 55 miles in one night.',
     )
 
+WOLVERINE_FACTS = (
+    'A Wolverine is a mammal which resembles a small bear, but it is actually the largest member of the weasel family.',
+    'Wolverines live in the arctic and subarctic areas of North America, Canada, North Europe, Russia and Siberia.',
+    'Wolverines are nocturnal animals, which travel 15 to 20 miles each day in the search for food. They can pass even more (between 37 to 50 miles) when food sources are scarce.',
+    'Wolverines are omnivores. They eat rabbits, mice, porcupines, squirrels, and they also hunt injured deer and caribou. During summer months they expand their diet to feed on berries and roots.',
+    'Wolverines feed on leftovers of dead animals. Due to their excellent sense of smell, they can detect carrion (decaying flesh of dead animals) hidden under 20 feet of snow. Wolverines will also dig snow if they sense the smell of the hibernating mammal.',
+    'Wolverines are territorial animals who demand a lot of open space to roam. Males use a scent gland to mark the boundaries of his territory. Since they are polygamous, males will normally share their territory with multiple females.',
+    'Since the substance secreted by a their anal gland has a very strong and unpleasant smell, wolverines are also known as "skunk bears".',
+    'Female Wolverines give birth to two to three babies each year, usually in the late winter or early spring. Young wolverines (kits) are born in an underground den.',
+    'Young wolverines stay with their mother until they reach the age of two years. At that time wolverines become sexually mature.',
+    'The average lifespan of a wolverine in the wild is between 7 and 12 years.',
+    'Wolverines sport heavy, attractive fur that once made them a prime trappers target in North America. Their fur was used to line parkas, though this practice is far less common today and the animals are protected in many areas.',
+    'A wolverine can grow up to 42 inches (107 centimeters) long, though 32 to 34 inches (81 to 86 centimeters) is the more common length. It can also weigh up to 70 pounds (32 kilograms), with males being almost twice as heavy as females. Of all the mustelids, only the sea otter and the giant otter are larger.',
+    'Wolverines are among the few animals that consume the bones of other animals, even the teeth. Because of this, wolverines have been likened to hyenas.',
+    'Wolverines sleep, hunt and give birth on the ground. However, they can climb trees just like some bears. They can do this because of their long, sharp hook-like claws, which they also use to climb sheer cliffs, icefalls and snowy peaks.',
+)
+	
 YAK_FACTS = (
-
   'The yak is a long-haired bovid found throughout the Himalaya region of southern Central Asia, the Tibetan Plateau and as far north as Mongolia and Russia.',
   'Most yaks are domesticated animals, though there is also a small, vulnerable wild yak population.',
   'Bos mutus is the scientific name for the wild yak and Bos grunniens for domesticated yak.',
@@ -2297,7 +2314,7 @@ ALL_FACTS = (
     RABBIT_FACTS,
     RACCOON_FACTS,
     RAVEN_FACTS,
-  	SALMON_FACTS,
+    SALMON_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,
     SEA_CUCUMBER_FACTS,
@@ -2321,6 +2338,7 @@ ALL_FACTS = (
     WALRUS_FACTS,
     WHALE_FACTS,
     WOLF_FACTS,
+    WOLVERINE_FACTS,
     YAK_FACTS,
     ZEBRA_FACTS,
     )
