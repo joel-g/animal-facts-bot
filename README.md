@@ -32,6 +32,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * aardvark
 * albatross
 * alligator
+* anglerfish
 * ant
 * anteater
 * antelope
@@ -53,6 +54,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * crocodile
 * cuttlefish
 * dingo
+* dodo
 * dolphin
 * dragon
 * dugong
@@ -67,6 +69,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * fox
 * frog
 * gazelle
+* gecko
 * giraffe
 * grasshopper
 * goat
@@ -100,6 +103,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * ocelot
 * octopus
 * opossum
+* orangutan
 * oryx
 * orca
 * ostrich
@@ -117,6 +121,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * puma
 * rabbit
 * raccoon
+* rattlesnake
 * raven
 * salmon
 * scorpion
