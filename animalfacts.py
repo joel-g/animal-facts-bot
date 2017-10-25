@@ -693,6 +693,7 @@ COW_FACTS = (
     'Cows have a single stomach, but four different digestive compartments.',
     'Cows are pregnant for 9 months just like people',
     'A dairy cow can produce 125 lbs. of saliva a day',
+    'Cows move their jaws about 40,000 times a day, chewing cud or grass about 40 times a minute.',
     )
 
 CRAB_FACTS = (
