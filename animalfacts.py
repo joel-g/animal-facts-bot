@@ -47,11 +47,12 @@ def check_messages(reddit):
     for comment in reddit.inbox.comment_replies(limit=number_of_messages):
         print("Checking comment ID " + comment.id, end='\r')
         if unsubscribed_author_check(comment):
-            if not comment.subreddit.user_is_banned:
+            if not comment.subreddit.user_is_banned and not comment.submission.locked:
                 file_obj_r = open(reply_history, 'r')
                 if comment.id not in file_obj_r.read().splitlines():
                     comment_body = comment.body.lower()
                     if 'good bot' in comment_body:
+                        print (comment_body)
                         comment.reply(
                             'Thanks! You can ask me for more facts any time. Beep boop.')
                         print('     Thanked someone for "good bot"\n')
@@ -204,10 +205,17 @@ def botengine(animal, regex, reddit, facts, comment):
                     else:
                         print('     Already commented on this!\n')
 
+def check_mentions(reddit):
+    print("Checking mentions...")
+    for mention in reddit.inbox.mentions():
+        check_comment_for_animal(mention, reddit)
+
+
 def check_comment_for_animal(comment, reddit):
     botengine('aardvark', '\saardvarks?\s', reddit, AARDVARK_FACTS, comment)
     botengine('albatross', '\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
+    botengine('anglerfish', '\sanglerfish(es)?\s', reddit, ANGLERFISH_FACTS, comment)
     botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
     botengine('anteater', '\santeaters?\s', reddit, ANTEATER_FACTS, comment)
     botengine('antelope', '\santelopes?\s', reddit, ANTELOPE_FACTS, comment)
@@ -223,6 +231,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
     botengine('chinchilla', '\schinchillas?\s', reddit, CHINCHILLA_FACTS, comment)
+    botengine('cobra', '\scobras?\s', reddit, COBRA_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
@@ -296,6 +305,8 @@ def check_comment_for_animal(comment, reddit):
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
     botengine('rattlesnake', '\srattlesnakes?\s', reddit, RATTLESNAKES_FACTS, comment)
+    botengine('raven', '\sravens?\s', reddit, RAVEN_FACTS, comment)
+    botengine('salmon', '\ssalmons?\s', reddit, SALMON_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
     botengine('sea cucumber', '\ssea cucumbers?\s', reddit, SEA_CUCUMBER_FACTS, comment)
@@ -389,6 +400,19 @@ ALLIGATOR_FACTS = (
     'Alligators eat a range of different animals such as fish, birds, turtles and even deer.',
     'Alligator eggs become male or female depending on the temperature, male in warmer temperatures and female in cooler temperatures.',
     'Like crocodiles, alligators are part of the order ‘Crocodylia’.',
+    )
+
+ANGLERFISH_FACTS = (
+    'The scientific name for the Anglerfish is Lophiiformes.',
+    'An Anglerfish can weigh up to 110lbs/50kgs.',
+    'There are more than 200 species of Anglerfish',
+    'Anglerfish typically live at the bottom of the ocean, between 400 to 2,000 metres, in complete darkness.',
+    'The light in the lure comes from tiny bacteria called photoplankton',
+    'The Anglerfish lure, worn only by females, is a piece of dorsal spine that lights up in order to attract prey.',
+    'The mouth of an Anglerfish is so big, and its body is so pliable, that it can swallow prey up to twice its size.',
+    'Male Anglerfish are significantly smaller than their female counterparts, and when a male encounters a female, it latches on onto her with his sharp teeth. Eventually, the male physically fuses with the female.',
+    'When a male Anglerfish has fused to a female, it loses all its organs apart from its testes.',
+    'A female Anglerfish will carry six or more males on her body.',
     )
 
 ANT_FACTS = (
@@ -620,6 +644,25 @@ CHINCHILLA_FACTS = (
    'Chinchillas are omnivores; they eat both plants and meat. Primarily, they eat grass and seeds, but they also eat insects and bird eggs when they get the chance. To eat, they hold their food in their front paws and nibble on it.',
    'Though chinchilla fur is highly valued for use in clothing and coats, the Convention on International Trade in Endangered Species has restricted the sale and trade of wild chinchillas since 1975. Many chinchillas are bred commercially for their fur.',
    'Chinchillas are native to Chile and Peru. In the wild they live in groups and make their home in burrows and natural outcroppings and crevices.')
+
+COBRA_FACTS = (
+    'Cobras are classified in the phylum Chordata, subphylum Vertebrata, class Reptilia, order Squamata and family Elapidae.',
+    'Genetically, true cobras are members of the genus Naja, but according to Viernum, often the name cobra references several species of snakes, most of which are in the venomous snake family Elapidae.',
+    'Cobras are large snakes and many species reach more than 6 feet long (2 meters).',
+    'The most well-known distinctive physical characteristic of cobras is their hood.',
+    'There are 270 different types of Cobras and their relatives, including Taipans, Adders, Mambas, Kraits, and they all have short fangs and are all extremely poisonous.',
+    'Cobras live in hot tropical areas in Africa, Australia, and Southern Asia and their relatives, the Coral Snake, can be found in the United States.',
+    'Cobras are cannibals, which means that they will eat other snakes as well as birds, bird eggs and small mammals. Kraits feed almost totally on other snakes.',
+    'Despite that common name, king cobras are not classified as true cobras, which belong to the genus "Naja".',
+    'Cobras have potent neurotoxic venom, which acts on the nervous system.',
+    'Some cobras, including all spitting cobras, have cytotoxic venom that attacks body tissue and causes severe pain, swelling and possible necrosis (death of cells and tissue).',
+    'The origin of the genus name of Cobras, "Naja" is from the Sanskrit "nāga" (with a hard "g") meaning "snake".',
+    'Naja is a genus of venomous elapid snakes known as cobras.',
+    'Spitting cobras have a specialized venom delivery mechanism, in which their front fangs, instead of releasing venom through the tips, have a rifled opening in the front surface which allows the snake to propel the venom out of the mouth.',
+    'The Caspian cobra (N. oxiana) of Central Asia is the most venomous Naja species.',
+    'Cobras are a medically important group of snakes due to the number of bites and fatalities they cause across their geographical range.',
+    'Cobras belong to the family Elapidae, a type of poisonous snake with hollow fangs fixed to the top jaw at the front of the mouth.',
+    )
 
 COUGAR_FACTS = (
     'The cougar, also known as puma, mountain lion, mountain cat, catamount or panther, depending on the region, holds the Guinness record for the animal with the highest number of names. It has over 40 names in English alone.',
@@ -1750,6 +1793,30 @@ RATTLESNAKES_FACTS = (
     'Rattlesnakes have a lot of enemies, from large birds like falcons and crows to larger mammals like raccoons and opossums. One of a rattlesnake’s biggest threats is actually another snake — the kingsnake, which is a constrictor.',
     'Rattlesnakes are able to consume animals much larger than themselves. They are able to greatly expand their jaws and skin to fit small rodents and birds into their bodies. '
 )
+
+RAVEN_FACTS = (
+	'Ravens are larger, about the size of a red-tailed hawk. Crows are similar in size to a dove.',
+	'Ravens have longer middle tail feathers. When extended for flight the tail feathers appear to be wedge-shaped. A crow’s tail feathers are all the same length. Thus when spread open, the crow’s tail feathers appear fan-shaped.',
+	'Ravens have larger, thicker, curved beaks, which are stronger than crows’ beaks.',
+	'Ravens are often seen alone or in pairs, while crows often fly and feed in a group, referred to as a murder.',
+	'Unlike crows with their distinctive cawing sound, the raven’s call is a deep, croaking sound.',
+	'The raven’s lifespan is between 25 and 30 years, but they have been known to live up to 45 years. Crows usually live to 8 years, but can live longer when raised in captivity.',
+	'The raven is the largest bird of the crow family: it is twice heavier than a common crow at 1.3 kg (3 pounds), being 60 cm (two feet) long, with a wingspan of almost 1 m (3.3 ft). Ravens can live 40 years in the wild and 70 in captivity.',
+	'Ravens can soar high above the trees, unlike crows, which rely on active flight. Ravens are capable of aerial stunts similar to those executed by the birds of prey.',
+	'Like in many other birds, when a raven is on a branch, the feet\'s muscles and tendons constrict automatically the toes, so that the birds waste little energy on this.',
+	'Ravens live from deserts to coniferous forests and coastal cliffs. In forests, they nest in stick-made nests on trees, on deserts in rock cavities.',
+    'Common Ravens can mimic the calls of other bird species. When raised in captivity, they can even imitate human words; one Common Raven raised from birth was taught to mimic the word “nevermore.”',
+    'The oldest known wild Common Raven was at least 22 years, 7 months old. It was banded and found in Nova Scotia.'
+	)
+
+SALMON_FACTS = (
+	'Salmon tend to be anadromous, which means they hatch in fresh water, migrate to the ocean, and return to fresh water to reproduce, however this is not always the case.',
+	'The majority of Salmon worldwide is farmed, a process known as aquaculture.',
+	'Salmon flesh is orange due to organic pigments in their diet of krill and shellfish. Farmed salmon are fed fishmeal and wheat, which results in white flesh. Since consumers were reluctant to purchace white salmon, the pigments are added to their feed.',
+	'Salmon have an average of 2500 eggs, but can have up to 7000.',
+	'Salmon can travel up to 3500 miles to spawn.'
+	)
+
 SCORPION_FACTS = (
     'Scorpions are predatory animals of the class Arachnida, making them cousins to spiders, mites and ticks.',
     'Scorpions have eight legs, a pair of pincers (pedipalps) and a narrow segmented tail that often curves over their back, on the end of which is a venomous stinger.',
@@ -2195,6 +2262,7 @@ ALL_FACTS = (
     ALBATROSS_FACTS,
     ALLIGATOR_FACTS,
     ATLANTIC_PUFFIN_FACTS,
+    ANGLERFISH_FACTS,
     ANT_FACTS,
     ANTEATER_FACTS,
     ANTELOPE_FACTS,
@@ -2209,6 +2277,7 @@ ALL_FACTS = (
     CHEETAH_FACTS,
     CHIPMUNK_FACTS,
     CHINCHILLA_FACTS,
+    COBRA_FACTS,
     COW_FACTS,
     COUGAR_FACTS,
     CRAB_FACTS,
@@ -2281,6 +2350,8 @@ ALL_FACTS = (
     RABBIT_FACTS,
     RACCOON_FACTS,
     RATTLESNAKES_FACTS,
+    RAVEN_FACTS,
+  	SALMON_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,
     SEA_CUCUMBER_FACTS,
