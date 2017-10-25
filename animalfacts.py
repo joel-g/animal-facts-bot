@@ -1950,6 +1950,8 @@ STARFISH_FACTS = (
     'Starfish can eat inside out.',
     'Starfish can move using their tube feet',
     'Starfish have eyes.',
+    'Starfishs life spand is on average,35',
+    'Starfish are not really fuish but they’re actually related to sand dollars and sea urchins.',
     )
 
 SUNFISH_FACTS = (
@@ -2171,6 +2173,7 @@ WOLF_FACTS = (
     'When the pack kills an animal, the alpha pair always eats first. As food supply is often irregular for wolves, they will eat up to 1/5th of their own body weight at a time to make up for days of missed food.',
     'Wolves have two layers of fur, an undercoat and a top coat, which allow them to survive in temperatures as low at minus 40 degrees fahrenheit! In warmer weather they flatten their fur to keep cool.',
     'A wolf can run at a speed of 40 miles per hour during a chase. Wolves have long legs and spend most of their time trotting at a speed of 7-10 miles per hour. They can keep up a reasonable pace for hours and have been known to cover distances of 55 miles in one night.',
+	'There is not such thing as an alpha wolf'
     )
 
 YAK_FACTS = (
@@ -2203,7 +2206,8 @@ ZEBRA_FACTS = (
     'The ears of a zebra show its mood.',
     'A zebra named Marty starred in the 2005 animated film Madagascar.',
     'Zebras are very fast animals, and can gallop at speeds of up to 65 km/h. This is fast enough to outrun many predators.',
-    'Zebra foals can run within a few hours of birth.'
+    'Zebra foals can run within a few hours of birth.',
+    'Zebra are black with white strips.'
 )
 
 ALL_FACTS = (
