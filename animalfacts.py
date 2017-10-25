@@ -1228,6 +1228,7 @@ KOALA_FACTS = (
     'Koala fossils found in Australia have been dated as long ago as 20 million years.',
     'Koalas eat eucalyptus leaves and almost nothing else.',
     'The brain size of modern koalas has reduced substantially from their ancestors, possibly as an adaptation to the low energy they get from their diets.',
+    'The koala has the smallest brain to body mass ratio of all the mammals.',
     'The closest living relative of the koala is the wombat.',
     'Koalas have sharp claws which help them climb trees.',
     'Koalas have similar fingerprints to humans.',
