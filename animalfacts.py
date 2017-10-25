@@ -47,11 +47,12 @@ def check_messages(reddit):
     for comment in reddit.inbox.comment_replies(limit=number_of_messages):
         print("Checking comment ID " + comment.id, end='\r')
         if unsubscribed_author_check(comment):
-            if not comment.subreddit.user_is_banned:
+            if not comment.subreddit.user_is_banned and not comment.submission.locked:
                 file_obj_r = open(reply_history, 'r')
                 if comment.id not in file_obj_r.read().splitlines():
                     comment_body = comment.body.lower()
                     if 'good bot' in comment_body:
+                        print (comment_body)
                         comment.reply(
                             'Thanks! You can ask me for more facts any time. Beep boop.')
                         print('     Thanked someone for "good bot"\n')
@@ -204,10 +205,17 @@ def botengine(animal, regex, reddit, facts, comment):
                     else:
                         print('     Already commented on this!\n')
 
+def check_mentions(reddit):
+    print("Checking mentions...")
+    for mention in reddit.inbox.mentions():
+        check_comment_for_animal(mention, reddit)
+
+
 def check_comment_for_animal(comment, reddit):
     botengine('aardvark', '\saardvarks?\s', reddit, AARDVARK_FACTS, comment)
     botengine('albatross', '\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
+    botengine('anglerfish', '\sanglerfish(es)?\s', reddit, ANGLERFISH_FACTS, comment)
     botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
     botengine('anteater', '\santeaters?\s', reddit, ANTEATER_FACTS, comment)
     botengine('antelope', '\santelopes?\s', reddit, ANTELOPE_FACTS, comment)
@@ -223,6 +231,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
     botengine('chinchilla', '\schinchillas?\s', reddit, CHINCHILLA_FACTS, comment)
+    botengine('cobra', '\scobras?\s', reddit, COBRA_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
@@ -243,6 +252,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('fox', '\sfox(es)?\s', reddit, FOX_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
     botengine('gazelle', '\sgazelles?\s', reddit, GAZELLE_FACTS, comment)
+    botengine('gecko', '\sgeckos?\s', reddit, GECKO_FACTS, comment)
     botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
     botengine('grasshopper', '\sgrasshoppers?\s', reddit, GRASSHOPPER_FACTS, comment)
     botengine('goat', '\sgoats?\s', reddit, GOAT_FACTS, comment)
@@ -275,6 +285,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('newt', '\snewts?\s', reddit, NEWT_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
     botengine('opossum', '\sopossums?\s', reddit, OPOSSUM_FACTS, comment)
+    botengine('orangutan', '\sorangutans?\s', reddit, ORANGUTAN_FACTS, comment)
     botengine('oryx', '\soryx(es)?\s', reddit, ORYX_FACTS, comment)
     botengine('octopus', '\socto(pus|puses|pusses|pi)\s', reddit, OCTOPUS_FACTS, comment)
     botengine('orca', '\sorcas?\s', reddit, ORCA_FACTS, comment)
@@ -295,6 +306,8 @@ def check_comment_for_animal(comment, reddit):
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
     botengine('rattlesnake', '\srattlesnakes?\s', reddit, RATTLESNAKE_FACTS, comment)
+    botengine('raven', '\sravens?\s', reddit, RAVEN_FACTS, comment)
+    botengine('salmon', '\ssalmons?\s', reddit, SALMON_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
     botengine('sea cucumber', '\ssea cucumbers?\s', reddit, SEA_CUCUMBER_FACTS, comment)
@@ -388,6 +401,19 @@ ALLIGATOR_FACTS = (
     'Alligators eat a range of different animals such as fish, birds, turtles and even deer.',
     'Alligator eggs become male or female depending on the temperature, male in warmer temperatures and female in cooler temperatures.',
     'Like crocodiles, alligators are part of the order ‘Crocodylia’.',
+    )
+
+ANGLERFISH_FACTS = (
+    'The scientific name for the Anglerfish is Lophiiformes.',
+    'An Anglerfish can weigh up to 110lbs/50kgs.',
+    'There are more than 200 species of Anglerfish',
+    'Anglerfish typically live at the bottom of the ocean, between 400 to 2,000 metres, in complete darkness.',
+    'The light in the lure comes from tiny bacteria called photoplankton',
+    'The Anglerfish lure, worn only by females, is a piece of dorsal spine that lights up in order to attract prey.',
+    'The mouth of an Anglerfish is so big, and its body is so pliable, that it can swallow prey up to twice its size.',
+    'Male Anglerfish are significantly smaller than their female counterparts, and when a male encounters a female, it latches on onto her with his sharp teeth. Eventually, the male physically fuses with the female.',
+    'When a male Anglerfish has fused to a female, it loses all its organs apart from its testes.',
+    'A female Anglerfish will carry six or more males on her body.',
     )
 
 ANT_FACTS = (
@@ -619,6 +645,25 @@ CHINCHILLA_FACTS = (
    'Chinchillas are omnivores; they eat both plants and meat. Primarily, they eat grass and seeds, but they also eat insects and bird eggs when they get the chance. To eat, they hold their food in their front paws and nibble on it.',
    'Though chinchilla fur is highly valued for use in clothing and coats, the Convention on International Trade in Endangered Species has restricted the sale and trade of wild chinchillas since 1975. Many chinchillas are bred commercially for their fur.',
    'Chinchillas are native to Chile and Peru. In the wild they live in groups and make their home in burrows and natural outcroppings and crevices.')
+
+COBRA_FACTS = (
+    'Cobras are classified in the phylum Chordata, subphylum Vertebrata, class Reptilia, order Squamata and family Elapidae.',
+    'Genetically, true cobras are members of the genus Naja, but according to Viernum, often the name cobra references several species of snakes, most of which are in the venomous snake family Elapidae.',
+    'Cobras are large snakes and many species reach more than 6 feet long (2 meters).',
+    'The most well-known distinctive physical characteristic of cobras is their hood.',
+    'There are 270 different types of Cobras and their relatives, including Taipans, Adders, Mambas, Kraits, and they all have short fangs and are all extremely poisonous.',
+    'Cobras live in hot tropical areas in Africa, Australia, and Southern Asia and their relatives, the Coral Snake, can be found in the United States.',
+    'Cobras are cannibals, which means that they will eat other snakes as well as birds, bird eggs and small mammals. Kraits feed almost totally on other snakes.',
+    'Despite that common name, king cobras are not classified as true cobras, which belong to the genus "Naja".',
+    'Cobras have potent neurotoxic venom, which acts on the nervous system.',
+    'Some cobras, including all spitting cobras, have cytotoxic venom that attacks body tissue and causes severe pain, swelling and possible necrosis (death of cells and tissue).',
+    'The origin of the genus name of Cobras, "Naja" is from the Sanskrit "nāga" (with a hard "g") meaning "snake".',
+    'Naja is a genus of venomous elapid snakes known as cobras.',
+    'Spitting cobras have a specialized venom delivery mechanism, in which their front fangs, instead of releasing venom through the tips, have a rifled opening in the front surface which allows the snake to propel the venom out of the mouth.',
+    'The Caspian cobra (N. oxiana) of Central Asia is the most venomous Naja species.',
+    'Cobras are a medically important group of snakes due to the number of bites and fatalities they cause across their geographical range.',
+    'Cobras belong to the family Elapidae, a type of poisonous snake with hollow fangs fixed to the top jaw at the front of the mouth.',
+    )
 
 COUGAR_FACTS = (
     'The cougar, also known as puma, mountain lion, mountain cat, catamount or panther, depending on the region, holds the Guinness record for the animal with the highest number of names. It has over 40 names in English alone.',
@@ -916,7 +961,22 @@ GAZELLE_FACTS = (
     'Gazelles generally live up to 10 to 12 years.',
     'To evade predators, gazelles may zigzag rather than running in a straight line.'
     )
-
+GECKO_FACTS = (
+    'Geckos vary in size. Smallest species of geckos, dwarf gecko, reaches ¾ inches in length. Largest species of geckos, tokay gecko, reaches 14 inches in length.',
+    'Geckos are usually brightly colored. Body coloration depends on the colors of their environment because it plays important role in the camouflage.',
+    'Geckos are nocturnal (active at night) creatures. Their eyes are adapted to a low level of light.',
+    'Due to their small size, geckos are often preyed by snakes, birds, mammals and some large spider species.',
+    'Geckos eat different types of fruit, flower nectar, insects and worms.',
+    'Gecko has a fat tail which is used as a reservoir of fats. It also help gecko to balance while it walks and climbs the trees.',
+    'Just like other lizards, gecko can throw away its tail in the case of a danger. Tailless gecko will regenerate its missing body part after short period of time.',
+    'Teflon is the only material to which gecko cannot stick (using its "suction cups") and walk without gliding.',
+    'Unlike other reptiles, geckos are able to produce various sounds which are used in communication. They produce barking, chirping or clicking noise during mating season or when defending their territory.',
+    'Geckos have long lifespan. Leopard gecko can survive more than 20 years in captivity. Other species live between 8 and 10 years.',
+    'Some species of geckos have no legs and look more like snakes.',
+    'Most species of gecko don’t have eyelids, so they lick their eyes to clean them.',
+    'Some gecko species can fly! The flying gecko, or parachute gecko, is a genus of arboreal gecko species found in Southeast Asia. While they aren’t capable of independent flight, they get their name from their ability to glide using the flaps of skin found on their feet and their flat, rudder-like tails.',
+    'The smallest gecko species is less than 2 centimeters in length.'
+)
 GIRAFFE_FACTS = (
     'A male giraffe can weigh as much as a pick up truck! That’s about 1400 kilograms.',
     'Although a giraffe’s neck is 1.5 – 1.8 meters, it contains the same number of vertebrae at a human neck.',
@@ -1435,6 +1495,24 @@ OPOSSUM_FACTS = (
     'The gestation period of an opossum is short, typically between 12 and 14 days.',
     )
 
+ORANGUTAN_FACTS = (
+    'Orangutans’ arms stretch out longer than their bodies – up to 8 ft. from fingertip to fingertip in the case of very large males.',
+    'When on the ground, orangutans walk on all fours, using their palms or fists. Unlike the African apes, orangutans are not morphologically built to be knuckle-walkers.',
+    'For the first few years of his/her life, a young orangutan holds tight to his/her mother’s body as she moves through the forest canopy.',
+    'When males are fighting, they charge each other, grapple, and bite each other’s heads and cheekpads.',
+    'Orangutans have tremendous strength, which enables them to brachiate and hang upside-down from branches for long periods of time to retrieve fruit and eat young leaves.',
+    'From the age of thirteen years (usually in captivity) past the age of thirty, males may develop flanges and large size.',
+    'Orangutans have the longest birth interval of any mammal. On average they only give birth once every 8 to 10 years.',
+    'Orangutans are very smart. They perform as well as chimpanzees and gorillas in tests of cognitive ability. In captivity, they are excellent tool-users and versatile tool-makers. One captive orangutan was taught how to chip a stone hand-axe.',
+    'Orangutans are red-haired apes that live in the tropical rainforests of Sumatra and Borneo in southeast Asia.',
+    'The orangutan is one of humankind’s closest relatives – in fact, we share nearly 97% of the same DNA!',
+    'Daytime eaters, their diet consists mostly of fruit and leaves – but they also eat nuts, bark, insects and, once in a while, bird eggs, too.',
+    'These amazing apes generally have long lives – in captivity they can live for 50-60 years, and in the wild, 30-40 years.',
+    'Orangutans live in the trees to avoid predators like tigers or leopards that hunt on the ground.',
+    'Orangutans are solitary animals. Males always live on their own while females live alone or with their offspring. Males and females spend time together only during mating season.',
+    'Orangutans are the largest arboreal mammals (animals that spend their life in the trees).'
+
+)
 ORYX_FACTS = (
     'Oryxes are species of antelope native to Africa and the Arabian Peninsula.',
     'The Arabian oryx was only saved from extinction through a captive breeding program and reintroduction to the wild.',
@@ -1732,7 +1810,43 @@ RATTLESNAKE_FACTS = (
     'The rattlesnakes hibernate through the winter and come out in the spring to eat and then mate.'
     'Rattlesnake eggs will stay inside their mother until they hatch.  Most of the time there are 8-10 babies born at once and are about 10 inches long.  Babies are born venomous but cannot rattle and are often more aggressive than the adults.'
     'Rattlesnakes can range from one to eight feet, depending on the species (the big one is the eastern diamondback), according to the National Wildlife Federation. They are thick-bodied snakes with keeled (ridged) scales in a variety of colors and patterns. Most species are patterned with dark diamonds, rhombuses or hexagons on a lighter background.'
-    )
+    'Size of rattlesnake depends on the species. Largest species can reach length of 8 feet. On average, rattlesnakes are 3 to 4 feet long.',
+    'Rattlesnakes are not very colorful because they like to camouflage with their environment. They are usually black, brown, olive or grey in color.',
+    'Rattle grows continuously. New segment is added each time snake shed its skin.',
+    'Rattling sound informs predator to stay away from the snake. When rattlesnake is surprised, it can attack without producing rattling sound.',
+    'Rattlesnakes are venomous snakes. They produce very strong hemotoxic venom (which destroys blood cells and vessels). It is used for hunting and for defense against predators. Rattlesnake bites are fatal for humans if not treated with antidote immediately.',
+    'Some snakes are immune to the poison of rattlesnakes. Thanks to that feature, king snakes are main predators of rattlesnakes.',
+    'Rattlesnakes have special kind of thermal receptors that are used for detection of warm-blooded creatures (their prey). They can also locate prey by using the tongue which collects scent molecules from the air. Also, rattlesnake senses vibration of the ground.',
+    'Optimal temperature for the survival of the rattlesnake is between 27 and 32 degrees of Celsius. They can survive freezing temperature, but temperatures above 38 degrees are fatal for them.',
+    'Rattlesnake hibernates during the cold time of the year. Usually large number of rattlesnakes gathers in the underground dens and curl around each other for the purpose of warming.',
+    'Rattlesnakes have triangular head and vertical pupils. Their name comes from a rattle at the end of the tail. Rattle is made of keratin (same substance builds nails and hair in humans).',
+    'Rattlesnakes have a lot of enemies, from large birds like falcons and crows to larger mammals like raccoons and opossums. One of a rattlesnake’s biggest threats is actually another snake — the kingsnake, which is a constrictor.',
+    'Rattlesnakes are able to consume animals much larger than themselves. They are able to greatly expand their jaws and skin to fit small rodents and birds into their bodies. ' 
+)
+
+
+RAVEN_FACTS = (
+	'Ravens are larger, about the size of a red-tailed hawk. Crows are similar in size to a dove.',
+	'Ravens have longer middle tail feathers. When extended for flight the tail feathers appear to be wedge-shaped. A crow’s tail feathers are all the same length. Thus when spread open, the crow’s tail feathers appear fan-shaped.',
+	'Ravens have larger, thicker, curved beaks, which are stronger than crows’ beaks.',
+	'Ravens are often seen alone or in pairs, while crows often fly and feed in a group, referred to as a murder.',
+	'Unlike crows with their distinctive cawing sound, the raven’s call is a deep, croaking sound.',
+	'The raven’s lifespan is between 25 and 30 years, but they have been known to live up to 45 years. Crows usually live to 8 years, but can live longer when raised in captivity.',
+	'The raven is the largest bird of the crow family: it is twice heavier than a common crow at 1.3 kg (3 pounds), being 60 cm (two feet) long, with a wingspan of almost 1 m (3.3 ft). Ravens can live 40 years in the wild and 70 in captivity.',
+	'Ravens can soar high above the trees, unlike crows, which rely on active flight. Ravens are capable of aerial stunts similar to those executed by the birds of prey.',
+	'Like in many other birds, when a raven is on a branch, the feet\'s muscles and tendons constrict automatically the toes, so that the birds waste little energy on this.',
+	'Ravens live from deserts to coniferous forests and coastal cliffs. In forests, they nest in stick-made nests on trees, on deserts in rock cavities.',
+    'Common Ravens can mimic the calls of other bird species. When raised in captivity, they can even imitate human words; one Common Raven raised from birth was taught to mimic the word “nevermore.”',
+    'The oldest known wild Common Raven was at least 22 years, 7 months old. It was banded and found in Nova Scotia.'
+	)
+
+SALMON_FACTS = (
+	'Salmon tend to be anadromous, which means they hatch in fresh water, migrate to the ocean, and return to fresh water to reproduce, however this is not always the case.',
+	'The majority of Salmon worldwide is farmed, a process known as aquaculture.',
+	'Salmon flesh is orange due to organic pigments in their diet of krill and shellfish. Farmed salmon are fed fishmeal and wheat, which results in white flesh. Since consumers were reluctant to purchace white salmon, the pigments are added to their feed.',
+	'Salmon have an average of 2500 eggs, but can have up to 7000.',
+	'Salmon can travel up to 3500 miles to spawn.'
+	)
 
 SCORPION_FACTS = (
     'Scorpions are predatory animals of the class Arachnida, making them cousins to spiders, mites and ticks.',
@@ -2179,6 +2293,7 @@ ALL_FACTS = (
     ALBATROSS_FACTS,
     ALLIGATOR_FACTS,
     ATLANTIC_PUFFIN_FACTS,
+    ANGLERFISH_FACTS,
     ANT_FACTS,
     ANTEATER_FACTS,
     ANTELOPE_FACTS,
@@ -2193,6 +2308,7 @@ ALL_FACTS = (
     CHEETAH_FACTS,
     CHIPMUNK_FACTS,
     CHINCHILLA_FACTS,
+    COBRA_FACTS,
     COW_FACTS,
     COUGAR_FACTS,
     CRAB_FACTS,
@@ -2212,6 +2328,7 @@ ALL_FACTS = (
     FOX_FACTS,
     FROG_FACTS,
     GAZELLE_FACTS,
+    GECKO_FACTS,
     GIRAFFE_FACTS,
     GRASSHOPPER_FACTS,
     GOAT_FACTS,
@@ -2245,6 +2362,7 @@ ALL_FACTS = (
     OCELOT_FACTS,
     OCTOPUS_FACTS,
     OPOSSUM_FACTS,
+    ORANGUTAN_FACTS,
     ORYX_FACTS,
     ORCA_FACTS,
     OSTRICH_FACTS,
@@ -2264,6 +2382,8 @@ ALL_FACTS = (
     RABBIT_FACTS,
     RACCOON_FACTS,
     RATTLESNAKE_FACTS,
+    RAVEN_FACTS,
+  	SALMON_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,
     SEA_CUCUMBER_FACTS,
