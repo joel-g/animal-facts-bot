@@ -239,6 +239,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('cuttlefish', '\scuttlefish(es)?\s', reddit, CUTTLEFISH_FACTS, comment)
     botengine('dingo', '\sdingos?\s', reddit, DINGO_FACTS, comment)
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
+    botengine('dodo', '\sdodos?\s', reddit, DODO_FACTS, comment)
     # botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)   Disabled because this was only a temp feature during Game of Thrones season. Dragons aren't real.
     botengine('dugong', '\sdugongs?\s', reddit, DUGONG_FACTS, comment)
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
@@ -304,7 +305,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('porcupine', '\sporcupines?\s', reddit, PORCUPINE_FACTS, comment)
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
-    botengine('rattlesnake', '\srattlesnakes?\s', reddit, RATTLESNAKES_FACTS, comment)
+    botengine('rattlesnake', '\srattlesnakes?\s', reddit, RATTLESNAKE_FACTS, comment)
     botengine('raven', '\sravens?\s', reddit, RAVEN_FACTS, comment)
     botengine('salmon', '\ssalmons?\s', reddit, SALMON_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
@@ -755,6 +756,22 @@ DINGO_FACTS = (
     'Just like humans, dingoes have rotating wrists. This allows them to use their paws like hands to catch prey. It also helps them better climb trees and even open doors.',
     'Dingoes can even swivel their heads about 180 degrees. Comparatively, owls can turn their heads 270 degrees; humans can only turn theirs 45 to 70 degrees.',
     'Having a dingo as a pet is a full time responsibility, as dingoes don\'t handle rejection well and will likely not emotionally recover from being placed in a new home.',
+    )
+
+DODO_FACTS = (
+    'Dodos Had an Unusual Diet Involving Stones. Dodo birds’ diet included seeds, nuts, bulbs, roots, and fallen fruit. In addition, they would also feed on palm fruit, shell fish and crabs. This is a very similar diet to the modern crowned pigeon. Dodo birds used gizzard stones to aid their digestion.'
+    'One of the more interesting dodo bird facts is that these birds lived in almost complete isolation. Scientists discovered that the dodo only ever lived on the island of Mauritius in the Indian Ocean. They were so isolated that their population didn’t even spread to the neighboring islands off the eastern coast of Africa. The simple reason for this is that the dodo was flightless and was therefore unable to reach any other island or land mass.'
+    'One of the more intriguing dodo bird facts involves just how they became extinct. They lived on the island of Mauritius where there was an abundance of food and almost no predators. What, then, caused their extinction? In a word: people. Dodos were unfortunately not frightened of people, which made them very easy prey for human hunters. Sailors who arrived on the island of Mauritius from the year 1598 started hunting dodos, and initiated mass killings, to the point where these birds were extinct by 1681. Although people believed the dodo to be stupid because it readily approached men who were armed with clubs, these birds had no natural enemies and so had no experience with predators. They were simply curious, not stupid.'
+    'In addition to being killed by people, the dodo was also affected by exposure to new animals. The sailors who arrived on Mauritius introduced new species to the island. They brought with them their domesticated animals, which preyed on the dodos, ate their eggs, and destroyed their natural habitat, leading to their extinction. These animals included dogs, pigs, cats and rats. Due to their isolation, the dodo birds simply had no natural defenses and became extinct only 175 years after they were discovered.'
+    'Unlike most other birds that build their nests in trees, dodos used to build their nests on the ground. This was largely because they couldn’t fly, and their nests didn’t need to be protected in trees because the dodo had no natural predators on Mauritius.'
+    'There are many mysteries surrounding various dodo bird facts, including the fact that they were flightless birds. However, scientists believe that they do now have some of the answers. One of the reasons that the dodo became flightless was probably because there were virtually no potential predators in its natural habitat on the island of Mauritius. In addition, there was an abundance of food for these birds, so they really had no reason to fly. This is what is known as secondary flightlessness. The adaptation for flight is only maintained when it is absolutely necessary, because it requires such a great expenditure of energy for a bird. This was simply not required in the Mauritian environment, and so the adaptation was lost.'
+    'Don’t let the rather strange appearance of the dodo fool you. One of the more bizarre dodo bird facts is that these birds could actually run quite fast. Although there is a lack of scientific evidence from the time when dodos were alive, modern scientists have managed to deduce this fact based on the dodo bird’s skeletal structure and the size of its legs.'
+    'The dodo was alive before the invention of the camera so for a long time, it was hard for us to know exactly what this bird looked like. To complicate matters, very few skeletal remains were found. Therefore, for centuries our understanding of the appearance of dodos was based on anecdotal evidence and amateur sketches. It was only in 2007 that a complete skeleton of a dodo bird was found, which could confirm many of the dodo bird facts. However, exact facts about the dodo’s plumage, girth and coloring are still in question.'
+    'Although there is some anecdotal evidence and a few skeletons to furnish us with many dodo bird facts, there are some things that have never been reported. There is no information whatsoever about the dodo’s mating habits, behaviors, or life expectancy. In that regard, the life cycle of a dodo seems deemed to remain an intriguing mystery forever.'
+    'Scientists and the general population during the Victorian era were intrigued by newly emerging dodo bird facts. Lewis Carroll, the famous author, included these quirky birds in his children’s classic Alice in Wonderland. Contrary to popular characterizations, the dodos in this book are depicted as being quite solemn and wise.'
+    'The fact that the dodo bird is immortalized in the saying As dead as a dodo is a telling dodo bird fact that is relevant to all environmentalists today. The saying refers to all traces of something being completed wiped out, just as the dodo was on the island of Mauritius. This bird has come to represent conservationism and movements against eco-terrorism. The utter destruction of this interesting creature was entirely due to the direct and indirect causes introduced by people, who then failed to intervene and preserve this unique species.'
+    'If you are lucky enough to visit the island of Mauritius, you will see dodos everywhere. Not live ones, of course, but replicas and images wherever you look. A little-known dodo bird fact is the extent to which these birds are present in Mauritius’ tourism industry. The image of the dodo has been transformed into just about every possible version that could pass as a tempting curio for the tourists visiting this island paradise. So, in addition to sugar and rum, the dodo is a significant contributor to the Mauritian tourism economy.'
+    'Subfossil remains show the dodo was about 1 metre (3 ft 3 in) tall and may have weighed 10.6–17.5 kg (23–39 lb) in the wild. The dodo\'s appearance in life is evidenced only by drawings, paintings, and written accounts from the 17th century.'
     )
 
 DOLPHIN_FACTS = (
@@ -1779,7 +1796,20 @@ RACCOON_FACTS = (
     'Dakota Sioux believed that raccoons possessed supernatural powers'
     )
 
-RATTLESNAKES_FACTS = (
+RATTLESNAKE_FACTS = (
+    'Rattlesnakes receive their name from the rattle located at the end of their tails, which makes a loud rattling noise when vibrated that deters predators or serves as a warning to passers-by.'
+    'The rattlesnake babies are born with what is called a pre-button.  The baby snake loses this piece when it sheds its skin for the first time.  With the shedding a new button appears.  With every shedding after that another button, or rattle, will be added.  These buttons are made up of a material called Keratin, which is what the scales and your fingernails are made of!'
+    'The rattles are empty, so what makes the noise? The noise comes from each segment knocking together, so until a rattlesnake has two or more pieces it isn’t going to make a sound! But when it does…you WILL hear it…and you WILL RUN!'
+    'The 36 known species of rattlesnakes have between 65 and 70 subspecies, all native to the Americas, ranging from southern Alberta and southern British Columbia in Canada to central Argentina.'
+    'Newborn rattlesnakes are heavily preyed upon by a variety of species, including ravens, crows, roadrunners, raccoons, opossums, skunks, coyotes, weasels, whipsnakes, kingsnakes, and racers.'
+    'Rattlesnakes feed on rodents, squirrels, rabbits and other small critters.'
+    'Rattlesnakes are believed to require at least their own body weight in water annually to remain hydrated. The method in which they drink depends on the water source. In larger bodies of water (streams, ponds, etc.), they submerge their heads and ingest water by opening and closing their jaws, which sucks in water. If drinking dew, or drinking from small puddles, they sip the liquid either by capillary action or by flattening and flooding their lower jaws.'
+    'Rattlesnakes are a key element in Aztec mythology and were widely represented in Aztec art, including sculptures, jewelry, and architectural elements.'
+    'Members of some Christian sects in the southern United States are regularly bitten while participating in "snake handling" rituals. Snake handling is when people hold venomous snakes, unprotected, as part of a religious service inspired by a literal interpretation of the Bible verses Mark 16:17-18 which reads, "In my name ... they will pick up snakes with their hands".'
+    'The rattlesnake became a symbolic animal for the Colonials during the Revolutionary War period, and is depicted prominently on the Gadsden Flag. It continues to be used as a symbol by the United States military, and political movements within the United States.'
+    'The rattlesnakes hibernate through the winter and come out in the spring to eat and then mate.'
+    'Rattlesnake eggs will stay inside their mother until they hatch.  Most of the time there are 8-10 babies born at once and are about 10 inches long.  Babies are born venomous but cannot rattle and are often more aggressive than the adults.'
+    'Rattlesnakes can range from one to eight feet, depending on the species (the big one is the eastern diamondback), according to the National Wildlife Federation. They are thick-bodied snakes with keeled (ridged) scales in a variety of colors and patterns. Most species are patterned with dark diamonds, rhombuses or hexagons on a lighter background.'
     'Size of rattlesnake depends on the species. Largest species can reach length of 8 feet. On average, rattlesnakes are 3 to 4 feet long.',
     'Rattlesnakes are not very colorful because they like to camouflage with their environment. They are usually black, brown, olive or grey in color.',
     'Rattle grows continuously. New segment is added each time snake shed its skin.',
@@ -1791,8 +1821,9 @@ RATTLESNAKES_FACTS = (
     'Rattlesnake hibernates during the cold time of the year. Usually large number of rattlesnakes gathers in the underground dens and curl around each other for the purpose of warming.',
     'Rattlesnakes have triangular head and vertical pupils. Their name comes from a rattle at the end of the tail. Rattle is made of keratin (same substance builds nails and hair in humans).',
     'Rattlesnakes have a lot of enemies, from large birds like falcons and crows to larger mammals like raccoons and opossums. One of a rattlesnake’s biggest threats is actually another snake — the kingsnake, which is a constrictor.',
-    'Rattlesnakes are able to consume animals much larger than themselves. They are able to greatly expand their jaws and skin to fit small rodents and birds into their bodies. '
+    'Rattlesnakes are able to consume animals much larger than themselves. They are able to greatly expand their jaws and skin to fit small rodents and birds into their bodies. ' 
 )
+
 
 RAVEN_FACTS = (
 	'Ravens are larger, about the size of a red-tailed hawk. Crows are similar in size to a dove.',
@@ -2284,6 +2315,7 @@ ALL_FACTS = (
     CROCODILE_FACTS,
     CUTTLEFISH_FACTS,
     DINGO_FACTS,
+    DODO_FACTS,
     DOLPHIN_FACTS,
     DUGONG_FACTS,
     EAGLE_FACTS,
@@ -2349,7 +2381,7 @@ ALL_FACTS = (
     PORCUPINE_FACTS,
     RABBIT_FACTS,
     RACCOON_FACTS,
-    RATTLESNAKES_FACTS,
+    RATTLESNAKE_FACTS,
     RAVEN_FACTS,
   	SALMON_FACTS,
     SCORPION_FACTS,
