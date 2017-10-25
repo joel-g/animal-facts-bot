@@ -1226,7 +1226,8 @@ KANGAROO_FACTS = (
 KOALA_FACTS = (
     'Koalas are native to Australia. Koal1as are not bears.',
     'Koala fossils found in Australia have been dated as long ago as 20 million years.',
-    'Koalas eat eucalyptus leaves and almost nothing else.',
+    'Koalas eat eucalyptus leaves and almost nothing else. Eucalyptus is very difficult to digest, low in nutrient, and poisoness.',
+    'Since eucalyptus is so dificult to chew, it wears down the koalas teeth until they are useless, and the koala starves to death',
     'The brain size of modern koalas has reduced substantially from their ancestors, possibly as an adaptation to the low energy they get from their diets.',
     'The closest living relative of the koala is the wombat.',
     'Koalas have sharp claws which help them climb trees.',
