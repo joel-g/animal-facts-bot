@@ -68,6 +68,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * fox
 * frog
 * gazelle
+* gecko
 * giraffe
 * grasshopper
 * goat
@@ -101,6 +102,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * ocelot
 * octopus
 * opossum
+* orangutan
 * oryx
 * orca
 * ostrich
@@ -118,6 +120,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * puma
 * rabbit
 * raccoon
+* rattlesnake
 * raven
 * salmon
 * scorpion

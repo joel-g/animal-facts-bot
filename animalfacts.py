@@ -251,6 +251,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('fox', '\sfox(es)?\s', reddit, FOX_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
     botengine('gazelle', '\sgazelles?\s', reddit, GAZELLE_FACTS, comment)
+    botengine('gecko', '\sgeckos?\s', reddit, GECKO_FACTS, comment)
     botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
     botengine('grasshopper', '\sgrasshoppers?\s', reddit, GRASSHOPPER_FACTS, comment)
     botengine('goat', '\sgoats?\s', reddit, GOAT_FACTS, comment)
@@ -283,6 +284,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('newt', '\snewts?\s', reddit, NEWT_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
     botengine('opossum', '\sopossums?\s', reddit, OPOSSUM_FACTS, comment)
+    botengine('orangutan', '\sorangutans?\s', reddit, ORANGUTAN_FACTS, comment)
     botengine('oryx', '\soryx(es)?\s', reddit, ORYX_FACTS, comment)
     botengine('octopus', '\socto(pus|puses|pusses|pi)\s', reddit, OCTOPUS_FACTS, comment)
     botengine('orca', '\sorcas?\s', reddit, ORCA_FACTS, comment)
@@ -302,6 +304,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('porcupine', '\sporcupines?\s', reddit, PORCUPINE_FACTS, comment)
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
+    botengine('rattlesnake', '\srattlesnakes?\s', reddit, RATTLESNAKES_FACTS, comment)
     botengine('raven', '\sravens?\s', reddit, RAVEN_FACTS, comment)
     botengine('salmon', '\ssalmons?\s', reddit, SALMON_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
@@ -941,7 +944,22 @@ GAZELLE_FACTS = (
     'Gazelles generally live up to 10 to 12 years.',
     'To evade predators, gazelles may zigzag rather than running in a straight line.'
     )
-
+GECKO_FACTS = (
+    'Geckos vary in size. Smallest species of geckos, dwarf gecko, reaches ¾ inches in length. Largest species of geckos, tokay gecko, reaches 14 inches in length.',
+    'Geckos are usually brightly colored. Body coloration depends on the colors of their environment because it plays important role in the camouflage.',
+    'Geckos are nocturnal (active at night) creatures. Their eyes are adapted to a low level of light.',
+    'Due to their small size, geckos are often preyed by snakes, birds, mammals and some large spider species.',
+    'Geckos eat different types of fruit, flower nectar, insects and worms.',
+    'Gecko has a fat tail which is used as a reservoir of fats. It also help gecko to balance while it walks and climbs the trees.',
+    'Just like other lizards, gecko can throw away its tail in the case of a danger. Tailless gecko will regenerate its missing body part after short period of time.',
+    'Teflon is the only material to which gecko cannot stick (using its "suction cups") and walk without gliding.',
+    'Unlike other reptiles, geckos are able to produce various sounds which are used in communication. They produce barking, chirping or clicking noise during mating season or when defending their territory.',
+    'Geckos have long lifespan. Leopard gecko can survive more than 20 years in captivity. Other species live between 8 and 10 years.',
+    'Some species of geckos have no legs and look more like snakes.',
+    'Most species of gecko don’t have eyelids, so they lick their eyes to clean them.',
+    'Some gecko species can fly! The flying gecko, or parachute gecko, is a genus of arboreal gecko species found in Southeast Asia. While they aren’t capable of independent flight, they get their name from their ability to glide using the flaps of skin found on their feet and their flat, rudder-like tails.',
+    'The smallest gecko species is less than 2 centimeters in length.'
+)
 GIRAFFE_FACTS = (
     'A male giraffe can weigh as much as a pick up truck! That’s about 1400 kilograms.',
     'Although a giraffe’s neck is 1.5 – 1.8 meters, it contains the same number of vertebrae at a human neck.',
@@ -1460,6 +1478,24 @@ OPOSSUM_FACTS = (
     'The gestation period of an opossum is short, typically between 12 and 14 days.',
     )
 
+ORANGUTAN_FACTS = (
+    'Orangutans’ arms stretch out longer than their bodies – up to 8 ft. from fingertip to fingertip in the case of very large males.',
+    'When on the ground, orangutans walk on all fours, using their palms or fists. Unlike the African apes, orangutans are not morphologically built to be knuckle-walkers.',
+    'For the first few years of his/her life, a young orangutan holds tight to his/her mother’s body as she moves through the forest canopy.',
+    'When males are fighting, they charge each other, grapple, and bite each other’s heads and cheekpads.',
+    'Orangutans have tremendous strength, which enables them to brachiate and hang upside-down from branches for long periods of time to retrieve fruit and eat young leaves.',
+    'From the age of thirteen years (usually in captivity) past the age of thirty, males may develop flanges and large size.',
+    'Orangutans have the longest birth interval of any mammal. On average they only give birth once every 8 to 10 years.',
+    'Orangutans are very smart. They perform as well as chimpanzees and gorillas in tests of cognitive ability. In captivity, they are excellent tool-users and versatile tool-makers. One captive orangutan was taught how to chip a stone hand-axe.',
+    'Orangutans are red-haired apes that live in the tropical rainforests of Sumatra and Borneo in southeast Asia.',
+    'The orangutan is one of humankind’s closest relatives – in fact, we share nearly 97% of the same DNA!',
+    'Daytime eaters, their diet consists mostly of fruit and leaves – but they also eat nuts, bark, insects and, once in a while, bird eggs, too.',
+    'These amazing apes generally have long lives – in captivity they can live for 50-60 years, and in the wild, 30-40 years.',
+    'Orangutans live in the trees to avoid predators like tigers or leopards that hunt on the ground.',
+    'Orangutans are solitary animals. Males always live on their own while females live alone or with their offspring. Males and females spend time together only during mating season.',
+    'Orangutans are the largest arboreal mammals (animals that spend their life in the trees).'
+
+)
 ORYX_FACTS = (
     'Oryxes are species of antelope native to Africa and the Arabian Peninsula.',
     'The Arabian oryx was only saved from extinction through a captive breeding program and reintroduction to the wild.',
@@ -1742,6 +1778,21 @@ RACCOON_FACTS = (
     'Bobcats, great horned owls, wolves, eagle owls, lynxes and coyotes are the most common predators of raccoons, but cars kill more raccoons than anything.',
     'Dakota Sioux believed that raccoons possessed supernatural powers'
     )
+
+RATTLESNAKES_FACTS = (
+    'Size of rattlesnake depends on the species. Largest species can reach length of 8 feet. On average, rattlesnakes are 3 to 4 feet long.',
+    'Rattlesnakes are not very colorful because they like to camouflage with their environment. They are usually black, brown, olive or grey in color.',
+    'Rattle grows continuously. New segment is added each time snake shed its skin.',
+    'Rattling sound informs predator to stay away from the snake. When rattlesnake is surprised, it can attack without producing rattling sound.',
+    'Rattlesnakes are venomous snakes. They produce very strong hemotoxic venom (which destroys blood cells and vessels). It is used for hunting and for defense against predators. Rattlesnake bites are fatal for humans if not treated with antidote immediately.',
+    'Some snakes are immune to the poison of rattlesnakes. Thanks to that feature, king snakes are main predators of rattlesnakes.',
+    'Rattlesnakes have special kind of thermal receptors that are used for detection of warm-blooded creatures (their prey). They can also locate prey by using the tongue which collects scent molecules from the air. Also, rattlesnake senses vibration of the ground.',
+    'Optimal temperature for the survival of the rattlesnake is between 27 and 32 degrees of Celsius. They can survive freezing temperature, but temperatures above 38 degrees are fatal for them.',
+    'Rattlesnake hibernates during the cold time of the year. Usually large number of rattlesnakes gathers in the underground dens and curl around each other for the purpose of warming.',
+    'Rattlesnakes have triangular head and vertical pupils. Their name comes from a rattle at the end of the tail. Rattle is made of keratin (same substance builds nails and hair in humans).',
+    'Rattlesnakes have a lot of enemies, from large birds like falcons and crows to larger mammals like raccoons and opossums. One of a rattlesnake’s biggest threats is actually another snake — the kingsnake, which is a constrictor.',
+    'Rattlesnakes are able to consume animals much larger than themselves. They are able to greatly expand their jaws and skin to fit small rodents and birds into their bodies. '
+)
 
 RAVEN_FACTS = (
 	'Ravens are larger, about the size of a red-tailed hawk. Crows are similar in size to a dove.',
@@ -2245,6 +2296,7 @@ ALL_FACTS = (
     FOX_FACTS,
     FROG_FACTS,
     GAZELLE_FACTS,
+    GECKO_FACTS,
     GIRAFFE_FACTS,
     GRASSHOPPER_FACTS,
     GOAT_FACTS,
@@ -2278,6 +2330,7 @@ ALL_FACTS = (
     OCELOT_FACTS,
     OCTOPUS_FACTS,
     OPOSSUM_FACTS,
+    ORANGUTAN_FACTS,
     ORYX_FACTS,
     ORCA_FACTS,
     OSTRICH_FACTS,
@@ -2296,6 +2349,7 @@ ALL_FACTS = (
     PORCUPINE_FACTS,
     RABBIT_FACTS,
     RACCOON_FACTS,
+    RATTLESNAKES_FACTS,
     RAVEN_FACTS,
   	SALMON_FACTS,
     SCORPION_FACTS,
