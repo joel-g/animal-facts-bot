@@ -2032,6 +2032,7 @@ SNAKE_FACTS = (
     'Some sea snakes can breathe partially through their skin, allowing for longer dives underwater.',
     'Anacondas are large, non-venomous snakes found in South America that can reach over 5 m (16 ft) in length.',
     'Python reticulates can grow over 8.7 m (28 ft) in length and are considered the longest snakes in the world.',
+    'some snake eat their own eggs
     )
 
 STARFISH_FACTS = (
