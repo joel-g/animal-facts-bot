@@ -281,6 +281,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('llama', '\sllamas?\s', reddit, LLAMA_FACTS, comment)
     botengine('meerkat', '\smeerkats?\s', reddit, MEERKAT_FACTS, comment)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
+	botengine('moose', '\smoose?\s', reddit, MOOSE_FACTS, comment)
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
     botengine('newt', '\snewts?\s', reddit, NEWT_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
@@ -1423,6 +1424,27 @@ MONKEY_FACTS = (
     'The monkey is the 9th animal that appears on the Chinese zodiac, appearing as the zodiac sign in 2016.',
     )
 
+MOOSE_FACTS = (
+	'Moose are the largest members of the deer family, weighing as much as 1200 pounds.',
+	'Moose are foragers and will devour 73 pounds of vegetation a day in the summer and 34 pounds in the winter.',
+	'Moose prefer Balsam Fir over White Spruce and have consequently left White Spruce savannas on Isle Royale National Park due to their foraging habits.',
+	'One moose can house 75,000 ticks in the winter, which are beginning to drive a startling trend of deaths in moose populations.',
+	'Moose shed their antlers every winter, and grow back in the spring covered in vascularized velvet for blood flow.',
+	'Moose antlers can weigh up to 40 pounds.',
+	'In Isle Royale Nation Park, the moose and wolf predator relationship has been observed since 1959, and may be ending soon with the death of the final two wolves.'
+	'The mother moose stays with her offspring for a year and a half, fighting off wolves and bears that try to pick off the young calves.',
+	'A rare genetic defect can cause moose antlers to grow perpetually, resulting in a warped set of antlers. The Algonquian peoples mistook this moose as an evil spirit, and named it the Wendigo.',
+	'The scientific name for a moose is Alces alces.',
+	'Male moose, called bulls, bellow loudly to attract mates each September and October.',
+	'The patch of skin that hangs from a moose neck is called a bell.',
+	'Moose antlers can spread six feet across.',
+	'Collisions between moose and motor vehicles are common in Scandinavia.',
+	'Moose occur throughout Alaska, Canada, the northeastern United States and as far south as the Rocky Mountains in Colorado.,
+	'A group of Moose is know as a Herd.',
+	'The moose has an average lifespan of 8 to 12 years in the wild.',
+	'Moose can rup up to 35 miles per hour.',
+	)
+
 NARWHAL_FACTS = (
     'Unlike some whale species that migrate, narwhals spend their lives in the Arctic waters of Canada, Greenland, Norway and Russia. Most narwhals winter for up to five months under sea ice in the Baffin Bay-Davis Strait area.',
     'Narwhals feed on Greenland halibut, Arctic and polar cod, squid and shrimp. They do their chomping at the ice floe edge and in the ice-free summer waters.',
@@ -2367,6 +2389,7 @@ ALL_FACTS = (
     LLAMA_FACTS,
     MEERKAT_FACTS,
     MONKEY_FACTS,
+	MOOSE_FACTS,
     NARWHAL_FACTS,
     NEWT_FACTS,
     OCELOT_FACTS,
