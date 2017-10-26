@@ -673,6 +673,7 @@ COBRA_FACTS = (
     'The Caspian cobra (N. oxiana) of Central Asia is the most venomous Naja species.',
     'Cobras are a medically important group of snakes due to the number of bites and fatalities they cause across their geographical range.',
     'Cobras belong to the family Elapidae, a type of poisonous snake with hollow fangs fixed to the top jaw at the front of the mouth.',
+    'Cobras are worshipped in India and other parents of the world
     )
 
 COUGAR_FACTS = (
