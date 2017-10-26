@@ -945,6 +945,8 @@ FOX_FACTS = (
     "The tip of a red fox’s tail is white, whereas swift foxes have a black-tipped tail",
     "Foxes have excellent hearing. Red foxes can reportedly hear a watch ticking 40 yards away!",
     'Foxes stink, their funny ‘musky’ smell comes from scent glands at the base of their tail',
+    'The latin name for fox is Vulpes Vulpes',
+    'A fox can run 30 miles per hour',
     )
 
 FROG_FACTS = (
