@@ -673,7 +673,7 @@ COBRA_FACTS = (
     'The Caspian cobra (N. oxiana) of Central Asia is the most venomous Naja species.',
     'Cobras are a medically important group of snakes due to the number of bites and fatalities they cause across their geographical range.',
     'Cobras belong to the family Elapidae, a type of poisonous snake with hollow fangs fixed to the top jaw at the front of the mouth.',
-    'Cobras are worshipped in India and other parents of the world
+    'Cobras are worshipped in India and other parts of the world
     )
 
 COUGAR_FACTS = (
@@ -797,6 +797,7 @@ DOLPHIN_FACTS = (
     'Dolphins communicate with each other by clicking, whistling and other sounds.',
     'Some dolphin species face the threat of extinction, often directly as a result of human behavior. The Yangtze River Dolphin is an example of a dolphin species which may have recently become extinct.',
     'Some fishing methods, such as the use of nets, kill a large number of dolphins every year.',
+    'There are some Dolpins in colour Pink can be found in lake Ontario,Canada
     )
 
 DRAGON_FACTS = (
