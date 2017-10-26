@@ -243,6 +243,7 @@ def check_comment_for_animal(comment, reddit):
     # botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)   Disabled because this was only a temp feature during Game of Thrones season. Dragons aren't real.
     botengine('dugong', '\sdugongs?\s', reddit, DUGONG_FACTS, comment)
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
+    botengine('eel', '\seel?\s', reddit, EEL_FACTS, comment)
     botengine('echidna', '\sechidnas?\s', reddit, ECHIDNA_FACTS, comment)
     botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
     botengine('elk', '\selks?\s', reddit, ELK_FACTS, comment)
@@ -836,6 +837,10 @@ EAGLE_FACTS = (
     'Bald eagles build very large nests, sometimes weighing as much as a ton!',
     'The bald eagle was added to the list of endangered species in the United States in 1967 and its numbers have recovered well since.',
     )
+
+EEL_FACTS = (
+    'Electric eels can generate power of up to 600V.',
+    }
 
 ECHIDNA_FACTS = (
     'Male echidnas have a bizarre 4-headed penis.',
