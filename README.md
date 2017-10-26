@@ -88,14 +88,14 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * jellyfish
 * kangaroo
 * koala
-* lion
 * lemur
 * leopard
-* lynx
 * lion
 * lizard
 * lobster
 * llama
+* lynx
+* mantis shrimp
 * meerkat
 * monkey
 * narwhal
@@ -104,8 +104,8 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * octopus
 * opossum
 * orangutan
-* oryx
 * orca
+* oryx
 * ostrich
 * otter
 * owl
