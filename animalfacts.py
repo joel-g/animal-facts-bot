@@ -277,8 +277,9 @@ def check_comment_for_animal(comment, reddit):
     botengine('lemur', '\slemurs?\s', reddit, LEMUR_FACTS, comment)
     botengine('leopard', '\sleopards?\s', reddit, LEOPARD_FACTS, comment)
     botengine('lizard', '\slizards?\s', reddit, LIZARD_FACTS, comment)
-    botengine('lobster', '\slobsters?\s', reddit, LOBSTER_FACTS, comment)
     botengine('llama', '\sllamas?\s', reddit, LLAMA_FACTS, comment)
+    botengine('lobster', '\slobsters?\s', reddit, LOBSTER_FACTS, comment)
+    botengine('mantis shrimp', '\smantis ?shrimps?\s', reddit, MANTIS_SHRIMP_FACTS, comment)
     botengine('meerkat', '\smeerkats?\s', reddit, MEERKAT_FACTS, comment)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
@@ -1362,33 +1363,6 @@ LIZARD_FACTS = (
     'Komodo dragons are carnivores and can be very aggressive.',
     )
 
-LOBSTER_FACTS = (
-    'Lobsters were once considered the the go-to prison food. In Colonial times, it was fed to pigs and goats and only eaten by paupers.',
-    'Lobsters turn red when cooked, but in nature they can be green or yellow or even bright blue.',
-    'Lobsters can grow up to four feet long and weigh as much as 40 pounds.',
-    'Lobsters have a crusher claw and a pincer claw; some lobsters have the crusher claw on the right side and others have it on the left.',
-    'Lobsters have poor eyesight, but have highly developed senses of smell and taste.',
-    'Lobsters taste with their legs and chew with their stomachs.',
-    'Lobsters keep growing forever. They do not get weaker or lose their ability to reproduce, and will keep on molting and growing.',
-    )
-
-MEERKAT_FACTS = (
-    'Meerkats can spot an eagle in flight more than a thousand feet away.',
-    'Meerkats, or suricates, are a type of mongoose that live in the southern African plains.',
-    'When foraging for food, a few meerkats will stand guard while the rest look for insects, lizards, birds, and fruit.',
-    'Female meerkats give birth to two to four young each year. They are cared for by fathers and siblings who teach them to play and forage.',
-    'Meerkat mobs sleep in a single furry pile inside a burrow. Each burrow is an extensive tunnel-and-room system that stays cool under the African sun.',
-    'Meerkats have strictly defined roles in their societies including sentry, babysitter, hunter, and teacher.',
-    'Meerkat coats can be gold, silver, orange, or brown. Their tails are 7.5 to 9.5 inches (19 to 24 cm) long.',
-    'Meerkat burrows can be up to 6.5 feet (2 meters) deep and can have as many as 15 entrances. Mobs of meerkats live in more than one burrow at a time.',
-    'Meerkats start their mornings by grooming and lying in the sun.',
-    'Meerkats can eat scorpions. Adult meerkats have some immunity to scorpion venom. Mothers will cut off the the tail of a scorpion before feeding it to their young.',
-    'Baby meerkats, called pups, are born under ground. They weigh 25 to 36 grams (0.9 to 1.3 ounces) and are blind, deaf, and almost hairless.',
-    'A membrane covers and protects a meerkat\'s eyes while they dig. They can also close their ears to keep them free of soil.',
-    'Meerkats live in groups of up to 40. These groups are called gangs or mobs.',
-    'Meerkats are vicious fighters that often kill each other in skirmishes. Both sides line up across a field before charging forward with leaps and bounds. Before attacking, they try to psych out their opponents with aggressive posturing and bluffing to avoid serious conflict if possible.',
-    )
-
 LLAMA_FACTS = (
     'Llamas are members of the camelid, or camel, family.',
     'Llamas were first domesticated and used as pack animals 4,000 to 5,000 years ago by Indians in the Peruvian highlands.',
@@ -1406,6 +1380,49 @@ LLAMA_FACTS = (
     'A group of llamas is called a herd.',
     'Llamas don\'t bite. They spit when they\'re agitated, but that\'s mostly at each other.',
     'Yarn made from llama fiber is soft and lightweight, yet remarkably warm.',
+    )
+
+LOBSTER_FACTS = (
+    'Lobsters were once considered the the go-to prison food. In Colonial times, it was fed to pigs and goats and only eaten by paupers.',
+    'Lobsters turn red when cooked, but in nature they can be green or yellow or even bright blue.',
+    'Lobsters can grow up to four feet long and weigh as much as 40 pounds.',
+    'Lobsters have a crusher claw and a pincer claw; some lobsters have the crusher claw on the right side and others have it on the left.',
+    'Lobsters have poor eyesight, but have highly developed senses of smell and taste.',
+    'Lobsters taste with their legs and chew with their stomachs.',
+    'Lobsters keep growing forever. They do not get weaker or lose their ability to reproduce, and will keep on molting and growing.',
+    )
+
+MANTIS_SHRIMP_FACTS = (
+    'Mantis shrimps are usually 2 to 7 inches long. Larger species grow 12 inches in length.',
+    'Mantis shrimps are brightly colored. Shell of most species is covered with different hues of blue, green, red and orange colors. Forearms are often covered with spots.',
+    'Eyes of mantis shrimp are located on the long stalks that can move independently. They have exceptional eyesight that is used both for the detection of the prey and predators.',
+    'All mantis shrimps can be divided on spearers and smashes, based on the morphology of appendages and tactic they use to kill the prey.',
+    'Spearers have spiny appendages that are used to stab soft-bodied prey such as different types of worms and fish.',
+    'Smashers have club-like appendages that easily smash shell of snails, oysters, crustaceans and mollusks.',
+    'Smashers are famous for their incredible strong punches that can break the glass of aquarium.',
+    'Attack of mantis shrimps happens extremely quickly - 50 times faster than the blink of an eye. With velocity of 10 meters per second, their punch has the power of a .22 caliber bullet.',
+    'Most species of mantis shrimps are solitary and territorial creatures. They fiercely defend their home against intruders.',
+    'Mantis shrimps are able to recognize their neighbors by the smell and by the morphological characteristics.',
+    'Some species of mantis shrimp are monogamous and spend up to 20 years together. During the mating rituals, mantis shrimps often fluoresce.',
+    'Females can lay eggs in the burrows or keep them in their forelimbs until they hatch. Some species exhibit parental care. Female lays two sets of eggs, one for her and the other for the father to take care of the eggs until they hatch.',
+    'Larvae of mantis shrimps swim as a part of zooplankton up to 3 months. They show aggressive behavior even during the larval stage.',
+    )
+
+MEERKAT_FACTS = (
+    'Meerkats can spot an eagle in flight more than a thousand feet away.',
+    'Meerkats, or suricates, are a type of mongoose that live in the southern African plains.',
+    'When foraging for food, a few meerkats will stand guard while the rest look for insects, lizards, birds, and fruit.',
+    'Female meerkats give birth to two to four young each year. They are cared for by fathers and siblings who teach them to play and forage.',
+    'Meerkat mobs sleep in a single furry pile inside a burrow. Each burrow is an extensive tunnel-and-room system that stays cool under the African sun.',
+    'Meerkats have strictly defined roles in their societies including sentry, babysitter, hunter, and teacher.',
+    'Meerkat coats can be gold, silver, orange, or brown. Their tails are 7.5 to 9.5 inches (19 to 24 cm) long.',
+    'Meerkat burrows can be up to 6.5 feet (2 meters) deep and can have as many as 15 entrances. Mobs of meerkats live in more than one burrow at a time.',
+    'Meerkats start their mornings by grooming and lying in the sun.',
+    'Meerkats can eat scorpions. Adult meerkats have some immunity to scorpion venom. Mothers will cut off the the tail of a scorpion before feeding it to their young.',
+    'Baby meerkats, called pups, are born under ground. They weigh 25 to 36 grams (0.9 to 1.3 ounces) and are blind, deaf, and almost hairless.',
+    'A membrane covers and protects a meerkat\'s eyes while they dig. They can also close their ears to keep them free of soil.',
+    'Meerkats live in groups of up to 40. These groups are called gangs or mobs.',
+    'Meerkats are vicious fighters that often kill each other in skirmishes. Both sides line up across a field before charging forward with leaps and bounds. Before attacking, they try to psych out their opponents with aggressive posturing and bluffing to avoid serious conflict if possible.',
     )
 
 MONKEY_FACTS = (
@@ -2363,8 +2380,9 @@ ALL_FACTS = (
     LION_FACTS,
     LYNX_FACTS,
     LIZARD_FACTS,
-    LOBSTER_FACTS,
     LLAMA_FACTS,
+    LOBSTER_FACTS,
+    MANTIS_SHRIMP_FACTS,
     MEERKAT_FACTS,
     MONKEY_FACTS,
     NARWHAL_FACTS,
@@ -2393,7 +2411,7 @@ ALL_FACTS = (
     RACCOON_FACTS,
     RATTLESNAKE_FACTS,
     RAVEN_FACTS,
-  	SALMON_FACTS,
+    SALMON_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,
     SEA_CUCUMBER_FACTS,
