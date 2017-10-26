@@ -986,6 +986,7 @@ GECKO_FACTS = (
     'Most species of gecko don’t have eyelids, so they lick their eyes to clean them.',
     'Some gecko species can fly! The flying gecko, or parachute gecko, is a genus of arboreal gecko species found in Southeast Asia. While they aren’t capable of independent flight, they get their name from their ability to glide using the flaps of skin found on their feet and their flat, rudder-like tails.',
     'The smallest gecko species is less than 2 centimeters in length.'
+    'The GEICO gecko is a gold dust day gecko with a Cockney accent, voiced by English actor Jake Wood.'
 )
 GIRAFFE_FACTS = (
     'A male giraffe can weigh as much as a pick up truck! That’s about 1400 kilograms.',
