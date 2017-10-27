@@ -269,7 +269,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('lizard', '\slizards?\s', reddit, LIZARD_FACTS, comment)
     botengine('lobster', '\slobsters?\s', reddit, LOBSTER_FACTS, comment)
     botengine('llama', '\sllamas?\s', reddit, LLAMA_FACTS, comment)
-    botengine('mantis shrimp', '\smantis shrimp\s', reddit, MANTIS_SHRIMP_FACTS, comment)
+    botengine('mantis shrimp', '\smantis shrimps?\s', reddit, MANTIS_SHRIMP_FACTS, comment)
     botengine('meerkat', '\smeerkats?\s', reddit, MEERKAT_FACTS, comment)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
