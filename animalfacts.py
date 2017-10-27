@@ -483,6 +483,7 @@ ATLANTIC_PUFFIN_FACTS = (
     'The Atlantic Puffin breeds in Iceland, Norway, Greenland, Newfoundland and many North Atlantic islands, and as far south as Maine in the west and the British Isles in the east.',
     'There are considered to be three subspecies of Atlantic puffin: Fratercula arctica arctica, Fratercula arctica grabae, Fratercula arctica naumanni.',
     'Like many seabirds, the Atlantic puffin spends most of the year far from land in the open ocean and only visits coastal areas to breed.',
+    'Atlantic puffins steer with rudderlike webbed feet and can dive to depths of 200 feet, though they usually stay underwater for only 20 or 30 seconds.',
 )
 
 BADGER_FACTS = (
@@ -862,6 +863,7 @@ EAGLE_FACTS = (
     'Bald eagles live for around 20 years in the wild.',
     'Bald eagles build very large nests, sometimes weighing as much as a ton!',
     'The bald eagle was added to the list of endangered species in the United States in 1967 and its numbers have recovered well since.',
+    'Eagles have amazing eyesight and can detect prey up to two miles away.',
     )
 
 ECHIDNA_FACTS = (
@@ -1829,7 +1831,9 @@ RABBIT_FACTS = (
     'Rabbits sleep about 8 hours a day.',
     'Rabbits cannot vomit. They don’t have enough muscles in their stomach.',
     'A male rabbit is called a buck, a female is a doe, and a baby is a kit/kitten.',
+    'Rabbits are not the same species as hares, which, among other things, are larger and less social.',
     )
+	
 
 RACCOON_FACTS = (
     'The raccoon has the ability to rotate their hind feet a full 180 degrees to allow for their ability to climb down from trees head first.',
@@ -1971,6 +1975,7 @@ SHEEP_FACTS = (
     'A collection or group of sheep is called a flock.',
     'Most sheep live between 6-11 years.',
     'A lamb is considered a sheep less than one year old.',
+    'China has the largest number of sheep in the world.',
     )
 
 SHRIMP_FACTS = (
@@ -2006,6 +2011,7 @@ SKUNK_FACTS = (
     'Skunks are slow and can run only 10 miles per hour.',
     'Skunks are immune to rattlesnake venom, bee stings and scorpions.',
     'Females can bear 3-10 young and male skunks reach sexual maturity from 4-6 months after birth while females reach sexual maturity nine months to a year after birth.',
+    'A group of skunks is called a surfeit.',
     )
 
 SLOTH_FACTS = (
@@ -2084,6 +2090,7 @@ STARFISH_FACTS = (
     'Starfish can eat inside out.',
     'Starfish can move using their tube feet',
     'Starfish have eyes.',
+    'Starfish can reproduce sexually and asexually.',
     )
 
 STURGEON_FACTS = (
