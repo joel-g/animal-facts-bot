@@ -446,6 +446,7 @@ ANT_FACTS = (
     'Ants and humans are the only creatures that farm other creatures.',
     'Some ants can swim.',
     'Ants can be found on every continent accept antarctica.',
+    'Ants have transparent abdomens that can show the color of the food they eat.',
     )
 
 ANTEATER_FACTS = (
