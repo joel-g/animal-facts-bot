@@ -231,6 +231,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
     botengine('chinchilla', '\schinchillas?\s', reddit, CHINCHILLA_FACTS, comment)
+    botengine('clownfish', '\sclownfishs?\s', reddit, CLOWNFISH_FACTS, comment)
     botengine('cobra', '\scobras?\s', reddit, COBRA_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment)
@@ -656,7 +657,18 @@ CHINCHILLA_FACTS = (
    'The breeding season for chinchillas runs from November to May in the Northern Hemisphere and from May to November in the Southern Hemisphere.',
    'Chinchillas are omnivores; they eat both plants and meat. Primarily, they eat grass and seeds, but they also eat insects and bird eggs when they get the chance. To eat, they hold their food in their front paws and nibble on it.',
    'Though chinchilla fur is highly valued for use in clothing and coats, the Convention on International Trade in Endangered Species has restricted the sale and trade of wild chinchillas since 1975. Many chinchillas are bred commercially for their fur.',
-   'Chinchillas are native to Chile and Peru. In the wild they live in groups and make their home in burrows and natural outcroppings and crevices.')
+   'Chinchillas are native to Chile and Peru. In the wild they live in groups and make their home in burrows and natural outcroppings and crevices.'
+   )
+
+CLOWNFISH_FACTS = (
+    'Clownfish is a fish that is frequently called clown anemonefish and goes by the scientific name Amphiprioninae, is actually false anemonefish.'
+    'The length of clownfish can range from 3.1 inches to 6.3 inches with an average of 4.3 inches.',
+    'There are at least 30 known species of clownfish, most of which live in the shallow waters of the Indian Ocean, the Red Sea, and the western Pacific.',
+    'The movie Finding Nemo caused home-acquarium demand for clownflish to triple.',
+    'Clownfish use stinging anemones for their own protection and in return drives off intruders and preens its host, removing parasites.',
+    'All clownfish are born male and have the ability to switch their sex. If once they become female, the change is irreversible.',
+    'Clownfish rarely stray more than a few yards from their host anemone.'
+    )
 
 COBRA_FACTS = (
     'Cobras are classified in the phylum Chordata, subphylum Vertebrata, class Reptilia, order Squamata and family Elapidae.',
@@ -2343,6 +2355,7 @@ ALL_FACTS = (
     CHEETAH_FACTS,
     CHIPMUNK_FACTS,
     CHINCHILLA_FACTS,
+    CLOWNFISH_FACTS,
     COBRA_FACTS,
     COW_FACTS,
     COUGAR_FACTS,
