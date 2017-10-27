@@ -443,7 +443,36 @@ ANT_FACTS = (
     'Some ant species are asexual, they clone themselves and do not require any males.',
     'Ants and humans are the only creatures that farm other creatures.',
     'Some ants can swim.',
-    'Ants can be found on every continent accept antarctica.',
+    'Ants are able to communicate and cooperate effectively by using chemicals known as pheromones.',
+   
+
+Ant and water drop. Image via 
+Ant and water drop. Image via Rakesh Rocky
+10. ANTS ARE AS OLD AS DINOSAURS:
+
+Archaeologists estimate that Homo sapiens (modern humans) have been on the Earth for some 200,000 years. That’s just a fraction of the age of the Earth, which is some 4.54 billion years old. The first humans evolved (“Homo“) from australopithecine ancestors about 2 million years ago. This time frame makes ants far, far older than humanity. Scientists estimate that ants came about in the mid-Cretaceous period, which was an amazing 110 to 130 million years ago. Accordingly, humans are the babies on planet Earth.
+
+9. LIKE HUMANS, ANTS HAVE CONQUERED THE GLOBE:
+
+Ants are quite the travelers. They are found nearly everywhere on Earth, with the exception of Antarctica and the Arctic (there are also a few islands that seem to be free of ants). There is one species of ant, the Argentine ant, known as Linepithema humilespecies, that has invaded 6 continents. Within the last century, these little critters have established themselves in at least 15 countries throughout the world, and they don’t seem to be stopping their conquest. The hives are literally swarming across the planet.
+
+Argentinian ant distribution. Image via calacademy.org
+Argentinian ant distribution. Image via calacademy.org
+8. THE LARGEST KNOWN ANT SPECIES WAS 2.4 INCHES LONG:
+
+The largest ant ever discovered is (fortunately) not alive today. Rather, it is a fossilized specimen that belongs to Titanomyrma giganteum, and it was truly a beast of an ant. have you ever accidentally walked through an ant colony and looked down to find a plethora of ants stalking about on your foot? Well, imagine having a bunch of superlarge, mutant ants walking up your leg!
+
+Okay, so the ants in the fossil weren’t mutants, but they kind of looked a bit like it. This fossil reveals that T. giganteum was about 2.4 inches (6 cm) long, and it seems that it had a wingspan of nearly six inches(!). For comparison, the average size of the current ant species is a mere .08 to 1 inches (.2 to 2.5 cm).
+
+7. ANTS HAVE A FREAKY KIND OF HIVE MIND:
+
+Ants can come together to form an enormous, coordinated “superorganism.” Just as humans are able to function because of all of the various organs that comprise our bodies, so do individual ants function as parts of a larger organism. There are a number of individual parts (ants) that fit together to cooperate and accomplish amazing feats. Rather than working as individuals, they function as parts of a collective whole, doing what is best for the colony as a collective. For example, a swarm of ants work together to select the ideal location for the hive, whereas a single ant may make a mistake. Ants are able to do this because of the way that they communicate (more on that later). They “talk” in such a way that they form a seamless, brain-like structure.
+
+
+
+6. ANTS “TALK” USING CHEMICALS:
+
+Ants are able to communicate and cooperate effectively by using chemicals known as “pheromones.”'
     )
 
 ANTEATER_FACTS = (
