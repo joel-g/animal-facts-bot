@@ -376,6 +376,18 @@ AARDVARK_FACTS = (
     'Aardvarks are prey to many animals including lions, leopards, hunting dogs, hyenas, and pythons.',
     'Aardvarks are solitary and only come together to mate; females have a gestation period of seven months. One cub is born between May and July and will remain in the burrow for the first two weeks of life.')
 
+AFRICAN_GREY_FACTS = (
+    'The Congo African Grey is the largest of the African Grey parrots, sporting a lighter gray color in its plumage, and a solid black beak.'
+    'An African Grey has the mental and emotional capacities of a 5-year-old human child.'
+    'The African grey parrot is famous for its intelligence and ability to mimic human speech.'
+    'African Grey Parrots form very strong bonds with their owners and can be quite emotionally needy'
+    'Not only will African Greys develop outstanding vocabularies, they may even come to understand what you are saying.
+    'Alex, the most famous African Grey, can recognize and identify verbally close to 50 objects, 7 colors, and 5 shapes.'
+    'African Greys tend to train you to do their bidding'
+    'African grey parrots generally inhabit savannas, coastal mangroves, woodland and edges of forest clearings in their West and Central Africa range.'
+    'African greys are susceptible to feather picking, calcium deficiency, vitamin-A and vitamin-D deficiency, respiratory infection, psittacosis and psittacine beak and feather disease (PBFD).
+)
+
 ALBATROSS_FACTS = (
     'Albatrosses are known to live until their fifties sixties.',
     'The Wandering albatross has a wingspan that measures up to 11 feet 4 inches from end to end, the largest of any living bird.',
