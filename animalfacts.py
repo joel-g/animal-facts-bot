@@ -1695,6 +1695,11 @@ PARROT_FACTS = (
     'Keas are large, intelligent parrots that live in alpine areas of New Zealand’s South Island. They are the world’s only alpine parrot and are known for their curious and sometimes cheeky behaviour near ski fields where they like to investigate bags, steal small items and damage cars.',
     'Kakapos are critically endangered flightless parrots, as of 2010 only around 130 are known to exist. They are active at night (nocturnal) and feed on a range of seeds, fruit, plants and pollen. Kakapos are also the world’s heaviest parrot.',
     'The flag of Dominica features the sisserou parrot.',
+    'Parrot toes are configured for maximum grip: two in front and two behind, like two pairs of opposable thumbs.',
+    'Due to a combination of habitat destruction and persistent poaching for the pet trade, parrot species regularly land on the IUCN Red List of Threatened Species.',
+    'The males and females of most parrot species look virtually identical.',
+    'Psittacofulvins, a bacteria-resistant pigment that only parrots are known to produce, give the birds’ feathers their red, yellow and green coloration.',
+    'Many parrots have near-human lifespans.',
     )
 
 PEACOCK_FACTS = (
