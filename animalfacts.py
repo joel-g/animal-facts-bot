@@ -1516,7 +1516,7 @@ MOOSE_FACTS = (
 	'The patch of skin that hangs from a moose neck is called a bell.',
 	'Moose antlers can spread six feet across.',
 	'Collisions between moose and motor vehicles are common in Scandinavia.',
-	'Moose occur throughout Alaska, Canada, the northeastern United States and as far south as the Rocky Mountains in Colorado.,
+	'Moose occur throughout Alaska, Canada, the northeastern United States and as far south as the Rocky Mountains in Colorado.',
 	'A group of Moose is know as a Herd.',
 	'The moose has an average lifespan of 8 to 12 years in the wild.',
 	'Moose can rup up to 35 miles per hour.',
