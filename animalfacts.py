@@ -1826,7 +1826,7 @@ PUMA_FACTS = (
 PUFFERFISH_FACTS = (
     'Puffer fish vary in size from one inch long pygmy puffer, to a two feet long freshwater giant puffer.',
     'Scientists believe that puffer fish developed this tactic as a method of the self-defense because they are poor swimmers that cannot escape from the danger quickly.',
-    'Sharks are the only species immune to the puffer fish's toxin. They can eat puffer fish without any negative consequences',
+    'Sharks are the only species immune to the puffer fish\'s toxin. They can eat puffer fish without any negative consequences',
     'Puffer fish do not have scales. Their skin is thick and rough. Some species have spines on the skin, which offer additional protection against the predators',
     )
 
