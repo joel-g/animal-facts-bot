@@ -1758,6 +1758,7 @@ PIG_FACTS = (
     'Contrary to popular belief, pigs are actually considered to be very clean animals.',
     'Pigs cannot sweat, so they bathe in water and mud to cool themselves off.',
     'When pigs have ample space, they will try not to soil in the areas where they sleep and eat.',
+    'Almost half the pigs in the world are owned by farmers in China.',
     )
 
 PIGEON_FACTS = (
