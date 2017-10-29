@@ -273,6 +273,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('jackal', '\sjackals?\s', reddit, JACKAL_FACTS, comment)
     botengine('jellyfish', '\sjelly ?fish(es)\s', reddit, JELLYFISH_FACTS, comment)
     botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
+    botengine('kakapo', '\skakapo?\s', reddit, KAKAPO_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
     botengine('ladybug', '\s(ladybug|lady bug)s?\s', reddit, LADYBUG_FACTS, comment)
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
@@ -1318,6 +1319,19 @@ KANGAROO_FACTS = (
     'Baby kangaroos are known as ‘joeys’. A group of kangaroos is called a ‘mob’, ‘troop’ or ‘court’.',
     'The red kangaroo is the largest marsupial in the world.',
     'Kangaroos usually live to around six years old in the wild.',
+    )
+KAKAPO_FACTS = (
+    'The kakapo is the worlds only fligletless parrot and is also unusual in being nocturnal.',
+    'The kakapo is the worlds heaviest parrot, at about 24 inches tall, it weighs between 4 and 9 lbs.',
+    'The male kakapo produces a strange boom call to attract potential mates, which can be heard up to 5 kilometres away.',
+    'The kakapo does not reach sexual maturity until 9 to 10 years of age, and it only breeds every 2 to 5 years.',
+    'Adult kakapos have beautiful mossy green plumage mottled with brown and yellow, which provides excellent camouflage against the forest floor.',
+    'The kakapo feeds on a variety of fruits, seeds, roots, stems, leaves, nectar and fungi.',
+    'The kakapo is particularly vulnerable to predation by mammals due to its strong scent, habit of freezing when threatened, and especially its ground nesting behaviour and flightlessness.',
+    'During the breeding season, male kakapos can walk up to 4 miles to reach a special arena where they compete with each other for the attention of females.',
+    'The kakapo is best described as a midnight rambler, spending most of its life sleeping during the day and wandering alone through the forest at night.',
+    'The female kakapo lays between one and four eggs (slightly smaller than a chicken egg), which hatch after about 30 days.',
+    'As of early 2012, there were 126 kakapos in the wild.',
     )
 
 KOALA_FACTS = (
@@ -2502,6 +2516,7 @@ ALL_FACTS = (
     JACKAL_FACTS,
     JELLYFISH_FACTS,
     KANGAROO_FACTS,
+    KAKAPO_FACTS,	
     KOALA_FACTS,
     LADYBUG_FACTS,
     LEMUR_FACTS,
