@@ -332,6 +332,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('sunfish', '\ssunfish(es)?\s', reddit, SUNFISH_FACTS, comment)
     botengine('tardigrade', '\stardigrades?\s', reddit, TARDIGRADE_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
+    botengine('toad','\stoads?\s', reddit, TOAD_FACTS, comment)
     botengine('toucan', '\stoucans?\s', reddit, TOUCAN_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
     botengine('vampire bat', '\svampire ?bats\s', reddit, VAMPIRE_BAT_FACTS, comment)
@@ -2265,6 +2266,19 @@ TIGER_FACTS = (
     'Tigers that breed with lions give birth to hybrids known as tigons and ligers.',
     )
 
+TOAD_FACTS = (
+	'While frogs need to live near water to survive, toads do not actually have to be located near water.',
+	'The toad has skin in which lets out a bitter taste and smell in which burns the eyes and nostrils of its predators.',
+	'The common toad moves around by crawling, unlike frogs which hop, it moves at the speed of 5 miles per hour.',
+	'Toads can survive 20-40 years in the wild, and 50 years in captivity.',
+	'Toad mating season begins March and ends in June!',
+	'The common toad can be found throughout all of Europe besides northern Scotland and the Mediterranean islands.',
+	'The main threat to toad survival is habitat destruction, the common toad is not endangered however.'
+	'Twenty tons of common toads are killed on British roads annually.',
+	'Grass snakes and hedgehogs prey on the toad as they are immune to its bitter taste and smell.',
+	'The common toads skin color changes depending on their surroundings.',
+	)	
+
 TOUCAN_FACTS = (
     'Toucans typically lay 2–21 white eggs in their nests.',
     'Toucans make their nests in tree hollows and holes excavated by other animals such as woodpeckers.',
@@ -2539,14 +2553,15 @@ ALL_FACTS = (
     SNAIL_FACTS,
     SNAKE_FACTS,
     STARFISH_FACTS,
-	STURGEON_FACTS,
+  	STURGEON_FACTS,
     SUNFISH_FACTS,
     SQUIRREL_FACTS,
     STINGRAY_FACTS,
     TARDIGRADE_FACTS,
     TARANTULA_FACTS,
     TIGER_FACTS,
-	TOUCAN_FACTS,
+    TOAD_FACTS,
+	  TOUCAN_FACTS,
     TURTLE_FACTS,
     VAMPIRE_BAT_FACTS,
     WALLABY_FACTS,
