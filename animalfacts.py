@@ -240,7 +240,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('emu', '\semus?\s', reddit, EMU_FACTS, comment)
     botengine('falcon', '\sfalcons?\s', reddit, FALCON_FACTS, comment)
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
-    botengine('house fly', '\shouse flies?\s', reddit, HOUSE_FLY_FACTS, comment)
+    botengine('fly', '\sflies?\s', reddit, FLY_FACTS, comment)
     botengine('fox', '\sfox(es)?\s', reddit, FOX_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
     botengine('gazelle', '\sgazelles?\s', reddit, GAZELLE_FACTS, comment)
@@ -886,7 +886,7 @@ FLAMINGO_FACTS = (
     'The flamingo is the national bird of the Bahamas.',
     )
 
-HOUSE_FLY_FACTS = (
+FLY_FACTS = (
     'Flies are found on every continent except for the innermost polar regions of the Arctic Circle and Antarctica',
     'Flies are omnivores - they will eat just about everything from nectar to animal blood',
     'The lifespan of a fly averages around one month',
