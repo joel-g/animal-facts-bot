@@ -40,6 +40,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * bear
 * beaver
 * bison
+* bobcat
 * buffalo
 * camel
 * capybara

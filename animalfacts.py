@@ -1,4 +1,4 @@
-﻿import re
+import re
 import praw
 import random
 import time
@@ -95,7 +95,7 @@ def check_messages(reddit):
                         print('     Explained why I cant do cat or dog facts\n')
                         record_already_replied(file_obj_r, comment)
                     elif 'silly' in comment_body:
-                        comment.reply('I am programmed to be silly!')
+                        comment.reply('I am programmed to be silly!!!')
                         print('     Explained why I am silly\n')
                         record_already_replied(file_obj_r, comment)
                     elif 'hate' in comment_body:
@@ -224,6 +224,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('bear', '\sbears?\s', reddit, BEAR_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
     botengine('buffalo', '\sbuffalos?\s', reddit, BUFFALO_FACTS, comment)
+    botengine('bobcat','\sbobcats?\s',reddit, BOBCAT_FACTS,comment)
     botengine('bison', '\sbisons?\s', reddit, BISON_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
     botengine('capybara', '\scapybaras?\s', reddit, CAPYBARA_FACTS, comment)
@@ -305,6 +306,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
     botengine('platypus', '\splatypuse?s?\s', reddit, PLATYPUS_FACTS, comment)
     botengine('puma', '\spumas?\s', reddit, PUMA_FACTS, comment)
+    botengine('pufferfish', '\spufferfish\s', reddit, PUFFERFISH_FACTS, comment)
     botengine('porcupine', '\sporcupines?\s', reddit, PORCUPINE_FACTS, comment)
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
@@ -460,7 +462,8 @@ ANTEATER_FACTS = (
     'Anteaters produce formic acid in its stomach instead of hydrochloric acid, which mammals usually produce.',
     'Anteaters have very poor eyesight and rely on their keen sense of smell to find food.',
     'Anteaters can eat up to 35,000 insects a day.',
-    'Anteaters will never destroy an anthill because they need it as a source of food.'
+    'Anteaters will never destroy an anthill because they need it as a source of food.',
+    'Anteaters have tongues that can be 2 feet long.',
     )
 
 ANTELOPE_FACTS = (
@@ -555,6 +558,17 @@ BISON_FACTS=(
     'When bison are born, their fur is orange-red. After a few months, their fur steadily grows more brown.'
     )
 
+BOBCAT_FACTS = (
+    'An adult bobcat’s tail averages just 6 to 7 inches in length.',
+    'The word bobcat a reference to their tail. In barbershop lingo, hair that’s been cut short is sometimes called “bobbed.”',
+    'Wild bobcats do the majority of their hunting in low-light conditions.',
+    'Although adult bobcats only weigh 33 pounds, they can hunt and kill adult white tailed deer which can weigh 250 pounds.',
+    'Bobcats lay claim to an area of land that can be anywhere from 1 to 18 square miles in size.',
+    'Bobcats can’t always consume their victims in one sitting. Sometimes, they use dirt, snow, leaves, or grass to bury the uneaten pieces of especially large corpses, and will return periodically to dig up their leftovers.',
+    'The scientfic name for the bobcat is "Lynx rufus".',
+    'Wild bobcats have an average life span of 10 to 12 years'
+)
+    
 BUFFALO_FACTS = (
     'Buffalo are the largest animals found in north America and can grow to 6-7 feet long, weighing up to 2,000lbs. True buffalo only live in Asia and Africa.',
     'Buffalo are large members of the Bovidae family. There are two types of buffalo: the African or Cape buffalo and the Asian water buffalo. They are dark gray or black animals that look a lot like bulls. They are often confused with bison',
@@ -934,7 +948,7 @@ EMU_FACTS = (
     )
 
 FALCON_FACTS = (
-    'Peregrine falcons have been clocked at reaching speeds of 242 miles per hour while diving for prey, making them the fastest recorded animal ever.',
+    'Peregrine falcons have been clocked at reaching speeds of 242 miles per hour while diving for prey, making them the fastest recorded animal ever.',
     'Falcon is a carnivore. Its diet is based on rodents, frogs, fish, bats and small birds.',
     'Falcons have a lifespan between 12 and 20 years in the wild, depending on species. Some species can live up to 25 years in captivity.',
     'The gyrfalcon (Falco rusticolus) is the largest falcon species. It is up to 61 centimeters (24 inches) long withwingspan up to 130 centimeters (51 inches) and weight up to 1,350 grams (47.6 ounces).',
@@ -972,6 +986,15 @@ FOX_FACTS = (
     "The tip of a red fox’s tail is white, whereas swift foxes have a black-tipped tail",
     "Foxes have excellent hearing. Red foxes can reportedly hear a watch ticking 40 yards away!",
     'Foxes stink, their funny ‘musky’ smell comes from scent glands at the base of their tail',
+    "Foxes have whiskers on their legs and face, which help them to navigate",
+    "Foxes are one of the most well known wild animals in the UK, they are native to Britain",
+    "Foxes use 28 different types of calls to communicate with each other",
+    "A fox can run 30 miles per hour",
+    "Foxes are usually monogamous",
+    "Foxes have excellent hearing. They can hear low-frequency sounds and rodents digging underground",
+    "The fox does not chew its food.  Instead it uses its carnassial or shearing teeth to cut the meat into manageable chunks",
+    "There are 21 species of fox",
+    "Foxes have a lifespan of 2 to 5 years but some have lived to be 14 years old in captivity.",
     )
 
 FROG_FACTS = (
@@ -1659,13 +1682,13 @@ PANDA_FACTS = (
     )
 
 PANGOLIN_FACTS = (
-    'The name "pangolin" comes from the Malay word pengguling, meaning "one who rolls up".',
-    'Pangolins can also emit a noxious-smelling chemical from glands near the anus, similar to the spray of a skunk.',
-    'Large pangolins can extend their tongues as much as 40 cm (16 in), with a diameter of only 0.5 cm (0.20 in).',
-    'A pangolin can consume 140 to 200 g (4.9 to 7.1 oz) of insects per day.',
-    'Pangolins have a very poor sense of vision, so they rely heavily on smell and hearing.',
+    'The name "pangolin" comes from the Malay word pengguling, meaning "one who rolls up".',
+    'Pangolins can also emit a noxious-smelling chemical from glands near the anus, similar to the spray of a skunk.',
+    'Large pangolins can extend their tongues as much as 40 cm (16 in), with a diameter of only 0.5 cm (0.20 in).',
+    'A pangolin can consume 140 to 200 g (4.9 to 7.1 oz) of insects per day.',
+    'Pangolins have a very poor sense of vision, so they rely heavily on smell and hearing.',
     'Pangolins lack teeth, so also lack the ability to chew.',
-    'The weight of a pangolin at birth is 80 to 450 g (2.8 to 15.9 oz) and the average length is 150 mm (5.9 in).',
+    'The weight of a pangolin at birth is 80 to 450 g (2.8 to 15.9 oz) and the average length is 150 mm (5.9 in).',
     'Pangolin meat is considered a delicacy in southern China and Vietnam.',
     'Pangolin is the most trafficked animal in the world.',
     'All eight species of pangolin are categorized on IUCN Red List of Threatened Species.',
@@ -1748,6 +1771,7 @@ PIG_FACTS = (
     'Contrary to popular belief, pigs are actually considered to be very clean animals.',
     'Pigs cannot sweat, so they bathe in water and mud to cool themselves off.',
     'When pigs have ample space, they will try not to soil in the areas where they sleep and eat.',
+    'Almost half the pigs in the world are owned by farmers in China.',
     )
 
 PIGEON_FACTS = (
@@ -1797,6 +1821,13 @@ PUMA_FACTS = (
     'Puma are obligated carnivores (like all cats), they need to feed on meat to survive.',
     'Cubs born blind, they rely exclusively on their mother and begin to hunt after six months.',
     'Cubs begin to be weaned around three months of age.'
+    )
+
+PUFFERFISH_FACTS = (
+    'Puffer fish vary in size from one inch long pygmy puffer, to a two feet long freshwater giant puffer.',
+    'Scientists believe that puffer fish developed this tactic as a method of the self-defense because they are poor swimmers that cannot escape from the danger quickly.',
+    'Sharks are the only species immune to the puffer fish's toxin. They can eat puffer fish without any negative consequences',
+    'Puffer fish do not have scales. Their skin is thick and rough. Some species have spines on the skin, which offer additional protection against the predators',
     )
 
 PORCUPINE_FACTS = (
@@ -2371,7 +2402,8 @@ ZEBRA_FACTS = (
     'The ears of a zebra show its mood.',
     'A zebra named Marty starred in the 2005 animated film Madagascar.',
     'Zebras are very fast animals, and can gallop at speeds of up to 65 km/h. This is fast enough to outrun many predators.',
-    'Zebra foals can run within a few hours of birth.'
+    'Zebra foals can run within a few hours of birth.',
+    'Like horses, zebras sleep standing up, and usually only when in the safety of a group.'
 )
 
 ALL_FACTS = (
