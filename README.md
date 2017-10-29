@@ -64,7 +64,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * emu
 * falcon
 * flamingo
-* fly
+* house fly
 * fox
 * frog
 * gazelle
