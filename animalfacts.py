@@ -281,7 +281,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('llama', '\sllamas?\s', reddit, LLAMA_FACTS, comment)
     botengine('meerkat', '\smeerkats?\s', reddit, MEERKAT_FACTS, comment)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
-	botengine('moose', '\smoose?\s', reddit, MOOSE_FACTS, comment)
+    botengine('moose', '\smoose\s', reddit, MOOSE_FACTS, comment)
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
     botengine('newt', '\snewts?\s', reddit, NEWT_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
