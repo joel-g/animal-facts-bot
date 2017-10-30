@@ -230,6 +230,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('capybara', '\scapybaras?\s', reddit, CAPYBARA_FACTS, comment)
     botengine('chameleon', '\schameleons?\s', reddit, CHAMELEON_FACTS, comment)
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
+    botengine('chimpanzee', '\schimpanzees?\s', reddit, CHIMPANZEE_FACTS, comment)
     botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
     botengine('chinchilla', '\schinchillas?\s', reddit, CHINCHILLA_FACTS, comment)
     botengine('clownfish', '\sclown ?fishs(es)?\s', reddit, CLOWNFISH_FACTS, comment)
@@ -660,7 +661,18 @@ CHEETAH_FACTS = (
     'With their light body weight and blunt claws, cheetahs are not well designed to protect themselves or their prey. When a larger or more aggressive animal approaches a cheetah in the wild, it will give up its catch to avoid a fight.',
     'Cheetahs only need to drink once every three to four days.',
     )
-
+CHIMPANZEE_FACTS = (
+    'Chimpanzees are omnivores which mean that they eat both plants and animals.',
+    'Chimpanzee communities may range in size from 15 to 120 chimps of both sexes and all ages.',
+    'Chimpanzees have a hierarchy, and generally each community has an alpha male who is considered the most powerful member of the group.',
+    'Chimpanzees can communicate with each other even over long distances with loud calls called pant-hoots, or by drumming the buttresses of trees.',
+    'Chimpanzees say hello to each other by panting.',
+    'Chimpanzees indicate displeasure by grunting and flicking their wrists at the one who has offended them.',
+    'Chimpanzees can be found in 21 African countries.',
+    'Most chimpanzee mothers give birth to one young an average of every five to six years in the wild. Young chimps stay with their mothers for up to 10 years.',
+    'Chimpanzees grow up to 1.2 metres tall.  Their arms grow longer than their legs, which helps them to walk along by clenching their fists and putting their weight on their knuckles.',
+    'Chimpanzees are one of only two species in the genus Pan, the other being the bonobo, and both are found sub-Saharan Africa.'
+    )
 CHIPMUNK_FACTS = (
     'Chipmunks are the smallest members of the squirrel family. Smallest species has 1.1 to 1.8 ounces of weight and reaches 7.2 to 8.5 inches in length. Largest species can reach 4.4 ounces of weight and 11 inches in length.',
     'Chipmunks have fluffy tail that can reach 3 to 5 inches in length.',
@@ -2472,6 +2484,7 @@ ALL_FACTS = (
     CAPYBARA_FACTS,
     CHAMELEON_FACTS,
     CHEETAH_FACTS,
+    CHIMPANZEE_FACTS,
     CHIPMUNK_FACTS,
     CHINCHILLA_FACTS,
     CLOWNFISH_FACTS,
