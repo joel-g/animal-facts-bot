@@ -482,7 +482,7 @@ ANTELOPE_FACTS = (
     'Depending on the species, 4-9 months after mating season, baby antelope will be born. Baby antelope is an easy target and mother keeps it on the secret location until it becomes stronger.',
     'Some antelope are famous for their massive herds, like the thousands of wildebeests making their annual migration across the African plains.',
     )
-	
+
 ATLANTIC_PUFFIN_FACTS = (
     'The Atlantic Puffin is the only puffin native to the Atlantic Ocean.',
     'The Atlantic Puffin breeds in Iceland, Norway, Greenland, Newfoundland and many North Atlantic islands, and as far south as Maine in the west and the British Isles in the east.',
@@ -581,7 +581,7 @@ BOBCAT_FACTS = (
     'The scientfic name for the bobcat is "Lynx rufus".',
     'Wild bobcats have an average life span of 10 to 12 years'
 )
-    
+
 BUFFALO_FACTS = (
     'Buffalo are the largest animals found in north America and can grow to 6-7 feet long, weighing up to 2,000lbs. True buffalo only live in Asia and Africa.',
     'Buffalo are large members of the Bovidae family. There are two types of buffalo: the African or Cape buffalo and the Asian water buffalo. They are dark gray or black animals that look a lot like bulls. They are often confused with bison',
@@ -807,7 +807,7 @@ DEGU_FACTS = (
 	'Unlike other octodontids, degus are diurnal (activity during the day, with a period of sleeping, or other inactivity, at night), and they have good vision.',
 	"In case of predator's attack, the degu can shed its tail from its body. A shed tail will never grow back.",
     )
-	
+
 DINGO_FACTS = (
     'Dingoes actually originate from Southeast Asia, where they can still be found today.',
     'Dingoes mate once per year, from March to June.',
@@ -1482,7 +1482,7 @@ LLAMA_FACTS = (
     'A group of llamas is called a herd.',
     'Llamas don\'t bite. They spit when they\'re agitated, but that\'s mostly at each other.',
     'Yarn made from llama fiber is soft and lightweight, yet remarkably warm.',
-    'The Llamas scientific name is \"Lama Glama\".', 
+    'The Llamas scientific name is \"Lama Glama\".',
     'Llamas spit when annoyed.',
     )
 
@@ -1938,7 +1938,7 @@ RATTLESNAKE_FACTS = (
     'Rattlesnake hibernates during the cold time of the year. Usually large number of rattlesnakes gathers in the underground dens and curl around each other for the purpose of warming.',
     'Rattlesnakes have triangular head and vertical pupils. Their name comes from a rattle at the end of the tail. Rattle is made of keratin (same substance builds nails and hair in humans).',
     'Rattlesnakes have a lot of enemies, from large birds like falcons and crows to larger mammals like raccoons and opossums. One of a rattlesnake’s biggest threats is actually another snake — the kingsnake, which is a constrictor.',
-    'Rattlesnakes are able to consume animals much larger than themselves. They are able to greatly expand their jaws and skin to fit small rodents and birds into their bodies. ' 
+    'Rattlesnakes are able to consume animals much larger than themselves. They are able to greatly expand their jaws and skin to fit small rodents and birds into their bodies. '
 )
 
 
@@ -2162,7 +2162,7 @@ STURGEON_FACTS = (
 	'Sturgeons have four soft barbels between the front of the snout and the toothless mouth, which protrudes to pick up food.',
 	'Sturgeons can live 50 to 100 years or more, depending on the species.',
 	)
-	
+
 
 SUNFISH_FACTS = (
     'The ocean sunfish (mola mola) is the heaviest known bony fish in the world, adults typically weigh between 247 and 1000 kg (545-2205 lb).',
@@ -2288,7 +2288,7 @@ TOAD_FACTS = (
 	'Twenty tons of common toads are killed on British roads annually.',
 	'Grass snakes and hedgehogs prey on the toad as they are immune to its bitter taste and smell.',
 	'The common toads skin color changes depending on their surroundings.',
-	)	
+	)
 
 TOUCAN_FACTS = (
     'Toucans typically lay 2–21 white eggs in their nests.',
@@ -2309,7 +2309,7 @@ TOUCAN_FACTS = (
     'Toucans are the mascot of the Brazilian Social Democracy Party; its party members are called tucanos for this reason.',
     'Toucans are highly social and most species occur in groups of up to 20 or more birds for most of the time. ',
     'The toco toucan is the largest species of toucan.',
-    )	
+    )
 
 TURTLE_FACTS = (
     'Turtles have a hard shell that protects them like a shield, this upper shell is called a ‘carapace’.',
@@ -2387,6 +2387,19 @@ WALRUS_FACTS = (
     'Native people of the Arctic hunt walruses for hides, food, ivory and bones. These natives are now the only people who are allowed to legally hunt walruses.',
     'Odobenus rosmarus, the walruses’ scientific name, is Latin for ‘tooth-walking sea-horse’.',
     'Walruses have only two natural predators: the orca (or killer whale) and the polar bear. Both are more likely to hunt walrus calves than adults.',
+    )
+
+WARTHOG_FACTS = (
+    'Warthogs get their name from the patches of skin on their face that look like warts. These “warts” are thick growths of skin that act as padding for when males fight during mating season.',
+    'Did you know - during a dry season a warthog can go months without water. Their bodies will conserve any moisture that would otherwise be used for cooling.',
+    'Despite their appearance, warthogs are not aggressive (unless provoked or attacked) and don’t hunt prey. They are herbivores and use their long snouts and tusks to root the ground for roots, berries, bark, grass or other plants.',
+    'Warthogs can get out of a sticky situation fast - when threatened they can run up to 30 miles an hour.',
+    'Female warthogs are called sows, and they live together in groups often as large as up to 40 members. Male warthogs live alone and often only join up with sow groups during mating season.',
+    'A warthog’s average lifespan in the wild is about 15 years.',
+    'Warthogs will often utilize empty dens they find (usually created by aardvarks). In a situation where they are being chased by a predator, warthogs will find these dens to back into - using their tusks to ward away prey from the front.',
+    'A warthog is a member of the pig family and can be found in the savannas, open plains, and grasslands of Africa - south of Sahara.',
+    'Warthogs don’t have sweat glads to cool themselves off, so when it gets warm a warthog will wallow in mud to cool off.',
+    'Warthogs allow birds such as Oxpeckers or Yellow-Billed Hornbills to ride on their back. These birds will often eat insects on the warthog’s body.',
     )
 
 WHALE_FACTS = (
