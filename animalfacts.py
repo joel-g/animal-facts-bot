@@ -338,6 +338,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('vampire bat', '\svampire ?bats\s', reddit, VAMPIRE_BAT_FACTS, comment)
     botengine('wallaby', '\swallab(y|ies)\s', reddit, WALLABY_FACTS, comment)
     botengine('walrus', '\swalrus\s', reddit, WALRUS_FACTS, comment)
+    botengine('warthog', '\swarthog\s', reddit, WARTHOG_FACTS, comment)
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
     botengine('wolf', '\swol(f|ves)\s', reddit, WOLF_FACTS, comment)
     botengine('yak', '\syaks?\s', reddit, YAK_FACTS, comment)
