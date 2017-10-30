@@ -131,6 +131,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * tarantula
 * tardigrade
 * tiger
+* trout
 * turtle
 * vampire bat
 * wallaby
