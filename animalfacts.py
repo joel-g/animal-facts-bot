@@ -1368,6 +1368,8 @@ LEMUR_FACTS = (
     'There are 105 known species of lemur.',
     'Dwarf lemurs store fat in their tails for nourishment when they go dormant during dry seasons.',
     'Lemurs can live up to 30 years in captivity, or 16-20 years in the wild, depending on the species.',
+    'The name Lemur is actually Latin for spirits of the night.'
+    'Lemurs are a species of primate known as Prosimians.'
 )
 
 LEOPARD_FACTS = (
