@@ -232,7 +232,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
     botengine('chinchilla', '\schinchillas?\s', reddit, CHINCHILLA_FACTS, comment)
-    botengine('clownfish', '\sclown ?fishs(es)?\s', reddit, CLOWNFISH_FACTS, comment)
+    botengine('clownfish', '\sclown ?fish(es)?\s', reddit, CLOWNFISH_FACTS, comment)
     botengine('cobra', '\scobras?\s', reddit, COBRA_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment)
@@ -247,6 +247,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('dugong', '\sdugongs?\s', reddit, DUGONG_FACTS, comment)
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
     botengine('echidna', '\sechidnas?\s', reddit, ECHIDNA_FACTS, comment)
+    botengine('eland', '\selands?\s', reddit, ELAND_FACTS, comment)
     botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
     botengine('elk', '\selks?\s', reddit, ELK_FACTS, comment)
     botengine('emu', '\semus?\s', reddit, EMU_FACTS, comment)
@@ -901,6 +902,17 @@ ECHIDNA_FACTS = (
     'Echidnas are egg-laying mammals. Along with the platypus, the echidna is a member of the monotremes, an order of egg-laying mammals found in Australia.',
     'At the end of their slender snouts, echidnas have tiny mouths and toothless jaws. They use their long, sticky tongues to feed on ants, termites, worms, and insect larvae.',
     "The echidna has a very large brain for its body size. Part of this might be due to their enlarged neocortex, which makes up half of the echidna's brain (compare this to about 30 percent in most other mammals and 80 percent in humans).",
+    )
+
+ELAND_FACTS = (
+    'The common eland (Taurotragus oryx), also known as the southern eland or eland antelope, is a savannah and plains antelope found in East and Southern Africa.',
+    'Common elands form herds of up to 500 animals, but are not territorial.',
+    'The common eland is used by humans for leather, meat, and rich, nutritious milk, and has been domesticated in many areas.',
+    "While the common eland's population is decreasing, it is classified as 'Least Concern' by the International Union for Conservation of Nature (IUCN).",
+    "Mainly a herbivore, the eland's diet is primarily grasses and leaves.",
+    "The name 'eland' is Dutch for 'elk' or 'moose'.",
+    "Eland herds are accompanied by a loud clicking sound that has been subject to considerable speculation. It is believed that the weight of the animal causes the two halves of its hooves to splay apart, and the clicking is the result of the hoof snapping together when the animal raises its leg.",
+    'Common elands are nomadic and crepuscular. They eat in the morning and evening, rest in shade when hot and remain in sunlight when cold.',
     )
 
 ELEPHANT_FACTS = (
@@ -2488,6 +2500,7 @@ ALL_FACTS = (
     DUGONG_FACTS,
     EAGLE_FACTS,
     ECHIDNA_FACTS,
+	ELAND_FACTS,
     ELEPHANT_FACTS,
     ELK_FACTS,
     EMU_FACTS,
