@@ -1318,6 +1318,8 @@ JELLYFISH_FACTS = (
     'Jellyfish don’t have brains.',
     'Jellyfish use their tentacles to sting. Most are harmless to humans but stings from some species, such as the box jellyfish, can be very painful and sometimes kill.',
     'Jellyfish eat plankton. Some sea turtles eat jellyfish.',
+    'Jellyfish can clone themselves.',
+    'Some jellyfish can glow in the dark.',
     )
 
 KANGAROO_FACTS = (
