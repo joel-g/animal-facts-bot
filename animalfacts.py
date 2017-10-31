@@ -284,6 +284,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('llama', '\sllamas?\s', reddit, LLAMA_FACTS, comment)
     botengine('mantis shrimp', '\smantis shrimps?\s', reddit, MANTIS_SHRIMP_FACTS, comment)
     botengine('meerkat', '\smeerkats?\s', reddit, MEERKAT_FACTS, comment)
+    botengine('mongoose', '\smongooses?\s', reddit, MONGOOSE_FACTS, comment)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
     botengine('moose', '\smoose\s', reddit, MOOSE_FACTS, comment)
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
@@ -1495,6 +1496,21 @@ LLAMA_FACTS = (
     'Some ranchers and farmers use \"guard llamas\" to safeguard their sheep or other livestock.'
     )
 
+MONGOOSE_FACTS = (
+    'Mongooses are weasel-like creatures that belong to the group of Carnivores.',
+    'Mongooses live around 4 years in the wild and up to 20 years in captivity.',
+    'Mongooses use scents to announce their reproductive status and to mark territory.',
+    'Mongooses have non-retractable claws which mean that they cannot hide them when they want. Their claws are visible all the time.',
+    'Mongooses are primarily found in Africa, their range covering most of the continent. Some species occupy parts of southern Asia and the Iberian Peninsula.',
+    'Mongooses normally have brown or gray grizzled fur, and a number of species sport striped coats or ringed tails.',
+    'Mongooses live in burrows and are nondiscriminatory predators. They feed on small animals such as rodents, birds, reptiles, frogs, insects, and worms.',
+    'Mongooses (such as the Indian gray mongoose) are well known for their ability to fight and kill venomous snakes, particularly cobras.',
+    'Most mongoose species are highly social animals living in busy groups of 6 to 40 individuals called "packs" or "mobs".',
+    'Several species of mongoose routinely crack open eggs, nuts, or shelled creatures such as crabs or mollusks by dropping or throwing them on rocks.',
+    'Mongooses are diurnal, which means that they are active during the day and sleep at night.',
+    'Mongooses tend to live in burrows that other animals have abandoned. They rarely dig burrows on their own.',
+    )
+
 MONKEY_FACTS = (
     'There are currently 264 known monkey species.',
     'Monkeys can be divided into two groups, Old World monkeys that live in Africa and Asia, and New World monkeys that live in South America.',
@@ -2547,6 +2563,7 @@ ALL_FACTS = (
     LLAMA_FACTS,
     MANTIS_SHRIMP_FACTS,
     MEERKAT_FACTS,
+    MONGOOSE_FACTS,
     MONKEY_FACTS,
 	MOOSE_FACTS,
     NARWHAL_FACTS,
