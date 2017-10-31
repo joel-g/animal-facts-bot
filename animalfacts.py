@@ -2061,12 +2061,23 @@ SHARK_FACTS = (
 SHEEP_FACTS = (
     'There are over 1 billion sheep in the world!',
     'Sheep have a field of vision (FOV) of around 300 degrees allowing them to look behind themselves without turning their head!',
-    'Sheeps have four stomachs!',
+    'Sheep have four stomachs!',
     'Ancient egyptians believed that sheep were sacred to society. When a sheep died, it would be mummified just like a human.',
     'Sheep have 24 molar teeth and 8 incisor teeth.',
     'A collection or group of sheep is called a flock.',
     'Most sheep live between 6-11 years.',
+    'China has the largest number of sheep in the world.',
     'A lamb is considered a sheep less than one year old.',
+    'More than two thirds of U.S. sheep are in the Southern Plains, Mountain and Pacific regions.',
+    'Predators of sheep include coyotes, dogs, bears, big cats, foxes and eagles.',
+    'A sheep, depending on its type, can produce anywhere from two to 30 pounds of wool per year.',
+    'In 1996, Dolly, a Finnish Dorset sheep, was the first mammal to be cloned from an adult cell.',
+    'Texas, Wyoming and California are the U.S. states with the highest number of sheep.',
+    'Sheep have been shown to display emotions, some of which can be studied by observing the position of their ears.',
+    'Sheep are known to self-medicate when they have some illnesses. They will eat specific plants when ill that can cure them.',
+    'Sheep are precocial (highly independent from birth) and gregarious (like to be in a group).',
+    'Sheep produce a thick woolly coat called a fleece to protect them from the weather, both hot and cold. ',
+    'Due to human interaction, domestic sheep have evolved to require humans to shear them. Their wool never sheds.',
     )
 
 SHRIMP_FACTS = (
