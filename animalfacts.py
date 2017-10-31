@@ -1504,11 +1504,17 @@ MONGOOSE_FACTS = (
     'Mongooses are primarily found in Africa, their range covering most of the continent. Some species occupy parts of southern Asia and the Iberian Peninsula.',
     'Mongooses normally have brown or gray grizzled fur, and a number of species sport striped coats or ringed tails.',
     'Mongooses live in burrows and are nondiscriminatory predators. They feed on small animals such as rodents, birds, reptiles, frogs, insects, and worms.',
-    'Mongooses (such as the Indian gray mongoose) are well known for their ability to fight and kill venomous snakes, particularly cobras.',
+    'Some mongoose (such as the Indian gray mongoose) are well known for their ability to fight and kill venomous snakes, particularly cobras.',
     'Most mongoose species are highly social animals living in busy groups of 6 to 40 individuals called "packs" or "mobs".',
     'Several species of mongoose routinely crack open eggs, nuts, or shelled creatures such as crabs or mollusks by dropping or throwing them on rocks.',
     'Mongooses are diurnal, which means that they are active during the day and sleep at night.',
     'Mongooses tend to live in burrows that other animals have abandoned. They rarely dig burrows on their own.',
+    'The mongoose is a member of the civet family, smaller than a domestic cat but larger than a squirrel.',
+    'In North America the mongoose has been prevented from establishing a breeding population except on tropical islands. There they do some $50 million in damage a year, principally to the poultry industry.',
+    'Mongooses were introduced to Hawaii and Puerto Rico in the late 1800s to control rats on sugar plantations. This project was ineffective because a mongoose hunts in the daytime, while rats come out at night.',
+    'The ancient Egyptians domesticated wild mongooses and considered them sacred (mummified bodies have been discovered in tombs).',
+    'There are about 30 different species of mongooses.',
+    'The mongoose is mainly a terrestrial mammal, meaning they live on land, but some species have adapted to living in tree tops or partially in water.',
     )
 
 MONKEY_FACTS = (
