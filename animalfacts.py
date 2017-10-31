@@ -303,6 +303,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('pangolin', '\spangolins?\s', reddit, PANGOLIN_FACTS, comment)
     botengine('panther', '\spanthers?\s', reddit, PANTHER_FACTS, comment)
     botengine('peacock', '\speacocks?\s', reddit, PEACOCK_FACTS, comment)
+    botengine('peccary', '\speccar(y|ies)\s', reddit, PECCARY_FACTS, comment)
     botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS, comment)
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
@@ -1794,6 +1795,23 @@ PEACOCK_FACTS = (
     "In Hindu culture, Lord Karthikeya, the god of war, is said to ride a peacock.",
     )
 
+PECCARY_FACTS = (
+    'Peccaries are found throughout Central and South America and in the southwestern area of North America.',
+    'A peccary is a medium-sized animal, with a strong resemblance to a pig.',
+    'Peccaries are omnivores, and will eat insects, grubs, and occasionally small animals, although their preferred foods consist of roots, grasses, seeds, fruit, and cacti—particularly prickly pear.',
+    'Pigs and peccaries can be differentiated by the shape of the canine tooth, or tusk. In European pigs, the tusk is long and curves around on itself, whereas in peccaries, the tusk is short and straight.',
+    'By rubbing the tusks together, Peccaries can make a chattering noise that warns potential predators not to get too close.',
+    'Peccaries rely on their social structure to defend territory, protect against predators, regulate temperature, and interact socially.',
+    'Three (possibly four) living species of peccaries are found from the southwestern United States through Central America and into South America and Trinidad.',
+    'Peccary fossils have been found in all continents except Australia and Antarctica.',
+    'Although they are common in South America today, peccaries did not reach that continent until about three million years ago during the Great American Interchange, when the Isthmus of Panama formed, connecting North America and South America.',
+    'In many countries, especially in the developing world, Peccaries are raised on farms as a source of food for local communities.',
+
+
+
+
+    )
+
 PENGUIN_FACTS = (
     'While other birds have wings for flying, penguins have adapted flippers to help them swim in the water.',
     'Most penguins live in the Southern Hemisphere.',
@@ -2580,6 +2598,7 @@ ALL_FACTS = (
     PANGOLIN_FACTS,
     PANTHER_FACTS,
     PARROT_FACTS,
+    PECCARY_FACTS,
     PEACOCK_FACTS,
     PENGUIN_FACTS,
     PIG_FACTS,
