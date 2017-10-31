@@ -2320,6 +2320,22 @@ TOUCAN_FACTS = (
     'The toco toucan is the largest species of toucan.',
     )
 
+TROUT_FACTS = (
+    'Trout are usually found in cool (50–60 °F or 10–16 °C), clear streams and lakes',
+    'Young trout are referred to as troutlet, troutling or fry',
+    'Several species of trout were introduced to Australia and New Zealand by amateur fishing enthusiasts in the 19th century, effectively displacing and endangering several upland native fish species',
+    'Trout that live in different environments can have dramatically different colorations and patterns. Mostly, these colors and patterns form as camouflage, based on the surroundings, and will change as the fish moves to different habitats',
+    'Rainbow trout have an average maximum lifespan of 7 years whereas lake trout can live many decades and can grow to more than 30 kilograms (66 lb).',
+    'The flavor of trout flesh is heavily influenced by the diet of the fish',
+    'Because of their popularity, trout are often raised on fish farms and planted into heavily fished waters, in an effort to mask the effects of overfishing',
+    'The rainbow trout has been introduced to every continent except Antarctica',
+    'Rainbow trout have been commercially farmed since 1870. The largest producer of farmed trout is Chile',
+    'A female trout can spawn from 200 to 8,000 eggs during season',
+    'Rainbow trout are members of the salmon family',
+    'One distinct characteristic of rainbow trout is their innate desire to return to spawn in the same stream in which they were hatched'
+
+)
+
 TURTLE_FACTS = (
     'Turtles have a hard shell that protects them like a shield, this upper shell is called a ‘carapace’.',
     'Turtles also have a lower shell called a ‘plastron’.',
@@ -2596,6 +2612,7 @@ ALL_FACTS = (
     TIGER_FACTS,
     TOAD_FACTS,
 	TOUCAN_FACTS,
+    TROUT_FACTS,
     TURTLE_FACTS,
     VAMPIRE_BAT_FACTS,
     WALLABY_FACTS,
