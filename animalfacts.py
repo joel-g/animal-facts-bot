@@ -1511,8 +1511,8 @@ MONGOOSE_FACTS = (
     'Mongooses tend to live in burrows that other animals have abandoned. They rarely dig burrows on their own.',
     'The mongoose is a member of the civet family, smaller than a domestic cat but larger than a squirrel.',
     'In North America the mongoose has been prevented from establishing a breeding population except on tropical islands. There they do some $50 million in damage a year, principally to the poultry industry.',
-    'Mongooses were introduced to Hawaii and Puerto Rico in the late 1800s to control rats on sugar plantations. This project was ineffective because a mongoose hunts in the daytime, while rats come out at night.',
-    'The ancient Egyptians domesticated wild mongooses and considered them sacred (mummified bodies have been discovered in tombs).',
+    'Mongooses were introduced to Hawaii and Puerto Rico in the late 1800s to control rats on sugar plantations. This project was ineffective because mongooses hunt in the daytime, while rats come out at night.',
+    'The ancient Egyptians domesticated wild mongooses and considered them sacred (mummified mongooses have been discovered in tombs).',
     'There are about 30 different species of mongooses.',
     'The mongoose is mainly a terrestrial mammal, meaning they live on land, but some species have adapted to living in tree tops or partially in water.',
     )
