@@ -132,6 +132,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * scorpion
 * seagull
 * sea cucumber
+* sea urchin
 * shark
 * sheep
 * skunk
