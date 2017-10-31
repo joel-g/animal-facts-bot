@@ -317,6 +317,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
     botengine('sea cucumber', '\ssea ?cucumbers?\s', reddit, SEA_CUCUMBER_FACTS, comment)
+    botengine('sea urchin', '\s(sea ?)?urchins?\s', reddit, SEA_URCHIN_FACTS, comment)
     botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
     botengine('sheep', '\ssheep?\s', reddit, BEAR_FACTS, comment)
     botengine('shrimp', '\sshrimps?\s', reddit, SHRIMP_FACTS, comment)
@@ -2014,6 +2015,19 @@ SEA_CUCUMBER_FACTS = (
     'Some species of sea cucumber can emit a sticky substance that can tangle up predators',
     )
 
+SEA_URCHIN_FACTS = (
+    'Sea urchins or urchins are small, spiny, globular animals that, with their close kin, such as sand dollars, constitute the class Echinoidea of the echinoderm phylum.',
+    'Common colors of sea urchins include black and dull shades of green, olive, brown, purple, blue, and red.',
+    'Sea urchins move slowly, feeding primarily on algae.',
+    'Sea urchins are preyed upon by sea otters, starfish, wolf eels, and triggerfish, among other predators.',
+    'The name "urchin" is an old word for hedgehog, which sea urchins resemble.',
+    'Like other echinoderms, sea urchin early larvae have bilateral symmetry, but they develop five-fold symmetry as they mature.',
+    'The tube feet of a sea urchin are moved by a water vascular system, which works through hydraulic pressure.',
+    "The structure of the sea urchin's mouth and teeth have been found to be so efficient at grasping and grinding that their structure has been tested for use in real-world applications.",
+    'Sea urchins have conquered most sea habitats, on an extremely wide range of depths.',
+    'The gonads of both male and female sea urchins, usually called sea urchin roe or corals, are culinary delicacies in many parts of the world.',
+    )
+
 SHARK_FACTS = (
     'Sharks do not have a single bone in their bodies. Instead they have a skeleton made up of cartilage; the same type of tough, flexible tissue that makes up human ears and noses.',
     'Some sharks remain on the move for their entire lives. This forces water over their gills, delivering oxygen to the blood stream. If the shark stops moving then it will suffocate and die.',
@@ -2557,6 +2571,7 @@ ALL_FACTS = (
     SCORPION_FACTS,
     SEAGULL_FACTS,
     SEA_CUCUMBER_FACTS,
+    SEA_URCHIN_FACTS,
     SHARK_FACTS,
     SHEEP_FACTS,
     SHRIMP_FACTS,
