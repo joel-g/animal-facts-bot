@@ -273,6 +273,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('jackal', '\sjackals?\s', reddit, JACKAL_FACTS, comment)
     botengine('jellyfish', '\sjelly ?fish(es)\s', reddit, JELLYFISH_FACTS, comment)
     botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
+    botengine('kiwi', '\skiwis?\s', reddit, KIWI_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
     botengine('ladybug', '\s(ladybug|lady bug)s?\s', reddit, LADYBUG_FACTS, comment)
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
@@ -1330,6 +1331,20 @@ KANGAROO_FACTS = (
     'Baby kangaroos are known as ‘joeys’. A group of kangaroos is called a ‘mob’, ‘troop’ or ‘court’.',
     'The red kangaroo is the largest marsupial in the world.',
     'Kangaroos usually live to around six years old in the wild.',
+    )
+
+KIWI_FACTS = (
+    'The Kiwi are flightless birds native to New Zealand',
+    'Approximately the size of a domestic chicken, kiwi are by far the smallest living ratites (which also consist of ostriches, emus, rheas, and cassowaries).',
+    'The Kiwi lay the largest egg in relation to their body size of any species of bird in the world.',
+    'The kiwi is a national symbol of New Zealand, and the association is so strong that the term Kiwi is used internationally as the colloquial demonym for New Zealanders.',
+    'The vestigial wings of the kiwi are so small that they are invisible under the bristly, hair-like, two-branched feathers.',
+    'Unlike virtually every other palaeognath, which are generally small-brained by bird standards, kiwi have proportionally large encephalisation quotients.',
+    'Kiwi are shy and usually nocturnal. Their mostly nocturnal habits may be a result of habitat intrusion by predators, including humans. In areas of New Zealand where introduced predators have been removed, such as sanctuaries, kiwi are often seen in daylight.',
+    'Once bonded, a male and female kiwi tend to live their entire lives as a monogamous couple.',
+    'The male kiwi incubates the egg, except for the great spotted kiwi, A. haastii, in which both parents are involved.',
+    'Kiwi are no longer hunted and some Maori consider themselves the birds\' guardians.',
+    'In 1851, London Zoo became the first zoo to keep kiwi. The first captive breeding took place in 1945.',
     )
 
 KOALA_FACTS = (
@@ -2536,6 +2551,7 @@ ALL_FACTS = (
     JACKAL_FACTS,
     JELLYFISH_FACTS,
     KANGAROO_FACTS,
+    KIWI_FACTS,
     KOALA_FACTS,
     LADYBUG_FACTS,
     LEMUR_FACTS,
