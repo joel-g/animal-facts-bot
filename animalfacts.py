@@ -1628,7 +1628,9 @@ ORANGUTAN_FACTS = (
     'These amazing apes generally have long lives – in captivity they can live for 50-60 years, and in the wild, 30-40 years.',
     'Orangutans live in the trees to avoid predators like tigers or leopards that hunt on the ground.',
     'Orangutans are solitary animals. Males always live on their own while females live alone or with their offspring. Males and females spend time together only during mating season.',
-    'Orangutans are the largest arboreal mammals (animals that spend their life in the trees).'
+    'Orangutans are the largest arboreal mammals (animals that spend their life in the trees).',
+    'Nonja, a Orangutan at Zoo Schoenbrunn in Vienna, Austria, has her own Facebook page, where pictures taken by her are uploaded. She also got famous for creating some paintings, showing Orangutans abilities to use tools.'
+	
 
 )
 ORYX_FACTS = (
