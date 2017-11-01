@@ -1,4 +1,4 @@
-﻿import re
+import re
 import praw
 import random
 import time
@@ -95,7 +95,7 @@ def check_messages(reddit):
                         print('     Explained why I cant do cat or dog facts\n')
                         record_already_replied(file_obj_r, comment)
                     elif 'silly' in comment_body:
-                        comment.reply('I am programmed to be silly!')
+                        comment.reply('I am programmed to be silly!!!')
                         print('     Explained why I am silly\n')
                         record_already_replied(file_obj_r, comment)
                     elif 'hate' in comment_body:
@@ -215,15 +215,16 @@ def check_comment_for_animal(comment, reddit):
     botengine('aardvark', '\saardvarks?\s', reddit, AARDVARK_FACTS, comment)
     botengine('albatross', '\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
-    botengine('anglerfish', '\sanglerfish(es)?\s', reddit, ANGLERFISH_FACTS, comment)
+    botengine('anglerfish', '\sangler ?fish(es)?\s', reddit, ANGLERFISH_FACTS, comment)
     botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
     botengine('anteater', '\santeaters?\s', reddit, ANTEATER_FACTS, comment)
     botengine('antelope', '\santelopes?\s', reddit, ANTELOPE_FACTS, comment)
-#     botengine('antlantic puffin', '\santlantic puffins?\s', reddit, ANTLANTIC_PUFFIN_FACTS, comment) un comment this when more puffin facts have been added
+    botengine('atlantic puffin', '\satlantic puffins?\s', reddit, ATLANTIC_PUFFIN_FACTS, comment)
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('bear', '\sbears?\s', reddit, BEAR_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
     botengine('buffalo', '\sbuffalos?\s', reddit, BUFFALO_FACTS, comment)
+    botengine('bobcat','\sbobcats?\s',reddit, BOBCAT_FACTS,comment)
     botengine('bison', '\sbisons?\s', reddit, BISON_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
     botengine('capybara', '\scapybaras?\s', reddit, CAPYBARA_FACTS, comment)
@@ -231,14 +232,17 @@ def check_comment_for_animal(comment, reddit):
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
     botengine('chinchilla', '\schinchillas?\s', reddit, CHINCHILLA_FACTS, comment)
+    botengine('clownfish', '\sclown ?fishs(es)?\s', reddit, CLOWNFISH_FACTS, comment)
     botengine('cobra', '\scobras?\s', reddit, COBRA_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
-    botengine('cuttlefish', '\scuttlefish(es)?\s', reddit, CUTTLEFISH_FACTS, comment)
+    botengine('cuttlefish', '\scuttle ?fish(es)?\s', reddit, CUTTLEFISH_FACTS, comment)
     botengine('dingo', '\sdingos?\s', reddit, DINGO_FACTS, comment)
+    botengine('degu', '\sdegus?\s', reddit, DEGU_FACTS, comment)
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
+    botengine('dodo', '\sdodos?\s', reddit, DODO_FACTS, comment)
     # botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)   Disabled because this was only a temp feature during Game of Thrones season. Dragons aren't real.
     botengine('dugong', '\sdugongs?\s', reddit, DUGONG_FACTS, comment)
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
@@ -251,8 +255,9 @@ def check_comment_for_animal(comment, reddit):
     botengine('fox', '\sfox(es)?\s', reddit, FOX_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
     botengine('gazelle', '\sgazelles?\s', reddit, GAZELLE_FACTS, comment)
+    botengine('gecko', '\sgeckos?\s', reddit, GECKO_FACTS, comment)
     botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
-    botengine('grasshopper', '\sgrasshoppers?\s', reddit, GRASSHOPPER_FACTS, comment)
+    botengine('grasshopper', '\sgrass ?hoppers?\s', reddit, GRASSHOPPER_FACTS, comment)
     botengine('goat', '\sgoats?\s', reddit, GOAT_FACTS, comment)
     botengine('goose', '\s(goose|geese)\s', reddit, GOOSE_FACTS, comment)
     botengine('gopher', '\sgophers?\s', reddit, GOPHER_FACTS, comment)
@@ -266,7 +271,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('husky', '\s(husky|huskie)s?\s', reddit, HUSKY_FACTS, comment)
     botengine('iguana', '\siguanas?\s', reddit, IGUANA_FACTS, comment)
     botengine('jackal', '\sjackals?\s', reddit, JACKAL_FACTS, comment)
-    botengine('jellyfish', '\sjellyfish(es)\s', reddit, JELLYFISH_FACTS, comment)
+    botengine('jellyfish', '\sjelly ?fish(es)\s', reddit, JELLYFISH_FACTS, comment)
     botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
     botengine('ladybug', '\s(ladybug|lady bug)s?\s', reddit, LADYBUG_FACTS, comment)
@@ -277,12 +282,15 @@ def check_comment_for_animal(comment, reddit):
     botengine('lizard', '\slizards?\s', reddit, LIZARD_FACTS, comment)
     botengine('lobster', '\slobsters?\s', reddit, LOBSTER_FACTS, comment)
     botengine('llama', '\sllamas?\s', reddit, LLAMA_FACTS, comment)
+    botengine('mantis shrimp', '\smantis shrimps?\s', reddit, MANTIS_SHRIMP_FACTS, comment)
     botengine('meerkat', '\smeerkats?\s', reddit, MEERKAT_FACTS, comment)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
+    botengine('moose', '\smoose\s', reddit, MOOSE_FACTS, comment)
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
     botengine('newt', '\snewts?\s', reddit, NEWT_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
     botengine('opossum', '\sopossums?\s', reddit, OPOSSUM_FACTS, comment)
+    botengine('orangutan', '\sorangutans?\s', reddit, ORANGUTAN_FACTS, comment)
     botengine('oryx', '\soryx(es)?\s', reddit, ORYX_FACTS, comment)
     botengine('octopus', '\socto(pus|puses|pusses|pi)\s', reddit, OCTOPUS_FACTS, comment)
     botengine('orca', '\sorcas?\s', reddit, ORCA_FACTS, comment)
@@ -299,14 +307,16 @@ def check_comment_for_animal(comment, reddit):
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
     botengine('platypus', '\splatypuse?s?\s', reddit, PLATYPUS_FACTS, comment)
     botengine('puma', '\spumas?\s', reddit, PUMA_FACTS, comment)
+    botengine('pufferfish', '\spuffer ?fish(es)?\s', reddit, PUFFERFISH_FACTS, comment)
     botengine('porcupine', '\sporcupines?\s', reddit, PORCUPINE_FACTS, comment)
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
+    botengine('rattlesnake', '\srattlesnakes?\s', reddit, RATTLESNAKE_FACTS, comment)
     botengine('raven', '\sravens?\s', reddit, RAVEN_FACTS, comment)
     botengine('salmon', '\ssalmons?\s', reddit, SALMON_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
-    botengine('sea cucumber', '\ssea cucumbers?\s', reddit, SEA_CUCUMBER_FACTS, comment)
+    botengine('sea cucumber', '\ssea ?cucumbers?\s', reddit, SEA_CUCUMBER_FACTS, comment)
     botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
     botengine('sheep', '\ssheep?\s', reddit, BEAR_FACTS, comment)
     botengine('shrimp', '\sshrimps?\s', reddit, SHRIMP_FACTS, comment)
@@ -315,16 +325,20 @@ def check_comment_for_animal(comment, reddit):
     botengine('snail', '\ssnails?\s', reddit, SNAIL_FACTS, comment)
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
     botengine('starfish', '\sstarfish(es)?\s', reddit, STARFISH_FACTS, comment)
+    botengine('sturgeon', '\ssturgeons?\s', reddit, STURGEON_FACTS, comment)
     botengine('tarantula', '\starantulas?\s', reddit, TARANTULA_FACTS, comment)
     botengine('squirrel', '\ssquirrels?\s', reddit, SQUIRREL_FACTS, comment)
     botengine('stingray', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
     botengine('sunfish', '\ssunfish(es)?\s', reddit, SUNFISH_FACTS, comment)
     botengine('tardigrade', '\stardigrades?\s', reddit, TARDIGRADE_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
+    botengine('toad','\stoads?\s', reddit, TOAD_FACTS, comment)
+    botengine('toucan', '\stoucans?\s', reddit, TOUCAN_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
-    botengine('vampire bat', '\svampire bats\s', reddit, VAMPIRE_BAT_FACTS, comment)
+    botengine('vampire bat', '\svampire ?bats\s', reddit, VAMPIRE_BAT_FACTS, comment)
     botengine('wallaby', '\swallab(y|ies)\s', reddit, WALLABY_FACTS, comment)
     botengine('walrus', '\swalrus\s', reddit, WALRUS_FACTS, comment)
+    botengine('warthog', '\swarthog\s', reddit, WARTHOG_FACTS, comment)
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
     botengine('wolf', '\swol(f|ves)\s', reddit, WOLF_FACTS, comment)
     botengine('yak', '\syaks?\s', reddit, YAK_FACTS, comment)
@@ -410,7 +424,17 @@ ANGLERFISH_FACTS = (
     'Male Anglerfish are significantly smaller than their female counterparts, and when a male encounters a female, it latches on onto her with his sharp teeth. Eventually, the male physically fuses with the female.',
     'When a male Anglerfish has fused to a female, it loses all its organs apart from its testes.',
     'A female Anglerfish will carry six or more males on her body.',
+    'According to the National Geographic, the anglerfish is quite possibly the ugliest animal on the planet.',
+    "The anglerfish lives in what is easily Earth's most inhospitable habitat: the lonely, lightless bottom of the sea.",
+    'Although uncommon, some anglerfish live in shallow, tropical waters.',
+    'Most anglerfish are less than a foot in length, although some can grow up to 3.3 feet in length.',
+    'The anglerfish lure is only worn by females and is a piece of dorsal spine that protrudes above their mouths like a fishing pole.',
+    'The anglerfish have mouths so big and their bodies are so pliable, they can actually swallow prey up to twice their own size.',
+    'When a young, free-swimming male anglerfish encounters a female, he latches onto her with his sharp teeth. Over time, the male physically fuses with the female, connecting to her skin and bloodstream and losing his eyes and all his internal organs except the testes. A female will carry six or more males on her body.',
+    'The anglerfish have a luminescent organ, called the esca, at the tip of a modified dorsal ray.',
+    'Because of the small amount of food available in their environment, the anglerfish has adapted to store food when there is an abundance.'
     )
+
 
 ANT_FACTS = (
     'There are more than 12,000 species of ants all over the world.',
@@ -441,7 +465,8 @@ ANTEATER_FACTS = (
     'Anteaters produce formic acid in its stomach instead of hydrochloric acid, which mammals usually produce.',
     'Anteaters have very poor eyesight and rely on their keen sense of smell to find food.',
     'Anteaters can eat up to 35,000 insects a day.',
-    'Anteaters will never destroy an anthill because they need it as a source of food.'
+    'Anteaters will never destroy an anthill because they need it as a source of food.',
+    'Anteaters have tongues that can be 2 feet long.',
     )
 
 ANTELOPE_FACTS = (
@@ -465,6 +490,17 @@ ATLANTIC_PUFFIN_FACTS = (
     'There are considered to be three subspecies of Atlantic puffin: Fratercula arctica arctica, Fratercula arctica grabae, Fratercula arctica naumanni.',
     'Like many seabirds, the Atlantic puffin spends most of the year far from land in the open ocean and only visits coastal areas to breed.',
 )
+
+AXOLOTL_FACTS = (
+    'Wild Axolotls are normally brown or black, not white.',
+    'In the wild, Axolotls can only be found in the lakes and canals of Xochimilco, Mexico.',
+    'Axolotls are endangered.',
+    'Its name is based off of Xolotl, a dog-headed god from Aztec mythology.',
+    'Axolotls have the ability to not only regenerate limbs like some other amphibians but they can also rebuild their spine and even their brain.',
+    'Because of their extraordinary regenerative ability, Axolotls are the subject of biological and medical research.',
+    'Axolotls exhibit neoteny, meaning they reach maturity without going through metamorphosis.',
+    'The feather-like branches that grow on their heads are actually their gills .',
+    )
 
 BADGER_FACTS = (
     'Badgers are part of the family Mustelidae this is the same family as otters, ferret, polecats, weasels and wolverines.',
@@ -535,6 +571,17 @@ BISON_FACTS=(
     'Yellowstone National Park is the only place in the U.S. where bison have continuously lived since prehistoric times.',
     'When bison are born, their fur is orange-red. After a few months, their fur steadily grows more brown.'
     )
+
+BOBCAT_FACTS = (
+    'An adult bobcat’s tail averages just 6 to 7 inches in length.',
+    'The word bobcat a reference to their tail. In barbershop lingo, hair that’s been cut short is sometimes called “bobbed.”',
+    'Wild bobcats do the majority of their hunting in low-light conditions.',
+    'Although adult bobcats only weigh 33 pounds, they can hunt and kill adult white tailed deer which can weigh 250 pounds.',
+    'Bobcats lay claim to an area of land that can be anywhere from 1 to 18 square miles in size.',
+    'Bobcats can’t always consume their victims in one sitting. Sometimes, they use dirt, snow, leaves, or grass to bury the uneaten pieces of especially large corpses, and will return periodically to dig up their leftovers.',
+    'The scientfic name for the bobcat is "Lynx rufus".',
+    'Wild bobcats have an average life span of 10 to 12 years'
+)
 
 BUFFALO_FACTS = (
     'Buffalo are the largest animals found in north America and can grow to 6-7 feet long, weighing up to 2,000lbs. True buffalo only live in Asia and Africa.',
@@ -640,7 +687,18 @@ CHINCHILLA_FACTS = (
    'The breeding season for chinchillas runs from November to May in the Northern Hemisphere and from May to November in the Southern Hemisphere.',
    'Chinchillas are omnivores; they eat both plants and meat. Primarily, they eat grass and seeds, but they also eat insects and bird eggs when they get the chance. To eat, they hold their food in their front paws and nibble on it.',
    'Though chinchilla fur is highly valued for use in clothing and coats, the Convention on International Trade in Endangered Species has restricted the sale and trade of wild chinchillas since 1975. Many chinchillas are bred commercially for their fur.',
-   'Chinchillas are native to Chile and Peru. In the wild they live in groups and make their home in burrows and natural outcroppings and crevices.')
+   'Chinchillas are native to Chile and Peru. In the wild they live in groups and make their home in burrows and natural outcroppings and crevices.'
+   )
+
+CLOWNFISH_FACTS = (
+    'Clownfish is a fish that is frequently called clown anemonefish and goes by the scientific name Amphiprioninae, is actually false anemonefish.'
+    'The length of clownfish can range from 3.1 inches to 6.3 inches with an average of 4.3 inches.',
+    'There are at least 30 known species of clownfish, most of which live in the shallow waters of the Indian Ocean, the Red Sea, and the western Pacific.',
+    'The movie Finding Nemo caused home-acquarium demand for clownflish to triple.',
+    'Clownfish use stinging anemones for their own protection and in return drives off intruders and preens its host, removing parasites.',
+    'All clownfish are born male and have the ability to switch their sex. If once they become female, the change is irreversible.',
+    'Clownfish rarely stray more than a few yards from their host anemone.'
+    )
 
 COBRA_FACTS = (
     'Cobras are classified in the phylum Chordata, subphylum Vertebrata, class Reptilia, order Squamata and family Elapidae.',
@@ -693,6 +751,7 @@ COW_FACTS = (
     'Cows have a single stomach, but four different digestive compartments.',
     'Cows are pregnant for 9 months just like people',
     'A dairy cow can produce 125 lbs. of saliva a day',
+    'If you took all the cows in the world and rounded them up into a sphere, that sphere would be nearly 1,200 meters wide!',
     )
 
 CRAB_FACTS = (
@@ -740,6 +799,16 @@ CUTTLEFISH_FACTS = (
     "Cuttlefish have W shaped eyelids so they can see in front of them and behind them at the same time.",
     )
 
+DEGU_FACTS = (
+	'The word degu comes from the Mapudungun dewü (mouse, rat).',
+	'Degus have an elaborate vocal repertoire comprising up to 15 unique sounds.',
+	'Degus can live as long as 8 or 9 years although 5 to 6 years is the average lifespan.',
+	'The degu is a south American caviomorph1 which inhabits the semi-arid (desert-like) scrub areas of central Chile. This is the only place in the world where degus can be found in the wild and is where degus originated.',
+	'Degus are prone to diabetes due to their divergent insulin structure. For this reason, they are used frequently for research in this field.',
+	'Unlike other octodontids, degus are diurnal (activity during the day, with a period of sleeping, or other inactivity, at night), and they have good vision.',
+	"In case of predator's attack, the degu can shed its tail from its body. A shed tail will never grow back.",
+    )
+
 DINGO_FACTS = (
     'Dingoes actually originate from Southeast Asia, where they can still be found today.',
     'Dingoes mate once per year, from March to June.',
@@ -752,6 +821,22 @@ DINGO_FACTS = (
     'Just like humans, dingoes have rotating wrists. This allows them to use their paws like hands to catch prey. It also helps them better climb trees and even open doors.',
     'Dingoes can even swivel their heads about 180 degrees. Comparatively, owls can turn their heads 270 degrees; humans can only turn theirs 45 to 70 degrees.',
     'Having a dingo as a pet is a full time responsibility, as dingoes don\'t handle rejection well and will likely not emotionally recover from being placed in a new home.',
+    )
+
+DODO_FACTS = (
+    'Dodos Had an Unusual Diet Involving Stones. Dodo birds’ diet included seeds, nuts, bulbs, roots, and fallen fruit. In addition, they would also feed on palm fruit, shell fish and crabs. This is a very similar diet to the modern crowned pigeon. Dodo birds used gizzard stones to aid their digestion.'
+    'One of the more interesting dodo bird facts is that these birds lived in almost complete isolation. Scientists discovered that the dodo only ever lived on the island of Mauritius in the Indian Ocean. They were so isolated that their population didn’t even spread to the neighboring islands off the eastern coast of Africa. The simple reason for this is that the dodo was flightless and was therefore unable to reach any other island or land mass.'
+    'One of the more intriguing dodo bird facts involves just how they became extinct. They lived on the island of Mauritius where there was an abundance of food and almost no predators. What, then, caused their extinction? In a word: people. Dodos were unfortunately not frightened of people, which made them very easy prey for human hunters. Sailors who arrived on the island of Mauritius from the year 1598 started hunting dodos, and initiated mass killings, to the point where these birds were extinct by 1681. Although people believed the dodo to be stupid because it readily approached men who were armed with clubs, these birds had no natural enemies and so had no experience with predators. They were simply curious, not stupid.'
+    'In addition to being killed by people, the dodo was also affected by exposure to new animals. The sailors who arrived on Mauritius introduced new species to the island. They brought with them their domesticated animals, which preyed on the dodos, ate their eggs, and destroyed their natural habitat, leading to their extinction. These animals included dogs, pigs, cats and rats. Due to their isolation, the dodo birds simply had no natural defenses and became extinct only 175 years after they were discovered.'
+    'Unlike most other birds that build their nests in trees, dodos used to build their nests on the ground. This was largely because they couldn’t fly, and their nests didn’t need to be protected in trees because the dodo had no natural predators on Mauritius.'
+    'There are many mysteries surrounding various dodo bird facts, including the fact that they were flightless birds. However, scientists believe that they do now have some of the answers. One of the reasons that the dodo became flightless was probably because there were virtually no potential predators in its natural habitat on the island of Mauritius. In addition, there was an abundance of food for these birds, so they really had no reason to fly. This is what is known as secondary flightlessness. The adaptation for flight is only maintained when it is absolutely necessary, because it requires such a great expenditure of energy for a bird. This was simply not required in the Mauritian environment, and so the adaptation was lost.'
+    'Don’t let the rather strange appearance of the dodo fool you. One of the more bizarre dodo bird facts is that these birds could actually run quite fast. Although there is a lack of scientific evidence from the time when dodos were alive, modern scientists have managed to deduce this fact based on the dodo bird’s skeletal structure and the size of its legs.'
+    'The dodo was alive before the invention of the camera so for a long time, it was hard for us to know exactly what this bird looked like. To complicate matters, very few skeletal remains were found. Therefore, for centuries our understanding of the appearance of dodos was based on anecdotal evidence and amateur sketches. It was only in 2007 that a complete skeleton of a dodo bird was found, which could confirm many of the dodo bird facts. However, exact facts about the dodo’s plumage, girth and coloring are still in question.'
+    'Although there is some anecdotal evidence and a few skeletons to furnish us with many dodo bird facts, there are some things that have never been reported. There is no information whatsoever about the dodo’s mating habits, behaviors, or life expectancy. In that regard, the life cycle of a dodo seems deemed to remain an intriguing mystery forever.'
+    'Scientists and the general population during the Victorian era were intrigued by newly emerging dodo bird facts. Lewis Carroll, the famous author, included these quirky birds in his children’s classic Alice in Wonderland. Contrary to popular characterizations, the dodos in this book are depicted as being quite solemn and wise.'
+    'The fact that the dodo bird is immortalized in the saying As dead as a dodo is a telling dodo bird fact that is relevant to all environmentalists today. The saying refers to all traces of something being completed wiped out, just as the dodo was on the island of Mauritius. This bird has come to represent conservationism and movements against eco-terrorism. The utter destruction of this interesting creature was entirely due to the direct and indirect causes introduced by people, who then failed to intervene and preserve this unique species.'
+    'If you are lucky enough to visit the island of Mauritius, you will see dodos everywhere. Not live ones, of course, but replicas and images wherever you look. A little-known dodo bird fact is the extent to which these birds are present in Mauritius’ tourism industry. The image of the dodo has been transformed into just about every possible version that could pass as a tempting curio for the tourists visiting this island paradise. So, in addition to sugar and rum, the dodo is a significant contributor to the Mauritian tourism economy.'
+    'Subfossil remains show the dodo was about 1 metre (3 ft 3 in) tall and may have weighed 10.6–17.5 kg (23–39 lb) in the wild. The dodo\'s appearance in life is evidenced only by drawings, paintings, and written accounts from the 17th century.'
     )
 
 DOLPHIN_FACTS = (
@@ -877,7 +962,7 @@ EMU_FACTS = (
     )
 
 FALCON_FACTS = (
-    'Peregrine falcons have been clocked at reaching speeds of 242 miles per hour while diving for prey, making them the fastest recorded animal ever.',
+    'Peregrine falcons have been clocked at reaching speeds of 242 miles per hour while diving for prey, making them the fastest recorded animal ever.',
     'Falcon is a carnivore. Its diet is based on rodents, frogs, fish, bats and small birds.',
     'Falcons have a lifespan between 12 and 20 years in the wild, depending on species. Some species can live up to 25 years in captivity.',
     'The gyrfalcon (Falco rusticolus) is the largest falcon species. It is up to 61 centimeters (24 inches) long withwingspan up to 130 centimeters (51 inches) and weight up to 1,350 grams (47.6 ounces).',
@@ -914,10 +999,19 @@ FOX_FACTS = (
     "Foxes' pupils are vertical, similar to a cat, helping them to see well at night",
     "The tip of a red fox’s tail is white, whereas swift foxes have a black-tipped tail",
     "Foxes have excellent hearing. Red foxes can reportedly hear a watch ticking 40 yards away!",
-    'Foxes stink, their funny ‘musky’ smell comes from scent glands at the base of their tail',		
     'Foxes only live up to 5 years in the wild, but up to 14 in captivity!',
     'Foxes are legal to own in 21 states!",
     'Adult red foxes usually live alone except during the mating season in January and February and when raising young.'
+    'Foxes stink, their funny ‘musky’ smell comes from scent glands at the base of their tail',
+    "Foxes have whiskers on their legs and face, which help them to navigate",
+    "Foxes are one of the most well known wild animals in the UK, they are native to Britain",
+    "Foxes use 28 different types of calls to communicate with each other",
+    "A fox can run 30 miles per hour",
+    "Foxes are usually monogamous",
+    "Foxes have excellent hearing. They can hear low-frequency sounds and rodents digging underground",
+    "The fox does not chew its food.  Instead it uses its carnassial or shearing teeth to cut the meat into manageable chunks",
+    "There are 21 species of fox",
+    "Foxes have a lifespan of 2 to 5 years but some have lived to be 14 years old in captivity.",
     )
 
 FROG_FACTS = (
@@ -944,7 +1038,22 @@ GAZELLE_FACTS = (
     'Gazelles generally live up to 10 to 12 years.',
     'To evade predators, gazelles may zigzag rather than running in a straight line.'
     )
-
+GECKO_FACTS = (
+    'Geckos vary in size. Smallest species of geckos, dwarf gecko, reaches ¾ inches in length. Largest species of geckos, tokay gecko, reaches 14 inches in length.',
+    'Geckos are usually brightly colored. Body coloration depends on the colors of their environment because it plays important role in the camouflage.',
+    'Geckos are nocturnal (active at night) creatures. Their eyes are adapted to a low level of light.',
+    'Due to their small size, geckos are often preyed by snakes, birds, mammals and some large spider species.',
+    'Geckos eat different types of fruit, flower nectar, insects and worms.',
+    'Gecko has a fat tail which is used as a reservoir of fats. It also help gecko to balance while it walks and climbs the trees.',
+    'Just like other lizards, gecko can throw away its tail in the case of a danger. Tailless gecko will regenerate its missing body part after short period of time.',
+    'Teflon is the only material to which gecko cannot stick (using its "suction cups") and walk without gliding.',
+    'Unlike other reptiles, geckos are able to produce various sounds which are used in communication. They produce barking, chirping or clicking noise during mating season or when defending their territory.',
+    'Geckos have long lifespan. Leopard gecko can survive more than 20 years in captivity. Other species live between 8 and 10 years.',
+    'Some species of geckos have no legs and look more like snakes.',
+    'Most species of gecko don’t have eyelids, so they lick their eyes to clean them.',
+    'Some gecko species can fly! The flying gecko, or parachute gecko, is a genus of arboreal gecko species found in Southeast Asia. While they aren’t capable of independent flight, they get their name from their ability to glide using the flaps of skin found on their feet and their flat, rudder-like tails.',
+    'The smallest gecko species is less than 2 centimeters in length.'
+)
 GIRAFFE_FACTS = (
     'A male giraffe can weigh as much as a pick up truck! That’s about 1400 kilograms.',
     'Although a giraffe’s neck is 1.5 – 1.8 meters, it contains the same number of vertebrae at a human neck.',
@@ -1330,6 +1439,19 @@ LOBSTER_FACTS = (
     'Lobsters keep growing forever. They do not get weaker or lose their ability to reproduce, and will keep on molting and growing.',
     )
 
+MANTIS_SHRIMP_FACTS = (
+    'Mantis Shrimps can see ultraviolet and polarized light.',
+    'Mantis Shrimp have trinocular vision, meaning they can see using three parts of the same eye.',
+    'Mantis Shrimp can be categorized into "Spearers" and "Smashers", referencing tactics used to kill their prey.',
+    'A Mantis Shrimp can punch at a speed of 10 meters per second, equivalent to a .22 bullet.',
+    'Mantis Shrimp are known to break glass aquariums with their punches.',
+    'Mantis Shrimp are not actually shrimp, they are instead stomatopods, a distant relative.',
+    'A punch of a Mantis Shrimp momentarily causes the temperature of the surrounding water to reach the temperature of the Sun.',
+    'Mantis Shrimp use their ability to see polarized light to commmunicate with other mantis shrimp in a way that is invisible to predators.',
+    'Mantis Shrimp can make a low growling sounds and often grunt at dawn and dusk.',
+    'Stomatopods, like Mantis Shrimp, are older than dinosaurs.'
+    )
+
 MEERKAT_FACTS = (
     'Meerkats can spot an eagle in flight more than a thousand feet away.',
     'Meerkats, or suricates, are a type of mongoose that live in the southern African plains.',
@@ -1364,6 +1486,16 @@ LLAMA_FACTS = (
     'A group of llamas is called a herd.',
     'Llamas don\'t bite. They spit when they\'re agitated, but that\'s mostly at each other.',
     'Yarn made from llama fiber is soft and lightweight, yet remarkably warm.',
+    'The Llamas scientific name is \"Lama Glama\".',
+    'Llamas spit when annoyed.',
+    'Though llamas are related to camels, they do not have humps.',
+    'Llamas were first imported into the United States in the late 1800s for display in zoos.',
+    'When one llama has an issue with another llama, it will stick its tongue out to express its displeasure.'
+    'Llamas can reach speeds up to 35mph.'
+    'In the ancient Incan society, llamas were the only beast of burden, and were a symbol of wealth among the Incan nobility. Many times, llama figurines were buried with the dead.'
+    'One of the ways llamas communicate is by humming.'
+    'The metabolism of llamas is very similar to that of a human diabetic.'
+    'Some ranchers and farmers use \"guard llamas\" to safeguard their sheep or other livestock.'
     )
 
 MONKEY_FACTS = (
@@ -1380,6 +1512,27 @@ MONKEY_FACTS = (
     'Spider monkeys get their name because of their long arms, legs and tail.',
     'The monkey is the 9th animal that appears on the Chinese zodiac, appearing as the zodiac sign in 2016.',
     )
+
+MOOSE_FACTS = (
+	'Moose are the largest members of the deer family, weighing as much as 1200 pounds.',
+	'Moose are foragers and will devour 73 pounds of vegetation a day in the summer and 34 pounds in the winter.',
+	'Moose prefer Balsam Fir over White Spruce and have consequently left White Spruce savannas on Isle Royale National Park due to their foraging habits.',
+	'One moose can house 75,000 ticks in the winter, which are beginning to drive a startling trend of deaths in moose populations.',
+	'Moose shed their antlers every winter, and grow back in the spring covered in vascularized velvet for blood flow.',
+	'Moose antlers can weigh up to 40 pounds.',
+	'In Isle Royale Nation Park, the moose and wolf predator relationship has been observed since 1959, and may be ending soon with the death of the final two wolves.'
+	'The mother moose stays with her offspring for a year and a half, fighting off wolves and bears that try to pick off the young calves.',
+	'A rare genetic defect can cause moose antlers to grow perpetually, resulting in a warped set of antlers. The Algonquian peoples mistook this moose as an evil spirit, and named it the Wendigo.',
+	'The scientific name for a moose is Alces alces.',
+	'Male moose, called bulls, bellow loudly to attract mates each September and October.',
+	'The patch of skin that hangs from a moose neck is called a bell.',
+	'Moose antlers can spread six feet across.',
+	'Collisions between moose and motor vehicles are common in Scandinavia.',
+	'Moose occur throughout Alaska, Canada, the northeastern United States and as far south as the Rocky Mountains in Colorado.',
+	'A group of Moose is know as a Herd.',
+	'The moose has an average lifespan of 8 to 12 years in the wild.',
+	'Moose can rup up to 35 miles per hour.',
+	)
 
 NARWHAL_FACTS = (
     'Unlike some whale species that migrate, narwhals spend their lives in the Arctic waters of Canada, Greenland, Norway and Russia. Most narwhals winter for up to five months under sea ice in the Baffin Bay-Davis Strait area.',
@@ -1463,6 +1616,24 @@ OPOSSUM_FACTS = (
     'The gestation period of an opossum is short, typically between 12 and 14 days.',
     )
 
+ORANGUTAN_FACTS = (
+    'Orangutans’ arms stretch out longer than their bodies – up to 8 ft. from fingertip to fingertip in the case of very large males.',
+    'When on the ground, orangutans walk on all fours, using their palms or fists. Unlike the African apes, orangutans are not morphologically built to be knuckle-walkers.',
+    'For the first few years of his/her life, a young orangutan holds tight to his/her mother’s body as she moves through the forest canopy.',
+    'When males are fighting, they charge each other, grapple, and bite each other’s heads and cheekpads.',
+    'Orangutans have tremendous strength, which enables them to brachiate and hang upside-down from branches for long periods of time to retrieve fruit and eat young leaves.',
+    'From the age of thirteen years (usually in captivity) past the age of thirty, males may develop flanges and large size.',
+    'Orangutans have the longest birth interval of any mammal. On average they only give birth once every 8 to 10 years.',
+    'Orangutans are very smart. They perform as well as chimpanzees and gorillas in tests of cognitive ability. In captivity, they are excellent tool-users and versatile tool-makers. One captive orangutan was taught how to chip a stone hand-axe.',
+    'Orangutans are red-haired apes that live in the tropical rainforests of Sumatra and Borneo in southeast Asia.',
+    'The orangutan is one of humankind’s closest relatives – in fact, we share nearly 97% of the same DNA!',
+    'Daytime eaters, their diet consists mostly of fruit and leaves – but they also eat nuts, bark, insects and, once in a while, bird eggs, too.',
+    'These amazing apes generally have long lives – in captivity they can live for 50-60 years, and in the wild, 30-40 years.',
+    'Orangutans live in the trees to avoid predators like tigers or leopards that hunt on the ground.',
+    'Orangutans are solitary animals. Males always live on their own while females live alone or with their offspring. Males and females spend time together only during mating season.',
+    'Orangutans are the largest arboreal mammals (animals that spend their life in the trees).'
+
+)
 ORYX_FACTS = (
     'Oryxes are species of antelope native to Africa and the Arabian Peninsula.',
     'The Arabian oryx was only saved from extinction through a captive breeding program and reintroduction to the wild.',
@@ -1557,13 +1728,13 @@ PANDA_FACTS = (
     )
 
 PANGOLIN_FACTS = (
-    'The name "pangolin" comes from the Malay word pengguling, meaning "one who rolls up".',
-    'Pangolins can also emit a noxious-smelling chemical from glands near the anus, similar to the spray of a skunk.',
-    'Large pangolins can extend their tongues as much as 40 cm (16 in), with a diameter of only 0.5 cm (0.20 in).',
-    'A pangolin can consume 140 to 200 g (4.9 to 7.1 oz) of insects per day.',
-    'Pangolins have a very poor sense of vision, so they rely heavily on smell and hearing.',
+    'The name "pangolin" comes from the Malay word pengguling, meaning "one who rolls up".',
+    'Pangolins can also emit a noxious-smelling chemical from glands near the anus, similar to the spray of a skunk.',
+    'Large pangolins can extend their tongues as much as 40 cm (16 in), with a diameter of only 0.5 cm (0.20 in).',
+    'A pangolin can consume 140 to 200 g (4.9 to 7.1 oz) of insects per day.',
+    'Pangolins have a very poor sense of vision, so they rely heavily on smell and hearing.',
     'Pangolins lack teeth, so also lack the ability to chew.',
-    'The weight of a pangolin at birth is 80 to 450 g (2.8 to 15.9 oz) and the average length is 150 mm (5.9 in).',
+    'The weight of a pangolin at birth is 80 to 450 g (2.8 to 15.9 oz) and the average length is 150 mm (5.9 in).',
     'Pangolin meat is considered a delicacy in southern China and Vietnam.',
     'Pangolin is the most trafficked animal in the world.',
     'All eight species of pangolin are categorized on IUCN Red List of Threatened Species.',
@@ -1646,6 +1817,7 @@ PIG_FACTS = (
     'Contrary to popular belief, pigs are actually considered to be very clean animals.',
     'Pigs cannot sweat, so they bathe in water and mud to cool themselves off.',
     'When pigs have ample space, they will try not to soil in the areas where they sleep and eat.',
+    'Almost half the pigs in the world are owned by farmers in China.',
     )
 
 PIGEON_FACTS = (
@@ -1697,6 +1869,13 @@ PUMA_FACTS = (
     'Cubs begin to be weaned around three months of age.'
     )
 
+PUFFERFISH_FACTS = (
+    'Puffer fish vary in size from one inch long pygmy puffer, to a two feet long freshwater giant puffer.',
+    'Scientists believe that puffer fish developed this tactic as a method of the self-defense because they are poor swimmers that cannot escape from the danger quickly.',
+    'Sharks are the only species immune to the puffer fish\'s toxin. They can eat puffer fish without any negative consequences',
+    'Puffer fish do not have scales. Their skin is thick and rough. Some species have spines on the skin, which offer additional protection against the predators',
+    )
+
 PORCUPINE_FACTS = (
     "Body of the porcupine is covered with sharp spines or quills.",
     "Some porcupines have up to 30,000 quills on their body.",
@@ -1745,6 +1924,35 @@ RACCOON_FACTS = (
     'Bobcats, great horned owls, wolves, eagle owls, lynxes and coyotes are the most common predators of raccoons, but cars kill more raccoons than anything.',
     'Dakota Sioux believed that raccoons possessed supernatural powers'
     )
+
+RATTLESNAKE_FACTS = (
+    'Rattlesnakes receive their name from the rattle located at the end of their tails, which makes a loud rattling noise when vibrated that deters predators or serves as a warning to passers-by.'
+    'The rattlesnake babies are born with what is called a pre-button.  The baby snake loses this piece when it sheds its skin for the first time.  With the shedding a new button appears.  With every shedding after that another button, or rattle, will be added.  These buttons are made up of a material called Keratin, which is what the scales and your fingernails are made of!'
+    'The rattles are empty, so what makes the noise? The noise comes from each segment knocking together, so until a rattlesnake has two or more pieces it isn’t going to make a sound! But when it does…you WILL hear it…and you WILL RUN!'
+    'The 36 known species of rattlesnakes have between 65 and 70 subspecies, all native to the Americas, ranging from southern Alberta and southern British Columbia in Canada to central Argentina.'
+    'Newborn rattlesnakes are heavily preyed upon by a variety of species, including ravens, crows, roadrunners, raccoons, opossums, skunks, coyotes, weasels, whipsnakes, kingsnakes, and racers.'
+    'Rattlesnakes feed on rodents, squirrels, rabbits and other small critters.'
+    'Rattlesnakes are believed to require at least their own body weight in water annually to remain hydrated. The method in which they drink depends on the water source. In larger bodies of water (streams, ponds, etc.), they submerge their heads and ingest water by opening and closing their jaws, which sucks in water. If drinking dew, or drinking from small puddles, they sip the liquid either by capillary action or by flattening and flooding their lower jaws.'
+    'Rattlesnakes are a key element in Aztec mythology and were widely represented in Aztec art, including sculptures, jewelry, and architectural elements.'
+    'Members of some Christian sects in the southern United States are regularly bitten while participating in "snake handling" rituals. Snake handling is when people hold venomous snakes, unprotected, as part of a religious service inspired by a literal interpretation of the Bible verses Mark 16:17-18 which reads, "In my name ... they will pick up snakes with their hands".'
+    'The rattlesnake became a symbolic animal for the Colonials during the Revolutionary War period, and is depicted prominently on the Gadsden Flag. It continues to be used as a symbol by the United States military, and political movements within the United States.'
+    'The rattlesnakes hibernate through the winter and come out in the spring to eat and then mate.'
+    'Rattlesnake eggs will stay inside their mother until they hatch.  Most of the time there are 8-10 babies born at once and are about 10 inches long.  Babies are born venomous but cannot rattle and are often more aggressive than the adults.'
+    'Rattlesnakes can range from one to eight feet, depending on the species (the big one is the eastern diamondback), according to the National Wildlife Federation. They are thick-bodied snakes with keeled (ridged) scales in a variety of colors and patterns. Most species are patterned with dark diamonds, rhombuses or hexagons on a lighter background.'
+    'Size of rattlesnake depends on the species. Largest species can reach length of 8 feet. On average, rattlesnakes are 3 to 4 feet long.',
+    'Rattlesnakes are not very colorful because they like to camouflage with their environment. They are usually black, brown, olive or grey in color.',
+    'Rattle grows continuously. New segment is added each time snake shed its skin.',
+    'Rattling sound informs predator to stay away from the snake. When rattlesnake is surprised, it can attack without producing rattling sound.',
+    'Rattlesnakes are venomous snakes. They produce very strong hemotoxic venom (which destroys blood cells and vessels). It is used for hunting and for defense against predators. Rattlesnake bites are fatal for humans if not treated with antidote immediately.',
+    'Some snakes are immune to the poison of rattlesnakes. Thanks to that feature, king snakes are main predators of rattlesnakes.',
+    'Rattlesnakes have special kind of thermal receptors that are used for detection of warm-blooded creatures (their prey). They can also locate prey by using the tongue which collects scent molecules from the air. Also, rattlesnake senses vibration of the ground.',
+    'Optimal temperature for the survival of the rattlesnake is between 27 and 32 degrees of Celsius. They can survive freezing temperature, but temperatures above 38 degrees are fatal for them.',
+    'Rattlesnake hibernates during the cold time of the year. Usually large number of rattlesnakes gathers in the underground dens and curl around each other for the purpose of warming.',
+    'Rattlesnakes have triangular head and vertical pupils. Their name comes from a rattle at the end of the tail. Rattle is made of keratin (same substance builds nails and hair in humans).',
+    'Rattlesnakes have a lot of enemies, from large birds like falcons and crows to larger mammals like raccoons and opossums. One of a rattlesnake’s biggest threats is actually another snake — the kingsnake, which is a constrictor.',
+    'Rattlesnakes are able to consume animals much larger than themselves. They are able to greatly expand their jaws and skin to fit small rodents and birds into their bodies. '
+)
+
 
 RAVEN_FACTS = (
 	'Ravens are larger, about the size of a red-tailed hawk. Crows are similar in size to a dove.',
@@ -1955,6 +2163,19 @@ STARFISH_FACTS = (
     'Starfish have eyes.',
     )
 
+STURGEON_FACTS = (
+	'Sturgeons are related to the paddlefish and perhaps to the bichir.',
+	'Sturgeons are found in greatest abundance in the rivers of southern Russia and Ukraine and in the freshwaters of North America.',
+	'Sturgeons are one of the oldest families of bony fish in existence.',
+	'Most sturgeons are anadromous bottom-feeders, spawning upstream and feeding in river deltas and estuaries. While some are entirely freshwater, very few venture into the open ocean beyond near coastal areas.',
+	'Sturgeons commonly range from 7–12 feet (2-3½ m) in length, while some species grow up to 18 feet (5.5 m).',
+	'Sturgeons reach sexual maturity in 6-25 years, making them vulnerable to overfishing.',
+	'Some species of sturgeon are harvested for their roe, which is made into caviar.',
+	'Sturgeons have four soft barbels between the front of the snout and the toothless mouth, which protrudes to pick up food.',
+	'Sturgeons can live 50 to 100 years or more, depending on the species.',
+	)
+
+
 SUNFISH_FACTS = (
     'The ocean sunfish (mola mola) is the heaviest known bony fish in the world, adults typically weigh between 247 and 1000 kg (545-2205 lb).',
     'Sunfish live on a diet mainly of jellyfish, but because jellyfish are nutritionally poor, sunfish need to consume large amounts to develop and maintain their bulk.',
@@ -2068,6 +2289,40 @@ TIGER_FACTS = (
     'Tigers that breed with lions give birth to hybrids known as tigons and ligers.',
     )
 
+TOAD_FACTS = (
+	'While frogs need to live near water to survive, toads do not actually have to be located near water.',
+	'The toad has skin in which lets out a bitter taste and smell in which burns the eyes and nostrils of its predators.',
+	'The common toad moves around by crawling, unlike frogs which hop, it moves at the speed of 5 miles per hour.',
+	'Toads can survive 20-40 years in the wild, and 50 years in captivity.',
+	'Toad mating season begins March and ends in June!',
+	'The common toad can be found throughout all of Europe besides northern Scotland and the Mediterranean islands.',
+	'The main threat to toad survival is habitat destruction, the common toad is not endangered however.'
+	'Twenty tons of common toads are killed on British roads annually.',
+	'Grass snakes and hedgehogs prey on the toad as they are immune to its bitter taste and smell.',
+	'The common toads skin color changes depending on their surroundings.',
+	)
+
+TOUCAN_FACTS = (
+    'Toucans typically lay 2–21 white eggs in their nests.',
+    'Toucans make their nests in tree hollows and holes excavated by other animals such as woodpeckers.',
+    'The toucan family has five extant genera: Aulacorhynchus, Pteroglossus, Selenidera, Andigena, and Ramphastos.',
+    'Toucan wings are small, as they are forest-dwelling birds who only need to travel short distances, and are often of about the same span as the bill-tip-to-tail-tip measurements of the bird.',
+    'Both sexes of toucans use their bills to catch tasty morsels and pitch them to one another during a mating ritual fruit toss.',
+    'While the beak of a toucan may deter predators due to its size, it is of little use in combat, due to it being a honeycomb of bone that actually contains a lot of air.',
+    'Toucans use their beaks to reach fruit on branches that are too small to support their weight, and also to skin their pickings.',
+    ' In addition to fruit, toucans eat insects and, sometimes, young birds, eggs, or lizards.',
+    'Toucans live in small flocks of about six birds.',
+    'Young toucans do not have a large bill at birth—it grows as they develop and does not become full size for several months.',
+    'Researchers have discovered that the large bill of the toucan is a highly efficient thermoregulation system.',
+    'The tongue of a toucan is long (up to 14–15 cm, or 6 inches), narrow, grey, and singularly frayed on each side, adding to its sensitivity as an organ of taste.',
+    'Toucans are native to the Neotropics, from Southern Mexico, through Central America, into South America south to northern Argentina.',
+    'Toucans are, due to their unique appearance, among the most popular and well known birds in the world.',
+    'The constellation Tucana, containing most of the Small Magellanic Cloud, is named after the toucan.',
+    'Toucans are the mascot of the Brazilian Social Democracy Party; its party members are called tucanos for this reason.',
+    'Toucans are highly social and most species occur in groups of up to 20 or more birds for most of the time. ',
+    'The toco toucan is the largest species of toucan.',
+    )
+
 TURTLE_FACTS = (
     'Turtles have a hard shell that protects them like a shield, this upper shell is called a ‘carapace’.',
     'Turtles also have a lower shell called a ‘plastron’.',
@@ -2146,6 +2401,19 @@ WALRUS_FACTS = (
     'Walruses have only two natural predators: the orca (or killer whale) and the polar bear. Both are more likely to hunt walrus calves than adults.',
     )
 
+WARTHOG_FACTS = (
+    'Warthogs get their name from the patches of skin on their face that look like warts. These “warts” are thick growths of skin that act as padding for when males fight during mating season.',
+    'Did you know - during a dry season a warthog can go months without water. Their bodies will conserve any moisture that would otherwise be used for cooling.',
+    'Despite their appearance, warthogs are not aggressive (unless provoked or attacked) and don’t hunt prey. They are herbivores and use their long snouts and tusks to root the ground for roots, berries, bark, grass or other plants.',
+    'Warthogs can get out of a sticky situation fast - when threatened they can run up to 30 miles an hour.',
+    'Female warthogs are called sows, and they live together in groups often as large as up to 40 members. Male warthogs live alone and often only join up with sow groups during mating season.',
+    'A warthog’s average lifespan in the wild is about 15 years.',
+    'Warthogs will often utilize empty dens they find (usually created by aardvarks). In a situation where they are being chased by a predator, warthogs will find these dens to back into - using their tusks to ward away prey from the front.',
+    'A warthog is a member of the pig family and can be found in the savannas, open plains, and grasslands of Africa - south of Sahara.',
+    'Warthogs don’t have sweat glads to cool themselves off, so when it gets warm a warthog will wallow in mud to cool off.',
+    'Warthogs allow birds such as Oxpeckers or Yellow-Billed Hornbills to ride on their back. These birds will often eat insects on the warthog’s body.',
+    )
+
 WHALE_FACTS = (
     'Many whales are toothless. They use a plate of comb-like fibre called baleen to filter small crustaceans and other creatures from the water.',
     'There are 79 to 84 different species of whale. They come in many different shapes and sizes!',
@@ -2206,7 +2474,8 @@ ZEBRA_FACTS = (
     'The ears of a zebra show its mood.',
     'A zebra named Marty starred in the 2005 animated film Madagascar.',
     'Zebras are very fast animals, and can gallop at speeds of up to 65 km/h. This is fast enough to outrun many predators.',
-    'Zebra foals can run within a few hours of birth.'
+    'Zebra foals can run within a few hours of birth.',
+    'Like horses, zebras sleep standing up, and usually only when in the safety of a group.'
 )
 
 ALL_FACTS = (
@@ -2218,6 +2487,7 @@ ALL_FACTS = (
     ANT_FACTS,
     ANTEATER_FACTS,
     ANTELOPE_FACTS,
+    AXOLOTL_FACTS,
     BADGER_FACTS,
     BEAR_FACTS,
     BEAVER_FACTS,
@@ -2229,13 +2499,16 @@ ALL_FACTS = (
     CHEETAH_FACTS,
     CHIPMUNK_FACTS,
     CHINCHILLA_FACTS,
+    CLOWNFISH_FACTS,
     COBRA_FACTS,
     COW_FACTS,
     COUGAR_FACTS,
     CRAB_FACTS,
     CROCODILE_FACTS,
     CUTTLEFISH_FACTS,
+	DEGU_FACTS,
     DINGO_FACTS,
+    DODO_FACTS,
     DOLPHIN_FACTS,
     DUGONG_FACTS,
     EAGLE_FACTS,
@@ -2248,6 +2521,7 @@ ALL_FACTS = (
     FOX_FACTS,
     FROG_FACTS,
     GAZELLE_FACTS,
+    GECKO_FACTS,
     GIRAFFE_FACTS,
     GRASSHOPPER_FACTS,
     GOAT_FACTS,
@@ -2274,13 +2548,16 @@ ALL_FACTS = (
     LIZARD_FACTS,
     LOBSTER_FACTS,
     LLAMA_FACTS,
+    MANTIS_SHRIMP_FACTS,
     MEERKAT_FACTS,
     MONKEY_FACTS,
+	MOOSE_FACTS,
     NARWHAL_FACTS,
     NEWT_FACTS,
     OCELOT_FACTS,
     OCTOPUS_FACTS,
     OPOSSUM_FACTS,
+    ORANGUTAN_FACTS,
     ORYX_FACTS,
     ORCA_FACTS,
     OSTRICH_FACTS,
@@ -2299,6 +2576,7 @@ ALL_FACTS = (
     PORCUPINE_FACTS,
     RABBIT_FACTS,
     RACCOON_FACTS,
+    RATTLESNAKE_FACTS,
     RAVEN_FACTS,
   	SALMON_FACTS,
     SCORPION_FACTS,
@@ -2312,16 +2590,20 @@ ALL_FACTS = (
     SNAIL_FACTS,
     SNAKE_FACTS,
     STARFISH_FACTS,
+  	STURGEON_FACTS,
     SUNFISH_FACTS,
     SQUIRREL_FACTS,
     STINGRAY_FACTS,
     TARDIGRADE_FACTS,
     TARANTULA_FACTS,
     TIGER_FACTS,
+    TOAD_FACTS,
+	TOUCAN_FACTS,
     TURTLE_FACTS,
     VAMPIRE_BAT_FACTS,
     WALLABY_FACTS,
     WALRUS_FACTS,
+    WARTHOG_FACTS,
     WHALE_FACTS,
     WOLF_FACTS,
     YAK_FACTS,
