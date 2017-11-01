@@ -864,7 +864,7 @@ ELEPHANT_FACTS = (
     'Female elephants spend their entire lives living in large groups called herds. Male elephant leave their herds at about 13 years old and live fairly solitary lives from this point.',
     'Elephants can swim – they use their trunk to breathe like a snorkel in deep water.',
     'Elephants are herbivores and can spend up to 16 hours days collecting leaves, twigs, bamboo and roots.',
-    'Elephants are considered as good in Hinduisum they are called Lord Ganesh
+    'Elephants are considered as god in Hinduisum they are called Lord Ganesh
     )
 
 ELK_FACTS = (
