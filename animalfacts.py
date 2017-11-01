@@ -489,6 +489,11 @@ ATLANTIC_PUFFIN_FACTS = (
     'The Atlantic Puffin breeds in Iceland, Norway, Greenland, Newfoundland and many North Atlantic islands, and as far south as Maine in the west and the British Isles in the east.',
     'There are considered to be three subspecies of Atlantic puffin: Fratercula arctica arctica, Fratercula arctica grabae, Fratercula arctica naumanni.',
     'Like many seabirds, the Atlantic puffin spends most of the year far from land in the open ocean and only visits coastal areas to breed.',
+    'Atlantic puffins are also excellent fliers. Flapping their wings at up to 400 beats per minute, puffins can reach speeds of 88 km/h (55mph)',
+    'Puffins create burrows, about 90 cm (3 ft.), in rocky cliffs either in the soil or between rocks. Often, couples will return to the same burrow year after year. At the back of the burrow, they build a nest lined with grasses, seaweed, and feathers. After the female lays a single egg, both parents take turn incubating the egg for about 40 days.',
+    ' The puffins’ genus name, Fratercula,comes from the Latin for “little brother.” The name refers to the sea bird’s black and white plumage, which was said to resemble the robes that monks once wore.',
+    'Sixty percent of the world’s puffins breed in Iceland.',
+    'Puffins are one of the few birds that have the ability to hold several small fish in their bills at a time. Their raspy tongues and spiny palates allow them to firm grasp 10 to 12 fish during one foraging trip. They thus can bring more food back to their young compared with other seabirds that tend to swallow and regurgitate meals for their chicks.',
 )
 
 AXOLOTL_FACTS = (
