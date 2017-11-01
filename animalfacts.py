@@ -1243,6 +1243,7 @@ HORSE_FACTS = (
     'The first cloned horse was a Haflinger mare in Italy in 2003.',
     'Horses with pink skin can get a sunburn.',
     'A group of horses will not go to sleep at the same time - at least one of them will stay awake to look out for the others.',
+    'Male horses are one of few male mammals to not have nipples.',
     )
 
 HUMMINGBIRD_FACTS = (
