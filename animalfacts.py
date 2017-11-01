@@ -1279,6 +1279,8 @@ HUSKY_FACTS = (
     'Huskies have hair between their toes to keep their feet warm.',
     'When diptheria broke out in Nome, Alaska in 1925, a sled dog team led by the husky, Balto, transported medicine to the town before the epidemic could spread any further. The dogs made the trip during a blizzard, braving strong winds and temperatures as low as -23 degrees Fahrenheit.',
     'They\'re good dogs, Brent.',
+    'DNA found on the ancient bone of an Arctic Wolf suggests that Huskies are one of the oldest of dog breeds.',
+    'Males typically grow to be 21-23.5 inches in height from ground to shoulder, and weigh between 45-60 pounds'
     )
 
 IGUANA_FACTS = (
