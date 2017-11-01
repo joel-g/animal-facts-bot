@@ -779,7 +779,7 @@ CRAB_FACTS = (
 CROCODILE_FACTS = (
     'There are 23 different species of crocodiles that live on this planet.',
     'Crocodiles do not chew their food! Instead, they swallow stones to grind their food inside their stomachs.',
-    'Crocodiles with open motuhs is not necessarily a sign of aggression. Instead, that is their only way cooling off.',
+    'Crocodiles with open mouths is not necessarily a sign of aggression. Instead, that is their only way cooling off.',
     'Crocodiles do not possess any sweat glands.',
     "The muscles responsible for opening a crocodile's jaws are weak, such that even humans can keep a crocdile's mouth closed.",
     'However, opening their mouth when it is closed is almost impossible',
@@ -789,6 +789,8 @@ CROCODILE_FACTS = (
     'The closest relatives of the crocodile in the animal kingdom are rather disparate: Birds and Dinosaurs.',
     'Crocodiles normally drown their prey by dragging them underwater before cutting their meat into smaller chunks.',
     'Crocodiles can shoot out from the water at almost 12 meters per second!',
+    'The smallest crocodile is the dwarf crocodile. It grows to about 5.6 feet (1.7 meters) in length and weighs 13 to 15 pounds (6 to 7 kilograms). The largest crocodile is the saltwater crocodile. The largest one ever found was 20.24 feet (6.17 m) long. They can weigh up to 2,000 pounds (907 kg).',
+     "Crocodiles lay 10 to 60 eggs at a time. The hatchlings stay in their eggs for 55 to 110 days. They are 7 to 10 inches (17.8 to 25.4 centimeters) long when they are born and don't mature until they are 4 to 15 years.",
     )
 
 CUTTLEFISH_FACTS = (
