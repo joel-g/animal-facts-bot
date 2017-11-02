@@ -2530,11 +2530,12 @@ WHALE_FACTS = (
     'You can tell the age of a whale by looking at the wax plug in its ear. This plug in the ear has a pattern of layers when cut lengthwise that scientists can count to estimate the age of the whale.',
     'Whales love to sing! They use this as a call to mates, a way to communicate and also just for fun! After a period of time they get bored of the same whale song and begin to sing a different tune.',
     'Sometimes whales make navigation mistakes during migrations. Although they may have made the mistake days before, they don’t realise it until they becoming stranded.',
-    'Whales support many different types of life. Several creatures, such as barnacles and sea lice, attach themselves to the skin of whales and live there.'
+    'Whales support many different types of life. Several creatures, such as barnacles and sea lice, attach themselves to the skin of whales and live there.',
     'Whales are mammals. They breathe air, give birth to live young, and nurse (i.e., feed milk to) their young',
     'Whales sleep by resting half of their brain at a time. That means they can still surface to breathe while they are sleeping',
-    'Whales have excellent hearing, and can hear other whales from thousands of kilometers away'
+    'Whales have excellent hearing, and can hear other whales from thousands of kilometers away',
     'Whales support many different types of life. Several creatures, such as barnacles and sea lice, attach themselves to the skin of whales and live there.',
+    'The blue whale is the largest animal to have ever lived on Earth; the largest on record was 100 ft. long.'
     )
 
 WOLF_FACTS = (
