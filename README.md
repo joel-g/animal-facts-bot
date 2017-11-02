@@ -24,7 +24,7 @@ If you have a question the quickest way to reach is me on twitter @joelatwar
 
 # animal-facts-bot
 
-A Reddit bot that searches for comments on reddit that contain the name of the animal and then replies to the comment with a fact about that animal.
+Animal-facts-bot is a Reddit bot that searches for comments on reddit that contain the name of the animal and then replies to the comment with a fact about that animal.
 
 You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comments/
 
@@ -32,6 +32,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * aardvark
 * albatross
 * alligator
+* anglerfish
 * ant
 * anteater
 * antelope
@@ -39,6 +40,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * bear
 * beaver
 * bison
+* bobcat
 * buffalo
 * camel
 * capybara
@@ -46,12 +48,16 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * cheetah
 * chipmunk
 * chinchilla
+* clownfish
+* cobra
 * cougar
 * cow
 * crab
 * crocodile
 * cuttlefish
+* degu
 * dingo
+* dodo
 * dolphin
 * dragon
 * dugong
@@ -66,6 +72,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * fox
 * frog
 * gazelle
+* gecko
 * giraffe
 * grasshopper
 * goat
@@ -92,14 +99,19 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * lizard
 * lobster
 * llama
+* manatee
+* mantis shrimp
 * meerkat
 * mink
+* mongoose
 * monkey
+* moose
 * narwhal
 * newt
 * ocelot
 * octopus
 * opossum
+* orangutan
 * oryx
 * orca
 * ostrich
@@ -117,6 +129,9 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * puma
 * rabbit
 * raccoon
+* rattlesnake
+* raven
+* salmon
 * scorpion
 * seagull
 * sea cucumber
@@ -126,6 +141,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * sloth
 * snail
 * snake
+* squid
 * squirrel
 * stingray
 * sunfish
@@ -133,10 +149,12 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * tardigrade
 * tiger
 * trout
+* toucan
 * turtle
 * vampire bat
 * wallaby
 * walrus
+* warthog
 * whale
 * wolf
 * yak
