@@ -286,6 +286,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('manatee', '\smanatees?\s', reddit, MANATEE_FACTS, comment)
     botengine('mantis shrimp', '\smantis shrimps?\s', reddit, MANTIS_SHRIMP_FACTS, comment)
     botengine('meerkat', '\smeerkats?\s', reddit, MEERKAT_FACTS, comment)
+    botengine('mink', '\sminks?\s', reddit, MINK_FACTS, comment)
     botengine('mongoose', '\smongooses?\s', reddit, MONGOOSE_FACTS, comment)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
     botengine('moose', '\smoose\s', reddit, MOOSE_FACTS, comment)
@@ -335,6 +336,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('sunfish', '\ssunfish(es)?\s', reddit, SUNFISH_FACTS, comment)
     botengine('tardigrade', '\stardigrades?\s', reddit, TARDIGRADE_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
+    botengine('trout', '\strout?\s', reddit, TROUT_FACTS, comment)
     botengine('toad','\stoads?\s', reddit, TOAD_FACTS, comment)
     botengine('toucan', '\stoucans?\s', reddit, TOUCAN_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
@@ -1505,6 +1507,24 @@ MEERKAT_FACTS = (
     'Meerkats are vicious fighters that often kill each other in skirmishes. Both sides line up across a field before charging forward with leaps and bounds. Before attacking, they try to psych out their opponents with aggressive posturing and bluffing to avoid serious conflict if possible.',
     )
 
+MINK_FACTS = (
+        'Mink can reach 15 to 28 inches in length and weigh between 16 and 56 ounces. American minks are larger than European minks.',
+        'Mink is covered with soft fur that is usually black or dark brown in color. White marks can be seen on the chin, throat and chest.',
+	'Mink has slender body with short legs, long neck, rounded head and small ears. Its tail usually reaches ½ of the body length.',
+	'Mink has webbed feet and fur covered with oily substance which prevents soaking of the skin. This type of feet and fur represent adaptation to the life in the water.'.
+	'Mink is semi-aquatic animal, which means that it spends part of its life in the water and other part on the ground. Mink can swim 1.5 to 1.8 feet in the second.',
+	'Mink lives in a den made of tree roots, leaves, stones and branches. Dens are usually located near the water and they are equipped with several entrances. Mink sometimes uses abandoned burrows of beavers or muskrats.',
+	'Mink is nocturnal creature (active during the night).',
+	'Mink is carnivore (meat-eater). Its diet consists of worms, fish, crayfish, amphibians, birds and small mammals.',
+	'The main predators of minks are birds of prey, lynx, foxes, coyotes and humans.',
+	'Mink produces smelly substance that is used for self-defense and marking of the territory.',
+	'Minks are territorial animals. Males live on territory of 40 acres. Females occupy 2 times smaller territory.',
+	'Minks are solitary creatures that gather only for mating. Mating season lasts from February to April.',
+	'Female is able to postpone development of fertilized eggs if the weather conditions are bad. Because of that, pregnancy may last from 39 to 74 days. Females can have up to 10 babies, but they usually have 5.',
+	"Babies are wrinkled and blind at birth. They depend on the mother's milk during the first 6 weeks of their life. At the age of 8 weeks, young minks are ready for independent life. Sexual maturity will be reached between 12th and 16th month.",
+	'Minks can survive 3 to 4 years in the wild and 8 to 10 years in captivity.'
+	
+
 LLAMA_FACTS = (
     'Llamas are members of the camelid, or camel, family.',
     'Llamas were first domesticated and used as pack animals 4,000 to 5,000 years ago by Indians in the Peruvian highlands.',
@@ -2362,6 +2382,18 @@ TIGER_FACTS = (
     'Tigers that breed with lions give birth to hybrids known as tigons and ligers.',
     )
 
+TROUT_FACTS = (
+	'Trout that live in different environments can have dramatically different colorations and patterns.',
+	'Trout have fins entirely without spines, and all of them have a small adipose fin along the back, near the tail.',
+	'Trout are usually found in cool (50–60 °F or 10–16 °C), clear streams and lakes, although many of the species have anadromous strains as well.',
+	'Trout generally feed on other fish, and soft bodied aquatic invertebrates, such as flies, mayflies, caddisflies, stoneflies, mollusks and dragonflies.',
+	'Several species of trout were introduced to Australia and New Zealand by amateur fishing enthusiasts in the 19th century, effectively displacing and endangering several upland native fish species.',
+	'Trout contain one of the lowest amounts of dioxins (a type of environmental contaminant) of all oily fishes.',
+	'While trout can be caught with a normal rod and reel, fly fishing is a distinctive method developed primarily for trout, and now extended to other species.',
+	'Because trout are cold water fish, during the winter they move from up-deep to the shallows, replacing the small fish that inhabit the area during the summer.',
+	'As a group, trout are somewhat bony, but the flesh is generally considered to be tasty. The flavor of the flesh is heavily influenced by the diet of the fish.'
+)
+  
 TOAD_FACTS = (
 	'While frogs need to live near water to survive, toads do not actually have to be located near water.',
 	'The toad has skin in which lets out a bitter taste and smell in which burns the eyes and nostrils of its predators.',
@@ -2405,7 +2437,7 @@ TURTLE_FACTS = (
     'The largest turtle is the leatherback sea turtle, it can weigh over 900 kg! (2000 lb)',
     'In some species of turtle the temperature determines if the egg will develop into a male or female, lower temperatures lead to a male while higher temperatures lead to a female.',
     'Some turtles lay eggs in the sand and leave them to hatch on their own. The young turtles make their way to the top of the sand and scramble to the water while trying to avoid predators.',
-    'Sea turtles have special glands which help remove salt from the water they drink.',
+    'Sea turtles have special glands which help remove salt from the water they drink.'
     )
 
 VAMPIRE_BAT_FACTS = (
@@ -2625,9 +2657,10 @@ ALL_FACTS = (
     MANATEE_FACTS,
     MANTIS_SHRIMP_FACTS,
     MEERKAT_FACTS,
+    MINK_FACTS,
     MONGOOSE_FACTS,
     MONKEY_FACTS,
-	MOOSE_FACTS,
+  	MOOSE_FACTS,
     NARWHAL_FACTS,
     NEWT_FACTS,
     OCELOT_FACTS,
@@ -2673,8 +2706,9 @@ ALL_FACTS = (
     TARDIGRADE_FACTS,
     TARANTULA_FACTS,
     TIGER_FACTS,
+    TROUT_FACTS,
     TOAD_FACTS,
-	TOUCAN_FACTS,
+  	TOUCAN_FACTS,
     TURTLE_FACTS,
     VAMPIRE_BAT_FACTS,
     WALLABY_FACTS,

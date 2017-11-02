@@ -102,6 +102,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * manatee
 * mantis shrimp
 * meerkat
+* mink
 * mongoose
 * monkey
 * moose
@@ -147,6 +148,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * tarantula
 * tardigrade
 * tiger
+* trout
 * toucan
 * turtle
 * vampire bat
