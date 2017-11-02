@@ -286,6 +286,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('manatee', '\smanatees?\s', reddit, MANATEE_FACTS, comment)
     botengine('mantis shrimp', '\smantis shrimps?\s', reddit, MANTIS_SHRIMP_FACTS, comment)
     botengine('meerkat', '\smeerkats?\s', reddit, MEERKAT_FACTS, comment)
+    botengine('mongoose', '\smongooses?\s', reddit, MONGOOSE_FACTS, comment)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
     botengine('moose', '\smoose\s', reddit, MOOSE_FACTS, comment)
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
@@ -1533,6 +1534,27 @@ LLAMA_FACTS = (
     'Some ranchers and farmers use \"guard llamas\" to safeguard their sheep or other livestock.'
     )
 
+MONGOOSE_FACTS = (
+    'Mongooses are weasel-like creatures that belong to the group of Carnivores.',
+    'Mongooses live around 4 years in the wild and up to 20 years in captivity.',
+    'Mongooses use scents to announce their reproductive status and to mark territory.',
+    'Mongooses have non-retractable claws which mean that they cannot hide them when they want. Their claws are visible all the time.',
+    'Mongooses are primarily found in Africa, their range covering most of the continent. Some species occupy parts of southern Asia and the Iberian Peninsula.',
+    'Mongooses normally have brown or gray grizzled fur, and a number of species sport striped coats or ringed tails.',
+    'Mongooses live in burrows and are nondiscriminatory predators. They feed on small animals such as rodents, birds, reptiles, frogs, insects, and worms.',
+    'Some mongoose (such as the Indian gray mongoose) are well known for their ability to fight and kill venomous snakes, particularly cobras.',
+    'Most mongoose species are highly social animals living in busy groups of 6 to 40 individuals called "packs" or "mobs".',
+    'Several species of mongoose routinely crack open eggs, nuts, or shelled creatures such as crabs or mollusks by dropping or throwing them on rocks.',
+    'Mongooses are diurnal, which means that they are active during the day and sleep at night.',
+    'Mongooses tend to live in burrows that other animals have abandoned. They rarely dig burrows on their own.',
+    'The mongoose is a member of the civet family, smaller than a domestic cat but larger than a squirrel.',
+    'In North America the mongoose has been prevented from establishing a breeding population except on tropical islands. There they do some $50 million in damage a year, principally to the poultry industry.',
+    'Mongooses were introduced to Hawaii and Puerto Rico in the late 1800s to control rats on sugar plantations. This project was ineffective because mongooses hunt in the daytime, while rats come out at night.',
+    'The ancient Egyptians domesticated wild mongooses and considered them sacred (mummified mongooses have been discovered in tombs).',
+    'There are about 30 different species of mongooses.',
+    'The mongoose is mainly a terrestrial mammal, meaning they live on land, but some species have adapted to living in tree tops or partially in water.',
+    )
+
 MONKEY_FACTS = (
     'There are currently 264 known monkey species.',
     'Monkeys can be divided into two groups, Old World monkeys that live in Africa and Asia, and New World monkeys that live in South America.',
@@ -2077,12 +2099,23 @@ SHARK_FACTS = (
 SHEEP_FACTS = (
     'There are over 1 billion sheep in the world!',
     'Sheep have a field of vision (FOV) of around 300 degrees allowing them to look behind themselves without turning their head!',
-    'Sheeps have four stomachs!',
+    'Sheep have four stomachs!',
     'Ancient egyptians believed that sheep were sacred to society. When a sheep died, it would be mummified just like a human.',
     'Sheep have 24 molar teeth and 8 incisor teeth.',
     'A collection or group of sheep is called a flock.',
     'Most sheep live between 6-11 years.',
+    'China has the largest number of sheep in the world.',
     'A lamb is considered a sheep less than one year old.',
+    'More than two thirds of U.S. sheep are in the Southern Plains, Mountain and Pacific regions.',
+    'Predators of sheep include coyotes, dogs, bears, big cats, foxes and eagles.',
+    'A sheep, depending on its type, can produce anywhere from two to 30 pounds of wool per year.',
+    'In 1996, Dolly, a Finnish Dorset sheep, was the first mammal to be cloned from an adult cell.',
+    'Texas, Wyoming and California are the U.S. states with the highest number of sheep.',
+    'Sheep have been shown to display emotions, some of which can be studied by observing the position of their ears.',
+    'Sheep are known to self-medicate when they have some illnesses. They will eat specific plants when ill that can cure them.',
+    'Sheep are precocial (highly independent from birth) and gregarious (like to be in a group).',
+    'Sheep produce a thick woolly coat called a fleece to protect them from the weather, both hot and cold. ',
+    'Due to human interaction, domestic sheep have evolved to require humans to shear them. Their wool never sheds.',
     )
 
 SHRIMP_FACTS = (
@@ -2587,6 +2620,7 @@ ALL_FACTS = (
     MANATEE_FACTS,
     MANTIS_SHRIMP_FACTS,
     MEERKAT_FACTS,
+    MONGOOSE_FACTS,
     MONKEY_FACTS,
 	MOOSE_FACTS,
     NARWHAL_FACTS,
