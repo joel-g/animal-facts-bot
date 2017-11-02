@@ -282,6 +282,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('lizard', '\slizards?\s', reddit, LIZARD_FACTS, comment)
     botengine('lobster', '\slobsters?\s', reddit, LOBSTER_FACTS, comment)
     botengine('llama', '\sllamas?\s', reddit, LLAMA_FACTS, comment)
+    botengine('manatee', '\smanatees?\s', reddit, MANATEE_FACTS, comment)
     botengine('mantis shrimp', '\smantis shrimps?\s', reddit, MANTIS_SHRIMP_FACTS, comment)
     botengine('meerkat', '\smeerkats?\s', reddit, MEERKAT_FACTS, comment)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
@@ -1449,6 +1450,18 @@ LOBSTER_FACTS = (
     'Lobsters keep growing forever. They do not get weaker or lose their ability to reproduce, and will keep on molting and growing.',
     )
 
+MANATEE_FACTS = (
+    'Manatees are large, fully aquatic, mostly herbivorous marine mammals sometimes known as sea cows.',
+    'Manatees measure up to 4.0 metres (13.1 ft) long, weigh as much as 590 kilograms (1,300 lb), and have paddle-like flippers.',
+    'Manatees are occasionally called sea cows, as they are slow plant-eaters, peaceful and similar to cows on land.',
+    'When born, baby manatees have an average mass of 30 kilograms (66 lb).',
+    'Generally, manatees swim at about 5 to 8 kilometres per hour (3 to 5 mph). However, they have been known to swim at up to 30 kilometres per hour (20 mph) in short bursts.',
+    'Manatees are capable of understanding discrimination tasks and show signs of complex associative learning. They also have good long-term memory.',
+    'Manatees typically breed once every two years; generally only a single calf is born.',
+    'Manatees have four rows of teeth. Like sharks, these teeth are continually replaced.',
+    'Manatees inhabit the shallow, marshy coastal areas and rivers of the Caribbean Sea and the Gulf of Mexico, the Amazon basin, and West Africa.',
+    )
+
 MANTIS_SHRIMP_FACTS = (
     'Mantis Shrimps can see ultraviolet and polarized light.',
     'Mantis Shrimp have trinocular vision, meaning they can see using three parts of the same eye.',
@@ -2558,6 +2571,7 @@ ALL_FACTS = (
     LIZARD_FACTS,
     LOBSTER_FACTS,
     LLAMA_FACTS,
+    MANATEE_FACTS,
     MANTIS_SHRIMP_FACTS,
     MEERKAT_FACTS,
     MONKEY_FACTS,
