@@ -1023,8 +1023,8 @@ FOX_FACTS = (
     "The tip of a red fox’s tail is white, whereas swift foxes have a black-tipped tail",
     "Foxes have excellent hearing. Red foxes can reportedly hear a watch ticking 40 yards away!",
     'Foxes only live up to 5 years in the wild, but up to 14 in captivity!',
-    'Foxes are legal to own in 21 states!",
-    'Adult red foxes usually live alone except during the mating season in January and February and when raising young.'
+    'Foxes are legal to own in 21 states!',
+    'Adult red foxes usually live alone except during the mating season in January and February and when raising young.',
     'Foxes stink, their funny ‘musky’ smell comes from scent glands at the base of their tail',
     "Foxes have whiskers on their legs and face, which help them to navigate",
     "Foxes are one of the most well known wild animals in the UK, they are native to Britain",
@@ -1265,7 +1265,7 @@ HORSE_FACTS = (
     'An adult horse’s brain weights 22 oz, about half that of a human.',
     'The first cloned horse was a Haflinger mare in Italy in 2003.',
     'Horses with pink skin can get a sunburn.',
-    'A group of horses will not go to sleep at the same time - at least one of them will stay awake to look out for the others.',
+    'A group of horses will not go to sleep at the same time - at least one of them will stay awake to look out for the other>>>>>>> masters.',
     'Male horses are one of few male mammals to not have nipples.',
     )
 
@@ -1511,7 +1511,7 @@ MINK_FACTS = (
         'Mink can reach 15 to 28 inches in length and weigh between 16 and 56 ounces. American minks are larger than European minks.',
         'Mink is covered with soft fur that is usually black or dark brown in color. White marks can be seen on the chin, throat and chest.',
 	'Mink has slender body with short legs, long neck, rounded head and small ears. Its tail usually reaches ½ of the body length.',
-	'Mink has webbed feet and fur covered with oily substance which prevents soaking of the skin. This type of feet and fur represent adaptation to the life in the water.'.
+	'Mink has webbed feet and fur covered with oily substance which prevents soaking of the skin. This type of feet and fur represent adaptation to the life in the water.',
 	'Mink is semi-aquatic animal, which means that it spends part of its life in the water and other part on the ground. Mink can swim 1.5 to 1.8 feet in the second.',
 	'Mink lives in a den made of tree roots, leaves, stones and branches. Dens are usually located near the water and they are equipped with several entrances. Mink sometimes uses abandoned burrows of beavers or muskrats.',
 	'Mink is nocturnal creature (active during the night).',
@@ -1523,7 +1523,7 @@ MINK_FACTS = (
 	'Female is able to postpone development of fertilized eggs if the weather conditions are bad. Because of that, pregnancy may last from 39 to 74 days. Females can have up to 10 babies, but they usually have 5.',
 	"Babies are wrinkled and blind at birth. They depend on the mother's milk during the first 6 weeks of their life. At the age of 8 weeks, young minks are ready for independent life. Sexual maturity will be reached between 12th and 16th month.",
 	'Minks can survive 3 to 4 years in the wild and 8 to 10 years in captivity.'
-	
+)
 
 LLAMA_FACTS = (
     'Llamas are members of the camelid, or camel, family.',
