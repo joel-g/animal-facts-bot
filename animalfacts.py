@@ -899,7 +899,9 @@ DUGONG_FACTS = (
     'Dugongs can weigh anywhere between 500 and 1100 pounds.',
     'The average dugong is nearly 10 feet in length.',
     'It is thought that the legends of mermaids may have originated from sailors seeing the fluked tails of dugongs from a distance.',
-    'Dugongs can often live for upwards of 70 years.')
+    'Dugongs can often live for upwards of 70 years.',
+    'Dugongs can stay underwater for 6 minutes before surfacing.',
+    )
 
 EAGLE_FACTS = (
     'Eagles build their nests on high cliffs or in tall trees.',
