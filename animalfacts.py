@@ -1202,7 +1202,8 @@ HEDGEHOG_FACTS = (
     'Hedgehogs are not related to other spine covered creatures such as the porcupine or echidna.',
     'The spines of a hedgehogs, are stiff hollow hairs, they are not poisonous or barbed and cannot be easily removed, they fall out naturally when a hedgehog sheds its baby spines and grows adult spines a process called "quilling".',
     'Hedgehogs have about 5,000 to 6,500 spines at any one time, each which last about a year',
-    'Its illegal to sell hedgehogs in Georgia, USA'
+    'Its illegal to sell hedgehogs in Georgia, USA',
+    'Its illegal to own and sell hedgehogs in California, CA, because they are considered an invasive species.',
     'Most hedgehog species will roll into a tight ball if threatened, making it hard for its attacker to get past the spiky defences.',
     'A baby hedgehog is called a hoglet.',
     'Hedgehogs communicate through a combination of snuffles, grunts and squeals.',
