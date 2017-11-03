@@ -1349,7 +1349,7 @@ JELLYFISH_FACTS = (
     'Jellyfish use their tentacles to sting. Most are harmless to humans but stings from some species, such as the box jellyfish, can be very painful and sometimes kill.',
     'Jellyfish eat plankton. Some sea turtles eat jellyfish.',
 	'The Lions Mane Jellyfish is the largest of the Jellyfish species.',
-	'Lion’s Mane Jellyfish have tentacles up to 190 feet long and a bell diameter of almost 7 feet wide.,
+	'Lion’s Mane Jellyfish have tentacles up to 190 feet long and a bell diameter of almost 7 feet wide.',
 	'The Lion’s Mane Jellyfish mouth is situated on the bell’s underside, surrounded by tentacles that are divided into eight clusters of up to 150 tentacles each.',
 	'The lion’s mane jellyfish also possess bioluminescent abilities, meaning it’s able to produce its own light and glow in the dark underwater.',
 
