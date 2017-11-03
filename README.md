@@ -90,6 +90,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * jackal
 * jellyfish
 * kangaroo
+* kiwi
 * koala
 * lion
 * lemur
@@ -122,6 +123,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * panther
 * parrot
 * peacock
+* peccary
 * penguin
 * pig
 * pigeon

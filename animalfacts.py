@@ -274,6 +274,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('jackal', '\sjackals?\s', reddit, JACKAL_FACTS, comment)
     botengine('jellyfish', '\sjelly ?fish(es)\s', reddit, JELLYFISH_FACTS, comment)
     botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
+    botengine('kiwi', '\skiwis?\s', reddit, KIWI_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
     botengine('ladybug', '\s(ladybug|lady bug)s?\s', reddit, LADYBUG_FACTS, comment)
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
@@ -306,6 +307,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('pangolin', '\spangolins?\s', reddit, PANGOLIN_FACTS, comment)
     botengine('panther', '\spanthers?\s', reddit, PANTHER_FACTS, comment)
     botengine('peacock', '\speacocks?\s', reddit, PEACOCK_FACTS, comment)
+    botengine('peccary', '\speccar(y|ies)\s', reddit, PECCARY_FACTS, comment)
     botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS, comment)
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
@@ -1370,6 +1372,20 @@ KANGAROO_FACTS = (
     'Kangaroos usually live to around six years old in the wild.',
     )
 
+KIWI_FACTS = (
+    'The Kiwi are flightless birds native to New Zealand',
+    'Approximately the size of a domestic chicken, kiwi are by far the smallest living ratites (which also consist of ostriches, emus, rheas, and cassowaries).',
+    'The Kiwi lay the largest egg in relation to their body size of any species of bird in the world.',
+    'The kiwi is a national symbol of New Zealand, and the association is so strong that the term Kiwi is used internationally as the colloquial demonym for New Zealanders.',
+    'The vestigial wings of the kiwi are so small that they are invisible under the bristly, hair-like, two-branched feathers.',
+    'Unlike virtually every other palaeognath, which are generally small-brained by bird standards, kiwi have proportionally large encephalisation quotients.',
+    'Kiwi are shy and usually nocturnal. Their mostly nocturnal habits may be a result of habitat intrusion by predators, including humans. In areas of New Zealand where introduced predators have been removed, such as sanctuaries, kiwi are often seen in daylight.',
+    'Once bonded, a male and female kiwi tend to live their entire lives as a monogamous couple.',
+    'The male kiwi incubates the egg, except for the great spotted kiwi, A. haastii, in which both parents are involved.',
+    'Kiwi are no longer hunted and some Maori consider themselves the birds\' guardians.',
+    'In 1851, London Zoo became the first zoo to keep kiwi. The first captive breeding took place in 1945.',
+    )
+
 KOALA_FACTS = (
     'Koalas are native to Australia. Koal1as are not bears.',
     'Koala fossils found in Australia have been dated as long ago as 20 million years.',
@@ -1872,6 +1888,23 @@ PEACOCK_FACTS = (
     "Peacocks have spurs on their feet that are primarily used to fight with other males.",
     "Peafowl are omnivorous, they eat many types of plants, flower petals, seeds, insects and small reptiles such as lizards.",
     "In Hindu culture, Lord Karthikeya, the god of war, is said to ride a peacock.",
+    )
+
+PECCARY_FACTS = (
+    'Peccaries are found throughout Central and South America and in the southwestern area of North America.',
+    'A peccary is a medium-sized animal, with a strong resemblance to a pig.',
+    'Peccaries are omnivores, and will eat insects, grubs, and occasionally small animals, although their preferred foods consist of roots, grasses, seeds, fruit, and cacti—particularly prickly pear.',
+    'Pigs and peccaries can be differentiated by the shape of the canine tooth, or tusk. In European pigs, the tusk is long and curves around on itself, whereas in peccaries, the tusk is short and straight.',
+    'By rubbing the tusks together, Peccaries can make a chattering noise that warns potential predators not to get too close.',
+    'Peccaries rely on their social structure to defend territory, protect against predators, regulate temperature, and interact socially.',
+    'Three (possibly four) living species of peccaries are found from the southwestern United States through Central America and into South America and Trinidad.',
+    'Peccary fossils have been found in all continents except Australia and Antarctica.',
+    'Although they are common in South America today, peccaries did not reach that continent until about three million years ago during the Great American Interchange, when the Isthmus of Panama formed, connecting North America and South America.',
+    'In many countries, especially in the developing world, Peccaries are raised on farms as a source of food for local communities.',
+
+
+
+
     )
 
 PENGUIN_FACTS = (
@@ -2656,6 +2689,7 @@ ALL_FACTS = (
     JACKAL_FACTS,
     JELLYFISH_FACTS,
     KANGAROO_FACTS,
+    KIWI_FACTS,
     KOALA_FACTS,
     LADYBUG_FACTS,
     LEMUR_FACTS,
@@ -2687,6 +2721,7 @@ ALL_FACTS = (
     PANGOLIN_FACTS,
     PANTHER_FACTS,
     PARROT_FACTS,
+    PECCARY_FACTS,
     PEACOCK_FACTS,
     PENGUIN_FACTS,
     PIG_FACTS,
