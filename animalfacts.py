@@ -1901,10 +1901,6 @@ PECCARY_FACTS = (
     'Peccary fossils have been found in all continents except Australia and Antarctica.',
     'Although they are common in South America today, peccaries did not reach that continent until about three million years ago during the Great American Interchange, when the Isthmus of Panama formed, connecting North America and South America.',
     'In many countries, especially in the developing world, Peccaries are raised on farms as a source of food for local communities.',
-
-
-
-
     )
 
 PENGUIN_FACTS = (
