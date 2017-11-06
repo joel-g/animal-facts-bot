@@ -2309,6 +2309,7 @@ STARFISH_FACTS = (
     'Starfish can eat inside out.',
     'Starfish can move using their tube feet',
     'Starfish have eyes.',
+    'Starfish use seawater, instead of blood, to pump nutrients through their bodies via a "water vascular system".',
     )
 
 STURGEON_FACTS = (
