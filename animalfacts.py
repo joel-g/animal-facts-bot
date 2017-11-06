@@ -1034,6 +1034,8 @@ FOX_FACTS = (
     'Foxes are legal to own in 21 states!',
     'Adult red foxes usually live alone except during the mating season in January and February and when raising young.',
     'Foxes stink, their funny ‘musky’ smell comes from scent glands at the base of their tail',
+    'The latin name for fox is Vulpes Vulpes',
+    'A fox can run 30 miles per hour',
     "Foxes have whiskers on their legs and face, which help them to navigate",
     "Foxes are one of the most well known wild animals in the UK, they are native to Britain",
     "Foxes use 28 different types of calls to communicate with each other",
