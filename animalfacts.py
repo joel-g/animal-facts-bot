@@ -338,6 +338,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('stingray', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
     botengine('sunfish', '\ssunfish(es)?\s', reddit, SUNFISH_FACTS, comment)
     botengine('tardigrade', '\stardigrades?\s', reddit, TARDIGRADE_FACTS, comment)
+    botengine('tasmanian devil', '\stasmanian devils?\s', reddit, TASMANIAN_DEVIL_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('trout', '\strout?\s', reddit, TROUT_FACTS, comment)
     botengine('toad','\stoads?\s', reddit, TOAD_FACTS, comment)
@@ -2433,6 +2434,19 @@ TARDIGRADE_FACTS = (
 	'Tardigrades work as pioneer species by inhabiting new developing environments in which to live. Their presence attracts other invertebrates and predators to populate the space.',
 	'Tardigrades are the first known animal to survive in space.')
 
+TASMANIAN_DEVIL_FACTS = (
+	'The Tasmanian devil is a marsupial therefore the females have pouches in which they carry their young.
+	'Females tasmanian devils give birth to 20–30 young, but few survive because she only has 4 nipples.
+	'Tasmanian devils can run up to 13 km/h (8.1 mph).
+	'The tasmanian devil is native to Australia, but now only found on the island state of Tasmania
+	'Tasmanians are the size of a small dog
+	'The tasmanian devil has the strongest bite per unit body mass of any land mammal
+	'Tasmanian devils are nocturnal hunters
+	'Tasmanian devils live no longer than 5 years in the wild, but 7 in captivity.
+	'Tasmanian devils are named such because of their extreme temperment.
+	'Tasmanian devils are carnivorous and survive mostly on carrion.
+	'Tasmanian devils will eat pretty much anything they can get their teeth on, consuming everything—including hair, organs, and bones.
+)
 
 TIGER_FACTS = (
     'The tiger is the biggest species of the cat family.',
@@ -2796,6 +2810,7 @@ ALL_FACTS = (
     STINGRAY_FACTS,
     TARDIGRADE_FACTS,
     TARANTULA_FACTS,
+    TASMANIAN_DEVIL_FACTS,
     TIGER_FACTS,
     TROUT_FACTS,
     TOAD_FACTS,
