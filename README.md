@@ -24,7 +24,7 @@ If you have a question the quickest way to reach is me on twitter @joelatwar
 
 # animal-facts-bot
 
-A Reddit bot that searches for comments on reddit that contain the name of the animal and then replies to the comment with a fact about that animal.
+Animal-facts-bot is a Reddit bot that searches for comments on reddit that contain the name of the animal and then replies to the comment with a fact about that animal.
 
 You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comments/
 
@@ -40,6 +40,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * bear
 * beaver
 * bison
+* bobcat
 * buffalo
 * camel
 * capybara
@@ -47,12 +48,14 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * cheetah
 * chipmunk
 * chinchilla
+* clownfish
 * cobra
 * cougar
 * cow
 * crab
 * crocodile
 * cuttlefish
+* degu
 * dingo
 * dodo
 * dolphin
@@ -87,6 +90,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * jackal
 * jellyfish
 * kangaroo
+* kiwi
 * koala
 * lion
 * lemur
@@ -96,8 +100,13 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * lizard
 * lobster
 * llama
+* manatee
+* mantis shrimp
 * meerkat
+* mink
+* mongoose
 * monkey
+* moose
 * narwhal
 * newt
 * ocelot
@@ -114,6 +123,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * panther
 * parrot
 * peacock
+* peccary
 * penguin
 * pig
 * pigeon
@@ -127,24 +137,30 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * scorpion
 * seagull
 * sea cucumber
+* sea urchin
 * shark
 * sheep
 * skunk
 * sloth
 * snail
 * snake
+* squid
 * squirrel
 * stingray
 * sunfish
 * tarantula
 * tardigrade
 * tiger
+* trout
+* toucan
 * turtle
 * vampire bat
 * wallaby
 * walrus
+* warthog
 * whale
 * wolf
+* wolverine
 * yak
 * zebra
 
