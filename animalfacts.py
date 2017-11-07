@@ -2437,17 +2437,17 @@ TARDIGRADE_FACTS = (
 	'Tardigrades are the first known animal to survive in space.')
 
 TASMANIAN_DEVIL_FACTS = (
-	'The Tasmanian devil is a marsupial therefore the females have pouches in which they carry their young.
-	'Females tasmanian devils give birth to 20–30 young, but few survive because she only has 4 nipples.
-	'Tasmanian devils can run up to 13 km/h (8.1 mph).
-	'The tasmanian devil is native to Australia, but now only found on the island state of Tasmania
-	'Tasmanians are the size of a small dog
-	'The tasmanian devil has the strongest bite per unit body mass of any land mammal
-	'Tasmanian devils are nocturnal hunters
-	'Tasmanian devils live no longer than 5 years in the wild, but 7 in captivity.
-	'Tasmanian devils are named such because of their extreme temperment.
-	'Tasmanian devils are carnivorous and survive mostly on carrion.
-	'Tasmanian devils will eat pretty much anything they can get their teeth on, consuming everything—including hair, organs, and bones.
+	'The Tasmanian devil is a marsupial therefore the females have pouches in which they carry their young.',
+	'Females tasmanian devils give birth to 20–30 young, but few survive because she only has 4 nipples.',
+	'Tasmanian devils can run up to 13 km/h (8.1 mph).',
+	'The tasmanian devil is native to Australia, but now only found on the island state of Tasmania',
+	'Tasmanians are the size of a small dog',
+	'The tasmanian devil has the strongest bite per unit body mass of any land mammal',
+	'Tasmanian devils are nocturnal hunters',
+	'Tasmanian devils live no longer than 5 years in the wild, but 7 in captivity.',
+	'Tasmanian devils are named such because of their extreme temperment.',
+	'Tasmanian devils are carnivorous and survive mostly on carrion.',
+	'Tasmanian devils will eat pretty much anything they can get their teeth on, consuming everything—including hair, organs, and bones.',
 )
 
 TIGER_FACTS = (
