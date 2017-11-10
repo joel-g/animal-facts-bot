@@ -240,7 +240,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
-    botengine('deer,' '\sdeer?\s', reddit, DEER_FACTS, comment)
+    botengine('deer', '\sdeer?\s', reddit, DEER_FACTS, comment)
     botengine('cuttlefish', '\scuttle ?fish(es)?\s', reddit, CUTTLEFISH_FACTS, comment)
     botengine('dingo', '\sdingos?\s', reddit, DINGO_FACTS, comment)
     botengine('degu', '\sdegus?\s', reddit, DEGU_FACTS, comment)
@@ -849,19 +849,19 @@ CUTTLEFISH_FACTS = (
     )
 
 DEER_FACTS = (
-    'Deer belongs to the cervidae family.'
-    'Deer constitute the second most diverse family after bovids.'
-    'All male deer except the Chinese water deer possess antlerts.'
-    'Deer species range from very large to very small. The smallest deer is the Southern pudu and the largest deer is the moose.'
-    'Deer can be found in many different ecosystems.'
-    'The Chinese water deer does not have any antlers. Instead, it has very long canine teeth used to attract mates with.'
-    'Deer feed primaraly on leaves.'
-    'Deer were an important source for food for early hominids.'
-    'The only known female deer that possess antlers is the reindeer.'
-    'The male deer is called a buck but some larger males are referred to as stags. A female deer is called a doe or a hind.'
-    'During the mating season the males uses their antlers to fight other males over does.'
-    'Each year, the antlers fall off and regrow. As they regrow they are covered in a furry coat called velvet.'
-    'Deer can jump up to 3 meters (10 feet).'
+    'Deer belongs to the cervidae family.',
+    'Deer constitute the second most diverse family after bovids.',
+    'All male deer except the Chinese water deer possess antlerts.',
+    'Deer species range from very large to very small. The smallest deer is the Southern pudu and the largest deer is the moose.',
+    'Deer can be found in many different ecosystems.',
+    'The Chinese water deer does not have any antlers. Instead, it has very long canine teeth used to attract mates with.',
+    'Deer feed primaraly on leaves.',
+    'Deer were an important source for food for early hominids.',
+    'The only known female deer that possess antlers is the reindeer.',
+    'The male deer is called a buck but some larger males are referred to as stags. A female deer is called a doe or a hind.',
+    'During the mating season the males uses their antlers to fight other males over does.',
+    'Each year, the antlers fall off and regrow. As they regrow they are covered in a furry coat called velvet.',
+    'Deer can jump up to 3 meters (10 feet).',
 )
 
 DEGU_FACTS = (
