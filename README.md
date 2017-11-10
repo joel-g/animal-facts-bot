@@ -36,6 +36,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * ant
 * anteater
 * antelope
+* armadillo
 * badger
 * bear
 * beaver
@@ -55,6 +56,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * crab
 * crocodile
 * cuttlefish
+* deer
 * degu
 * dingo
 * dodo

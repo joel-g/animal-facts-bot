@@ -219,7 +219,8 @@ def check_comment_for_animal(comment, reddit):
     botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
     botengine('anteater', '\santeaters?\s', reddit, ANTEATER_FACTS, comment)
     botengine('antelope', '\santelopes?\s', reddit, ANTELOPE_FACTS, comment)
-    botengine('atlantic puffin', '\satlantic puffins?\s', reddit, ATLANTIC_PUFFIN_FACTS, comment)
+    botengine('armadillo', '\sarmadillos?\s', reddit, ARMADILLO_FACTS, comment)
+    botengine('atlantic puffin', '\spuffins?\s', reddit, ATLANTIC_PUFFIN_FACTS, comment)
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('bear', '\sbears?\s', reddit, BEAR_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
@@ -239,6 +240,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
+    botengine('deer,' '\sdeer?\s', reddit, DEER_FACTS, comment)
     botengine('cuttlefish', '\scuttle ?fish(es)?\s', reddit, CUTTLEFISH_FACTS, comment)
     botengine('dingo', '\sdingos?\s', reddit, DINGO_FACTS, comment)
     botengine('degu', '\sdegus?\s', reddit, DEGU_FACTS, comment)
@@ -505,6 +507,23 @@ ATLANTIC_PUFFIN_FACTS = (
     ' The puffins’ genus name, Fratercula,comes from the Latin for “little brother.” The name refers to the sea bird’s black and white plumage, which was said to resemble the robes that monks once wore.',
     'Sixty percent of the world’s puffins breed in Iceland.',
     'Puffins are one of the few birds that have the ability to hold several small fish in their bills at a time. Their raspy tongues and spiny palates allow them to firm grasp 10 to 12 fish during one foraging trip. They thus can bring more food back to their young compared with other seabirds that tend to swallow and regurgitate meals for their chicks.',
+)
+
+ARMADILLO_FACTS = (
+    'Armadillos belongs to the Dasypodidae family.'
+    'Armadillos are covered with natural armor.'
+    'There are 21 species of armadillo.'
+    'The smallest armadillo is the pink fairy armadillo. The largest armadillo is the giant armadillo.'
+    'The armor on the armadillo is made up of overlapping plates. The armor covers the back, head legs and the tail.'
+    'Armadillos are small to medium-sized mammals.'
+    'The three-banded armadillo, can roll itself into a hard armored ball.'
+    'Armadillos have poor eyesight, so they hunt with their highly developed sense of smell.'
+    'Armadillos have wiry hairs along their sides and belly, wich they use to feel their way around.'
+    'Armadillos have harp claws and strong legs for digging.'
+    'Armadillos are picky about where they live based on the type of soil is found in the area. Armadillos usually prefer sandy or loam soils that are loose and porous.'
+    'Armadillos are omnivores, wich means that they eat both meat and plants.'
+    'Armadillos use their long, sticky tounge to catch ants, termites, beetles and other insects after digging them out of the ground.'
+    'The nine-banded armadillo is the official stat animal of Texas.'
 )
 
 AXOLOTL_FACTS = (
@@ -828,6 +847,22 @@ CUTTLEFISH_FACTS = (
     "The largest cuttlefish is the Australian giant cuttlefish, which is the size and shape of an American football.",
     "Cuttlefish have W shaped eyelids so they can see in front of them and behind them at the same time.",
     )
+
+DEER_FACTS = (
+    'Deer belongs to the cervidae family.'
+    'Deer constitute the second most diverse family after bovids.'
+    'All male deer except the Chinese water deer possess antlerts.'
+    'Deer species range from very large to very small. The smallest deer is the Southern pudu and the largest deer is the moose.'
+    'Deer can be found in many different ecosystems.'
+    'The Chinese water deer does not have any antlers. Instead, it has very long canine teeth used to attract mates with.'
+    'Deer feed primaraly on leaves.'
+    'Deer were an important source for food for early hominids.'
+    'The only known female deer that possess antlers is the reindeer.'
+    'The male deer is called a buck but some larger males are referred to as stags. A female deer is called a doe or a hind.'
+    'During the mating season the males uses their antlers to fight other males over does.'
+    'Each year, the antlers fall off and regrow. As they regrow they are covered in a furry coat called velvet.'
+    'Deer can jump up to 3 meters (10 feet).'
+)
 
 DEGU_FACTS = (
 	'The word degu comes from the Mapudungun dewü (mouse, rat).',
@@ -2698,6 +2733,7 @@ ALL_FACTS = (
     ANT_FACTS,
     ANTEATER_FACTS,
     ANTELOPE_FACTS,
+    ARMADILLO_FACTS,
     AXOLOTL_FACTS,
     BADGER_FACTS,
     BEAR_FACTS,
@@ -2718,7 +2754,8 @@ ALL_FACTS = (
     CRAB_FACTS,
     CROCODILE_FACTS,
     CUTTLEFISH_FACTS,
-	DEGU_FACTS,
+    DEER_FACTS,
+	  DEGU_FACTS,
     DINGO_FACTS,
     DODO_FACTS,
     DOLPHIN_FACTS,
