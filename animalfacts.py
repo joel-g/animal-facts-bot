@@ -1026,7 +1026,7 @@ FLAMINGO_FACTS = (
 FOX_FACTS = (
     'A group of foxes is called a "skulk" or "leash".',
     'Grey foxes can retract their claws like cats do',
-    'A male is called a ‘dog fox’ while a female is called a ‘vixen’',
+    'A male is called a "reynard" while a female is called a "vixen". Young foxes are known as "kits".',
     'Foxes are generally solitary animals; unlike wolves, they hunt on their own rather than in packs',
     "Foxes' pupils are vertical, similar to a cat, helping them to see well at night",
     "The tip of a red fox’s tail is white, whereas swift foxes have a black-tipped tail",
@@ -1035,6 +1035,7 @@ FOX_FACTS = (
     'Foxes are legal to own in 21 states!',
     'Adult red foxes usually live alone except during the mating season in January and February and when raising young.',
     'Foxes stink, their funny ‘musky’ smell comes from scent glands at the base of their tail',
+    'The red fox is the most wide-spread carnivore in the world.'
     'The latin name for fox is Vulpes Vulpes',
     'A fox can run 30 miles per hour',
     "Foxes have whiskers on their legs and face, which help them to navigate",
