@@ -479,8 +479,10 @@ ANT_FACTS = (
     'Ants and humans are the only creatures that farm other creatures.',
     'Some ants can swim.',
     'Ants can be found on every continent accept antarctica.',
+    'Ants have transparent abdomens that can show the color of the food they eat.',
     'Ants do not breath through a centralized respiratory system, like many other insects ants breath throughout their entire body.',
     )
+
 ANTEATER_FACTS = (
     'Anteaters are toothless creatures.',
     'Since ants can bite, anteaters must eat them quickly. They are flicking their tongue 150-160 times in minute during feeding to grab enough ants and avoid bites.',
