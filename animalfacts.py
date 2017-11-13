@@ -479,8 +479,8 @@ ANT_FACTS = (
     'Ants and humans are the only creatures that farm other creatures.',
     'Some ants can swim.',
     'Ants can be found on every continent accept antarctica.',
+    'Ants do not breath through a centralized respiratory system, like many other insects ants breath throughout their entire body.',
     )
-
 ANTEATER_FACTS = (
     'Anteaters are toothless creatures.',
     'Since ants can bite, anteaters must eat them quickly. They are flicking their tongue 150-160 times in minute during feeding to grab enough ants and avoid bites.',
@@ -679,6 +679,7 @@ CAPYBARA_FACTS = (
     'Predators of the capybara include jaguars, pumas, ocelots, caimans, eagles, and anacondas.',
     'The name "capybara" is derived from the Tupi language, spoken by the native Tupi people of Brazil. The translated name means "one who eats slender leaves".',
     'Capybaras are very popular captive animals in Japan. One common practice, said to have originated in 1982 and attributed to the Izu Shaboten Zoo, is to keep hot springs in capybara enclosures for them to bathe and relax in during the winter.'
+    'Capybaras are well to do to put their webbed feet to use in water, and the Vatican classifies them as fish in regards to dietary concerns.',
     )
 
 CHAMELEON_FACTS = (
@@ -862,6 +863,7 @@ CUTTLEFISH_FACTS = (
     "Cuttlefish have 8 arms and 2 long tentacles used for feeding.",
     "The largest cuttlefish is the Australian giant cuttlefish, which is the size and shape of an American football.",
     "Cuttlefish have W shaped eyelids so they can see in front of them and behind them at the same time.",
+    'Interestingly enough cuttlefish are known for their sexual dimorphism, particularly in regards to size differences between adult males and females.",
     )
 
 DEER_FACTS = (
@@ -1577,7 +1579,7 @@ MANTIS_SHRIMP_FACTS = (
 
 MEERKAT_FACTS = (
     'Meerkats can spot an eagle in flight more than a thousand feet away.',
-    'Meerkats, or suricates, are a type of mongoose that live in the southern African plains.',
+    'Meerkats, or suricates, are a type of mongoose that live in the southern African plains, primarily in South Africa, Namibia, and Botswna.',
     'When foraging for food, a few meerkats will stand guard while the rest look for insects, lizards, birds, and fruit.',
     'Female meerkats give birth to two to four young each year. They are cared for by fathers and siblings who teach them to play and forage.',
     'Meerkat mobs sleep in a single furry pile inside a burrow. Each burrow is an extensive tunnel-and-room system that stays cool under the African sun.',
@@ -1673,6 +1675,7 @@ MONKEY_FACTS = (
     'Capuchin monkeys are believed to be one of the smartest New World monkey species. They have the ability to use tools, learn new skills and show various signs of self-awareness.',
     'Spider monkeys get their name because of their long arms, legs and tail.',
     'The monkey is the 9th animal that appears on the Chinese zodiac, appearing as the zodiac sign in 2016.',
+    'Barbary macaques are the only species of monkey endemic to europe at this moment in time, they primarily reside in Gibraltar, south of spain, and in Morocco as well.',
     )
 
 MOOSE_FACTS = (
@@ -1772,10 +1775,10 @@ OPOSSUM_FACTS = (
     'All opossums have prehensile tails, and females have pouches.',
     'When threatened or harmed, adult opossums will \'play dead\', and this is the origin of the expression \'to play possum\'',
     'Opossum was traditionally eaten across the Americans, but is now eaten mainly in certain Carribean islands.',
-    'A baby opossum is called a joey.',
+    'A baby opossum is called a joey, mirroring their Australian marsupial cousins, such as kangaroos.',
     'Opossums typically live between two and four years.',
     'The opossum is typically known as a \'possum\' in the southern United States.',
-    'The gestation period of an opossum is short, typically between 12 and 14 days.',
+    'The gestation period of an opossum is short, typically between 12 and 14 days, largely due to the species being marsupial, and having some functions of gestation occur once out of the womb.',
     )
 
 ORANGUTAN_FACTS = (
