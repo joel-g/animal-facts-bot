@@ -865,7 +865,7 @@ CUTTLEFISH_FACTS = (
     "Cuttlefish have 8 arms and 2 long tentacles used for feeding.",
     "The largest cuttlefish is the Australian giant cuttlefish, which is the size and shape of an American football.",
     "Cuttlefish have W shaped eyelids so they can see in front of them and behind them at the same time.",
-    'Interestingly enough cuttlefish are known for their sexual dimorphism, particularly in regards to size differences between adult males and females.",
+    'Interestingly enough cuttlefish are known for their sexual dimorphism, particularly in regards to size differences between adult males and females.',
     )
 
 DEER_FACTS = (
