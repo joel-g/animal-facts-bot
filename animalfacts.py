@@ -215,6 +215,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('aardvark', '\saardvarks?\s', reddit, AARDVARK_FACTS, comment)
     botengine('albatross', '\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
+    botengine('alpaca', '\salpacas?\s', reddit, ALPACA_FACTS, comment)
     botengine('anglerfish', '\sangler ?fish(es)?\s', reddit, ANGLERFISH_FACTS, comment)
     botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
     botengine('anteater', '\santeaters?\s', reddit, ANTEATER_FACTS, comment)
@@ -423,6 +424,21 @@ ALLIGATOR_FACTS = (
     'Alligators eat a range of different animals such as fish, birds, turtles and even deer.',
     'Alligator eggs become male or female depending on the temperature, male in warmer temperatures and female in cooler temperatures.',
     'Like crocodiles, alligators are part of the order ‘Crocodylia’.',
+    )
+
+ALPACA_FACTS = (
+    'The hair of the Alpaca is called "fleece" or "fiber" rather than "fur" or "wool".',
+    'The oldest known records of Alpacas was 1,000 years before the great pyramids of Giza.',
+    'The Alpaca is prey to mountain lions, coyotes, bears, and other carnivores. In its native Andes, their long neck helps spot predators among the rocks of the mountain slopes. On US ranchs, llamas, donkeys, and guard dogs such as Anatolian shepherd dogs are often used as herd guardians.',
+    'Humming is the most common sound an Alpaca makes, a sort of musical purring. The mom calls to her cria by humming, or they hum to communicate with each other within the herd.',
+    'During breeding, which lasts from 20 to 30 minutes, a male Alpaca trumpets or "orgles" a lovesong to his mate.',
+    'Alpacas have a life expectancy of about 20 years.',
+    'The Alpaca is an herbivore, grazing on grass and munching weeds, shrubs and trees.',
+    'Alpacas process their food through 3 stomachs where special secretions enable the animal to absorb 50% more nutrients than sheep.',
+    'Like their cousins the Llamas, Alpacas spit when angry or annoyed.',
+    'Alpacas “cush” when seated, meaning they fold their legs under their body making them easy to transport in a smaller vehicle.',
+    'Alpacas love to sunbathe.',
+    'Alpacas’ tails are used to express feelings to each other.',
     )
 
 ANGLERFISH_FACTS = (
@@ -2743,6 +2759,7 @@ ALL_FACTS = (
     AARDVARK_FACTS,
     ALBATROSS_FACTS,
     ALLIGATOR_FACTS,
+    ALPACA_FACTS,
     ATLANTIC_PUFFIN_FACTS,
     ANGLERFISH_FACTS,
     ANT_FACTS,
