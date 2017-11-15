@@ -2159,22 +2159,22 @@ SALMON_FACTS = (
 	'The majority of Salmon worldwide is farmed, a process known as aquaculture.',
 	'Salmon flesh is orange due to organic pigments in their diet of krill and shellfish. Farmed salmon are fed fishmeal and wheat, which results in white flesh. Since consumers were reluctant to purchace white salmon, the pigments are added to their feed.',
 	'Salmon have an average of 2500 eggs, but can have up to 7000.',
-	'Salmon can travel up to 3500 miles to spawn.'
-    'Salmon can reach 20 inches to 5 feet in length and 4 to 110 pounds of weight, depending on the species.'
-    'Salmon can be blue, red or silver in color. Some species are covered with black spots and red stripes.'
-    'Young salmons eat different types of insects, invertebrates and plankton while adult salmons eat small types of fish, squids and shrimps..'
-    'Salmons have a lot of natural enemies. They are often targeted by large fish, whales, sea lions and bears.'
-    'Salmons rely on the sense of smell, ocean currents and moon to find waters where they were born.'
-    'Most salmons will die as a result of exhaustion after spawning. Small percent of survived salmons will spawn few more time in their lifetime.'
-    'Newly hatched salmons are called alevin or sac fry. They stay in fresh water from 6 months to 3 years, until they become strong enough to swim to the ocean.'
-    'Salmon is a name used for several species of fish in the Salmonidae family.'
-    'The Chinook Salmon is the state fish of Alaska and is also known as the King Salmon.'
-    'Salmon in the United States are found mainly on the Northwestern coastline as well as all around Alaska.'
-    'Fossils found in British Columbia prove that salmon have been in existence for over 50 million years.'
-    'In the animal kingdom, the salmon’s closest relatives are trout and char since they belong to the same family, Salmonidae.'
-    'The biggest species of salmon is the Chinook, which can weigh as much as a hundred pounds.'
-    'The nest where the female salmon lay their eggs is called a redd, where as many as 5,000 eggs may be found.'
-    'The name “salmon” comes from the Latin word “salmo,” which means “to leap”.'
+	'Salmon can travel up to 3500 miles to spawn.',
+    'Salmon can reach 20 inches to 5 feet in length and 4 to 110 pounds of weight, depending on the species.',
+    'Salmon can be blue, red or silver in color. Some species are covered with black spots and red stripes.',
+    'Young salmons eat different types of insects, invertebrates and plankton while adult salmons eat small types of fish, squids and shrimps..',
+    'Salmons have a lot of natural enemies. They are often targeted by large fish, whales, sea lions and bears.',
+    'Salmons rely on the sense of smell, ocean currents and moon to find waters where they were born.',
+    'Most salmons will die as a result of exhaustion after spawning. Small percent of survived salmons will spawn few more time in their lifetime.',
+    'Newly hatched salmons are called alevin or sac fry. They stay in fresh water from 6 months to 3 years, until they become strong enough to swim to the ocean.',
+    'Salmon is a name used for several species of fish in the Salmonidae family.',
+    'The Chinook Salmon is the state fish of Alaska and is also known as the King Salmon.',
+    'Salmon in the United States are found mainly on the Northwestern coastline as well as all around Alaska.',
+    'Fossils found in British Columbia prove that salmon have been in existence for over 50 million years.',
+    'In the animal kingdom, the salmon’s closest relatives are trout and char since they belong to the same family, Salmonidae.',
+    'The biggest species of salmon is the Chinook, which can weigh as much as a hundred pounds.',
+    'The nest where the female salmon lay their eggs is called a redd, where as many as 5,000 eggs may be found.',
+    'The name “salmon” comes from the Latin word “salmo,” which means “to leap”.',
 	)
 
 SCORPION_FACTS = (
