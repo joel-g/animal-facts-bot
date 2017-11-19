@@ -240,6 +240,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
+    botengine('crayfish', '\scrayfish?\s', reddit, CRAYFISH_FACTS, comment)
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
     botengine('deer', '\sdeer?\s', reddit, DEER_FACTS, comment)
     botengine('cuttlefish', '\scuttle ?fish(es)?\s', reddit, CUTTLEFISH_FACTS, comment)
@@ -835,6 +836,16 @@ CRAB_FACTS = (
     'Some crab species can naturally autotomise (shed) limbs such as their claws, which then regenerate after about a year.',
     'Crabs make up 20% of all marine crustaceans caught by humans each year. This adds up to a total of 1.5 million ton annually',
     'The most consumed species of crab in the world is the Japanese Blue Crab.',
+    )
+
+CRAYFISH_FACTS = (
+    'The name "crayfish" comes from the Old French word escrevisse.',
+    'The oldest records of crayfish are 115 million years old.',
+    'There are 200 species of crayfish in North America.',
+    'Crayfish like to eat hot dogs and cat food.',
+    'Crayfish can range in colors such as sandy yellow, pink, red, dark brown, and even blue.',
+    'Crayfish live on every continent except for Africa and Antarctica.',
+    'Very small crayfish are called dwarf crayfish.',
     )
 
 CROCODILE_FACTS = (
@@ -2792,6 +2803,7 @@ ALL_FACTS = (
     COW_FACTS,
     COUGAR_FACTS,
     CRAB_FACTS,
+    CRAYFISH_FACTS,
     CROCODILE_FACTS,
     CUTTLEFISH_FACTS,
     DEER_FACTS,
