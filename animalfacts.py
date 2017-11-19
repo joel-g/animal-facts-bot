@@ -1718,7 +1718,9 @@ NARWHAL_FACTS = (
     "In addition to a large tusk, narwahls also have a second tusk.  This is about 1 meter long, but remains embedded in the skull.  Males with two protruding tusks have been discovered.",
     "Females usually give birth once around every 3 years.  The gestation period lasts around 14 months.",
     "Narwahls travel in groups of around 15-20 and can even form large groups of 100 narwahls.",
-    "Narwahls inhabit the waters of the Arctic Cirlce, around Greenland and Canada."
+    "Narwahls inhabit the waters of the Arctic Cirlce, around Greenland and Canada.",
+    "There is roughly as much vitamin C in one ounce of narwhal skin as there is in one ounce of oranges",
+    "Narwhal skin is a primary source of vitamins for the Inuit people of the Arctic.",
     )
 
 NEWT_FACTS = (
