@@ -892,6 +892,7 @@ DEGU_FACTS = (
 	'Degus are prone to diabetes due to their divergent insulin structure. For this reason, they are used frequently for research in this field.',
 	'Unlike other octodontids, degus are diurnal (activity during the day, with a period of sleeping, or other inactivity, at night), and they have good vision.',
 	"In case of predator's attack, the degu can shed its tail from its body. A shed tail will never grow back.",
+	'To clean themselves, Degus take sand baths to keep their coat healthy and free of grease.',
     )
 
 DINGO_FACTS = (
