@@ -240,6 +240,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
+    botengine('crayfish', '\scrayfish?\s', reddit, CRAYFISH_FACTS, comment)
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
     botengine('deer', '\sdeer?\s', reddit, DEER_FACTS, comment)
     botengine('cuttlefish', '\scuttle ?fish(es)?\s', reddit, CUTTLEFISH_FACTS, comment)
@@ -837,6 +838,16 @@ CRAB_FACTS = (
     'The most consumed species of crab in the world is the Japanese Blue Crab.',
     )
 
+CRAYFISH_FACTS = (
+    'The name "crayfish" comes from the Old French word escrevisse.',
+    'The oldest records of crayfish are 115 million years old.',
+    'There are 200 species of crayfish in North America.',
+    'Crayfish like to eat hot dogs and cat food.',
+    'Crayfish can range in colors such as sandy yellow, pink, red, dark brown, and even blue.',
+    'Crayfish live on every continent except for Africa and Antarctica.',
+    'Very small crayfish are called dwarf crayfish.',
+    )
+
 CROCODILE_FACTS = (
     'There are 23 different species of crocodiles that live on this planet.',
     'Crocodiles do not chew their food! Instead, they swallow stones to grind their food inside their stomachs.',
@@ -892,6 +903,7 @@ DEGU_FACTS = (
 	'Degus are prone to diabetes due to their divergent insulin structure. For this reason, they are used frequently for research in this field.',
 	'Unlike other octodontids, degus are diurnal (activity during the day, with a period of sleeping, or other inactivity, at night), and they have good vision.',
 	"In case of predator's attack, the degu can shed its tail from its body. A shed tail will never grow back.",
+	'To clean themselves, Degus take sand baths to keep their coat healthy and free of grease.',
     )
 
 DINGO_FACTS = (
@@ -1717,7 +1729,9 @@ NARWHAL_FACTS = (
     "In addition to a large tusk, narwahls also have a second tusk.  This is about 1 meter long, but remains embedded in the skull.  Males with two protruding tusks have been discovered.",
     "Females usually give birth once around every 3 years.  The gestation period lasts around 14 months.",
     "Narwahls travel in groups of around 15-20 and can even form large groups of 100 narwahls.",
-    "Narwahls inhabit the waters of the Arctic Cirlce, around Greenland and Canada."
+    "Narwahls inhabit the waters of the Arctic Cirlce, around Greenland and Canada.",
+    "There is roughly as much vitamin C in one ounce of narwhal skin as there is in one ounce of oranges",
+    "Narwhal skin is a primary source of vitamins for the Inuit people of the Arctic.",
     )
 
 NEWT_FACTS = (
@@ -2789,6 +2803,7 @@ ALL_FACTS = (
     COW_FACTS,
     COUGAR_FACTS,
     CRAB_FACTS,
+    CRAYFISH_FACTS,
     CROCODILE_FACTS,
     CUTTLEFISH_FACTS,
     DEER_FACTS,
