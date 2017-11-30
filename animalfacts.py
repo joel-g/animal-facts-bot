@@ -1139,7 +1139,10 @@ GAZELLE_FACTS = (
     'When pregnant, gazelles carry their young for about six months before giving birth.',
     'The name "gazelle" comes from an Arabic poetic form.',
     'Gazelles generally live up to 10 to 12 years.',
-    'To evade predators, gazelles may zigzag rather than running in a straight line.'
+    'To evade predators, gazelles may zigzag rather than running in a straight line.',
+    'A gazelle will flick its tails or stomp its feet to warn others of a lurking predator.',
+    'Gazelles can stand on their back legs to reach leaves high in the branches of trees.',
+    'The horns of the Edmi gazelle can grow to 14 inches (35.5 centimeters) long.',
     )
 GECKO_FACTS = (
     'Geckos vary in size. Smallest species of geckos, dwarf gecko, reaches ¾ inches in length. Largest species of geckos, tokay gecko, reaches 14 inches in length.',
