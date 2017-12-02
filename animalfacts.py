@@ -319,6 +319,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('puma', '\spumas?\s', reddit, PUMA_FACTS, comment)
     botengine('pufferfish', '\spuffer ?fish(es)?\s', reddit, PUFFERFISH_FACTS, comment)
     botengine('porcupine', '\sporcupines?\s', reddit, PORCUPINE_FACTS, comment)
+    botengine('quokka', '\quokkas?\s', reddit, QUOKKA_FACTS, comment)
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
     botengine('rattlesnake', '\srattlesnakes?\s', reddit, RATTLESNAKE_FACTS, comment)
@@ -1138,7 +1139,10 @@ GAZELLE_FACTS = (
     'When pregnant, gazelles carry their young for about six months before giving birth.',
     'The name "gazelle" comes from an Arabic poetic form.',
     'Gazelles generally live up to 10 to 12 years.',
-    'To evade predators, gazelles may zigzag rather than running in a straight line.'
+    'To evade predators, gazelles may zigzag rather than running in a straight line.',
+    'A gazelle will flick its tails or stomp its feet to warn others of a lurking predator.',
+    'Gazelles can stand on their back legs to reach leaves high in the branches of trees.',
+    'The horns of the Edmi gazelle can grow to 14 inches (35.5 centimeters) long.',
     )
 GECKO_FACTS = (
     'Geckos vary in size. Smallest species of geckos, dwarf gecko, reaches ¾ inches in length. Largest species of geckos, tokay gecko, reaches 14 inches in length.',
@@ -2093,6 +2097,18 @@ PORCUPINE_FACTS = (
     "Porcupines can live 15-18 years. "
     )
 
+QUOKKA_FACTS = (
+    'Quokkas can go months without drinking; they get most of the water they need through the vegetation they eat.',
+    'Quokkas are only found on small islands off the coast of Western Australia, Rottnest Island off of Perth and Bald Island near Albany.',
+    'Quokkas are small marsupials in the macropod family (like kangaroos) that are about the size of a housecat.',
+    'Quokkas are mostly nocturnal; they sleep during the day and are active at night.',
+    'Quokkas are herbivores. They eat mostly grasses and leaves.',
+    'Quokkas do not fear humans and will approach people closely if you visit them on Rottnest Island. It is illegal for humans to handle them or feed them however.',
+    'Rottnest Island in Australia, where many quokkas live, was given its name when a Dutch explorer mistook the quokkas for rats. The name means "rat nest" in Dutch.',
+    'A baby quokka is called a joey. Females can give birth to joeys twice a year. The joey will live in the pouch of its mother for six months.',
+    )
+	
+	
 RABBIT_FACTS = (
     'A rabbit’s teeth never stop growing, which is why it is very important to provide chews and treats for them to keep their teeth from becoming overgrown.',
     'Rabbits have 28 teeth.',
@@ -2880,6 +2896,7 @@ ALL_FACTS = (
     PLATYPUS_FACTS,
     PUMA_FACTS,
     PORCUPINE_FACTS,
+    QUOKKA_FACTS,	
     RABBIT_FACTS,
     RACCOON_FACTS,
     RATTLESNAKE_FACTS,
