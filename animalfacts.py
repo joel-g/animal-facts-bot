@@ -2187,7 +2187,7 @@ RAVEN_FACTS = (
 SALMON_FACTS = (
 	'Salmon tend to be anadromous, which means they hatch in fresh water, migrate to the ocean, and return to fresh water to reproduce, however this is not always the case.',
 	'The majority of Salmon worldwide is farmed, a process known as aquaculture.',
-	'Salmon flesh is orange due to organic pigments in their diet of krill and shellfish. Farmed salmon are fed fishmeal and wheat, which results in white flesh. Since consumers were reluctant to purchace white salmon, the pigments are added to their feed.',
+	'Salmon flesh is orange due to organic pigments in their diet of krill and shellfish. Farmed salmon are fed fishmeal and wheat, which results in white flesh. Since consumers were reluctant to purchase white salmon, the pigments are added to their feed.',
 	'Salmon have an average of 2500 eggs, but can have up to 7000.',
 	'Salmon can travel up to 3500 miles to spawn.',
     'Salmon can reach 20 inches to 5 feet in length and 4 to 110 pounds of weight, depending on the species.',
