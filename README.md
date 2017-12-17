@@ -38,7 +38,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Anteater
 * Antelope
 * Armadillo
-* Atlantic Puffin
+* Atlantic puffin
 * Badger
 * Bear
 * Beaver
@@ -159,7 +159,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Sunfish
 * Tarantula
 * Tardigrade
-* Tasmanian Devil
+* Tasmanian devil
 * Tiger
 * Toad
 * Toucan
