@@ -372,6 +372,7 @@ def animalfactsbot(reddit):
     for comment in comment_list:
         check_comment_for_animal(comment, reddit)
 
+
 AARDVARK_FACTS = (
     'Aardvarks live in many different types of habitats, such as grasslands, savannas, rainforests, woodlands and thickets throughout Africa in the areas south of the Sahara.',
     'Female aardvarks have a gestation of seven months and give birth to one young at a time.',
