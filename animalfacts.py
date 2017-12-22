@@ -389,7 +389,7 @@ AARDVARK_FACTS = (
     'Skin of the aardvark body is thick and tough. It provides protection against bites of angry ants and termites. ',
     'Aardvark can travel between 16 and 30 kilometers per night while searching for the food.',
     'Aardvark is excellent swimmer thanks to its webbed feet.',
-    "An aardvark has a long snout that ends with a pig-like nose, rabbit-like ears and a tail similar to a kangaroo's. Yet it is not closely related to any of those animals.",
+    'An aardvark has a long snout that ends with a pig-like nose, rabbit-like ears and a tail similar to a kangaroo\'s. Yet it is not closely related to any of those animals.',
     'Aardvarks are about the size of a small pig. Typically, they weigh from 110 to 180 lbs. (50 to 82 kilograms).',
     'If it stuck its tongue out, an aardvark would be much longer. Their tongues can be up to 12 inches (30.5 cm) long.',
     'Aardvarks live in many different types of habitats, such as grasslands, savannas, rainforests, woodlands and thickets throughout Africa in the areas south of the Sahara.',
@@ -460,7 +460,7 @@ ANGLERFISH_FACTS = (
     'When a male Anglerfish has fused to a female, it loses all its organs apart from its testes.',
     'A female Anglerfish will carry six or more males on her body.',
     'According to the National Geographic, the anglerfish is quite possibly the ugliest animal on the planet.',
-    "The anglerfish lives in what is easily Earth's most inhospitable habitat: the lonely, lightless bottom of the sea.",
+    'The anglerfish lives in what is easily Earth\'s most inhospitable habitat: the lonely, lightless bottom of the sea.',
     'Although uncommon, some anglerfish live in shallow, tropical waters.',
     'Most anglerfish are less than a foot in length, although some can grow up to 3.3 feet in length.',
     'The anglerfish lure is only worn by females and is a piece of dorsal spine that protrudes above their mouths like a fishing pole.',
@@ -558,7 +558,7 @@ ATLANTIC_PUFFIN_FACTS = (
     'Atlantic Puffins have the same mate each year.',
     'Atlantic puffins are also excellent fliers. Flapping their wings at up to 400 beats per minute, puffins can reach speeds of 88 km/h (55mph)',
     'Puffins create burrows, about 90 cm (3 ft.), in rocky cliffs either in the soil or between rocks. Often, couples will return to the same burrow year after year. At the back of the burrow, they build a nest lined with grasses, seaweed, and feathers. After the female lays a single egg, both parents take turn incubating the egg for about 40 days.',
-    ' The puffins’ genus name, Fratercula,comes from the Latin for “little brother.” The name refers to the sea bird’s black and white plumage, which was said to resemble the robes that monks once wore.',
+    'The puffins’ genus name "Fratercula" comes from the Latin for “little brother”. The name refers to the sea bird’s black and white plumage, which was said to resemble the robes that monks once wore.',
     'Sixty percent of the world’s puffins breed in Iceland.',
     'Puffins are one of the few birds that have the ability to hold several small fish in their bills at a time. Their raspy tongues and spiny palates allow them to firm grasp 10 to 12 fish during one foraging trip. They thus can bring more food back to their young compared with other seabirds that tend to swallow and regurgitate meals for their chicks.',
     )
@@ -591,16 +591,16 @@ BADGER_FACTS = (
     )
 
 BEAR_FACTS = (
-    "There are eight different species of bear! The North American Black Bear, the Brown Bear, the Polar Bear, the Asiatic Black Bear, the Spectacled Bear, the Giant Panda, the Sloth Bear and the Sun Bear!",
-    "The California grizzly Bear became officially extinct in 1924. It is a subspecies of the Grizzly Bear which is a subspecies of the Brown Bear.",
-    "The world's longest recorded living bear was Debby, a female polar bear born in the Soviet Union at some point in 1966. She died on November 17th 2008 in Canada at either age 41 or 42.",
-    "98% of North America's grizzly bear population lives in Alaska.",
-    "Spectacled Bears are the only species of bear to live in South America.",
-    "The Black Bear can be found with black, brown, gray, silvery-blue and cream fur coats!",
-    "The Spectacled Bear is sometimes known as the Andean Bear because they live in the Andes Mountains.",
-    "The \"Teddy Bear\" comes from 1902 when U.S. President Theodore Roosevelt (a.k.a. Teddy) refused to shoot a bear cub that was brought to him. The act of kindness spread quickly and the name \"Teddy Bear\" became popular.",
-    "The Giant Panda is seen as so valuable that the Chinese government has used them as gifts to other countries!",
-    "Bears such as the American Black Bear and the Grizzly Bear hibernate in the winter. Their heart rates drop from a normal 55 to only 9!",
+    'There are eight different species of bear! The North American Black Bear, the Brown Bear, the Polar Bear, the Asiatic Black Bear, the Spectacled Bear, the Giant Panda, the Sloth Bear and the Sun Bear!',
+    'The California grizzly Bear became officially extinct in 1924. It is a subspecies of the Grizzly Bear which is a subspecies of the Brown Bear.',
+    'The world\'s longest recorded living bear was Debby, a female polar bear born in the Soviet Union at some point in 1966. She died on November 17th 2008 in Canada at either age 41 or 42.',
+    '98% of North America\'s grizzly bear population lives in Alaska.',
+    'Spectacled Bears are the only species of bear to live in South America.',
+    'The Black Bear can be found with black, brown, gray, silvery-blue and cream fur coats!',
+    'The Spectacled Bear is sometimes known as the Andean Bear because they live in the Andes Mountains.',
+    'The "Teddy Bear" comes from 1902 when U.S. President Theodore Roosevelt (a.k.a. Teddy) refused to shoot a bear cub that was brought to him. The act of kindness spread quickly and the name "Teddy Bear" became popular.',
+    'The Giant Panda is seen as so valuable that the Chinese government has used them as gifts to other countries!',
+    'Bears such as the American Black Bear and the Grizzly Bear hibernate in the winter. Their heart rates drop from a normal 55 to only 9!',
     )
 
 BEAVER_FACTS = (
@@ -845,8 +845,8 @@ CRAB_FACTS = (
     'Crabs are decapods from the crustacean family.',
     'Crabs have 10 legs, however, the first pair are its claws which are called chelae.',
     'Crabs have a thick external skeleton called an exoskeleton. It is a shell made of calcium carbonate and provides protection for the soft tissue underneath.',
-    "Crabs live in all the world's oceans, in fresh water, and on land. There are over 4500 species of crabs.",
-    "Other animals with similar names such as hermit crabs, king crabs, porcelain crabs, horseshoe crabs and crab lice, are not true crabs.",
+    'Crabs live in all the world\'s oceans, in fresh water, and on land. There are over 4500 species of crabs.',
+    'Other animals with similar names such as hermit crabs, king crabs, porcelain crabs, horseshoe crabs and crab lice, are not true crabs.',
     'Crabs usually have a distinct sideways walk. However, some crabs can walk forwards or backwards, and some are capable of swimming.',
     'The collective name for a group of crabs is a "cast".',
     'Crabs communicate with each other by drumming or waving their pincers.',
@@ -873,7 +873,7 @@ CROCODILE_FACTS = (
     'Crocodiles do not chew their food! Instead, they swallow stones to grind their food inside their stomachs.',
     'Crocodiles with open mouths is not necessarily a sign of aggression. Instead, that is their only way cooling off.',
     'Crocodiles do not possess any sweat glands.',
-    "The muscles responsible for opening a crocodile's jaws are weak, such that even humans can keep a crocdile's mouth closed.",
+    'The muscles responsible for opening a crocodile\'s jaws are weak, such that even humans can keep a crocdile\'s mouth closed.',
     'However, opening their mouth when it is closed is almost impossible',
     'After mating, a female crocodile can lay between 20 to 80 eggs.',
     'Crocodiles can have a lifespan of up to 80 years.',
@@ -882,20 +882,20 @@ CROCODILE_FACTS = (
     'Crocodiles normally drown their prey by dragging them underwater before cutting their meat into smaller chunks.',
     'Crocodiles can shoot out from the water at almost 12 meters per second!',
     'The smallest crocodile is the dwarf crocodile. It grows to about 5.6 feet (1.7 meters) in length and weighs 13 to 15 pounds (6 to 7 kilograms). The largest crocodile is the saltwater crocodile. The largest one ever found was 20.24 feet (6.17 m) long. They can weigh up to 2,000 pounds (907 kg).',
-     "Crocodiles lay 10 to 60 eggs at a time. The hatchlings stay in their eggs for 55 to 110 days. They are 7 to 10 inches (17.8 to 25.4 centimeters) long when they are born and don't mature until they are 4 to 15 years.",
+    'Crocodiles lay 10 to 60 eggs at a time. The hatchlings stay in their eggs for 55 to 110 days. They are 7 to 10 inches (17.8 to 25.4 centimeters) long when they are born and don\'t mature until they are 4 to 15 years.',
     )
 
 CUTTLEFISH_FACTS = (
-    "Cuttlefish are cephalopods, not fish. Cephalopods include octopus, squid and nautilus.",
-    "Cuttlefish, along with most cephalopods, are the ocean’s most intelligent invertebrates.",
-    "Cuttlebone, found in the body of a cuttlefish, is used by pet birds to get calcium.",
-    "Cuttlefish have green-blue blood and 3 hearts!",
-    "A cuttlefish’s camouflage is so good that it can take on a checkerboard pattern placed beneath it.",
-    "Cuttlefish are color blind.",
+    'Cuttlefish are cephalopods, not fish. Cephalopods include octopus, squid and nautilus.',
+    'Cuttlefish, along with most cephalopods, are the ocean’s most intelligent invertebrates.',
+    'Cuttlebone, found in the body of a cuttlefish, is used by pet birds to get calcium.',
+    'Cuttlefish have green-blue blood and 3 hearts!',
+    'A cuttlefish’s camouflage is so good that it can take on a checkerboard pattern placed beneath it.',
+    'Cuttlefish are color blind.',
     'Cuttlefish taste with their suckers.',
-    "Cuttlefish have 8 arms and 2 long tentacles used for feeding.",
-    "The largest cuttlefish is the Australian giant cuttlefish, which is the size and shape of an American football.",
-    "Cuttlefish have W shaped eyelids so they can see in front of them and behind them at the same time.",
+    'Cuttlefish have 8 arms and 2 long tentacles used for feeding.',
+    'The largest cuttlefish is the Australian giant cuttlefish, which is the size and shape of an American football.',
+    'Cuttlefish have W shaped eyelids so they can see in front of them and behind them at the same time.',
     'Interestingly enough cuttlefish are known for their sexual dimorphism, particularly in regards to size differences between adult males and females.',
     )
 
@@ -1035,14 +1035,14 @@ EARTHWORM_FACTS = (
 
 ECHIDNA_FACTS = (
     'Male echidnas have a bizarre 4-headed penis.',
-    "Echidnas are covered with fur and spiky spines. These spines are modified hairs, similar to that of the porcupines. There are tiny muscle bundles connected to the base of each spine so the echidna can control the spine's movement and direction.",
+    'Echidnas are covered with fur and spiky spines. These spines are modified hairs, similar to that of the porcupines. There are tiny muscle bundles connected to the base of each spine so the echidna can control the spine\'s movement and direction.',
     'A mother echidna lays a single leathery egg in her pouch, then carries it for about ten days before it hatches. The baby echidna, called a puggle, is born hairless and spineless - but with formidable claws.',
-    "Female echidnas produce milk, but they have no nipples. Instead, they secrete milk in two small, hairy areas known as aerola patches, which are connected to the milk glands. A baby echidna suckles milk straight out of its mom's skin.",
+    'Female echidnas produce milk, but they have no nipples. Instead, they secrete milk in two small, hairy areas known as aerola patches, which are connected to the milk glands. A baby echidna suckles milk straight out of its mom\'s skin.',
     'Echidna is Named After the Greek "Mother of Monsters".',
-    "Echidnas are weird - they have a mish-mash of reptilian and mammalian features, which was recognized early on by biologists. In 1802, British anatomist Everard Home named the curious animal after the Greek goddess Ekhidna (meaning 'she viper') who was half-snake and half-woman.",
+    'Echidnas are weird - they have a mish-mash of reptilian and mammalian features, which was recognized early on by biologists. In 1802, British anatomist Everard Home named the curious animal after the Greek goddess Ekhidna (meaning \'she viper\') who was half-snake and half-woman.',
     'Echidnas are egg-laying mammals. Along with the platypus, the echidna is a member of the monotremes, an order of egg-laying mammals found in Australia.',
     'At the end of their slender snouts, echidnas have tiny mouths and toothless jaws. They use their long, sticky tongues to feed on ants, termites, worms, and insect larvae.',
-    "The echidna has a very large brain for its body size. Part of this might be due to their enlarged neocortex, which makes up half of the echidna's brain (compare this to about 30 percent in most other mammals and 80 percent in humans).",
+    'The echidna has a very large brain for its body size. Part of this might be due to their enlarged neocortex, which makes up half of the echidna\'s brain (compare this to about 30 percent in most other mammals and 80 percent in humans).',
     )
 
 ELEPHANT_FACTS = (
@@ -1076,8 +1076,8 @@ ELK_FACTS = (
     'There are estimated to be over 200,000 elks living in the Greater Yellowstone Ecosystem',
     'The Rocky Mountain elk is the official state animal for Utah.'
     'Elk are members of the Cervidae family, which includes caribou, deer, and moose.',
-    "An elk's stomach has four chambers: the first stores food, and the other three digest it.",
-    "When alarmed, elk raise their heads high, open their eyes wide, move stiffly, and rotate their ears to listen.",
+    'An elk\'s stomach has four chambers: the first stores food, and the other three digest it.',
+    'When alarmed, elk raise their heads high, open their eyes wide, move stiffly, and rotate their ears to listen.',
     'Elk threaten each other by curling back their upper lip, grinding their teeth, and hissing softly.',
     'Elk are among the noisiest ungulates, communicating danger quickly and identifying each other by sound.',
     'A cow (female elk) can weigh up to 500 pounds (225 kg).',
@@ -1091,13 +1091,13 @@ ELK_FACTS = (
 
 EMU_FACTS = (
     'Emus are very docile and curious, and are easily tamed in captivity.',
-    "Emus feed on grains, flowers, berries, soft shoots, insects, grubs and whatever else they can find. They even eat stones, dirt and tin cans by accident.",
-    "When food is plentiful, emus store large amounts of fat in their bodies. They use these fat stores to survive while looking for more food.",
+    'Emus feed on grains, flowers, berries, soft shoots, insects, grubs and whatever else they can find. They even eat stones, dirt and tin cans by accident.',
+    'When food is plentiful, emus store large amounts of fat in their bodies. They use these fat stores to survive while looking for more food.',
     'The emu belongs to a family of flightless birds called Ratites. Most Ratites are now extinct, and only the emu, ostrich, cassowary, kiwi and rhea are alive today.',
     'Emus pair in summer and breed in the cooler months. The female develops blue skin on her neck and her feathers turn a darker brown. She struts around the male making special noises to say that she is ready to mate.',
     'Emus are found only in Australia. They live in most of the less-populated areas of the continent and although they can survive in most regions, they avoid dense forest and severe desert.',
     'Emus can grow to between 5 to 6.5 feet (1.5 – 2 metres) in height and weigh up to 130 pounds (60 kg). Males are slightly smaller than females. Males make a grunting sound like a pig and females make a loud booming sound.',
-    "The emu is the largest bird in Australia, and the second largest in the world after the ostrich.",
+    'The emu is the largest bird in Australia, and the second largest in the world after the ostrich.',
     'Emu chicks grow very quickly, up to 2 pounds (1 kg) a week, and are full-grown in 12 to 14 months. They stay with their family group for another six months or so before they split up to breed in their second season.',
     'Emus must drink every day, and they don’t waste water. On very hot days they breathe rapidly, using their lungs as evaporative coolers. Their large nasal passages have multiple folds inside. In cooler weather they use these folds to recycle air and create moisture for reuse.',
     )
@@ -1120,13 +1120,13 @@ FLAMINGO_FACTS = (
     'The word "flamingo" comes from the Spanish word "flamenco" which came from the earlier Latin word "flamma" meaning flame or fire.',
     'There are six species of flamingo in the world. Two are found in the Old World and four species live in the New World - Americas.',
     'The most widespread flamingo is the Greater flamingo found in areas of Africa, Southern Europe and South, Southwest Asia. The Lesser flamingo is the most numerous and lives in the Great Rift Valley of Africa through to Northwest India.',
-    "The four species in the New World include the Chilean flamingo, found in temperate South American areas, the Andean Flamingo and James's flamingo found in the high Andes mountains in Peru, Chile, Bolivia and Argentina and the American flamingo of the Caribbean islands, Belize and Galapagos islands.",
+    'The four species in the New World include the Chilean flamingo, found in temperate South American areas, the Andean Flamingo and James\'s flamingo found in the high Andes mountains in Peru, Chile, Bolivia and Argentina and the American flamingo of the Caribbean islands, Belize and Galapagos islands.',
     'The Greater flamingo is the largest species, at up to 1.5 m (5 ft) tall and weighing up to 3.5 kg (8 lbs). The Lesser flamingo is just 90 cm (3 ft) tall, weighing 2.5 kg (5.5 lbs).',
     'In the wild flamingos live 20 - 30 years and sometimes over 50 years in captivity.',
-    "Flamingo legs can be longer than their entire body. The backward bending 'knee' of a flamingo's leg is actually its ankle, the knee is out of sight further up the leg.",
+    'Flamingo legs can be longer than their entire body. The backward bending \'knee\' of a flamingo\'s leg is actually its ankle, the knee is out of sight further up the leg.',
     'Quite often flamingos will stand on one leg, with the other tucked under the body. Its not fully understood why they do this but it is believed to conserve body heat.',
     'The flamingo is a filter-feeder, holding its curved beak upside down in the water it sucks in the muddy water and pushes the mud and silt out the side while tiny hair-like filters along the beak called lamellae sieve food from the water.',
-    "The pink to reddish color of a flamingo's feathers comes from carotenoids (the pigment that also makes carrots orange) in their diet of plankton, brine shrimp and blue-green algae.",
+    'The pink to reddish color of a flamingo\'s feathers comes from carotenoids (the pigment that also makes carrots orange) in their diet of plankton, brine shrimp and blue-green algae.',
     'Flamingos are social birds, they live in colonies of sometimes thousands, this helps in avoiding predators, maximizing food intake, and is better for nesting.',
     'Flamingo colonies split into breeding groups of up to 50 birds, who then perform a synchronized ritual "dance" whereby they stand together stretching their necks upwards, uttering calls while waving their heads and then flapping their wings.',
     'The flamingo is the national bird of the Bahamas.',
@@ -1137,9 +1137,9 @@ FOX_FACTS = (
     'Grey foxes can retract their claws like cats do',
     'A male is called a "reynard" while a female is called a "vixen". Young foxes are known as "kits".',
     'Foxes are generally solitary animals; unlike wolves, they hunt on their own rather than in packs',
-    "Foxes' pupils are vertical, similar to a cat, helping them to see well at night",
-    "The tip of a red fox’s tail is white, whereas swift foxes have a black-tipped tail",
-    "Foxes have excellent hearing. Red foxes can reportedly hear a watch ticking 40 yards away!",
+    'Foxes\' pupils are vertical, similar to a cat, helping them to see well at night',
+    'The tip of a red fox’s tail is white, whereas swift foxes have a black-tipped tail',
+    'Foxes have excellent hearing. Red foxes can reportedly hear a watch ticking 40 yards away!',
     'Foxes only live up to 5 years in the wild, but up to 14 in captivity!',
     'Foxes are legal to own in 21 states!',
     'Adult red foxes usually live alone except during the mating season in January and February and when raising young.',
@@ -1147,15 +1147,15 @@ FOX_FACTS = (
     'The red fox is the most wide-spread carnivore in the world.'
     'The latin name for fox is Vulpes Vulpes',
     'A fox can run 30 miles per hour',
-    "Foxes have whiskers on their legs and face, which help them to navigate",
-    "Foxes are one of the most well known wild animals in the UK, they are native to Britain",
-    "Foxes use 28 different types of calls to communicate with each other",
-    "A fox can run 30 miles per hour",
-    "Foxes are usually monogamous",
-    "Foxes have excellent hearing. They can hear low-frequency sounds and rodents digging underground",
-    "The fox does not chew its food.  Instead it uses its carnassial or shearing teeth to cut the meat into manageable chunks",
-    "There are 21 species of fox",
-    "Foxes have a lifespan of 2 to 5 years but some have lived to be 14 years old in captivity.",
+    'Foxes have whiskers on their legs and face, which help them to navigate',
+    'Foxes are one of the most well known wild animals in the UK, they are native to Britain',
+    'Foxes use 28 different types of calls to communicate with each other',
+    'A fox can run 30 miles per hour',
+    'Foxes are usually monogamous',
+    'Foxes have excellent hearing. They can hear low-frequency sounds and rodents digging underground',
+    'The fox does not chew its food.  Instead it uses its carnassial or shearing teeth to cut the meat into manageable chunks',
+    'There are 21 species of fox',
+    'Foxes have a lifespan of 2 to 5 years but some have lived to be 14 years old in captivity.',
     )
 
 FROG_FACTS = (
@@ -1169,7 +1169,7 @@ FROG_FACTS = (
     'The common pond frog is ready to breed when it is only three years old.',
     'Frogs in the wild face many dangers and are lucky to survive several years. In captivity however, frogs can live for much longer.',
     'Frogs can see forwards, sideways and upwards all at the same time. They never close their eyes, even when they sleep.',
-    "Remarkably, frogs actually use their eyes to help them swallow food. When the frog blinks, its eyeballs are pushed downwards creating a bulge in the roof of its mouth. This bulge squeezes the food inside the frog's mouth down the back of its throat.",
+    'Remarkably, frogs actually use their eyes to help them swallow food. When the frog blinks, its eyeballs are pushed downwards creating a bulge in the roof of its mouth. This bulge squeezes the food inside the frog\'s mouth down the back of its throat.',
     )
 
 GAZELLE_FACTS = (
@@ -1207,7 +1207,7 @@ GECKO_FACTS = (
 GIRAFFE_FACTS = (
     'A male giraffe can weigh as much as a pick up truck! That’s about 1400 kilograms.',
     'Although a giraffe’s neck is 1.5 – 1.8 meters, it contains the same number of vertebrae at a human neck.',
-    "A giraffe's habitat is usually found in African savannas, grasslands or open woodlands.",
+    'A giraffe\'s habitat is usually found in African savannas, grasslands or open woodlands.',
     'The hair that makes up a giraffes tail is about 10 times thicker than the average strand of human hair.',
     'The distinctive spots that cover a giraffe’s fur act as a good camouflage to protect the giraffe from predators. When the giraffe stands in front of trees and bushes the light and dark colouring of its fur blends in with the shadows and sunlight.',
     'It is possible to identify the sex of the giraffe from the horns on its head. Both males and females have horns but the females are smaller and covered with hair at the top. Male giraffes may have up to 3 additional horns.',
@@ -1248,7 +1248,7 @@ GOOSE_FACTS = (
     'Geese are sometimes raised like chickens for their meat or eggs.',
     'Male geese protect the nest while the female geese sit on the eggs.',
     'Goose is actually the term for female geese, male geese are called ganders. A group of geese on land or in water are a gaggle, while in the air they are called a skein.',
-    ' European geese descend from wild greylag geese, birds with short necks and round bodies. Asian geese, the breeds now known as African and Chinese, descend from the swan goose and have long, elegant necks and a distinct knob on their beaks.',
+    'European geese descend from wild greylag geese, birds with short necks and round bodies. Asian geese, the breeds now known as African and Chinese, descend from the swan goose and have long, elegant necks and a distinct knob on their beaks.',
     'Geese can live up to twenty years if well cared for.',
     'A baby goose is called a gosling.',
     'A group of geese is called a gaggle',
@@ -1306,20 +1306,20 @@ GORILLA_FACTS = (
     )
 
 HAMSTER_FACTS = (
-    "Hamsters are rodents from the subfamily Cricetinae.",
-    "There are 25 species of hamster.",
-    "Hamsters have thick silky fur, short tails, small ears, short legs, wide feet and large eyes.",
-    "Hamsters usually live in burrows underground during the day, they are crepuscular which means they come out at twilight to feed.",
-    "Wild hamsters feed mainly on seeds, fruits, vegetables and sometimes insects.",
-    "Hamsters are very good diggers, they will create burrows in the soil that can be over half a meter deep, containing various rooms for different purposes.",
-    "Hamsters have large cheek in which they carry food back to their burrows. Full pouches can make their heads double or triple in size.",
-    "Hamsters do not have good eyesight, they are nearsighted and also colour-blind.",
-    "The hamster relies on scent to find their way. They have scent glands which they rub on objects along a path.",
-    "Depending on the species hamsters can be black, grey, honey, white, brown, yellow, red, or a combination of these colors.",
-    "Hamsters are great as pets because they are easy to breed in captivity, easy to care for and interact well with people. They are also used as laboratory animals.",
-    "The Syrian hamster is the most popular and well known breed kept as pets. All Syrian hamsters as pets are believed to have descended from one pair in 1930.",
-    "Syrian hamsters live 2 - 3 years in captivity, and less in the wild. Other popular pet types such as Russian dwarf hamsters live about 2- 4 years in captivity.",
-    "Hamsters range in size from the largest breed, the European hamster at 13.4 in (34 cm) long, to the smallest, the dwarf hamster at 2 - 4 in (5.5 - 10.5 cm) long.",
+    'Hamsters are rodents from the subfamily Cricetinae.',
+    'There are 25 species of hamster.',
+    'Hamsters have thick silky fur, short tails, small ears, short legs, wide feet and large eyes.',
+    'Hamsters usually live in burrows underground during the day, they are crepuscular which means they come out at twilight to feed.',
+    'Wild hamsters feed mainly on seeds, fruits, vegetables and sometimes insects.',
+    'Hamsters are very good diggers, they will create burrows in the soil that can be over half a meter deep, containing various rooms for different purposes.',
+    'Hamsters have large cheek in which they carry food back to their burrows. Full pouches can make their heads double or triple in size.',
+    'Hamsters do not have good eyesight, they are nearsighted and also colour-blind.',
+    'The hamster relies on scent to find their way. They have scent glands which they rub on objects along a path.',
+    'Depending on the species hamsters can be black, grey, honey, white, brown, yellow, red, or a combination of these colors.',
+    'Hamsters are great as pets because they are easy to breed in captivity, easy to care for and interact well with people. They are also used as laboratory animals.',
+    'The Syrian hamster is the most popular and well known breed kept as pets. All Syrian hamsters as pets are believed to have descended from one pair in 1930.',
+    'Syrian hamsters live 2 - 3 years in captivity, and less in the wild. Other popular pet types such as Russian dwarf hamsters live about 2- 4 years in captivity.',
+    'Hamsters range in size from the largest breed, the European hamster at 13.4 in (34 cm) long, to the smallest, the dwarf hamster at 2 - 4 in (5.5 - 10.5 cm) long.',
     )
 
 HEDGEHOG_FACTS = (
@@ -1402,10 +1402,10 @@ HUMMINGBIRD_FACTS = (
     'There are more than 340 species of hummingbirds.',
     'Hummingbirds are one of the smallest kinds of bird in the world. With most species 7.5 - 13 cm (3 - 5 in) in length. The Bee hummingbird is the smallest at just 5 cm (2 in). The largest is the Giant Hummingbird reaching over 20 cm (8 in).',
     'They are called hummingbirds due to the sound created by their rapidly beating wings.',
-    "Depending on the species a hummingbird's wings can flap on average around 50 times per second, and can reach as high as 200 times per second. This allows them to fly faster than 15 m/s (54 km/h or 34 mph).",
+    'Depending on the species a hummingbird\'s wings can flap on average around 50 times per second, and can reach as high as 200 times per second. This allows them to fly faster than 15 m/s (54 km/h or 34 mph).',
     'The hummingbird can hover, fly forwards, backwards and even upside down.',
     'Hummingbirds drink the nectar of flowers which gives them a good source of glucose energy, they will catch insects every now and again for a protein boost.',
-    "A hummingbird's bill varies dramatically depending on the species. Most have a fairly long, thin bill that allows them to reach down to the nectar of a flower. With the bill slightly open they use their tongue to quickly lap up the nectar inside.",
+    'A hummingbird\'s bill varies dramatically depending on the species. Most have a fairly long, thin bill that allows them to reach down to the nectar of a flower. With the bill slightly open they use their tongue to quickly lap up the nectar inside.',
     'Apart from insects, hummingbirds have the highest metabolism of all animals due to the need to keep their wings rapidly beating. Because of this the hummingbird visits hundreds of flowers each day and consuming more than their own weight in nectar each day.'
     'Because they need to conserve energy hummingbirds do not spend all day flying, they spend the majority of their time perched digesting their food.',
     'To conserve energy overnight a hummingbird enters a hibernation-like sleep state called torpor.',
@@ -1783,18 +1783,18 @@ NARWHAL_FACTS = (
     'Narwhals change color as they age. Newborns are a blue-gray, juveniles are blue-black and adults are a mottled gray. Old narwhals are nearly all white.',
     'There are no narwhals in captivity. In the 60s and 70s, several attempts at capturing and keeping narwhals resulted in all of the animals dying within several months.',
     'The narwhal tusk—most commonly found on males—is actually an enlarged tooth with sensory capability and up to 10 million nerve endings inside. Some narwhals have up to two tusks, while others have none. The spiraled tusk juts from the head and can grow as long at 10 feet.'
-    "A narwhal tusk's tough core and soft outer layer result in a tusk that is both strong and flexible. It can bend significantly without cracking.",
-    "A narwhal's tusk can be used to detect changes in temperature, water pressure, or salinity, which help the narwahl survive and find prey.",
-    "Narwahls are carnivorous animals that live anywhere from 30 to 55 years.",
-    "There are no narwahls that kept captive.  All previous attempts to capture and keep narwahls have resulted in death within several months.",
-    "Narwahls commonly dive 500 meters and can dive up to 1,500 meters.  They can stay submerged for over 25 minutes at a time.",
-    "Narwahls feed near the ice edge and have been identified as one of the main species that would be affected by climate change.",
-    "In addition to a large tusk, narwahls also have a second tusk.  This is about 1 meter long, but remains embedded in the skull.  Males with two protruding tusks have been discovered.",
-    "Females usually give birth once around every 3 years.  The gestation period lasts around 14 months.",
-    "Narwahls travel in groups of around 15-20 and can even form large groups of 100 narwahls.",
-    "Narwahls inhabit the waters of the Arctic Cirlce, around Greenland and Canada.",
-    "There is roughly as much vitamin C in one ounce of narwhal skin as there is in one ounce of oranges",
-    "Narwhal skin is a primary source of vitamins for the Inuit people of the Arctic.",
+    'A narwhal tusk\'s tough core and soft outer layer result in a tusk that is both strong and flexible. It can bend significantly without cracking.',
+    'A narwhal\'s tusk can be used to detect changes in temperature, water pressure, or salinity, which help the narwahl survive and find prey.',
+    'Narwahls are carnivorous animals that live anywhere from 30 to 55 years.',
+    'There are no narwahls that kept captive.  All previous attempts to capture and keep narwahls have resulted in death within several months.',
+    'Narwahls commonly dive 500 meters and can dive up to 1,500 meters.  They can stay submerged for over 25 minutes at a time.',
+    'Narwahls feed near the ice edge and have been identified as one of the main species that would be affected by climate change.',
+    'In addition to a large tusk, narwahls also have a second tusk.  This is about 1 meter long, but remains embedded in the skull.  Males with two protruding tusks have been discovered.',
+    'Females usually give birth once around every 3 years.  The gestation period lasts around 14 months.',
+    'Narwahls travel in groups of around 15-20 and can even form large groups of 100 narwahls.',
+    'Narwahls inhabit the waters of the Arctic Cirlce, around Greenland and Canada.',
+    'There is roughly as much vitamin C in one ounce of narwhal skin as there is in one ounce of oranges',
+    'Narwhal skin is a primary source of vitamins for the Inuit people of the Arctic.',
     )
 
 NEWT_FACTS = (
@@ -1838,7 +1838,7 @@ OCTOPUS_FACTS = (
     'Octopuses have three hearts.',
     'The largest octopus is believed to be the giant Pacific octopus, Enteroctopus dofleini which weigh about 15 kg (33 lb), and has an arm span up to 4.3 m (14 ft).',
     'Octopuses are believed to be highly intelligent compared to other invertebrates.',
-    "An octopus's main defense against predators such as sharks is to hide and camouflage itself by using certain skin cells to change its color. This can also be used to talk with or warn other octopuses.",
+    'An octopus\'s main defense against predators such as sharks is to hide and camouflage itself by using certain skin cells to change its color. This can also be used to talk with or warn other octopuses.',
     'Octopuses can eject a thick, blackish ink in a large cloud to distract a predator while the octopus uses a siphon jet propulsion system to quickly swim away headfirst, with arms trailing behind.',
     'A last ditch defense is for the octopus to shed a tentacle similar to how a gecko or lizard can discard a tail. An octopus is able to regenerate a lost tentacle.',
     'Octopuses have very good eyesight and an excellent sense of touch.',
@@ -1885,7 +1885,7 @@ ORYX_FACTS = (
     'Small populations of several oryx speciies, such as the scimitar oryx, exist in Texas and New Mexico in wild game ranches.',
     'White oryxes are known to dig holes in the sand for the sake of coolness.',
     'The smallest species of oryx is the Arabian oryx. It became extinct in the wild in 1972, but was reintroduced in 1982 in Oman.',
-    "The Arabian oryx was the first speicies to have its threat category downgraded from 'Extinct in the Wild' to 'Vulnerable'.",
+    'The Arabian oryx was the first speicies to have its threat category downgraded from \'Extinct in the Wild\' to \'Vulnerable\'.',
     'All oryx specicies prefer near-desert conditions and can survive without water for long periods of time.',
     'Oryxes live in herds in numbers up to 600.',
     'Newborn oryx calves are able to run with their herd immediately after birth.',
@@ -1894,24 +1894,24 @@ ORYX_FACTS = (
     )
 
 ORCA_FACTS = (
-    "The orca's large size and strength make it among the fastest marine mammals, able to reach speeds in excess of 55 km/h.",
-    "Many orcas live with their mothers for their entire lives.",
-    "The orca is not a fish, but a mammal. However it is not a whale, as it is part of the dolphin family.",
-    "The largest orca caught was 10 meters long and weighted 10 tons, as heavy as an African elephant.",
-    "Orcas live in groups of related females, led by the oldest female, called pods. A pod can have as few as three members or as many as a hundred or more.",
-    "Orcas do not have smelling organs or a lobe in the brain dedicated to smelling, so it is believed they cannot smell.",
-    "Orcas can sleep with one eye open, like dolphins, as they cannot completely go to sleep, having to go to the surface to get air from time to time.",
-    "In captivity, an orca's dorsal fin often flops. This is possible as the fin is not made up of bones, but of large connective tissue."
-    "Orcas are the most widely distributed animals in the world, not counting humans. They can be found in all oceans, both in warm and cold waters and even in freezing waters.",
-    "The oldest known orca lived to be 103.",
-    "There is no record of a wild orca ever attacking a human.",
-    "There are fifty-two orcas in captivity all over the world.",
-    "Mother orcas give birth every three to ten years, after a 17-month pregnancy.",
-    "In Argentina, orcas hurl themselves on-shore to grab sea lion pups.",
-    "Whalers call the orca the 'killer of whales'. It preys on sperm, gray, fin, humpback and other whales.",
-    "Orcas can weigh up to 6 tons.",
-    "An orca's teeth can grow to be 4 inches (10 cm) long.",
-    "The orca can reach speeds in excess of 30 knots (about 34 mph, or 56 kph).",
+    'The orca\'s large size and strength make it among the fastest marine mammals, able to reach speeds in excess of 55 km/h.',
+    'Many orcas live with their mothers for their entire lives.',
+    'The orca is not a fish, but a mammal. However it is not a whale, as it is part of the dolphin family.',
+    'The largest orca caught was 10 meters long and weighted 10 tons, as heavy as an African elephant.',
+    'Orcas live in groups of related females, led by the oldest female, called pods. A pod can have as few as three members or as many as a hundred or more.',
+    'Orcas do not have smelling organs or a lobe in the brain dedicated to smelling, so it is believed they cannot smell.',
+    'Orcas can sleep with one eye open, like dolphins, as they cannot completely go to sleep, having to go to the surface to get air from time to time.',
+    'In captivity, an orca\'s dorsal fin often flops. This is possible as the fin is not made up of bones, but of large connective tissue.',
+    'Orcas are the most widely distributed animals in the world, not counting humans. They can be found in all oceans, both in warm and cold waters and even in freezing waters.',
+    'The oldest known orca lived to be 103.',
+    'There is no record of a wild orca ever attacking a human.',
+    'There are fifty-two orcas in captivity all over the world.',
+    'Mother orcas give birth every three to ten years, after a 17-month pregnancy.',
+    'In Argentina, orcas hurl themselves on-shore to grab sea lion pups.',
+    'Whalers call the orca the \'killer of whales\'. It preys on sperm, gray, fin, humpback and other whales.',
+    'Orcas can weigh up to 6 tons.',
+    'An orca\'s teeth can grow to be 4 inches (10 cm) long.',
+    'The orca can reach speeds in excess of 30 knots (about 34 mph, or 56 kph).',
     )
 
 OSTRICH_FACTS = (
@@ -1924,15 +1924,15 @@ OSTRICH_FACTS = (
     'Ostrich often swallows pebbles and sand that aid them in grinding up their ingested food in its gizzard, a peculiar muscular stomach.',
     'They are the only bird in the world that has only two toes on each foot.  The inner toe has a claw that can measure up to 10 cm long.',
     'At breeding time, male ostriches scrape out a nest in the ground which is then used by more than one female to lay their eggs which can end up with 20 eggs in them.  Females incubate the eggs during the day and males at night.  The dads then do most of the chick raising, often defending the chicks from potential predators with their powerful kicks.',
-     'Contrary to popular belief, Ostriches do not bury their heads in sand. This myth likely began with Pliny the Elder (AD 23-79), who wrote that Ostriches: “imagine, when they have thrust their head and neck into a bush, that the whole of their body is concealed".',
-     )
+    'Contrary to popular belief, Ostriches do not bury their heads in sand. This myth likely began with Pliny the Elder (AD 23-79), who wrote that Ostriches: “imagine, when they have thrust their head and neck into a bush, that the whole of their body is concealed".',
+    )
 
 OTTER_FACTS = (
     'The otter is a carnivorous mammal in a branch of the weasel family called Lutrinae.',
     'There are 13 species of otter found all around the world.',
     'Some otter species spend all their time in the water while others are land and water based animals.',
-    "An otter's den is called a 'holt' or a 'couch'.",
-    "A group of otters are called a 'bevy', 'family', 'lodge', or 'romp', or, when in water the group is called a 'raft'.",
+    'An otter\'s den is called a \'holt\' or a \'couch\'.',
+    'A group of otters are called a \'bevy\', \'family\', \'lodge\', or \'romp\', or, when in water the group is called a \'raft\'.',
     'Otters live up to 16 years in the wild.',
     'Otters are very active hunters, spending many hours a day chasing prey through water or scouring the rivers and the sea bed. They mainly eat fish but also frogs, crayfish and crabs, some species carry a rock to help smash open shellfish.',
     'Otter species range in size from the smallest Oriental small-clawed otter at 0.6 m (2 ft) and 1 kg (2.2 lb). Through to the large Giant otter and Sea otters who can reach 1.8 m (5.9 ft) and 45 kg (99.2 lb).',
@@ -1987,15 +1987,15 @@ PANGOLIN_FACTS = (
 
 PANTHER_FACTS = (
     'The animal known as a "panther" actually refers to 3 different types of big cats, leopards (Panthera pardus) or jaguars (Panthera onca) that have a black or white color mutation and a subspecies of the cougar (Puma concolor).',
-    "The 'black panther' is a black jaguar of the Americas or a black leopard of Asia and Africa. In fact, the black panther actually has normal rosettes (spots), they are often just too hard to see because the animal's fur is so dark. Melanism is the name of the dark color pigmentation mutation in a jaguar or leopard that cause the fur to be blackish, it occurs in about 6% of the population.",
+    'The \'black panther\' is a black jaguar of the Americas or a black leopard of Asia and Africa. In fact, the black panther actually has normal rosettes (spots), they are often just too hard to see because the animal\'s fur is so dark. Melanism is the name of the dark color pigmentation mutation in a jaguar or leopard that cause the fur to be blackish, it occurs in about 6% of the population.',
     'The opposite of melanism is albinism which is an even rarer mutation that can occur in most animal species. The extremely rare "white panther" are albino leopards, jaguars or cougars.',
     'Because the melanism gene is a dominant gene in jaguars, a black jaguar may produce either black or spotted cubs, while a pair of spotted jaguars can only have spotted cubs.',
     'Apart from color the black panther is believed to be less fertile than normal-colored big cats and also much more unpredictable and aggressive.',
     'Black panthers are great swimmers and are one of the strongest tree climbing big cats, often pouncing on prey from a tree, they are capable of leaping up to 20 feet to catch their prey which includes medium sized animals like deer and monkeys and smaller rabbits and birds.',
     'Black panthers have good hearing, extremely good eyesight, and a strong jaw.',
-    "The black panther is often called 'the ghost of the forest'. It is a smart, stealth-like attacker, its dark coat helps it hide and stalk prey very easily, especially at night.",
+    'The black panther is often called \'the ghost of the forest\'. It is a smart, stealth-like attacker, its dark coat helps it hide and stalk prey very easily, especially at night.',
     'The light tan colored Florida panther is one of over 30 subspecies of cougar (Puma concolor) found in North America.',
-    "The Florida panther has adapted to the subtropical forests and swamp environments of Florida, however they are very rare animals, as of 2013 it is believed only 160 Florida panthers remain in the wild.",
+    'The Florida panther has adapted to the subtropical forests and swamp environments of Florida, however they are very rare animals, as of 2013 it is believed only 160 Florida panthers remain in the wild.',
     )
 
 PARROT_FACTS = (
@@ -2019,17 +2019,17 @@ PARROT_FACTS = (
 PEACOCK_FACTS = (
     '"Peacock" is commonly used as the name for a peafowl of the pheasant family. But in fact "peacock" is the name for the colorfully plumaged male peafowl only. The females are called peahens, they are smaller and grey or brown in color. The name of a baby peafowl is a peachick.',
     'Peacocks are best known for their amazing eye-spotted tail feathers or plumage. During a display ceremony the peacock will stand its tail feathers up to form a fan that stretches out nearly 2 m in length.',
-    "A peacock's colourful display is believed to be a way to attract females for mating purposes, and secondly to make the peacock look bigger and intimidating if he feels threatened by predators.",
+    'A peacock\'s colourful display is believed to be a way to attract females for mating purposes, and secondly to make the peacock look bigger and intimidating if he feels threatened by predators.',
     'There are 3 varieties of peafowl, the Indian, the Green and the Congo.',
     'The most common type of peafowl found in many zoos and parks around the world is the Indian peafowl. The head and neck of which is covered in shining, blue feathers arranged like scales. It is native to South Asia areas of Pakistan, Sri Lanka and India (where it is the national bird).',
-    "The Congo peafowl is native to central Africa. It doesn't have a large plumage like other varieties. It is the national bird of the Democratic Republic of Congo.",
-    "The Green peafowl is native to Southeast Asia, it has chrome green and bronze feathers. It lives in areas such as Myanmar (its national symbol) and Java. It is regarded as an endangered species due to hunting and a reduction in its habitat.",
-    "White varieties of peacocks are not albinos, they have a genetic mutation that causes the lack of pigments in the plumage.",
-    "Peacock feathers accounts for 60 percent of the bird's total body length and with a wingspan measuring 5 feet, it is one of the largest flying birds in the world.",
-    "A peafowl can live to over the age of 20 years, the peacocks plumage looks its best when the male reaches the age of 5 or 6.",
-    "Peacocks have spurs on their feet that are primarily used to fight with other males.",
-    "Peafowl are omnivorous, they eat many types of plants, flower petals, seeds, insects and small reptiles such as lizards.",
-    "In Hindu culture, Lord Karthikeya, the god of war, is said to ride a peacock.",
+    'The Congo peafowl is native to central Africa. It doesn\'t have a large plumage like other varieties. It is the national bird of the Democratic Republic of Congo.',
+    'The Green peafowl is native to Southeast Asia, it has chrome green and bronze feathers. It lives in areas such as Myanmar (its national symbol) and Java. It is regarded as an endangered species due to hunting and a reduction in its habitat.',
+    'White varieties of peacocks are not albinos, they have a genetic mutation that causes the lack of pigments in the plumage.',
+    'Peacock feathers accounts for 60 percent of the bird\'s total body length and with a wingspan measuring 5 feet, it is one of the largest flying birds in the world.',
+    'A peafowl can live to over the age of 20 years, the peacocks plumage looks its best when the male reaches the age of 5 or 6.',
+    'Peacocks have spurs on their feet that are primarily used to fight with other males.',
+    'Peafowl are omnivorous, they eat many types of plants, flower petals, seeds, insects and small reptiles such as lizards.',
+    'In Hindu culture, Lord Karthikeya, the god of war, is said to ride a peacock.',
     )
 
 PECCARY_FACTS = (
@@ -2090,7 +2090,7 @@ PIGEON_FACTS = (
     'Pigeons can move their wings ten times per second and maintain heartbeats at the rate of 600 times per minute.',
     'Pigeons can fly at the speed of 50 to 60 miles per hour. Fastest known pigeon managed to reach speed on 92 miles per hour.',
     'Because of their incredible speed and endurance, pigeons are used for racing. Winners of 400 mile long races can earn million dollars.',
-    "Pigeons were used as mail carriers during the First and Second World War. They saved numerous lives by delivering information under enemy fire.",
+    'Pigeons were used as mail carriers during the First and Second World War. They saved numerous lives by delivering information under enemy fire.',
     'Pigeons are herbivores. Their diet consists of seeds, fruit and various plants.',
     'Pigeons are highly intelligent animals. They are able to recognize themselves in the mirror, to find same people on two different pictures and to recognize all letters of the English alphabet.'
     'Pigeons have exceptional eyesight and ability to identify objects at a distance of 26 miles.',
@@ -2102,19 +2102,19 @@ PIGEON_FACTS = (
     )
 
 PLATYPUS_FACTS = (
-    "Platypuses have no stomach",
-    "A platypus' bill is comprised of thousands of cells that can detect the electric fields generated by all living things, giving them a sixth sense",
-    "Researchers have discovered a pre-historic platypus that was over 1 meter long, double the size of the modern animal.",
-    "Platypuses nurse without nipples, milk oozing from the mammary glands on the abdomen of females and babies drink it by sucking on their mother's fur.",
-    "Platypus males have venomous spurs that only activate during mating season, indicating it is meant to fend off competing males",
-    "When the first platypus specimen was sent back to England from Australia, scientists thought it was a hoax and someone was playing a trick on them.",
-    "Platypuses use gravel as makeshift teeth as they lack teeth inside their bill, making it hard to chew.",
-    "A platypus' tail holds half of the animal's body fat in case of food shortage. ",
-    "Platypuses have dense, thick fur that helps them stay warm underwater. Most of the fur is dark brown, except for a patch of lighter fur near each eye, and lighter-colored fur on the underside.",
-    "Platypuses only live in the freshwater areas that glow through the island of Tasmania, and the eastern and southeastern coast of Australia.",
-    "Platypuses are the only mammals that lay eggs, a category called monotremes.",
-    "Platypus fur, being very thick and waterproof, used to be very in the fur trade until Australia banned platypus hunting to protect the species.",
-    "Platypuses is the correct plural form, although platypi and platypodes are also accepted.",
+    'Platypuses have no stomach',
+    'A platypus\' bill is comprised of thousands of cells that can detect the electric fields generated by all living things, giving them a sixth sense',
+    'Researchers have discovered a pre-historic platypus that was over 1 meter long, double the size of the modern animal.',
+    'Platypuses nurse without nipples, milk oozing from the mammary glands on the abdomen of females and babies drink it by sucking on their mother\'s fur.',
+    'Platypus males have venomous spurs that only activate during mating season, indicating it is meant to fend off competing males',
+    'When the first platypus specimen was sent back to England from Australia, scientists thought it was a hoax and someone was playing a trick on them.',
+    'Platypuses use gravel as makeshift teeth as they lack teeth inside their bill, making it hard to chew.',
+    'A platypus\' tail holds half of the animal\'s body fat in case of food shortage.',
+    'Platypuses have dense, thick fur that helps them stay warm underwater. Most of the fur is dark brown, except for a patch of lighter fur near each eye, and lighter-colored fur on the underside.',
+    'Platypuses only live in the freshwater areas that glow through the island of Tasmania, and the eastern and southeastern coast of Australia.',
+    'Platypuses are the only mammals that lay eggs, a category called monotremes.',
+    'Platypus fur, being very thick and waterproof, used to be very in the fur trade until Australia banned platypus hunting to protect the species.',
+    'Platypuses is the correct plural form, although platypi and platypodes are also accepted.',
     )
 
 PUMA_FACTS = (
@@ -2140,21 +2140,21 @@ PUFFERFISH_FACTS = (
     )
 
 PORCUPINE_FACTS = (
-    "Body of the porcupine is covered with sharp spines or quills.",
-    "Some porcupines have up to 30,000 quills on their body.",
-    "Porcupines can't shoot out their quills, but they will be easily released when predators get it touch with animal.",
-    "Lost quills are replaced with new quills.",
-    "Porcupines are nocturnal animals. This means that they sleep during the day and become active in the evening.",
-    "They use their strong feet and curved claws to climb the tree. They are excellent climbers.",
-    "Porcupine's home is called a den.",
-    "They are herbivorous animals (eat only plants). They like to eat leaves, stem, bark, fruit, etc",
-    "They can live solitary life (left on their own) or in the small groups of up to 6 members.",
-    "During mating season, female initiates close contact with male.",
-    "Couple usually gets 2 babies and both parents take care of their babies.",
-    "Babies are called porcupettes and they are born with soft quills. Soft quills will harden in the next few hours.",
-    "Young porcupine will leave its parents after couple of months and begin solitary life.",
-    "Native Americans used porcupine's quills to decorate themselves in the past. They also used porcupines as a source of food.",
-    "Porcupines can live 15-18 years. "
+    'Body of the porcupine is covered with sharp spines or quills.',
+    'Some porcupines have up to 30,000 quills on their body.',
+    'Porcupines can\'t shoot out their quills, but they will be easily released when predators get it touch with animal.',
+    'Lost quills are replaced with new quills.',
+    'Porcupines are nocturnal animals. This means that they sleep during the day and become active in the evening.',
+    'They use their strong feet and curved claws to climb the tree. They are excellent climbers.',
+    'Porcupine\'s home is called a den.',
+    'They are herbivorous animals (eat only plants). They like to eat leaves, stem, bark, fruit, etc',
+    'They can live solitary life (left on their own) or in the small groups of up to 6 members.',
+    'During mating season, female initiates close contact with male.',
+    'Couple usually gets 2 babies and both parents take care of their babies.',
+    'Babies are called porcupettes and they are born with soft quills. Soft quills will harden in the next few hours.',
+    'Young porcupine will leave its parents after couple of months and begin solitary life.',
+    'Native Americans used porcupine\'s quills to decorate themselves in the past. They also used porcupines as a source of food.',
+    'Porcupines can live 15-18 years'
     )
 
 QUOKKA_FACTS = (
@@ -2322,7 +2322,7 @@ SEA_URCHIN_FACTS = (
     'The name "urchin" is an old word for hedgehog, which sea urchins resemble.',
     'Like other echinoderms, sea urchin early larvae have bilateral symmetry, but they develop five-fold symmetry as they mature.',
     'The tube feet of a sea urchin are moved by a water vascular system, which works through hydraulic pressure.',
-    "The structure of the sea urchin's mouth and teeth have been found to be so efficient at grasping and grinding that their structure has been tested for use in real-world applications.",
+    'The structure of the sea urchin\'s mouth and teeth have been found to be so efficient at grasping and grinding that their structure has been tested for use in real-world applications.',
     'Sea urchins have conquered most sea habitats, on an extremely wide range of depths.',
     'The gonads of both male and female sea urchins, usually called sea urchin roe or corals, are culinary delicacies in many parts of the world.',
     )
@@ -2380,7 +2380,7 @@ SKUNK_FACTS = (
     'Skunks often attack beehive because they eat honeybees.',
     'Before it sprays the victim, skunk will turn its back, lift its tail, start hissing and stumping with its feet. Those are the warning signs that precede spraying.',
     'Skunk can spray its oily and smelly substance up to 10 feet distance.',
-    "Skunks's worst predators are coyotes, bobcats and owls.",
+    'Skunks\'s worst predators are coyotes, bobcats and owls.',
     'Skunks live up to 3 years in the wild. They can survive up to 10 years in captivity.',
     'Skunk can transmit rabies.'
     'Skunks are typically around the size of house cats. They grow to 8 to 19 inches long and weigh around 7 ounces to 14 lbs.',
@@ -2402,11 +2402,11 @@ SLOTH_FACTS = (
     'All sloths actually have three toes, but the two-toed sloth has only two fingers.',
     'Sloths are part of the order Pilosa so they are related to anteaters and armadillos.',
     'Sloths are tree-dwelling animals, they are found in the jungles of Central and South America.',
-    "A sloth's body is usually 50 to 60 cm long. Skeletons of now extinct species of sloth suggest some varieties used to be as large as elephants.",
+    'A sloth\'s body is usually 50 to 60 cm long. Skeletons of now extinct species of sloth suggest some varieties used to be as large as elephants.',
     'Sloths mainly eat the tree buds, new shoots, fruit and leaves, of the Cecropia tree. Some two-toed sloths also eat insects, small reptiles, and birds.',
     'Sloths have a four-part stomach that very slowly digests the tough leaves they eat, it can sometimes take up to a month for them to digest a meal. Digesting this diet means a sloth has very little energy left to move around making it one of the slowest moving animals in the world.',
     'Sloths can move along the ground at just 2 m (6.5 ft) per minute! In the trees they are slightly quicker at 3 m (10 ft) per minute.',
-    'The slow-movement and unique thick fur of the sloth make it a great habitat for other creatures such as moths, beetles, cockroaches, fungi, and algae. In fact, this green colored algae provides a camouflage so sloths can avoid predators.',
+    'The slow movement and unique thick fur of the sloth make it a great habitat for other creatures such as moths, beetles, cockroaches, fungi, and algae. In fact, this green colored algae provides a camouflage so sloths can avoid predators.',
     'Sloths can extend their tongues 10 to 12 inches out of their mouths.',
     'The sloth has very long, sharp, and strong claws that they use to hold on to tree branches. The claws are also their only natural defense against predators.',
     'Sloths usually only leave the tree they live in to go to the toilet once a week on the ground. This is when they are most vulnerable to being attacked by their main predators such as jaguars, the harpy eagle and snakes.',
@@ -2435,7 +2435,7 @@ SNAIL_FACTS = (
     'Most snail species have a ribbon-like tongue called a radula that contains thousands of microscopic teeth. The radula works like a file, ripping food up into tiny pieces.',
     'The majority of snails are herbivores eating vegetation such as leaves, stems and flowers, some larger species and marine based species can be predatory omnivores or even carnivores.',
     'The giant African land snail grows to about 38 cm (15 in) and weigh 1 kg (2lb).',
-    "The largest living sea snail species is the Syrinx aruanus who's shell can reach 90 cm (35 in) in length and the snail can weigh up to 18 kg (40lbs)!",
+    'The largest living sea snail species is the Syrinx aruanus who\'s shell can reach 90 cm (35 in) in length and the snail can weigh up to 18 kg (40lbs)!',
     'Common garden snails have a top speed of 45 m (50 yards) per hour.',
     'As they move along snails leave behind a trail of mucus which acts as a lubricant to reduce surface friction. This also allows the snail to move along upside down.',
     'Depending on the species snails can live 5 - 25 years.',
@@ -2488,7 +2488,6 @@ STURGEON_FACTS = (
     'Sturgeons can live 50 to 100 years or more, depending on the species.',
     )
 
-
 SUNFISH_FACTS = (
     'The ocean sunfish (mola mola) is the heaviest known bony fish in the world, adults typically weigh between 247 and 1000 kg (545-2205 lb).',
     'Sunfish live on a diet mainly of jellyfish, but because jellyfish are nutritionally poor, sunfish need to consume large amounts to develop and maintain their bulk.',
@@ -2501,7 +2500,8 @@ SUNFISH_FACTS = (
     'Sunfish neither has nor needs a swim bladder, as they constantly shuttle back and forth between depths instead of trying to maintain a position in the water.',
     'In the course of the evolution of the sunfish, its tail disappeared and was replaced by a lumpy pseudotail, the clavus, formed by the convergence of the dorsal and anal fins and is used by the sunfish as a rudder.',
     'Young sunfish school for protection, but this behaviour is abandoned as they grow.',
-    'Sunfish by the time of adulthood have the potential to grow more than 60 million times their birth size of a fraction of a gram, arguably the most extreme size growth of any vertebrate animal.')
+    'Sunfish by the time of adulthood have the potential to grow more than 60 million times their birth size of a fraction of a gram, arguably the most extreme size growth of any vertebrate animal.'
+    )
 
 SQUID_FACTS = (
     'Many species of squid have a life span that is only about one year',
@@ -2561,7 +2561,7 @@ TARANTULA_FACTS = (
     'Though tarantulas do not spin webs, they do use silk',
     'Most tarantulas wander during the summer months.',
     'Tarantulas cannot regenerate lost legs.',
-    "Because tarantulas molt throughout their lives, replacing their exoskeletons as they grow, they have the ability to repair any damage they've sustained.",
+    'Because tarantulas molt throughout their lives, replacing their exoskeletons as they grow, they have the ability to repair any damage they\'ve sustained.',
     'If a tarantula does feel threatened, it uses its hind legs to scrape barbed hairs from its abdomen and flings them in the direction of the threat.',
     'Tarantulas do not use webs to capture prey, they do it the hard way – hunting on foot. ',
     'Like other spiders, tarantulas paralyze their prey with venom, then use digestive enzymes to turn the meal into a soupy liquid.',
@@ -2609,7 +2609,7 @@ TIGER_FACTS = (
     'Rare white tigers carry a gene that is only present in around 1 in every 10,000 tigers.',
     'Tigers usually hunt alone at night time.',
     'Tigers have been known to reach speeds up to 40 mph (65 kph).',
-    "Less than 10% of hunts end successfully for tigers",
+    'Less than 10% of hunts end successfully for tigers',
     'Tigers can easily jump over 5 meters in length.',
     'Various tiger subspecies are the national animals of Bangladesh, India, North Korea, South Korea and Malaysia.',
     'There are more tigers held privately as pets than there are in the wild.',
@@ -2618,14 +2618,14 @@ TIGER_FACTS = (
 
 TOUCAN_FACTS = (
     'The average life span of toucans in the wild is up to 20 years.',
-    "The toucan's beak is serrated like a knife, to tear apart its food.",
-    "The toro toucan's bill is a third of the bird's length.",
+    'The toucan\'s beak is serrated like a knife, to tear apart its food.',
+    'The toro toucan\'s bill is a third of the bird\'s length.',
     'Toucan bills are strong but light.',
     'Toucans are found in the wild only in the Americas.',
     'A toucan bill exterior is made of keratin; the interior, bone.',
     'Toucans regulate body temperature by adjusting the flow of blood to their beak.',
     'Toucans are extremely noisy birds, which makes them obvious targets for their predators.',
-    "Toucans' enormous bill is useless in defending against predators and, in fact, attracts humans to catch them for the pet trade.",
+    'Toucans\' enormous bill is useless in defending against predators and, in fact, attracts humans to catch them for the pet trade.',
     'One special adaptation that toucans have in the wild is deafening each other while they are in small flocks. For instance, when they see a bird of prey, "they gather about it in a jeering band"',
     'In addition to fruit, Toco toucans eat insects and, sometimes, young birds, eggs, or lizards.',
     'The color of the toucan bill may be black, blue, brown, green, red, white, yellow or a combination of colors.',
@@ -2664,7 +2664,7 @@ TOUCAN_FACTS = (
     'Both sexes of toucans use their bills to catch tasty morsels and pitch them to one another during a mating ritual fruit toss.',
     'While the beak of a toucan may deter predators due to its size, it is of little use in combat, due to it being a honeycomb of bone that actually contains a lot of air.',
     'Toucans use their beaks to reach fruit on branches that are too small to support their weight, and also to skin their pickings.',
-    ' In addition to fruit, toucans eat insects and, sometimes, young birds, eggs, or lizards.',
+    'In addition to fruit, toucans eat insects and, sometimes, young birds, eggs, or lizards.',
     'Toucans live in small flocks of about six birds.',
     'Young toucans do not have a large bill at birth—it grows as they develop and does not become full size for several months.',
     'Researchers have discovered that the large bill of the toucan is a highly efficient thermoregulation system.',
@@ -2730,7 +2730,7 @@ WALRUS_FACTS = (
     'Walruses spend half their time on land and the other half in water.',
     'There are two sub-species of walruses. The Atlantic Walrus and the Pacific Walrus.',
     'Walruses live in the Northern Hemisphere in the Arctic.',
-    'Atlantic Walruses live near Northern Canada to Greenland.',
+    'Atlantic walruses live near Northern Canada to Greenland.',
     'Walruses are grey or brown but turn a pinkish color as they age.',
     'Walruses have thick skin and then a layer of blubber.  Their blubber keeps them warm in icy waters.',
     'Walruses grow to be 7.5 pounds to 11.5ft. Walruses can weigh up to 4,000 pounds',
@@ -2738,7 +2738,7 @@ WALRUS_FACTS = (
     'Walruses have 450 whiskers. Their whiskers are very sensitive and are used to help them locate food.',
     'Walruses can hold their breath under water for up to 30 minutes.',
     'Walruses live between 30-40 years in the wild.',
-    'Female Walruses give birth to their babies on land or on ice floes.',
+    'Female walruses give birth to their babies on land or on ice floes.',
     'Baby walruses weigh between 100-165 pounds!',
     'There are around 250,000 walruses left in the wild.',
     'Walruses were hunted by humans for their blubber and ivory tusks.',
