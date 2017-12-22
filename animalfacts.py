@@ -251,6 +251,7 @@ def check_comment_for_animal(comment, reddit):
     # botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)   Disabled because this was only a temp feature during Game of Thrones season. Dragons aren't real.
     botengine('dugong', '\sdugongs?\s', reddit, DUGONG_FACTS, comment)
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
+    botengine('earthworm', '\searthworms?\s', reddit, EARTHWORM_FACTS, comment)
     botengine('echidna', '\sechidnas?\s', reddit, ECHIDNA_FACTS, comment)
     botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
     botengine('elk', '\selks?\s', reddit, ELK_FACTS, comment)
@@ -516,6 +517,36 @@ ANTELOPE_FACTS = (
     'Some antelope are famous for their massive herds, like the thousands of wildebeests making their annual migration across the African plains.',
     )
 
+ARMADILLO_FACTS = (
+	'The average lifespan of an armadillo in the wild is 7-10 years.'
+	'All 20 species of armadillos are found in the western hemisphere.'
+	'Armadillos originated in South America.'
+	'The only species of armadillo that has made it into the United States is the nine-banded species, which inhabits Texas and the Gulf Coast states and can be found as far north as Missouri.'
+	'An armadillo burrow is about 7-8" wide and up to 15 feet deep.'
+	'Armadillos are mainly insectivores, with over 90% of their diet consisting of animal matter, like insects and other invertebrates.'
+	'Armadillos are known to eat the occasional reptile or amphibian - especially in colder weather.'
+	'Armadillos have the ability to carry the bacterium that causes leprosy in humans (Mycobacterium leprae).'
+	'"Armadillo" is Spanish for "little armored one".'
+	'Armadillos are the only mammals whose body is covered with hard shell.'
+	'Only three-banded armadillo can curl into the ball to protect itself from predators. Other armadillos run or dig a hole when they need to escape from predators.'
+	'Nine-banded armadillos always give birth to four identical young — the only mammal known to do so.'
+	'Armadillos can hold their breath for 4-6 minutes at a time.'
+	'Because their heavy shell makes it hard for them to float, armadillos gulp air into their intestines to make them more buoyant.'
+   'Armadillos belongs to the Dasypodidae family.',
+  'There are 21 species of armadillo.',
+  'The smallest armadillo is the pink fairy armadillo. The largest armadillo is the giant armadillo.',
+  'The armor on the armadillo is made up of overlapping plates. The armor covers the back, head legs and the tail.',
+  'Armadillos are small to medium-sized mammals.',
+  'The three-banded armadillo, can roll itself into a hard armored ball.',
+  'Armadillos have poor eyesight, so they hunt with their highly developed sense of smell.',
+  'Armadillos have wiry hairs along their sides and belly, wich they use to feel their way around.',
+  'Armadillos have harp claws and strong legs for digging.',
+  'Armadillos are picky about where they live based on the type of soil is found in the area. Armadillos usually prefer sandy or loam soils that are loose and porous.',
+  'Armadillos are omnivores, wich means that they eat both meat and plants.',
+  'Armadillos use their long, sticky tounge to catch ants, termites, beetles and other insects after digging them out of the ground.',
+  'The nine-banded armadillo is the official state animal of Texas.',
+)
+
 ATLANTIC_PUFFIN_FACTS = (
     'The Atlantic Puffin is the only puffin native to the Atlantic Ocean.',
     'The Atlantic Puffin breeds in Iceland, Norway, Greenland, Newfoundland and many North Atlantic islands, and as far south as Maine in the west and the British Isles in the east.',
@@ -527,23 +558,6 @@ ATLANTIC_PUFFIN_FACTS = (
     ' The puffins’ genus name, Fratercula,comes from the Latin for “little brother.” The name refers to the sea bird’s black and white plumage, which was said to resemble the robes that monks once wore.',
     'Sixty percent of the world’s puffins breed in Iceland.',
     'Puffins are one of the few birds that have the ability to hold several small fish in their bills at a time. Their raspy tongues and spiny palates allow them to firm grasp 10 to 12 fish during one foraging trip. They thus can bring more food back to their young compared with other seabirds that tend to swallow and regurgitate meals for their chicks.',
-)
-
-ARMADILLO_FACTS = (
-    'Armadillos belongs to the Dasypodidae family.'
-    'Armadillos are covered with natural armor.'
-    'There are 21 species of armadillo.'
-    'The smallest armadillo is the pink fairy armadillo. The largest armadillo is the giant armadillo.'
-    'The armor on the armadillo is made up of overlapping plates. The armor covers the back, head legs and the tail.'
-    'Armadillos are small to medium-sized mammals.'
-    'The three-banded armadillo, can roll itself into a hard armored ball.'
-    'Armadillos have poor eyesight, so they hunt with their highly developed sense of smell.'
-    'Armadillos have wiry hairs along their sides and belly, wich they use to feel their way around.'
-    'Armadillos have harp claws and strong legs for digging.'
-    'Armadillos are picky about where they live based on the type of soil is found in the area. Armadillos usually prefer sandy or loam soils that are loose and porous.'
-    'Armadillos are omnivores, wich means that they eat both meat and plants.'
-    'Armadillos use their long, sticky tounge to catch ants, termites, beetles and other insects after digging them out of the ground.'
-    'The nine-banded armadillo is the official stat animal of Texas.'
 )
 
 AXOLOTL_FACTS = (
@@ -943,6 +957,7 @@ DOLPHIN_FACTS = (
     'Bottlenose dolphins are the most common and well known type of dolphin.',
     'Female dolphins are called cows, males are called bulls and young dolphins are called calves.',
     'Dolphins live in schools or pods of up to 12 individuals.',
+
     'Dolphins often display a playful attitude which makes them popular in human culture. They can be seen jumping out of the water, riding waves, play fighting and occasionally interacting with humans swimming in the water.',
     'Dolphins use a blowhole on top of their heads to breathe.',
     'Dolphins have excellent eyesight and hearing as well as the ability to use echolocation for finding the exact location of objects.',
@@ -991,6 +1006,28 @@ EAGLE_FACTS = (
     'Bald eagles build very large nests, sometimes weighing as much as a ton!',
     'The bald eagle was added to the list of endangered species in the United States in 1967 and its numbers have recovered well since.',
     )
+
+EARTHWORM_FACTS = (
+	'Earthworms breathe through their skin.',
+	'Each earthworm is both male and female, producing both eggs and sperm.',
+	'The earthworm\'s digestive system is a tube running straight from the mouth, located at the tip of the front end of the body, to the rear of the body, where digested material is passed to the outside.',
+	'There are approximately 2,700 different kinds of earthworms.',
+	'In one acre of land, there can be more than a million earthworms.',
+	'The largest earthworm ever found was in South Africa and measured 22 feet from its nose to the tip of its tail.',
+	'If an earthworm’s skin dries out, it will die.',
+	'Even though earthworms don’t have eyes, they can sense light, especially at their anterior. They move away from light and will become paralyzed if exposed to light for too long (approximately one hour).',
+	'Earthworms secrete a fluid that helps them to crawl and dig better through dirt, all while keeping their skin moist. ',
+	'Most earthworms will live between 1 and 2 years. However, they can live as long as up to 8 years. ',
+	'Earthworm tunnels also help to hold soils in place and stop erosion through water.',
+	'Each adult earthworm can produce up to 80 eggs each year.',
+	'In only 90 days, the total number of earthworms in a given area can double.',
+	'We are 75% water. Earthworms are 90% water.',
+	'Earthworms\' bodies are made up of ringlike segments called annuli.',
+	'Earthworms\' bodies are covered in setae, or small bristles, which the worm uses to move and burrow.',
+	'Earthworms have a central and peripheral nervous system.',
+	'Water, as well as salts, can also be moved through the skin of an earthworm by active transport.',
+	'Earthworms have the ability to regenerate lost segments, but this ability varies between species and depends on the extent of the damage.',
+)
 
 ECHIDNA_FACTS = (
     'Male echidnas have a bizarre 4-headed penis.',
@@ -2832,6 +2869,7 @@ ALL_FACTS = (
     DOLPHIN_FACTS,
     DUGONG_FACTS,
     EAGLE_FACTS,
+    EARTHWORM_FACTS,
     ECHIDNA_FACTS,
     ELEPHANT_FACTS,
     ELK_FACTS,
