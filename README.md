@@ -111,6 +111,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Mantis shrimp
 * Meerkat
 * Mink
+* Markhor
 * Mongoose
 * Monkey
 * Moose
