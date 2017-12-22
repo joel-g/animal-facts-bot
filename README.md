@@ -7,11 +7,11 @@ Check the open issues to claim a listed animal, or come up with your own. Be sur
         Due to Hacktoberfests pull requests are coming in fast! Comment on an issue you are going to work on - and also check open pull requests before you do work someone else has already done.
 
 Steps:
-* Fork/clone the repo
-* Add a tuple of strings of facts (to animalfacts.py) pertaining to a particular animal. Name the tuple variable following the format 'NAMEOFANIMAL_FACTS'. Put the tuple in alphabetical order with the other tuples.
+* Fork/clone the repo.
+* Add a tuple of strings of facts (to animalfacts.py) pertaining to a particular animal. Name the tuple variable following the format 'NAMEOFANIMAL_FACTS'. Put the tuple in alphabetical order with the other tuples. Make sure your lines are indented by 4 spaces and please use ' for your strings.
 * Add your tuple to the ALL_FACTS tuple.
 * Add a line to the check_comment_for_animal() function for your animal following the format.
-* Add your animal to the Readme
+* Add your animal to the Readme in alphabetical order.
 * Add me on Twitter @joelatwar
 
 Please:
