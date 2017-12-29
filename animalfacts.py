@@ -2697,6 +2697,19 @@ TURTLE_FACTS = (
     )
 
 VAMPIRE_BAT_FACTS = (
+  'Vampire bats are believed to be the only bats to “adopt” another young bat if something happens to the bat’s mother.',
+  'Vampire bats typically gather in colonies of about 100 animals, but sometimes live in groups of 1,000 or more.',
+  'In one year, a colony of 100 vampire bats can drink the blood of 25 cows.',
+  'The common vampire bat has the fewest teeth of all bat species.',
+  'The incisor teeth of the common vampire bat do not have any enamel which keeps them extremely sharp.',
+  'The common vampire bat prefers to feed from horses rather than cattle, if given a choice.',
+  'Members often remain in the colony in which they were born for their entire life.',
+  'Vampire bats usually consume about one ounce of blood per night.',
+  'A drug which uses the anticoagulant properties of the saliva of the common vampire bat has been shown to increase blood flow in stroke victims.',
+  'Vampire bats can live for up to 12 years in the wild, although captive individuals have been known to reach the age of 19.',
+  'Young vampire bats feed on milk from the mother, not on blood. They cling tightly to their mothers, even in flight, until they are weaned at about 3 – 4 months.',
+  'Vampire bats are not seasonal breeders and can mate all year round. They are pregnant for 3 – 4 months, which is a long gestation period compared to other small bats. The female gives birth to a single baby.',
+  'Vampire bat\'s saliva can be used to prevent blood from clotting.',	
     'Vampire bats are believed to be the only bats to “adopt” another young bat if something happens to the bat’s mother.',
     'Vampire bats typically gather in colonies of about 100 animals, but sometimes live in groups of 1,000 or more.',
     'In one year, a colony of 100 vampire bats can drink the blood of 25 cows.',
@@ -2710,6 +2723,7 @@ VAMPIRE_BAT_FACTS = (
     'Young vampire bats feed on milk from the mother, not on blood. They cling tightly to their mothers, even in flight, until they are weaned at about 3 – 4 months.',
     'Vampire bats are not seasonal breeders and can mate all year round. They are pregnant for 3 – 4 months, which is a long gestation period compared to other small bats. The female gives birth to a single baby.',
     )
+
 
 WALLABY_FACTS = (
     'Wallabies are members of the kangaroo clan found primarily in Australia and on nearby islands.',
