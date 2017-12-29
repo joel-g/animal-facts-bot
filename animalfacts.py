@@ -555,6 +555,13 @@ ATLANTIC_PUFFIN_FACTS = (
     'The Atlantic Puffin breeds in Iceland, Norway, Greenland, Newfoundland and many North Atlantic islands, and as far south as Maine in the west and the British Isles in the east.',
     'There are considered to be three subspecies of Atlantic puffin: Fratercula arctica arctica, Fratercula arctica grabae, Fratercula arctica naumanni.',
     'Like many seabirds, the Atlantic puffin spends most of the year far from land in the open ocean and only visits coastal areas to breed.',
+    'The Atlantic Puffin is sexually mature at 4 to 5 years old.',
+    'The Atlantic Puffin is the official bird symbol of the province of Newfoundland and Labrador, Canada.',
+    'When they take off, Atlantic Puffins patter across the surface of the water while vigorously flapping its wings, before launching itself into the air.',
+    'Atlantic Puffins tend to be monogamous. However, this is the result of their fidelity to their nesting sites rather than to their mates, and they often return to the same burrows year after year.',
+    'Atlantic Puffins are colonial nesters, excavating burrows on grassy clifftops or reusing existing holes. They may also nest in crevices and amongst rocks.',
+    'Atlantic Puffins tend to be very social birds and usually breed in large colonies.',
+    'Atlantic puffins are excellent fliers. Flapping their wings at up to 400 beats per minute, puffins can reach speeds of 88 km/h (55mph)',
     'Atlantic Puffins have the same mate each year.',
     'Atlantic puffins are also excellent fliers. Flapping their wings at up to 400 beats per minute, puffins can reach speeds of 88 km/h (55mph)',
     'Puffins create burrows, about 90 cm (3 ft.), in rocky cliffs either in the soil or between rocks. Often, couples will return to the same burrow year after year. At the back of the burrow, they build a nest lined with grasses, seaweed, and feathers. After the female lays a single egg, both parents take turn incubating the egg for about 40 days.',
@@ -1393,7 +1400,7 @@ HORSE_FACTS = (
     'An adult horse’s brain weights 22 oz, about half that of a human.',
     'The first cloned horse was a Haflinger mare in Italy in 2003.',
     'Horses with pink skin can get a sunburn.',
-    'A group of horses will not go to sleep at the same time - at least one of them will stay awake to look out for the other>>>>>>> masters.',
+    'A group of horses will not go to sleep at the same time - at least one of them will stay awake to look out for the other',
     'Male horses are one of few male mammals to not have nipples.',
     )
 
