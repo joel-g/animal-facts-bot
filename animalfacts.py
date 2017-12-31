@@ -555,6 +555,13 @@ ATLANTIC_PUFFIN_FACTS = (
     'The Atlantic Puffin breeds in Iceland, Norway, Greenland, Newfoundland and many North Atlantic islands, and as far south as Maine in the west and the British Isles in the east.',
     'There are considered to be three subspecies of Atlantic puffin: Fratercula arctica arctica, Fratercula arctica grabae, Fratercula arctica naumanni.',
     'Like many seabirds, the Atlantic puffin spends most of the year far from land in the open ocean and only visits coastal areas to breed.',
+    'The Atlantic Puffin is sexually mature at 4 to 5 years old.',
+    'The Atlantic Puffin is the official bird symbol of the province of Newfoundland and Labrador, Canada.',
+    'When they take off, Atlantic Puffins patter across the surface of the water while vigorously flapping its wings, before launching itself into the air.',
+    'Atlantic Puffins tend to be monogamous. However, this is the result of their fidelity to their nesting sites rather than to their mates, and they often return to the same burrows year after year.',
+    'Atlantic Puffins are colonial nesters, excavating burrows on grassy clifftops or reusing existing holes. They may also nest in crevices and amongst rocks.',
+    'Atlantic Puffins tend to be very social birds and usually breed in large colonies.',
+    'Atlantic puffins are excellent fliers. Flapping their wings at up to 400 beats per minute, puffins can reach speeds of 88 km/h (55mph)',
     'Atlantic Puffins have the same mate each year.',
     'Atlantic puffins are also excellent fliers. Flapping their wings at up to 400 beats per minute, puffins can reach speeds of 88 km/h (55mph)',
     'Puffins create burrows, about 90 cm (3 ft.), in rocky cliffs either in the soil or between rocks. Often, couples will return to the same burrow year after year. At the back of the burrow, they build a nest lined with grasses, seaweed, and feathers. After the female lays a single egg, both parents take turn incubating the egg for about 40 days.',
@@ -1393,7 +1400,7 @@ HORSE_FACTS = (
     'An adult horse’s brain weights 22 oz, about half that of a human.',
     'The first cloned horse was a Haflinger mare in Italy in 2003.',
     'Horses with pink skin can get a sunburn.',
-    'A group of horses will not go to sleep at the same time - at least one of them will stay awake to look out for the other>>>>>>> masters.',
+    'A group of horses will not go to sleep at the same time - at least one of them will stay awake to look out for the other',
     'Male horses are one of few male mammals to not have nipples.',
     )
 
@@ -2690,6 +2697,19 @@ TURTLE_FACTS = (
     )
 
 VAMPIRE_BAT_FACTS = (
+  'Vampire bats are believed to be the only bats to “adopt” another young bat if something happens to the bat’s mother.',
+  'Vampire bats typically gather in colonies of about 100 animals, but sometimes live in groups of 1,000 or more.',
+  'In one year, a colony of 100 vampire bats can drink the blood of 25 cows.',
+  'The common vampire bat has the fewest teeth of all bat species.',
+  'The incisor teeth of the common vampire bat do not have any enamel which keeps them extremely sharp.',
+  'The common vampire bat prefers to feed from horses rather than cattle, if given a choice.',
+  'Members often remain in the colony in which they were born for their entire life.',
+  'Vampire bats usually consume about one ounce of blood per night.',
+  'A drug which uses the anticoagulant properties of the saliva of the common vampire bat has been shown to increase blood flow in stroke victims.',
+  'Vampire bats can live for up to 12 years in the wild, although captive individuals have been known to reach the age of 19.',
+  'Young vampire bats feed on milk from the mother, not on blood. They cling tightly to their mothers, even in flight, until they are weaned at about 3 – 4 months.',
+  'Vampire bats are not seasonal breeders and can mate all year round. They are pregnant for 3 – 4 months, which is a long gestation period compared to other small bats. The female gives birth to a single baby.',
+  'Vampire bat\'s saliva can be used to prevent blood from clotting.',	
     'Vampire bats are believed to be the only bats to “adopt” another young bat if something happens to the bat’s mother.',
     'Vampire bats typically gather in colonies of about 100 animals, but sometimes live in groups of 1,000 or more.',
     'In one year, a colony of 100 vampire bats can drink the blood of 25 cows.',
@@ -2703,6 +2723,7 @@ VAMPIRE_BAT_FACTS = (
     'Young vampire bats feed on milk from the mother, not on blood. They cling tightly to their mothers, even in flight, until they are weaned at about 3 – 4 months.',
     'Vampire bats are not seasonal breeders and can mate all year round. They are pregnant for 3 – 4 months, which is a long gestation period compared to other small bats. The female gives birth to a single baby.',
     )
+
 
 WALLABY_FACTS = (
     'Wallabies are members of the kangaroo clan found primarily in Australia and on nearby islands.',
