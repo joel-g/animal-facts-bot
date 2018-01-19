@@ -279,6 +279,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('iguana', '\siguanas?\s', reddit, IGUANA_FACTS, comment)
     botengine('jackal', '\sjackals?\s', reddit, JACKAL_FACTS, comment)
     botengine('jellyfish', '\sjelly ?fish(es)\s', reddit, JELLYFISH_FACTS, comment)
+	botengine('jerboa', '\sjerboas?\s', reddit, JERBOA_FACTS, comment)
     botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
     botengine('kiwi', '\skiwis?\s', reddit, KIWI_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
@@ -1488,6 +1489,19 @@ JELLYFISH_FACTS = (
     'Lion’s Mane Jellyfish have tentacles up to 190 feet long and a bell diameter of almost 7 feet wide.',
     'The Lion’s Mane Jellyfish mouth is situated on the bell’s underside, surrounded by tentacles that are divided into eight clusters of up to 150 tentacles each.',
     'The lion’s mane jellyfish also possess bioluminescent abilities, meaning it’s able to produce its own light and glow in the dark underwater.',
+    )
+
+JERBOA_FACTS = (
+    'Jerboas are hopping desert rodents found throughout Northern Africa and Asia east to northern China and Manchuria.',
+    'Jerboas tend to live in hot deserts.',
+    'Jerboas look somewhat like miniature kangaroos, as they have many similarities. Both have long hind legs, very short forelegs and long tails.',
+    'The bipedal locomotion of jerboas involves hopping, skipping and running gaits. It is associated with rapid and frequent, difficult-to-predict changes in speed and direction, facilitating predator evasion.',
+    'Jerboas are nocturnal. During the heat of the day they shelter in burrows.',
+    'When chased, jerboas can run at up to 24 kilometres per hour.',
+    'Most species of jerboa have excellent hearing that they use to avoid becoming the prey of nocturnal predators.',
+    'The typical lifespan of a jerboa is around six years.',
+    'Most jerboas rely on plant material as the main component of their diet, but they cannot eat hard seeds.',
+    'Jerboas are solitary creatures. Once they reach adulthood, they usually have their own burrow and search for food on their own.',
     )
 
 KANGAROO_FACTS = (
@@ -2947,6 +2961,7 @@ ALL_FACTS = (
     IGUANA_FACTS,
     JACKAL_FACTS,
     JELLYFISH_FACTS,
+    JERBOA_FACTS,
     KANGAROO_FACTS,
     KIWI_FACTS,
     KOALA_FACTS,
