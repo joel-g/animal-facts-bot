@@ -393,7 +393,7 @@ AARDVARK_FACTS = (
     'Aardvarks are about the size of a small pig. Typically, they weigh from 110 to 180 lbs. (50 to 82 kilograms).',
     'If it stuck its tongue out, an aardvark would be much longer. Their tongues can be up to 12 inches (30.5 cm) long.',
     'Aardvarks live in many different types of habitats, such as grasslands, savannas, rainforests, woodlands and thickets throughout Africa in the areas south of the Sahara.',
-    "Aardvarks have spoon-shaped claws which are like steel – and used to rip into extremely hard ground and termite mounds.",
+    'Aardvarks have spoon-shaped claws which are like steel – and used to rip into extremely hard ground and termite mounds.',
     'Aardvarks change burrows frequently, providing opportunity for subsequent residents like wild dogs, pythons, warthogs and South African shelduck.',
     'Aardvarks are nocturnal and travel up to 16km every night, foraging for food.',
     'Aardvarks feed almost exclusively on ants and termites, and are known to eat around 50,000 in one night. They can eat plants and often feed on an African cucumber known as the aardvark cucumber.',
@@ -594,7 +594,7 @@ BADGER_FACTS = (
     'A group of badgers is called a cete, although they are often called clans. There are usually 2 - 15 badgers in a cete.',
     'The honey badger is a carnivorous species that has the reputation of being the most fearless and vicious of all mammals.',
     'Badgers were eaten in Britain during World War II and were once part of the Native American and settlers diets in the US. Russia still eats badger meat today.',
-    "Badgers have featured in lots of British literature over the years, such as Brian Jacques' Redwall series, 'Tommy Brock' in Beatrix Potter's The Tale of Mr. Tod, 'Bill Badger' in Mary Tourtel's Rupert Bear, 'Mr. Badger' in Kenneth Grahame's The Wind in the Willows and 'Trufflehunter' in C. S. Lewis's Chronicles of Narnia.",
+    'Badgers have featured in lots of British literature over the years, such as Brian Jacques\' Redwall series, \'Tommy Brock\' in Beatrix Potter\'s The Tale of Mr. Tod, \'Bill Badger\' in Mary Tourtel\'s Rupert Bear, \'Mr. Badger\' in Kenneth Grahame\'s The Wind in the Willows and \'Trufflehunter\' in C. S. Lewis\'s Chronicles of Narnia.',
     )
 
 BEAR_FACTS = (
@@ -2697,19 +2697,19 @@ TURTLE_FACTS = (
     )
 
 VAMPIRE_BAT_FACTS = (
-  'Vampire bats are believed to be the only bats to “adopt” another young bat if something happens to the bat’s mother.',
-  'Vampire bats typically gather in colonies of about 100 animals, but sometimes live in groups of 1,000 or more.',
-  'In one year, a colony of 100 vampire bats can drink the blood of 25 cows.',
-  'The common vampire bat has the fewest teeth of all bat species.',
-  'The incisor teeth of the common vampire bat do not have any enamel which keeps them extremely sharp.',
-  'The common vampire bat prefers to feed from horses rather than cattle, if given a choice.',
-  'Members often remain in the colony in which they were born for their entire life.',
-  'Vampire bats usually consume about one ounce of blood per night.',
-  'A drug which uses the anticoagulant properties of the saliva of the common vampire bat has been shown to increase blood flow in stroke victims.',
-  'Vampire bats can live for up to 12 years in the wild, although captive individuals have been known to reach the age of 19.',
-  'Young vampire bats feed on milk from the mother, not on blood. They cling tightly to their mothers, even in flight, until they are weaned at about 3 – 4 months.',
-  'Vampire bats are not seasonal breeders and can mate all year round. They are pregnant for 3 – 4 months, which is a long gestation period compared to other small bats. The female gives birth to a single baby.',
-  'Vampire bat\'s saliva can be used to prevent blood from clotting.',	
+    'Vampire bats are believed to be the only bats to “adopt” another young bat if something happens to the bat’s mother.',
+    'Vampire bats typically gather in colonies of about 100 animals, but sometimes live in groups of 1,000 or more.',
+    'In one year, a colony of 100 vampire bats can drink the blood of 25 cows.',
+    'The common vampire bat has the fewest teeth of all bat species.',
+    'The incisor teeth of the common vampire bat do not have any enamel which keeps them extremely sharp.',
+    'The common vampire bat prefers to feed from horses rather than cattle, if given a choice.',
+    'Members often remain in the colony in which they were born for their entire life.',
+    'Vampire bats usually consume about one ounce of blood per night.',
+    'A drug which uses the anticoagulant properties of the saliva of the common vampire bat has been shown to increase blood flow in stroke victims.',
+    'Vampire bats can live for up to 12 years in the wild, although captive individuals have been known to reach the age of 19.',
+    'Young vampire bats feed on milk from the mother, not on blood. They cling tightly to their mothers, even in flight, until they are weaned at about 3 – 4 months.',
+    'Vampire bats are not seasonal breeders and can mate all year round. They are pregnant for 3 – 4 months, which is a long gestation period compared to other small bats. The female gives birth to a single baby.',
+    'Vampire bat\'s saliva can be used to prevent blood from clotting.',	
     'Vampire bats are believed to be the only bats to “adopt” another young bat if something happens to the bat’s mother.',
     'Vampire bats typically gather in colonies of about 100 animals, but sometimes live in groups of 1,000 or more.',
     'In one year, a colony of 100 vampire bats can drink the blood of 25 cows.',
@@ -2724,7 +2724,6 @@ VAMPIRE_BAT_FACTS = (
     'Vampire bats are not seasonal breeders and can mate all year round. They are pregnant for 3 – 4 months, which is a long gestation period compared to other small bats. The female gives birth to a single baby.',
     )
 
-
 WALLABY_FACTS = (
     'Wallabies are members of the kangaroo clan found primarily in Australia and on nearby islands.',
     'Wallabies are marsupials or pouched mammals. Wallaby young are defenseless and develop in the pouch of their mother.',
@@ -2738,7 +2737,7 @@ WALLABY_FACTS = (
     'A young wallaby is called Joey. The males are called Jack while the females are called Jill.',
     'There are 30 different species of wallabies and all are native to Australia and Tasmania.'
     'The average lifespan of a wallaby is from 9 - 15 years.',
-    "A group of wallabies is known as a ‘mob’.",
+    'A group of wallabies is known as a ‘mob’.',
     'A female typically gives birth to a single wallaby and in very rare cases, twins. The gestation period is one month.',
     'Wallabies have strong back legs that help them hop and move about powerfully. The forearms of the wallaby are small and used mainly for balancing or for feeding.',
     'An adult wallaby weighs about 15 – 26 kg. The males are 77-88 cm in height and the females are about 70-84 cm tall. Their tail is 80 cm long, which is almost the length of their entire body. They use their tail to balance and jump around. They also use it to prop into a sitting position.',
