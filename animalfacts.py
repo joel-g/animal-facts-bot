@@ -1561,9 +1561,9 @@ LADYBUG_FACTS = (
 LAMPREY_FACTS = (
     'The lamprey is a jawless fish with a terrifying mouth found in both saltwater and freshwater systems in most temperate regions of our planet.'
     'The sea lamprey is considered to be a parasitic fish because it bores holes into its prey while feeding on their blood and bodily fluids, slowly killing their prey and damaging the species overall survival rate'
-    'a single parasitic lamprey can kill over 40 pounds or more of fish in its lifetime'
-    'lampreys have sometimes inaccurately been called "lamprey eels," but they are actually more closely related to sharks'
-    'lamprey belongs to a superclass of jawless fish known agnathans. The unique thing about the agnathan class is that it’s a prehistoric group that is largely extinct'
+    'A single parasitic lamprey can kill over 40 pounds or more of fish in its lifetime'
+    'Lampreys have sometimes inaccurately been called "lamprey eels," but they are actually more closely related to sharks'
+    'Lamprey belongs to a superclass of jawless fish known agnathans. The unique thing about the agnathan class is that it’s a prehistoric group that is largely extinct'
     'The proteins in their saliva widen the blood vessels of their prey while their abrasive tongue and piercing teeth damage the skin of its victim and induce blood flow'
     'Lamprey breeds in high quality, deep, fast flowing rivers with clean gravel in which to spawn and a sandy substrate for the larvae to burrow into'
     'Lampreys possess vertebral structures called arcualia, tiny cartilaginous skeletal elements that are homologous with the neural arches of vertebrates.'
