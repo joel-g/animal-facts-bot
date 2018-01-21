@@ -279,7 +279,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('iguana', '\siguanas?\s', reddit, IGUANA_FACTS, comment)
     botengine('jackal', '\sjackals?\s', reddit, JACKAL_FACTS, comment)
     botengine('jellyfish', '\sjelly ?fish(es)\s', reddit, JELLYFISH_FACTS, comment)
-	botengine('jerboa', '\sjerboas?\s', reddit, JERBOA_FACTS, comment)
+    botengine('jerboa', '\sjerboas?\s', reddit, JERBOA_FACTS, comment)
     botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
     botengine('kiwi', '\skiwis?\s', reddit, KIWI_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
