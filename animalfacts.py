@@ -1123,6 +1123,18 @@ FALCON_FACTS = (
     'Falcons can process four types of light while humans can only process three. This means that the falcon has a very good night vision and can also see ultraviolet rays.',
     )
 
+FIRESALAMANDER_FACTS = (
+    'Fire salamanders live in central European forests and are more common in hilly areas.',
+    'They prefer deciduous forests, since they like to hide in fallen leaves and around mossy tree trunks.',
+    'They need small brooks or ponds with clean water in their habitat for the development of the larvae.',
+    'They are active in the evening and the night, but on rainy days they are active in daytime as well.',
+    'The diet of the fire salamander consists of various insects, spiders, earthworms and slugs, but they also occasionally eat newts and young frogs.',
+    'Fire salamanders weigh about 40 grams.',
+    'The fire salamander can grow to be 15–25 centimeters - 5.9 - 9.8 inches - long.',
+    'The fire salamander's primary alkaloid toxin, Samandarin, causes strong muscle convulsions and hypertension combined with hyperventilation in all vertebrates',
+    'The poison glands of the fire salamander are concentrated in certain areas of the body, especially around the head and the dorsal skin surface.',
+    )
+
 FLAMINGO_FACTS = (
     'Flamingos are a type of wading bird that live in areas of large shallow lakes, lagoons, mangrove swamps, tidal flats, and sandy islands.',
     'The word "flamingo" comes from the Spanish word "flamenco" which came from the earlier Latin word "flamma" meaning flame or fire.',
