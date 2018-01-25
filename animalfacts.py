@@ -1131,7 +1131,7 @@ FIRESALAMANDER_FACTS = (
     'The diet of the fire salamander consists of various insects, spiders, earthworms and slugs, but they also occasionally eat newts and young frogs.',
     'Fire salamanders weigh about 40 grams.',
     'The fire salamander can grow to be 15–25 centimeters - 5.9 - 9.8 inches - long.',
-    'The fire salamander's primary alkaloid toxin, Samandarin, causes strong muscle convulsions and hypertension combined with hyperventilation in all vertebrates',
+    'The fire salamander\'s primary alkaloid toxin, Samandarin, causes strong muscle convulsions and hypertension combined with hyperventilation in all vertebrates',
     'The poison glands of the fire salamander are concentrated in certain areas of the body, especially around the head and the dorsal skin surface.',
     )
 
