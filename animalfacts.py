@@ -258,6 +258,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('elk', '\selks?\s', reddit, ELK_FACTS, comment)
     botengine('emu', '\semus?\s', reddit, EMU_FACTS, comment)
     botengine('falcon', '\sfalcons?\s', reddit, FALCON_FACTS, comment)
+    botengine('fire salamander', '\sfire salamanders?\s', reddit, FIRESALAMANDER_FACTS, comment)
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
     botengine('fox', '\sfox(es)?\s', reddit, FOX_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
@@ -1131,7 +1132,7 @@ FIRESALAMANDER_FACTS = (
     'The diet of the fire salamander consists of various insects, spiders, earthworms and slugs, but they also occasionally eat newts and young frogs.',
     'Fire salamanders weigh about 40 grams.',
     'The fire salamander can grow to be 15–25 centimeters - 5.9 - 9.8 inches - long.',
-    'The fire salamander's primary alkaloid toxin, Samandarin, causes strong muscle convulsions and hypertension combined with hyperventilation in all vertebrates',
+    'The fire salamander\'s primary alkaloid toxin, Samandarin, causes strong muscle convulsions and hypertension combined with hyperventilation in all vertebrates',
     'The poison glands of the fire salamander are concentrated in certain areas of the body, especially around the head and the dorsal skin surface.',
     )
 
@@ -2952,6 +2953,7 @@ ALL_FACTS = (
     ELK_FACTS,
     EMU_FACTS,
     FALCON_FACTS,
+    FIRESALAMANDER_FACTS,
     FLAMINGO_FACTS,
     FOX_FACTS,
     FROG_FACTS,
