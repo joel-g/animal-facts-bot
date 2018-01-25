@@ -285,6 +285,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('kiwi', '\skiwis?\s', reddit, KIWI_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
     botengine('ladybug', '\s(ladybug|lady bug)s?\s', reddit, LADYBUG_FACTS, comment)
+    botengine('lamprey', '\slampreys?\s', reddit, LAMPREY_FACTS, comment)
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
     botengine('lynx', '\slynx(es)?\s', reddit, LYNX_FACTS, comment)
     botengine('lemur', '\slemurs?\s', reddit, LEMUR_FACTS, comment)
