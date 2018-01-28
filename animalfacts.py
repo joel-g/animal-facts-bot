@@ -217,6 +217,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('albatross', '\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
     botengine('alpaca', '\salpacas?\s', reddit, ALPACA_FACTS, comment)
+    botengine('anaconda', '\sanacondas?\s', reddit, ANACONDA_FACTS, comment)
     botengine('anglerfish', '\sangler ?fish(es)?\s', reddit, ANGLERFISH_FACTS, comment)
     botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
     botengine('anteater', '\santeaters?\s', reddit, ANTEATER_FACTS, comment)
@@ -2927,6 +2928,7 @@ ALL_FACTS = (
     ALLIGATOR_FACTS,
     ALPACA_FACTS,
     ATLANTIC_PUFFIN_FACTS,
+    ANACONDA_FACTS,
     ANGLERFISH_FACTS,
     ANT_FACTS,
     ANTEATER_FACTS,
