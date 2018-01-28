@@ -450,7 +450,19 @@ ALPACA_FACTS = (
     'Alpacas love to sunbathe.',
     'Alpacas’ tails are used to express feelings to each other.',
     )
-
+ANACONDA_FACTS = (
+    'Anaconda can be 30 feet long (like a school bus) and weigh up to 550 pounds (like 11 kids). Females are larger than males.',
+    'Anaconda hunts on the ground and in the water, but it spends most of its life in the water where it moves more easily.',
+    'Anacondas grow constantly their entire life.',
+    'When animal dies, anaconda swallows whole prey in one piece.',
+    'Anacondas Give Birth to Live Young.',
+    'Babies are 2 feet long and they are capable for individual life from the moment they are born.',
+    'Anacondas can Remain Submerged for Up to Ten Minutes at a Time.',
+    'The Green Anaconda is the Heaviest Known Snake, but Not the Longest.',
+    'They’re Members of the Boa Family.',
+    'Caimans are alligator-like predators that frequent South American waterways. Anacondas are known to hunt these reptilian neighbors, but often sustain significant injuries while doing so.',
+    'While getting around, snakes have several options, of which “sidewinding” is perhaps the most athletic. Unlike normal slithering, this exhausting technique involves a given reptile using large, J-shaped coils to hastily pull itself along. In general, smaller snakes are more likely to sidewind, although—as the above footage shows—their big cousins will sometimes follow suit.',
+    )
 ANGLERFISH_FACTS = (
     'The scientific name for the Anglerfish is Lophiiformes.',
     'An Anglerfish can weigh up to 110lbs/50kgs.',
