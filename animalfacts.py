@@ -1576,6 +1576,7 @@ KOALA_FACTS = (
     'Koalas eat eucalyptus leaves and almost nothing else. Eucalyptus is very difficult to digest, low in nutrient, and poisoness.',
     'Since eucalyptus is so dificult to chew, it wears down the koalas teeth until they are useless, and the koala starves to death',
     'The brain size of modern koalas has reduced substantially from their ancestors, possibly as an adaptation to the low energy they get from their diets.',
+    'The koala has the smallest brain to body mass ratio of all the mammals.',
     'The closest living relative of the koala is the wombat.',
     'Koalas have sharp claws which help them climb trees.',
     'Koalas have similar fingerprints to humans.',
