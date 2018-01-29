@@ -889,14 +889,15 @@ CRAB_FACTS = (
 CRANE_FACTS = (
 	'Cranes live on all continents except Antarctica and South America.',
 	'Cranes eat a range of items from small rodents, fish, amphibians, and insects to grain, berries, and plants.',
-	'Cranes create their nests in shallow water'.,
+	'Cranes create their nests in shallow water.',
 	'Cranes are known as perennially monogamous breeders, establishing long-term pair bonds that may last the lifetime of the bird.',
 	'Male cranes and female cranes do not vary in external appearance, however, on average males tend to be slightly larger than females.',
 	'The tallest flying bird in the world is the Sarus Crane.',
 	'Cranes range from sizes of 90 cm (35 in) in length to 176 cm (69 in).',
-	'Most species of crane are dependent on wetlands and require large areas of open space',
+	'Most species of crane are dependent on wetlands and require large areas of open space.',
 	'The only two species of crane that do not always roost in wetlands are the two African crowned cranes, which are the only cranes to roost in trees.',
-	'Female cranes typically lay two eggs, and the eggs will hatch after a period of around 30 days',
+	'Female cranes typically lay two eggs, and the eggs will hatch after a period of around 30 days.',
+)
 
 CRAYFISH_FACTS = (
     'The name "crayfish" comes from the Old French word escrevisse.',
