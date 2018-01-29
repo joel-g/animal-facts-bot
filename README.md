@@ -94,6 +94,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Hedgehog
 * Hippo
 * Honeybee
+* Honey badger
 * Horse
 * Hummingbird
 * Husky
