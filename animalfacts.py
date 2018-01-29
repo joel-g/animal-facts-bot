@@ -224,6 +224,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('antelope', '\santelopes?\s', reddit, ANTELOPE_FACTS, comment)
     botengine('armadillo', '\sarmadillos?\s', reddit, ARMADILLO_FACTS, comment)
     botengine('atlantic puffin', '\spuffins?\s', reddit, ATLANTIC_PUFFIN_FACTS, comment)
+    botengine('honeybadger', '\shoney badgers?\s', reddit, HONEYBADGER_FACTS, comment) # Needs to be here out of order so that it gets picked up before regular badger
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('bear', '\sbears?\s', reddit, BEAR_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
@@ -275,7 +276,6 @@ def check_comment_for_animal(comment, reddit):
     botengine('hamster', '\shamsters?\s', reddit, HAMSTER_FACTS, comment)
     botengine('hedgehog', '\shedgehogs?\s', reddit, HEDGEHOG_FACTS, comment)
     botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS, comment)
-    botengine('honeybadger', '\shoney badgers?\s', reddit, HONEYBADGER_FACTS, comment)
     botengine('honeybee', '\shoney bees?\s', reddit, HONEYBEE_FACTS, comment)
     botengine('horse', '\shorses?\s', reddit, HORSE_FACTS, comment)
     botengine('hummingbird', '\shummingbirds?\s', reddit, HUMMINGBIRD_FACTS, comment)
@@ -1412,7 +1412,7 @@ HONEYBADGER_FACTS = (
     'Honey badgers are really good at digging',
     'Honey badgers have thick skin and can survive venomous snake bits',
     'Honey badgers can release a stinky liquid just like skunks',
-    'A honey badgers diet can consist of almost anything',
+    'A honey badger\'s diet can consist of almost anything',
     'Honey badgers are very smart and sometimes use tools to help them complete tasks',
     'The honey badger is part of the wheasel family',
     'The honey badger got its name because of its love for honey',
