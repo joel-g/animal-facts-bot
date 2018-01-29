@@ -96,6 +96,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Honeybee
 * Honey badger
 * Horse
+* House fly
 * Hummingbird
 * Husky
 * Iguana
