@@ -1458,7 +1458,7 @@ HONEYBEE_FACTS = (
     'The bee\'s brain is oval in shape and only about the size of a sesame seed (iflscience.com), yet it has remarkable capacity to learn and remember things and is able to make complex calculations on distance travelled and foraging efficiency.',
     'A colony of bees consists of 20,000-60,000 honeybees and one queen. Worker honey bees are female, live for about 6 weeks and do all the work.',
     'Each honey bee colony has a unique odour for members\' identification.',
-    'Beekeepers will often keep their bees elevated to prevent honey badgers from getting to their hives.'
+    'Beekeepers will often keep their bees elevated to prevent honey badgers from getting to their hives.',
     )
 
 HORSE_FACTS = (
