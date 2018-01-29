@@ -61,6 +61,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Cougar
 * Cow
 * Crab
+* Crane
 * Crayfish
 * Crocodile
 * Cuttlefish

@@ -242,6 +242,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
+    botengine('crane', '\scranes?\s', reddit, CRANE_FACTS, comment)
     botengine('crayfish', '\scrayfish?\s', reddit, CRAYFISH_FACTS, comment)
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
     botengine('deer', '\sdeer?\s', reddit, DEER_FACTS, comment)
@@ -880,6 +881,18 @@ CRAB_FACTS = (
     'Crabs make up 20% of all marine crustaceans caught by humans each year. This adds up to a total of 1.5 million ton annually',
     'The most consumed species of crab in the world is the Japanese Blue Crab.',
     )
+
+CRANE_FACTS = (
+	'Cranes live on all continents except Antarctica and South America.',
+	'Cranes eat a range of items from small rodents, fish, amphibians, and insects to grain, berries, and plants.',
+	'Cranes create their nests in shallow water'.,
+	'Cranes are known as perennially monogamous breeders, establishing long-term pair bonds that may last the lifetime of the bird.',
+	'Male cranes and female cranes do not vary in external appearance, however, on average males tend to be slightly larger than females.',
+	'The tallest flying bird in the world is the Sarus Crane.',
+	'Cranes range from sizes of 90 cm (35 in) in length to 176 cm (69 in).',
+	'Most species of crane are dependent on wetlands and require large areas of open space',
+	'The only two species of crane that do not always roost in wetlands are the two African crowned cranes, which are the only cranes to roost in trees.',
+	'Female cranes typically lay two eggs, and the eggs will hatch after a period of around 30 days',
 
 CRAYFISH_FACTS = (
     'The name "crayfish" comes from the Old French word escrevisse.',
@@ -2952,6 +2965,7 @@ ALL_FACTS = (
     COW_FACTS,
     COUGAR_FACTS,
     CRAB_FACTS,
+    CRANE_FACTS,
     CRAYFISH_FACTS,
     CROCODILE_FACTS,
     CUTTLEFISH_FACTS,
