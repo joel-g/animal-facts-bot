@@ -454,6 +454,7 @@ ALPACA_FACTS = (
     'Alpacas love to sunbathe.',
     'Alpacas’ tails are used to express feelings to each other.',
     )
+
 ANACONDA_FACTS = (
     'Anaconda can be 30 feet long (like a school bus) and weigh up to 550 pounds (like 11 kids). Females are larger than males.',
     'Anaconda hunts on the ground and in the water, but it spends most of its life in the water where it moves more easily.',
@@ -467,6 +468,7 @@ ANACONDA_FACTS = (
     'Caimans are alligator-like predators that frequent South American waterways. Anacondas are known to hunt these reptilian neighbors, but often sustain significant injuries while doing so.',
     'While getting around, snakes have several options, of which “sidewinding” is perhaps the most athletic. Unlike normal slithering, this exhausting technique involves a given reptile using large, J-shaped coils to hastily pull itself along. In general, smaller snakes are more likely to sidewind, although—as the above footage shows—their big cousins will sometimes follow suit.',
     )
+
 ANGLERFISH_FACTS = (
     'The scientific name for the Anglerfish is Lophiiformes.',
     'An Anglerfish can weigh up to 110lbs/50kgs.',
@@ -574,8 +576,8 @@ ATLANTIC_PUFFIN_FACTS = (
     'The Atlantic Puffin breeds in Iceland, Norway, Greenland, Newfoundland and many North Atlantic islands, and as far south as Maine in the west and the British Isles in the east.',
     'There are considered to be three subspecies of Atlantic puffin: Fratercula arctica arctica, Fratercula arctica grabae, Fratercula arctica naumanni.',
     'Like many seabirds, the Atlantic puffin spends most of the year far from land in the open ocean and only visits coastal areas to breed.',
-	  'Puffins mainly eat small fish, including sand eels, herring, hake and capelin.',
-  	'The average lifespan of a Puffin in the wild is about 20 years.',
+    'Puffins mainly eat small fish, including sand eels, herring, hake and capelin.',
+    'The average lifespan of a Puffin in the wild is about 20 years.',
     'The Atlantic Puffin is sexually mature at 4 to 5 years old.',
     'The Atlantic Puffin is the official bird symbol of the province of Newfoundland and Labrador, Canada.',
     'When they take off, Atlantic Puffins patter across the surface of the water while vigorously flapping its wings, before launching itself into the air.',
@@ -887,17 +889,17 @@ CRAB_FACTS = (
     )
 
 CRANE_FACTS = (
-	'Cranes live on all continents except Antarctica and South America.',
-	'Cranes eat a range of items from small rodents, fish, amphibians, and insects to grain, berries, and plants.',
-	'Cranes create their nests in shallow water.',
-	'Cranes are known as perennially monogamous breeders, establishing long-term pair bonds that may last the lifetime of the bird.',
-	'Male cranes and female cranes do not vary in external appearance, however, on average males tend to be slightly larger than females.',
-	'The tallest flying bird in the world is the Sarus Crane.',
-	'Cranes range from sizes of 90 cm (35 in) in length to 176 cm (69 in).',
-	'Most species of crane are dependent on wetlands and require large areas of open space.',
-	'The only two species of crane that do not always roost in wetlands are the two African crowned cranes, which are the only cranes to roost in trees.',
-	'Female cranes typically lay two eggs, and the eggs will hatch after a period of around 30 days.',
-)
+    'Cranes live on all continents except Antarctica and South America.',
+    'Cranes eat a range of items from small rodents, fish, amphibians, and insects to grain, berries, and plants.',
+    'Cranes create their nests in shallow water.',
+    'Cranes are known as perennially monogamous breeders, establishing long-term pair bonds that may last the lifetime of the bird.',
+    'Male cranes and female cranes do not vary in external appearance, however, on average males tend to be slightly larger than females.',
+    'The tallest flying bird in the world is the Sarus Crane.',
+    'Cranes range from sizes of 90 cm (35 in) in length to 176 cm (69 in).',
+    'Most species of crane are dependent on wetlands and require large areas of open space.',
+    'The only two species of crane that do not always roost in wetlands are the two African crowned cranes, which are the only cranes to roost in trees.',
+    'Female cranes typically lay two eggs, and the eggs will hatch after a period of around 30 days.',
+    )
 
 CRAYFISH_FACTS = (
     'The name "crayfish" comes from the Old French word escrevisse.',
@@ -1439,8 +1441,7 @@ HONEYBADGER_FACTS = (
     'Honey badgers are great swimmers and can climb trees',
     'Honey badgers are nocturnal',
     'Honey badgers are mostly solitary and only meet up to hunt or mate',
-    'Beekeepers will often keep their bees elevated to prevent honey badgers from getting to their hives'
-)
+    )
 
 HONEYBEE_FACTS = (
     'The honey bee has been around for millions of years.',
@@ -1457,6 +1458,7 @@ HONEYBEE_FACTS = (
     'The bee\'s brain is oval in shape and only about the size of a sesame seed (iflscience.com), yet it has remarkable capacity to learn and remember things and is able to make complex calculations on distance travelled and foraging efficiency.',
     'A colony of bees consists of 20,000-60,000 honeybees and one queen. Worker honey bees are female, live for about 6 weeks and do all the work.',
     'Each honey bee colony has a unique odour for members\' identification.',
+    'Beekeepers will often keep their bees elevated to prevent honey badgers from getting to their hives.'
     )
 
 HORSE_FACTS = (
