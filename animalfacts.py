@@ -420,7 +420,7 @@ AFRICAN_GREY_FACTS = (
     'African Greys tend to train you to do their bidding',
     'African grey parrots generally inhabit savannas, coastal mangroves, woodland and edges of forest clearings in their West and Central Africa range.',
     'African greys are susceptible to feather picking, calcium deficiency, vitamin-A and vitamin-D deficiency, respiratory infection, psittacosis and psittacine beak and feather disease (PBFD).',
-)
+    )
 
 ALBATROSS_FACTS = (
     'Albatrosses are known to live until their fifties sixties.',
@@ -3052,7 +3052,7 @@ ALL_FACTS = (
     EAGLE_FACTS,
     EARTHWORM_FACTS,
     ECHIDNA_FACTS,
-	ELAND_FACTS,
+    ELAND_FACTS,
     ELEPHANT_FACTS,
     ELK_FACTS,
     EMU_FACTS,
