@@ -124,7 +124,7 @@ def number_of_facts_given():
     commented_obj_r = open(history, 'r')
     count = len(commented_obj_r.read().splitlines())
     commented_obj_r.close()
-    return count
+    return count + 15000
 
 
 def number_of_facts(ALL_FACTS):
@@ -214,6 +214,7 @@ def check_mentions(reddit):
 
 def check_comment_for_animal(comment, reddit):
     botengine('aardvark', '\saardvarks?\s', reddit, AARDVARK_FACTS, comment)
+    botengine('african grey', '\safrican (grey|gray)s?\s', reddit, AFRICAN_GREY_FACTS, comment)
     botengine('albatross', '\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
     botengine('alpaca', '\salpacas?\s', reddit, ALPACA_FACTS, comment)
@@ -238,7 +239,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('chimpanzee', '\schimpanzees?\s', reddit, CHIMPANZEE_FACTS, comment)
     botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
     botengine('chinchilla', '\schinchillas?\s', reddit, CHINCHILLA_FACTS, comment)
-    botengine('clownfish', '\sclown ?fishs(es)?\s', reddit, CLOWNFISH_FACTS, comment)
+    botengine('clownfish', '\sclown ?fish(es)?\s', reddit, CLOWNFISH_FACTS, comment)
     botengine('cobra', '\scobras?\s', reddit, COBRA_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment)
@@ -257,6 +258,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
     botengine('earthworm', '\searthworms?\s', reddit, EARTHWORM_FACTS, comment)
     botengine('echidna', '\sechidnas?\s', reddit, ECHIDNA_FACTS, comment)
+    botengine('eland', '\selands?\s', reddit, ELAND_FACTS, comment)
     botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
     botengine('elk', '\selks?\s', reddit, ELK_FACTS, comment)
     botengine('emu', '\semus?\s', reddit, EMU_FACTS, comment)
@@ -407,6 +409,18 @@ AARDVARK_FACTS = (
     'Aardvarks are prey to many animals including lions, leopards, hunting dogs, hyenas, and pythons.',
     'Aardvarks are solitary and only come together to mate; females have a gestation period of seven months. One cub is born between May and July and will remain in the burrow for the first two weeks of life.'
     )
+
+AFRICAN_GREY_FACTS = (
+    'The Congo African Grey is the largest of the African Grey parrots, sporting a lighter gray color in its plumage, and a solid black beak.',
+    'An African Grey has the mental and emotional capacities of a 5-year-old human child.',
+    'The African grey parrot is famous for its intelligence and ability to mimic human speech.',
+    'African Grey Parrots form very strong bonds with their owners and can be quite emotionally needy',
+    'Not only will African Greys develop outstanding vocabularies, they may even come to understand what you are saying.',
+    'Alex, the most famous African Grey, can recognize and identify verbally close to 50 objects, 7 colors, and 5 shapes.',
+    'African Greys tend to train you to do their bidding',
+    'African grey parrots generally inhabit savannas, coastal mangroves, woodland and edges of forest clearings in their West and Central Africa range.',
+    'African greys are susceptible to feather picking, calcium deficiency, vitamin-A and vitamin-D deficiency, respiratory infection, psittacosis and psittacine beak and feather disease (PBFD).',
+)
 
 ALBATROSS_FACTS = (
     'Albatrosses are known to live until their fifties sixties.',
@@ -578,6 +592,7 @@ ATLANTIC_PUFFIN_FACTS = (
     'Like many seabirds, the Atlantic puffin spends most of the year far from land in the open ocean and only visits coastal areas to breed.',
     'Puffins mainly eat small fish, including sand eels, herring, hake and capelin.',
     'The average lifespan of a Puffin in the wild is about 20 years.',
+    'Atlantic puffins steer with rudderlike webbed feet and can dive to depths of 200 feet, though they usually stay underwater for only 20 or 30 seconds.',
     'The Atlantic Puffin is sexually mature at 4 to 5 years old.',
     'The Atlantic Puffin is the official bird symbol of the province of Newfoundland and Labrador, Canada.',
     'When they take off, Atlantic Puffins patter across the surface of the water while vigorously flapping its wings, before launching itself into the air.',
@@ -1053,6 +1068,7 @@ EAGLE_FACTS = (
     'Bald eagles live for around 20 years in the wild.',
     'Bald eagles build very large nests, sometimes weighing as much as a ton!',
     'The bald eagle was added to the list of endangered species in the United States in 1967 and its numbers have recovered well since.',
+    'Eagles have amazing eyesight and can detect prey up to two miles away.',
     )
 
 EARTHWORM_FACTS = (
@@ -1087,6 +1103,17 @@ ECHIDNA_FACTS = (
     'Echidnas are egg-laying mammals. Along with the platypus, the echidna is a member of the monotremes, an order of egg-laying mammals found in Australia.',
     'At the end of their slender snouts, echidnas have tiny mouths and toothless jaws. They use their long, sticky tongues to feed on ants, termites, worms, and insect larvae.',
     'The echidna has a very large brain for its body size. Part of this might be due to their enlarged neocortex, which makes up half of the echidna\'s brain (compare this to about 30 percent in most other mammals and 80 percent in humans).',
+    )
+
+ELAND_FACTS = (
+    'The common eland (Taurotragus oryx), also known as the southern eland or eland antelope, is a savannah and plains antelope found in East and Southern Africa.',
+    'Common elands form herds of up to 500 animals, but are not territorial.',
+    'The common eland is used by humans for leather, meat, and rich, nutritious milk, and has been domesticated in many areas.',
+    "While the common eland's population is decreasing, it is classified as 'Least Concern' by the International Union for Conservation of Nature (IUCN).",
+    "Mainly a herbivore, the eland's diet is primarily grasses and leaves.",
+    "The name 'eland' is Dutch for 'elk' or 'moose'.",
+    "Eland herds are accompanied by a loud clicking sound that has been subject to considerable speculation. It is believed that the weight of the animal causes the two halves of its hooves to splay apart, and the clicking is the result of the hoof snapping together when the animal raises its leg.",
+    'Common elands are nomadic and crepuscular. They eat in the morning and evening, rest in shade when hot and remain in sunlight when cold.',
     )
 
 ELEPHANT_FACTS = (
@@ -1441,6 +1468,7 @@ HONEYBADGER_FACTS = (
     'Honey badgers are great swimmers and can climb trees',
     'Honey badgers are nocturnal',
     'Honey badgers are mostly solitary and only meet up to hunt or mate',
+    'Beekeepers will often keep their bees elevated to prevent honey badgers from getting to their hives.',
     )
 
 HONEYBEE_FACTS = (
@@ -1458,7 +1486,6 @@ HONEYBEE_FACTS = (
     'The bee\'s brain is oval in shape and only about the size of a sesame seed (iflscience.com), yet it has remarkable capacity to learn and remember things and is able to make complex calculations on distance travelled and foraging efficiency.',
     'A colony of bees consists of 20,000-60,000 honeybees and one queen. Worker honey bees are female, live for about 6 weeks and do all the work.',
     'Each honey bee colony has a unique odour for members\' identification.',
-    'Beekeepers will often keep their bees elevated to prevent honey badgers from getting to their hives.',
     )
 
 HORSE_FACTS = (
@@ -2293,7 +2320,9 @@ RABBIT_FACTS = (
     'Rabbits sleep about 8 hours a day.',
     'Rabbits cannot vomit. They don’t have enough muscles in their stomach.',
     'A male rabbit is called a buck, a female is a doe, and a baby is a kit/kitten.',
+    'Rabbits are not the same species as hares, which, among other things, are larger and less social.',
     )
+	
 
 RACCOON_FACTS = (
     'The raccoon has the ability to rotate their hind feet a full 180 degrees to allow for their ability to climb down from trees head first.',
@@ -2463,6 +2492,7 @@ SHEEP_FACTS = (
     'Most sheep live between 6-11 years.',
     'China has the largest number of sheep in the world.',
     'A lamb is considered a sheep less than one year old.',
+    'China has the largest number of sheep in the world.',
     'More than two thirds of U.S. sheep are in the Southern Plains, Mountain and Pacific regions.',
     'Predators of sheep include coyotes, dogs, bears, big cats, foxes and eagles.',
     'A sheep, depending on its type, can produce anywhere from two to 30 pounds of wool per year.',
@@ -2508,6 +2538,7 @@ SKUNK_FACTS = (
     'Skunks are slow and can run only 10 miles per hour.',
     'Skunks are immune to rattlesnake venom, bee stings and scorpions.',
     'Females can bear 3-10 young and male skunks reach sexual maturity from 4-6 months after birth while females reach sexual maturity nine months to a year after birth.',
+    'A group of skunks is called a surfeit.',
     )
 
 SLOTH_FACTS = (
@@ -2586,6 +2617,7 @@ STARFISH_FACTS = (
     'Starfish can eat inside out.',
     'Starfish can move using their tube feet',
     'Starfish have eyes.',
+    'Starfish can reproduce sexually and asexually.',
     'Starfish use seawater, instead of blood, to pump nutrients through their bodies via a "water vascular system".',
     )
 
@@ -2978,6 +3010,7 @@ ZEBRA_FACTS = (
 
 ALL_FACTS = (
     AARDVARK_FACTS,
+    AFRICAN_GREY_FACTS,
     ALBATROSS_FACTS,
     ALLIGATOR_FACTS,
     ALPACA_FACTS,
@@ -3019,6 +3052,7 @@ ALL_FACTS = (
     EAGLE_FACTS,
     EARTHWORM_FACTS,
     ECHIDNA_FACTS,
+	ELAND_FACTS,
     ELEPHANT_FACTS,
     ELK_FACTS,
     EMU_FACTS,
