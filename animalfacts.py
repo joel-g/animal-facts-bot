@@ -124,7 +124,7 @@ def number_of_facts_given():
     commented_obj_r = open(history, 'r')
     count = len(commented_obj_r.read().splitlines())
     commented_obj_r.close()
-    return count
+    return count + 15000
 
 
 def number_of_facts(ALL_FACTS):
@@ -214,6 +214,7 @@ def check_mentions(reddit):
 
 def check_comment_for_animal(comment, reddit):
     botengine('aardvark', '\saardvarks?\s', reddit, AARDVARK_FACTS, comment)
+    botengine('african grey', '\safrican (grey|gray)s?\s', reddit, AFRICAN_GREY_FACTS, comment)
     botengine('albatross', '\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
     botengine('alpaca', '\salpacas?\s', reddit, ALPACA_FACTS, comment)
@@ -410,15 +411,15 @@ AARDVARK_FACTS = (
     )
 
 AFRICAN_GREY_FACTS = (
-    'The Congo African Grey is the largest of the African Grey parrots, sporting a lighter gray color in its plumage, and a solid black beak.'
-    'An African Grey has the mental and emotional capacities of a 5-year-old human child.'
-    'The African grey parrot is famous for its intelligence and ability to mimic human speech.'
-    'African Grey Parrots form very strong bonds with their owners and can be quite emotionally needy'
-    'Not only will African Greys develop outstanding vocabularies, they may even come to understand what you are saying.
-    'Alex, the most famous African Grey, can recognize and identify verbally close to 50 objects, 7 colors, and 5 shapes.'
-    'African Greys tend to train you to do their bidding'
-    'African grey parrots generally inhabit savannas, coastal mangroves, woodland and edges of forest clearings in their West and Central Africa range.'
-    'African greys are susceptible to feather picking, calcium deficiency, vitamin-A and vitamin-D deficiency, respiratory infection, psittacosis and psittacine beak and feather disease (PBFD).
+    'The Congo African Grey is the largest of the African Grey parrots, sporting a lighter gray color in its plumage, and a solid black beak.',
+    'An African Grey has the mental and emotional capacities of a 5-year-old human child.',
+    'The African grey parrot is famous for its intelligence and ability to mimic human speech.',
+    'African Grey Parrots form very strong bonds with their owners and can be quite emotionally needy',
+    'Not only will African Greys develop outstanding vocabularies, they may even come to understand what you are saying.',
+    'Alex, the most famous African Grey, can recognize and identify verbally close to 50 objects, 7 colors, and 5 shapes.',
+    'African Greys tend to train you to do their bidding',
+    'African grey parrots generally inhabit savannas, coastal mangroves, woodland and edges of forest clearings in their West and Central Africa range.',
+    'African greys are susceptible to feather picking, calcium deficiency, vitamin-A and vitamin-D deficiency, respiratory infection, psittacosis and psittacine beak and feather disease (PBFD).',
 )
 
 ALBATROSS_FACTS = (
@@ -3007,6 +3008,7 @@ ZEBRA_FACTS = (
 
 ALL_FACTS = (
     AARDVARK_FACTS,
+    AFRICAN_GREY_FACTS,
     ALBATROSS_FACTS,
     ALLIGATOR_FACTS,
     ALPACA_FACTS,
