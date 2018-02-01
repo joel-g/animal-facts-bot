@@ -2322,7 +2322,6 @@ RABBIT_FACTS = (
     'A male rabbit is called a buck, a female is a doe, and a baby is a kit/kitten.',
     'Rabbits are not the same species as hares, which, among other things, are larger and less social.',
     )
-	
 
 RACCOON_FACTS = (
     'The raccoon has the ability to rotate their hind feet a full 180 degrees to allow for their ability to climb down from trees head first.',
@@ -2525,7 +2524,7 @@ SKUNK_FACTS = (
     'Skunk can spray its oily and smelly substance up to 10 feet distance.',
     'Skunks\'s worst predators are coyotes, bobcats and owls.',
     'Skunks live up to 3 years in the wild. They can survive up to 10 years in captivity.',
-    'Skunk can transmit rabies.'
+    'Skunk can transmit rabies.',
     'Skunks are typically around the size of house cats. They grow to 8 to 19 inches long and weigh around 7 ounces to 14 lbs.',
     'Skunks appeared 40 million years ago, evolving from common ancestors with weasels and polecats.',
     'Skunks are found in the United States, Canada, South America and Mexico.',
