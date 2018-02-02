@@ -260,6 +260,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('echidna', '\sechidnas?\s', reddit, ECHIDNA_FACTS, comment)
     botengine('eland', '\selands?\s', reddit, ELAND_FACTS, comment)
     botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
+    botengine('elephant shrew', '\sshrews?\s', reddit, ELEPHANT_SHREW_FACTS, comment)
     botengine('elk', '\selks?\s', reddit, ELK_FACTS, comment)
     botengine('emu', '\semus?\s', reddit, EMU_FACTS, comment)
     botengine('falcon', '\sfalcons?\s', reddit, FALCON_FACTS, comment)
@@ -1128,6 +1129,21 @@ ELEPHANT_FACTS = (
     'Elephants can swim – they use their trunk to breathe like a snorkel in deep water.',
     'Elephants are herbivores and can spend up to 16 hours days collecting leaves, twigs, bamboo and roots.',
     )
+    
+ELEPHANT_SHREW_FACTS = (
+	'Elephant shrews, or jumping shrews, are small insectivorous mammals native to Africa, belonging to the family Macroscelididae, in the order Macroscelidea,(there are 19 species of elephant shrew, placed in four genera) whose traditional common English name comes from resemblance between their long noses and the trunk of an elephant, and an assumed relationship with the shrews.',
+	'They are widely distributed across the southern part of Africa, and although common nowhere, can be found in almost any type of habitat, from the Namib Desert to boulder-strewn outcrops in South Africa to thick forest.',
+	'Elephant shrew is classified as endangered largely due to a fragmented forest environment and anthropogenic factors.',
+	'Despite their weight of under half a kilogram, they have been recorded to reach speeds of 28.8 km/h, making it one of the fastest small mammals.',
+	'Elephant shrews are small, quadrupedal, insectivorous mammals resembling rodents or opossums, with scaly tails, elongated snouts, and rather long legs for their size, which are used to move in a hopping fashion like rabbits.',
+	'They vary in size from about 10 cm to almost 30 cm, from just under 50 g to over 500 g.',
+	'The short-eared elephant shrew has an average size of 150 mm (5.9 in).',
+	'Their lifespans are about two and a half to four years in the wild.',
+	'They have large canine teeth, and also high-crowned cheek teeth similar to those of ungulates.',
+	'They are diurnal and very active.',
+	'They are not highly social animals, but many live in monogamous pairs.',
+	'Elephant shrews mainly eat insects, spiders, centipedes etc.',
+	)
 
 ELK_FACTS = (
     'Elks are larger than a deer, but not as massive as moose.',
@@ -3052,6 +3068,7 @@ ALL_FACTS = (
     ECHIDNA_FACTS,
 	ELAND_FACTS,
     ELEPHANT_FACTS,
+    ELEPHANT_SHREW_FACTS,
     ELK_FACTS,
     EMU_FACTS,
     FALCON_FACTS,
