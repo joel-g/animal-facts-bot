@@ -298,11 +298,11 @@ def check_comment_for_animal(comment, reddit):
     botengine('lemur', '\slemurs?\s', reddit, LEMUR_FACTS, comment)
     botengine('leopard', '\sleopards?\s', reddit, LEOPARD_FACTS, comment)
     botengine('lizard', '\slizards?\s', reddit, LIZARD_FACTS, comment)
-    botengine('lobster', '\slobsters?\s', reddit, LOBSTER_FACTS, comment)
     botengine('llama', '\sllamas?\s', reddit, LLAMA_FACTS, comment)
+    botengine('lobster', '\slobsters?\s', reddit, LOBSTER_FACTS, comment)
+    botengine('mantis shrimp', '\smantis ?shrimps?\s', reddit, MANTIS_SHRIMP_FACTS, comment)
     botengine('markhor', '\smarkhors?\s', reddit, MARKHOR_FACTS, comment)
     botengine('manatee', '\smanatees?\s', reddit, MANATEE_FACTS, comment)
-    botengine('mantis shrimp', '\smantis shrimps?\s', reddit, MANTIS_SHRIMP_FACTS, comment)
     botengine('meerkat', '\smeerkats?\s', reddit, MEERKAT_FACTS, comment)
     botengine('mink', '\sminks?\s', reddit, MINK_FACTS, comment)
     botengine('mongoose', '\smongooses?\s', reddit, MONGOOSE_FACTS, comment)
@@ -1758,6 +1758,25 @@ LIZARD_FACTS = (
     'Komodo dragons are carnivores and can be very aggressive.',
     )
 
+LLAMA_FACTS = (
+    'Llamas are members of the camelid, or camel, family.',
+    'Llamas were first domesticated and used as pack animals 4,000 to 5,000 years ago by Indians in the Peruvian highlands.',
+    'Llamas can grow as much as 6 feet tall.',
+    'Llamas weigh 280 to 450 pounds and can carry about a quarter of their body weight, so a 400-pound male llama can carry about 100 pounds on a trek of 10 to 12 miles with no problem.',
+    'In the Andes Mountains of Peru, llama fleece has been shorn and used in textiles for about 6,000 years. Llama wool is light, warm and water-repellent.',
+    'Llamas are hardy and well suited to harsh environments.',
+    'Llamas are smart and easy to train.',
+    'Llamas are vegetarians and have efficient digestive systems.',
+    'Llama poop has almost no odor. Llama farmers refer to llama manure as "llama beans." It makes great, eco-friendly fertilizer. The Incas in Peru burned dried llama poop for fuel.',
+    'Llamas live to be about 20 years old.',
+    'A baby llama is called a "cria." It\'s pronounced KREE-uh. Mama llamas usually only have one baby at a time. Llama twins are incredibly rare. Pregnancy lasts for about 350 days—nearly a full year. Crias weigh 20 to 35 pounds at birth.',
+    'Llamas come in a range of solid and spotted colors including black, gray, beige, brown, red and white.',
+    'Llamas are social animals and prefer to live with other llamas or herd animals.',
+    'A group of llamas is called a herd.',
+    'Llamas don\'t bite. They spit when they\'re agitated, but that\'s mostly at each other.',
+    'Yarn made from llama fiber is soft and lightweight, yet remarkably warm.',
+    )
+
 LOBSTER_FACTS = (
     'Lobsters were once considered the the go-to prison food. In Colonial times, it was fed to pigs and goats and only eaten by paupers.',
     'Lobsters turn red when cooked, but in nature they can be green or yellow or even bright blue.',
@@ -1796,6 +1815,19 @@ MANATEE_FACTS = (
     )
 
 MANTIS_SHRIMP_FACTS = (
+    'Mantis shrimps are usually 2 to 7 inches long. Larger species grow 12 inches in length.',
+    'Mantis shrimps are brightly colored. Shell of most species is covered with different hues of blue, green, red and orange colors. Forearms are often covered with spots.',
+    'Eyes of mantis shrimp are located on the long stalks that can move independently. They have exceptional eyesight that is used both for the detection of the prey and predators.',
+    'All mantis shrimps can be divided on spearers and smashes, based on the morphology of appendages and tactic they use to kill the prey.',
+    'Spearers have spiny appendages that are used to stab soft-bodied prey such as different types of worms and fish.',
+    'Smashers have club-like appendages that easily smash shell of snails, oysters, crustaceans and mollusks.',
+    'Smashers are famous for their incredible strong punches that can break the glass of aquarium.',
+    'Attack of mantis shrimps happens extremely quickly - 50 times faster than the blink of an eye. With velocity of 10 meters per second, their punch has the power of a .22 caliber bullet.',
+    'Most species of mantis shrimps are solitary and territorial creatures. They fiercely defend their home against intruders.',
+    'Mantis shrimps are able to recognize their neighbors by the smell and by the morphological characteristics.',
+    'Some species of mantis shrimp are monogamous and spend up to 20 years together. During the mating rituals, mantis shrimps often fluoresce.',
+    'Females can lay eggs in the burrows or keep them in their forelimbs until they hatch. Some species exhibit parental care. Female lays two sets of eggs, one for her and the other for the father to take care of the eggs until they hatch.',
+    'Larvae of mantis shrimps swim as a part of zooplankton up to 3 months. They show aggressive behavior even during the larval stage.',  
     'Mantis Shrimps can see ultraviolet and polarized light.',
     'Mantis Shrimp have trinocular vision, meaning they can see using three parts of the same eye.',
     'Mantis Shrimp can be categorized into "Spearers" and "Smashers", referencing tactics used to kill their prey.',
@@ -3107,8 +3139,8 @@ ALL_FACTS = (
     LION_FACTS,
     LYNX_FACTS,
     LIZARD_FACTS,
-    LOBSTER_FACTS,
     LLAMA_FACTS,
+    LOBSTER_FACTS,
     MARKHOR_FACTS,
     MANATEE_FACTS,
     MANTIS_SHRIMP_FACTS,
