@@ -421,7 +421,7 @@ AFRICAN_GREY_FACTS = (
     'African Greys tend to train you to do their bidding',
     'African Grey parrots generally inhabit savannas, coastal mangroves, woodland and edges of forest clearings in their West and Central Africa range.',
     'African Greys are susceptible to feather picking, calcium deficiency, vitamin-A and vitamin-D deficiency, respiratory infection, psittacosis and psittacine beak and feather disease (PBFD).',
-)
+    )
 
 ALBATROSS_FACTS = (
     'Albatrosses are known to live until their fifties sixties.',
@@ -469,6 +469,7 @@ ALPACA_FACTS = (
     'Alpacas love to sunbathe.',
     'Alpacas’ tails are used to express feelings to each other.',
     )
+
 ANACONDA_FACTS = (
     'Anaconda can be 30 feet long (like a school bus) and weigh up to 550 pounds (like 11 kids). Females are larger than males.',
     'Anaconda hunts on the ground and in the water, but it spends most of its life in the water where it moves more easily.',
@@ -482,6 +483,7 @@ ANACONDA_FACTS = (
     'Caimans are alligator-like predators that frequent South American waterways. Anacondas are known to hunt these reptilian neighbors, but often sustain significant injuries while doing so.',
     'While getting around, snakes (including Anaconda) have several options, of which “sidewinding” is perhaps the most athletic. Unlike normal slithering, this exhausting technique involves a given reptile using large, J-shaped coils to hastily pull itself along. In general, smaller snakes are more likely to sidewind, although—as the above footage shows—their big cousins will sometimes follow suit.',
     )
+
 ANGLERFISH_FACTS = (
     'The scientific name for the Anglerfish is Lophiiformes.',
     'An Anglerfish can weigh up to 110lbs/50kgs.',
@@ -589,9 +591,9 @@ ATLANTIC_PUFFIN_FACTS = (
     'The Atlantic Puffin breeds in Iceland, Norway, Greenland, Newfoundland, and many North Atlantic islands, and as far south as Maine in the west and the British Isles in the east.',
     'There are considered to be three subspecies of Atlantic puffin: Fratercula arctica arctica, Fratercula arctica grabae, Fratercula arctica naumanni.',
     'Like many seabirds, the Atlantic puffin spends most of the year far from land in the open ocean and only visits coastal areas to breed.',
+    'Puffins mainly eat small fish, including sand eels, herring, hake and capelin.',
+    'The average lifespan of a Puffin in the wild is about 20 years.',
     'Atlantic puffins steer with rudderlike webbed feet and can dive to depths of 200 feet, though they usually stay underwater for only 20 or 30 seconds.',
-	'Puffins mainly eat small fish, including sand eels, herring, hake, and capelin.',
-  	'The average lifespan of a Puffin in the wild is about 20 years.',
     'The Atlantic Puffin is sexually mature at 4 to 5 years old.',
     'The Atlantic Puffin is the official bird symbol of the province of Newfoundland and Labrador, Canada.',
     'When they take off, Atlantic Puffins patter across the surface of the water while vigorously flapping their wings, before launching themselves into the air.',
@@ -902,17 +904,17 @@ CRAB_FACTS = (
     )
 
 CRANE_FACTS = (
-	'Cranes live on all continents except Antarctica and South America.',
-	'Cranes eat a range of items from small rodents, fish, amphibians, and insects to grain, berries, and plants.',
-	'Cranes create their nests in shallow water.',
-	'Cranes are known as perennially monogamous breeders, establishing long-term pair bonds that may last the lifetime of the bird.',
-	'Male cranes and female cranes do not vary in external appearance, however, on average males tend to be slightly larger than females.',
-	'The tallest flying bird in the world is the Sarus Crane.',
-	'Cranes range from sizes of 90 cm (35 in) in length to 176 cm (69 in).',
-	'Most species of crane are dependent on wetlands and require large areas of open space.',
-	'The only two species of crane that do not always roost in wetlands are the two African crowned cranes, which are the only cranes to roost in trees.',
-	'Female cranes typically lay two eggs, and the eggs will hatch after a period of around 30 days.',
-)
+    'Cranes live on all continents except Antarctica and South America.',
+    'Cranes eat a range of items from small rodents, fish, amphibians, and insects to grain, berries, and plants.',
+    'Cranes create their nests in shallow water.',
+    'Cranes are known as perennially monogamous breeders, establishing long-term pair bonds that may last the lifetime of the bird.',
+    'Male cranes and female cranes do not vary in external appearance, however, on average males tend to be slightly larger than females.',
+    'The tallest flying bird in the world is the Sarus Crane.',
+    'Cranes range from sizes of 90 cm (35 in) in length to 176 cm (69 in).',
+    'Most species of crane are dependent on wetlands and require large areas of open space.',
+    'The only two species of crane that do not always roost in wetlands are the two African crowned cranes, which are the only cranes to roost in trees.',
+    'Female cranes typically lay two eggs, and the eggs will hatch after a period of around 30 days.',
+    )
 
 CRAYFISH_FACTS = (
     'The name "crayfish" comes from the Old French word escrevisse.',
@@ -1107,10 +1109,10 @@ ELAND_FACTS = (
     'The common eland (Taurotragus oryx), also known as the southern eland or eland antelope, is a savannah and plains antelope found in East and Southern Africa.',
     'Common elands form herds of up to 500 animals, but are not territorial.',
     'The common eland is used by humans for leather, meat, and rich, nutritious milk, and has been domesticated in many areas.',
-    "While the common eland's population is decreasing, it is classified as 'Least Concern' by the International Union for Conservation of Nature (IUCN).",
-    "Mainly a herbivore, the eland's diet is primarily grasses and leaves.",
-    "The name 'eland' is Dutch for 'elk' or 'moose'.",
-    "Eland herds are accompanied by a loud clicking sound that has been subject to considerable speculation. It is believed that the weight of the animal causes the two halves of its hooves to splay apart, and the clicking is the result of the hoof snapping together when the animal raises its leg.",
+    'While the common eland\'s population is decreasing, it is classified as \'Least Concern\' by the International Union for Conservation of Nature (IUCN).',
+    'Mainly a herbivore, the eland\'s diet is primarily grasses and leaves.',
+    'The name \'eland\' is Dutch for \'elk\' or \'moose\'.',
+    'Eland herds are accompanied by a loud clicking sound that has been subject to considerable speculation. It is believed that the weight of the animal causes the two halves of its hooves to splay apart, and the clicking is the result of the hoof snapping together when the animal raises its leg.',
     'Common elands are nomadic and crepuscular. They eat in the morning and evening, rest in shade when hot and remain in sunlight when cold.',
     )
 
@@ -1128,21 +1130,21 @@ ELEPHANT_FACTS = (
     'Elephants can swim – they use their trunk to breathe like a snorkel in deep water.',
     'Elephants are herbivores and can spend up to 16 hours days collecting leaves, twigs, bamboo, and roots.',
     )
-    
+
 ELEPHANT_SHREW_FACTS = (
-	'Elephant shrews, or jumping shrews, are small insectivorous mammals native to Africa, belonging to the family Macroscelididae, in the order Macroscelidea, (there are 19 species of elephant shrew, placed in four genera) whose traditional common English name comes from resemblance between their long noses and the trunk of an elephant, and an assumed relationship with the shrews.',
-	'Elephan shrews are widely distributed across the southern part of Africa, and although common nowhere, can be found in almost any type of habitat, from the Namib Desert to boulder-strewn outcrops in South Africa to thick forest.',
-	'Elephant shrew is classified as endangered largely due to a fragmented forest environment and anthropogenic factors.',
-	'Despite their weight of under half a kilogram, elephant shrews have been recorded to reach speeds of 28.8 km/h, making it one of the fastest small mammals.',
-	'Elephant shrews are small, quadrupedal, insectivorous mammals resembling rodents or opossums, with scaly tails, elongated snouts, and rather long legs for their size, which are used to move in a hopping fashion like rabbits.',
-	'Elephant shrews vary in size from about 10 cm to almost 30 cm, from just under 50 g to over 500 g.',
-	'The short-eared elephant shrew has an average size of 150 mm (5.9 in).',
-	'Elephant shrew lifespans are about two and a half to four years in the wild.',
-	'Elephant shrew have large canine teeth, and also high-crowned cheek teeth similar to those of ungulates.',
-	'Elephant shrew are diurnal and very active.',
-	'Elephant shrew are not highly social animals, but many live in monogamous pairs.',
-	'Elephant shrews mainly eat insects, spiders, centipedes, etc.',
-	)
+    'Elephant shrews, or jumping shrews, are small insectivorous mammals native to Africa, belonging to the family Macroscelididae, in the order Macroscelidea, (there are 19 species of elephant shrew, placed in four genera) whose traditional common English name comes from resemblance between their long noses and the trunk of an elephant, and an assumed relationship with the shrews.',
+    'Elephant shrews are widely distributed across the southern part of Africa, and although common nowhere, can be found in almost any type of habitat, from the Namib Desert to boulder-strewn outcrops in South Africa to thick forest.',
+    'Elephant shrew is classified as endangered largely due to a fragmented forest environment and anthropogenic factors.',
+    'Despite their weight of under half a kilogram, elephant shrews have been recorded to reach speeds of 28.8 km/h, making it one of the fastest small mammals.',
+    'Elephant shrews are small, quadrupedal, insectivorous mammals resembling rodents or opossums, with scaly tails, elongated snouts, and rather long legs for their size, which are used to move in a hopping fashion like rabbits.',
+    'Elephant shrews vary in size from about 10 cm to almost 30 cm, from just under 50 g to over 500 g.',
+    'The short-eared elephant shrew has an average size of 150 mm (5.9 in).',
+    'Elephant shrew lifespans are about two and a half to four years in the wild.',
+    'Elephant shrew have large canine teeth, and also high-crowned cheek teeth similar to those of ungulates.',
+    'Elephant shrew are diurnal and very active.',
+    'Elephant shrew are not highly social animals, but many live in monogamous pairs.',
+    'Elephant shrews mainly eat insects, spiders, centipedes, etc.',
+    )
 
 ELK_FACTS = (
     'Elks are larger than a deer, but not as massive as moose.',
@@ -1479,8 +1481,8 @@ HONEYBADGER_FACTS = (
     'Honey badgers are great swimmers and can climb trees',
     'Honey badgers are nocturnal',
     'Honey badgers are mostly solitary and only meet up to hunt or mate',
-    'Beekeepers will often keep their bees elevated to prevent honey badgers from getting to their hives'
-)
+    'Beekeepers will often keep their bees elevated to prevent honey badgers from getting to their hives.',
+    )
 
 HONEYBEE_FACTS = (
     'The honey bee has been around for millions of years.',
@@ -1836,7 +1838,7 @@ MINK_FACTS = (
     'Minks are territorial animals. Males live on a territory of 40 acres. Females occupy 2 times smaller of a territory.',
     'Minks are solitary creatures that gather only for mating. Mating season lasts from February to April.',
     'Female minks are able to postpone development of a fertilized egg if the weather conditions are bad. Because of that, pregnancy may last from 39 to 74 days. Females can have up to 10 babies, but they usually have 5.',
-    "Mink babies are wrinkled and blind at birth. They depend on the mother's milk during the first 6 weeks of their life. At the age of 8 weeks, young minks are ready for independent life. Sexual maturity will be reached between 12th and 16th month.",
+    'Mink babies are wrinkled and blind at birth. They depend on the mother's milk during the first 6 weeks of their life. At the age of 8 weeks, young minks are ready for independent life. Sexual maturity will be reached between 12th and 16th month.',
     'Minks can survive 3 to 4 years in the wild and 8 to 10 years in captivity.'
     )
 
@@ -2333,7 +2335,6 @@ RABBIT_FACTS = (
     'A male rabbit is called a buck, a female is a doe, and a baby is a kit/kitten.',
     'Rabbits are not the same species as hares, which, among other things, are larger and less social.',
     )
-	
 
 RACCOON_FACTS = (
     'The raccoon has the ability to rotate their hind feet a full 180 degrees which gives them the ability to climb down from trees head first.',
@@ -2537,7 +2538,7 @@ SKUNK_FACTS = (
     'Skunk can spray its oily and smelly substance up to 10 feet distance.',
     'Skunks\'s worst predators are coyotes, bobcats, and owls.',
     'Skunks live up to 3 years in the wild. They can survive up to 10 years in captivity.',
-    'Skunk can transmit rabies.'
+    'Skunk can transmit rabies.',
     'Skunks are typically around the size of house cats. They grow to 8 to 19 inches long and weigh around 7 ounces to 14 lbs.',
     'Skunks appeared 40 million years ago, evolving from common ancestors with weasels and polecats.',
     'Skunks are found in the United States, Canada, South America, and Mexico.',
@@ -3046,7 +3047,7 @@ ALL_FACTS = (
     EAGLE_FACTS,
     EARTHWORM_FACTS,
     ECHIDNA_FACTS,
-	ELAND_FACTS,
+    ELAND_FACTS,
     ELEPHANT_FACTS,
     ELEPHANT_SHREW_FACTS,
     ELK_FACTS,
