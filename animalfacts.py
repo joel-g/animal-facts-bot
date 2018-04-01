@@ -1838,7 +1838,7 @@ MINK_FACTS = (
     'Minks are territorial animals. Males live on a territory of 40 acres. Females occupy 2 times smaller of a territory.',
     'Minks are solitary creatures that gather only for mating. Mating season lasts from February to April.',
     'Female minks are able to postpone development of a fertilized egg if the weather conditions are bad. Because of that, pregnancy may last from 39 to 74 days. Females can have up to 10 babies, but they usually have 5.',
-    'Mink babies are wrinkled and blind at birth. They depend on the mother's milk during the first 6 weeks of their life. At the age of 8 weeks, young minks are ready for independent life. Sexual maturity will be reached between 12th and 16th month.',
+    "Mink babies are wrinkled and blind at birth. They depend on the mother's milk during the first 6 weeks of their life. At the age of 8 weeks, young minks are ready for independent life. Sexual maturity will be reached between 12th and 16th month.",
     'Minks can survive 3 to 4 years in the wild and 8 to 10 years in captivity.'
     )
 
