@@ -338,6 +338,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
     botengine('rattlesnake', '\srattlesnakes?\s', reddit, RATTLESNAKE_FACTS, comment)
     botengine('raven', '\sravens?\s', reddit, RAVEN_FACTS, comment)
+    botengine('reindeer', '\sreindeers?\s', reddit, REINDEER_FACTS, comment)
     botengine('salmon', '\ssalmons?\s', reddit, SALMON_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
@@ -781,10 +782,10 @@ CHEETAH_FACTS = (
     'Cheetahs only need to drink once every three to four days.',
     )
 CHICKEN_FACTS = (
-    'Chickens have beaks, similair to ducks'
-    'Chickens lay eggs that you can consume; they go good with gammon'
-    'Chickens are sometimes kept as pets, although not normally thought of as domestic animals'
-    'Chickens can actually fly, contrary to popular belief'
+    'Chickens have beaks, similair to ducks',
+    'Chickens lay eggs that you can consume; they go good with gammon',
+    'Chickens are sometimes kept as pets, although not normally thought of as domestic animals',
+    'Chickens can actually fly, contrary to popular belief',
 
 )
 
@@ -2405,6 +2406,12 @@ RAVEN_FACTS = (
     'The oldest known wild Common Raven was at least 22 years, 7 months old. It was banded and found in Nova Scotia.'
     )
 
+REINDEER_FACTS = (
+    'Reindeers, contrary to popular belief, can not actually fly',
+    'Reindeers do not actually live in the north pole, and can be found in Lapland.',
+    'Reindeers are actually bigger than most people think'
+)
+
 SALMON_FACTS = (
     'Salmon tend to be anadromous, which means they hatch in fresh water, migrate to the ocean, and return to fresh water to reproduce, however this is not always the case.',
     'The majority of salmon worldwide are farmed, a process known as aquaculture.',
@@ -3135,6 +3142,7 @@ ALL_FACTS = (
     RACCOON_FACTS,
     RATTLESNAKE_FACTS,
     RAVEN_FACTS,
+    REINDEER_FACTS,
     SALMON_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,
