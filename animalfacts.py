@@ -2409,7 +2409,9 @@ RAVEN_FACTS = (
 REINDEER_FACTS = (
     'Reindeers, contrary to popular belief, can not actually fly',
     'Reindeers do not actually live in the north pole, and can be found in Lapland.',
-    'Reindeers are actually bigger than most people think'
+    'Reindeers are actually bigger than most people think',
+    'These mighty beasts can fend off most animals using their huge antlers'
+
 )
 
 SALMON_FACTS = (
