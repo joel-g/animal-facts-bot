@@ -16,6 +16,7 @@ BLACKLIST = (
     'learnprogramming',
     'cscareerquestions',
     'python',
+    'India',
     'japan'
     )
 
