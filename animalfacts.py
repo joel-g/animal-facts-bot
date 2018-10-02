@@ -435,6 +435,9 @@ ALBATROSS_FACTS = (
     'Albatrosses perform dances to attract a mate, these are then repeated each time they meet.',
     'The body of an albatross is covered with white, black, brown, red or yellow feathers. They were used for decoration of hats in the past.',
     'Albatrosses can reach the speed of 40 miles per hour.',
+    'Albatrosses have no problem drinking sea water.The salt they take in is absorbed and moves through their blood stream into a pair of salt glands above their eyes and finally excreted via the nostrils',
+    'Albatrosses spend over 80% of their life at sea, visiting land only for breeding.',
+    'In all albatross species, both parents incubate the egg in stints. Incubation lasts around 70 to 80 days (longer for the larger albatrosses), the longest incubation period of any bird.',
     )
 
 ALLIGATOR_FACTS = (
