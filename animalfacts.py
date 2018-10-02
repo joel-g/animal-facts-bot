@@ -369,6 +369,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
     botengine('wolf', '\swol(f|ves)\s', reddit, WOLF_FACTS, comment)
     botengine('wolverine', '\swolverines?\s', reddit, WOLVERINE_FACTS, comment)
+    botengine('wombat', '\swombatss?\s', reddit, WOMBAT_FACTS, comment)
     botengine('yak', '\syaks?\s', reddit, YAK_FACTS, comment)
     botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS, comment)
 
@@ -2969,6 +2970,20 @@ WOLVERINE_FACTS = (
     'Wolverines sleep, hunt, and give birth on the ground. However, they can climb trees just like some bears. They can do this because of their long, sharp hook-like claws, which they also use to climb sheer cliffs, icefalls, and snowy peaks.',
     )
 
+WOMBAT_FACTS = (
+    'Wombats walk with a waddle.'
+    'They are champion diggers.'
+    'They have a backwards-facing pouch.'
+    'Wombats have slow metabolisms.'
+    'They have teeth like rodents.'
+    'Wombats have tough rumps. '
+    'They are not as helpless as they look.'
+    'They have cube-shaped poop. '
+    'There used to be giant wombats.'
+    'The worlds oldest wombat recently celebrated his 29th birthday.'
+	
+    )
+
 YAK_FACTS = (
     'The yak is a long-haired bovid found throughout the Himalaya region of southern Central Asia, the Tibetan Plateau, and as far north as Mongolia and Russia.',
     'Most yaks are domesticated animals, though there is also a small, vulnerable wild yak population.',
@@ -3158,6 +3173,7 @@ ALL_FACTS = (
     WHALE_FACTS,
     WOLF_FACTS,
     WOLVERINE_FACTS,
+    WOMBAT_FACTS,
     YAK_FACTS,
     ZEBRA_FACTS,
     )
