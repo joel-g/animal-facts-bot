@@ -230,6 +230,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('bear', '\sbears?\s', reddit, BEAR_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
     botengine('buffalo', '\sbuffalos?\s', reddit, BUFFALO_FACTS, comment)
+    botengine('butterfly', '\sbutterflies?\s', reddit, BUTTERFLY_FACTS, comment)
     botengine('bobcat','\sbobcats?\s',reddit, BOBCAT_FACTS,comment)
     botengine('bison', '\sbisons?\s', reddit, BISON_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
@@ -713,6 +714,19 @@ BUFFALO_FACTS = (
     'African buffalo are very aggressive and have a tendency to attack humans. They are very protective of each other and take care of sick and old members of the herd, shielding them from predators.',
     'Water buffalo have been domesticated for more than 5,000 years. They have buttressed humanity’s survival with their meat, horns, hides, milk, butterfat, and power, plowing and transporting people and crops.',
     'Wild water buffalo are at-risk and live only in a small number of protected areas stretching across India, Nepal, Bhutan, and a wildlife reserve in Thailand. Populations are likely to diminish as they are interbred with domesticated water buffalo.'
+    )
+
+BUTTERFLY_FACTS = (
+    'There are over 17,500 recorded butterfly species in the whole world. Out of this number, 750 can be found in America.'
+    'Butterflies belong to the Lepidoptera class of insects which are characterized by their large scaly wings.'
+    'The Cabbage White specie of butterfly is the most commonly found in the US. While they are called Cabbage White, they are characterized by their two black markings at the top of their wings.'
+    'Butterflies can vary greatly in size. The biggest butterfly specie has a 12 inch wingspan, while the smallest ever recorded only covers half an inch.'
+    'Monarch butterflies are the only insect in the whole world that travels over 2,500 miles on average every winter.'
+    'The North American Monarch is one of the species that has been the most severely impacted by recent climate changes, with their numbers seeing dips and spikes over the last few years.'
+    'A group of butterflies is known as a flutter.'
+    'Butterflies don’t taste with taste buds, but rather sensors located under their feet.'
+    'Contrarily to popular perception, the wings of butterflies are totally clear and the colors we see are the effect of light reflecting on the tiny scales covering them.'
+    'Many adult butterflies do not excrete waste at all? As a matter of fact, many adult butterflies use everything they eat as energy.'
     )
 
 CAMEL_FACTS = (
@@ -3021,6 +3035,7 @@ ALL_FACTS = (
     BEAR_FACTS,
     BEAVER_FACTS,
     BUFFALO_FACTS,
+    BUTTERFLY_FACTS,
     BISON_FACTS,
     CAMEL_FACTS,
     CAPYBARA_FACTS,
