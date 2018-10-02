@@ -264,6 +264,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('elk', '\selks?\s', reddit, ELK_FACTS, comment)
     botengine('emu', '\semus?\s', reddit, EMU_FACTS, comment)
     botengine('falcon', '\sfalcons?\s', reddit, FALCON_FACTS, comment)
+    botengine('ferret','\sferrets?\s', reddit, FERRET_FACTS, comment)
     botengine('fire salamander', '\sfire salamanders?\s', reddit, FIRESALAMANDER_FACTS, comment)
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
     botengine('fly', '\sflies?\s', reddit, FLY_FACTS, comment)
@@ -1201,6 +1202,16 @@ FALCON_FACTS = (
     'Falcons can process four types of light while humans can only process three. This means that the falcon has a very good night vision and can also see ultraviolet rays.',
     )
 
+FERRET_FACTS = (
+        'The Latin name for ferret, Mustela putorius furo, means smelly little thief', 
+        'Ferrets are carnivorous mammals in the weasel family, along with otters, badgers, weasels, milks and wolverines.',
+        'A group of ferrets is called a business.',
+        'Ferrets do not occur naturally in the wild and were originally domesticated for hunting',
+        'The largest feral ferret population is currently decimating wildlife in New Zealand',
+        'The Ferret has become the third most popular pet in the US behind cats and dogs',
+        'A female ferret is called a jill',
+        'A male ferret is called a  hob',
+        )
 FIRESALAMANDER_FACTS = (
     'Fire salamanders live in central European forests and are more common in hilly areas.',
     'Fire salamanders prefer deciduous forests, since they like to hide in fallen leaves and around mossy tree trunks.',
@@ -3053,6 +3064,7 @@ ALL_FACTS = (
     ELK_FACTS,
     EMU_FACTS,
     FALCON_FACTS,
+    FERRET_FACTS,
     FIRESALAMANDER_FACTS,
     FLAMINGO_FACTS,
     FLY_FACTS,
