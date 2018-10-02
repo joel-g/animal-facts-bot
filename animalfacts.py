@@ -268,6 +268,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
     botengine('fly', '\sflies?\s', reddit, FLY_FACTS, comment)
     botengine('fox', '\sfox(es)?\s', reddit, FOX_FACTS, comment)
+    botengine('fossa', '\sfossas?\s', reddit, FOSSA_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
     botengine('gazelle', '\sgazelles?\s', reddit, GAZELLE_FACTS, comment)
     botengine('gecko', '\sgeckos?\s', reddit, GECKO_FACTS, comment)
@@ -1267,6 +1268,40 @@ FOX_FACTS = (
     'Foxes have excellent hearing. They can hear low-frequency sounds and rodents digging underground',
     'The fox does not chew its food. Instead it uses its carnassial or shearing teeth to cut the meat into manageable chunks',
     'There are 21 species of fox',
+    )
+
+FOSSA_FACTS = (
+    'The fossa, a close relative of the mongoose, is Madagascar\'s largest predator, and the only animal to regularly and successfully hunt the islands largest lemur species.',
+    'Fossas only exist on the island of Madagascar.',
+    'The fossa looks very much like a small, brown cougar, but it is not a cat.',
+    'Fossas are small animals at about 15 inches at the shoulder.',
+    'They are rarely more than 30 inches long, not including the equally long tail, and they average somewhere between 15 and 30 pounds, with males a bit larger than females.',
+    'Fossas live in well-vegetated forest throughout the island, and range over large territories, sometimes traveling many miles in a single day.',
+    'They scent-mark their territories by spraying musty secretions from their anal glands.',
+    'The fossa has cat-like abilities of speed, power, and incredible stealth.',
+    'They are as comfortable in the trees as they are on the ground.',
+    'They use their retractable claws to dig in and climb straight up tree trunks.',
+    'When it\'s time to come down, they have double-jointed ankles like a squirrel, allowing them to descend head first with complete control.',
+    'On the ground they walk just like a cat, but tend to hold their tail straight out behind them.',
+    'They can also leap from branch to branch, almost like a monkey, using their tail as a rudder in the air.',
+    'The fossa\'s tail is thick, somewhat rigid, and as long as it\'s body.',
+    'The limbs are stout, with wide, fleshy paws and strong, arched toes.',
+    'Fossas appear to be a fusion of mountain lion and mongoose, slinky and low to the ground like a mongoose, powerfully muscled and agile like a cougar.',
+    'The head is a fantastic, expressive wedge-shape, with a big, wet dog-like nose, round, wide-set ears like a bear, a feline face, and unusual, somewhat spooky eyes.',
+    'Although not nocturnal, the fossa will hunt day or night, and can see very well in the dark.',
+    'In the light of day, the pupils become tiny, vertical slits, nearly disappearing.',
+    'It is a creature that has been feared in its native land for centuries because of its secretive existence and haunting appearance.',
+    'The fossa was believed to be a demon on earth, that would steal infants from their cradles or lull victims into a trance then slowly disembowel them.',
+    'The fossa will emit a musky scent when agitated, and it was once thought that the scent alone could kill birds and small animals.',
+    'Fossas live in forested areas where they scent mark large territories.',
+    'They don\'t live in dens but rather sleep on limbs, sometimes sunning themselves.',
+    'They are solitary animals that are virtually silent.',
+    'Fossas are cathemeral, meaning they may be active day or night, alternating swift activity with deep naps.',
+    'They are mysterious and secretive and only limited knowledge exits of their lifestyle and habits in the wild.',
+    'Although, as Madagascar\'s largest predator, the fossa has no natural enemies, humans may soon cause their extinction.',
+    'The fossa has recently been moved from a vulnerable state to an endangered species.',
+    'Fossas have a slow reproductive rate which has contributed to their plight.',
+    'Young fossas mature very slowly and remain with their mother for over a year, so females can only breed every other year.',
     )
 
 FROG_FACTS = (
@@ -3057,6 +3092,7 @@ ALL_FACTS = (
     FLAMINGO_FACTS,
     FLY_FACTS,
     FOX_FACTS,
+    FOSSA_FACTS,
     FROG_FACTS,
     GAZELLE_FACTS,
     GECKO_FACTS,
