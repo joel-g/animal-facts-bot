@@ -370,6 +370,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
     botengine('wolf', '\swol(f|ves)\s', reddit, WOLF_FACTS, comment)
     botengine('wolverine', '\swolverines?\s', reddit, WOLVERINE_FACTS, comment)
+    botengine('wombat', '\swombats?\s', reddit, WOMBAT_FACTS, comment)
     botengine('yak', '\syaks?\s', reddit, YAK_FACTS, comment)
     botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS, comment)
 
@@ -2981,6 +2982,18 @@ WOLVERINE_FACTS = (
     'Wolverines sleep, hunt, and give birth on the ground. However, they can climb trees just like some bears. They can do this because of their long, sharp hook-like claws, which they also use to climb sheer cliffs, icefalls, and snowy peaks.',
     )
 
+WOMBAT_FACTS = (
+    'Wombats typically live up to 15 years in the wild, but can live past 20 and even 30 years in captivity.',
+    'Wombats have an extraordinarily slow metabolism, taking around eight to 14 days to complete digestion, which aids their survival in arid conditions.',
+    'They generally move slowly. When threatened, however, they can reach up to 40 km/h (25 mph) and maintain that speed for up to 90 seconds.',
+    'Fatso the Fat-Arsed Wombat was the tongue-in-cheek unofficial mascot of the 2000 Sydney Olympics.',
+    'Wombats have featured in Australian postage stamps and coins.',
+    'WomSAT, a citizen science project, was established in 2016 to record sightings of wombats across the country.',
+    'The spelling went through many variants over the years, including wambat, whombat, womat, wombach, and womback.',
+    'Wombats are herbivores, which means they only eat vegetation.',
+    'A wombats feces are shaped like cubes.',
+    )
+
 YAK_FACTS = (
     'The yak is a long-haired bovid found throughout the Himalaya region of southern Central Asia, the Tibetan Plateau, and as far north as Mongolia and Russia.',
     'Most yaks are domesticated animals, though there is also a small, vulnerable wild yak population.',
@@ -3171,6 +3184,7 @@ ALL_FACTS = (
     WHALE_FACTS,
     WOLF_FACTS,
     WOLVERINE_FACTS,
+    WOMBAT_FACTS,
     YAK_FACTS,
     ZEBRA_FACTS,
     )
