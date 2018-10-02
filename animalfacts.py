@@ -483,7 +483,8 @@ ANACONDA_FACTS = (
     'They’re Members of the Boa Family.',
     'Caimans are alligator-like predators that frequent South American waterways. Anacondas are known to hunt these reptilian neighbors, but often sustain significant injuries while doing so.',
     'While getting around, snakes (including Anaconda) have several options, of which “sidewinding” is perhaps the most athletic. Unlike normal slithering, this exhausting technique involves a given reptile using large, J-shaped coils to hastily pull itself along. In general, smaller snakes are more likely to sidewind, although—as the above footage shows—their big cousins will sometimes follow suit.',
-    )
+    'Nicki Minaj sang a song named "Anaconda".',
+)
 
 ANGLERFISH_FACTS = (
     'The scientific name for the Anglerfish is Lophiiformes.',
