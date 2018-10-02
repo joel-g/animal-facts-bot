@@ -225,6 +225,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('antelope', '\santelopes?\s', reddit, ANTELOPE_FACTS, comment)
     botengine('armadillo', '\sarmadillos?\s', reddit, ARMADILLO_FACTS, comment)
     botengine('atlantic puffin', '\spuffins?\s', reddit, ATLANTIC_PUFFIN_FACTS, comment)
+    botengine('aye-aye', '\saye-aye?\s', reddit, AYE_AYE_FACTS, comment)
     botengine('honeybadger', '\shoney badgers?\s', reddit, HONEYBADGER_FACTS, comment) # Needs to be here out of order so that it gets picked up before regular badger
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('bear', '\sbears?\s', reddit, BEAR_FACTS, comment)
@@ -606,6 +607,15 @@ ATLANTIC_PUFFIN_FACTS = (
     'The puffins’ genus name "Fratercula" comes from the Latin for “little brother”. The name refers to the sea bird’s black and white plumage, which was said to resemble the robes that monks once wore.',
     'Sixty percent of the world’s puffins breed in Iceland.',
     'Puffins are one of the few birds that have the ability to hold several small fish in their bills at a time. Their raspy tongues and spiny palates allow them to firmly grasp 10 to 12 fish during one foraging trip. They thus can bring more food back to their young compared with other seabirds that tend to swallow and regurgitate meals for their chicks.',
+    )
+
+AYE_AYE_FACTS = (
+        'The Aye Aye is a species of Lemur that is found inhabiting the rainforests of Madagascar.',
+        'The Aye Aye is not only the largest nocturnal primate in the world but is also one of the most unique and is in fact so strange in appearance, that it was thought to be a large species of Squirrel when it was first discovered.',
+        'The Aye Aye is a primate that is most closely related to Lemurs but is one of the most unique animals on the planet due the fact that it possesses a number of very distinct adaptations.',
+        'Their body and long tail are covered in coarse, shaggy black or dark brown fur with a layer of white guard hairs that helps them to blend into the surrounding forest in the dark.',
+        'The Aye Aye has very large eyes on its pointed face, a pink nose and rodent-like teeth with incisors that grow continuously to ensure that they never become blunt.',
+        'Their large rounded ears are incredibly sensitive giving the Aye Aye excellent hearing when listening for grubs beneath the tree bark and are able to be rotated independently.',
     )
 
 AXOLOTL_FACTS = (
