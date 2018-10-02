@@ -361,6 +361,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('trout', '\strout?\s', reddit, TROUT_FACTS, comment)
     botengine('toad','\stoads?\s', reddit, TOAD_FACTS, comment)
     botengine('toucan', '\stoucans?\s', reddit, TOUCAN_FACTS, comment)
+    botengine('tree kangaroo', '\stree kangaroos?\s', reddit, TREE_KANGAROO_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
     botengine('vampire bat', '\svampire ?bats\s', reddit, VAMPIRE_BAT_FACTS, comment)
     botengine('wallaby', '\swallab(y|ies)\s', reddit, WALLABY_FACTS, comment)
@@ -2805,6 +2806,19 @@ TOUCAN_FACTS = (
     'The toco toucan is the largest species of toucan.',
     )
 
+TREE_KANGAROO_FACTS = (
+    'A tree kangaroo\'s pregnancy is very short (about 44 days). Joeys are born underdeveloped, and crawl into their mother\'s pouch, attaching themselves to a teat to continue development.',
+    'Tree kangaroos are solitary and territorial animals. Males occupy large territories that usually overlap with the territories of several females.',
+    'The natural enemies of tree kangaroos are pythons and wild dogs.',
+    'Tree kangaroos mostly eat leaves and fruit gathered from the trees they live in. Tree-kangaroos will also eat grains, flour, various nuts, sap and tree bark',
+    'Adult tree kangaroos can reach 37 to 70 inches in length (including their 15-34 inch long tails) and between 15 to 32 pounds.',
+    'Tree kangaroos lick the fur on their forearms to lower their body temperature during the warm periods of year.',
+    'A tree kangaroo looks like mix between a kangaroo and a lemur. They have short, muscular forelimbs, and wide feet with rubbery soles and large, curved claws. Its tail is long and narrow.',
+    'Tree kangaroos spend their lives in the trees (they are arboreal animals). They move easily in the treetops thanks to their long tails providing balance.',
+    'Tree kangaroos have been recorded leaping 30 feet between trees, and have been observed landing safely on solid ground from heights of over 60 feet.',
+    'While tree kangaroos are fast and agile in the trees, they are slow and clumsy on the ground, moving at a human\'s walking pace with an awkward hop.',
+    )
+
 TROUT_FACTS = (
     'Trout that live in different environments can have dramatically different colorations and patterns.',
     'Trout have fins entirely without spines, and all of them have a small adipose fin along the back, near the tail.',
@@ -3150,6 +3164,7 @@ ALL_FACTS = (
     TROUT_FACTS,
     TOAD_FACTS,
     TOUCAN_FACTS,
+    TREE_KANGAROO_FACTS,
     TURTLE_FACTS,
     VAMPIRE_BAT_FACTS,
     WALLABY_FACTS,
