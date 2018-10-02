@@ -247,6 +247,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('crane', '\scranes?\s', reddit, CRANE_FACTS, comment)
     botengine('crayfish', '\scrayfish?\s', reddit, CRAYFISH_FACTS, comment)
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
+    botengine('crow', '\scrow?\s', reddit, CROW_FACTS, comment)
     botengine('deer', '\sdeer?\s', reddit, DEER_FACTS, comment)
     botengine('cuttlefish', '\scuttle ?fish(es)?\s', reddit, CUTTLEFISH_FACTS, comment)
     botengine('dingo', '\sdingos?\s', reddit, DINGO_FACTS, comment)
@@ -942,6 +943,22 @@ CROCODILE_FACTS = (
     'The smallest crocodile is the dwarf crocodile. It grows to about 5.6 feet (1.7 meters) in length and weighs 13 to 15 pounds (6 to 7 kilograms). The largest crocodile is the saltwater crocodile. The largest one ever found was 20.24 feet (6.17 m) long. They can weigh up to 2,000 pounds (907 kg).',
     'Crocodiles lay 10 to 60 eggs at a time. The hatchlings stay in their eggs for 55 to 110 days. They are 7 to 10 inches (17.8 to 25.4 centimeters) long when they are born and don\'t mature until they are 4 to 15 years.',
     )
+
+CROW_FACTS = (
+    'Crows can be found in every continent of this planet barring Antarctica. No matter where you go, you will find this bird.',
+    'Of all bird species that fly in our skies and live on this planet, the crow has the largest brain-to-body ratio.',
+    'Talking of the brain, their forebrain is very developed. This means that they are intelligent.',
+    'While staying on the subject of brain, it is worth saying that the anatomy of a crow’s brain is very similar to that of a human brain.',
+    'The scientific name of crow is Corvus brachyrhynchos. It belongs to the family Covidae and to the genus Corvus.',
+    'Mexicos Dwarf Jay is the smallest of all crows found in this world. Dwarf Jay weighs only 40 grams and grows no more than 21.5 centimeters in length.',
+    'Crows are pretty old. They first appeared during Miocene Period some 17 million years ago in Oceana and Australia.',
+    'Crows are omnivores. They eat just about anything that they think is edible (very much like the Chinese).',
+    'Crows maintain only one mate for their entire life. They don’t reach sexual maturity until they reach the age of 2 but some often wait longer to get their soulmate.',
+    'They display what is known as cooperative breeding. What’s that? When a female crow is incubating, other crows (whether soulmate or not) will watch out and protect the incubating female.',
+    'Both parents take care of the babies and help them with feeding. That may not be weird but this is weird – some of the offspring will actually stay back to look after the next batch of babies.',
+    'Crows are amazingly social and smart. There can be several Murders. How will a crow know which Murder it belongs to? That’s possible with the help of specialized dialect every Murder develops.',
+    'Crows are very much capable of remembering faces.',
+)
 
 CUTTLEFISH_FACTS = (
     'Cuttlefish are cephalopods, not fish. Cephalopods include octopus, squid, and nautilus.',
@@ -2856,7 +2873,7 @@ VAMPIRE_BAT_FACTS = (
     'Vampire bats can live for up to 12 years in the wild, although captive individuals have been known to reach the age of 19.',
     'Young vampire bats feed on milk from the mother, not on blood. They cling tightly to their mothers, even in flight, until they are weaned at about 3 – 4 months.',
     'Vampire bats are not seasonal breeders and can mate all year round. They are pregnant for 3 – 4 months, which is a long gestation period compared to other small bats. The female gives birth to a single baby.',
-    'The saliva of a vampire bat can be used to prevent blood from clotting.',	
+    'The saliva of a vampire bat can be used to prevent blood from clotting.',
     )
 
 WALLABY_FACTS = (
@@ -3037,6 +3054,7 @@ ALL_FACTS = (
     CRANE_FACTS,
     CRAYFISH_FACTS,
     CROCODILE_FACTS,
+    CROW_FACTS,
     CUTTLEFISH_FACTS,
     DEER_FACTS,
     DEGU_FACTS,
