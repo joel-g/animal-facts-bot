@@ -1030,7 +1030,8 @@ DOLPHIN_FACTS = (
     'Dolphins communicate with each other by clicking, whistling and other sounds.',
     'Some dolphin species face the threat of extinction, often directly as a result of human behavior. The Yangtze River Dolphin is an example of a dolphin species which may have recently become extinct.',
     'Some fishing methods, such as the use of nets, kill a large number of dolphins every year.',
-    )
+    'Dolphins can be also found in color Pink.',
+)
 
 DRAGON_FACTS = (
     'The word “dragon” comes from the Greek word “draconta”, which means “to watch.” The Greeks saw dragons as beasts that guarded valuable items. In fact, many cultures depict dragons as hoarding treasure.',
