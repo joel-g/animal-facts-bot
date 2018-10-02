@@ -319,6 +319,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('ostrich', '\sostrich(es)?\s', reddit, OSTRICH_FACTS, comment)
     botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
     botengine('owl', '\sowls?\s', reddit, OWL_FACTS, comment)
+    botengine('ox', '\soxs?\s', reddit, OX_FACTS, comment)
     botengine('parrot', '\sparrots?\s', reddit, PARROT_FACTS, comment)
     botengine('panda', '\spandas?\s', reddit, PANDA_FACTS, comment)
     botengine('pangolin', '\spangolins?\s', reddit, PANGOLIN_FACTS, comment)
@@ -2110,6 +2111,21 @@ OWL_FACTS = (
     'The color of owl’s feathers helps them blend into their environment (camouflage).',
     'Barn owls can be recognized by their heart shaped face.',
     )
+OX_FACTS = (
+    'An Ox (plural oxen), also known as a bullock in Australia and India',
+    'Ox is a bovine trained as a draft animal or riding animal',
+    'Oxen are commonly castrated adult male cattle',
+    'castration makes the animals more docile.',
+    'Oxen are used for plowing, for transport (pulling carts, hauling wagons and riding), for threshing grain by trampling, and for powering machines that grind grain or supply irrigation among other purposes.',
+    'Oxen can pull heavier loads, and pull for a longer period of time than horses depending on weather conditions.',
+    'For agricultural purposes, oxen are more suitable for heavy tasks such as breaking sod or plowing in wet, heavy, or clay-filled soil.',
+    'Unlike horses, oxen are not easily able to balance on three legs while a farrier shoes the fourth.',
+    'Oxen are members of the Bovidae family.',
+    'Working oxen are taught to respond to the signals of the teamster or ox-driver.',
+    'A tradition in south eastern England was to use oxen (often Sussex cattle) as dual-purpose animals: for draft and beef.',
+    'Females can also be trained as oxen, but they are smaller; they are often more valued for producing calves and milk.',
+    'Oxens are not only controlled by being steered using reins; working animal-voice commands (giddyup, whoa, gee, haw, and back) are also used to signal the starting, stopping, and direction of movement.'
+    )
 
 PANDA_FACTS = (
     'The giant panda is native to China. It has a black and white coat that features large black patches around its eyes.',
@@ -3109,6 +3125,7 @@ ALL_FACTS = (
     OSTRICH_FACTS,
     OTTER_FACTS,
     OWL_FACTS,
+    OX_FACTS,
     PANDA_FACTS,
     PANGOLIN_FACTS,
     PANTHER_FACTS,
