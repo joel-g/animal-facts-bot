@@ -2011,6 +2011,7 @@ OPOSSUM_FACTS = (
     'Opossums typically live between two and four years.',
     'The opossum is typically known as a \'possum\' in the southern United States.',
     'The gestation period of an opossum is short, typically between 12 and 14 days, largely due to the species being marsupial, and having some functions of gestation occur once out of the womb.',
+    'Opossums have 13 nipples, arranged in a circle of 12 with one in the middle.',
     )
 
 ORANGUTAN_FACTS = (
