@@ -232,6 +232,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('buffalo', '\sbuffalos?\s', reddit, BUFFALO_FACTS, comment)
     botengine('bobcat','\sbobcats?\s',reddit, BOBCAT_FACTS,comment)
     botengine('bison', '\sbisons?\s', reddit, BISON_FACTS, comment)
+    botengine('blue sea slug', '\s(blue (sea slug|angel|glaucus|dragon|ocean slug))|(sea swallow)?\s', reddit, BLUE_SEA_SLUG_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
     botengine('capybara', '\scapybaras?\s', reddit, CAPYBARA_FACTS, comment)
     botengine('chameleon', '\schameleons?\s', reddit, CHAMELEON_FACTS, comment)
@@ -688,6 +689,13 @@ BISON_FACTS = (
     'Yellowstone National Park is the only place in the U.S. where bison have continuously lived since prehistoric times.',
     'When bison are born, their fur is orange-red. After a few months, their fur steadily grows more brown.'
     )
+
+BLUE_SEA_SLUG = (
+    'Blue sea slugs float upside down on the surface of water using surface tension to stay afloat.'
+    'Blue sea slugs feed on the venomous Portuguese man o\' war.'
+    'Blue sea slugs are typically blue or blue-white on their undersides, which face the sky when they float on their backs, and are silver-gray on their tops, which typically face down into the water; this countershading provides protection from predators.'
+    'Blue sea slugs can store the stinging nematocysts from devoured prey within its own tissues, making them a dangerous threat to predators or humans who attempt to handle them.'
+)
 
 BOBCAT_FACTS = (
     'An adult bobcat\'s tail averages just 6 to 7 inches in length.',
@@ -3022,6 +3030,7 @@ ALL_FACTS = (
     BEAVER_FACTS,
     BUFFALO_FACTS,
     BISON_FACTS,
+    BLUE_SEA_SLUG_FACTS,
     CAMEL_FACTS,
     CAPYBARA_FACTS,
     CHAMELEON_FACTS,
