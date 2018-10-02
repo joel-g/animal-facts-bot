@@ -236,6 +236,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('capybara', '\scapybaras?\s', reddit, CAPYBARA_FACTS, comment)
     botengine('chameleon', '\schameleons?\s', reddit, CHAMELEON_FACTS, comment)
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
+    botengine('chicken' , '\schickens?\s', reddit, CHICKEN_FACTS, comment)
     botengine('chimpanzee', '\schimpanzees?\s', reddit, CHIMPANZEE_FACTS, comment)
     botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
     botengine('chinchilla', '\schinchillas?\s', reddit, CHINCHILLA_FACTS, comment)
@@ -337,6 +338,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
     botengine('rattlesnake', '\srattlesnakes?\s', reddit, RATTLESNAKE_FACTS, comment)
     botengine('raven', '\sravens?\s', reddit, RAVEN_FACTS, comment)
+    botengine('reindeer', '\sreindeers?\s', reddit, REINDEER_FACTS, comment)
     botengine('salmon', '\ssalmons?\s', reddit, SALMON_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
@@ -779,6 +781,13 @@ CHEETAH_FACTS = (
     'With their light body weight and blunt claws, cheetahs are not well designed to protect themselves or their prey. When a larger or more aggressive animal approaches a cheetah in the wild, it will give up its catch to avoid a fight.',
     'Cheetahs only need to drink once every three to four days.',
     )
+CHICKEN_FACTS = (
+    'Chickens have beaks, similair to ducks',
+    'Chickens lay eggs that you can consume; they go good with gammon',
+    'Chickens are sometimes kept as pets, although not normally thought of as domestic animals',
+    'Chickens can actually fly, contrary to popular belief',
+
+)
 
 CHIMPANZEE_FACTS = (
     'Chimpanzees are omnivores which mean that they eat both plants and animals.',
@@ -2397,6 +2406,12 @@ RAVEN_FACTS = (
     'The oldest known wild Common Raven was at least 22 years, 7 months old. It was banded and found in Nova Scotia.'
     )
 
+REINDEER_FACTS = (
+    'Reindeers, contrary to popular belief, can not actually fly',
+    'Reindeers do not actually live in the north pole, and can be found in Lapland.',
+    'Reindeers are actually bigger than most people think'
+)
+
 SALMON_FACTS = (
     'Salmon tend to be anadromous, which means they hatch in fresh water, migrate to the ocean, and return to fresh water to reproduce, however this is not always the case.',
     'The majority of salmon worldwide are farmed, a process known as aquaculture.',
@@ -2856,7 +2871,7 @@ VAMPIRE_BAT_FACTS = (
     'Vampire bats can live for up to 12 years in the wild, although captive individuals have been known to reach the age of 19.',
     'Young vampire bats feed on milk from the mother, not on blood. They cling tightly to their mothers, even in flight, until they are weaned at about 3 – 4 months.',
     'Vampire bats are not seasonal breeders and can mate all year round. They are pregnant for 3 – 4 months, which is a long gestation period compared to other small bats. The female gives birth to a single baby.',
-    'The saliva of a vampire bat can be used to prevent blood from clotting.',	
+    'The saliva of a vampire bat can be used to prevent blood from clotting.',
     )
 
 WALLABY_FACTS = (
@@ -3026,6 +3041,7 @@ ALL_FACTS = (
     CAPYBARA_FACTS,
     CHAMELEON_FACTS,
     CHEETAH_FACTS,
+    CHICKEN_FACTS,
     CHIMPANZEE_FACTS,
     CHIPMUNK_FACTS,
     CHINCHILLA_FACTS,
@@ -3126,6 +3142,7 @@ ALL_FACTS = (
     RACCOON_FACTS,
     RATTLESNAKE_FACTS,
     RAVEN_FACTS,
+    REINDEER_FACTS,
     SALMON_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,

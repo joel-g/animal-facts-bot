@@ -53,6 +53,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Capybara
 * Chameleon
 * Cheetah
+* Chicken
 * Chimpanzee
 * Chinchilla
 * Chipmunk
@@ -154,6 +155,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Raccoon
 * Rattlesnake
 * Raven
+* Reindeer
 * Salmon
 * Scorpion
 * Seagull
