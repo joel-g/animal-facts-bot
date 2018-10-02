@@ -278,6 +278,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('gopher', '\sgophers?\s', reddit, GOPHER_FACTS, comment)
     botengine('gorilla', '\sgorillas?\s', reddit, GORILLA_FACTS, comment)
     botengine('hamster', '\shamsters?\s', reddit, HAMSTER_FACTS, comment)
+    botengine('hawk', '\shawks?\s', reddit, HAWK_FACTS, comment)
     botengine('hedgehog', '\shedgehogs?\s', reddit, HEDGEHOG_FACTS, comment)
     botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS, comment)
     botengine('honeybee', '\shoney bees?\s', reddit, HONEYBEE_FACTS, comment)
@@ -1432,6 +1433,22 @@ HAMSTER_FACTS = (
     'Syrian hamsters live 2 - 3 years in captivity, and less in the wild. Other popular pet types such as Russian dwarf hamsters live about 2- 4 years in captivity.',
     'Hamsters range in size from the largest breed, the European hamster at 13.4 inches (34 cm) long, to the smallest, the dwarf hamster at 2 - 4 inches (5.5 - 10.5 cm) long.',
     )
+
+HAWK_FACTS = (
+    'Hawks can vary in size depending on the species.',
+    'Hawks have excellent eyesight. They can see 8 times better than humans and can locate prey from 100 feet away.',
+    'Hawks are diurnal animals (active during the day.',
+    'Hawks build nests on trees or build nests on the ground in marshes.',
+    'Average lifespan of a hawk is 10 to 20 years in the wild.',
+    'Hawks are characterized by sharp talons, a curved bill, and muscular legs.',
+    'The largest species of hawks, the northern goshawk can weigh up to 2.2 kilograms (4.85 pounds)',
+    'Hawks eat small mammals such as mice, squirrels, and rabbits, as well as insects, smaller birds, turtles, and reptiles',
+    'After eating, a hawk will regurgitate a pellet that contains feathers and small bones',
+    'Hawks tend to mate during the spring and spend the majority of their time alone',
+    'Female hawks lay 1 to 5 eggs per year',
+    'Both the male and female hawks will create their nest, improve it, and take care for their eggs',
+    'Female hawks are generally larger than male hawks'
+)
 
 HEDGEHOG_FACTS = (
     'There are 17 species of hedgehog. They are found in parts of Europe, Asia, and Africa and were introduced in New Zealand by settlers.',
@@ -3067,6 +3084,7 @@ ALL_FACTS = (
     GOPHER_FACTS,
     GORILLA_FACTS,
     HAMSTER_FACTS,
+    HAWK_FACTS,
     HEDGEHOG_FACTS,
     HIPPO_FACTS,
     HONEYBADGER_FACTS,
