@@ -371,6 +371,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('wolverine', '\swolverines?\s', reddit, WOLVERINE_FACTS, comment)
     botengine('yak', '\syaks?\s', reddit, YAK_FACTS, comment)
     botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS, comment)
+    botengine('zebrafish', '\szebrafishs?\s', reddit, ZEBRAFISH_FACTS, comment)
 
 
 def animalfactsbot(reddit):
@@ -3002,6 +3003,19 @@ ZEBRA_FACTS = (
     'Zebras are one of the few mammals that scientists believe can see in color.',
     'Like horses, zebras sleep standing up, and usually only when in the safety of a group.',
     )
+ZEBRAFISH_FACTS = (
+    'The scientific name of Zebrafish is Danio rerio and it belongs to the minnow family, Cyprinidae. The fish got its common name from the presence of five uniform and pigmented horizontal stripes on the side of its body, that resemble the stripes of a zebra.',
+    'Zebrafish are vertebrates, which means that they have a backbone like humans.',
+    'The Zebrafish is perhaps one of the most frequently used model organisms for genetic and developmental studies. This tropical freshwater fish can be found in the rivers of northern India, northern Pakistan, Bhutan, and Nepal.',
+    'A Zebrafish usually grows to a length of 6.4 cm. But in captivity, it rarely exceeds a length of 4 cm.',
+    'Zebrafish embryos are nearly transparent which allows researchers to easily examine the development of internal structures.',
+    'The male Zebrafish is usually slender with a torpedo-shaped body. It can be distinguished from the female by the presence of golden stripes in between the blue stripes. The female zebrafish, on the other hand, has a larger belly and silver stripes between its blue stripes',
+    'Zebrafish are omnivorous and can eat anything smaller than them. They mainly feed on insects and insect larvae, phytoplankton, and zooplankton. But, they can also feast on worms and small crustaceans.',
+    'Zebrafish can regenerate their fins, heart muscles, and retinal neurons.',
+    'Zebrafish is one of the few species of fish that has been sent to space.',
+    'Zebrafish have a similar genetic structure to humans. They share 70 per cent of genes with us.',
+    'There are several varieties of Zebrafish, such as long-finned, short-finned, albino, pink, striped, and speckled. Zebrafish have also been modified to create several genetic variants of the same species, mainly for scientific research.',
+    )
 
 ALL_FACTS = (
     AARDVARK_FACTS,
@@ -3160,6 +3174,7 @@ ALL_FACTS = (
     WOLVERINE_FACTS,
     YAK_FACTS,
     ZEBRA_FACTS,
+    ZEBRAFISH_FACTS,
     )
 
 
