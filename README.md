@@ -20,6 +20,7 @@ Please:
 * Only add TRUE facts. Please no trolling with 'alternative facts'.
 * Don't add 'seal', 'bat' or 'duck' facts unless you've figured out how to not reply to homonyms.
 * Don't add 'cat' or 'dog' because they are just too common on reddit.
+* Do use American spelling of words like 'color' or 'meter'.
 
 If you have a question the quickest way to reach is me on twitter @joelatwar
 
