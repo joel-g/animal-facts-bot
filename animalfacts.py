@@ -886,7 +886,8 @@ COW_FACTS = (
     'A dairy cow can produce 125 lbs. of saliva a day',
     'If you took all the cows in the world and rounded them up into a sphere, that sphere would be nearly 1,200 meters wide!',
     'Cows are very social animals, and many of them have best friends! When separated, they often search for friends and family even years later.'
-    )
+    'Cows are considered sacred in India for Hindus.',
+)
 
 CRAB_FACTS = (
     'Crabs are decapods from the crustacean family.',
