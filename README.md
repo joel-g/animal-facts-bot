@@ -174,6 +174,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Tarantula
 * Tardigrade
 * Tasmanian devil
+* Tarsier
 * Tiger
 * Toad
 * Toucan
