@@ -79,6 +79,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Elephant shrew
 * Elk
 * Emu
+* Eurasian tree sparrow ( Maya )
 * Falcon
 * Flamingo
 * Fox
