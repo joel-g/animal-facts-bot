@@ -340,6 +340,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('salmon', '\ssalmons?\s', reddit, SALMON_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
+    botengine('seahorse', '\sseahorse?\s', reddit, SEAHORSE_FACTS, comment)
     botengine('sea cucumber', '\ssea ?cucumbers?\s', reddit, SEA_CUCUMBER_FACTS, comment)
     botengine('sea urchin', '\s(sea ?)?urchins?\s', reddit, SEA_URCHIN_FACTS, comment)
     botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
@@ -2453,6 +2454,25 @@ SEAGULL_FACTS = (
     'Lifespan of seagulls depends on the species. Most seagulls can survive from 10 to 15 years in the wild.',
     )
 
+SEAHORSE_FACTS = (
+    'There are about 40 known species of seahorse.',
+    'Seahorses prefer to swim in pairs with their tails linked together.',
+    'They swim upright and avoid predators by mimicking the colour of underwater plants.',
+    'Except for crabs, few marine predators eat the seahorse – it is too bony and indigestible.',
+    'Seahorses propel themselves by using a small fin on their back that flutters up to 35 times per second. Even smaller pectoral fins located near the back of the head are used for steering.',
+    'Because of their body shape, seahorses are rather inept swimmers and can easily die of exhaustion when caught in storm-roiled seas.',
+    'They anchor themselves with their prehensile tails to sea grasses and corals, using their elongated snouts to suck in plankton and small crustaceans that drift by. The seahorse can suck up food from as far as 3cm away.',
+    'The seahorse feeds constantly on plankton and tiny fish. It moves each of its eyes independently, so it can follow the activity of passing sea life without giving its presence away.',
+    'Seahorses have no teeth and no stomach. Food passes through their digestive systems so quickly, they must eat almost constantly to stay alive.',
+    'They can consume 3,000 or more brine shrimp per day.',
+    'Seahorses are monogamous and mate for life.',
+    'Rarer still, they are among the only animal species on Earth in which the male bears the unborn young.',
+    'Male pregnancy frees to female to make more eggs straight away and so reproduce quicker.',
+    'Seahorses engage in an eight hour courtship dance which includes spinning around, swimming side by side and changing colours.',
+    'When mating, the female seahorse releases up to 50 eggs into a pouch on the male’s abdomen.',
+    'The male seahorse carries the eggs in his pouch until they hatch, then releases fully formed, miniature seahorses into the water.  As little as 5 or as many as 1,500 young can be born.'
+)
+
 SEA_CUCUMBER_FACTS = (
     'Sea cucumbers can reproduce both sexually and asexually.',
     'Sea cucumbers breathe through a branched network of hollow tubules circulating through the anus.',
@@ -3129,6 +3149,7 @@ ALL_FACTS = (
     SALMON_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,
+    SEAHORSE_FACTS,
     SEA_CUCUMBER_FACTS,
     SEA_URCHIN_FACTS,
     SHARK_FACTS,
