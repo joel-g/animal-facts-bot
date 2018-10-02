@@ -154,6 +154,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Raccoon
 * Rattlesnake
 * Raven
+* Rhino
 * Salmon
 * Scorpion
 * Seagull

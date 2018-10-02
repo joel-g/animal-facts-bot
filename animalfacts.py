@@ -337,6 +337,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
     botengine('rattlesnake', '\srattlesnakes?\s', reddit, RATTLESNAKE_FACTS, comment)
     botengine('raven', '\sravens?\s', reddit, RAVEN_FACTS, comment)
+    botengine('rhino', '\srhino?\s', reddit, RHINO_FACTS, comment)
     botengine('salmon', '\ssalmons?\s', reddit, SALMON_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
@@ -2397,6 +2398,18 @@ RAVEN_FACTS = (
     'The oldest known wild Common Raven was at least 22 years, 7 months old. It was banded and found in Nova Scotia.'
     )
 
+RHINO_FACTS = (
+    'Our planet is home to five species of rhinoceros – the black rhino, white rhino, Sumatran rhino, Javan rhino and Indian (or greater one-horned) rhino.',
+    'They are known for their giant horns that grow from their snouts – hence the name rhinoceros, meaning \"nose horn\". Javan and Indian rhinos have one horn, where as the white, black and Sumatran rhinos have two.',
+    'The largest of the five species is the white rhino, which can grow to 1.8m tall and and weigh a massive 2,500kg.',
+    'They are herbivores, and instead like to munch on lots of grass and plants at night, dawn and dusk.',
+    'During the heat of the day, these mammals can be found sleeping in the shade or wallowing in muddy pools to cool off. Mud protects their skin from the strong sun (like a natural sunblock) and wards off bugs.',
+    'For the most part, rhinoceroses are solitary animals and like to avoid each other. But some species, particularly the white rhino, may live in a group, known as a crash.',
+    'Males (called bulls) like to be left alone, unless in search of a female to breed with. They are very territorial and mark out their area of land with poop. Rhinos often use pongy piles to communicate with each other, since each individuals dung smells unique.',
+    'Because of their huge bodies, strong horns and thick, armour-like skin, rhinos have no natural predators. When they feel threatened, their instinct is to charge directly at whatever has spooked them.',
+    'It is estimated that there are only around 29.000 rhinos left in the wild, compared to 500,000 at the beginning of the 20th century. The main threat to these animals is illegal hunting, largely because their horns are used in traditional folk medicine, particularly in Asia.',
+    )
+
 SALMON_FACTS = (
     'Salmon tend to be anadromous, which means they hatch in fresh water, migrate to the ocean, and return to fresh water to reproduce, however this is not always the case.',
     'The majority of salmon worldwide are farmed, a process known as aquaculture.',
@@ -3126,6 +3139,7 @@ ALL_FACTS = (
     RACCOON_FACTS,
     RATTLESNAKE_FACTS,
     RAVEN_FACTS,
+    RHINO_FACTS,
     SALMON_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,
