@@ -236,6 +236,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('capybara', '\scapybaras?\s', reddit, CAPYBARA_FACTS, comment)
     botengine('chameleon', '\schameleons?\s', reddit, CHAMELEON_FACTS, comment)
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
+    botengine('chicken', '\schickens?\s', reddit, CHICKEN_FACTS, comment)
     botengine('chimpanzee', '\schimpanzees?\s', reddit, CHIMPANZEE_FACTS, comment)
     botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
     botengine('chinchilla', '\schinchillas?\s', reddit, CHINCHILLA_FACTS, comment)
@@ -778,6 +779,20 @@ CHEETAH_FACTS = (
     'Cheetahs cannot climb trees and have poor night vision.',
     'With their light body weight and blunt claws, cheetahs are not well designed to protect themselves or their prey. When a larger or more aggressive animal approaches a cheetah in the wild, it will give up its catch to avoid a fight.',
     'Cheetahs only need to drink once every three to four days.',
+    )
+
+CHICKEN_FACTS = (
+    'There are more chickens on earth than people -- 25 billion. There are also more chickens than any other bird species.',
+    'Chickens can remember over 100 different faces of people or animals.',
+    'A mother hen turns her eggs about 50 times per day, and can lay more than 300 eggs per year.',
+    'The record number of eggs laid by a chicken in one day is 7. The record number for eggs laid by a chicken in one year is 371.',
+    'An egg develops at 88 degrees Fahrenheit, and is laid at 105 degrees.',
+    'Chickens were domesticated in Southern China around 8,000 years ago in 6000 B.C.',
+    'As chickens grow older, they lay larger eggs, but fewer than when they’re younger.',
+    'Chickens can taste saltiness, but not sweetness.',
+    'In Gainesville, Florida, you have to eat fried chicken with your bare hands. Eating it by any other method is illegal.',
+	'A hen has to eat about four pounds of feed to make one dozen eggs.',
+	'The earliest known printing of “Why did the chicken cross the road?” was in 1847 in a New York Magazine.'
     )
 
 CHIMPANZEE_FACTS = (
