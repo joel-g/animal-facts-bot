@@ -1746,6 +1746,7 @@ LION_FACTS = (
     'When lions breed with tigers the resulting hybrids are known as ligers and tigons. There are also lion and leopard hybrids known as leopons, and lion and jaguar hybrids known as jaglions.',
     'Lionesses are better hunters than males and do most of the hunting for a pride.',
     'In the wild, lions rest for around 20 hours a day.',
+    'There is an Lion god in hindisum called "Lakshmi Narashmiha Swamy".',
     )
 
 LIZARD_FACTS = (
