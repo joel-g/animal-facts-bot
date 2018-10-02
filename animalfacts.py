@@ -242,6 +242,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('clownfish', '\sclown ?fish(es)?\s', reddit, CLOWNFISH_FACTS, comment)
     botengine('cobra', '\scobras?\s', reddit, COBRA_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
+    bootengie('coyote','\scoyotes?\s',reddit,COYOTE_FACTS,comment)
     botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
     botengine('crane', '\scranes?\s', reddit, CRANE_FACTS, comment)
@@ -885,6 +886,20 @@ COW_FACTS = (
     'If you took all the cows in the world and rounded them up into a sphere, that sphere would be nearly 1,200 meters wide!',
     'Cows are very social animals, and many of them have best friends! When separated, they often search for friends and family even years later.'
     )
+
+COYOTE_FACTS = (
+    'Coyotes are members of the Canidae family and share a lot of the same traits of their relatives: wolves, dogs, foxes and jackals.'
+    'Coyotes have narrow, elongated snouts, lean bodies, yellow eyes, bushy tails and thick fur.'
+    'Coyotes hunt at night and howl to communicate their location. They are also known for being "wily", in fact, they are very smart creatures and have a heightened sense of hearing, smell and sight.'   
+    'Coyotes fur may be gray, white, tan or brown, depending on where they live.'
+    'Coyotes that live in the mountains have darker coats and ones that live in the desert have lighter coats.
+    'Coyotes live in North America and roam the plains, forests, mountains and deserts of Canada, the United States, Mexico and Central America. Some even live in tropical climates. '
+    'Coyotes are solitary creatures and mark their territory with urine. When hunting deer, however, they use teamwork and form packs. They take turns pursuing the deer until it tires'
+    'Coyotes are not picky eaters. They eat small game such as rodents, rabbits, fish and frogs, and larger game like deer. Their diet is 90 percent mammalian'
+    'They are typically thought to be only meat eaters, but they are actually omnivores — they eat meat and vegetation.'
+    'Coyotes have been known to kill livestock and pets, but they usually help control agricultural pests, such as rodents. In cities, coyotes will eat pet food or garbage.'
+    'Both the male and female participate in taking care of the pups. The male will bring food to the female and the pups and help protect them from predators.'
+    'Coyotes are not endangered. In fact, some believe that the coyote population has never been higher. Farmers and ranchers have tried controlling the population with poisons, guns and traps, but the populations are still growing, according to the International Union for Conservation of Nature (IUCN).'
 
 CRAB_FACTS = (
     'Crabs are decapods from the crustacean family.',
@@ -3032,6 +3047,7 @@ ALL_FACTS = (
     CLOWNFISH_FACTS,
     COBRA_FACTS,
     COW_FACTS,
+    COYOTE_FACTS,
     COUGAR_FACTS,
     CRAB_FACTS,
     CRANE_FACTS,
