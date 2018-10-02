@@ -2632,6 +2632,10 @@ STARFISH_FACTS = (
     'Starfish have eyes.',
     'Starfish can reproduce sexually and asexually.',
     'Starfish use seawater, instead of blood, to pump nutrients through their bodies via a "water vascular system".',
+    'A Starfish in not a fish.',
+    'A common starfish has 5 arms, but some starfish have up to 40 arms!',
+    'Starfish are carnivores meaning they are meat eaters.',
+    'Starfish cannot swim. They move across the ocean by hundreds of tube feet on their arms and body.',
     )
 
 STURGEON_FACTS = (
