@@ -1611,6 +1611,7 @@ JELLYFISH_FACTS = (
     'Lion’s Mane Jellyfish have tentacles up to 190 feet long and a bell diameter of almost 7 feet wide.',
     'The Lion’s Mane Jellyfish mouth is situated on the bell’s underside, surrounded by tentacles that are divided into eight clusters of up to 150 tentacles each.',
     'The Lion’s mane jellyfish also possess bioluminescent abilities, meaning it’s able to produce its own light and glow in the dark underwater.',
+
     )
 
 JERBOA_FACTS = (
@@ -1996,6 +1997,7 @@ OCTOPUS_FACTS = (
     'An octopus\'s main defense against predators such as sharks is to hide and camouflage itself by using certain skin cells to change its color. This can also be used to talk with or warn other octopuses.',
     'Octopuses can eject a thick, blackish ink in a large cloud to distract a predator while the octopus uses a siphon jet propulsion system to quickly swim away headfirst, with arms trailing behind.',
     'A last ditch defense is for the octopus to shed a tentacle similar to how a gecko or lizard can discard a tail. An octopus is able to regenerate a lost tentacle.',
+    'Not all jellies have tentacles',
     'Octopuses have very good eyesight and an excellent sense of touch.',
     'A female octopus can lay on average about 200,000 eggs, however, fending for themselves only a handful of the hatchlings will survive to adulthood.',
     'Octopuses usually live for 6 - 18 months. Males only live a few months after mating, and females die of starvation shortly after their protected eggs hatch.',
@@ -2858,7 +2860,7 @@ VAMPIRE_BAT_FACTS = (
     'Vampire bats can live for up to 12 years in the wild, although captive individuals have been known to reach the age of 19.',
     'Young vampire bats feed on milk from the mother, not on blood. They cling tightly to their mothers, even in flight, until they are weaned at about 3 – 4 months.',
     'Vampire bats are not seasonal breeders and can mate all year round. They are pregnant for 3 – 4 months, which is a long gestation period compared to other small bats. The female gives birth to a single baby.',
-    'The saliva of a vampire bat can be used to prevent blood from clotting.',	
+    'The saliva of a vampire bat can be used to prevent blood from clotting.',
     )
 
 WALLABY_FACTS = (
