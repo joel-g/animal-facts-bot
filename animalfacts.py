@@ -2302,6 +2302,9 @@ PUFFERFISH_FACTS = (
     'Scientists believe that puffer fish developed their puffing tactic as a method of self defense because they are poor swimmers that cannot escape from danger quickly.',
     'Sharks are the only species immune to the puffer fish\'s toxin. They can eat puffer fish without any negative consequences',
     'Puffer fish do not have scales. Their skin is thick and rough. Some species have spines on their skin, which offer additional protection against predators.',
+	'Puffer fish can be discretely or brightly colored. There is often relationship between the body coloration and the amount of toxin produced by the fish (brighter colors are often associated with large quantity of toxin in the fish).',
+	'Puffer fish have four teeth that are fused in the beak-like structure. They use their teeth for opening of mussels, clams and shellfish. Puffer fish also eat algae and different types of worms and crustaceans.',
+	'One puffer fish contains enough toxin to kill 30 adult men.'
     )
 
 PORCUPINE_FACTS = (
@@ -2331,6 +2334,9 @@ QUOKKA_FACTS = (
     'Quokkas do not fear humans and will approach people closely if you visit them on Rottnest Island. However, it is illegal for humans to handle or feed them.',
     'Rottnest Island in Australia, where many quokkas live, was given its name when a Dutch explorer mistook the quokkas for rats. The name means "rat nest" in Dutch.',
     'A baby quokka is called a joey. Females can give birth to joeys twice a year. The joey will live in the pouch of its mother for six months.',
+	'The average lifespan of a Quokka is 10 years.',
+	'Quokkas have sharp teeth and will shriek if cornered or attacked or if they feel threatened or provoked.',
+	'The quokkas lack of fear of humans and the small size of their natural habitat makes them vulnerable to becoming endangered as a species.',
     )
 
 RABBIT_FACTS = (
