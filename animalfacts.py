@@ -361,6 +361,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('trout', '\strout?\s', reddit, TROUT_FACTS, comment)
     botengine('toad','\stoads?\s', reddit, TOAD_FACTS, comment)
     botengine('toucan', '\stoucans?\s', reddit, TOUCAN_FACTS, comment)
+    botengine('tuatara', '\stuataras?\s', reddit, TUATARA_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
     botengine('vampire bat', '\svampire ?bats\s', reddit, VAMPIRE_BAT_FACTS, comment)
     botengine('wallaby', '\swallab(y|ies)\s', reddit, WALLABY_FACTS, comment)
@@ -2831,6 +2832,17 @@ TOAD_FACTS = (
     'The common toads skin color changes depending on their surroundings.',
     )
 
+TUATARA_FACTS = (
+    'Tuatara name derives from the Māori language, and means "peaks on the back".',
+    'The single species of tuatara is the only surviving member of its order, which flourished around 200 million years ago.',
+    'They have two rows of teeth in the upper jaw overlapping one row on the lower jaw, which is unique among living species.',
+    'They are unusual in having a pronounced photoreceptive eye, the third eye, which is thought to be involved in setting circadian and seasonal cycles.',
+    'The species has between five and six billion base pairs of DNA sequence, nearly twice that of humans.',
+    'Tuatara feature in a number of indigenous legends, and are held as ariki (God forms).',
+    'The tuatara was the inspiration for a DC Comics superhero, also with a third eye, called Tuatara, member of the Global Guardians.',
+    'The Tuatara hypercar, designed and manufactured by SSC North America in Tri-Cities, Washington, is named after the reptile, noting its fast evolving DNA and "peaks on the back" as inspiration in the creation of the car.'
+    )
+
 TURTLE_FACTS = (
     'Turtles have a hard shell that protects them like a shield, this upper shell is called a ‘carapace’.',
     'Turtles also have a lower shell called a ‘plastron’.',
@@ -3150,6 +3162,7 @@ ALL_FACTS = (
     TROUT_FACTS,
     TOAD_FACTS,
     TOUCAN_FACTS,
+    TUATARA_FACTS,
     TURTLE_FACTS,
     VAMPIRE_BAT_FACTS,
     WALLABY_FACTS,
