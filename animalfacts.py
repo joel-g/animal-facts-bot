@@ -364,6 +364,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('toucan', '\stoucans?\s', reddit, TOUCAN_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
     botengine('vampire bat', '\svampire ?bats\s', reddit, VAMPIRE_BAT_FACTS, comment)
+    botengine('vulture', '\svulture?\s', reddit, VULTURE_FACTS, comment)
     botengine('wallaby', '\swallab(y|ies)\s', reddit, WALLABY_FACTS, comment)
     botengine('walrus', '\swalrus\s', reddit, WALRUS_FACTS, comment)
     botengine('warthog', '\swarthog\s', reddit, WARTHOG_FACTS, comment)
@@ -2866,6 +2867,23 @@ VAMPIRE_BAT_FACTS = (
     'The saliva of a vampire bat can be used to prevent blood from clotting.',
     )
 
+VULTURE_FACTS = (
+    'Vultures eat animals that have died in the wild. Without them, these animals would rot and smell.',
+    'Vultures heads and necks are almost bare so they stay clean while feasting on rotten meat.',
+    'Vultures also have strong immune systems so they don’t get sick from eating rotten meat.',
+    'Vultures have wide, strong wings. They can glide in the air for hours looking for a meal.',
+    'Vultures eat as much as they can at one meal. They never know when the next meal will come.',
+    'Vultures live in every part of the world except Australia and the Antarctica.',
+    'To eat their prey vultures have sharp hooked beaks and talons. They can also use tools.',
+    'Vultures sometimes drop eggs to break them or hit them against rocks to open them for food.',
+    'Vultures often appear when an animal is dying or dead. Egyptians and Native Americans used vultures in burial ceremonies.',
+    'Unlike many raptors, vultures are relatively social and often feed, fly or roost in large flocks. ',
+    'Vultures have excellent senses of sight and smell to help them locate food, and they can find a dead animal from a mile or more away.',
+    'While vultures eat mostly dead animals, they are capable of attacking and will often prey on extremely sick, wounded or infirm prey.',
+    'Vultures urinate on their legs and feet to cool off on hot days, a process called urohydrosis.',
+    'When threatened, vultures vomit to lighten their body weight so they can escape more easily into flight. '
+)
+
 WALLABY_FACTS = (
     'Wallabies are members of the kangaroo clan found primarily in Australia and on nearby islands.',
     'Wallabies are marsupials or pouched mammals. Wallaby young are defenseless and develop in the pouch of their mother.',
@@ -3159,6 +3177,7 @@ ALL_FACTS = (
     TOUCAN_FACTS,
     TURTLE_FACTS,
     VAMPIRE_BAT_FACTS,
+    VULTURE_FACTS,
     WALLABY_FACTS,
     WALRUS_FACTS,
     WARTHOG_FACTS,
