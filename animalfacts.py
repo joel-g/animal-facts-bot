@@ -409,7 +409,7 @@ AARDVARK_FACTS = (
     'Aardvarks are nocturnal and travel up to 16km every night, foraging for food.',
     'Aardvarks feed almost exclusively on ants and termites, and are known to eat around 50,000 in one night. They can eat plants and often feed on an African cucumber known as the aardvark cucumber.',
     'Aardvarks are prey to many animals including lions, leopards, hunting dogs, hyenas, and pythons.',
-    'Aardvarks are solitary and only come together to mate; females have a gestation period of seven months. One cub is born between May and July and will remain in the burrow for the first two weeks of life.'
+    'Aardvarks are solitary and only come together to mate; females have a gestation period of seven months. One cub is born between May and July and will remain in the burrow for the first two weeks of life.',
     )
 
 AFRICAN_GREY_FACTS = (
@@ -505,7 +505,7 @@ ANGLERFISH_FACTS = (
     'The Anglerfish have mouths so big and their bodies are so pliable, they can actually swallow prey up to twice their own size.',
     'When a young, free-swimming male Anglerfish encounters a female, he latches onto her with his sharp teeth. Over time, the male physically fuses with the female, connecting to her skin and bloodstream and losing his eyes and all his internal organs except the testes. A female will carry six or more males on her body.',
     'The Anglerfish have a luminescent organ, called the esca, at the tip of a modified dorsal ray.',
-    'Because of the small amount of food available in their environment, the Anglerfish has adapted to store food when there is an abundance.'
+    'Because of the small amount of food available in their environment, the Anglerfish has adapted to store food when there is an abundance.',
     )
 
 ANT_FACTS = (
@@ -688,7 +688,7 @@ BISON_FACTS = (
     'The muscle-filled large hump on a Bison\'s back allows it to plough through snow.'
     'Bison live in a variety of groups. Each bison group has a dominant male or female.',
     'Yellowstone National Park is the only place in the U.S. where bison have continuously lived since prehistoric times.',
-    'When bison are born, their fur is orange-red. After a few months, their fur steadily grows more brown.'
+    'When bison are born, their fur is orange-red. After a few months, their fur steadily grows more brown.',
     )
 
 BOBCAT_FACTS = (
@@ -699,7 +699,7 @@ BOBCAT_FACTS = (
     'Bobcats lay claim to an area of land that can be anywhere from 1 to 18 square miles in size.',
     'Bobcats can’t always consume their victims in one sitting. Sometimes, they use dirt, snow, leaves, or grass to bury the uneaten pieces of especially large corpses, and will return periodically to dig up their leftovers.',
     'The scientfic name for the bobcat is "Lynx rufus".',
-    'Wild bobcats have an average life span of 10 to 12 years'
+    'Wild bobcats have an average life span of 10 to 12 years',
     )
 
 BUFFALO_FACTS = (
@@ -714,7 +714,7 @@ BUFFALO_FACTS = (
     'African buffalo have a democracy. When they are ready to travel, they will stand and turn in the direction they want to go. The majority of "votes" wins and the head female will lead the herd in the winning direction.',
     'African buffalo are very aggressive and have a tendency to attack humans. They are very protective of each other and take care of sick and old members of the herd, shielding them from predators.',
     'Water buffalo have been domesticated for more than 5,000 years. They have buttressed humanity’s survival with their meat, horns, hides, milk, butterfat, and power, plowing and transporting people and crops.',
-    'Wild water buffalo are at-risk and live only in a small number of protected areas stretching across India, Nepal, Bhutan, and a wildlife reserve in Thailand. Populations are likely to diminish as they are interbred with domesticated water buffalo.'
+    'Wild water buffalo are at-risk and live only in a small number of protected areas stretching across India, Nepal, Bhutan, and a wildlife reserve in Thailand. Populations are likely to diminish as they are interbred with domesticated water buffalo.',
     )
 
 CAMEL_FACTS = (
@@ -792,7 +792,7 @@ CHIMPANZEE_FACTS = (
     'Chimpanzees can be found in 21 African countries.',
     'Most chimpanzee mothers give birth to one young an average of every five to six years in the wild. Young chimps stay with their mothers for up to 10 years.',
     'Chimpanzees grow up to 1.2 meters tall.  Their arms grow longer than their legs, which helps them to walk along by clenching their fists and putting their weight on their knuckles.',
-    'Chimpanzees are one of only two species in the genus Pan, the other being the bonobo, and both are found sub-Saharan Africa.'
+    'Chimpanzees are one of only two species in the genus Pan, the other being the bonobo, and both are found sub-Saharan Africa.',
     )
 
 CHIPMUNK_FACTS = (
@@ -820,7 +820,7 @@ CHINCHILLA_FACTS = (
     'The breeding season for chinchillas runs from November to May in the Northern Hemisphere and from May to November in the Southern Hemisphere.',
     'Chinchillas are omnivores; they eat both plants and meat. Primarily, they eat grass and seeds, but they also eat insects and bird eggs when they get the chance. To eat, they hold their food in their front paws and nibble on it.',
     'Though chinchilla fur is highly valued for use in clothing and coats, the Convention on International Trade in Endangered Species has restricted the sale and trade of wild chinchillas since 1975. Many chinchillas are bred commercially for their fur.',
-    'Chinchillas are native to Chile and Peru. In the wild they live in groups and make their home in burrows and natural outcroppings and crevices.'
+    'Chinchillas are native to Chile and Peru. In the wild they live in groups and make their home in burrows and natural outcroppings and crevices.',
     )
 
 CLOWNFISH_FACTS = (
@@ -830,7 +830,7 @@ CLOWNFISH_FACTS = (
     'The movie Finding Nemo caused home-acquarium demand for clownflish to triple.',
     'Clownfish use stinging anemones for their own protection and in return drives off intruders and preens its host by removing parasites.',
     'All clownfish are born male and have the ability to switch their sex. If once they become female, the change is irreversible.',
-    'Clownfish rarely stray more than a few yards from their host anemone.'
+    'Clownfish rarely stray more than a few yards from their host anemone.',
     )
 
 COBRA_FACTS = (
@@ -1316,7 +1316,7 @@ GECKO_FACTS = (
     'Most species of gecko don’t have eyelids, so they lick their eyes to clean them.',
     'Some gecko species can fly! The flying gecko, or parachute gecko, is a genus of arboreal gecko species found in Southeast Asia. While they aren’t capable of independent flight, they get their name from their ability to glide using the flaps of skin found on their feet and their flat, rudder-like tails.',
     'The smallest gecko species is less than 2 centimeters in length.'
-    'The GEICO gecko is a gold dust day gecko with a Cockney accent, voiced by English actor Jake Wood.'
+    'The GEICO gecko is a gold dust day gecko with a Cockney accent, voiced by English actor Jake Wood.',
     )
 
 GIRAFFE_FACTS = (
@@ -1375,7 +1375,7 @@ GOOSE_FACTS = (
     'A group of geese is called a skein when flying, and a gaggle on the ground.',
     'Originally the word goose was reserved for the female bird. The male was a gander.',
     'The offspring of a goose and a swan is called swoose. The plural is either swooses or sweese.',
-    'Geese were probably the first type of poultry diomesitcated by humans, over 3000 years ago in Egypt.'
+    'Geese were probably the first type of poultry diomesitcated by humans, over 3000 years ago in Egypt.',
     )
 
 GOPHER_FACTS = (
@@ -1558,7 +1558,7 @@ HUSKY_FACTS = (
     'When diptheria broke out in Nome, Alaska in 1925, a sled dog team led by the husky, Balto, transported medicine to the town before the epidemic could spread any further. The dogs made the trip during a blizzard, braving strong winds and temperatures as low as -23 degrees Fahrenheit.',
     'They\'re good dogs, Brent.',
     'DNA found on the ancient bone of an Arctic Wolf suggests that Huskies are one of the oldest of dog breeds.',
-    'Males typically grow to be 21-23.5 inches in height from ground to shoulder, and weigh between 45-60 pounds'
+    'Males typically grow to be 21-23.5 inches in height from ground to shoulder, and weigh between 45-60 pounds',
     )
 
 IGUANA_FACTS = (
@@ -1570,7 +1570,7 @@ IGUANA_FACTS = (
     'Green iguanas can vary in color more than just green, like blue, purple, or orange.',
     'Iguanas absorb water through their skin.',
     'After female iguanas lay their eggs, she never returns. Bye Mom!',
-    'Iguanas are mainly herbivorous.'
+    'Iguanas are mainly herbivorous.',
     )
 
 IBEX_FACTS = (
@@ -1581,7 +1581,8 @@ IBEX_FACTS = (
     'Both male and female ibex have very long horns, which are used for territorial defense and sexual selection.',
     'Ibex are herbivores; they only eat vegetation, such as shrubs, bushes, and grasses.',
     'Ibex make their homes on cliffs that would be dangerous for predators.',
-    'Ibex are very nimble. They can jump more than 6 feet (1.8 meters) straight up without a running start. This helps them climb mountainous terrain with ease.')
+    'Ibex are very nimble. They can jump more than 6 feet (1.8 meters) straight up without a running start. This helps them climb mountainous terrain with ease.'.
+    )
 
 JACKAL_FACTS = (
     'There are three species of Jackal, the Common Jackal (Canis aureus), the Side-striped Jackal (Canis adustus), and the Black-backed Jackal (Canis mesomelas). Common Jackals are also known as Golden Jackals, Asiatic Jackals, and Oriental Jackals.',
@@ -1594,7 +1595,7 @@ JACKAL_FACTS = (
     'Jackals respond only to the sounds produced by the members of their family. They ignore all other calls.',
     'Jackals mate for lifetime (they are monogamous). Pregnancy in females lasts around 2 months and ends usually with 2 to 4 cubs. Large litters may consist of up to 9 cubs.',
     'Jackals can survive 8 to 9 years in the wild and up to 16 years in captivity.',
-    'Jackals can live solitary life, be part of a couple or part of a large group, called pack. Life in pack ensures protection against predators and ensures cooperative hunt which results in killing of the larger prey.'
+    'Jackals can live solitary life, be part of a couple or part of a large group, called pack. Life in pack ensures protection against predators and ensures cooperative hunt which results in killing of the larger prey.',
     )
 
 JELLYFISH_FACTS = (
@@ -1692,7 +1693,7 @@ LAMPREY_FACTS = (
     'Lamprey belongs to a superclass of jawless fish known agnathans. The unique thing about the agnathan class is that it’s a prehistoric group that is largely extinct.'
     'The proteins in their saliva widen the blood vessels of their prey while their abrasive tongue and piercing teeth damage the skin of its victim and induce blood flow.'
     'Lamprey breed in high quality, deep, fast flowing rivers with clean gravel in which to spawn and a sandy substrate for the larvae to burrow into.'
-    'Lampreys possess vertebral structures called arcualia, tiny cartilaginous skeletal elements that are homologous with the neural arches of vertebrates.'
+    'Lampreys possess vertebral structures called arcualia, tiny cartilaginous skeletal elements that are homologous with the neural arches of vertebrates.',
     )
 
 LEMUR_FACTS = (
@@ -1717,7 +1718,7 @@ LEOPARD_FACTS = (
     'Leopards protect their food from other animals by dragging it high up into the trees. A leopard will often leave their prey up in the tree for days and return only when they are hungry!',
     'Female leopards give birth to a litter of two or three cubs at a time. By the time a cub is two years old it will leave the company of its mother and live on their own.',
     'When a female leopard is ready to mate she will give a scent and rub her body on the trees to leave her smell there. Male leopards either smell the females scent or hear her call to know that she is ready to mate.',
-    'Some people believe that the bones and whiskers of leopards can heal sick people. Many leopards are killed each year for their fur and body parts and this is one reason why the leopard is an endangered animal. While they were previously found in the wild in a number of areas around the world, their habitat is largely restricted to sub-Saharan Africa with small numbers also found in India, Pakistan, Malaysia, China, and Indochina.'
+    'Some people believe that the bones and whiskers of leopards can heal sick people. Many leopards are killed each year for their fur and body parts and this is one reason why the leopard is an endangered animal. While they were previously found in the wild in a number of areas around the world, their habitat is largely restricted to sub-Saharan Africa with small numbers also found in India, Pakistan, Malaysia, China, and Indochina.',
     )
 
 LYNX_FACTS = (
@@ -1810,7 +1811,7 @@ MANTIS_SHRIMP_FACTS = (
     'A punch of a Mantis Shrimp momentarily causes the temperature of the surrounding water to reach the temperature of the Sun.',
     'Mantis Shrimp use their ability to see polarized light to commmunicate with other mantis shrimp in a way that is invisible to predators.',
     'Mantis Shrimp can make a low growling sounds and often grunt at dawn and dusk.',
-    'Stomatopods, like Mantis Shrimp, are older than dinosaurs.'
+    'Stomatopods, like Mantis Shrimp, are older than dinosaurs.',
     )
 
 MEERKAT_FACTS = (
@@ -1845,7 +1846,7 @@ MINK_FACTS = (
     'Minks are solitary creatures that gather only for mating. Mating season lasts from February to April.',
     'Female minks are able to postpone development of a fertilized egg if the weather conditions are bad. Because of that, pregnancy may last from 39 to 74 days. Females can have up to 10 babies, but they usually have 5.',
     "Mink babies are wrinkled and blind at birth. They depend on the mother's milk during the first 6 weeks of their life. At the age of 8 weeks, young minks are ready for independent life. Sexual maturity will be reached between 12th and 16th month.",
-    'Minks can survive 3 to 4 years in the wild and 8 to 10 years in captivity.'
+    'Minks can survive 3 to 4 years in the wild and 8 to 10 years in captivity.',
     )
 
 LLAMA_FACTS = (
@@ -1874,7 +1875,7 @@ LLAMA_FACTS = (
     'In the ancient Incan society, llamas were the only beast of burden, and were a symbol of wealth among the Incan nobility. Many times, llama figurines were buried with the dead.'
     'One of the ways llamas communicate is by humming.'
     'The metabolism of llamas is very similar to that of a human diabetic.'
-    'Some ranchers and farmers use \"guard llamas\" to safeguard their sheep or other livestock.'
+    'Some ranchers and farmers use \"guard llamas\" to safeguard their sheep or other livestock.',
     )
 
 MONGOOSE_FACTS = (
@@ -2036,7 +2037,7 @@ ORANGUTAN_FACTS = (
     'Orangutans live in the trees to avoid predators like tigers or leopards that hunt on the ground.',
     'Orangutans are solitary animals. Males always live on their own while females live alone or with their offspring. Males and females spend time together only during mating season.',
     'Orangutans are the largest arboreal mammals (animals that spend their life in the trees).',
-    'Nonja, a Orangutan at Zoo Schoenbrunn in Vienna, Austria, has her own Facebook page, where pictures taken by her are uploaded. She also got famous for creating some paintings, showing Orangutans abilities to use tools.'
+    'Nonja, a Orangutan at Zoo Schoenbrunn in Vienna, Austria, has her own Facebook page, where pictures taken by her are uploaded. She also got famous for creating some paintings, showing Orangutans abilities to use tools.',
     )
 
 ORYX_FACTS = (
@@ -2289,7 +2290,7 @@ PUMA_FACTS = (
     'Pumas can live anywhere, in montain, desert, or even sea-level, once there is shelter and prey.',
     'Puma are obligated carnivores (like all cats), they need to feed on meat to survive.',
     'Puma cubs born blind, they rely exclusively on their mother and begin to hunt after six months.',
-    'Puma cubs begin to be weaned around three months of age.'
+    'Puma cubs begin to be weaned around three months of age.',
     )
 
 PUFFERFISH_FACTS = (
@@ -2314,7 +2315,7 @@ PORCUPINE_FACTS = (
     'Baby porcupines are called porcupettes, and they are born with soft quills. Soft quills will harden in a few hours after birth.',
     'Young porcupine will leave its parents after a couple of months and begin its solitary life.',
     'Native Americans used porcupine quills to decorate themselves. They also used porcupines as a source of food.',
-    'Porcupines can live 15-18 years.'
+    'Porcupines can live 15-18 years.',
     )
 
 QUOKKA_FACTS = (
@@ -2358,7 +2359,7 @@ RACCOON_FACTS = (
     'In the natural world, raccoons snare a lot of their meals in the water. These nocturnal foragers use lightning-quick paws to grab crayfish, frogs, and other aquatic creatures.',
     'Raccoons have a large array of vocalizations. Scientists have determined that they can make over 51 different sounds! They purr, whistle, growl, hiss, scream, and even whinny.',
     'Bobcats, great horned owls, wolves, eagle owls, lynxes, and coyotes are the most common predators of raccoons, but cars kill more raccoons than anything.',
-    'Dakota Sioux believed that raccoons possessed supernatural powers.'
+    'Dakota Sioux believed that raccoons possessed supernatural powers.',
     )
 
 RATTLESNAKE_FACTS = (
@@ -2401,7 +2402,7 @@ RAVEN_FACTS = (
     'Like in many other birds, when a raven is on a branch, their feet muscles and tendons automatically constrict the toes, so that the birds waste little energy on this.',
     'Ravens live from deserts to coniferous forests and coastal cliffs. In forests, they nest in stick-made nests on trees, on deserts in rock cavities.',
     'Common Ravens can mimic the calls of other bird species. When raised in captivity, they can even imitate human words; one Common Raven raised from birth was taught to mimic the word “nevermore”.',
-    'The oldest known wild Common Raven was at least 22 years, 7 months old. It was banded and found in Nova Scotia.'
+    'The oldest known wild Common Raven was at least 22 years, 7 months old. It was banded and found in Nova Scotia.',
     )
 
 SALMON_FACTS = (
@@ -2744,7 +2745,7 @@ TARDIGRADE_FACTS = (
     'Tardigrades can withstand 1,000 times more radiation than other animals; the median lethal dose is 5,000 Gy (of gamma rays).',
     'Many organisms that live in aquatic environments feed on tardigrades.',
     'Tardigrades work as pioneer species by inhabiting new developing environments in which to live. Their presence attracts other invertebrates and predators to populate the space.',
-    'Tardigrades are the first known animal to survive in space.'
+    'Tardigrades are the first known animal to survive in space.',
     )
 
 TASMANIAN_DEVIL_FACTS = (
@@ -2822,7 +2823,7 @@ TROUT_FACTS = (
     'Trout contain one of the lowest amounts of dioxins (a type of environmental contaminant) of all oily fishes.',
     'While trout can be caught with a normal rod and reel, fly fishing is a distinctive method developed primarily for trout, and now extended to other species.',
     'Because trout are cold water fish, during the winter they move from up-deep to the shallows, replacing the small fish that inhabit the area during the summer.',
-    'As a group, trout are somewhat bony, but the flesh is generally considered to be tasty. The flavor of the flesh is heavily influenced by the diet of the fish.'
+    'As a group, trout are somewhat bony, but the flesh is generally considered to be tasty. The flavor of the flesh is heavily influenced by the diet of the fish.',
     )
 
 TOAD_FACTS = (
@@ -2847,7 +2848,7 @@ TURTLE_FACTS = (
     'The largest turtle is the leatherback sea turtle, it can weigh over 900 kg! (2000 lb)',
     'In some species of turtle, the temperature determines if the egg will develop into a male or female. Lower temperatures lead to a male while higher temperatures lead to a female.',
     'Some turtles lay eggs in the sand and leave them to hatch on their own. The young turtles make their way to the top of the sand and scramble to the water while trying to avoid predators.',
-    'Sea turtles have special glands which help remove salt from the water they drink.'
+    'Sea turtles have special glands which help remove salt from the water they drink.',
     )
 
 VAMPIRE_BAT_FACTS = (
@@ -2942,7 +2943,7 @@ WHALE_FACTS = (
     'Whales are mammals. They breathe air, give birth to live young, and nurse (i.e., feed milk to) their young.',
     'Whales sleep by resting half of their brain at a time. That means they can still surface to breathe while they are sleeping.',
     'Whales have excellent hearing, and can hear other whales from thousands of kilometers away.',
-    'The blue whale is the largest animal to have ever lived on Earth; the largest on record was 100 ft. long.'
+    'The blue whale is the largest animal to have ever lived on Earth; the largest on record was 100 ft. long.',
     )
 
 WOLF_FACTS = (
