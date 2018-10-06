@@ -8,7 +8,7 @@ Due to Hacktoberfests pull requests are coming in fast! Comment on an issue you 
 
 Steps:
 * Fork/clone the repo.
-* Add a tuple of strings of facts (to animalfacts.py) pertaining to a particular animal. Name the tuple variable following the format 'NAMEOFANIMAL_FACTS'. Put the tuple in alphabetical order with the other tuples. Make sure your lines are indented by 4 spaces and please use ' for your strings.
+* Add a tuple of strings of facts (to animalfacts.py) pertaining to a particular animal. Name the tuple variable following the format 'NAMEOFANIMAL_FACTS'. Put the tuple in alphabetical order with the other tuples. Make sure your lines are indented by 4 spaces and please use ' for your strings. Use escape characters where necessary.
 * Add your tuple to the ALL_FACTS tuple.
 * Add a line to the check_comment_for_animal() function for your animal following the format.
 * Add your animal to the Readme in alphabetical order.
@@ -20,7 +20,7 @@ Please:
 * Only add TRUE facts. Please no trolling with 'alternative facts'.
 * Don't add 'seal', 'bat' or 'duck' facts unless you've figured out how to not reply to homonyms.
 * Don't add 'cat' or 'dog' because they are just too common on reddit.
-* Do use American spelling of words like 'color' or 'meter'.
+* Do use American spellings of words like 'color' or 'meter'.
 
 If you have a question the quickest way to reach is me on twitter @joelatwar
 
