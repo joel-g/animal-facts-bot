@@ -2882,7 +2882,7 @@ VULTURE_FACTS = (
     'While vultures eat mostly dead animals, they are capable of attacking and will often prey on extremely sick, wounded or infirm prey.',
     'Vultures urinate on their legs and feet to cool off on hot days, a process called urohydrosis.',
     'When threatened, vultures vomit to lighten their body weight so they can escape more easily into flight.',
-)
+    )
 
 WALLABY_FACTS = (
     'Wallabies are members of the kangaroo clan found primarily in Australia and on nearby islands.',
