@@ -2877,11 +2877,11 @@ VULTURE_FACTS = (
     'To eat their prey vultures have sharp hooked beaks and talons. They can also use tools.',
     'Vultures sometimes drop eggs to break them or hit them against rocks to open them for food.',
     'Vultures often appear when an animal is dying or dead. Egyptians and Native Americans used vultures in burial ceremonies.',
-    'Unlike many raptors, vultures are relatively social and often feed, fly or roost in large flocks. ',
+    'Unlike many raptors, vultures are relatively social and often feed, fly or roost in large flocks.',
     'Vultures have excellent senses of sight and smell to help them locate food, and they can find a dead animal from a mile or more away.',
     'While vultures eat mostly dead animals, they are capable of attacking and will often prey on extremely sick, wounded or infirm prey.',
     'Vultures urinate on their legs and feet to cool off on hot days, a process called urohydrosis.',
-    'When threatened, vultures vomit to lighten their body weight so they can escape more easily into flight. '
+    'When threatened, vultures vomit to lighten their body weight so they can escape more easily into flight.',
 )
 
 WALLABY_FACTS = (
