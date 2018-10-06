@@ -886,7 +886,7 @@ COW_FACTS = (
     'A dairy cow can produce 125 lbs. of saliva a day',
     'If you took all the cows in the world and rounded them up into a sphere, that sphere would be nearly 1,200 meters wide!',
     'Cows are very social animals, and many of them have best friends! When separated, they often search for friends and family even years later.'
-    'Cows are considered sacred in India for Hindus.',
+    'Cows are considered sacred for Hindus in India.',
 )
 
 CRAB_FACTS = (
@@ -1030,7 +1030,7 @@ DOLPHIN_FACTS = (
     'Dolphins communicate with each other by clicking, whistling and other sounds.',
     'Some dolphin species face the threat of extinction, often directly as a result of human behavior. The Yangtze River Dolphin is an example of a dolphin species which may have recently become extinct.',
     'Some fishing methods, such as the use of nets, kill a large number of dolphins every year.',
-    'Dolphins can be also found in color Pink.',
+    'Dolphins can be also found that are colored Pink.',
 )
 
 DRAGON_FACTS = (
@@ -1613,8 +1613,7 @@ JELLYFISH_FACTS = (
     'The Lions Mane Jellyfish is the largest of the Jellyfish species.',
     'Lion’s Mane Jellyfish have tentacles up to 190 feet long and a bell diameter of almost 7 feet wide.',
     'The Lion’s Mane Jellyfish mouth is situated on the bell’s underside, surrounded by tentacles that are divided into eight clusters of up to 150 tentacles each.',
-    'The Lion’s mane jellyfish also possess bioluminescent abilities, meaning it’s able to produce its own light and glow in the dark underwater.',
-
+    'The Lion’s Mane jellyfish also possesses bioluminescent abilities, meaning it’s able to produce its own light and glow in the dark underwater.',
     )
 
 JERBOA_FACTS = (
@@ -1747,7 +1746,7 @@ LION_FACTS = (
     'When lions breed with tigers the resulting hybrids are known as ligers and tigons. There are also lion and leopard hybrids known as leopons, and lion and jaguar hybrids known as jaglions.',
     'Lionesses are better hunters than males and do most of the hunting for a pride.',
     'In the wild, lions rest for around 20 hours a day.',
-    'There is an Lion god in hindisum called "Lakshmi Narashmiha Swamy".',
+    'There is an Lion god in Hinduism called "Lakshmi Narashmiha Swamy".',
     )
 
 LIZARD_FACTS = (
