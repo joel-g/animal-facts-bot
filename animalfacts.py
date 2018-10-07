@@ -2301,7 +2301,7 @@ PUFFERFISH_FACTS = (
     'Scientists believe that puffer fish developed their puffing tactic as a method of self defense because they are poor swimmers that cannot escape from danger quickly.',
     'Sharks are the only species immune to the puffer fish\'s toxin. They can eat puffer fish without any negative consequences',
     'Puffer fish do not have scales. Their skin is thick and rough. Some species have spines on their skin, which offer additional protection against predators.',
-    'Puffer fish toxin is found in only certain part of the fish. Specially trained chefs cut away the edible flesh and serve it as a dangerous delicacy.',
+    'Puffer fish toxin is found in only certain parts of the fish. Specially trained chefs cut away the edible flesh and serve it as a dangerous delicacy.',
     'Puffer fish have a set of four teeth that make a \'beak\' which the fish uses to open mussels, clams, and shellfish',
     'The average lifespan of the puffer fish is around 10 years',
     )
