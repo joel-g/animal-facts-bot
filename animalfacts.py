@@ -900,7 +900,7 @@ COYOTE_FACTS = (
     'Coyotes have been known to kill livestock and pets, but they usually help control agricultural pests, such as rodents. In cities, coyotes will eat pet food or garbage.'
     'Both the male and female participate in taking care of the pups. The male will bring food to the female and the pups and help protect them from predators.'
     'Coyotes are not endangered. In fact, some believe that the coyote population has never been higher. Farmers and ranchers have tried controlling the population with poisons, guns and traps, but the populations are still growing, according to the International Union for Conservation of Nature (IUCN).'
-
+    )
 CRAB_FACTS = (
     'Crabs are decapods from the crustacean family.',
     'Crabs have 10 legs, however, the first pair are its claws which are called chelae.',
