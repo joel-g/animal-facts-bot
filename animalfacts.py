@@ -611,14 +611,18 @@ ATLANTIC_PUFFIN_FACTS = (
     )
 
 AXOLOTL_FACTS = (
+    'The axolotl is a salamander – a type of amphibian with a lizard-like body, a long tail and smooth, moist skin. The axolotl has short legs and widely-spaced lidless eyes.',
     'Wild Axolotls are normally brown or black, not white.',
     'In the wild, Axolotls can only be found in the lakes and canals of Xochimilco, Mexico.',
     'Axolotls are endangered.',
     'The name Axolotl is based off of Xolotl, a dog-headed god from Aztec mythology.',
     'Axolotls have the ability to not only regenerate limbs like some other amphibians, but they can also rebuild their spine and even their brain.',
+    'Sometimes an axolotl will damage a limb, and not only will that limb heal, but another one will grow too, giving the axolotl an extra limb!',
     'Because of their extraordinary regenerative ability, Axolotls are the subject of biological and medical research.',
     'Axolotls exhibit neoteny, meaning they reach maturity without going through metamorphosis.',
     'The feather-like branches that grow on an Axolotl head are actually their gills .',
+    'If an axolotl is injected with a chemical called iodine, it will undergo metamorphosis and change into its adult form resembling a salamander',
+    'Axolotls are carnivores (meat-eaters). Their diet consists of worms, insects, and other invertebrates.',
     )
 
 BADGER_FACTS = (
