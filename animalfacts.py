@@ -2972,17 +2972,16 @@ WOLVERINE_FACTS = (
 
 WOMBAT_FACTS = (
     'Wombats walk with a waddle.'
-    'They are champion diggers.'
-    'They have a backwards-facing pouch.'
+    'Wombats are champion diggers.'
+    'Wombats have a backwards-facing pouch.'
     'Wombats have slow metabolisms.'
-    'They have teeth like rodents.'
+    'Wombats have teeth like rodents.'
     'Wombats have tough rumps. '
-    'They are not as helpless as they look.'
-    'They have cube-shaped poop. '
-    'There used to be giant wombats.'
+    'Wombats are not as helpless as they look.'
+    'Wombats have cube-shaped poop. '
+    'Wombats used to be giant wombats.'
     'The worlds oldest wombat recently celebrated his 29th birthday.'
-	
-    )
+     )
 
 YAK_FACTS = (
     'The yak is a long-haired bovid found throughout the Himalaya region of southern Central Asia, the Tibetan Plateau, and as far north as Mongolia and Russia.',
