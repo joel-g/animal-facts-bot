@@ -2944,7 +2944,7 @@ WHALE_FACTS = (
     'A baby blue whale (calf) emerges weighing up to 3 tons and stretching to 25 feet.',
     'Intensive hunting in the 1900s by whalers seeking whale oil drove them to the brink of extinction. Hundreds of thousands of whales were killed.',
     'It is estimated that only 10,000-25,000 blue whales now swim the world’s oceans.',
-    'Blue whale can produce the loudest sound of any animal. At 188 decibels, the noise can be detected over 800 kilometers (500 miles) away.'
+    'Blue whale can produce the loudest sound of any animal. At 188 decibels, the noise can be detected over 800 kilometers (500 miles) away.',
     )
 
 WOLF_FACTS = (
