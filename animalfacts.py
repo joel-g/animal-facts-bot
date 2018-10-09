@@ -717,16 +717,16 @@ BUFFALO_FACTS = (
     )
 
 BUTTERFLY_FACTS = (
-    'There are over 17,500 recorded butterfly species in the whole world. Out of this number, 750 can be found in America.'
-    'Butterflies belong to the Lepidoptera class of insects which are characterized by their large scaly wings.'
-    'The Cabbage White specie of butterfly is the most commonly found in the US. While they are called Cabbage White, they are characterized by their two black markings at the top of their wings.'
-    'Butterflies can vary greatly in size. The biggest butterfly specie has a 12 inch wingspan, while the smallest ever recorded only covers half an inch.'
-    'Monarch butterflies are the only insect in the whole world that travels over 2,500 miles on average every winter.'
-    'The North American Monarch is one of the species that has been the most severely impacted by recent climate changes, with their numbers seeing dips and spikes over the last few years.'
-    'A group of butterflies is known as a flutter.'
-    'Butterflies don’t taste with taste buds, but rather sensors located under their feet.'
-    'Contrarily to popular perception, the wings of butterflies are totally clear and the colors we see are the effect of light reflecting on the tiny scales covering them.'
-    'Many adult butterflies do not excrete waste at all? As a matter of fact, many adult butterflies use everything they eat as energy.'
+    'There are over 17,500 recorded butterfly species in the whole world. Out of this number, 750 can be found in America.',
+    'Butterflies belong to the Lepidoptera class of insects which are characterized by their large scaly wings.',
+    'The Cabbage White species of butterfly is the most commonly found in the US. While they are called Cabbage White, they are characterized by their two black markings at the top of their wings.',
+    'Butterflies can vary greatly in size. The biggest butterfly species has a 12 inch wingspan, while the smallest ever recorded only covers half an inch.',
+    'Monarch butterflies are the only insect in the whole world that travels over 2,500 miles on average every winter.',
+    'The North American Monarch is one of the species that has been the most severely impacted by recent climate changes, with their numbers seeing dips and spikes over the last few years.',
+    'A group of butterflies is known as a flutter.',
+    'Butterflies don’t taste with taste buds, but rather sensors located under their feet.',
+    'Contrarily to popular perception, the wings of butterflies are totally clear and the colors we see are the effect of light reflecting on the tiny scales covering them.',
+    'Many adult butterflies do not excrete waste at all. As a matter of fact, many adult butterflies use everything they eat as energy.'
     )
 
 CAMEL_FACTS = (
