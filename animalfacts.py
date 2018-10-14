@@ -1190,6 +1190,7 @@ EMU_FACTS = (
     'The emu is the largest bird in Australia, and the second largest in the world after the ostrich.',
     'Emu chicks grow very quickly, up to 2 pounds (1 kg) a week, and are full-grown in 12 to 14 months. They stay with their family group for another six months or so before they split up to breed in their second season.',
     'Emus must drink every day, and they don’t waste water. On very hot days they breathe rapidly, using their lungs as evaporative coolers. Their large nasal passages have multiple folds inside. In cooler weather they use these folds to recycle air and create moisture for reuse.',
+    'Australian military has lost a war against emus in 1932, in what is called the great emu war. Emu population remained virtually the same after the battle. ',
     )
 
 FALCON_FACTS = (
