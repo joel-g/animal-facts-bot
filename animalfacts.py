@@ -329,10 +329,11 @@ def check_comment_for_animal(comment, reddit):
     botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS, comment)
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
+    botengine('piranha', '\spiranha?\s', reddit, PIRANHA_FACTS, comment
     botengine('platypus', '\splatypuse?s?\s', reddit, PLATYPUS_FACTS, comment)
     botengine('puma', '\spumas?\s', reddit, PUMA_FACTS, comment)
     botengine('pufferfish', '\spuffer ?fish(es)?\s', reddit, PUFFERFISH_FACTS, comment)
-    botengine('porcupine', '\sporcupines?\s', reddit, PORCUPINE_FACTS, comment)
+    botengine('porcupine', '\sporcupines?\s', reddit, PORCUPINE_FACTS, comment
     botengine('quokka', '\squokkas?\s', reddit, QUOKKA_FACTS, comment)
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
@@ -2260,6 +2261,20 @@ PIGEON_FACTS = (
     'Female pigeons lay 2 eggs that hatch after an incubation period of 18 days. Young birds depend on their parents during the first two months of their life. Both parents take care of the chicks (called squabs).',
     'Pigeons can survive more than 30 years in the wild.',
     )
+PIRANHA_FACTS = (
+    'Depending on the exact species, most piranhas grow to between 12 and 35 cm (5–14 in) long.',
+    'Piranhas have one of the strongest bites found in bony fishes.',
+    'Piranha teeth are often used as tools themselves (such as for carving wood or cutting hair) or to modify other tools (such as sharpening of darts).',
+    'Relative to body mass, the black piranha (Serrasalmus rhombeus) produces one of the most forceful bites measured in vertebrates.',
+    'Piranhas lay their eggs in pits dug during the breeding and swim around to protect them.',
+    'Piranhas can be bought as pets in some areas, but they are illegal in many parts of the United States, and in the Philippines, where importers face six months to four years in jail.',
+    'It is not uncommon to find individual piranhas with one eye missing due to a previous attack.',
+    'Most piranha attacks on humans only result in minor injuries, typically to the feet or hands, but they are occasionally more serious and very rarely can be fatal.',
+    'The most common aquarium piranha is Pygocentrus nattereri, the red-bellied piranha.',
+    'Piranhas can be bought fully grown or as young, often no larger than a thumbnail.',
+    'Although generally described as highly predatory and primarily feeding on fish, piranha diets vary extensively, leading to their classification as omnivorous.',
+    'Piranhas have also been discovered in the Kaptai Lake in southeast Bangladesh.',
+)
 
 PLATYPUS_FACTS = (
     'Platypuses have no stomach',
@@ -3125,6 +3140,7 @@ ALL_FACTS = (
     PENGUIN_FACTS,
     PIG_FACTS,
     PIGEON_FACTS,
+    PIRANHA_FACTS,
     PLATYPUS_FACTS,
     PUMA_FACTS,
     PORCUPINE_FACTS,
