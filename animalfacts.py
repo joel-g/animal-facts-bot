@@ -2274,7 +2274,7 @@ PIRANHA_FACTS = (
     'Piranhas can be bought fully grown or as young, often no larger than a thumbnail.',
     'Although generally described as highly predatory and primarily feeding on fish, piranha diets vary extensively, leading to their classification as omnivorous.',
     'Piranhas have also been discovered in the Kaptai Lake in southeast Bangladesh.',
-)
+    )
 
 PLATYPUS_FACTS = (
     'Platypuses have no stomach',
