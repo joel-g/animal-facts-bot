@@ -230,31 +230,31 @@ def check_comment_for_animal(comment, reddit):
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('bear', '\sbears?\s', reddit, BEAR_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
-    botengine('buffalo', '\sbuffalos?\s', reddit, BUFFALO_FACTS, comment)
-    botengine('bobcat','\sbobcats?\s',reddit, BOBCAT_FACTS,comment)
     botengine('bison', '\sbisons?\s', reddit, BISON_FACTS, comment)
+    botengine('bobcat','\sbobcats?\s',reddit, BOBCAT_FACTS,comment)
+    botengine('buffalo', '\sbuffalos?\s', reddit, BUFFALO_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
     botengine('capybara', '\scapybaras?\s', reddit, CAPYBARA_FACTS, comment)
     botengine('chameleon', '\schameleons?\s', reddit, CHAMELEON_FACTS, comment)
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('chimpanzee', '\schimpanzees?\s', reddit, CHIMPANZEE_FACTS, comment)
-    botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
     botengine('chinchilla', '\schinchillas?\s', reddit, CHINCHILLA_FACTS, comment)
+    botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
     botengine('clownfish', '\sclown ?fish(es)?\s', reddit, CLOWNFISH_FACTS, comment)
     botengine('cobra', '\scobras?\s', reddit, COBRA_FACTS, comment)
+    botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     bootengie('coyote','\scoyotes?\s',reddit,COYOTE_FACTS,comment)
-    botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
     botengine('crane', '\scranes?\s', reddit, CRANE_FACTS, comment)
     botengine('crayfish', '\scrayfish?\s', reddit, CRAYFISH_FACTS, comment)
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
-    botengine('deer', '\sdeer?\s', reddit, DEER_FACTS, comment)
     botengine('cuttlefish', '\scuttle ?fish(es)?\s', reddit, CUTTLEFISH_FACTS, comment)
-    botengine('dingo', '\sdingos?\s', reddit, DINGO_FACTS, comment)
+    botengine('deer', '\sdeer?\s', reddit, DEER_FACTS, comment)
     botengine('degu', '\sdegus?\s', reddit, DEGU_FACTS, comment)
-    botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
+    botengine('dingo', '\sdingos?\s', reddit, DINGO_FACTS, comment)
     botengine('dodo', '\sdodos?\s', reddit, DODO_FACTS, comment)
+    botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
     # botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)   Disabled because this was only a temp feature during Game of Thrones season. Dragons aren't real.
     botengine('dugong', '\sdugongs?\s', reddit, DUGONG_FACTS, comment)
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
@@ -275,11 +275,11 @@ def check_comment_for_animal(comment, reddit):
     botengine('gazelle', '\sgazelles?\s', reddit, GAZELLE_FACTS, comment)
     botengine('gecko', '\sgeckos?\s', reddit, GECKO_FACTS, comment)
     botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
-    botengine('grasshopper', '\sgrass ?hoppers?\s', reddit, GRASSHOPPER_FACTS, comment)
     botengine('goat', '\sgoats?\s', reddit, GOAT_FACTS, comment)
     botengine('goose', '\s(goose|geese)\s', reddit, GOOSE_FACTS, comment)
     botengine('gopher', '\sgophers?\s', reddit, GOPHER_FACTS, comment)
     botengine('gorilla', '\sgorillas?\s', reddit, GORILLA_FACTS, comment)
+    botengine('grasshopper', '\sgrass ?hoppers?\s', reddit, GRASSHOPPER_FACTS, comment)
     botengine('hamster', '\shamsters?\s', reddit, HAMSTER_FACTS, comment)
     botengine('hedgehog', '\shedgehogs?\s', reddit, HEDGEHOG_FACTS, comment)
     botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS, comment)
@@ -302,11 +302,12 @@ def check_comment_for_animal(comment, reddit):
     botengine('lemur', '\slemurs?\s', reddit, LEMUR_FACTS, comment)
     botengine('leopard', '\sleopards?\s', reddit, LEOPARD_FACTS, comment)
     botengine('lizard', '\slizards?\s', reddit, LIZARD_FACTS, comment)
-    botengine('lobster', '\slobsters?\s', reddit, LOBSTER_FACTS, comment)
     botengine('llama', '\sllamas?\s', reddit, LLAMA_FACTS, comment)
-    botengine('markhor', '\smarkhors?\s', reddit, MARKHOR_FACTS, comment)
+    botengine('lobster', '\slobsters?\s', reddit, LOBSTER_FACTS, comment)
+    botengine('lynx', '\slynx(es)?\s', reddit, LYNX_FACTS, comment)
     botengine('manatee', '\smanatees?\s', reddit, MANATEE_FACTS, comment)
     botengine('mantis shrimp', '\smantis shrimps?\s', reddit, MANTIS_SHRIMP_FACTS, comment)
+    botengine('markhor', '\smarkhors?\s', reddit, MARKHOR_FACTS, comment)
     botengine('meerkat', '\smeerkats?\s', reddit, MEERKAT_FACTS, comment)
     botengine('mink', '\sminks?\s', reddit, MINK_FACTS, comment)
     botengine('mongoose', '\smongooses?\s', reddit, MONGOOSE_FACTS, comment)
@@ -315,27 +316,27 @@ def check_comment_for_animal(comment, reddit):
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
     botengine('newt', '\snewts?\s', reddit, NEWT_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
+    botengine('octopus', '\socto(pus|puses|pusses|pi)\s', reddit, OCTOPUS_FACTS, comment)
     botengine('opossum', '\sopossums?\s', reddit, OPOSSUM_FACTS, comment)
     botengine('orangutan', '\sorangutans?\s', reddit, ORANGUTAN_FACTS, comment)
-    botengine('oryx', '\soryx(es)?\s', reddit, ORYX_FACTS, comment)
-    botengine('octopus', '\socto(pus|puses|pusses|pi)\s', reddit, OCTOPUS_FACTS, comment)
     botengine('orca', '\sorcas?\s', reddit, ORCA_FACTS, comment)
+    botengine('oryx', '\soryx(es)?\s', reddit, ORYX_FACTS, comment)
     botengine('ostrich', '\sostrich(es)?\s', reddit, OSTRICH_FACTS, comment)
     botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
     botengine('owl', '\sowls?\s', reddit, OWL_FACTS, comment)
-    botengine('parrot', '\sparrots?\s', reddit, PARROT_FACTS, comment)
     botengine('panda', '\spandas?\s', reddit, PANDA_FACTS, comment)
     botengine('pangolin', '\spangolins?\s', reddit, PANGOLIN_FACTS, comment)
     botengine('panther', '\spanthers?\s', reddit, PANTHER_FACTS, comment)
+    botengine('parrot', '\sparrots?\s', reddit, PARROT_FACTS, comment)
     botengine('peacock', '\speacocks?\s', reddit, PEACOCK_FACTS, comment)
     botengine('peccary', '\speccar(y|ies)\s', reddit, PECCARY_FACTS, comment)
     botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS, comment)
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
     botengine('platypus', '\splatypuse?s?\s', reddit, PLATYPUS_FACTS, comment)
-    botengine('puma', '\spumas?\s', reddit, PUMA_FACTS, comment)
-    botengine('pufferfish', '\spuffer ?fish(es)?\s', reddit, PUFFERFISH_FACTS, comment)
     botengine('porcupine', '\sporcupines?\s', reddit, PORCUPINE_FACTS, comment)
+    botengine('pufferfish', '\spuffer ?fish(es)?\s', reddit, PUFFERFISH_FACTS, comment)
+    botengine('puma', '\spumas?\s', reddit, PUMA_FACTS, comment)
     botengine('quokka', '\squokkas?\s', reddit, QUOKKA_FACTS, comment)
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
@@ -356,16 +357,16 @@ def check_comment_for_animal(comment, reddit):
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
     botengine('starfish', '\sstarfish(es)?\s', reddit, STARFISH_FACTS, comment)
     botengine('sturgeon', '\ssturgeons?\s', reddit, STURGEON_FACTS, comment)
-    botengine('tarantula', '\starantulas?\s', reddit, TARANTULA_FACTS, comment)
     botengine('squirrel', '\ssquirrels?\s', reddit, SQUIRREL_FACTS, comment)
     botengine('stingray', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
     botengine('sunfish', '\ssunfish(es)?\s', reddit, SUNFISH_FACTS, comment)
+    botengine('tarantula', '\starantulas?\s', reddit, TARANTULA_FACTS, comment)
     botengine('tardigrade', '\stardigrades?\s', reddit, TARDIGRADE_FACTS, comment)
     botengine('tasmanian devil', '\stasmanian devils?\s', reddit, TASMANIAN_DEVIL_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
-    botengine('trout', '\strout?\s', reddit, TROUT_FACTS, comment)
     botengine('toad','\stoads?\s', reddit, TOAD_FACTS, comment)
     botengine('toucan', '\stoucans?\s', reddit, TOUCAN_FACTS, comment)
+    botengine('trout', '\strout?\s', reddit, TROUT_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
     botengine('vampire bat', '\svampire ?bats\s', reddit, VAMPIRE_BAT_FACTS, comment)
     botengine('vulture', '\svulture?\s', reddit, VULTURE_FACTS, comment)
@@ -493,7 +494,7 @@ ANACONDA_FACTS = (
     'Caimans are alligator-like predators that frequent South American waterways. Anacondas are known to hunt these reptilian neighbors, but often sustain significant injuries while doing so.',
     'While getting around, snakes (including Anaconda) have several options, of which “sidewinding” is perhaps the most athletic. Unlike normal slithering, this exhausting technique involves a given reptile using large, J-shaped coils to hastily pull itself along. In general, smaller snakes are more likely to sidewind, although—as the above footage shows—their big cousins will sometimes follow suit.',
     'Nicki Minaj sang a song named "Anaconda".',
-)
+    )
 
 ANGLERFISH_FACTS = (
     'The scientific name for the Anglerfish is Lophiiformes.',
@@ -900,7 +901,7 @@ COW_FACTS = (
     'If you took all the cows in the world and rounded them up into a sphere, that sphere would be nearly 1,200 meters wide!',
     'Cows are very social animals, and many of them have best friends! When separated, they often search for friends and family even years later.'
     'Cows are considered sacred for Hindus in India.',
-)
+    )
 
 COYOTE_FACTS = (
     'Coyotes are members of the Canidae family and share a lot of the same traits of their relatives: wolves, dogs, foxes and jackals.',
@@ -1058,7 +1059,7 @@ DOLPHIN_FACTS = (
     'Some dolphin species face the threat of extinction, often directly as a result of human behavior. The Yangtze River Dolphin is an example of a dolphin species which may have recently become extinct.',
     'Some fishing methods, such as the use of nets, kill a large number of dolphins every year.',
     'Dolphins can be also found that are colored Pink.',
-)
+    )
 
 DRAGON_FACTS = (
     'The word “dragon” comes from the Greek word “draconta”, which means “to watch.” The Greeks saw dragons as beasts that guarded valuable items. In fact, many cultures depict dragons as hoarding treasure.',
@@ -1622,7 +1623,7 @@ IBEX_FACTS = (
     'Both male and female ibex have very long horns, which are used for territorial defense and sexual selection.',
     'Ibex are herbivores; they only eat vegetation, such as shrubs, bushes, and grasses.',
     'Ibex make their homes on cliffs that would be dangerous for predators.',
-    'Ibex are very nimble. They can jump more than 6 feet (1.8 meters) straight up without a running start. This helps them climb mountainous terrain with ease.'.
+    'Ibex are very nimble. They can jump more than 6 feet (1.8 meters) straight up without a running start. This helps them climb mountainous terrain with ease.',
     )
 
 JACKAL_FACTS = (
@@ -3101,6 +3102,7 @@ ZEBRA_FACTS = (
     'Zebras are one of the few mammals that scientists believe can see in color.',
     'Like horses, zebras sleep standing up, and usually only when in the safety of a group.',
     )
+
 ZEBRAFISH_FACTS = (
     'The scientific name of Zebrafish is Danio rerio and it belongs to the minnow family, Cyprinidae. The fish got its common name from the presence of five uniform and pigmented horizontal stripes on the side of its body, that resemble the stripes of a zebra.',
     'Zebrafish are vertebrates, which means that they have a backbone like humans.',
@@ -3121,31 +3123,31 @@ ALL_FACTS = (
     ALBATROSS_FACTS,
     ALLIGATOR_FACTS,
     ALPACA_FACTS,
-    ATLANTIC_PUFFIN_FACTS,
     ANACONDA_FACTS,
     ANGLERFISH_FACTS,
     ANT_FACTS,
     ANTEATER_FACTS,
     ANTELOPE_FACTS,
     ARMADILLO_FACTS,
+    ATLANTIC_PUFFIN_FACTS,
     AXOLOTL_FACTS,
     BADGER_FACTS,
     BEAR_FACTS,
     BEAVER_FACTS,
-    BUFFALO_FACTS,
     BISON_FACTS,
+    BUFFALO_FACTS,
     CAMEL_FACTS,
     CAPYBARA_FACTS,
     CHAMELEON_FACTS,
     CHEETAH_FACTS,
     CHIMPANZEE_FACTS,
-    CHIPMUNK_FACTS,
     CHINCHILLA_FACTS,
+    CHIPMUNK_FACTS,
     CLOWNFISH_FACTS,
     COBRA_FACTS,
+    COUGAR_FACTS,
     COW_FACTS,
     COYOTE_FACTS,
-    COUGAR_FACTS,
     CRAB_FACTS,
     CRANE_FACTS,
     CRAYFISH_FACTS,
@@ -3175,11 +3177,11 @@ ALL_FACTS = (
     GAZELLE_FACTS,
     GECKO_FACTS,
     GIRAFFE_FACTS,
-    GRASSHOPPER_FACTS,
     GOAT_FACTS,
     GOOSE_FACTS,
     GOPHER_FACTS,
     GORILLA_FACTS,
+    GRASSHOPPER_FACTS,
     HAMSTER_FACTS,
     HEDGEHOG_FACTS,
     HIPPO_FACTS,
@@ -3201,13 +3203,13 @@ ALL_FACTS = (
     LEMUR_FACTS,
     LEOPARD_FACTS,
     LION_FACTS,
-    LYNX_FACTS,
     LIZARD_FACTS,
-    LOBSTER_FACTS,
     LLAMA_FACTS,
-    MARKHOR_FACTS,
+    LOBSTER_FACTS,
+    LYNX_FACTS,
     MANATEE_FACTS,
     MANTIS_SHRIMP_FACTS,
+    MARKHOR_FACTS,
     MEERKAT_FACTS,
     MINK_FACTS,
     MONGOOSE_FACTS,
@@ -3219,8 +3221,8 @@ ALL_FACTS = (
     OCTOPUS_FACTS,
     OPOSSUM_FACTS,
     ORANGUTAN_FACTS,
-    ORYX_FACTS,
     ORCA_FACTS,
+    ORYX_FACTS,
     OSTRICH_FACTS,
     OTTER_FACTS,
     OWL_FACTS,
@@ -3228,14 +3230,14 @@ ALL_FACTS = (
     PANGOLIN_FACTS,
     PANTHER_FACTS,
     PARROT_FACTS,
-    PECCARY_FACTS,
     PEACOCK_FACTS,
+    PECCARY_FACTS,
     PENGUIN_FACTS,
     PIG_FACTS,
     PIGEON_FACTS,
     PLATYPUS_FACTS,
-    PUMA_FACTS,
     PORCUPINE_FACTS,
+    PUMA_FACTS,
     QUOKKA_FACTS,
     RABBIT_FACTS,
     RACCOON_FACTS,
@@ -3256,9 +3258,9 @@ ALL_FACTS = (
     SNAKE_FACTS,
     STARFISH_FACTS,
     STURGEON_FACTS,
-    SUNFISH_FACTS,
     SQUIRREL_FACTS,
     STINGRAY_FACTS,
+    SUNFISH_FACTS,
     TARDIGRADE_FACTS,
     TARANTULA_FACTS,
     TASMANIAN_DEVIL_FACTS,
