@@ -1622,7 +1622,7 @@ IBEX_FACTS = (
     'Both male and female ibex have very long horns, which are used for territorial defense and sexual selection.',
     'Ibex are herbivores; they only eat vegetation, such as shrubs, bushes, and grasses.',
     'Ibex make their homes on cliffs that would be dangerous for predators.',
-    'Ibex are very nimble. They can jump more than 6 feet (1.8 meters) straight up without a running start. This helps them climb mountainous terrain with ease.'.
+    'Ibex are very nimble. They can jump more than 6 feet (1.8 meters) straight up without a running start. This helps them climb mountainous terrain with ease.',
     )
 
 JACKAL_FACTS = (
