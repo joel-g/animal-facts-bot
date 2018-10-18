@@ -315,6 +315,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('moose', '\smoose\s', reddit, MOOSE_FACTS, comment)
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
     botengine('newt', '\snewts?\s', reddit, NEWT_FACTS, comment)
+    botengine('nightjar', '\snightjars?\s', reddit, NIGHTJAR_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
     botengine('octopus', '\socto(pus|puses|pusses|pi)\s', reddit, OCTOPUS_FACTS, comment)
     botengine('opossum', '\sopossums?\s', reddit, OPOSSUM_FACTS, comment)
@@ -2030,6 +2031,21 @@ NEWT_FACTS = (
     'In the UK, it is illegal to catch, possess, or handle great crested newts without a license.',
     )
 
+NIGHTJAR_FACTS = (
+    'Poets sometimes use the nightjar as an indicator of warm summer nights.',
+    'Nightjar is a crepuscular and nocturnal bird in the nightjar family that breeds across most of Europe and temperate Asia.',
+    'Drinking and bathing of a nightjar take place during flight.',
+    'The Latin name of a nightjar (Caprimulgus) refers to the old myth that the nocturnal nightjar suckled goats, causing them to cease to give milk.',
+    'The female nightjar does not sing.',
+    'Nightjars have a unique serrated comb-like structure on the middle claw that is used to preen and perhaps remove parasites.',
+    'Nightjars drink by dipping to the water surface as they fly.',
+    'Estimates of the European population of the European nightjar range from 470,000 to more than 1 million birds, suggesting a total global population of 2–6 million individuals.',
+    'The maximum known age of a nightjar in the wild is just over 12 years.',
+    'In cold or inclement weather, several nightjar species can slow their metabolism and go into torpor.',
+    'The European nightjar is a bird of dry, open country with some trees and small bushes.',
+    'The male European nightjar\'s song is a sustained churring trill, given continuously for up to 10 minutes with occasional shifts of speed or pitch.',
+    )
+
 OCELOT_FACTS = (
     'An ocelot is two times bigger than domestic cat. It can reach 28 to 35 inches in length and weigh between 24 and 35 pounds. Males are bigger than females. The length of the tail measures half of the body size.',
     'Ocelots have beautiful fur which is the reason why people hunt them. Color of the fur is usually tawny, yellow, or grayish-brown, covered with black rosettes and stripes.',
@@ -3219,6 +3235,7 @@ ALL_FACTS = (
     MOOSE_FACTS,
     NARWHAL_FACTS,
     NEWT_FACTS,
+    NIGHTJAR_FACTS,
     OCELOT_FACTS,
     OCTOPUS_FACTS,
     OPOSSUM_FACTS,
