@@ -1771,8 +1771,8 @@ LOBSTER_FACTS = (
     'Lobsters have poor eyesight, but have highly developed senses of smell and taste.',
     'Lobsters taste with their legs and chew with their stomachs.',
     'Lobsters keep growing forever. They do not get weaker or lose their ability to reproduce, and will keep on molting and growing.',
-    'Lobsters are invertebrates which means they lack a backbone.'
-    'Lobsters dont have brains as their nervous system is very primitive.'
+    'Lobsters are invertebrates which means they lack a backbone.',
+    'Lobsters dont have brains as their nervous system is very primitive.',
     )
 
 MARKHOR_FACTS = (
