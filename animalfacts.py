@@ -265,6 +265,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('elk', '\selks?\s', reddit, ELK_FACTS, comment)
     botengine('emu', '\semus?\s', reddit, EMU_FACTS, comment)
     botengine('falcon', '\sfalcons?\s', reddit, FALCON_FACTS, comment)
+    botengine('ferret', '\sferret?\s', reddit, FERRET_FACTS, comment)
     botengine('fire salamander', '\sfire salamanders?\s', reddit, FIRESALAMANDER_FACTS, comment)
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
     botengine('fly', '\sflies?\s', reddit, FLY_FACTS, comment)
@@ -1203,6 +1204,19 @@ FALCON_FACTS = (
     'Falcons are strong, fast fliers with great aerial agility, which makes them successful hunters capable of taking down prey 6 times their own body weight! Usually they kill cleanly, breaking the back of their victims.',
     'The falcon is a bird of prey that, typically sitting close to the top of the food chain, has few predators. Falcons may be killed by other large birds of prey, such as eagles and owls. The eggs and chicks are vulnerable to mammals that may climb into the nest if it is too low to the ground.',
     'Falcons can process four types of light while humans can only process three. This means that the falcon has a very good night vision and can also see ultraviolet rays.',
+    )
+
+FERRET_FACTS = (
+    'Ferrets are around the size and shape of a zucchini. They usually weigh around 1 to 5.5 lbs. (0.5 to 2.5 kg) and have a head and body length of 8 to 18 inches (20.5 to 46 centimeters). Their tails are close to half their body length and range from 2.8 to 7.5 in (7 to 19 cm).',
+    'Ferrets are related to wolverines, ermines, minks and weasels in the Mustela genus.',
+    'The domesticated ferret can be born with a wide range of fur colors, including dark-eyed white, sable, black sable, silver, albino, cinnamon and chocolate. Black-footed ferrets aren’t nearly as colorful. They are a pale color with white foreheads, muzzles and throats and black feet.',
+    'Ferrets are carnivores, which means they eat only meat. Black-footed ferrets eat usually eat small mammals, such as possums, rabbits, prairie dogs, hedgehogs and rodents. A domesticated ferret typically eats factory-made chow. A healthy diet for pet ferrets consist of 36 percent protein, around 20 percent fats and is low in carbohydrates, according to the American Ferret Association.',
+    'Male ferrets are known as hobs and female ferrets are called jills. In the wild, hobs and jills mate around March and April. After a gestation period of 35 to 45 days, a jill will give birth to one to six babies. Baby ferrets are called kits.',
+    'The ancient Greeks probably domesticated ferrets about 2,500 years ago to hunt vermin, according to the Woodland Park Zoo. The practice then spread across Europe. Sailors kept ferrets on ships to control rats. It is likely that that is how ferrets came to North America in the 1700s.',
+    'A group of ferrets is called a "business."',
+    'Like dogs, ferrets have long canine teeth. Like cats, domesticated ferrets can be litterbox trained.',
+    'Ferrets have a light musky odor, according to the American Ferret Association. In fact, the Latin the species name for the domesticated ferrets is smelly weasel: Mustela = weasel and putorius = smelly. Spaying or neutering minimizes the smell. They also have scent glands, which release a scent as a defense.',
+    'Usually considered a subspecies of the European polecat, ferrets are often listed as Mustela putorius furo. But according to the California Department of Fish and Wildlife, some experts use Mustela furo, Putorius putorius furo and Putorius furo.',
     )
 
 FIRESALAMANDER_FACTS = (
@@ -3062,6 +3076,7 @@ ALL_FACTS = (
     ELK_FACTS,
     EMU_FACTS,
     FALCON_FACTS,
+    FERRET_FACTS,
     FIRESALAMANDER_FACTS,
     FLAMINGO_FACTS,
     FLY_FACTS,
