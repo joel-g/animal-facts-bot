@@ -2273,12 +2273,12 @@ PLATYPUS_FACTS = (
 
 PRAIRIEDOG_FACTS = (
     'Prairie dog\'s entire mating season is just an hour long.',
-    'They live in tight-knit groups called coteries.',
+    'Prairie dogs live in tight-knit groups called coteries.',
     'Prairie dog\'s biological relatives include groundhogs, chipmunks, marmots and woodchucks.',
     'Prairie dogs live in underground burrows which have a complex tunnel and warren system.',
     'Prairie dogs have a range of different barks and chirps for communicating different messages.',
     'The name Prairie dog was given due to their habitat (prairies/grasslands) and their warning calls which sound like barks.',
-    'They live 3 to 5 years in the wild and up to 10 years in captivity.',
+    'Prairie dogs live 3 to 5 years in the wild and up to 10 years in captivity.',
     'Prairie dogs, on average, will grow to be between 30 and 40 cm long.',
     'Prairie dog burrows have separate chambers for sleeping, rearing young, and eliminating waste.',
     'Prairie dogs are diurnal and spend much of the day looking for food, in which they do not store in thier burrows.',
