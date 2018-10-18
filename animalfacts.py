@@ -265,6 +265,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('elk', '\selks?\s', reddit, ELK_FACTS, comment)
     botengine('emu', '\semus?\s', reddit, EMU_FACTS, comment)
     botengine('falcon', '\sfalcons?\s', reddit, FALCON_FACTS, comment)
+    botengine('ferret', '\sferret?\s', reddit, FERRET_FACTS, comment)
     botengine('fire salamander', '\sfire salamanders?\s', reddit, FIRESALAMANDER_FACTS, comment)
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
     botengine('fly', '\sflies?\s', reddit, FLY_FACTS, comment)
@@ -292,6 +293,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
     botengine('kiwi', '\skiwis?\s', reddit, KIWI_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
+    botengine('kookaburra', '\skookaburras?\s', reddit, KOOKABURRA_FACTS, comment)
     botengine('ladybug', '\s(ladybug|lady bug)s?\s', reddit, LADYBUG_FACTS, comment)
     botengine('lamprey', '\slampreys?\s', reddit, LAMPREY_FACTS, comment)
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
@@ -338,6 +340,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
     botengine('rattlesnake', '\srattlesnakes?\s', reddit, RATTLESNAKE_FACTS, comment)
     botengine('raven', '\sravens?\s', reddit, RAVEN_FACTS, comment)
+    botengine('rhino', '\srhino?\s', reddit, RHINO_FACTS, comment)
     botengine('salmon', '\ssalmons?\s', reddit, SALMON_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
@@ -364,6 +367,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('toucan', '\stoucans?\s', reddit, TOUCAN_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
     botengine('vampire bat', '\svampire ?bats\s', reddit, VAMPIRE_BAT_FACTS, comment)
+    botengine('vulture', '\svulture?\s', reddit, VULTURE_FACTS, comment)
     botengine('wallaby', '\swallab(y|ies)\s', reddit, WALLABY_FACTS, comment)
     botengine('walrus', '\swalrus\s', reddit, WALRUS_FACTS, comment)
     botengine('warthog', '\swarthog\s', reddit, WARTHOG_FACTS, comment)
@@ -372,6 +376,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('wolverine', '\swolverines?\s', reddit, WOLVERINE_FACTS, comment)
     botengine('yak', '\syaks?\s', reddit, YAK_FACTS, comment)
     botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS, comment)
+    botengine('zebrafish', '\szebrafishs?\s', reddit, ZEBRAFISH_FACTS, comment)
 
 
 def animalfactsbot(reddit):
@@ -436,6 +441,9 @@ ALBATROSS_FACTS = (
     'Albatrosses perform dances to attract a mate, these are then repeated each time they meet.',
     'The body of an albatross is covered with white, black, brown, red or yellow feathers. They were used for decoration of hats in the past.',
     'Albatrosses can reach the speed of 40 miles per hour.',
+    'Albatrosses have no problem drinking sea water. The salt they take in is absorbed and moves through their blood stream into a pair of salt glands above their eyes and finally excreted via the nostrils.',
+    'Albatrosses spend over 80% of their life at sea, visiting land only for breeding.',
+    'In all albatross species, both parents incubate the egg in stints. Incubation lasts around 70 to 80 days (longer for the larger albatrosses), the longest incubation period of any bird.',
     )
 
 ALLIGATOR_FACTS = (
@@ -611,14 +619,18 @@ ATLANTIC_PUFFIN_FACTS = (
     )
 
 AXOLOTL_FACTS = (
+    'The axolotl is a salamander – a type of amphibian with a lizard-like body, a long tail and smooth, moist skin. The axolotl has short legs and widely-spaced lidless eyes.',
     'Wild Axolotls are normally brown or black, not white.',
     'In the wild, Axolotls can only be found in the lakes and canals of Xochimilco, Mexico.',
     'Axolotls are endangered.',
     'The name Axolotl is based off of Xolotl, a dog-headed god from Aztec mythology.',
     'Axolotls have the ability to not only regenerate limbs like some other amphibians, but they can also rebuild their spine and even their brain.',
+    'Sometimes an axolotl will damage a limb, and not only will that limb heal, but another one will grow too, giving the axolotl an extra limb!',
     'Because of their extraordinary regenerative ability, Axolotls are the subject of biological and medical research.',
     'Axolotls exhibit neoteny, meaning they reach maturity without going through metamorphosis.',
     'The feather-like branches that grow on an Axolotl head are actually their gills .',
+    'If an axolotl is injected with a chemical called iodine, it will undergo metamorphosis and change into its adult form resembling a salamander',
+    'Axolotls are carnivores (meat-eaters). Their diet consists of worms, insects, and other invertebrates.',
     )
 
 BADGER_FACTS = (
@@ -1205,6 +1217,19 @@ FALCON_FACTS = (
     'Falcons can process four types of light while humans can only process three. This means that the falcon has a very good night vision and can also see ultraviolet rays.',
     )
 
+FERRET_FACTS = (
+    'Ferrets are around the size and shape of a zucchini. They usually weigh around 1 to 5.5 lbs. (0.5 to 2.5 kg) and have a head and body length of 8 to 18 inches (20.5 to 46 centimeters). Their tails are close to half their body length and range from 2.8 to 7.5 in (7 to 19 cm).',
+    'Ferrets are related to wolverines, ermines, minks and weasels in the Mustela genus.',
+    'The domesticated ferret can be born with a wide range of fur colors, including dark-eyed white, sable, black sable, silver, albino, cinnamon and chocolate. Black-footed ferrets aren’t nearly as colorful. They are a pale color with white foreheads, muzzles and throats and black feet.',
+    'Ferrets are carnivores, which means they eat only meat. Black-footed ferrets eat usually eat small mammals, such as possums, rabbits, prairie dogs, hedgehogs and rodents. A domesticated ferret typically eats factory-made chow. A healthy diet for pet ferrets consist of 36 percent protein, around 20 percent fats and is low in carbohydrates, according to the American Ferret Association.',
+    'Male ferrets are known as hobs and female ferrets are called jills. In the wild, hobs and jills mate around March and April. After a gestation period of 35 to 45 days, a jill will give birth to one to six babies. Baby ferrets are called kits.',
+    'The ancient Greeks probably domesticated ferrets about 2,500 years ago to hunt vermin, according to the Woodland Park Zoo. The practice then spread across Europe. Sailors kept ferrets on ships to control rats. It is likely that that is how ferrets came to North America in the 1700s.',
+    'A group of ferrets is called a "business."',
+    'Like dogs, ferrets have long canine teeth. Like cats, domesticated ferrets can be litterbox trained.',
+    'Ferrets have a light musky odor, according to the American Ferret Association. In fact, the Latin the species name for the domesticated ferrets is smelly weasel: Mustela = weasel and putorius = smelly. Spaying or neutering minimizes the smell. They also have scent glands, which release a scent as a defense.',
+    'Usually considered a subspecies of the European polecat, ferrets are often listed as Mustela putorius furo. But according to the California Department of Fish and Wildlife, some experts use Mustela furo, Putorius putorius furo and Putorius furo.',
+    )
+
 FIRESALAMANDER_FACTS = (
     'Fire salamanders live in central European forests and are more common in hilly areas.',
     'Fire salamanders prefer deciduous forests, since they like to hide in fallen leaves and around mossy tree trunks.',
@@ -1486,6 +1511,7 @@ HONEYBADGER_FACTS = (
     'Honey badgers are nocturnal',
     'Honey badgers are mostly solitary and only meet up to hunt or mate',
     'Beekeepers will often keep their bees elevated to prevent honey badgers from getting to their hives.',
+    'Honey badgers are substantially resistant to venom, and easily survive snakebites that would kill a human',
     )
 
 HONEYBEE_FACTS = (
@@ -1671,6 +1697,16 @@ KOALA_FACTS = (
     'Koalas cannot be kept legally as pets.',
     )
 
+KOOKABURRA_FACTS = (
+    'Though belonging to the group \'kingfisher\', the kookaburra is not associated with water',
+    'The name \'kookaburra\' comes from an onamatopoeic interpretation of its call',
+    'Kookaburras are generally carnivorous, eating mice, snakes, insects, and small reptiles',
+    'The laughing kookaburra can emit a call that resembles the sound of echoing human laughter',
+    'The average lifespan of a kookaburra is about 15 years',
+    'The kookaburra is the largest member of the kingfisher family and can grow up to 18 inches in length',
+    'The kookaburra is native to the forests and woodlands of Australia, Tasmania, and New Guinea',
+    )
+
 LADYBUG_FACTS = (
     'Ladybugs are a type of beetle. There are about 4,300 kinds of ladybugs in the world.',
     'Some ladybugs have no spots and others have up to 20 spots. Spots have nothing to do with a ladybug age.',
@@ -1771,6 +1807,8 @@ LOBSTER_FACTS = (
     'Lobsters have poor eyesight, but have highly developed senses of smell and taste.',
     'Lobsters taste with their legs and chew with their stomachs.',
     'Lobsters keep growing forever. They do not get weaker or lose their ability to reproduce, and will keep on molting and growing.',
+    'Lobsters can be divided in two groups: clawed and spiny. Clawed lobsters, as the name suggests, have claws and inhabit cold waters. Spiny lobsters have long antennas instead of claws and can be found in the tropical (warm) waters.',
+    'Deep-sea lobsters are blind. Other species have compound eyes. They cannot see clear image, but can detect movement even at night.',
     )
 
 MARKHOR_FACTS = (
@@ -2018,6 +2056,7 @@ OPOSSUM_FACTS = (
     'Opossums typically live between two and four years.',
     'The opossum is typically known as a \'possum\' in the southern United States.',
     'The gestation period of an opossum is short, typically between 12 and 14 days, largely due to the species being marsupial, and having some functions of gestation occur once out of the womb.',
+    'Opossums have 13 nipples, arranged in a circle of 12 with one in the middle.',
     )
 
 ORANGUTAN_FACTS = (
@@ -2072,6 +2111,7 @@ ORCA_FACTS = (
     'Orcas can weigh up to 6 tons.',
     'An orca\'s teeth can grow to be 4 inches (10 cm) long.',
     'The orca can reach speeds in excess of 30 knots (about 34 mph, or 56 kph).',
+    'Resident orcas, the most commonly-sighted type of orcas, have a diet consisting primarily of fish and squid, while transient orcas feed on marine mammals.',
     )
 
 OSTRICH_FACTS = (
@@ -2297,6 +2337,9 @@ PUFFERFISH_FACTS = (
     'Scientists believe that puffer fish developed their puffing tactic as a method of self defense because they are poor swimmers that cannot escape from danger quickly.',
     'Sharks are the only species immune to the puffer fish\'s toxin. They can eat puffer fish without any negative consequences',
     'Puffer fish do not have scales. Their skin is thick and rough. Some species have spines on their skin, which offer additional protection against predators.',
+    'Puffer fish toxin is found in only certain parts of the fish. Specially trained chefs cut away the edible flesh and serve it as a dangerous delicacy.',
+    'Puffer fish have a set of four teeth that make a \'beak\' which the fish uses to open mussels, clams, and shellfish',
+    'The average lifespan of the puffer fish is around 10 years',
     )
 
 PORCUPINE_FACTS = (
@@ -2323,6 +2366,7 @@ QUOKKA_FACTS = (
     'Quokkas are small marsupials in the macropod family (like kangaroos) that are about the size of a housecat.',
     'Quokkas are mostly nocturnal; they sleep during the day and are active at night.',
     'Quokkas are herbivores. They eat mostly grasses and leaves.',
+    'Quokkas are the only member of the genus Setonix',
     'Quokkas do not fear humans and will approach people closely if you visit them on Rottnest Island. However, it is illegal for humans to handle or feed them.',
     'Rottnest Island in Australia, where many quokkas live, was given its name when a Dutch explorer mistook the quokkas for rats. The name means "rat nest" in Dutch.',
     'A baby quokka is called a joey. Females can give birth to joeys twice a year. The joey will live in the pouch of its mother for six months.',
@@ -2402,6 +2446,18 @@ RAVEN_FACTS = (
     'Ravens live from deserts to coniferous forests and coastal cliffs. In forests, they nest in stick-made nests on trees, on deserts in rock cavities.',
     'Common Ravens can mimic the calls of other bird species. When raised in captivity, they can even imitate human words; one Common Raven raised from birth was taught to mimic the word “nevermore”.',
     'The oldest known wild Common Raven was at least 22 years, 7 months old. It was banded and found in Nova Scotia.',
+    )
+
+RHINO_FACTS = (
+    'Our planet is home to five species of rhinoceros – the black rhino, white rhino, Sumatran rhino, Javan rhino and Indian (or greater one-horned) rhino.',
+    'They are known for their giant horns that grow from their snouts – hence the name rhinoceros, meaning \"nose horn\". Javan and Indian rhinos have one horn, where as the white, black and Sumatran rhinos have two.',
+    'The largest of the five species is the white rhino, which can grow to 1.8m tall and and weigh a massive 2,500kg.',
+    'They are herbivores, and instead like to munch on lots of grass and plants at night, dawn and dusk.',
+    'During the heat of the day, these mammals can be found sleeping in the shade or wallowing in muddy pools to cool off. Mud protects their skin from the strong sun (like a natural sunblock) and wards off bugs.',
+    'For the most part, rhinoceroses are solitary animals and like to avoid each other. But some species, particularly the white rhino, may live in a group, known as a crash.',
+    'Males (called bulls) like to be left alone, unless in search of a female to breed with. They are very territorial and mark out their area of land with poop. Rhinos often use pongy piles to communicate with each other, since each individuals dung smells unique.',
+    'Because of their huge bodies, strong horns and thick, armour-like skin, rhinos have no natural predators. When they feel threatened, their instinct is to charge directly at whatever has spooked them.',
+    'It is estimated that there are only around 29.000 rhinos left in the wild, compared to 500,000 at the beginning of the 20th century. The main threat to these animals is illegal hunting, largely because their horns are used in traditional folk medicine, particularly in Asia.',
     )
 
 SALMON_FACTS = (
@@ -2848,6 +2904,10 @@ TURTLE_FACTS = (
     'In some species of turtle, the temperature determines if the egg will develop into a male or female. Lower temperatures lead to a male while higher temperatures lead to a female.',
     'Some turtles lay eggs in the sand and leave them to hatch on their own. The young turtles make their way to the top of the sand and scramble to the water while trying to avoid predators.',
     'Sea turtles have special glands which help remove salt from the water they drink.',
+    'The shell of a turtle is made up of 60 different bones all connected together.',
+    'Turtles live on every continent except Antarctica.',
+    'Turtles have good eyesight and an excellent sense of smell. Hearing and sense of touch are both good and even the shell contains nerve endings.',
+    'While most turtles don\'t tolerate the cold well, the Blanding\'s turtle has been observed swimming under the ice in the Great Lakes region.',
     )
 
 VAMPIRE_BAT_FACTS = (
@@ -2864,6 +2924,23 @@ VAMPIRE_BAT_FACTS = (
     'Young vampire bats feed on milk from the mother, not on blood. They cling tightly to their mothers, even in flight, until they are weaned at about 3 – 4 months.',
     'Vampire bats are not seasonal breeders and can mate all year round. They are pregnant for 3 – 4 months, which is a long gestation period compared to other small bats. The female gives birth to a single baby.',
     'The saliva of a vampire bat can be used to prevent blood from clotting.',
+    )
+
+VULTURE_FACTS = (
+    'Vultures eat animals that have died in the wild. Without them, these animals would rot and smell.',
+    'Vultures heads and necks are almost bare so they stay clean while feasting on rotten meat.',
+    'Vultures also have strong immune systems so they don’t get sick from eating rotten meat.',
+    'Vultures have wide, strong wings. They can glide in the air for hours looking for a meal.',
+    'Vultures eat as much as they can at one meal. They never know when the next meal will come.',
+    'Vultures live in every part of the world except Australia and the Antarctica.',
+    'To eat their prey vultures have sharp hooked beaks and talons. They can also use tools.',
+    'Vultures sometimes drop eggs to break them or hit them against rocks to open them for food.',
+    'Vultures often appear when an animal is dying or dead. Egyptians and Native Americans used vultures in burial ceremonies.',
+    'Unlike many raptors, vultures are relatively social and often feed, fly or roost in large flocks.',
+    'Vultures have excellent senses of sight and smell to help them locate food, and they can find a dead animal from a mile or more away.',
+    'While vultures eat mostly dead animals, they are capable of attacking and will often prey on extremely sick, wounded or infirm prey.',
+    'Vultures urinate on their legs and feet to cool off on hot days, a process called urohydrosis.',
+    'When threatened, vultures vomit to lighten their body weight so they can escape more easily into flight.',
     )
 
 WALLABY_FACTS = (
@@ -3009,6 +3086,19 @@ ZEBRA_FACTS = (
     'Zebras are one of the few mammals that scientists believe can see in color.',
     'Like horses, zebras sleep standing up, and usually only when in the safety of a group.',
     )
+ZEBRAFISH_FACTS = (
+    'The scientific name of Zebrafish is Danio rerio and it belongs to the minnow family, Cyprinidae. The fish got its common name from the presence of five uniform and pigmented horizontal stripes on the side of its body, that resemble the stripes of a zebra.',
+    'Zebrafish are vertebrates, which means that they have a backbone like humans.',
+    'The Zebrafish is perhaps one of the most frequently used model organisms for genetic and developmental studies. This tropical freshwater fish can be found in the rivers of northern India, northern Pakistan, Bhutan, and Nepal.',
+    'A Zebrafish usually grows to a length of 6.4 cm. But in captivity, it rarely exceeds a length of 4 cm.',
+    'Zebrafish embryos are nearly transparent which allows researchers to easily examine the development of internal structures.',
+    'The male Zebrafish is usually slender with a torpedo-shaped body. It can be distinguished from the female by the presence of golden stripes in between the blue stripes. The female zebrafish, on the other hand, has a larger belly and silver stripes between its blue stripes',
+    'Zebrafish are omnivorous and can eat anything smaller than them. They mainly feed on insects and insect larvae, phytoplankton, and zooplankton. But, they can also feast on worms and small crustaceans.',
+    'Zebrafish can regenerate their fins, heart muscles, and retinal neurons.',
+    'Zebrafish is one of the few species of fish that has been sent to space.',
+    'Zebrafish have a similar genetic structure to humans. They share 70 per cent of genes with us.',
+    'There are several varieties of Zebrafish, such as long-finned, short-finned, albino, pink, striped, and speckled. Zebrafish have also been modified to create several genetic variants of the same species, mainly for scientific research.',
+    )
 
 ALL_FACTS = (
     AARDVARK_FACTS,
@@ -3060,6 +3150,7 @@ ALL_FACTS = (
     ELK_FACTS,
     EMU_FACTS,
     FALCON_FACTS,
+    FERRET_FACTS,
     FIRESALAMANDER_FACTS,
     FLAMINGO_FACTS,
     FLY_FACTS,
@@ -3088,6 +3179,7 @@ ALL_FACTS = (
     KANGAROO_FACTS,
     KIWI_FACTS,
     KOALA_FACTS,
+    KOOKABURRA_FACTS,
     LADYBUG_FACTS,
     LAMPREY_FACTS,
     LEMUR_FACTS,
@@ -3133,6 +3225,7 @@ ALL_FACTS = (
     RACCOON_FACTS,
     RATTLESNAKE_FACTS,
     RAVEN_FACTS,
+    RHINO_FACTS,
     SALMON_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,
@@ -3159,6 +3252,7 @@ ALL_FACTS = (
     TOUCAN_FACTS,
     TURTLE_FACTS,
     VAMPIRE_BAT_FACTS,
+    VULTURE_FACTS,
     WALLABY_FACTS,
     WALRUS_FACTS,
     WARTHOG_FACTS,
@@ -3167,6 +3261,7 @@ ALL_FACTS = (
     WOLVERINE_FACTS,
     YAK_FACTS,
     ZEBRA_FACTS,
+    ZEBRAFISH_FACTS,
     )
 
 

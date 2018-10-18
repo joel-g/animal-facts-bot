@@ -83,6 +83,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Falcon
 * Flamingo
 * Fox
+* Ferret
 * Fire salamander
 * Frog
 * Gazelle
@@ -109,6 +110,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Kangaroo
 * Kiwi
 * Koala
+* Kookaburra
 * Ladybug
 * Lamprey
 * Lemur
@@ -155,6 +157,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Raccoon
 * Rattlesnake
 * Raven
+* Rhino
 * Salmon
 * Scorpion
 * Seagull
@@ -181,6 +184,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Trout
 * Turtle
 * Vampire bat
+* Vulture
 * Wallaby
 * Walrus
 * Warthog
@@ -189,6 +193,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Wolverine
 * Yak
 * Zebra
+* Zebrafish
 
 ### AnimalFactsBot will reply to its replies if they contain the phrases:
 * good bot
