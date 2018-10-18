@@ -1511,6 +1511,7 @@ HONEYBADGER_FACTS = (
     'Honey badgers are nocturnal',
     'Honey badgers are mostly solitary and only meet up to hunt or mate',
     'Beekeepers will often keep their bees elevated to prevent honey badgers from getting to their hives.',
+    'Honey badgers are substantially resistant to venom, and easily survive snakebites that would kill a human',
     )
 
 HONEYBEE_FACTS = (
