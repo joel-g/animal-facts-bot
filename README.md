@@ -68,6 +68,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Cuttlefish
 * Deer
 * Degu
+* Dementor Wasp
 * Dingo
 * Dodo
 * Dolphin
@@ -177,6 +178,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Tarantula
 * Tardigrade
 * Tasmanian devil
+* Terror bird
 * Tiger
 * Toad
 * Toucan
