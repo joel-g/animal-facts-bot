@@ -332,6 +332,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
     botengine('platypus', '\splatypuse?s?\s', reddit, PLATYPUS_FACTS, comment)
+    botengine('prairie dog', '\sprairie dogs?s?\s', reddit, PRAIRIEDOG_FACTS, comment)
     botengine('puma', '\spumas?\s', reddit, PUMA_FACTS, comment)
     botengine('pufferfish', '\spuffer ?fish(es)?\s', reddit, PUFFERFISH_FACTS, comment)
     botengine('porcupine', '\sporcupines?\s', reddit, PORCUPINE_FACTS, comment)
@@ -2317,6 +2318,21 @@ PLATYPUS_FACTS = (
     'Platypuses is the correct plural form, although platypi and platypodes are also accepted.',
     )
 
+PRAIRIEDOG_FACTS = (
+    'Prairie dog\'s entire mating season is just an hour long.',
+    'They live in tight-knit groups called coteries.',
+    'Prairie dog\'s biological relatives include groundhogs, chipmunks, marmots and woodchucks.',
+    'Prairie dogs live in underground burrows which have a complex tunnel and warren system.',
+    'Prairie dogs have a range of different barks and chirps for communicating different messages.',
+    'The name Prairie dog was given due to their habitat (prairies/grasslands) and their warning calls which sound like barks.',
+    'They live 3 to 5 years in the wild and up to 10 years in captivity.',
+    'Prairie dogs, on average, will grow to be between 30 and 40 cm long.',
+    'Prairie dog burrows have separate chambers for sleeping, rearing young, and eliminating waste.',
+    'Prairie dogs are diurnal and spend much of the day looking for food, in which they do not store in thier burrows.',
+    'Prairie dogs are mainly herbivorous, although they do eat some insects.',
+    'Prairie dogs can run around 56 km/h (35 mph) for short distances.',
+    )
+
 PUMA_FACTS = (
     'The puma concolor is also known as cougar and montain lion, but is referred to as puma by most scientists.',
     'Pumas are member of the felinae family, they are the largest of small cats.',
@@ -3218,6 +3234,7 @@ ALL_FACTS = (
     PIG_FACTS,
     PIGEON_FACTS,
     PLATYPUS_FACTS,
+    PRAIRIEDOG_FACTS,
     PUMA_FACTS,
     PORCUPINE_FACTS,
     QUOKKA_FACTS,
