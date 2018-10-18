@@ -2094,6 +2094,7 @@ ORCA_FACTS = (
     'Orcas can weigh up to 6 tons.',
     'An orca\'s teeth can grow to be 4 inches (10 cm) long.',
     'The orca can reach speeds in excess of 30 knots (about 34 mph, or 56 kph).',
+    'Resident orcas, the most commonly-sighted type of orcas, have a diet consisting primarily of fish and squid, while transient orcas feed on marine mammals.',
     )
 
 OSTRICH_FACTS = (
