@@ -228,6 +228,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('atlantic puffin', '\spuffins?\s', reddit, ATLANTIC_PUFFIN_FACTS, comment)
     botengine('honeybadger', '\shoney badgers?\s', reddit, HONEYBADGER_FACTS, comment) # Needs to be here out of order so that it gets picked up before regular badger
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
+	botengine('baboon', '\sbaboon?\s', reddit, BABOON_FACTS, comment)
     botengine('bear', '\sbears?\s', reddit, BEAR_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
     botengine('buffalo', '\sbuffalos?\s', reddit, BUFFALO_FACTS, comment)
@@ -643,6 +644,17 @@ BADGER_FACTS = (
     'The honey badger is a carnivorous species that has the reputation of being the most fearless and vicious of all mammals.',
     'Badgers were eaten in Britain during World War II and were once part of the Native American and settlers diets in the US. Russia still eats badger meat today.',
     'Badgers have featured in lots of British literature over the years, such as Brian Jacques\' Redwall series, \'Tommy Brock\' in Beatrix Potter\'s The Tale of Mr. Tod, \'Bill Badger\' in Mary Tourtel\'s Rupert Bear, \'Mr. Badger\' in Kenneth Grahame\'s The Wind in the Willows, and \'Trufflehunter\' in C. S. Lewis\'s Chronicles of Narnia.',
+    )
+	
+BABOON_FACTS = (
+    'Male baboons are two times larger than females. Baboons can reach 14 to 30 inches in height at the shoulder and 50 to 100 pounds in weight.',
+    'Bodies of baboons are covered with fur that can be dark olive or yellow in color. Males and females look alike, except that females do not have long hair around their necks.',
+    'Baboons have long, dog-like muzzle and strong jaw equipped with sharp canines.',
+    'Baboons are mainly terrestrial animals (live on the ground). They travel large distances in the early morning and late afternoon in the search for food.',
+    'Baboons live in groups called troops. They consist of 7-8 males, twice as many females and their offspring. Dominance in the troop is established via fights.',
+    'Baboons use 30 different sounds for communication. They are able to grunt, scream and bark. Besides vocalization, baboons can yawn, smack their lips or shrug their shoulder to communicate.',
+    'Baboons can survive up to 30 years in the wild and up to 45 years in captivity.',
+    'Baboons reach sexual maturity between the age 5 and 8. Young males leave their native groups, while females stay.',
     )
 
 BEAR_FACTS = (
@@ -2322,6 +2334,9 @@ PUFFERFISH_FACTS = (
     'Scientists believe that puffer fish developed their puffing tactic as a method of self defense because they are poor swimmers that cannot escape from danger quickly.',
     'Sharks are the only species immune to the puffer fish\'s toxin. They can eat puffer fish without any negative consequences',
     'Puffer fish do not have scales. Their skin is thick and rough. Some species have spines on their skin, which offer additional protection against predators.',
+	'Puffer fish can be discretely or brightly colored. There is often relationship between the body coloration and the amount of toxin produced by the fish (brighter colors are often associated with large quantity of toxin in the fish).',
+	'Puffer fish have four teeth that are fused in the beak-like structure. They use their teeth for opening of mussels, clams and shellfish. Puffer fish also eat algae and different types of worms and crustaceans.',
+	'One puffer fish contains enough toxin to kill 30 adult men.'
     )
 
 PORCUPINE_FACTS = (
@@ -2352,6 +2367,9 @@ QUOKKA_FACTS = (
     'Quokkas do not fear humans and will approach people closely if you visit them on Rottnest Island. However, it is illegal for humans to handle or feed them.',
     'Rottnest Island in Australia, where many quokkas live, was given its name when a Dutch explorer mistook the quokkas for rats. The name means "rat nest" in Dutch.',
     'A baby quokka is called a joey. Females can give birth to joeys twice a year. The joey will live in the pouch of its mother for six months.',
+	'The average lifespan of a Quokka is 10 years.',
+	'Quokkas have sharp teeth and will shriek if cornered or attacked or if they feel threatened or provoked.',
+	'The quokkas lack of fear of humans and the small size of their natural habitat makes them vulnerable to becoming endangered as a species.',
     )
 
 RABBIT_FACTS = (
@@ -3097,6 +3115,7 @@ ALL_FACTS = (
     ARMADILLO_FACTS,
     AXOLOTL_FACTS,
     BADGER_FACTS,
+	BABOON_FACTS,
     BEAR_FACTS,
     BEAVER_FACTS,
     BUFFALO_FACTS,
