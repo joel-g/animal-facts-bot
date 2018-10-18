@@ -293,6 +293,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('kangaroo', '\skangaroos?\s', reddit, KANGAROO_FACTS, comment)
     botengine('kiwi', '\skiwis?\s', reddit, KIWI_FACTS, comment)
     botengine('koala', '\skoalas?\s', reddit, KOALA_FACTS, comment)
+    botengine('kookaburra', '\skookaburras?\s', reddit, KOOKABURRA_FACTS, comment)
     botengine('ladybug', '\s(ladybug|lady bug)s?\s', reddit, LADYBUG_FACTS, comment)
     botengine('lamprey', '\slampreys?\s', reddit, LAMPREY_FACTS, comment)
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
@@ -1692,6 +1693,16 @@ KOALA_FACTS = (
     'Koalas cannot be kept legally as pets.',
     )
 
+KOOKABURRA_FACTS = (
+    'Though belonging to the group \'kingfisher\', the kookaburra is not associated with water',
+    'The name \'kookaburra\' comes from an onamatopoeic interpretation of its call',
+    'Kookaburras are generally carnivorous, eating mice, snakes, insects, and small reptiles',
+    'The laughing kookaburra can emit a call that resembles the sound of echoing human laughter',
+    'The average lifespan of a kookaburra is about 15 years',
+    'The kookaburra is the largest member of the kingfisher family and can grow up to 18 inches in length',
+    'The kookaburra is native to the forests and woodlands of Australia, Tasmania, and New Guinea',
+    )
+
 LADYBUG_FACTS = (
     'Ladybugs are a type of beetle. There are about 4,300 kinds of ladybugs in the world.',
     'Some ladybugs have no spots and others have up to 20 spots. Spots have nothing to do with a ladybug age.',
@@ -2322,6 +2333,9 @@ PUFFERFISH_FACTS = (
     'Scientists believe that puffer fish developed their puffing tactic as a method of self defense because they are poor swimmers that cannot escape from danger quickly.',
     'Sharks are the only species immune to the puffer fish\'s toxin. They can eat puffer fish without any negative consequences',
     'Puffer fish do not have scales. Their skin is thick and rough. Some species have spines on their skin, which offer additional protection against predators.',
+    'Puffer fish toxin is found in only certain parts of the fish. Specially trained chefs cut away the edible flesh and serve it as a dangerous delicacy.',
+    'Puffer fish have a set of four teeth that make a \'beak\' which the fish uses to open mussels, clams, and shellfish',
+    'The average lifespan of the puffer fish is around 10 years',
     )
 
 PORCUPINE_FACTS = (
@@ -3161,6 +3175,7 @@ ALL_FACTS = (
     KANGAROO_FACTS,
     KIWI_FACTS,
     KOALA_FACTS,
+    KOOKABURRA_FACTS,
     LADYBUG_FACTS,
     LAMPREY_FACTS,
     LEMUR_FACTS,
