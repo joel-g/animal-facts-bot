@@ -2345,6 +2345,7 @@ QUOKKA_FACTS = (
     'Quokkas are small marsupials in the macropod family (like kangaroos) that are about the size of a housecat.',
     'Quokkas are mostly nocturnal; they sleep during the day and are active at night.',
     'Quokkas are herbivores. They eat mostly grasses and leaves.',
+    'Quokkas are the only member of the genus Setonix',
     'Quokkas do not fear humans and will approach people closely if you visit them on Rottnest Island. However, it is illegal for humans to handle or feed them.',
     'Rottnest Island in Australia, where many quokkas live, was given its name when a Dutch explorer mistook the quokkas for rats. The name means "rat nest" in Dutch.',
     'A baby quokka is called a joey. Females can give birth to joeys twice a year. The joey will live in the pouch of its mother for six months.',
