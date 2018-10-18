@@ -82,10 +82,10 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Elk
 * Emu
 * Falcon
-* Flamingo
-* Fox
 * Ferret
 * Fire salamander
+* Flamingo
+* Fox
 * Frog
 * Gazelle
 * Gecko
@@ -123,9 +123,9 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Lynx
 * Manatee
 * Mantis shrimp
+* Markhor
 * Meerkat
 * Mink
-* Markhor
 * Mongoose
 * Monkey
 * Moose
