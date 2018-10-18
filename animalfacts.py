@@ -1771,6 +1771,8 @@ LOBSTER_FACTS = (
     'Lobsters have poor eyesight, but have highly developed senses of smell and taste.',
     'Lobsters taste with their legs and chew with their stomachs.',
     'Lobsters keep growing forever. They do not get weaker or lose their ability to reproduce, and will keep on molting and growing.',
+    'Lobsters can be divided in two groups: clawed and spiny. Clawed lobsters, as the name suggests, have claws and inhabit cold waters. Spiny lobsters have long antennas instead of claws and can be found in the tropical (warm) waters.',
+    'Deep-sea lobsters are blind. Other species have compound eyes. They cannot see clear image, but can detect movement even at night.',
     )
 
 MARKHOR_FACTS = (
