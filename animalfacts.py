@@ -281,6 +281,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('gorilla', '\sgorillas?\s', reddit, GORILLA_FACTS, comment)
     botengine('grasshopper', '\sgrass ?hoppers?\s', reddit, GRASSHOPPER_FACTS, comment)
     botengine('hamster', '\shamsters?\s', reddit, HAMSTER_FACTS, comment)
+    botengine('hawk','\shawks?\s', reddit, HAWK_FACTS, comment)
     botengine('hedgehog', '\shedgehogs?\s', reddit, HEDGEHOG_FACTS, comment)
     botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS, comment)
     botengine('honeybee', '\shoney bees?\s', reddit, HONEYBEE_FACTS, comment)
@@ -1477,6 +1478,23 @@ HAMSTER_FACTS = (
     'The Syrian hamster is the most popular and well known breed kept as pets. All Syrian hamsters as pets are believed to have descended from one pair in 1930.',
     'Syrian hamsters live 2 - 3 years in captivity, and less in the wild. Other popular pet types such as Russian dwarf hamsters live about 2- 4 years in captivity.',
     'Hamsters range in size from the largest breed, the European hamster at 13.4 inches (34 cm) long, to the smallest, the dwarf hamster at 2 - 4 inches (5.5 - 10.5 cm) long.',
+    )
+
+HAWK_FACTS = (
+    'Hawk is a general term for a large group of birds of prey of the order Falconiformes. ',
+    'There are around 270 species of hawks that can be found on all continents except Antarctica',
+    'Hawks inhabit different types of habitats: marshes, forests, rainforests, prairies, open savannas, grasslands, mountains and coastal regions.',
+    'Certain species of hawks (such as Coopers hawk) are endangered due to chemical pollution which induces destruction of the eggs.',
+    'Hawks vary in size depending on the species. Smallest hawk (American Kestrel) weighs only 4 ounces. Largest hawk (Ferruginous Hawk) weighs up to 5 pounds. Females are larger than males',
+    'Large species of hawks (such as Rough-legged Hawk) reach the length of 22 inches, with wingspan of 55 inches.',
+    'Hawks are characterized by sharp talons, large, curved bill and muscular legs. Sharp bill is used for biting and tearing the prey.',
+    'Hawks have excellent eyesight. They can see 8 times better than humans. Eyesight is primarily used for hunting. Hawk can locate its prey from a distance of 100 feet.',
+    'Unlike many animals, hawks are able to see different colors.',
+    'During the hunt, hawks can dive 150 miles per hour through the air. They are able to catch a prey both in the air and on the ground.',
+    'Certain species of hawks belong to group of migratory birds. They are able to travel more than thousand miles each year from the nesting to the feeding areas when temperature drops down.',
+    'Hawks are monogamous animals (one couple mate for a lifetime). In the case that one partner dies, other will find another mating partner.',
+    'Hawks build nests on the trees using the twigs and branches. Hawks that live in marshes, build nests on the ground.',
+    'Average lifespan of a hawk is between 13 and 20 years in the wild. Hawks live over 20 years in captivity.',
     )
 
 HEDGEHOG_FACTS = (
