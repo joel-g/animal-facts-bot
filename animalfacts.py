@@ -1483,7 +1483,7 @@ HAMSTER_FACTS = (
 HAWK_FACTS = (
     'Hawks can vary in size depending on the species.',
     'Hawks have excellent eyesight. They can see 8 times better than humans and can locate prey from 100 feet away.',
-    'Hawks are diurnal animals (active during the day.',
+    'Hawks are diurnal animals (active during the day).',
     'Hawks build nests on trees or build nests on the ground in marshes.',
     'Average lifespan of a hawk is 10 to 20 years in the wild.',
     'Hawks are characterized by sharp talons, a curved bill, and muscular legs.',
@@ -1493,8 +1493,8 @@ HAWK_FACTS = (
     'Hawks tend to mate during the spring and spend the majority of their time alone',
     'Female hawks lay 1 to 5 eggs per year',
     'Both the male and female hawks will create their nest, improve it, and take care for their eggs',
-    'Female hawks are generally larger than male hawks'
-)
+    'Female hawks are generally larger than male hawks',
+    )
 
 HEDGEHOG_FACTS = (
     'There are 17 species of hedgehog. They are found in parts of Europe, Asia, and Africa and were introduced in New Zealand by settlers.',
