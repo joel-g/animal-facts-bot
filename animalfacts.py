@@ -2840,7 +2840,7 @@ TUATARA_FACTS = (
     'The species has between five and six billion base pairs of DNA sequence, nearly twice that of humans.',
     'Tuatara feature in a number of indigenous legends, and are held as ariki (God forms).',
     'The tuatara was the inspiration for a DC Comics superhero, also with a third eye, called Tuatara, member of the Global Guardians.',
-    'The Tuatara hypercar, designed and manufactured by SSC North America in Tri-Cities, Washington, is named after the reptile, noting its fast evolving DNA and "peaks on the back" as inspiration in the creation of the car.'
+    'The Tuatara hypercar, designed and manufactured by SSC North America in Tri-Cities, Washington, is named after the reptile, noting its fast evolving DNA and "peaks on the back" as inspiration in the creation of the car.',
     )
 
 TURTLE_FACTS = (
