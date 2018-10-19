@@ -8,7 +8,7 @@ Due to Hacktoberfests pull requests are coming in fast! Comment on an issue you 
 
 Steps:
 * Fork/clone the repo.
-* Add a tuple of strings of facts (to animalfacts.py) pertaining to a particular animal. Name the tuple variable following the format 'NAMEOFANIMAL_FACTS'. Put the tuple in alphabetical order with the other tuples. Make sure your lines are indented by 4 spaces and please use ' for your strings.
+* Add a tuple of strings of facts (to animalfacts.py) pertaining to a particular animal. Name the tuple variable following the format 'NAMEOFANIMAL_FACTS'. Put the tuple in alphabetical order with the other tuples. Make sure your lines are indented by 4 spaces and please use ' for your strings. Use escape characters where necessary.
 * Add your tuple to the ALL_FACTS tuple.
 * Add a line to the check_comment_for_animal() function for your animal following the format.
 * Add your animal to the Readme in alphabetical order.
@@ -20,6 +20,7 @@ Please:
 * Only add TRUE facts. Please no trolling with 'alternative facts'.
 * Don't add 'seal', 'bat' or 'duck' facts unless you've figured out how to not reply to homonyms.
 * Don't add 'cat' or 'dog' because they are just too common on reddit.
+* Do use American spellings of words like 'color' or 'meter'.
 
 If you have a question the quickest way to reach is me on twitter @joelatwar
 
@@ -60,6 +61,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Cobra
 * Cougar
 * Cow
+* Coyote
 * Crab
 * Crane
 * Crayfish
@@ -80,9 +82,10 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Elk
 * Emu
 * Falcon
+* Ferret
+* Fire salamander
 * Flamingo
 * Fox
-* Fire salamander
 * Frog
 * Gazelle
 * Gecko
@@ -109,6 +112,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Kangaroo
 * Kiwi
 * Koala
+* Kookaburra
 * Ladybug
 * Lamprey
 * Lemur
@@ -120,14 +124,15 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Lynx
 * Manatee
 * Mantis shrimp
+* Markhor
 * Meerkat
 * Mink
-* Markhor
 * Mongoose
 * Monkey
 * Moose
 * Narwhal
 * Newt
+* Nightjar
 * Ocelot
 * Octopus
 * Opossum
@@ -155,6 +160,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Raccoon
 * Rattlesnake
 * Raven
+* Rhino
 * Salmon
 * Scorpion
 * Seagull
@@ -181,6 +187,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Trout
 * Turtle
 * Vampire bat
+* Vulture
 * Wallaby
 * Walrus
 * Warthog
@@ -189,6 +196,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Wolverine
 * Yak
 * Zebra
+* Zebrafish
 
 ### AnimalFactsBot will reply to its replies if they contain the phrases:
 * good bot
