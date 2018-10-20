@@ -215,6 +215,7 @@ def check_mentions(reddit):
 
 def check_comment_for_animal(comment, reddit):
     botengine('aardvark', '\saardvarks?\s', reddit, AARDVARK_FACTS, comment)
+    botengine('aardwolf', '\saardwolfs?\s', reddit, AARDWOLF_FACTS, comment)
     botengine('african grey', '\safrican (grey|gray)s?\s', reddit, AFRICAN_GREY_FACTS, comment)
     botengine('albatross', '\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
@@ -432,6 +433,25 @@ AFRICAN_GREY_FACTS = (
     'African Greys tend to train you to do their bidding',
     'African Grey parrots generally inhabit savannas, coastal mangroves, woodland and edges of forest clearings in their West and Central Africa range.',
     'African Greys are susceptible to feather picking, calcium deficiency, vitamin-A and vitamin-D deficiency, respiratory infection, psittacosis and psittacine beak and feather disease (PBFD).',
+    )
+
+AARDWOLF_FACTS = (
+    'Aardwolf is small animal. It can reach 3 feet in length and up to 30 pounds in weight. Bushy tail is 7.9 to 11.8 inches long.',
+    'Body of aardwolf is covered with two layers of dense fur that can be yellowish-white or reddish in color. Black stripes cover both sides of the body, including their limbs.',
+    'Aardwolf has a mane that stretches from the head to the tail. Aardwolf raises its mane to appear bigger (and scarier) when it is threatened.',
+    'Aardwolf has narrow muzzle and pointed ears. Its front legs are longer than hind legs. Aardwolf has 5 toes on front feet.',
+    'Unlike other hyenas, aardwolf has poorly developed teeth. It has long and sticky tongue which is specialized for diet based on insects.',
+    'Aardwolf\'s diet consists almost exclusively of termites. It can eat up to 300 000 termites per night. Maggots and other invertebrates with soft bodies are occasionally consumed. Aardwolf will eat small mammals, birds and carrion only when termites cannot be found.',
+    'Aardwolf is nocturnal creature (active during the night).',
+    'Besides humans, jackals are main enemies of aardwolves.',
+    'Aardwolf is solitary and territorial animal. It occupies territory of 1 to 4 square miles. Boundaries of territory are marked with urine, dung and scent produced in anal gland. Aardwolf fiercely defends its territory (by fighting with other aardwolves).',
+    'Aardwolf lives in underground burrows. Even though it can dig a hole in a ground using the claws, aardwolf prefers abandoned burrows of other animals such as aardvark and porcupine.',
+    'Aardwolf is a silent animal that vocalizes only when it is threatened. Clucking and growling sounds can be heard occasionally.',
+    'Aardwolves are monogamous animals (one couple mate for a lifetime). Mating season takes place in the June and July.',
+    'Pregnancy in females lasts 90 days and ends with 2 to 4 cubs. Babies spend first month of their life hidden in a den.',
+    'Both parents take care of their young. Father guards the den against predators. Young aardwolves drink mother\'s milk during the first 3 or 4 months. After that period, they will join their parents in foraging for food.',
+    'Aardwolves will leave their family group at the age of one year to begin independent life.',
+    'Aardwolf can survive 8 years in the wild and up to 15 years in captivity.',
     )
 
 ALBATROSS_FACTS = (
@@ -3166,6 +3186,7 @@ ZEBRAFISH_FACTS = (
 
 ALL_FACTS = (
     AARDVARK_FACTS,
+    AARDWOLF_FACTS,
     AFRICAN_GREY_FACTS,
     ALBATROSS_FACTS,
     ALLIGATOR_FACTS,
