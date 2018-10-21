@@ -229,6 +229,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('atlantic puffin', '\spuffins?\s', reddit, ATLANTIC_PUFFIN_FACTS, comment)
     botengine('honeybadger', '\shoney badgers?\s', reddit, HONEYBADGER_FACTS, comment) # Needs to be here out of order so that it gets picked up before regular badger
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
+    botengine('barnacle', '\sbarnacles?\s', reddit, BARNACLE_FACTS, comment)
     botengine('bear', '\sbears?\s', reddit, BEAR_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
     botengine('bison', '\sbisons?\s', reddit, BISON_FACTS, comment)
@@ -672,6 +673,18 @@ BADGER_FACTS = (
     'The honey badger is a carnivorous species that has the reputation of being the most fearless and vicious of all mammals.',
     'Badgers were eaten in Britain during World War II and were once part of the Native American and settlers diets in the US. Russia still eats badger meat today.',
     'Badgers have featured in lots of British literature over the years, such as Brian Jacques\' Redwall series, \'Tommy Brock\' in Beatrix Potter\'s The Tale of Mr. Tod, \'Bill Badger\' in Mary Tourtel\'s Rupert Bear, \'Mr. Badger\' in Kenneth Grahame\'s The Wind in the Willows, and \'Trufflehunter\' in C. S. Lewis\'s Chronicles of Narnia.',
+    )
+    
+BARNACLE_FACTS = (
+    'Although the barnacle is frequently confused for a mollusc because of its hard outer shell, it is actually a crustacean.',
+    'In their juvenile form barnacles are free-floating, but eventually they attach themselves to any nearby rock, shell, or other object and stay there for the rest of their lives.',
+    'Barnacles are often seen on crabs, whales, boats, rocks and on the shells of sea turtles.',
+    'Some species of barnacle are parasitic, but most species are harmless.',
+    'Barnacles have no true heart, although a sinus close to the esophagus performs a similar function.',
+    'Barnacles have no gills, absorbing oxygen from the water through their limbs and the inner membrane of their carapaces.',
+    'There are around 1220 species of barnacle.',
+    'Barnacles can be pink, yellow, orange, green, brown or covered with stripes.',
+    'Barnacles have a lifespan of 5 to 10 years.',
     )
 
 BEAR_FACTS = (
@@ -3200,6 +3213,7 @@ ALL_FACTS = (
     ATLANTIC_PUFFIN_FACTS,
     AXOLOTL_FACTS,
     BADGER_FACTS,
+    BARNACLE_FACTS,
     BEAR_FACTS,
     BEAVER_FACTS,
     BISON_FACTS,
