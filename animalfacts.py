@@ -227,6 +227,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('antelope', '\santelopes?\s', reddit, ANTELOPE_FACTS, comment)
     botengine('armadillo', '\sarmadillos?\s', reddit, ARMADILLO_FACTS, comment)
     botengine('atlantic puffin', '\spuffins?\s', reddit, ATLANTIC_PUFFIN_FACTS, comment)
+    botengine('axolotl', '\saxolotls?\s', reddit, AXOLOTL_FACTS, comment)
     botengine('honeybadger', '\shoney badgers?\s', reddit, HONEYBADGER_FACTS, comment) # Needs to be here out of order so that it gets picked up before regular badger
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('barnacle', '\sbarnacles?\s', reddit, BARNACLE_FACTS, comment)
@@ -235,6 +236,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('bison', '\sbisons?\s', reddit, BISON_FACTS, comment)
     botengine('bobcat','\sbobcats?\s',reddit, BOBCAT_FACTS,comment)
     botengine('buffalo', '\sbuffalos?\s', reddit, BUFFALO_FACTS, comment)
+    botengine('butterfly', '\sbutterflies?\s', reddit, BUTTERFLY_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
     botengine('capybara', '\scapybaras?\s', reddit, CAPYBARA_FACTS, comment)
     botengine('chameleon', '\schameleons?\s', reddit, CHAMELEON_FACTS, comment)
@@ -301,7 +303,6 @@ def check_comment_for_animal(comment, reddit):
     botengine('ladybug', '\s(ladybug|lady bug)s?\s', reddit, LADYBUG_FACTS, comment)
     botengine('lamprey', '\slampreys?\s', reddit, LAMPREY_FACTS, comment)
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
-    botengine('lynx', '\slynx(es)?\s', reddit, LYNX_FACTS, comment)
     botengine('lemur', '\slemurs?\s', reddit, LEMUR_FACTS, comment)
     botengine('leopard', '\sleopards?\s', reddit, LEOPARD_FACTS, comment)
     botengine('lizard', '\slizards?\s', reddit, LIZARD_FACTS, comment)
@@ -765,6 +766,19 @@ BUFFALO_FACTS = (
     'African buffalo are very aggressive and have a tendency to attack humans. They are very protective of each other and take care of sick and old members of the herd, shielding them from predators.',
     'Water buffalo have been domesticated for more than 5,000 years. They have buttressed humanity’s survival with their meat, horns, hides, milk, butterfat, and power, plowing and transporting people and crops.',
     'Wild water buffalo are at-risk and live only in a small number of protected areas stretching across India, Nepal, Bhutan, and a wildlife reserve in Thailand. Populations are likely to diminish as they are interbred with domesticated water buffalo.',
+    )
+
+BUTTERFLY_FACTS = (
+    'There are over 17,500 recorded butterfly species in the whole world. Out of this number, 750 can be found in America.',
+    'Butterflies belong to the Lepidoptera class of insects which are characterized by their large scaly wings.',
+    'The Cabbage White species of butterfly is the most commonly found in the US. While they are called Cabbage White, they are characterized by their two black markings at the top of their wings.',
+    'Butterflies can vary greatly in size. The biggest butterfly species has a 12 inch wingspan, while the smallest ever recorded only covers half an inch.',
+    'Monarch butterflies are the only insect in the whole world that travels over 2,500 miles on average every winter.',
+    'The North American Monarch is one species of butterfly that has been the most severely impacted by recent climate changes, with their numbers seeing dips and spikes over the last few years.',
+    'A group of butterflies is known as a flutter.',
+    'Butterflies don’t taste with taste buds, but rather sensors located under their feet.',
+    'Contrarily to popular perception, the wings of butterflies are totally clear and the colors we see are the effect of light reflecting on the tiny scales covering them.',
+    'Many adult butterflies do not excrete waste at all. As a matter of fact, many adult butterflies use everything they eat as energy.',
     )
 
 CAMEL_FACTS = (
@@ -3221,7 +3235,9 @@ ALL_FACTS = (
     BEAR_FACTS,
     BEAVER_FACTS,
     BISON_FACTS,
+    BOBCAT_FACTS,
     BUFFALO_FACTS,
+    BUTTERFLY_FACTS,
     CAMEL_FACTS,
     CAPYBARA_FACTS,
     CHAMELEON_FACTS,
@@ -3351,11 +3367,12 @@ ALL_FACTS = (
     SUNFISH_FACTS,
     TARDIGRADE_FACTS,
     TARANTULA_FACTS,
+    TARDIGRADE_FACTS,
     TASMANIAN_DEVIL_FACTS,
     TIGER_FACTS,
-    TROUT_FACTS,
     TOAD_FACTS,
     TOUCAN_FACTS,
+    TROUT_FACTS,
     TUATARA_FACTS,
     TURTLE_FACTS,
     VAMPIRE_BAT_FACTS,
