@@ -34,6 +34,8 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 ### Current supported animals:
 
 * Aardvark
+* Aardwolf
+* African grey
 * Albatross
 * Alligator
 * Alpaca
@@ -44,6 +46,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Antelope
 * Armadillo
 * Atlantic puffin
+* Axolotl
 * Badger
 * Barnacle
 * Bear
