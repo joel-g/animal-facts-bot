@@ -173,8 +173,8 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Sunfish
 * Tarantula
 * Tardigrade
-* Tasmanian devil
 * Tarsier
+* Tasmanian devil
 * Tiger
 * Toad
 * Toucan
