@@ -225,6 +225,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('antelope', '\santelopes?\s', reddit, ANTELOPE_FACTS, comment)
     botengine('armadillo', '\sarmadillos?\s', reddit, ARMADILLO_FACTS, comment)
     botengine('atlantic puffin', '\spuffins?\s', reddit, ATLANTIC_PUFFIN_FACTS, comment)
+    botengine('axolotl', '\saxolotls?\s', reddit, AXOLOTL_FACTS, comment)
     botengine('honeybadger', '\shoney badgers?\s', reddit, HONEYBADGER_FACTS, comment) # Needs to be here out of order so that it gets picked up before regular badger
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('bear', '\sbears?\s', reddit, BEAR_FACTS, comment)
@@ -295,12 +296,12 @@ def check_comment_for_animal(comment, reddit):
     botengine('ladybug', '\s(ladybug|lady bug)s?\s', reddit, LADYBUG_FACTS, comment)
     botengine('lamprey', '\slampreys?\s', reddit, LAMPREY_FACTS, comment)
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
-    botengine('lynx', '\slynx(es)?\s', reddit, LYNX_FACTS, comment)
     botengine('lemur', '\slemurs?\s', reddit, LEMUR_FACTS, comment)
     botengine('leopard', '\sleopards?\s', reddit, LEOPARD_FACTS, comment)
     botengine('lizard', '\slizards?\s', reddit, LIZARD_FACTS, comment)
     botengine('lobster', '\slobsters?\s', reddit, LOBSTER_FACTS, comment)
     botengine('llama', '\sllamas?\s', reddit, LLAMA_FACTS, comment)
+    botengine('lynx', '\slynx(es)?\s', reddit, LYNX_FACTS, comment)
     botengine('markhor', '\smarkhors?\s', reddit, MARKHOR_FACTS, comment)
     botengine('manatee', '\smanatees?\s', reddit, MANATEE_FACTS, comment)
     botengine('mantis shrimp', '\smantis shrimps?\s', reddit, MANTIS_SHRIMP_FACTS, comment)
@@ -3034,9 +3035,10 @@ ALL_FACTS = (
     BADGER_FACTS,
     BEAR_FACTS,
     BEAVER_FACTS,
+    BISON_FACTS,
+    BOBCAT_FACTS,
     BUFFALO_FACTS,
     BUTTERFLY_FACTS,
-    BISON_FACTS,
     CAMEL_FACTS,
     CAPYBARA_FACTS,
     CHAMELEON_FACTS,
@@ -3158,13 +3160,13 @@ ALL_FACTS = (
     SUNFISH_FACTS,
     SQUIRREL_FACTS,
     STINGRAY_FACTS,
-    TARDIGRADE_FACTS,
     TARANTULA_FACTS,
+    TARDIGRADE_FACTS,
     TASMANIAN_DEVIL_FACTS,
     TIGER_FACTS,
-    TROUT_FACTS,
     TOAD_FACTS,
     TOUCAN_FACTS,
+    TROUT_FACTS,
     TURTLE_FACTS,
     VAMPIRE_BAT_FACTS,
     WALLABY_FACTS,
