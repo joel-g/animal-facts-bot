@@ -2471,7 +2471,7 @@ SEAHORSE_FACTS = (
     'Seahorses engage in an eight hour courtship dance which includes spinning around, swimming side by side and changing colours.',
     'When mating, the female seahorse releases up to 50 eggs into a pouch on the male’s abdomen.',
     'The male seahorse carries the eggs in his pouch until they hatch, then releases fully formed, miniature seahorses into the water.  As little as 5 or as many as 1,500 young can be born.',
-)
+    )
 
 SEA_CUCUMBER_FACTS = (
     'Sea cucumbers can reproduce both sexually and asexually.',
