@@ -229,10 +229,10 @@ def check_comment_for_animal(comment, reddit):
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('bear', '\sbears?\s', reddit, BEAR_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
+    botengine('bison', '\sbisons?\s', reddit, BISON_FACTS, comment)
+    botengine('bobcat','\sbobcats?\s',reddit, BOBCAT_FACTS,comment)
     botengine('buffalo', '\sbuffalos?\s', reddit, BUFFALO_FACTS, comment)
     botengine('butterfly', '\sbutterflies?\s', reddit, BUTTERFLY_FACTS, comment)
-    botengine('bobcat','\sbobcats?\s',reddit, BOBCAT_FACTS,comment)
-    botengine('bison', '\sbisons?\s', reddit, BISON_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
     botengine('capybara', '\scapybaras?\s', reddit, CAPYBARA_FACTS, comment)
     botengine('chameleon', '\schameleons?\s', reddit, CHAMELEON_FACTS, comment)
@@ -722,11 +722,11 @@ BUTTERFLY_FACTS = (
     'The Cabbage White species of butterfly is the most commonly found in the US. While they are called Cabbage White, they are characterized by their two black markings at the top of their wings.',
     'Butterflies can vary greatly in size. The biggest butterfly species has a 12 inch wingspan, while the smallest ever recorded only covers half an inch.',
     'Monarch butterflies are the only insect in the whole world that travels over 2,500 miles on average every winter.',
-    'The North American Monarch is one of the species that has been the most severely impacted by recent climate changes, with their numbers seeing dips and spikes over the last few years.',
+    'The North American Monarch is one species of butterfly that has been the most severely impacted by recent climate changes, with their numbers seeing dips and spikes over the last few years.',
     'A group of butterflies is known as a flutter.',
     'Butterflies don’t taste with taste buds, but rather sensors located under their feet.',
     'Contrarily to popular perception, the wings of butterflies are totally clear and the colors we see are the effect of light reflecting on the tiny scales covering them.',
-    'Many adult butterflies do not excrete waste at all. As a matter of fact, many adult butterflies use everything they eat as energy.'
+    'Many adult butterflies do not excrete waste at all. As a matter of fact, many adult butterflies use everything they eat as energy.',
     )
 
 CAMEL_FACTS = (
