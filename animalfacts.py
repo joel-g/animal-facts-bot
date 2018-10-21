@@ -647,7 +647,7 @@ BARNACLE_FACTS = (
     'Barnacles have no gills, absorbing oxygen from the water through their limbs and the inner membrane of their carapaces.',
     'There are around 1220 species of barnacle.',
     'Barnacles can be pink, yellow, orange, green, brown or covered with stripes.',
-    'Barnacles have a lifespan of 5 to 10 years.'
+    'Barnacles have a lifespan of 5 to 10 years.',
     )
 
 BEAR_FACTS = (
