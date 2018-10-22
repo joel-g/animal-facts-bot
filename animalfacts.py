@@ -236,7 +236,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('bison', '\sbisons?\s', reddit, BISON_FACTS, comment)
     botengine('bobcat','\sbobcats?\s',reddit, BOBCAT_FACTS,comment)
     botengine('buffalo', '\sbuffalos?\s', reddit, BUFFALO_FACTS, comment)
-    botengine('butterfly', '\sbutterflies?\s', reddit, BUTTERFLY_FACTS, comment)
+    botengine('butterfly', '\sbutterfl(y|ies)?\s', reddit, BUTTERFLY_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
     botengine('capybara', '\scapybaras?\s', reddit, CAPYBARA_FACTS, comment)
     botengine('chameleon', '\schameleons?\s', reddit, CHAMELEON_FACTS, comment)
