@@ -974,7 +974,7 @@ DEER_FACTS = (
     'During the mating season, the male deer use their antlers to fight other males over does.',
     'Each year, deer antlers fall off and regrow. As they regrow they are covered in a furry coat called velvet.',
     'Deer can jump up to 3 meters (10 feet).',
-    'Deer has extraordinary smelling ability. They can smell food from large distance and they use this ability to communicate with each other and to detect the position of other group mates.',
+    'Deer have extraordinary smelling abilities. They can smell food from large distances and they use this ability to communicate with each other and to detect the position of other group mates.',
     )
 
 DEGU_FACTS = (
