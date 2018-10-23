@@ -215,6 +215,7 @@ def check_mentions(reddit):
 
 def check_comment_for_animal(comment, reddit):
     botengine('aardvark', '\saardvarks?\s', reddit, AARDVARK_FACTS, comment)
+    botengine('aardwolf', '\saardwolfs?\s', reddit, AARDWOLF_FACTS, comment)
     botengine('african grey', '\safrican (grey|gray)s?\s', reddit, AFRICAN_GREY_FACTS, comment)
     botengine('albatross', '\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
     botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
@@ -226,35 +227,40 @@ def check_comment_for_animal(comment, reddit):
     botengine('antelope', '\santelopes?\s', reddit, ANTELOPE_FACTS, comment)
     botengine('armadillo', '\sarmadillos?\s', reddit, ARMADILLO_FACTS, comment)
     botengine('atlantic puffin', '\spuffins?\s', reddit, ATLANTIC_PUFFIN_FACTS, comment)
+    botengine('axolotl', '\saxolotls?\s', reddit, AXOLOTL_FACTS, comment)
     botengine('honeybadger', '\shoney badgers?\s', reddit, HONEYBADGER_FACTS, comment) # Needs to be here out of order so that it gets picked up before regular badger
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
+    botengine('barnacle', '\sbarnacles?\s', reddit, BARNACLE_FACTS, comment)
     botengine('bear', '\sbears?\s', reddit, BEAR_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
-    botengine('buffalo', '\sbuffalos?\s', reddit, BUFFALO_FACTS, comment)
-    botengine('bobcat','\sbobcats?\s',reddit, BOBCAT_FACTS,comment)
     botengine('bison', '\sbisons?\s', reddit, BISON_FACTS, comment)
+    botengine('bobcat','\sbobcats?\s',reddit, BOBCAT_FACTS,comment)
+    botengine('buffalo', '\sbuffalos?\s', reddit, BUFFALO_FACTS, comment)
+    botengine('butterfly', '\sbutterfl(y|ies)?\s', reddit, BUTTERFLY_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
     botengine('capybara', '\scapybaras?\s', reddit, CAPYBARA_FACTS, comment)
     botengine('chameleon', '\schameleons?\s', reddit, CHAMELEON_FACTS, comment)
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('chimpanzee', '\schimpanzees?\s', reddit, CHIMPANZEE_FACTS, comment)
-    botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
     botengine('chinchilla', '\schinchillas?\s', reddit, CHINCHILLA_FACTS, comment)
+    botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
     botengine('clownfish', '\sclown ?fish(es)?\s', reddit, CLOWNFISH_FACTS, comment)
     botengine('cobra', '\scobras?\s', reddit, COBRA_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('coyote','\scoyotes?\s',reddit,COYOTE_FACTS,comment)
     botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment)
+    botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
+    botengine('coyote','\scoyotes?\s',reddit,COYOTE_FACTS,comment)
     botengine('crab', '\scrabs?\s', reddit, CRAB_FACTS, comment)
     botengine('crane', '\scranes?\s', reddit, CRANE_FACTS, comment)
     botengine('crayfish', '\scrayfish?\s', reddit, CRAYFISH_FACTS, comment)
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
-    botengine('deer', '\sdeer?\s', reddit, DEER_FACTS, comment)
     botengine('cuttlefish', '\scuttle ?fish(es)?\s', reddit, CUTTLEFISH_FACTS, comment)
-    botengine('dingo', '\sdingos?\s', reddit, DINGO_FACTS, comment)
+    botengine('deer', '\sdeer?\s', reddit, DEER_FACTS, comment)
     botengine('degu', '\sdegus?\s', reddit, DEGU_FACTS, comment)
-    botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
+    botengine('dingo', '\sdingos?\s', reddit, DINGO_FACTS, comment)
     botengine('dodo', '\sdodos?\s', reddit, DODO_FACTS, comment)
+    botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
     # botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)   Disabled because this was only a temp feature during Game of Thrones season. Dragons aren't real.
     botengine('dugong', '\sdugongs?\s', reddit, DUGONG_FACTS, comment)
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
@@ -275,12 +281,13 @@ def check_comment_for_animal(comment, reddit):
     botengine('gazelle', '\sgazelles?\s', reddit, GAZELLE_FACTS, comment)
     botengine('gecko', '\sgeckos?\s', reddit, GECKO_FACTS, comment)
     botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
-    botengine('grasshopper', '\sgrass ?hoppers?\s', reddit, GRASSHOPPER_FACTS, comment)
     botengine('goat', '\sgoats?\s', reddit, GOAT_FACTS, comment)
     botengine('goose', '\s(goose|geese)\s', reddit, GOOSE_FACTS, comment)
     botengine('gopher', '\sgophers?\s', reddit, GOPHER_FACTS, comment)
     botengine('gorilla', '\sgorillas?\s', reddit, GORILLA_FACTS, comment)
+    botengine('grasshopper', '\sgrass ?hoppers?\s', reddit, GRASSHOPPER_FACTS, comment)
     botengine('hamster', '\shamsters?\s', reddit, HAMSTER_FACTS, comment)
+    botengine('hawk', '\shawks?\s', reddit, HAWK_FACTS, comment)
     botengine('hedgehog', '\shedgehogs?\s', reddit, HEDGEHOG_FACTS, comment)
     botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS, comment)
     botengine('honeybee', '\shoney bees?\s', reddit, HONEYBEE_FACTS, comment)
@@ -298,15 +305,15 @@ def check_comment_for_animal(comment, reddit):
     botengine('ladybug', '\s(ladybug|lady bug)s?\s', reddit, LADYBUG_FACTS, comment)
     botengine('lamprey', '\slampreys?\s', reddit, LAMPREY_FACTS, comment)
     botengine('lion', '\slions?\s', reddit, LION_FACTS, comment)
-    botengine('lynx', '\slynx(es)?\s', reddit, LYNX_FACTS, comment)
     botengine('lemur', '\slemurs?\s', reddit, LEMUR_FACTS, comment)
     botengine('leopard', '\sleopards?\s', reddit, LEOPARD_FACTS, comment)
     botengine('lizard', '\slizards?\s', reddit, LIZARD_FACTS, comment)
-    botengine('lobster', '\slobsters?\s', reddit, LOBSTER_FACTS, comment)
     botengine('llama', '\sllamas?\s', reddit, LLAMA_FACTS, comment)
-    botengine('markhor', '\smarkhors?\s', reddit, MARKHOR_FACTS, comment)
+    botengine('lobster', '\slobsters?\s', reddit, LOBSTER_FACTS, comment)
+    botengine('lynx', '\slynx(es)?\s', reddit, LYNX_FACTS, comment)
     botengine('manatee', '\smanatees?\s', reddit, MANATEE_FACTS, comment)
     botengine('mantis shrimp', '\smantis shrimps?\s', reddit, MANTIS_SHRIMP_FACTS, comment)
+    botengine('markhor', '\smarkhors?\s', reddit, MARKHOR_FACTS, comment)
     botengine('meerkat', '\smeerkats?\s', reddit, MEERKAT_FACTS, comment)
     botengine('mink', '\sminks?\s', reddit, MINK_FACTS, comment)
     botengine('mongoose', '\smongooses?\s', reddit, MONGOOSE_FACTS, comment)
@@ -314,28 +321,29 @@ def check_comment_for_animal(comment, reddit):
     botengine('moose', '\smoose\s', reddit, MOOSE_FACTS, comment)
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
     botengine('newt', '\snewts?\s', reddit, NEWT_FACTS, comment)
+    botengine('nightjar', '\snightjars?\s', reddit, NIGHTJAR_FACTS, comment)
     botengine('ocelot', '\socelots?\s', reddit, OCELOT_FACTS, comment)
+    botengine('octopus', '\socto(pus|puses|pusses|pi)\s', reddit, OCTOPUS_FACTS, comment)
     botengine('opossum', '\sopossums?\s', reddit, OPOSSUM_FACTS, comment)
     botengine('orangutan', '\sorangutans?\s', reddit, ORANGUTAN_FACTS, comment)
-    botengine('oryx', '\soryx(es)?\s', reddit, ORYX_FACTS, comment)
-    botengine('octopus', '\socto(pus|puses|pusses|pi)\s', reddit, OCTOPUS_FACTS, comment)
     botengine('orca', '\sorcas?\s', reddit, ORCA_FACTS, comment)
+    botengine('oryx', '\soryx(es)?\s', reddit, ORYX_FACTS, comment)
     botengine('ostrich', '\sostrich(es)?\s', reddit, OSTRICH_FACTS, comment)
     botengine('otter', '\sotters?\s', reddit, OTTER_FACTS, comment)
     botengine('owl', '\sowls?\s', reddit, OWL_FACTS, comment)
-    botengine('parrot', '\sparrots?\s', reddit, PARROT_FACTS, comment)
     botengine('panda', '\spandas?\s', reddit, PANDA_FACTS, comment)
     botengine('pangolin', '\spangolins?\s', reddit, PANGOLIN_FACTS, comment)
     botengine('panther', '\spanthers?\s', reddit, PANTHER_FACTS, comment)
+    botengine('parrot', '\sparrots?\s', reddit, PARROT_FACTS, comment)
     botengine('peacock', '\speacocks?\s', reddit, PEACOCK_FACTS, comment)
     botengine('peccary', '\speccar(y|ies)\s', reddit, PECCARY_FACTS, comment)
     botengine('penguin', '\spenguins?\s', reddit, PENGUIN_FACTS, comment)
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
     botengine('platypus', '\splatypuse?s?\s', reddit, PLATYPUS_FACTS, comment)
-    botengine('puma', '\spumas?\s', reddit, PUMA_FACTS, comment)
-    botengine('pufferfish', '\spuffer ?fish(es)?\s', reddit, PUFFERFISH_FACTS, comment)
     botengine('porcupine', '\sporcupines?\s', reddit, PORCUPINE_FACTS, comment)
+    botengine('pufferfish', '\spuffer ?fish(es)?\s', reddit, PUFFERFISH_FACTS, comment)
+    botengine('puma', '\spumas?\s', reddit, PUMA_FACTS, comment)
     botengine('quokka', '\squokkas?\s', reddit, QUOKKA_FACTS, comment)
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
@@ -356,16 +364,17 @@ def check_comment_for_animal(comment, reddit):
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
     botengine('starfish', '\sstarfish(es)?\s', reddit, STARFISH_FACTS, comment)
     botengine('sturgeon', '\ssturgeons?\s', reddit, STURGEON_FACTS, comment)
-    botengine('tarantula', '\starantulas?\s', reddit, TARANTULA_FACTS, comment)
     botengine('squirrel', '\ssquirrels?\s', reddit, SQUIRREL_FACTS, comment)
     botengine('stingray', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
     botengine('sunfish', '\ssunfish(es)?\s', reddit, SUNFISH_FACTS, comment)
+    botengine('tarantula', '\starantulas?\s', reddit, TARANTULA_FACTS, comment)
     botengine('tardigrade', '\stardigrades?\s', reddit, TARDIGRADE_FACTS, comment)
     botengine('tasmanian devil', '\stasmanian devils?\s', reddit, TASMANIAN_DEVIL_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
-    botengine('trout', '\strout?\s', reddit, TROUT_FACTS, comment)
     botengine('toad','\stoads?\s', reddit, TOAD_FACTS, comment)
     botengine('toucan', '\stoucans?\s', reddit, TOUCAN_FACTS, comment)
+    botengine('trout', '\strout?\s', reddit, TROUT_FACTS, comment)
+    botengine('tuatara', '\stuataras?\s', reddit, TUATARA_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
     botengine('vampire bat', '\svampire ?bats\s', reddit, VAMPIRE_BAT_FACTS, comment)
     botengine('vulture', '\svulture?\s', reddit, VULTURE_FACTS, comment)
@@ -428,6 +437,25 @@ AFRICAN_GREY_FACTS = (
     'African Greys tend to train you to do their bidding',
     'African Grey parrots generally inhabit savannas, coastal mangroves, woodland and edges of forest clearings in their West and Central Africa range.',
     'African Greys are susceptible to feather picking, calcium deficiency, vitamin-A and vitamin-D deficiency, respiratory infection, psittacosis and psittacine beak and feather disease (PBFD).',
+    )
+
+AARDWOLF_FACTS = (
+    'Aardwolf is small animal. It can reach 3 feet in length and up to 30 pounds in weight. Bushy tail is 7.9 to 11.8 inches long.',
+    'Body of aardwolf is covered with two layers of dense fur that can be yellowish-white or reddish in color. Black stripes cover both sides of the body, including their limbs.',
+    'Aardwolf has a mane that stretches from the head to the tail. Aardwolf raises its mane to appear bigger (and scarier) when it is threatened.',
+    'Aardwolf has narrow muzzle and pointed ears. Its front legs are longer than hind legs. Aardwolf has 5 toes on front feet.',
+    'Unlike other hyenas, aardwolf has poorly developed teeth. It has long and sticky tongue which is specialized for diet based on insects.',
+    'Aardwolf\'s diet consists almost exclusively of termites. It can eat up to 300 000 termites per night. Maggots and other invertebrates with soft bodies are occasionally consumed. Aardwolf will eat small mammals, birds and carrion only when termites cannot be found.',
+    'Aardwolf is nocturnal creature (active during the night).',
+    'Besides humans, jackals are main enemies of aardwolves.',
+    'Aardwolf is solitary and territorial animal. It occupies territory of 1 to 4 square miles. Boundaries of territory are marked with urine, dung and scent produced in anal gland. Aardwolf fiercely defends its territory (by fighting with other aardwolves).',
+    'Aardwolf lives in underground burrows. Even though it can dig a hole in a ground using the claws, aardwolf prefers abandoned burrows of other animals such as aardvark and porcupine.',
+    'Aardwolf is a silent animal that vocalizes only when it is threatened. Clucking and growling sounds can be heard occasionally.',
+    'Aardwolves are monogamous animals (one couple mate for a lifetime). Mating season takes place in the June and July.',
+    'Pregnancy in females lasts 90 days and ends with 2 to 4 cubs. Babies spend first month of their life hidden in a den.',
+    'Both parents take care of their young. Father guards the den against predators. Young aardwolves drink mother\'s milk during the first 3 or 4 months. After that period, they will join their parents in foraging for food.',
+    'Aardwolves will leave their family group at the age of one year to begin independent life.',
+    'Aardwolf can survive 8 years in the wild and up to 15 years in captivity.',
     )
 
 ALBATROSS_FACTS = (
@@ -493,7 +521,7 @@ ANACONDA_FACTS = (
     'Caimans are alligator-like predators that frequent South American waterways. Anacondas are known to hunt these reptilian neighbors, but often sustain significant injuries while doing so.',
     'While getting around, snakes (including Anaconda) have several options, of which “sidewinding” is perhaps the most athletic. Unlike normal slithering, this exhausting technique involves a given reptile using large, J-shaped coils to hastily pull itself along. In general, smaller snakes are more likely to sidewind, although—as the above footage shows—their big cousins will sometimes follow suit.',
     'Nicki Minaj sang a song named "Anaconda".',
-)
+    )
 
 ANGLERFISH_FACTS = (
     'The scientific name for the Anglerfish is Lophiiformes.',
@@ -649,6 +677,18 @@ BADGER_FACTS = (
     'Badgers were eaten in Britain during World War II and were once part of the Native American and settlers diets in the US. Russia still eats badger meat today.',
     'Badgers have featured in lots of British literature over the years, such as Brian Jacques\' Redwall series, \'Tommy Brock\' in Beatrix Potter\'s The Tale of Mr. Tod, \'Bill Badger\' in Mary Tourtel\'s Rupert Bear, \'Mr. Badger\' in Kenneth Grahame\'s The Wind in the Willows, and \'Trufflehunter\' in C. S. Lewis\'s Chronicles of Narnia.',
     )
+    
+BARNACLE_FACTS = (
+    'Although the barnacle is frequently confused for a mollusc because of its hard outer shell, it is actually a crustacean.',
+    'In their juvenile form barnacles are free-floating, but eventually they attach themselves to any nearby rock, shell, or other object and stay there for the rest of their lives.',
+    'Barnacles are often seen on crabs, whales, boats, rocks and on the shells of sea turtles.',
+    'Some species of barnacle are parasitic, but most species are harmless.',
+    'Barnacles have no true heart, although a sinus close to the esophagus performs a similar function.',
+    'Barnacles have no gills, absorbing oxygen from the water through their limbs and the inner membrane of their carapaces.',
+    'There are around 1220 species of barnacle.',
+    'Barnacles can be pink, yellow, orange, green, brown or covered with stripes.',
+    'Barnacles have a lifespan of 5 to 10 years.',
+    )
 
 BEAR_FACTS = (
     'There are eight different species of bear! The North American Black Bear, the Brown Bear, the Polar Bear, the Asiatic Black Bear, the Spectacled Bear, the Giant Panda, the Sloth Bear, and the Sun Bear!',
@@ -728,6 +768,19 @@ BUFFALO_FACTS = (
     'African buffalo are very aggressive and have a tendency to attack humans. They are very protective of each other and take care of sick and old members of the herd, shielding them from predators.',
     'Water buffalo have been domesticated for more than 5,000 years. They have buttressed humanity’s survival with their meat, horns, hides, milk, butterfat, and power, plowing and transporting people and crops.',
     'Wild water buffalo are at-risk and live only in a small number of protected areas stretching across India, Nepal, Bhutan, and a wildlife reserve in Thailand. Populations are likely to diminish as they are interbred with domesticated water buffalo.',
+    )
+
+BUTTERFLY_FACTS = (
+    'There are over 17,500 recorded butterfly species in the whole world. Out of this number, 750 can be found in America.',
+    'Butterflies belong to the Lepidoptera class of insects which are characterized by their large scaly wings.',
+    'The Cabbage White species of butterfly is the most commonly found in the US. While they are called Cabbage White, they are characterized by their two black markings at the top of their wings.',
+    'Butterflies can vary greatly in size. The biggest butterfly species has a 12 inch wingspan, while the smallest ever recorded only covers half an inch.',
+    'Monarch butterflies are the only insect in the whole world that travels over 2,500 miles on average every winter.',
+    'The North American Monarch is one species of butterfly that has been the most severely impacted by recent climate changes, with their numbers seeing dips and spikes over the last few years.',
+    'A group of butterflies is known as a flutter.',
+    'Butterflies don’t taste with taste buds, but rather sensors located under their feet.',
+    'Contrarily to popular perception, the wings of butterflies are totally clear and the colors we see are the effect of light reflecting on the tiny scales covering them.',
+    'Many adult butterflies do not excrete waste at all. As a matter of fact, many adult butterflies use everything they eat as energy.',
     )
 
 CAMEL_FACTS = (
@@ -900,7 +953,7 @@ COW_FACTS = (
     'If you took all the cows in the world and rounded them up into a sphere, that sphere would be nearly 1,200 meters wide!',
     'Cows are very social animals, and many of them have best friends! When separated, they often search for friends and family even years later.'
     'Cows are considered sacred for Hindus in India.',
-)
+    )
 
 COYOTE_FACTS = (
     'Coyotes are members of the Canidae family and share a lot of the same traits of their relatives: wolves, dogs, foxes and jackals.',
@@ -1001,6 +1054,7 @@ DEER_FACTS = (
     'During the mating season, the male deer use their antlers to fight other males over does.',
     'Each year, deer antlers fall off and regrow. As they regrow they are covered in a furry coat called velvet.',
     'Deer can jump up to 3 meters (10 feet).',
+    'Deer have extraordinary smelling abilities. They can smell food from large distances and they use this ability to communicate with each other and to detect the position of other group mates.',
     )
 
 DEGU_FACTS = (
@@ -1058,7 +1112,7 @@ DOLPHIN_FACTS = (
     'Some dolphin species face the threat of extinction, often directly as a result of human behavior. The Yangtze River Dolphin is an example of a dolphin species which may have recently become extinct.',
     'Some fishing methods, such as the use of nets, kill a large number of dolphins every year.',
     'Dolphins can be also found that are colored Pink.',
-)
+    )
 
 DRAGON_FACTS = (
     'The word “dragon” comes from the Greek word “draconta”, which means “to watch.” The Greeks saw dragons as beasts that guarded valuable items. In fact, many cultures depict dragons as hoarding treasure.',
@@ -1217,6 +1271,7 @@ EMU_FACTS = (
     'The emu is the largest bird in Australia, and the second largest in the world after the ostrich.',
     'Emu chicks grow very quickly, up to 2 pounds (1 kg) a week, and are full-grown in 12 to 14 months. They stay with their family group for another six months or so before they split up to breed in their second season.',
     'Emus must drink every day, and they don’t waste water. On very hot days they breathe rapidly, using their lungs as evaporative coolers. Their large nasal passages have multiple folds inside. In cooler weather they use these folds to recycle air and create moisture for reuse.',
+    'The Australian military has lost a war against emus in 1932, in what is called the Great Emu War. The emu population remained virtually the same after the battle.',
     )
 
 FALCON_FACTS = (
@@ -1475,6 +1530,22 @@ HAMSTER_FACTS = (
     'The Syrian hamster is the most popular and well known breed kept as pets. All Syrian hamsters as pets are believed to have descended from one pair in 1930.',
     'Syrian hamsters live 2 - 3 years in captivity, and less in the wild. Other popular pet types such as Russian dwarf hamsters live about 2- 4 years in captivity.',
     'Hamsters range in size from the largest breed, the European hamster at 13.4 inches (34 cm) long, to the smallest, the dwarf hamster at 2 - 4 inches (5.5 - 10.5 cm) long.',
+    )
+
+HAWK_FACTS = (
+    'Hawks can vary in size depending on the species.',
+    'Hawks have excellent eyesight. They can see 8 times better than humans and can locate prey from 100 feet away.',
+    'Hawks are diurnal animals (active during the day).',
+    'Hawks build nests on trees or build nests on the ground in marshes.',
+    'Average lifespan of a hawk is 10 to 20 years in the wild.',
+    'Hawks are characterized by sharp talons, a curved bill, and muscular legs.',
+    'The largest species of hawks, the northern goshawk can weigh up to 2.2 kilograms (4.85 pounds)',
+    'Hawks eat small mammals such as mice, squirrels, and rabbits, as well as insects, smaller birds, turtles, and reptiles',
+    'After eating, a hawk will regurgitate a pellet that contains feathers and small bones',
+    'Hawks tend to mate during the spring and spend the majority of their time alone',
+    'Female hawks lay 1 to 5 eggs per year',
+    'Both the male and female hawks will create their nest, improve it, and take care for their eggs',
+    'Female hawks are generally larger than male hawks',
     )
 
 HEDGEHOG_FACTS = (
@@ -1822,6 +1893,8 @@ LOBSTER_FACTS = (
     'Lobsters have poor eyesight, but have highly developed senses of smell and taste.',
     'Lobsters taste with their legs and chew with their stomachs.',
     'Lobsters keep growing forever. They do not get weaker or lose their ability to reproduce, and will keep on molting and growing.',
+    'Lobsters are invertebrates which means they lack a backbone.',
+    'Lobsters dont have brains as their nervous system is very primitive.',
     'Lobsters can be divided in two groups: clawed and spiny. Clawed lobsters, as the name suggests, have claws and inhabit cold waters. Spiny lobsters have long antennas instead of claws and can be found in the tropical (warm) waters.',
     'Deep-sea lobsters are blind. Other species have compound eyes. They cannot see clear image, but can detect movement even at night.',
     )
@@ -2025,6 +2098,21 @@ NEWT_FACTS = (
     'One of the characteristics distinguishing newts from other salamanders is its relatively rougher skin.',
     'Several species of newt are considered threatened or endangered, including the Edough ribbed newt, Kaiser\'s spotted net, and the Montseny brook newt.',
     'In the UK, it is illegal to catch, possess, or handle great crested newts without a license.',
+    )
+
+NIGHTJAR_FACTS = (
+    'Poets sometimes use the nightjar as an indicator of warm summer nights.',
+    'Nightjar is a crepuscular and nocturnal bird in the nightjar family that breeds across most of Europe and temperate Asia.',
+    'Drinking and bathing of a nightjar take place during flight.',
+    'The Latin name of a nightjar (Caprimulgus) refers to the old myth that the nocturnal nightjar suckled goats, causing them to cease to give milk.',
+    'The female nightjar does not sing.',
+    'Nightjars have a unique serrated comb-like structure on the middle claw that is used to preen and perhaps remove parasites.',
+    'Nightjars drink by dipping to the water surface as they fly.',
+    'Estimates of the European population of the European nightjar range from 470,000 to more than 1 million birds, suggesting a total global population of 2–6 million individuals.',
+    'The maximum known age of a nightjar in the wild is just over 12 years.',
+    'In cold or inclement weather, several nightjar species can slow their metabolism and go into torpor.',
+    'The European nightjar is a bird of dry, open country with some trees and small bushes.',
+    'The male European nightjar\'s song is a sustained churring trill, given continuously for up to 10 minutes with occasional shifts of speed or pitch.',
     )
 
 OCELOT_FACTS = (
@@ -2710,6 +2798,10 @@ STARFISH_FACTS = (
     'Starfish have eyes.',
     'Starfish can reproduce sexually and asexually.',
     'Starfish use seawater, instead of blood, to pump nutrients through their bodies via a "water vascular system".',
+    'A Starfish is not a fish.',
+    'A common starfish has 5 arms, but some starfish have up to 40 arms!',
+    'Starfish are carnivores, meaning they are meat eaters.',
+    'Starfish cannot swim. They move across the ocean by hundreds of tube feet on their arms and body.',
     )
 
 STURGEON_FACTS = (
@@ -2909,6 +3001,17 @@ TOAD_FACTS = (
     'The common toads skin color changes depending on their surroundings.',
     )
 
+TUATARA_FACTS = (
+    'Tuatara name derives from the Māori language, and means "peaks on the back".',
+    'The single species of tuatara is the only surviving member of its order, which flourished around 200 million years ago.',
+    'They have two rows of teeth in the upper jaw overlapping one row on the lower jaw, which is unique among living species.',
+    'They are unusual in having a pronounced photoreceptive eye, the third eye, which is thought to be involved in setting circadian and seasonal cycles.',
+    'The species has between five and six billion base pairs of DNA sequence, nearly twice that of humans.',
+    'Tuatara feature in a number of indigenous legends, and are held as ariki (God forms).',
+    'The tuatara was the inspiration for a DC Comics superhero, also with a third eye, called Tuatara, member of the Global Guardians.',
+    'The Tuatara hypercar, designed and manufactured by SSC North America in Tri-Cities, Washington, is named after the reptile, noting its fast evolving DNA and "peaks on the back" as inspiration in the creation of the car.',
+    )
+
 TURTLE_FACTS = (
     'Turtles have a hard shell that protects them like a shield, this upper shell is called a ‘carapace’.',
     'Turtles also have a lower shell called a ‘plastron’.',
@@ -3101,6 +3204,7 @@ ZEBRA_FACTS = (
     'Zebras are one of the few mammals that scientists believe can see in color.',
     'Like horses, zebras sleep standing up, and usually only when in the safety of a group.',
     )
+
 ZEBRAFISH_FACTS = (
     'The scientific name of Zebrafish is Danio rerio and it belongs to the minnow family, Cyprinidae. The fish got its common name from the presence of five uniform and pigmented horizontal stripes on the side of its body, that resemble the stripes of a zebra.',
     'Zebrafish are vertebrates, which means that they have a backbone like humans.',
@@ -3117,35 +3221,39 @@ ZEBRAFISH_FACTS = (
 
 ALL_FACTS = (
     AARDVARK_FACTS,
+    AARDWOLF_FACTS,
     AFRICAN_GREY_FACTS,
     ALBATROSS_FACTS,
     ALLIGATOR_FACTS,
     ALPACA_FACTS,
-    ATLANTIC_PUFFIN_FACTS,
     ANACONDA_FACTS,
     ANGLERFISH_FACTS,
     ANT_FACTS,
     ANTEATER_FACTS,
     ANTELOPE_FACTS,
     ARMADILLO_FACTS,
+    ATLANTIC_PUFFIN_FACTS,
     AXOLOTL_FACTS,
     BADGER_FACTS,
+    BARNACLE_FACTS,
     BEAR_FACTS,
     BEAVER_FACTS,
-    BUFFALO_FACTS,
     BISON_FACTS,
+    BOBCAT_FACTS,
+    BUFFALO_FACTS,
+    BUTTERFLY_FACTS,
     CAMEL_FACTS,
     CAPYBARA_FACTS,
     CHAMELEON_FACTS,
     CHEETAH_FACTS,
     CHIMPANZEE_FACTS,
-    CHIPMUNK_FACTS,
     CHINCHILLA_FACTS,
+    CHIPMUNK_FACTS,
     CLOWNFISH_FACTS,
     COBRA_FACTS,
+    COUGAR_FACTS,
     COW_FACTS,
     COYOTE_FACTS,
-    COUGAR_FACTS,
     CRAB_FACTS,
     CRANE_FACTS,
     CRAYFISH_FACTS,
@@ -3175,12 +3283,13 @@ ALL_FACTS = (
     GAZELLE_FACTS,
     GECKO_FACTS,
     GIRAFFE_FACTS,
-    GRASSHOPPER_FACTS,
     GOAT_FACTS,
     GOOSE_FACTS,
     GOPHER_FACTS,
     GORILLA_FACTS,
+    GRASSHOPPER_FACTS,
     HAMSTER_FACTS,
+    HAWK_FACTS,
     HEDGEHOG_FACTS,
     HIPPO_FACTS,
     HONEYBADGER_FACTS,
@@ -3201,13 +3310,13 @@ ALL_FACTS = (
     LEMUR_FACTS,
     LEOPARD_FACTS,
     LION_FACTS,
-    LYNX_FACTS,
     LIZARD_FACTS,
-    LOBSTER_FACTS,
     LLAMA_FACTS,
-    MARKHOR_FACTS,
+    LOBSTER_FACTS,
+    LYNX_FACTS,
     MANATEE_FACTS,
     MANTIS_SHRIMP_FACTS,
+    MARKHOR_FACTS,
     MEERKAT_FACTS,
     MINK_FACTS,
     MONGOOSE_FACTS,
@@ -3215,12 +3324,13 @@ ALL_FACTS = (
     MOOSE_FACTS,
     NARWHAL_FACTS,
     NEWT_FACTS,
+    NIGHTJAR_FACTS,
     OCELOT_FACTS,
     OCTOPUS_FACTS,
     OPOSSUM_FACTS,
     ORANGUTAN_FACTS,
-    ORYX_FACTS,
     ORCA_FACTS,
+    ORYX_FACTS,
     OSTRICH_FACTS,
     OTTER_FACTS,
     OWL_FACTS,
@@ -3228,14 +3338,15 @@ ALL_FACTS = (
     PANGOLIN_FACTS,
     PANTHER_FACTS,
     PARROT_FACTS,
-    PECCARY_FACTS,
     PEACOCK_FACTS,
+    PECCARY_FACTS,
     PENGUIN_FACTS,
     PIG_FACTS,
     PIGEON_FACTS,
     PLATYPUS_FACTS,
-    PUMA_FACTS,
     PORCUPINE_FACTS,
+    PUFFERFISH_FACTS,
+    PUMA_FACTS,
     QUOKKA_FACTS,
     RABBIT_FACTS,
     RACCOON_FACTS,
@@ -3256,16 +3367,18 @@ ALL_FACTS = (
     SNAKE_FACTS,
     STARFISH_FACTS,
     STURGEON_FACTS,
-    SUNFISH_FACTS,
     SQUIRREL_FACTS,
     STINGRAY_FACTS,
+    SUNFISH_FACTS,
     TARDIGRADE_FACTS,
     TARANTULA_FACTS,
+    TARDIGRADE_FACTS,
     TASMANIAN_DEVIL_FACTS,
     TIGER_FACTS,
-    TROUT_FACTS,
     TOAD_FACTS,
     TOUCAN_FACTS,
+    TROUT_FACTS,
+    TUATARA_FACTS,
     TURTLE_FACTS,
     VAMPIRE_BAT_FACTS,
     VULTURE_FACTS,

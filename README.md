@@ -34,6 +34,8 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 ### Current supported animals:
 
 * Aardvark
+* Aardwolf
+* African grey
 * Albatross
 * Alligator
 * Alpaca
@@ -44,12 +46,15 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Antelope
 * Armadillo
 * Atlantic puffin
+* Axolotl
 * Badger
+* Barnacle
 * Bear
 * Beaver
 * Bison
 * Bobcat
 * Buffalo
+* Butterfly
 * Camel
 * Capybara
 * Chameleon
@@ -82,10 +87,10 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Elk
 * Emu
 * Falcon
-* Flamingo
-* Fox
 * Ferret
 * Fire salamander
+* Flamingo
+* Fox
 * Frog
 * Gazelle
 * Gecko
@@ -96,6 +101,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Gorilla
 * Grasshopper
 * Hamster
+* Hawk
 * Hedgehog
 * Hippo
 * Honeybee
@@ -123,14 +129,15 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Lynx
 * Manatee
 * Mantis shrimp
+* Markhor
 * Meerkat
 * Mink
-* Markhor
 * Mongoose
 * Monkey
 * Moose
 * Narwhal
 * Newt
+* Nightjar
 * Ocelot
 * Octopus
 * Opossum
@@ -183,6 +190,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Toad
 * Toucan
 * Trout
+* Tuatara
 * Turtle
 * Vampire bat
 * Vulture
