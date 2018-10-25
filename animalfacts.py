@@ -224,6 +224,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('bear', '\sbears?\s', reddit, BEAR_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
     botengine('bison', '\sbisons?\s', reddit, BISON_FACTS, comment)
+    botengine('blobfish', '\sblobfishs?\s', reddit, BLOBFISH_FACTS, comment)
     botengine('bobcat','\sbobcats?\s',reddit, BOBCAT_FACTS,comment)
     botengine('buffalo', '\sbuffalos?\s', reddit, BUFFALO_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
@@ -572,6 +573,16 @@ BISON_FACTS=(
     'When bison are born, their fur is orange-red. After a few months, their fur steadily grows more brown.'
     )
 
+BLOBFISH_FACTS = (
+    'The blobfish is a deep sea fish that lives off the coasts of mainland Australia and Tasmania.',
+    'Blobfish are typically shorter than 30cm.',
+    'Blobfish live at depths between 600 and 1200 meters, where the pressure is 60 to 120 times greater than at sea level.',
+    'The flesh of the blobfish is primarily gelatinous mass with a density slightly less than water.',
+    'In September 2013 the blobfish was voted "Ugliest Animal" and adopted as mascot of the Ugly Animal Preservation Society.',
+    'The popular impression of the blobfish as bulbous & gelatinous is partially due to decompression damage done to it when brought to the surface from the depths which it lives; they look more like a normal bony fish when they are kept in their natural depths.',
+    'The blobfish is listed as an endangered species.'
+    )
+	
 BOBCAT_FACTS = (
     'An adult bobcat’s tail averages just 6 to 7 inches in length.',
     'The word bobcat a reference to their tail. In barbershop lingo, hair that’s been cut short is sometimes called “bobbed.”',
@@ -2488,6 +2499,7 @@ ALL_FACTS = (
     BADGER_FACTS,
     BEAR_FACTS,
     BEAVER_FACTS,
+    BLOBFISH_FACTS,
     BUFFALO_FACTS,
     BISON_FACTS,
     CAMEL_FACTS,
