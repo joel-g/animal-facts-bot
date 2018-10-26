@@ -752,7 +752,7 @@ BLOBFISH_FACTS = (
     'The flesh of the blobfish is primarily gelatinous mass with a density slightly less than water.',
     'In September 2013 the blobfish was voted "Ugliest Animal" and adopted as mascot of the Ugly Animal Preservation Society.',
     'The popular impression of the blobfish as bulbous & gelatinous is partially due to decompression damage done to it when brought to the surface from the depths which it lives; they look more like a normal bony fish when they are kept in their natural depths.',
-    'The blobfish is listed as an endangered species.'
+    'The blobfish is listed as an endangered species.',
     )
 	
 BOBCAT_FACTS = (
