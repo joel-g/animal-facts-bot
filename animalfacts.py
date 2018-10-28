@@ -689,6 +689,15 @@ BARNACLE_FACTS = (
     'There are around 1220 species of barnacle.',
     'Barnacles can be pink, yellow, orange, green, brown or covered with stripes.',
     'Barnacles have a lifespan of 5 to 10 years.',
+    'Barnacles can reach a size of up to 2.7 inches in diameter.',
+    'Once a barnacle attaches to something, it stays attached for the rest of its life.',
+    'Barnacles like to attach to areas with lots of other barnacles, as this indicates plenty of food and good conditions.',
+    'Barnacles are omnivores, which mean they eat plants and meat. Their diet consists mainly of plankton and algae.',
+    'The main enemies of barnacles are sea stars, snails and mussels.',
+    'Barnacles feed by filtering food through their feathery appendages, which are modified legs.',
+    'Barnacle mating season is during autumn and winter.'
+    'Some barnacles are considered a delicacy.',
+    'The US Naval Academy estimates that the hull-drag caused by barnacles increases the Navys petroleum bill by $250 million every year.',
     )
 
 BEAR_FACTS = (
