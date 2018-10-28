@@ -383,6 +383,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('walrus', '\swalrus\s', reddit, WALRUS_FACTS, comment)
     botengine('warthog', '\swarthogs?\s', reddit, WARTHOG_FACTS, comment)
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
+    botengine('wildebeest','\swildebeests?|gnu\s', reddit, WILDEBEEST_FACTS, comment)
     botengine('wolf', '\swol(f|ves)\s', reddit, WOLF_FACTS, comment)
     botengine('wolverine', '\swolverines?\s', reddit, WOLVERINE_FACTS, comment)
     botengine('yak', '\syaks?\s', reddit, YAK_FACTS, comment)
@@ -3160,6 +3161,24 @@ WHALE_FACTS = (
     'The blue whale is the largest animal to have ever lived on Earth; the largest on record was 100 ft. long.',
     )
 
+WILDEBEEST_FACTS = ( 
+    'Wildebeest are one of the largest antelopes. They can reach 8 feet in length, 4.5 feet in height and weigh up to 600 pounds.',
+    'Between January and March, half a million wildebeest are born each year in the Serengeti. February, is the month with the most babies, around 8,000 are born each day.',
+    'During migration, wildebeests travel between 500 and 1000 miles. Timing of migration is determined by weather conditions, but it usually takes place during the months of May and June.',
+    'When the Dutch settled in South Africa, they named this animal “wildebeest,” meaning “wild beast,” due to its untamed appearance and vigorous nature.',
+    'Both males and females possess lengthy horns that spring outward from the base of their head and form curved semicircles, pointing slightly backward.',
+    'Wildebeest live in massive herds of sometimes thousands, and many participate in the Great Migration, one of the most amazing spectacles in the animal kingdom.',
+    'In East Africa, an estimated 300,000 - 500,000 wildebeest calves are born every year between January - February. New calves are able to walk on their own within minutes of being born!',
+    'Wildebeest live in the plains and open woodlands in southern Africa. The biggest herds can be found in the Serengeti desert.',
+    'Wildebeest trek around 30 miles every day and approximately 1,000 miles a year as the they follow the rains in order to find the best grass.',
+    'Wildebeest are herbivorous animals and graze on grasses, leaves and shoots.',
+    'When danger is spotted, the wildebeest warn each using groaning calls and then run together creating a stampede, both to escape approaching predators and also to intimidate them.',
+    'Wildebeests look like a cross between a moose and a bull. They grow up to 4.5 feet (1.37 meters) tall, these animals have skinny legs, lean bodies, and a large head with two curved horns.',
+    'There are 2 species of wildebeest which are the Black Wildebeest (Connochaetes gnou) and the Blue Wildebeest (Connochaetes taurinus), both are native to Africa.',
+    'Wildebeest have a top speed of roughly 40 miles/hour, and will run together as herds to scare away and avoid predators.',
+    'Mature male wildebeest will actively defend and mark their territory by means of poop and scent marking. They have modified glands in their eyes and feet and they will rub against trees or rake soil to leave their scent.',
+    )
+
 WOLF_FACTS = (
     'Wolves are excellent hunters and have been found to be living in more places in the world than any other land mammal except humans.',
     'The wolf is the ancestor of all breeds of domestic dog. It is part of a group of animals called the wild dogs which also includes the dingo and the coyote.',
@@ -3407,6 +3426,7 @@ ALL_FACTS = (
     WALRUS_FACTS,
     WARTHOG_FACTS,
     WHALE_FACTS,
+    WILDEBEEST_FACTS,
     WOLF_FACTS,
     WOLVERINE_FACTS,
     YAK_FACTS,
