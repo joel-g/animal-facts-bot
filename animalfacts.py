@@ -2940,9 +2940,9 @@ WHALE_FACTS = (
     )
 
 WILDEBEEST_FACTS = ( 
-    'Wildebeest is one of the largest antelopes. It can reach 8 feet in length, 4.5 feet in height and weight up to 600 pounds.',
-    'Between January and March, half a million wildebeest are born each year in the Serengeti. In February, the month with the highest calving rate, around 8,000 wildebeest are born each day.',
-    'During migration, wildebeests travel between 500 and 1000 miles. Timing of migration is determined by weather conditions, but it usually takes place during the May and June.',
+    'Wildebeest are one of the largest antelopes. They can reach 8 feet in length, 4.5 feet in height and weigh up to 600 pounds.',
+    'Between January and March, half a million wildebeest are born each year in the Serengeti. February, is the month with the most babies, around 8,000 are born each day.',
+    'During migration, wildebeests travel between 500 and 1000 miles. Timing of migration is determined by weather conditions, but it usually takes place during the months of May and June.',
     'When the Dutch settled in South Africa, they named this animal “wildebeest,” meaning “wild beast,” due to its untamed appearance and vigorous nature.',
     'Both males and females possess lengthy horns that spring outward from the base of their head and form curved semicircles, pointing slightly backward.',
     'Wildebeest live in massive herds of sometimes thousands, and many participate in the Great Migration, one of the most amazing spectacles in the animal kingdom.',
@@ -2951,10 +2951,10 @@ WILDEBEEST_FACTS = (
     'Wildebeest trek around 30 miles every day and approximately 1,000 miles a year as the they follow the rains in order to find the best grass.',
     'Wildebeest are herbivorous animals and graze on grasses, leaves and shoots.',
     'When danger is spotted, the wildebeest warn each using groaning calls and then run together creating a stampede, both to escape approaching predators and also to intimidate them.',
-    'Wildebeests look like a cross between a moose and a bull. Growing up to 4.5 feet (1.37 meters) tall, the animals have skinny legs, a lean body and a large head with two curved horns.',
+    'Wildebeests look like a cross between a moose and a bull. They grow up to 4.5 feet (1.37 meters) tall, these animals have skinny legs, lean bodies, and a large head with two curved horns.',
     'There are 2 species of wildebeest which are the Black Wildebeest (Connochaetes gnou) and the Blue Wildebeest (Connochaetes taurinus), both are native to Africa.',
-    'Wildebeest have a top speed of roughly 40 miles/hour, and will cooperatively run together as herds to scare away and overcome predators en masse.',
-    'Mature male wildebeest will actively defend and mark their territory by means of scent marking and poop. They have modified glands their eyes and feet called which they will rub against trees or rake soil to leave their scent.'
+    'Wildebeest have a top speed of roughly 40 miles/hour, and will run together as herds to scare away and avoid predators.',
+    'Mature male wildebeest will actively defend and mark their territory by means of poop and scent marking. They have modified glands in their eyes and feet and they will rub against trees or rake soil to leave their scent.',
     )
 
 WOLF_FACTS = (
@@ -3174,8 +3174,8 @@ ALL_FACTS = (
     WALLABY_FACTS,
     WALRUS_FACTS,
     WARTHOG_FACTS,
-    WILDEBEEST_FACTS,
     WHALE_FACTS,
+    WILDEBEEST_FACTS,
     WOLF_FACTS,
     WOLVERINE_FACTS,
     YAK_FACTS,
