@@ -918,6 +918,7 @@ CLOWNFISH_FACTS = (
     'Clownfish use stinging anemones for their own protection and in return drives off intruders and preens its host by removing parasites.',
     'All clownfish are born male and have the ability to switch their sex. If once they become female, the change is irreversible.',
     'Clownfish rarely stray more than a few yards from their host anemone.',
+    'Even though not all of the clown fish eggs will hatch, a vast number of clown fish fry hatch in every spawn meaning that clown fish numbers remain high in the wild.',
     )
 
 COBRA_FACTS = (
