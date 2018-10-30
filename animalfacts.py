@@ -351,6 +351,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('rattlesnake', '\srattlesnakes?\s', reddit, RATTLESNAKE_FACTS, comment)
     botengine('raven', '\sravens?\s', reddit, RAVEN_FACTS, comment)
     botengine('rhino', '\srhino?\s', reddit, RHINO_FACTS, comment)
+    botengine('roadrunner', '\sroadrunner?\s', reddit, ROADRUNNER_FACTS, comment)
     botengine('salmon', '\ssalmons?\s', reddit, SALMON_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
@@ -2585,6 +2586,19 @@ RHINO_FACTS = (
     'It is estimated that there are only around 29.000 rhinos left in the wild, compared to 500,000 at the beginning of the 20th century. The main threat to these animals is illegal hunting, largely because their horns are used in traditional folk medicine, particularly in Asia.',
     )
 
+ROADRUNNER_FACTS = (
+    'A roadrunner is a fast-running ground cuckoo bird with a long tail and crest.',
+    'Roadrunners are usually found in the deserts of the southwestern United States and Mexico.',
+    'Roadrunners can run at up to 20 miles per hour (32 km/h). They prefer to sprint over flying but they sometimes fly to escape predators.',
+    'Roadrunners are generally between 22 to 24 inches from tail to beak and weigh about 8 to 15 ounces.',
+    'A roadrunner is a large, slender, black-brown and white-streaked ground bird that has a distictive head crest.',
+    'Roadrunners leave a distinctive "X" track mark when they walk or run which makes it appear that they are travelling in both directions.',
+    'The roadrunner is an opportunistic omnivore. They generally eat insects, small reptiles, rodents and small mammals, spiders (including tarantulas), scorpions, centipedes, snails, small birds, eggs, and fruits and seeds from prickly pear cactuses and sumacs.',
+    'Because they are so fast, roadrunners are one of the few animals they prey upon rattlesnakes.',
+    'Roadrunners usually live alone or in monogamous pairs that are mated for life.',
+    'Roadrunners typically make nests 1 to 3 meters about ground in a low tree, bush, or cactus. Their nests can be made of leaves, feathers, snakeskins, or dung.',
+    'The Hopi and other Pueblo tribes believed that roadrunners were medicine birds that could protect against evil spirits.',
+
 SALMON_FACTS = (
     'Salmon tend to be anadromous, which means they hatch in fresh water, migrate to the ocean, and return to fresh water to reproduce, however this is not always the case.',
     'The majority of salmon worldwide are farmed, a process known as aquaculture.',
@@ -3394,6 +3408,7 @@ ALL_FACTS = (
     RATTLESNAKE_FACTS,
     RAVEN_FACTS,
     RHINO_FACTS,
+    ROADRUNNER_FACTS,
     SALMON_FACTS,
     SCORPION_FACTS,
     SEAGULL_FACTS,
