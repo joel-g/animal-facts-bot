@@ -1070,6 +1070,7 @@ DEER_FACTS = (
     'The Chinese water deer does not have any antlers. Instead, it has very long canine teeth used to attract mates with.',
     'Deer feed primaraly on leaves.',
     'Deer were an important source for food for early hominids.',
+    'Deer are regularly culled in Britain to help maintain the population; they are a preyed upon species so if their population grows too big the food source becomes scarce.',
     'The only known female deer that possess antlers is the reindeer.',
     'The male deer is called a buck but some larger males are referred to as stags. A female deer is called a doe or a hind.',
     'During the mating season, the male deer use their antlers to fight other males over does.',
