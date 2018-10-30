@@ -3031,10 +3031,10 @@ TUATARA_FACTS = (
     'Tuatara feature in a number of indigenous legends, and are held as ariki (God forms).',
     'The tuatara was the inspiration for a DC Comics superhero, also with a third eye, called Tuatara, member of the Global Guardians.',
     'The Tuatara hypercar, designed and manufactured by SSC North America in Tri-Cities, Washington, is named after the reptile, noting its fast evolving DNA and "peaks on the back" as inspiration in the creation of the car.',
-    'In Māori legends, tuatara are thought to be messengers of Whiro, the personification of darkness and evil.",
-    'Tuatara are considered to be living fossils, a living animal which closely resembles animals known only from the fossil record.", 
-    'Tuatara can be a range of colors, olive green, brown, or orange-red, and their coloring can change throughout its life.",
-)
+    'In Māori legends, tuatara are thought to be messengers of Whiro, the personification of darkness and evil.',
+    'Tuatara are considered to be living fossils, a living animal which closely resembles animals known only from the fossil record.', 
+    'Tuatara can be a range of colors, olive green, brown, or orange-red, and their coloring can change throughout its life.',
+    )
 
 TURTLE_FACTS = (
     'Turtles have a hard shell that protects them like a shield, this upper shell is called a ‘carapace’.',
