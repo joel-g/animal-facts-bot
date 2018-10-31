@@ -366,6 +366,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('squirrel', '\ssquirrels?\s', reddit, SQUIRREL_FACTS, comment)
     botengine('starfish', '\sstarfish(es)?\s', reddit, STARFISH_FACTS, comment)
     botengine('stingray', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
+    botengine('stoat', '\sstoats?\s', reddit, STOAT_FACTS, comment)
     botengine('sturgeon', '\ssturgeons?\s', reddit, STURGEON_FACTS, comment)
     botengine('sunfish', '\ssunfish(es)?\s', reddit, SUNFISH_FACTS, comment)
     botengine('tarantula', '\starantulas?\s', reddit, TARANTULA_FACTS, comment)
@@ -2826,6 +2827,17 @@ STARFISH_FACTS = (
     'Starfish cannot swim. They move across the ocean by hundreds of tube feet on their arms and body.',
     )
 
+STOAT_FACTS = (
+    'Stoats have very good eyesight, good hearing and a strong sense of smell.',
+    'A female stoat can get pregnant when she is still a blind, deaf, toothless and naked baby – at only 2-3 weeks old.',
+    'In countries with very cold, snowy winters, the fur of stoats turns white. This white fur is called ermine. It is very soft and thick and is used to make luxury fur coats.',
+    'If stoats get the chance, they’ll kill more than they need for food and hide the rest in their den to eat later.',
+    'Stoats can kill animals much bigger than themselves.',
+    'The appearance of a stoat is similar to that of a weasel, although the stoat is considerably larger and has a distinctive black tip to its tail.',
+    'Stoats are very agile and good climbers and may take young birds from a nest.',
+    'Stoats are strong swimmers and are capable of crossing large rivers.',
+    )
+
 STURGEON_FACTS = (
     'Sturgeons are related to the paddlefish and perhaps to the bichir.',
     'Sturgeons are found in greatest abundance in the rivers of southern Russia and Ukraine and in the freshwaters of North America.',
@@ -3410,6 +3422,7 @@ ALL_FACTS = (
     SNAIL_FACTS,
     SNAKE_FACTS,
     STARFISH_FACTS,
+    STOAT_FACTS,
     STURGEON_FACTS,
     SQUIRREL_FACTS,
     STINGRAY_FACTS,
