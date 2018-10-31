@@ -227,6 +227,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('antelope', '\santelopes?\s', reddit, ANTELOPE_FACTS, comment)
     botengine('armadillo', '\sarmadillos?\s', reddit, ARMADILLO_FACTS, comment)
     botengine('atlantic puffin', '\spuffins?\s', reddit, ATLANTIC_PUFFIN_FACTS, comment)
+    botengine('avocet', '\savocets?\s', reddit, AVOCET_FACTS, comment)
     botengine('axolotl', '\saxolotls?\s', reddit, AXOLOTL_FACTS, comment)
     botengine('honeybadger', '\shoney badgers?\s', reddit, HONEYBADGER_FACTS, comment) # Needs to be here out of order so that it gets picked up before regular badger
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
@@ -648,6 +649,20 @@ ATLANTIC_PUFFIN_FACTS = (
     'The puffins’ genus name "Fratercula" comes from the Latin for “little brother”. The name refers to the sea bird’s black and white plumage, which was said to resemble the robes that monks once wore.',
     'Sixty percent of the world’s puffins breed in Iceland.',
     'Puffins are one of the few birds that have the ability to hold several small fish in their bills at a time. Their raspy tongues and spiny palates allow them to firmly grasp 10 to 12 fish during one foraging trip. They thus can bring more food back to their young compared with other seabirds that tend to swallow and regurgitate meals for their chicks.',
+    )
+    
+AVOCET_FACTS = (
+    'There are four different species of avocet which are the Pied avocet, the American avocet, the Red-necked avocet and the Andean avocet.',
+    'The avocet is a type of wading bird.',
+    'The avocet is generally found in watery habitats close to the coast',
+    'The avocet has long legs and webbed feet to aid it in hunting in the shallows.',
+    'The avocet is a relatively large and forceful species of bird, often reported to intimidate other birds into leaving its spot.',
+    'The avocet has a long and thin, upturned beak which it sweeps from side to side in the water to catch food.',
+    'The avocet is a relatively large and forceful species of bird, often reported to intimidate other birds into leaving its spot.',
+    'The avocet flys, hunts, migrates and nests in large flocks.,
+    'The avocet is Carnivorous.',
+    'Avocets are known to breed on open ground, generally close to the water.',
+    'Avocet chicks are nursed by both parents until they fly away from the nest at between 4 and 6 weeks old.',
     )
 
 AXOLOTL_FACTS = (
@@ -3291,6 +3306,7 @@ ALL_FACTS = (
     ANTELOPE_FACTS,
     ARMADILLO_FACTS,
     ATLANTIC_PUFFIN_FACTS,
+    AVOCET_FACTS
     AXOLOTL_FACTS,
     BADGER_FACTS,
     BARNACLE_FACTS,
