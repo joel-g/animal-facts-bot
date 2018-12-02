@@ -266,6 +266,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('dugong', '\sdugongs?\s', reddit, DUGONG_FACTS, comment)
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
     botengine('earthworm', '\searthworms?\s', reddit, EARTHWORM_FACTS, comment)
+    botengine('earwig', '\searwigs?\s', reddit, EARWIG_FACTS, comment)
     botengine('echidna', '\sechidnas?\s', reddit, ECHIDNA_FACTS, comment)
     botengine('eland', '\selands?\s', reddit, ELAND_FACTS, comment)
     botengine('elephant', '\selephants?\s', reddit, ELEPHANT_FACTS, comment)
@@ -1198,6 +1199,20 @@ EARTHWORM_FACTS = (
     'Earthworms have a central and peripheral nervous system.',
     'Water, as well as salts, can also be moved through the skin of an earthworm by active transport.',
     'Earthworms have the ability to regenerate lost segments, but this ability varies between species and depends on the extent of the damage.',
+    )
+    
+EARWIG_FACTS = (
+    'There are nearly 2,000 different species of earwig.',
+    'Although earwigs are able to fly, they often don\'t.',
+    'Earwigs are nocturnal.',
+    'The earwig is thought to get its name from people fearing that earwigs crawled into your ear to lay their eggs.',
+    'Earwigs are omnivores.',
+    'Female earwigs lay up to 80 small eggs which hatch within a couple of weeks.',
+    'Earwigs moult 5 times over the course of their lifetime',
+    'The earwig has a small body size, that is split into three parts',
+    'The earwig has sharp pincers on its abdomen and large wings that generally remain concealed against the body of the earwig.',
+    'Earwigs often hide in small, moist crevices during the day',
+    'Amphibians such as frogs, newts and toads are among the most common predators of the earwig along with birds and other larger insects such as beetles.',
     )
 
 ECHIDNA_FACTS = (
@@ -3312,6 +3327,7 @@ ALL_FACTS = (
     DUGONG_FACTS,
     EAGLE_FACTS,
     EARTHWORM_FACTS,
+    EARWIG_FACTS,
     ECHIDNA_FACTS,
     ELAND_FACTS,
     ELEPHANT_FACTS,
