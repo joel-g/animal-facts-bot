@@ -185,6 +185,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Squirrel
 * Starfish
 * Stingray
+* Stoat
 * Sturgeon
 * Sunfish
 * Tarantula
