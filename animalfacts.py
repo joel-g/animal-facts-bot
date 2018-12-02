@@ -235,7 +235,6 @@ def check_comment_for_animal(comment, reddit):
     botengine('bear', '\sbears?\s', reddit, BEAR_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
     botengine('bison', '\sbisons?\s', reddit, BISON_FACTS, comment)
-    botengine('blobfish', '\sblobfish?\s', reddit, BLOBFISH_FACTS, comment)
     botengine('bobcat','\sbobcats?\s',reddit, BOBCAT_FACTS,comment)
     botengine('buffalo', '\sbuffalos?\s', reddit, BUFFALO_FACTS, comment)
     botengine('butterfly', '\sbutterfl(y|ies)?\s', reddit, BUTTERFLY_FACTS, comment)
@@ -772,16 +771,6 @@ BISON_FACTS = (
     'When bison are born, their fur is orange-red. After a few months, their fur steadily grows more brown.',
     )
 
-BLOBFISH_FACTS = (
-    'The blobfish is a deep sea fish that lives off the coasts of mainland Australia and Tasmania.',
-    'Blobfish are typically shorter than 30cm.',
-    'Blobfish live at depths between 600 and 1200 meters, where the pressure is 60 to 120 times greater than at sea level.',
-    'The flesh of the blobfish is primarily gelatinous mass with a density slightly less than water.',
-    'In September 2013 the blobfish was voted "Ugliest Animal" and adopted as mascot of the Ugly Animal Preservation Society.',
-    'The popular impression of the blobfish as bulbous & gelatinous is partially due to decompression damage done to it when brought to the surface from the depths which it lives; they look more like a normal bony fish when they are kept in their natural depths.',
-    'The blobfish is listed as an endangered species.',
-    )
-	
 BOBCAT_FACTS = (
     'An adult bobcat\'s tail averages just 6 to 7 inches in length.',
     'The word bobcat a reference to their tail. In barbershop lingo, hair that’s been cut short is sometimes called “bobbed.”',
@@ -935,6 +924,11 @@ CLOWNFISH_FACTS = (
     'Clownfish use stinging anemones for their own protection and in return drives off intruders and preens its host by removing parasites.',
     'All clownfish are born male and have the ability to switch their sex. If once they become female, the change is irreversible.',
     'Clownfish rarely stray more than a few yards from their host anemone.',
+    'Clownfish can be yellow, orange, reddishm or blackish in color.',
+    'In a group of clownfish the largest and most aggressive female is at the top of the hierarchy.',
+    'In the wild clownfish spawn around the full moon.'
+    'In a group, only one male and one female clownfish will reproduce at a time.',
+    'Clownfish can lay hundreds or thousands of eggs at a time. The male parent guards all the eggs until they hatch in about 6-10 days.',
     )
 
 COBRA_FACTS = (
@@ -3326,7 +3320,6 @@ ALL_FACTS = (
     BEAR_FACTS,
     BEAVER_FACTS,
     BISON_FACTS,
-    BLOBFISH_FACTS,
     BOBCAT_FACTS,
     BUFFALO_FACTS,
     BUTTERFLY_FACTS,
