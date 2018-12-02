@@ -1791,6 +1791,7 @@ KIWI_FACTS = (
 
 KOALA_FACTS = (
     'Koalas are native to Australia. Koalas are not bears.',
+    'During the day, koalas often sleep for up to 18 hours.',
     'Koala fossils found in Australia have been dated as long ago as 20 million years.',
     'Koalas eat eucalyptus leaves and almost nothing else. Eucalyptus is very difficult to digest, low in nutrients, and poisonous.',
     'Since eucalyptus is so difficult to chew, it wears down the koalas teeth until they are useless, and the koala starves to death.',
