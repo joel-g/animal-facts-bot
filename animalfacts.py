@@ -1017,7 +1017,7 @@ DODO_FACTS = (
     )
 
 DOLPHIN_FACTS = (
-	'Known for their Playful behavior, dolphins are highly Intelligent. They are as Smart as Apes, and the evolution of their larger brains is surprisingly similar to humans.',
+    'Known for their Playful behavior, dolphins are highly intelligent. They are as smart as Apes, and the evolution of their larger brains is surprisingly similar to humans.',
     'Compared to other animals, dolphins are believed to be very intelligent.',
     'The Killer Whale (also known as Orca) is actually a type of dolphin.',
     'Bottlenose dolphins are the most common and well known type of dolphin.',
@@ -1827,7 +1827,7 @@ MEERKAT_FACTS = (
     )
 
 MINK_FACTS = (
-	'Mink is a mammal that belongs to the family of weasels.',
+    'TheMink is a mammal that belongs to the family of weasels.',
     'Mink can reach 15 to 28 inches in length and weigh between 16 and 56 ounces. American minks are larger than European minks.',
     'Minks are covered with soft fur that is usually black or dark brown in color. White marks can be seen on the chin, throat and chest.',
     'Minks have slender body with short legs, long neck, rounded head and small ears. Its tail usually reaches ½ of the body length.',
