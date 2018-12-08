@@ -3209,6 +3209,15 @@ WHALE_FACTS = (
     'Whales sleep by resting half of their brain at a time. That means they can still surface to breathe while they are sleeping.',
     'Whales have excellent hearing, and can hear other whales from thousands of kilometers away.',
     'The blue whale is the largest animal to have ever lived on Earth; the largest on record was 100 ft. long.',
+    'Blue whales are graceful swimmers. They cruise the ocean at over 8km/h and can reach speeds of over 30km/h.',
+    'Various scientific studies have calculated life expectancy averages of various whale species to range anywhere from 30 to 70 years all the way up to 200 years.',
+    'Blue whales mainly catch their food by diving and they can descend to depths of approximately 500m.',
+    'Whales have few predators but are known to fall victim to attacks by sharks and killer whales, and many are injured or die each year from impacts with large ships.',
+    'Females breed only once every three years and gestation is between 11-12 months. Females usually only have one young.',
+    'A baby blue whale (calf) emerges weighing up to 3 tons and stretching to 25 feet.',
+    'Intensive hunting in the 1900s by whalers seeking whale oil drove them to the brink of extinction. Hundreds of thousands of whales were killed.',
+    'It is estimated that only 10,000-25,000 blue whales now swim the world’s oceans.',
+    'Blue whale can produce the loudest sound of any animal. At 188 decibels, the noise can be detected over 800 kilometers (500 miles) away.',
     )
 
 WILDEBEEST_FACTS = ( 
