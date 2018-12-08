@@ -369,7 +369,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('whale', '\swhales?\s', reddit, WHALE_FACTS, comment)
     botengine('wolf', '\swol(f|ves)\s', reddit, WOLF_FACTS, comment)
     botengine('wolverine', '\swolverines?\s', reddit, WOLVERINE_FACTS, comment)
-    botengine('wombat', '\swombatss?\s', reddit, WOMBAT_FACTS, comment)
+    botengine('wombat', '\swombats?\s', reddit, WOMBAT_FACTS, comment)
     botengine('yak', '\syaks?\s', reddit, YAK_FACTS, comment)
     botengine('zebra', '\szebras?\s', reddit, ZEBRA_FACTS, comment)
 
