@@ -653,7 +653,7 @@ BEAVER_FACTS = (
     'Beavers are the second largest rodent in the world after the capybara.',
     'The beaver is mainly a nocturnal animal.',
     'The large front teeth of the beaver never stop growing. The beavers constant gnawing on wood helps to keep their teeth from growing too long.',
-	'Both male and female beavers have a pair of scent glands, called castors, at the base of their tails. They use the secretions from these glands, a musk-like substance called castoreum, to mark territory.',
+    'Both male and female beavers have a pair of scent glands, called castors, at the base of their tails. They use the secretions from these glands, a musk-like substance called castoreum, to mark territory.',
     'Together beaver colonies create dams of wood and mud to provide still, deep water in order to protect against predators such as wolves, coyotes, bears or eagles, and also so they can float food and building material to their homes.',
     'Once the dams are completed and ponds formed, beavers will work on building their homes called lodges in the middle. The dome shaped lodges, like the dams, are constructed with branches and mud. Lodges have underwater entrances, making entry tough for most other animals.',
     'There are usually two dens within the lodge, one is for drying off after entering from the water and another, drier one, is where the family of up to four adults and six to eight young live.'
@@ -1017,7 +1017,7 @@ DODO_FACTS = (
     )
 
 DOLPHIN_FACTS = (
-    'Known for their Playful behavior, dolphins are highly intelligent. They are as smart as Apes, and the evolution of their larger brains is surprisingly similar to humans.',
+    'Known for their playful behavior, dolphins are highly intelligent. They are as smart as apes, and the evolution of their larger brains is surprisingly similar to humans.',
     'Compared to other animals, dolphins are believed to be very intelligent.',
     'The Killer Whale (also known as Orca) is actually a type of dolphin.',
     'Bottlenose dolphins are the most common and well known type of dolphin.',
@@ -1827,7 +1827,7 @@ MEERKAT_FACTS = (
     )
 
 MINK_FACTS = (
-    'TheMink is a mammal that belongs to the family of weasels.',
+    'The mink is a mammal that belongs to the family of weasels.',
     'Mink can reach 15 to 28 inches in length and weigh between 16 and 56 ounces. American minks are larger than European minks.',
     'Minks are covered with soft fur that is usually black or dark brown in color. White marks can be seen on the chin, throat and chest.',
     'Minks have slender body with short legs, long neck, rounded head and small ears. Its tail usually reaches ½ of the body length.',
