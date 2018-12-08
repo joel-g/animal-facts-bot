@@ -340,7 +340,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('salmon', '\ssalmons?\s', reddit, SALMON_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
-    botengine('seahorse', '\sseahorse?\s', reddit, SEAHORSE_FACTS, comment)
+    botengine('seahorse', '\sseahorses?\s', reddit, SEAHORSE_FACTS, comment)
     botengine('sea cucumber', '\ssea ?cucumbers?\s', reddit, SEA_CUCUMBER_FACTS, comment)
     botengine('sea urchin', '\s(sea ?)?urchins?\s', reddit, SEA_URCHIN_FACTS, comment)
     botengine('shark', '\ssharks?\s', reddit, SHARK_FACTS, comment)
