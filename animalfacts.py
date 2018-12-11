@@ -257,11 +257,8 @@ def check_comment_for_animal(comment, reddit):
     botengine('crane', '\scranes?\s', reddit, CRANE_FACTS, comment)
     botengine('crayfish', '\scrayfish(es)?\s', reddit, CRAYFISH_FACTS, comment)
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
-<<<<<<< HEAD
     botengine('crow', '\scrow?\s', reddit, CROW_FACTS, comment)
     botengine('deer', '\sdeer?\s', reddit, DEER_FACTS, comment)
-=======
->>>>>>> upstream/master
     botengine('cuttlefish', '\scuttle ?fish(es)?\s', reddit, CUTTLEFISH_FACTS, comment)
     botengine('deer', '\sdeer?\s', reddit, DEER_FACTS, comment)
     botengine('degu', '\sdegus?\s', reddit, DEGU_FACTS, comment)
@@ -657,7 +654,7 @@ ATLANTIC_PUFFIN_FACTS = (
     'Sixty percent of the world’s puffins breed in Iceland.',
     'Puffins are one of the few birds that have the ability to hold several small fish in their bills at a time. Their raspy tongues and spiny palates allow them to firmly grasp 10 to 12 fish during one foraging trip. They thus can bring more food back to their young compared with other seabirds that tend to swallow and regurgitate meals for their chicks.',
     )
-    
+
 AVOCET_FACTS = (
     'There are four different species of avocet which are the Pied avocet, the American avocet, the Red-necked avocet and the Andean avocet.',
     'The avocet is a type of wading bird.',
@@ -702,7 +699,7 @@ BADGER_FACTS = (
     'Badgers were eaten in Britain during World War II and were once part of the Native American and settlers diets in the US. Russia still eats badger meat today.',
     'Badgers have featured in lots of British literature over the years, such as Brian Jacques\' Redwall series, \'Tommy Brock\' in Beatrix Potter\'s The Tale of Mr. Tod, \'Bill Badger\' in Mary Tourtel\'s Rupert Bear, \'Mr. Badger\' in Kenneth Grahame\'s The Wind in the Willows, and \'Trufflehunter\' in C. S. Lewis\'s Chronicles of Narnia.',
     )
-    
+
 BARNACLE_FACTS = (
     'Although the barnacle is frequently confused for a mollusc because of its hard outer shell, it is actually a crustacean.',
     'In their juvenile form barnacles are free-floating, but eventually they attach themselves to any nearby rock, shell, or other object and stay there for the rest of their lives.',
@@ -788,7 +785,7 @@ BLOBFISH_FACTS = (
     'The popular impression of the blobfish as bulbous & gelatinous is partially due to decompression damage done to it when brought to the surface from the depths which it lives; they look more like a normal bony fish when they are kept in their natural depths.',
     'The blobfish is listed as an endangered species.',
     )
-	
+
 BOBCAT_FACTS = (
     'An adult bobcat\'s tail averages just 6 to 7 inches in length.',
     'The word bobcat a reference to their tail. In barbershop lingo, hair that’s been cut short is sometimes called “bobbed.”',
@@ -1004,7 +1001,7 @@ COYOTE_FACTS = (
     'Coyotes are members of the Canidae family and share a lot of the same traits of their relatives: wolves, dogs, foxes and jackals.',
     'Coyotes have narrow, elongated snouts, lean bodies, yellow eyes, bushy tails and thick fur.',
     'Coyotes hunt at night and howl to communicate their location. They are also known for being "wily", in fact, they are very smart creatures and have a heightened sense of hearing, smell and sight.',
-    'Coyotes fur may be gray, white, tan or brown, depending on where they live.',  
+    'Coyotes fur may be gray, white, tan or brown, depending on where they live.',
     'Coyotes that live in the mountains have darker coats and ones that live in the desert have lighter coats.',
     'Coyotes live in North America and roam the plains, forests, mountains and deserts of Canada, the United States, Mexico and Central America. Some even live in tropical climates.',
     'Coyotes are solitary creatures and mark their territory with urine. When hunting deer, however, they use teamwork and form packs. They take turns pursuing the deer until it tires',
@@ -1239,7 +1236,7 @@ EARTHWORM_FACTS = (
     'Water, as well as salts, can also be moved through the skin of an earthworm by active transport.',
     'Earthworms have the ability to regenerate lost segments, but this ability varies between species and depends on the extent of the damage.',
     )
-    
+
 EARWIG_FACTS = (
     'There are nearly 2,000 different species of earwig.',
     'Although earwigs are able to fly, they often don\'t.',
@@ -3119,7 +3116,7 @@ TUATARA_FACTS = (
     'The tuatara was the inspiration for a DC Comics superhero, also with a third eye, called Tuatara, member of the Global Guardians.',
     'The Tuatara hypercar, designed and manufactured by SSC North America in Tri-Cities, Washington, is named after the reptile, noting its fast evolving DNA and "peaks on the back" as inspiration in the creation of the car.',
     'In Māori legends, tuatara are thought to be messengers of Whiro, the personification of darkness and evil.',
-    'Tuatara are considered to be living fossils, a living animal which closely resembles animals known only from the fossil record.', 
+    'Tuatara are considered to be living fossils, a living animal which closely resembles animals known only from the fossil record.',
     'Tuatara can be a range of colors, olive green, brown, or orange-red, and their coloring can change throughout its life.',
     )
 
@@ -3263,7 +3260,7 @@ WHALE_FACTS = (
     'Blue whale can produce the loudest sound of any animal. At 188 decibels, the noise can be detected over 800 kilometers (500 miles) away.',
     )
 
-WILDEBEEST_FACTS = ( 
+WILDEBEEST_FACTS = (
     'Wildebeest are one of the largest antelopes. They can reach 8 feet in length, 4.5 feet in height and weigh up to 600 pounds.',
     'Between January and March, half a million wildebeest are born each year in the Serengeti. February, is the month with the most babies, around 8,000 are born each day.',
     'During migration, wildebeests travel between 500 and 1000 miles. Timing of migration is determined by weather conditions, but it usually takes place during the months of May and June.',
