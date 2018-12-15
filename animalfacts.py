@@ -376,6 +376,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('sunfish', '\ssunfish(es)?\s', reddit, SUNFISH_FACTS, comment)
     botengine('tarantula', '\starantulas?\s', reddit, TARANTULA_FACTS, comment)
     botengine('tardigrade', '\stardigrades?\s', reddit, TARDIGRADE_FACTS, comment)
+    botengine('tarsier', '\starsiers?\s', reddit, TARSIER_FACTS, comment)
     botengine('tasmanian devil', '\stasmanian devils?\s', reddit, TASMANIAN_DEVIL_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('toad','\stoads?\s', reddit, TOAD_FACTS, comment)
@@ -3020,6 +3021,17 @@ TARDIGRADE_FACTS = (
     'Tardigrades are the first known animal to survive in space.',
     )
 
+TARSIER_FACTS = (
+    'A Tarsier is one of the known smallest primates. It is an ancient ancestor of a modern day monkey.',
+    'A Tarsier does not grow bigger than a man''s hand. It is about 15cm in height and between 115 and 130g in weight.',
+    'A Tarsier have gray fur and a nearly naked tail.',
+    'A Tarsier is recognizable due to its huge eyes and its long feet. It has the largest eyes, proportionate to its body size, of any animal on the planet.',
+    'The Tarsier\'s large eyes enables it to have acute night vision that makes them a good hunter.',
+    'The Tarsier\'s long feet enables it to jump from tree to tree up to 3 meters in distance.',
+    'A Tarsier is mostly active at night and lives on a diet of insects.',
+    'A Tarsier can usually be found in the beautiful archipelago called the Philippines.'
+    )
+
 TASMANIAN_DEVIL_FACTS = (
     'The tasmanian devil is a marsupial, therefore, the females have pouches in which they carry their young.',
     'Females tasmanian devils give birth to 20–30 young, but few survive because she only has 4 nipples.',
@@ -3517,9 +3529,9 @@ ALL_FACTS = (
     SQUIRREL_FACTS,
     STINGRAY_FACTS,
     SUNFISH_FACTS,
-    TARDIGRADE_FACTS,
     TARANTULA_FACTS,
     TARDIGRADE_FACTS,
+    TARSIER_FACTS,
     TASMANIAN_DEVIL_FACTS,
     TIGER_FACTS,
     TOAD_FACTS,
