@@ -1346,12 +1346,9 @@ FALCON_FACTS = (
 FERRET_FACTS = (
     'The Latin name for ferret, Mustela putorius furo, means smelly little thief.',
     'Ferrets are carnivorous mammals in the weasel family, along with otters, badgers, weasels, milks and wolverines.',
-    'A group of ferrets is called a business.',
     'Ferrets do not occur naturally in the wild and were originally domesticated for hunting.',
     'The largest feral ferret population is currently decimating wildlife in New Zealand.',
     'The Ferret has become the third most popular pet in the US behind cats and dogs.',
-    'A female ferret is called a jill',
-    'A male ferret is called a hob',
     'Ferrets are around the size and shape of a zucchini. They usually weigh around 1 to 5.5 lbs. (0.5 to 2.5 kg) and have a head and body length of 8 to 18 inches (20.5 to 46 centimeters). Their tails are close to half their body length and range from 2.8 to 7.5 in (7 to 19 cm).',
     'Ferrets are related to wolverines, ermines, minks and weasels in the Mustela genus.',
     'The domesticated ferret can be born with a wide range of fur colors, including dark-eyed white, sable, black sable, silver, albino, cinnamon and chocolate. Black-footed ferrets aren’t nearly as colorful. They are a pale color with white foreheads, muzzles and throats and black feet.',
