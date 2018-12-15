@@ -870,13 +870,13 @@ CHEETAH_FACTS = (
     'With their light body weight and blunt claws, cheetahs are not well designed to protect themselves or their prey. When a larger or more aggressive animal approaches a cheetah in the wild, it will give up its catch to avoid a fight.',
     'Cheetahs only need to drink once every three to four days.',
     )
-CHICKEN_FACTS = (
-    'Chickens have beaks, similair to ducks',
-    'Chickens lay eggs that you can consume; they go good with gammon',
-    'Chickens are sometimes kept as pets, although not normally thought of as domestic animals',
-    'Chickens can actually fly, contrary to popular belief',
 
-)
+CHICKEN_FACTS = (
+    'Chickens have beaks, similar to ducks.',
+    'Chickens lay eggs that you can consume; they go good with gammon,',
+    'Chickens are sometimes kept as pets, although not normally thought of as domestic animals.',
+    'Chickens can actually fly, contrary to popular belief',
+    )
 
 CHIMPANZEE_FACTS = (
     'Chimpanzees are omnivores which mean that they eat both plants and animals.',
@@ -2581,6 +2581,12 @@ RAVEN_FACTS = (
     'The oldest known wild Common Raven was at least 22 years, 7 months old. It was banded and found in Nova Scotia.',
     )
 
+REINDEER_FACTS = (
+    'Reindeers, contrary to popular belief, cannot actually fly.',
+    'Reindeers do not actually live in the north pole, and can be found in Lapland.',
+    'Reindeers are actually bigger than most people think.'
+)
+
 RHINO_FACTS = (
     'Our planet is home to five species of rhinoceros – the black rhino, white rhino, Sumatran rhino, Javan rhino and Indian (or greater one-horned) rhino.',
     'They are known for their giant horns that grow from their snouts – hence the name rhinoceros, meaning \"nose horn\". Javan and Indian rhinos have one horn, where as the white, black and Sumatran rhinos have two.',
@@ -2592,12 +2598,6 @@ RHINO_FACTS = (
     'Because of their huge bodies, strong horns and thick, armour-like skin, rhinos have no natural predators. When they feel threatened, their instinct is to charge directly at whatever has spooked them.',
     'It is estimated that there are only around 29.000 rhinos left in the wild, compared to 500,000 at the beginning of the 20th century. The main threat to these animals is illegal hunting, largely because their horns are used in traditional folk medicine, particularly in Asia.',
     )
-
-REINDEER_FACTS = (
-    'Reindeers, contrary to popular belief, can not actually fly',
-    'Reindeers do not actually live in the north pole, and can be found in Lapland.',
-    'Reindeers are actually bigger than most people think'
-)
 
 SALMON_FACTS = (
     'Salmon tend to be anadromous, which means they hatch in fresh water, migrate to the ocean, and return to fresh water to reproduce, however this is not always the case.',
