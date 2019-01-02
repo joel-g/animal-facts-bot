@@ -1069,16 +1069,15 @@ CROCODILE_FACTS = (
     )
 
 CROW_FACTS = (
-    'The scientific name of crow is Corvus brachyrhynchos. It belongs to the family Covidae and to the genus Corvus.',
-    'Mexicos Dwarf Jay is the smallest of all crows found in this world. Dwarf Jay weighs only 40 grams and grows no more than 21.5 centimeters in length.',
+    'Crows have their scientific name as Corvus brachyrhynchos. They belong to the family Covidae and to the genus Corvus.',
     'Crows are pretty old. They first appeared during Miocene Period some 17 million years ago in Oceana and Australia.',
     'Crows are omnivores. They eat just about anything that they think is edible (very much like the Chinese).',
     'Crows can be found in every continent of this planet barring Antarctica. No matter where you go, you will find this bird.',
-    'Of all bird species that fly in our skies and live on this planet, the crow has the largest brain-to-body ratio.',
-    'Talking of the brain, their forebrain is very developed. This means that they are intelligent.',
+    'Crows have the largest brain-to-body ratio of all bird species that fly in our skies and live on this planet.',
+    'Crows forebrain is very developed. This means that they are intelligent.',
     'Crows maintain only one mate for their entire life. They don’t reach sexual maturity until they reach the age of 2 but some often wait longer to get their soulmate.',
-    'They display what is known as cooperative breeding. What’s that? When a female crow is incubating, other crows (whether soulmate or not) will watch out and protect the incubating female.',
-    'Both parents take care of the babies and help them with feeding. That may not be weird but this is weird – some of the offspring will actually stay back to look after the next batch of babies.',
+    'Crows display what is known as cooperative breeding. What’s that? When a female crow is incubating, other crows (whether soulmate or not) will watch out and protect the incubating female.',
+    'Crows take care of their babies and help them with feeding. That may not be weird but this is weird – some of the offspring will actually stay back to look after the next batch of babies.',
     'Crows are amazingly social and smart. There can be several Murders. How will a crow know which Murder it belongs to? That’s possible with the help of specialized dialect every Murder develops.',
     'Crows are very much capable of remembering faces.',
 )
