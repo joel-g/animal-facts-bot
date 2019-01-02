@@ -257,7 +257,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('crane', '\scranes?\s', reddit, CRANE_FACTS, comment)
     botengine('crayfish', '\scrayfish(es)?\s', reddit, CRAYFISH_FACTS, comment)
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
-    botengine('crow', '\scrow?\s', reddit, CROW_FACTS, comment)
+    botengine('crow', '\scrows?\s', reddit, CROW_FACTS, comment)
     botengine('deer', '\sdeer?\s', reddit, DEER_FACTS, comment)
     botengine('cuttlefish', '\scuttle ?fish(es)?\s', reddit, CUTTLEFISH_FACTS, comment)
     botengine('deer', '\sdeer?\s', reddit, DEER_FACTS, comment)
@@ -3149,8 +3149,6 @@ VAMPIRE_BAT_FACTS = (
     'Young vampire bats feed on milk from the mother, not on blood. They cling tightly to their mothers, even in flight, until they are weaned at about 3 – 4 months.',
     'Vampire bats are not seasonal breeders and can mate all year round. They are pregnant for 3 – 4 months, which is a long gestation period compared to other small bats. The female gives birth to a single baby.',
     'The saliva of a vampire bat can be used to prevent blood from clotting.',
-<<<<<<< HEAD
-=======
     )
 
 VULTURE_FACTS = (
@@ -3168,7 +3166,6 @@ VULTURE_FACTS = (
     'While vultures eat mostly dead animals, they are capable of attacking and will often prey on extremely sick, wounded or infirm prey.',
     'Vultures urinate on their legs and feet to cool off on hot days, a process called urohydrosis.',
     'When threatened, vultures vomit to lighten their body weight so they can escape more easily into flight.',
->>>>>>> upstream/master
     )
 
 WALLABY_FACTS = (
