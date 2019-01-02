@@ -116,6 +116,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * House fly
 * Hummingbird
 * Husky
+* Ibex
 * Iguana
 * Jackal
 * Jellyfish
