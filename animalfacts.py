@@ -298,6 +298,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('horse', '\shorses?\s', reddit, HORSE_FACTS, comment)
     botengine('hummingbird', '\shummingbirds?\s', reddit, HUMMINGBIRD_FACTS, comment)
     botengine('husky', '\s(husky|huskie)s?\s', reddit, HUSKY_FACTS, comment)
+    botengine('ibex', '\sibe(x|xes)\s', reddit, IBEX_FACTS, comment)
     botengine('iguana', '\siguanas?\s', reddit, IGUANA_FACTS, comment)
     botengine('jackal', '\sjackals?\s', reddit, JACKAL_FACTS, comment)
     botengine('jellyfish', '\sjelly ?fish(es)\s', reddit, JELLYFISH_FACTS, comment)
@@ -3453,6 +3454,7 @@ ALL_FACTS = (
     HORSE_FACTS,
     HUMMINGBIRD_FACTS,
     HUSKY_FACTS,
+    IBEX_FACTS,
     IGUANA_FACTS,
     JACKAL_FACTS,
     JELLYFISH_FACTS,
