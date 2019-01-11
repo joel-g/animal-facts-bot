@@ -43,8 +43,8 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Antelope
 * Armadillo
 * Atlantic puffin
-* Badger
 * Baboon
+* Badger
 * Bear
 * Beaver
 * Bison
