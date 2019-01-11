@@ -382,6 +382,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('toad','\stoads?\s', reddit, TOAD_FACTS, comment)
     botengine('toucan', '\stoucans?\s', reddit, TOUCAN_FACTS, comment)
+    botengine('trouser snake', '\strouser snakes?\s', reddit, TROUSER_SNAKE_FACTS, comment)
     botengine('trout', '\strout?\s', reddit, TROUT_FACTS, comment)
     botengine('tuatara', '\stuataras?\s', reddit, TUATARA_FACTS, comment)
     botengine('turtle', '\sturtles?\s', reddit, TURTLE_FACTS, comment)
@@ -3098,6 +3099,18 @@ TOUCAN_FACTS = (
     'The toco toucan is the largest species of toucan.',
     )
 
+TROUSER_SNAKE_FACTS = (
+    'The Trouser Snake is the most feared yet desired animal in the Animal Kingdom.',
+    'The Trouser Snake carries a venom sack that produces a white venom when it reaches maturity.',
+    'The Trouser Snake does not like cold weather and will shrink in cold conditions.',
+    'The Trouser Snake varies in color from pink to black.',
+    'The Trouser Snake usually attacks women in the mouth or lower abdominal area, it has been known to also attack males.',
+    'When threatened, the normally docile and relaxed trouser snake tenses up into an erect position in order to increase its size to scare off an attacker.',
+    'When touched, the Trouser Snake will swell up to twice its original size in order to frighten off predators.',
+    'The Trouser Snake is fang less, the average length is 5-6 inches (12.7cm - 15.24cm), although some reports have indicated over 8 inches (20cm) in length.',
+    'The Trouser Snake has been known to use its body to viciously ram the opponent repeatedly until it is driven away.'
+    )
+
 TROUT_FACTS = (
     'Trout that live in different environments can have dramatically different colorations and patterns.',
     'Trout have fins entirely without spines, and all of them have a small adipose fin along the back, near the tail.',
@@ -3538,6 +3551,7 @@ ALL_FACTS = (
     TIGER_FACTS,
     TOAD_FACTS,
     TOUCAN_FACTS,
+    TROUSER_SNAKE_FACTS,
     TROUT_FACTS,
     TUATARA_FACTS,
     TURTLE_FACTS,
