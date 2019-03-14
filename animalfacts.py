@@ -250,8 +250,6 @@ def check_comment_for_animal(comment, reddit):
     botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
     botengine('clownfish', '\sclown ?fish(es)?\s', reddit, CLOWNFISH_FACTS, comment)
     botengine('cobra', '\scobras?\s', reddit, COBRA_FACTS, comment)
-    botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
-    botengine('coyote','\scoyotes?\s',reddit,COYOTE_FACTS,comment)
     botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('coyote','\scoyotes?\s',reddit,COYOTE_FACTS,comment)
