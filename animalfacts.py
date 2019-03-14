@@ -896,7 +896,7 @@ CHEETAH_FACTS = (
 
 CHEVROTAIN_FACTS = (
    'The Chevrotain is an animal that looks like a tiny deer with fangs .',
-   'They are also known as the mouse deer. ',
+   'They are also known as the mouse deer.',
    'These tiny animals are shy and mysterious, and not much is known about them.',
    'At first glance, these animals look like a weird mash-up of a deer, a mouse, and a pig.',
    'Depending on the species, a chevrotain can be anywhere from 4 to 33 pounds.',
@@ -906,7 +906,6 @@ CHEVROTAIN_FACTS = (
    'The water chevrotain is known for its ability to dive underwater when it senses a predator nearby.',
    'Chevrotains are able to hold their breath for about four minutes.',
     )
-
 
 CHICKEN_FACTS = (
     'Chickens have beaks, similar to ducks.',
@@ -955,8 +954,6 @@ CHINCHILLA_FACTS = (
     'Though chinchilla fur is highly valued for use in clothing and coats, the Convention on International Trade in Endangered Species has restricted the sale and trade of wild chinchillas since 1975. Many chinchillas are bred commercially for their fur.',
     'Chinchillas are native to Chile and Peru. In the wild they live in groups and make their home in burrows and natural outcroppings and crevices.',
     )
-
-
 
 CLOWNFISH_FACTS = (
     'Clownfish is a fish that is frequently called clown anemonefish and goes by the scientific name Amphiprioninae, is actually false anemonefish.'
