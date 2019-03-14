@@ -894,7 +894,7 @@ CHEETAH_FACTS = (
     'Cheetahs only need to drink once every three to four days.',
     )
 
-CHEVROTAIN_FACTS =(
+CHEVROTAIN_FACTS = (
    'The Chevrotain is an animal that looks like a tiny deer with fangs .',
    'They are also known as the mouse deer. ',
    'These tiny animals are shy and mysterious, and not much is known about them.',
@@ -905,7 +905,6 @@ CHEVROTAIN_FACTS =(
    'Chevrotains are the most primitive of ruminants.',
    'The water chevrotain is known for its ability to dive underwater when it senses a predator nearby.',
    'Chevrotains are able to hold their breath for about four minutes.',
-
     )
 
 
