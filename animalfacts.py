@@ -4,8 +4,7 @@ import random
 import time
 import sys
 import string
-from pygame import mixer
-# from '/' import lists
+
 
 BLACKLIST = (
     'suicidewatch',
@@ -20,9 +19,6 @@ BLACKLIST = (
     'japan'
     )
 
-mixer.init()
-alert = mixer.Sound('bird.wav')
-bell = mixer.Sound('bell.wav')
 history = 'commented.txt'
 reply_history = 'repliedto.txt'
 unsubscribed_list = 'unsubscribed.txt'
@@ -195,7 +191,6 @@ def botengine(animal, regex, reddit, facts, comment):
                                 '\n      commenting a fact...')
                             try:
                                 comment.reply(random.choice(facts))
-                                alert.play()
                                 file_obj_w = open(history, 'a+')
                                 file_obj_w.write(comment.id + '\n')
                                 file_obj_w.close()
@@ -665,7 +660,7 @@ AVOCET_FACTS = (
     'The avocet is a relatively large and forceful species of bird, often reported to intimidate other birds into leaving its spot.',
     'The avocet has a long and thin, upturned beak which it sweeps from side to side in the water to catch food.',
     'The avocet is a relatively large and forceful species of bird, often reported to intimidate other birds into leaving its spot.',
-    'The avocet flys, hunts, migrates and nests in large flocks.,
+    'The avocet flys, hunts, migrates and nests in large flocks.',
     'The avocet is Carnivorous.',
     'Avocets are known to breed on open ground, generally close to the water.',
     'Avocet chicks are nursed by both parents until they fly away from the nest at between 4 and 6 weeks old.',
@@ -1438,7 +1433,7 @@ FOX_FACTS = (
     "The tip of a red fox’s tail is white, whereas swift foxes have a black-tipped tail.",
     "Foxes have excellent hearing. Red foxes can reportedly hear a watch ticking 40 yards away!",
     'Foxes only live up to 5 years in the wild, but up to 14 in captivity!',
-    'Foxes are legal to own in 21 states!",
+    'Foxes are legal to own in 21 states!',
     'Adult red foxes usually live alone except during the mating season in January and February and when raising young.'
     'Foxes stink, their funny ‘musky’ smell comes from scent glands at the base of their tail.',
     "Foxes have whiskers on their legs and face, which help them to navigate.",
@@ -3411,7 +3406,7 @@ ALL_FACTS = (
     ANTELOPE_FACTS,
     ARMADILLO_FACTS,
     ATLANTIC_PUFFIN_FACTS,
-    AVOCET_FACTS
+    AVOCET_FACTS,
     AXOLOTL_FACTS,
     BADGER_FACTS,
     BARNACLE_FACTS,
