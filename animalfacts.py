@@ -375,6 +375,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('tasmanian devil', '\stasmanian devils?\s', reddit, TASMANIAN_DEVIL_FACTS, comment)
     botengine('tiger', '\stigers?\s', reddit, TIGER_FACTS, comment)
     botengine('toad','\stoads?\s', reddit, TOAD_FACTS, comment)
+    botengine('toque macaque', '\stoque ?macaques?\s', reddit, TOQUE_MACAQUE_FACTS, comment)
     botengine('toucan', '\stoucans?\s', reddit, TOUCAN_FACTS, comment)
     botengine('trouser snake', '\strouser snakes?\s', reddit, TROUSER_SNAKE_FACTS, comment)
     botengine('trout', '\strout?\s', reddit, TROUT_FACTS, comment)
@@ -3074,6 +3075,20 @@ TIGER_FACTS = (
     'Tigers that breed with lions give birth to hybrids known as tigons and ligers.',
     )
 
+TOQUE_MACAQUE_FACTS = (
+    'The toque macaque is a reddish-brown-coloured Old World monkey endemic to Sri Lanka, where it is known as the rilewa or rilawa',
+	'Binomial name of toque macaque is Macaca sinica',
+	'They have a small patch of fur on the top of their head that looks like a little hat. That is actually where they get their name: a \'toque\' is a type of small cap',
+    'The social status is highly structured in toque macaques, where there prevails dominance hierarchies among both males and females',
+	'A group of toque macaque is called troop',
+	'A troop may consist of as few as 8 to as many as 40',
+	'Toque macaques are omnivores, their main diet is fruit along with flowers and leaves and they eat insect, lizards too',
+	'When it comes to reproduction, in estrous, the female perineum becomes reddish in color and swells. This change is a signal to the males that she is ready to mate',
+	'Normal gestation period of a toque macaque is about 5-6 months and single offspring will be born at a time',
+	'Toque macaques are endangered due to habitat loss',
+	'Their lifespan is about 35 years in general'
+    )
+
 TOUCAN_FACTS = (
     'The average life span of toucans in the wild is up to 20 years.',
     'The toucan\'s beak is serrated like a knife, to tear apart its food.',
@@ -3558,6 +3573,7 @@ ALL_FACTS = (
     TASMANIAN_DEVIL_FACTS,
     TIGER_FACTS,
     TOAD_FACTS,
+    TOQUE_MACAQUE_FACTS,
     TOUCAN_FACTS,
     TROUSER_SNAKE_FACTS,
     TROUT_FACTS,
