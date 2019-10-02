@@ -353,6 +353,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('rhino', '\srhino?\s', reddit, RHINO_FACTS, comment)
     botengine('salmon', '\ssalmons?\s', reddit, SALMON_FACTS, comment)
     botengine('scorpion', '\sscorpions?\s', reddit, SCORPION_FACTS, comment)
+    botengine('scorpionfly', '\sscorpionfly?\s', reddit, SCORPIONFLY_FACTS, comment)
     botengine('seagull', '\sseagulls?\s', reddit, SEAGULL_FACTS, comment)
     botengine('seahorse', '\sseahorses?\s', reddit, SEAHORSE_FACTS, comment)
     botengine('sea cucumber', '\ssea ?cucumbers?\s', reddit, SEA_CUCUMBER_FACTS, comment)
@@ -2705,6 +2706,19 @@ SCORPION_FACTS = (
     'Scorpions moult, they shed their exoskeleton up to 7 times as they grow to full size. They become vulnerable to predators each time until their new protective exoskeleton hardens.',
     )
 
+SCORPIONFLY_FACTS = (
+    'The scorpion fly is a small to medium-sized insect with a very terrifying look. However, it is not really harmful, at least to humans.',
+    'Scorpion flies got their name because the tail end of the adult males abdomen is swollen and turns up to look like a scorpion, but the insect is harmless. The swelling is actually the genital capsule. The female is similar, but with a slim, straight abdomen.',
+    'The shape of their head and the tail makes it easy to recognise a male and a female.',
+    'The adults are scavengers feeding on dead insects, rotting fruit, and even bird droppings.',
+    'The flight speed of the scorpion fly is about 0.5 meters per second and they have a wing beat of 28 beats per second.',
+    'These insects are known to have two wings pairs but still they are known for their flimsy and erratic flying pattern.',
+    'The four wings of the fly is are known to be of almost same length and are membranous. However, there are some species that are known to have no wings at all.',
+    'The wings may have different looks. Some scorpion flies may have almost transparent wings. Some may have dark banded wings while some other may have dark spotted wings.',
+    'Scorpionflies have no issue with eating people when they’re dead, so it’s not surprising humans are fair game when they’re alive, too. They’re known to seek out human sweat for a quick sip.',
+    'While scorpionflies are not the most diverse group of insects, they are very widespread. Pretty much every continent on Earth is home to at least one species of scorpionfly, with the sole exception of Antarctica. They tend to live at the edges of dense forests, but can also be found in a diverse variety of other ecosystems and biomes.'
+    )
+
 SEAGULL_FACTS = (
     'The smallest species of seagulls can reach 11.5 inches in length and weigh 4.2 ounces. Large species can reach 30 inches in length and weigh 3.8 pounds.',
     'The body of most seagulls is covered with white plumage. Wingtips are usually black or dark in color. Some species are grey or entirely white.',
@@ -3550,6 +3564,7 @@ ALL_FACTS = (
     RHINO_FACTS,
     SALMON_FACTS,
     SCORPION_FACTS,
+    SCORPIONFLY_FACTS,
     SEAGULL_FACTS,
     SEAHORSE_FACTS,
     SEA_CUCUMBER_FACTS,
