@@ -3186,6 +3186,7 @@ TURTLE_FACTS = (
     'Turtles live on every continent except Antarctica.',
     'Turtles have good eyesight and an excellent sense of smell. Hearing and sense of touch are both good and even the shell contains nerve endings.',
     'While most turtles don\'t tolerate the cold well, the Blanding\'s turtle has been observed swimming under the ice in the Great Lakes region.',
+    'A tortoise is a turtle, but a turtle isn\'t always a tortoise.',
     )
 
 VAMPIRE_BAT_FACTS = (
@@ -3222,7 +3223,7 @@ VULTURE_FACTS = (
     )
 
 WALLABY_FACTS = (
-    'Wallabies are members of the kangaroo clan found primarily in Australia and on nearby islands.',
+    'Wallabies are members of the kangaroo clan found primarily in the Southern parts of Australia and on nearby islands.',
     'Wallabies are marsupials or pouched mammals. Wallaby young are defenseless and develop in the pouch of their mother.',
     'The largest wallabies can reach 6 feet from head to tail.',
     'Wallabies have powerful hind legs they use to bound along at high speeds and jump great distances.',
@@ -3239,6 +3240,9 @@ WALLABY_FACTS = (
     'Wallabies have strong back legs that help them hop and move about powerfully. The forearms of the wallaby are small and used mainly for balancing or for feeding.',
     'An adult wallaby weighs about 15 – 26 kg. The males are 77-88 cm in height and the females are about 70-84 cm tall. Their tail is 80 cm long, which is almost the length of their entire body. They use their tail to balance and jump around. They also use it to prop into a sitting position.',
     'Wallabies are pink and furless at birth.',
+    'The name Wallaby comes from the Eora Aboriginal people of coastal New South Wales, and now refers to over differnt 30 species',
+    'There is a colony of 100-150 red-necked wallabies living 40 miles (70km) southwest of Paris, around the township of Émancé',
+    'The division of between kangaroos and wallabies is arbitrary: The species we call kangaroos are generally larger animals, while wallabies are generally smaller, however some wallabies can grow larger than the smaller kangaroo species',
     )
 
 WALRUS_FACTS = (
