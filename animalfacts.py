@@ -1565,6 +1565,7 @@ LYNX_FACTS = (
     'The Eurasian lynx distinctive features are its black tufts at the tips of its ears and a long white facial ruff. It has grey, rusty or red fur which grows thicker in winter. Its coat is also patterned, almost always with dark spots.',
     'Although they may hunt during the day (particularly when food is scarce), the Eurasian lynx is mainly nocturnal or crepuscular (active during dawn and dusk). They spend the day sleeping in dense vegetation.',
     'Lynx measure around 90-110 cm in length, and around 60-70 cm in height.',
+    'Lynx are not particularly dangerous to humans, but humans are very dangerous to lynx. The animals are subjected to trapping for their skins Their habitats are threatened by human incursion, and by climate change. They are very much an endangered species, thanks to humans.',
     'In the wild, the Eurasian lynx can survive up to 17 years. Captive Eurasian lynx in sanctuaries have been known to live to up to 24 years.',
     )
 
