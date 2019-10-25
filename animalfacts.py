@@ -288,6 +288,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('hawk', '\shawks?\s', reddit, HAWK_FACTS, comment)
     botengine('hedgehog', '\shedgehogs?\s', reddit, HEDGEHOG_FACTS, comment)
     botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS, comment)
+    botengine('hoatzin', '\shoatzins?\s', reddit, HOATZIN_FACTS, comment)
     botengine('honeybee', '\shoney bees?\s', reddit, HONEYBEE_FACTS, comment)
     botengine('horse', '\shorses?\s', reddit, HORSE_FACTS, comment)
     botengine('hummingbird', '\shummingbirds?\s', reddit, HUMMINGBIRD_FACTS, comment)
@@ -1663,6 +1664,20 @@ HIPPO_FACTS = (
     'A male hippopotamus is called a ‘bull’. A female hippopotamus is called a ‘cow’. A baby hippo is called a ‘calf’.',
     'A group of hippos in known as a ‘herd’, ‘pod’, ‘dale’, or ‘bloat’.',
     'Hippos typically live for around 45 years.',
+    )
+
+HOATZIN_FACTS = (
+    'Hoatzins are swamp-dwelling tropical birds',
+    'The young of the hoatzin have two claws on each wing they can use to clamber around in the branches. They lose the claws as adults, but remain strange in other ways.',
+    'The hoatzin has a long neck, small head with reddish-brown crest, and blue facial skin with red eyes. Its body is covered with dark and light brown feathers combined with white and yellow feathers.',
+    'The hoatzin has a long tail composed of ten, loosely attached feathers.',
+    'The hoatzin is a clumsy bird. It spends most of the time near the water and on the branches of the surrounding trees.',
+    'Although the hoatzin has completely developed wings, it rarely flies.',
+    'Hoatzins are one of the rare birds that are exclusively herbivores. They eat different kind of green plants such as leaves of arum, legume trees and other succulent plants.',
+    'Hoatzins spends 4 hours a day eating. They eats in the early morning and late evening hours.',
+    'Food fermentation produces unique and unpleasant smell (a manure-like smell), which is why hoatzin is also known as "stinkbird" or "stinking pheasant".',
+    'Hoatzins live in groups (colonies) composed of 10 to 50 birds.',
+    'Average lifespan of the hoatzin is 15 years in the wild and up to 30 years in captivity.',
     )
 
 HONEYBADGER_FACTS = (
@@ -3484,6 +3499,7 @@ ALL_FACTS = (
     HAWK_FACTS,
     HEDGEHOG_FACTS,
     HIPPO_FACTS,
+    HOATZIN_FACTS,
     HONEYBADGER_FACTS,
     HONEYBEE_FACTS,
     HORSE_FACTS,
