@@ -364,6 +364,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS, comment)
     botengine('snail', '\ssnails?\s', reddit, SNAIL_FACTS, comment)
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
+    botengine('squid', '\ssquids?\s', reddit, SQUID_FACTS, comment)
     botengine('squirrel', '\ssquirrels?\s', reddit, SQUIRREL_FACTS, comment)
     botengine('starfish', '\sstarfish(es)?\s', reddit, STARFISH_FACTS, comment)
     botengine('stingray', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
@@ -2977,6 +2978,9 @@ SQUID_FACTS = (
     'Squid, like cuttlefish, have eight arms arranged in pairs, and two longer tentacles with suckers.',
     'Squids belong to a particularly successful group of mollusks called the cephalopods, which have been around for about 500 million years.',
     'Giant squid mostly eat deep water fish and other squids including other giant squids.',
+    'Squid have gills just like fish.',
+    'Squids have three hearts.',
+    'The Big Fin Squid species has ten arms while all of the others only have eight.',
     )
 
 SQUIRREL_FACTS = (
