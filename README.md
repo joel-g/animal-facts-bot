@@ -48,12 +48,14 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Antelope
 * Armadillo
 * Atlantic puffin
+* Avocet
 * Axolotl
 * Badger
 * Barnacle
 * Bear
 * Beaver
 * Bison
+* Blobfish
 * Bobcat
 * Buffalo
 * Butterfly
@@ -61,6 +63,8 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Capybara
 * Chameleon
 * Cheetah
+* Chevrotain
+* Chicken
 * Chimpanzee
 * Chinchilla
 * Chipmunk
@@ -82,6 +86,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Dugong
 * Eagle
 * Earthworm
+* Earwig
 * Echidna
 * Eland
 * Elephant
@@ -112,6 +117,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * House fly
 * Hummingbird
 * Husky
+* Ibex
 * Iguana
 * Jackal
 * Jellyfish
@@ -162,15 +168,18 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Porcupine
 * Pufferfish
 * Puma
+* Praying Mantis
 * Quokka
 * Rabbit
 * Raccoon
 * Rattlesnake
 * Raven
+* Reindeer
 * Rhino
 * Salmon
 * Scorpion
 * Seagull
+* Seahorse
 * Sea cucumber
 * Sea urchin
 * Shark
@@ -183,14 +192,17 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Squirrel
 * Starfish
 * Stingray
+* Stoat
 * Sturgeon
 * Sunfish
 * Tarantula
 * Tardigrade
+* Tarsier
 * Tasmanian devil
 * Tiger
 * Toad
 * Toucan
+* Trouser Snake
 * Trout
 * Tuatara
 * Turtle
