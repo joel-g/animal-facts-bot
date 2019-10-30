@@ -1674,7 +1674,7 @@ HOATZIN_FACTS = (
     'The hoatzin is a clumsy bird. It spends most of the time near the water and on the branches of the surrounding trees.',
     'Although the hoatzin has completely developed wings, it rarely flies.',
     'Hoatzins are one of the rare birds that are exclusively herbivores. They eat different kind of green plants such as leaves of arum, legume trees and other succulent plants.',
-    'Hoatzins spends 4 hours a day eating. They eats in the early morning and late evening hours.',
+    'Hoatzins spend 4 hours a day eating. They eat in the early morning and late evening hours.',
     'Food fermentation produces unique and unpleasant smell (a manure-like smell), which is why hoatzin is also known as "stinkbird" or "stinking pheasant".',
     'Hoatzins live in groups (colonies) composed of 10 to 50 birds.',
     'Average lifespan of the hoatzin is 15 years in the wild and up to 30 years in captivity.',
