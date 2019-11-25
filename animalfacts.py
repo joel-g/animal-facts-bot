@@ -343,6 +343,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('porcupine', '\sporcupines?\s', reddit, PORCUPINE_FACTS, comment)
     botengine('pufferfish', '\spuffer ?fish(es)?\s', reddit, PUFFERFISH_FACTS, comment)
     botengine('puma', '\spumas?\s', reddit, PUMA_FACTS, comment)
+    botengine('prayingmantis', '\spraying mantis(es)?\s', reddit, PRAYINGMANTIS_FACTS, comment)
     botengine('quokka', '\squokkas?\s', reddit, QUOKKA_FACTS, comment)
     botengine('rabbit', '\srabbits?\s', reddit, RABBIT_FACTS, comment)
     botengine('raccoon', '\sraccons?\s', reddit, RACCOON_FACTS, comment)
@@ -2547,6 +2548,19 @@ PORCUPINE_FACTS = (
     'Porcupines can live 15-18 years.',
     )
 
+PRAYINGMANTIS_FACTS = (
+    'Mantises are distributed worldwide in temperate and tropical habitats.',
+    'Mantises have triangular heads with bulging eyes supported on flexible necks.',
+    'All Mantodea have forelegs that are greatly enlarged and adapted for catching and gripping prey and their upright posture, while remaining stationary with forearms folded, has led to the common name praying mantis.',
+    'The closest relatives of mantises are the termites and cockroaches (Blattodea), which are all within the superorder Dictyoptera.',
+    'Mantises are mostly ambush predators, but a few ground-dwelling species are found actively pursuing their prey.',
+    'A mantis normally lives for about a year. In cooler climates, the adults lay eggs in autumn, then die.  The eggs are protected by their hard capsules and hatch in the spring.',
+    'Female mantises sometimes practice sexual cannibalism, eating their mates after copulation.',
+    'Mantises were considered to have supernatural powers by early civilizations, including Ancient Greece, Ancient Egypt, and Assyria.',
+    'Mantises are among the insects most commonly kept as pets.',
+    'Mantises have stereo vision. They locate their prey by sight; their compound eyes contain up to 10,000 ommatidia (clusters of photoreceptor cells).',
+    )
+
 QUOKKA_FACTS = (
     'Quokkas can go months without drinking; they get most of the water they need through the vegetation they eat.',
     'Quokkas are only found on small islands off the coast of Western Australia, Rottnest Island off of Perth, and Bald Island near Albany.',
@@ -3526,6 +3540,7 @@ ALL_FACTS = (
     PORCUPINE_FACTS,
     PUFFERFISH_FACTS,
     PUMA_FACTS,
+    PRAYINGMANTIS_FACTS,
     QUOKKA_FACTS,
     RABBIT_FACTS,
     RACCOON_FACTS,
