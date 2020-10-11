@@ -2356,6 +2356,7 @@ SHRIMP_FACTS = (
     'Certain shrimp species are able to make a snapping sound that is louder than any other marine noise by hitting their large and small pincers together. It’s believed they do this to communicate with other shrimp or temporarily stun their prey.',
     'Shrimp acquire their food either by sifting through the sand of the ocean floor or filtering the surrounding waters to ingest small particles of various plant or animal species.',
     'Because of their small size, it is advantageous for shrimp to stay in groups in order to protect themselves from larger predators.',
+    'Shrimp\'s heart is located on its head.',
     )
 
 SKUNK_FACTS = (
