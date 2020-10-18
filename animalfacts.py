@@ -906,6 +906,7 @@ CHICKEN_FACTS = (
     'Chickens lay eggs that you can consume; they go good with gammon,',
     'Chickens are sometimes kept as pets, although not normally thought of as domestic animals.',
     'Chickens can actually fly, contrary to popular belief',
+    'Chickens can remember over 100 different faces of animals or peoples'
     )
 
 CHIMPANZEE_FACTS = (
