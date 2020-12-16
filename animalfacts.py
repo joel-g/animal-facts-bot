@@ -288,6 +288,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('hawk', '\shawks?\s', reddit, HAWK_FACTS, comment)
     botengine('hedgehog', '\shedgehogs?\s', reddit, HEDGEHOG_FACTS, comment)
     botengine('hippo', '\shippos?\s', reddit, HIPPO_FACTS, comment)
+    botengine('honeybadger', '\shoney badgers?\s', reddit, HONEYBADGER_FACTS, comment)
     botengine('honeybee', '\shoney bees?\s', reddit, HONEYBEE_FACTS, comment)
     botengine('horse', '\shorses?\s', reddit, HORSE_FACTS, comment)
     botengine('hummingbird', '\shummingbirds?\s', reddit, HUMMINGBIRD_FACTS, comment)
@@ -1681,6 +1682,27 @@ HONEYBADGER_FACTS = (
     'Honey badgers are mostly solitary and only meet up to hunt or mate',
     'Beekeepers will often keep their bees elevated to prevent honey badgers from getting to their hives.',
     'Honey badgers are substantially resistant to venom, and easily survive snakebites that would kill a human',
+    )
+
+HONEYBADGER_FACTS = (
+    'Also known as the ratel, is a member of the mustelidae family (the weasel family)'
+    'The honeybadger is the only member of the genus Mellivora'
+    'Honeybadgers have very powerful jaws and sharp teeth, enough to crush a tortoise shell'
+    'Honeybadgers have very tough skin, reportedly tough enough to protect from a blow from a machete'
+    'A baby honeybadger is called a Kit'
+    'Female honeybadgers are called sow and males are called boar, with a group being called a cete, colony, set or company'
+    'Honeybadgers are very intelligent animals and one of the few known to use tools to its benefit'
+    'The honeybadger holds the record in the Guinness Book of World Records as te most fearless creature in the world'
+    'Honeybadgers will hunt a varity og other animals, including porcupines, insects, meerkats, snakes, young gazelles, tortoises, frogs and even smaller crocodiles'
+    'Honeybadgers have a distinctive jog-trot, much like a horse'
+    'Honeybadgers can be gound in Africa, the Middle EAst and the Indian Subcontinent'
+    'Honeybadgers hunt at all times of the day, but around areas with high human population they become nocturnal'
+    'Honeybadgers are omnivores'
+    'Honeybadgers will eat fuit and vegetables, such as berries, rots and bulbs'
+    'Honeybadgers have few predators: Lions, leopards, and humans'
+    'Honeybadgers generally live up to 8 years in the wild but as long as 24 years in captivity'
+    'Honeybadgers are only pregnant for 6 to 8 weeks and will give birth to 1 or 2 babies (kits)'
+    'Honeybadgers can reach 2.4 feet in length and wrigh between 19 and 36 pounds'
     )
 
 HONEYBEE_FACTS = (
