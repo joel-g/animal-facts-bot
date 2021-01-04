@@ -48,72 +48,75 @@ def check_messages(reddit):
             if not comment.subreddit.user_is_banned and not comment.submission.locked:
                 file_obj_r = open(reply_history, 'r')
                 if comment.id not in file_obj_r.read().splitlines():
-                    comment_body = comment.body.lower()
-                    if 'good bot' in comment_body:
-                        print (comment_body)
-                        comment.reply(
-                            'Thanks! You can ask me for more facts any time. Beep boop.')
-                        print('     Thanked someone for "good bot"\n')
-                        record_already_replied(file_obj_r, comment)
-                    elif 'bad bot' in comment_body or 'unsubscribe' in comment_body:
-                        comment.reply(
-                            comment.author.name +
-                            " has been unsubscribed from AnimalFactsBot. I won't reply to your comments any more.")
-                        print('     Unsubbed ' + comment.author.name + '\n')
-                        unsubscribe(comment.author)
-                        record_already_replied(file_obj_r, comment)
-                    elif 'more' in comment_body:
-                        comment.reply(
-                            "It looks like you asked for more animal facts! " +
-                            random_fact())
-                        print('     Gave someone more facts!\n')
-                        record_already_replied(file_obj_r, comment)
-                    elif 'thank' in comment_body:
-                        print('Thanks found in commment ' + comment.id)
-                        comment.reply('You are most welcome. Beep boop.')
-                        print('     Replied to a thank you\n')
-                        record_already_replied(file_obj_r, comment)
-                    elif 'TIL' in comment.body:
-                        comment.reply("I'm always happy to help people learn!")
-                        print('     Replied to a TIL\n')
-                        record_already_replied(file_obj_r, comment)
-                    elif 'best bot' in comment_body:
-                        comment.reply(
-                            "It sounds like you called me the 'best bot'. That's awesome!")
-                        print('     Replied to a "best bot"\n')
-                        record_already_replied(file_obj_r, comment)
-                    elif re.search('(fuck)|(bitch)|(shit)', comment_body):
-                        comment.reply(
-                            "https://www.youtube.com/watch?v=hpigjnKl7nI")
-                        print('     WATCH YO PROFANITY\n')
-                        record_already_replied(file_obj_r, comment)
-                    elif re.search('(\scats?\s)|(\sdogs?\s)', ' ' + comment_body + ' '):
-                        comment.reply(
-                            "Did you ask for cat or dog facts? I'm sorry, if I did cat or dog facts I'd be spamming every thread on reddit. Reply 'more' if you'd like a random animal fact.")
-                        print('     Explained why I cant do cat or dog facts\n')
-                        record_already_replied(file_obj_r, comment)
-                    elif 'silly' in comment_body:
-                        comment.reply('I am programmed to be silly!!!')
-                        print('     Explained why I am silly\n')
-                        record_already_replied(file_obj_r, comment)
-                    elif 'hate' in comment_body:
-                        comment.reply("Please don't hate. Beep boop.")
-                        print('     Replied to a "hate" comment\n')
-                        record_already_replied(file_obj_r, comment)
-                    elif 'animalfactsbot' in comment_body:
-                        print('found my name')
-                        comment.reply(
-                            "You said my name! Would you like to know more about me? I am written in Python. I am running from a computer in Seattle. I have given an animal fact to redditors " +
-                            str(
-                                number_of_facts_given()) +
-                            " times!")
-                        print('     Told someone about myself.\n')
-                        record_already_replied(file_obj_r, comment)
-                    else:
-                        commented_obj_r = open(history, 'r')
-                        if comment.id not in commented_obj_r.read().splitlines():
-                            check_comment_for_animal(comment, reddit)
-                        commented_obj_r.close()
+                    try:
+                        comment_body = comment.body.lower()
+                        if 'good bot' in comment_body:
+                            print (comment_body)
+                            comment.reply(
+                                'Thanks! You can ask me for more facts any time. Beep boop.')
+                            print('     Thanked someone for "good bot"\n')
+                            record_already_replied(file_obj_r, comment)
+                        elif 'bad bot' in comment_body or 'unsubscribe' in comment_body:
+                            comment.reply(
+                                comment.author.name +
+                                " has been unsubscribed from AnimalFactsBot. I won't reply to your comments any more.")
+                            print('     Unsubbed ' + comment.author.name + '\n')
+                            unsubscribe(comment.author)
+                            record_already_replied(file_obj_r, comment)
+                        elif 'more' in comment_body:
+                            comment.reply(
+                                "It looks like you asked for more animal facts! " +
+                                random_fact())
+                            print('     Gave someone more facts!\n')
+                            record_already_replied(file_obj_r, comment)
+                        elif 'thank' in comment_body:
+                            print('Thanks found in commment ' + comment.id)
+                            comment.reply('You are most welcome. Beep boop.')
+                            print('     Replied to a thank you\n')
+                            record_already_replied(file_obj_r, comment)
+                        elif 'TIL' in comment.body:
+                            comment.reply("I'm always happy to help people learn!")
+                            print('     Replied to a TIL\n')
+                            record_already_replied(file_obj_r, comment)
+                        elif 'best bot' in comment_body:
+                            comment.reply(
+                                "It sounds like you called me the 'best bot'. That's awesome!")
+                            print('     Replied to a "best bot"\n')
+                            record_already_replied(file_obj_r, comment)
+                        elif re.search('(fuck)|(bitch)|(shit)', comment_body):
+                            comment.reply(
+                                "https://www.youtube.com/watch?v=hpigjnKl7nI")
+                            print('     WATCH YO PROFANITY\n')
+                            record_already_replied(file_obj_r, comment)
+                        elif re.search(r'(\scats?\s)|(\sdogs?\s)', ' ' + comment_body + ' '):
+                            comment.reply(
+                                "Did you ask for cat or dog facts? I'm sorry, if I did cat or dog facts I'd be spamming every thread on reddit. Reply 'more' if you'd like a random animal fact.")
+                            print('     Explained why I cant do cat or dog facts\n')
+                            record_already_replied(file_obj_r, comment)
+                        elif 'silly' in comment_body:
+                            comment.reply('I am programmed to be silly!!!')
+                            print('     Explained why I am silly\n')
+                            record_already_replied(file_obj_r, comment)
+                        elif 'hate' in comment_body:
+                            comment.reply("Please don't hate. Beep boop.")
+                            print('     Replied to a "hate" comment\n')
+                            record_already_replied(file_obj_r, comment)
+                        elif 'animalfactsbot' in comment_body:
+                            print('found my name')
+                            comment.reply(
+                                "You said my name! Would you like to know more about me? I am written in Python. I am running from a computer in Washington state. I have given an animal fact to redditors " +
+                                str(
+                                    number_of_facts_given()) +
+                                " times!")
+                            print('     Told someone about myself.\n')
+                            record_already_replied(file_obj_r, comment)
+                        else:
+                            commented_obj_r = open(history, 'r')
+                            if comment.id not in commented_obj_r.read().splitlines():
+                                check_comment_for_animal(comment, reddit)
+                            commented_obj_r.close()
+                    except:
+                        print("failed to reply to a message")
                 file_obj_r.close()
 
 
@@ -121,7 +124,7 @@ def number_of_facts_given():
     commented_obj_r = open(history, 'r')
     count = len(commented_obj_r.read().splitlines())
     commented_obj_r.close()
-    return count + 15000
+    return count + 50000
 
 
 def number_of_facts(ALL_FACTS):
@@ -209,21 +212,21 @@ def check_mentions(reddit):
 
 
 def check_comment_for_animal(comment, reddit):
-    botengine('aardvark', '\saardvarks?\s', reddit, AARDVARK_FACTS, comment)
-    botengine('aardwolf', '\saardwolfs?\s', reddit, AARDWOLF_FACTS, comment)
-    botengine('african grey', '\safrican (grey|gray)s?\s', reddit, AFRICAN_GREY_FACTS, comment)
-    botengine('albatross', '\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
-    botengine('alligator', '\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
-    botengine('alpaca', '\salpacas?\s', reddit, ALPACA_FACTS, comment)
-    botengine('anaconda', '\sanacondas?\s', reddit, ANACONDA_FACTS, comment)
-    botengine('anglerfish', '\sangler ?fish(es)?\s', reddit, ANGLERFISH_FACTS, comment)
-    botengine('ant', '\sants?\s', reddit, ANT_FACTS, comment)
-    botengine('anteater', '\santeaters?\s', reddit, ANTEATER_FACTS, comment)
-    botengine('antelope', '\santelopes?\s', reddit, ANTELOPE_FACTS, comment)
-    botengine('armadillo', '\sarmadillos?\s', reddit, ARMADILLO_FACTS, comment)
-    botengine('atlantic puffin', '\spuffins?\s', reddit, ATLANTIC_PUFFIN_FACTS, comment)
-    botengine('avocet', '\savocets?\s', reddit, AVOCET_FACTS, comment)
-    botengine('axolotl', '\saxolotls?\s', reddit, AXOLOTL_FACTS, comment)
+    botengine('aardvark', r'\saardvarks?\s', reddit, AARDVARK_FACTS, comment)
+    botengine('aardwolf', r'\saardwolfs?\s', reddit, AARDWOLF_FACTS, comment)
+    botengine('african grey', r'\safrican (grey|gray)s?\s', reddit, AFRICAN_GREY_FACTS, comment)
+    botengine('albatross', r'\salbatross(es)?\s', reddit, ALBATROSS_FACTS, comment)
+    botengine('alligator', r'\salligators?\s', reddit, ALLIGATOR_FACTS, comment)
+    botengine('alpaca', r'\salpacas?\s', reddit, ALPACA_FACTS, comment)
+    botengine('anaconda', r'\sanacondas?\s', reddit, ANACONDA_FACTS, comment)
+    botengine('anglerfish', r'\sangler ?fish(es)?\s', reddit, ANGLERFISH_FACTS, comment)
+    botengine('ant', r'\sants?\s', reddit, ANT_FACTS, comment)
+    botengine('anteater', r'\santeaters?\s', reddit, ANTEATER_FACTS, comment)
+    botengine('antelope', r'\santelopes?\s', reddit, ANTELOPE_FACTS, comment)
+    botengine('armadillo', r'\sarmadillos?\s', reddit, ARMADILLO_FACTS, comment)
+    botengine('atlantic puffin', r'\spuffins?\s', reddit, ATLANTIC_PUFFIN_FACTS, comment)
+    botengine('avocet', r'\savocets?\s', reddit, AVOCET_FACTS, comment)
+    botengine('axolotl', r'\saxolotls?\s', reddit, AXOLOTL_FACTS, comment)
     botengine('honeybadger', '\shoney badgers?\s', reddit, HONEYBADGER_FACTS, comment) # Needs to be here out of order so that it gets picked up before regular badger
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
     botengine('barnacle', '\sbarnacles?\s', reddit, BARNACLE_FACTS, comment)
