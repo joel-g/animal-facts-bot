@@ -84,6 +84,7 @@ You can see the bot in action at https://www.reddit.com/user/AnimalFactsBot/comm
 * Dodo
 * Dolphin
 * Dugong
+* Dumbo Octopus
 * Eagle
 * Earthworm
 * Earwig

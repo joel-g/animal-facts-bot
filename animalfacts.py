@@ -260,6 +260,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('dolphin', '\sdolphins?\s', reddit, DOLPHIN_FACTS, comment)
     # botengine('dragon', '\sdragons?\s', reddit, DRAGON_FACTS, comment)   Disabled because this was only a temp feature during Game of Thrones season. Dragons aren't real.
     botengine('dugong', '\sdugongs?\s', reddit, DUGONG_FACTS, comment)
+    botengine('dumbo octopus' '\sdumbo octopus?\s', reddit, DUMBOOCTOPUS_FACTS, comment)
     botengine('eagle', '\seagles?\s', reddit, EAGLE_FACTS, comment)
     botengine('earthworm', '\searthworms?\s', reddit, EARTHWORM_FACTS, comment)
     botengine('earwig', '\searwigs?\s', reddit, EARWIG_FACTS, comment)
@@ -1202,6 +1203,21 @@ DUGONG_FACTS = (
     'Dugongs can often live for upwards of 70 years.',
     'Dugongs can stay underwater for 6 minutes before surfacing.',
     )
+
+DUMBOOCTOPUS_FACTS = (
+    'Dumbo octopus is a type of octopus named after the Walt Disney famous character Dumbo the elephant because of the ear-like fins.',
+    'The dumbo octopus is rarely seen because they are living on the bottom of the sea on a depth ranging from 1 300 to 23 000 feet.',
+    'The arms are equipped with small harpoon-like barbs that are designed to hold the prey.',
+    'The dumbo octopus can swim by flapping the fins, by contracting and expanding its arms or by propelling the water from the funnel.',
+    'Dumbo octopus eat different type of crustaceans, bivalve, worms on the sea bottom and copepods (that are part of the zoo-plankton) when they swim near the surface of the water',
+    'Dumbo octopus swallows the prey whole.',
+    'One arm of males has a large segment that is used to deliver packages of sperm into a female dumbo body.',
+    'Average lifespan of dumbo octopus is between 3 and 5 years.',
+    'Newly born dumbo octopi are large in size, well developed and able to survive on their own.',
+    'Dumbo octopus does not have mating season.',
+    'The color of the body can be red, green or orange.',
+    'Males and females can be distinguished by the length of the suckers.'
+)
 
 EAGLE_FACTS = (
     'Eagles build their nests on high cliffs or in tall trees.',
@@ -3456,6 +3472,7 @@ ALL_FACTS = (
     DODO_FACTS,
     DOLPHIN_FACTS,
     DUGONG_FACTS,
+    DUMBOOCTOPUS_FACTS,
     EAGLE_FACTS,
     EARTHWORM_FACTS,
     EARWIG_FACTS,
