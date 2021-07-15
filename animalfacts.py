@@ -2174,7 +2174,8 @@ MOOSE_FACTS = (
     'The moose has an average lifespan of 8 to 12 years in the wild.',
     'Moose can run up to 35 miles per hour.',
     )
-    MOUSE_FACTS = (
+    
+MOUSE_FACTS = (
     'Despite their tiny bodies (and even smaller stomachs!), mice eat between 15 and 20 times a day. Because of their frequent eating habits, they prefer to build their homes near food sources.'
     'Mice in the wild, usually only live for about five months, mostly because of predators such as cats, snakes and foxes. In a lab setting, mice can live for up to two years.'
     'The house mouse is found all over the world, except for Antarctica. Mus musculus has roots in central Asia, but because of its extraordinary adaptability, its range has expanded to the rest of the globe.'
