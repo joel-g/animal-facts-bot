@@ -248,6 +248,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('chipmunk', '\schipmunks?\s', reddit, CHIPMUNK_FACTS, comment)
     botengine('clownfish', '\sclown ?fish(es)?\s', reddit, CLOWNFISH_FACTS, comment)
     botengine('cobra', '\scobras?\s', reddit, COBRA_FACTS, comment)
+    botengine('conure', '\sconures?\s', reddit, CONURE_FACTS, comment)
     botengine('cougar', '\scougars?\s', reddit, COUGAR_FACTS, comment)
     botengine('cow', '\scows?\s', reddit, COW_FACTS, comment)
     botengine('coyote','\scoyotes?\s',reddit,COYOTE_FACTS,comment)
@@ -281,6 +282,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
     botengine('gazelle', '\sgazelles?\s', reddit, GAZELLE_FACTS, comment)
     botengine('gecko', '\sgeckos?\s', reddit, GECKO_FACTS, comment)
+    botengine('gibbon', '\sgibbons?\s', reddit, GIBBON_FACTS, comment)
     botengine('giraffe', '\sgiraffes?\s', reddit, GIRAFFE_FACTS, comment)
     botengine('goat', '\sgoats?\s', reddit, GOAT_FACTS, comment)
     botengine('goose', '\s(goose|geese)\s', reddit, GOOSE_FACTS, comment)
@@ -321,6 +323,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('mongoose', '\smongooses?\s', reddit, MONGOOSE_FACTS, comment)
     botengine('monkey', '\smonkeys?\s', reddit, MONKEY_FACTS, comment)
     botengine('moose', '\smoose\s', reddit, MOOSE_FACTS, comment)
+    botengine('mouse', '\s(mouse)|(mice)\ss', reddit, MOUSE_FACTS, comment)
     botengine('narwhal', '\snarwhals?\s', reddit, NARWHAL_FACTS, comment)
     botengine('newt', '\snewts?\s', reddit, NEWT_FACTS, comment)
     botengine('nightjar', '\snightjars?\s', reddit, NIGHTJAR_FACTS, comment)
@@ -981,6 +984,18 @@ COBRA_FACTS = (
     'Cobras belong to the family Elapidae, a type of poisonous snake with hollow fangs fixed to the top jaw at the front of the mouth.',
     )
 
+CONURE_FACTS = (
+    'A conure is a medium size parrot and is sometimes called the "little Macaw" due to their bright vibrant colors.'
+    'Conures are very playful birds and will live up to 30 years.'
+    'The Sun conure is the most colorful of all conures with mostly gold tones. The Nanday conure is mostly green.'
+    'Conures are native to South America but are considered endangered.'
+    'A conure has a few distinct sounds and are very loud. Their call can be carried for miles.'
+    'Some conures are able to learn words and some will mimic sounds like a whistle or doorbell while others will only squawk.'
+    'Conures are often called the clowns of the parrot world due to their constant attention seeking behavior including hanging upside-down and swaying back and forth or "dancing".'
+    'Despite being large for parakeets, conures are lightly built with long tails and small (but strong) beaks.'
+    'Conures originate from the Western Hemisphere, namely Central and South America.'
+)   
+
 COUGAR_FACTS = (
     'The cougar, also known as puma, mountain lion, mountain cat, catamount or panther, depending on the region, holds the Guinness record for the animal with the highest number of names. It has over 40 names in English alone.',
     'The cougar has the greatest range of any large wild terrestrial mammal in the Western Hemisphere, extending from the Yukon in Canada to the southern Andes of South America.',
@@ -1500,6 +1515,16 @@ GECKO_FACTS = (
     'The GEICO gecko is a gold dust day gecko with a Cockney accent, voiced by English actor Jake Wood.',
     )
 
+GIBBON_FACTS = (
+'Gibbon vocalizations are often referred to as song because of the way they modulate their pitch. Gibbons sing alone and in duets and they start each day by singing at sunrise.'
+'Gibbons are famous for the swift and graceful way they swing through the trees by their long arms. This method of locomotion is called brachiation.'
+'Gibbons are not monkeys. They are part of the ape family and are classified as lesser apes because they are smaller than the great apes.'
+'Like all apes, gibbons are tailless. Unlike most of the great apes, gibbons frequently form long-term pair bonds.'
+'Gibbons can make leaps up to 8 m (26 ft).'
+'Gibbons walk bipedally with their arms raised for balance. They are the fastest and most agile of all tree-dwelling, nonflying mammals.'
+'gibbons fur coloration varies from dark to light brown shades, and any shade between black and white, though a completely "white" gibbon is rare.'
+)
+
 GIRAFFE_FACTS = (
     'A male giraffe can weigh as much as a pick up truck! That’s about 1400 kilograms.',
     'Although a giraffe’s neck is 1.5 – 1.8 meters, it contains the same number of vertebrae at a human neck.',
@@ -1599,6 +1624,7 @@ GORILLA_FACTS = (
     'A gorilla can live for 40 – 50 years.',
     'Gorillas are considered to be very intelligent animals. They are known for their use of tools and their varied communication. Some gorillas in captivity at a zoo have been taught to use sign language.',
     'Gorillas are endangered animals. Their habitat is destroyed when people use the land for farming and the trees for fuel. Gorillas are also killed by poachers and sometimes get caught in poacher’s snares meant for other animals.',
+    'The scientific name of the western lowland gorilla is "Gorilla gorilla gorilla".'
     )
 
 HAMSTER_FACTS = (
@@ -2147,6 +2173,14 @@ MOOSE_FACTS = (
     'A group of moose is know as a Herd.',
     'The moose has an average lifespan of 8 to 12 years in the wild.',
     'Moose can run up to 35 miles per hour.',
+    )
+    MOUSE_FACTS = (
+    'Despite their tiny bodies (and even smaller stomachs!), mice eat between 15 and 20 times a day. Because of their frequent eating habits, they prefer to build their homes near food sources.'
+    'Mice in the wild, usually only live for about five months, mostly because of predators such as cats, snakes and foxes. In a lab setting, mice can live for up to two years.'
+    'The house mouse is found all over the world, except for Antarctica. Mus musculus has roots in central Asia, but because of its extraordinary adaptability, its range has expanded to the rest of the globe.'
+    'Mice are able to squeeze through gaps as small as 6mm.'
+    'Mice rely on their other sense such as smell, hearing and touch to get around.'
+    'Research shows that mice can hear ultrasound up to to 90kHz.'
     )
 
 NARWHAL_FACTS = (
@@ -3445,6 +3479,7 @@ ALL_FACTS = (
     CHIPMUNK_FACTS,
     CLOWNFISH_FACTS,
     COBRA_FACTS,
+    CONURE_FACTS,
     COUGAR_FACTS,
     COW_FACTS,
     COYOTE_FACTS,
@@ -3477,6 +3512,7 @@ ALL_FACTS = (
     FROG_FACTS,
     GAZELLE_FACTS,
     GECKO_FACTS,
+    GIBBON_FACTS,
     GIRAFFE_FACTS,
     GOAT_FACTS,
     GOOSE_FACTS,
@@ -3518,6 +3554,7 @@ ALL_FACTS = (
     MONGOOSE_FACTS,
     MONKEY_FACTS,
     MOOSE_FACTS,
+    MOUSE_FACTS,
     NARWHAL_FACTS,
     NEWT_FACTS,
     NIGHTJAR_FACTS,
