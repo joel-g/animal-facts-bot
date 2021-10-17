@@ -591,6 +591,7 @@ ANTEATER_FACTS = (
     'Anteaters can eat up to 35,000 insects a day.',
     'Anteaters will never destroy an anthill because they need it as a source of food.',
     'Anteaters have tongues that can be 2 feet long.',
+    'Anteaters are most closely related to sloths.',
     )
 
 ANTELOPE_FACTS = (
