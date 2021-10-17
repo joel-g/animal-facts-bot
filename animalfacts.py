@@ -2008,6 +2008,7 @@ LIZARD_FACTS = (
 LOBSTER_FACTS = (
     'Lobsters were once considered the the go-to prison food. In Colonial times, it was fed to pigs and goats and only eaten by paupers.',
     'Lobsters turn red when cooked, but in nature they can be green or yellow or even bright blue.',
+    'Albino Lobster are the rarest to catch, they are one in a hunderd-million and they are the only lobsters that dont turn red once cooked.',
     'Lobsters can grow up to four feet long and weigh as much as 40 pounds.',
     'Lobsters have a crusher claw and a pincer claw; some lobsters have the crusher claw on the right side and others have it on the left.',
     'Lobsters have poor eyesight, but have highly developed senses of smell and taste.',
