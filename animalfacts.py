@@ -256,6 +256,8 @@ def check_comment_for_animal(comment, reddit):
     botengine('crane', '\scranes?\s', reddit, CRANE_FACTS, comment)
     botengine('crayfish', '\scrayfish(es)?\s', reddit, CRAYFISH_FACTS, comment)
     botengine('crocodile', '\scrocodiles?\s', reddit, CROCODILE_FACTS, comment)
+    botengine('crow', '\scrows?\s', reddit, CROW_FACTS, comment)
+    botengine('deer', '\sdeer?\s', reddit, DEER_FACTS, comment)
     botengine('cuttlefish', '\scuttle ?fish(es)?\s', reddit, CUTTLEFISH_FACTS, comment)
     botengine('deer', '\sdeer?\s', reddit, DEER_FACTS, comment)
     botengine('degu', '\sdegus?\s', reddit, DEGU_FACTS, comment)
@@ -1110,6 +1112,20 @@ CROCODILE_FACTS = (
     'The smallest crocodile is the dwarf crocodile. It grows to about 5.6 feet (1.7 meters) in length and weighs 13 to 15 pounds (6 to 7 kilograms). The largest crocodile is the saltwater crocodile. The largest one ever found was 20.24 feet (6.17 m) long. They can weigh up to 2,000 pounds (907 kg).',
     'Crocodiles lay 10 to 60 eggs at a time. The hatchlings stay in their eggs for 55 to 110 days. They are 7 to 10 inches (17.8 to 25.4 centimeters) long when they are born and don\'t mature until they are 4 to 15 years.',
     )
+
+CROW_FACTS = (
+    'Crows have their scientific name as Corvus brachyrhynchos. They belong to the family Covidae and to the genus Corvus.',
+    'Crows are pretty old. They first appeared during Miocene Period some 17 million years ago in Oceana and Australia.',
+    'Crows are omnivores. They eat just about anything that they think is edible (very much like the Chinese).',
+    'Crows can be found in every continent of this planet barring Antarctica. No matter where you go, you will find this bird.',
+    'Crows have the largest brain-to-body ratio of all bird species that fly in our skies and live on this planet.',
+    'Crows forebrain is very developed. This means that they are intelligent.',
+    'Crows maintain only one mate for their entire life. They don’t reach sexual maturity until they reach the age of 2 but some often wait longer to get their soulmate.',
+    'Crows display what is known as cooperative breeding. What’s that? When a female crow is incubating, other crows (whether soulmate or not) will watch out and protect the incubating female.',
+    'Crows take care of their babies and help them with feeding. That may not be weird but this is weird – some of the offspring will actually stay back to look after the next batch of babies.',
+    'Crows are amazingly social and smart. There can be several Murders. How will a crow know which Murder it belongs to? That’s possible with the help of specialized dialect every Murder develops.',
+    'Crows are very much capable of remembering faces.',
+)
 
 CUTTLEFISH_FACTS = (
     'Cuttlefish are cephalopods, not fish. Cephalopods include octopus, squid, and nautilus.',
@@ -3510,6 +3526,7 @@ ALL_FACTS = (
     CRANE_FACTS,
     CRAYFISH_FACTS,
     CROCODILE_FACTS,
+    CROW_FACTS,
     CUTTLEFISH_FACTS,
     DEER_FACTS,
     DEGU_FACTS,
