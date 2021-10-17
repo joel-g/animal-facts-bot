@@ -800,6 +800,11 @@ BOBCAT_FACTS = (
     'Bobcats can’t always consume their victims in one sitting. Sometimes, they use dirt, snow, leaves, or grass to bury the uneaten pieces of especially large corpses, and will return periodically to dig up their leftovers.',
     'The scientfic name for the bobcat is "Lynx rufus".',
     'Wild bobcats have an average life span of 10 to 12 years',
+    'The bobcat is believed to have evolved from the Eurasian lynx, which crossed into North America by way of the Bering Land Bridge as early as 2.6 million years ago',
+    'The bobcat is crepuscular meaning it is active mostly during twilight (around dawn or dusk).',
+    'Bobcats rarely attack people because they are scared of humans.',
+    'In Native American mythology, the bobcat is often twinned with the figure of the coyote in a theme of duality.',
+    'The historical range of the bobcat was from southern Canada, throughout the United States, and as far south as the Mexican state of Oaxaca, and it still persists across much of this area.',
     )
 
 BUFFALO_FACTS = (
