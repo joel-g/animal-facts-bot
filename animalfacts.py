@@ -370,6 +370,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('sloth', '\ssloths?\s', reddit, SLOTH_FACTS, comment)
     botengine('snail', '\ssnails?\s', reddit, SNAIL_FACTS, comment)
     botengine('snake', '\ssnakes?\s', reddit, SNAKE_FACTS, comment)
+    botengine('spider', '\sspiders?\s', reddit, SPIDER_FACTS, comment)
     botengine('squirrel', '\ssquirrels?\s', reddit, SQUIRREL_FACTS, comment)
     botengine('starfish', '\sstarfish(es)?\s', reddit, STARFISH_FACTS, comment)
     botengine('stingray', '\sstingrays?\s', reddit, STINGRAY_FACTS, comment)
@@ -2949,6 +2950,21 @@ SNAKE_FACTS = (
     'Python reticulates can grow over 8.7 m (28 ft) in length and are considered the longest snakes in the world.',
     )
 
+SPIDER_FACTS = (
+    'Spiders are arachnids, not insects',
+    'Spiders dont have antennae while insects do',
+    'Spiders are found on every continent of the world except Antarctica',
+    'Most spiders make silk which they use to create spider webs and capture prey',
+    'An abnormal fear of spiders is called arachnophobia',
+    'The largest specie of tarantula is the Goliath Birdeater',
+    'There are around 3000 different species of snake.',
+    'Giant Huntsman spiders have leg-spans of around 30cm (12 in)',
+    'Female spiders can lay up to 3,000 eggs at one time',
+    'Spiders are nearsighted',
+    'Jumping spiders can jump up to 50x their own length',
+    'While most spiders have eight eyes, there are some that only have six or less',
+    )
+
 STARFISH_FACTS = (
     'Starfish have no brain and no blood.',
     'There are around 2,000 species of sea star.',
@@ -3602,6 +3618,7 @@ ALL_FACTS = (
     SLOTH_FACTS,
     SNAIL_FACTS,
     SNAKE_FACTS,
+    SPIDER_FACTS,
     STARFISH_FACTS,
     STOAT_FACTS,
     STURGEON_FACTS,
