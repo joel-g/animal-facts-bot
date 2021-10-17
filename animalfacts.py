@@ -346,6 +346,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('pig', '\spigs?\s', reddit, PIG_FACTS, comment)
     botengine('pigeon', '\spigeons?\s', reddit, PIGEON_FACTS, comment)
     botengine('platypus', '\splatypuse?s?\s', reddit, PLATYPUS_FACTS, comment)
+    botengine('polar bear', '\spolar\sbears?\s', reddit, POLAR_BEAR_FACTS, comment)
     botengine('porcupine', '\sporcupines?\s', reddit, PORCUPINE_FACTS, comment)
     botengine('pufferfish', '\spuffer ?fish(es)?\s', reddit, PUFFERFISH_FACTS, comment)
     botengine('puma', '\spumas?\s', reddit, PUMA_FACTS, comment)
@@ -2575,6 +2576,24 @@ PUFFERFISH_FACTS = (
     'The average lifespan of the puffer fish is around 10 years',
     )
 
+POLAR_BEAR_FACTS = (
+    'Polar bears live in the Arctic.',
+    'Polar bears have black skin and although their fur appears white, it is actually transparent.',
+    'Polar bears are the largest carnivore (meat eater) that lives on land.',
+    'Polar bears use sea ice as a platform to hunt seals.',
+    'Seals make up most of a polar bears diet.',
+    'Male polar bears can weigh up to 680 kg (1500 lb).',
+    'Female polar bears usually only weigh about half as much as males.',
+    'Polar bears spend most of their time at sea.',
+    'Scientists estimate that there are around 20000 polar bears.',
+    'Polar bears have 42 teeth.',
+    'The scientific name for the polar bear is ‘ursus maritimus’.',
+    'Polar bears keep warm thanks to nearly 10 cm of blubber under the skin.',
+    'Polar bears have an excellent sense of smell, with the ability to detect seals nearly a mile away (1.6 km).',
+    'Polar bears can reach speeds up to 40 kph (25 mph) on land and 10 kph (6 mph) in water.',
+    'The polar bear was the mascot for the 1988 Winter Olympics in Calgary, Canada.',
+    )
+
 PORCUPINE_FACTS = (
     'The body of the porcupine is covered with sharp spines or quills.',
     'Some porcupines have up to 30,000 quills on their body.',
@@ -3600,6 +3619,7 @@ ALL_FACTS = (
     PIG_FACTS,
     PIGEON_FACTS,
     PLATYPUS_FACTS,
+    POLAR_BEAR_FACTS,
     PORCUPINE_FACTS,
     PUFFERFISH_FACTS,
     PUMA_FACTS,
