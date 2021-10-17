@@ -278,6 +278,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('fire salamander', '\sfire salamanders?\s', reddit, FIRESALAMANDER_FACTS, comment)
     botengine('flamingo', '\sflamingos?\s', reddit, FLAMINGO_FACTS, comment)
     # botengine('fly', '\sfl(y|ies)?\s', reddit, FLY_FACTS, comment)
+    botengine('fossa', '\sfossas?\s', reddit, FOSSA_FACTS, comment)
     botengine('fox', '\sfox(es)?\s', reddit, FOX_FACTS, comment)
     botengine('frog', '\sfrogs?\s', reddit, FROG_FACTS, comment)
     botengine('gazelle', '\sgazelles?\s', reddit, GAZELLE_FACTS, comment)
@@ -1448,6 +1449,22 @@ FLY_FACTS = (
     'House flies can transmit several diseases, including cholera, dysentery, typhoid, and many others',
     'Flies usually defecate when they land',
     'Flies do not have jaws or teeth, they must drink their food',
+    )
+
+FOSSA_FACTS = (
+    'The fossa (Cryptoprocta ferox) is the largest carnivorous mammal on the island of Madagascar',
+    'The fossa can reach nearly six feet in length, with half of that due to its long tail.',
+    'The fossa\'s genus name, Cryptoprocta, is inspired by how its anus is concealed by an anal pouch. It comes from the Greek for hidden (crypto) and anus (procta). The fossa\'s species name, ferox, refers to its exaggerated reputation for ferocity.',
+    'Fossas are the top predator in Madagascar.',
+    'Fossas hunt during both day and night, and can take prey from both the ground and in trees.',
+    'With the exception of mothers with young and brief pairings during the breeding season, fossas are solitary animals.',
+    'Fossas patrol and defend territories as large as four square kilometers.',
+    'Fossas communicate largely through scent glands.',
+    'Fossas mainly vocalize during the breeding season. Females mew to attract males, and males sigh when they have found a receptive female and yowl when competing for her affections.',
+    'The female fossa undergoes a strange developmental stage during adolescence known as transient masculinization, unique to fossas.',
+    'Unlike mongooses, and more like felines, the fossa has retractable claws and fearsome catlike teeth.',
+    'The fossas coat is reddish brown and its muzzle resembles that of a dog.',
+    'Fossas are threatened due to habitat loss. Less than ten percent of Madagascar’s original, intact forest cover, the fossa’s only home, remains today.',
     )
 
 FOX_FACTS = (
@@ -3531,6 +3548,7 @@ ALL_FACTS = (
     FIRESALAMANDER_FACTS,
     FLAMINGO_FACTS,
     FLY_FACTS,
+    FOSSA_FACTS,
     FOX_FACTS,
     FROG_FACTS,
     GAZELLE_FACTS,
