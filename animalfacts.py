@@ -238,7 +238,8 @@ def check_comment_for_animal(comment, reddit):
     botengine('buffalo', '\sbuffalos?\s', reddit, BUFFALO_FACTS, comment)
     botengine('butterfly', '\sbutterfl(y|ies)?\s', reddit, BUTTERFLY_FACTS, comment)
     botengine('camel', '\scamels?\s', reddit, CAMEL_FACTS, comment)
-    botengine('capybara', '\scapybaras?\s', reddit, CAPYBARA_FACTS, comment)
+    botengine('capybara', '\scapybaras?\s', reddit, CAPYBARA_FACTS, comment)	
+    botengine('cassowary', '\scassowary?\s', reddit, CASSOWARY_FACTS, comment)
     botengine('chameleon', '\schameleons?\s', reddit, CHAMELEON_FACTS, comment)
     botengine('cheetah', '\scheetahs?\s', reddit, CHEETAH_FACTS, comment)
     botengine('chevrotain','\schevrotain?\s', reddit , CHEVROTAIN_FACTS , comment)
@@ -868,6 +869,16 @@ CAPYBARA_FACTS = (
     'Capybaras are very popular captive animals in Japan. One common practice, said to have originated in 1982 and attributed to the Izu Shaboten Zoo, is to keep hot springs in capybara enclosures for them to bathe and relax in during the winter.'
     'Capybaras are well to do to put their webbed feet to use in water, and the Vatican classifies them as fish in regards to dietary concerns.',
     )
+	
+CASSOWARY_FACTS = (
+	'The cassowary is the heaviest bird in Australia, and the second heaviest bird in the world.'
+	'Cassowaries are flightless birds.'
+	'Cassowaries will use their casque (helmet) and claws in self defense, but will not attack for no reason.'
+	'Some cassowaries can jump as high as 6.5 feet (2 meters) in the air.'
+	'Cassowaries are frugivores that also eat their own poop. Their diet consists of mainly fruits and berries.'
+	'There are currently three species of cassowary. The cassowary is related to the emu and ostrich.'
+	'Cassowaries live up to 19 years in the wild and have lived up to fifty in captivity.'
+)
 
 CHAMELEON_FACTS = (
     'Chameleons are a very unique branch of the lizard group of reptiles.',
@@ -3493,6 +3504,7 @@ ALL_FACTS = (
     BUTTERFLY_FACTS,
     CAMEL_FACTS,
     CAPYBARA_FACTS,
+	CASSOWARY_FACTS,
     CHAMELEON_FACTS,
     CHEETAH_FACTS,
     CHEVROTAIN_FACTS,
