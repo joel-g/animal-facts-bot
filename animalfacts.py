@@ -1375,6 +1375,16 @@ EMU_FACTS = (
     'The Australian military has lost a war against emus in 1932, in what is called the Great Emu War. The emu population remained virtually the same after the battle.',
     )
 
+EURASIAN_TREE_SPARROW_FACTS = (
+    'Maya was not the national bird of the Philippines but the former national bird was the Chestnut Munia which also locally called "Mayang Pula"',
+    'Commonly known as the "maya"',
+    'Eurasian tree sparrow is 12.5-14 cm long, with wingspan of about 21 cm and weight of 24 g, which making it roughly 10% smaller than house sparrow',
+    'It has 7 subspecies which are P.m.montanus, P.m.transcaucasicus, P.m.dilutus, P.m.tibetanus, P.m.saturatus, P.m.malaccensis, P.m.hepaticus'
+    'Maya\'s natural breeding range is on Europe and South Asia but formerly bred in the Faroes, Malta, Gozo',
+    'Maya reaches breeding maturity within a year from hatching',
+    'There is estimate 52-96 million Eurasian tree sparrow withn Europe'
+    )
+
 FALCON_FACTS = (
     'Peregrine falcons have been clocked at reaching speeds of 242 miles per hour while diving for prey, making them the fastest recorded animal ever.',
     'Falcon is a carnivore. Its diet is based on rodents, frogs, fish, bats, and small birds.',
@@ -2058,7 +2068,6 @@ MANTIS_SHRIMP_FACTS = (
     'Mantis Shrimp can make a low growling sounds and often grunt at dawn and dusk.',
     'Stomatopods, like Mantis Shrimp, are older than dinosaurs.',
     )
-
 MEERKAT_FACTS = (
     'Meerkats can spot an eagle in flight more than a thousand feet away.',
     'Meerkats, or suricates, are a type of mongoose that live in the southern African plains, primarily in South Africa, Namibia, and Botswana.',
@@ -3526,6 +3535,7 @@ ALL_FACTS = (
     ELEPHANT_SHREW_FACTS,
     ELK_FACTS,
     EMU_FACTS,
+    EURASIAN_TREE_SPARROW_FACTS,
     FALCON_FACTS,
     FERRET_FACTS,
     FIRESALAMANDER_FACTS,
