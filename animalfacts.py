@@ -229,6 +229,7 @@ def check_comment_for_animal(comment, reddit):
     botengine('axolotl', r'\saxolotls?\s', reddit, AXOLOTL_FACTS, comment)
     botengine('honeybadger', '\shoney badgers?\s', reddit, HONEYBADGER_FACTS, comment) # Needs to be here out of order so that it gets picked up before regular badger
     botengine('badger', '\sbadgers?\s', reddit, BADGER_FACTS, comment)
+    botengine('ball python', r'\sballpython?\s', reddit, BALLPYTHON_FACTS, comment)
     botengine('barnacle', '\sbarnacles?\s', reddit, BARNACLE_FACTS, comment)
     botengine('bear', '\sbears?\s', reddit, BEAR_FACTS, comment)
     botengine('beaver', '\sbeavers?\s', reddit, BEAVER_FACTS, comment)
@@ -704,6 +705,19 @@ BADGER_FACTS = (
     'The honey badger is a carnivorous species that has the reputation of being the most fearless and vicious of all mammals.',
     'Badgers were eaten in Britain during World War II and were once part of the Native American and settlers diets in the US. Russia still eats badger meat today.',
     'Badgers have featured in lots of British literature over the years, such as Brian Jacques\' Redwall series, \'Tommy Brock\' in Beatrix Potter\'s The Tale of Mr. Tod, \'Bill Badger\' in Mary Tourtel\'s Rupert Bear, \'Mr. Badger\' in Kenneth Grahame\'s The Wind in the Willows, and \'Trufflehunter\' in C. S. Lewis\'s Chronicles of Narnia.',
+    )
+
+BALLPYTHON_FACTS = (
+    'The name ball python comes from their habit of rolling themselves into a tight ball when frightened.',
+    'Ball pythons have an average lifespan of around 30 years.',
+    'The oldest recorded ball python lives at the St. Louis Zoo and is more than 62 years old.',
+    'Wild ball pythons rely on their labial pits to help them find prey. The labial pits function as a sort of infrared vision and allow the snake to see the heat produced by other living things.',
+    'There are over 7,500 different ball python morphs on the market.',
+    'The first designer ball python morph was an albino produced in 1992.',
+    'The most expensive ball python morph is the lavender albino, which has gone for $40,000 in the past.',
+    'Ball pythons are typically nocturnal or crepuscular, meaning that they are active during dusk, dawn, and/or nighttime.',
+    'Ball pythons are the most popular pet snake and the second most popular pet reptile after the bearded dragon.',
+    'Ball pythons shed their skin every 5 to 7 weeks on average',
     )
 
 BARNACLE_FACTS = (
